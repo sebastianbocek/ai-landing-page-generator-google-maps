@@ -10,6 +10,7 @@ import copy
 import os
 import shutil
 import zipfile
+import traceback
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse
@@ -280,6 +281,7 @@ class App:
         self.root.geometry("720x780")
         self.root.minsize(620, 620)
         self.root.configure(bg=self.BG)
+        self.root.report_callback_exception = self._report_callback_exception
         self.url = StringVar()
         self.public_url = StringVar()
         self.api_key = StringVar()
@@ -293,7 +295,10 @@ class App:
         self.published_url = StringVar(value="")
         self.last_data = None
         self.variant_count = 0
+        self.log_entries = []
+        self.log_lock = threading.Lock()
         self._build()
+        self._log("INFO", "Aplicación iniciada.")
 
     def _build(self):
         import tkinter as tk
@@ -350,6 +355,14 @@ class App:
         self._check(outer, "Extraer información visible de la ficha", self.get_info)
         self._check(outer, "Incluir fotografías disponibles en Maps", self.get_photos)
         self._check(outer, "Configurar botón de WhatsApp con el teléfono", self.configure_whatsapp)
+        log_header = tk.Frame(outer, bg=self.CARD)
+        log_header.pack(fill="x", padx=22, pady=(18, 6))
+        tk.Label(log_header, text="REGISTRO DE ACTIVIDAD", bg=self.CARD, fg="#c4cac6", font=("Segoe UI", 9, "bold")).pack(side="left")
+        self.log_count = StringVar(value="0 eventos")
+        tk.Label(log_header, textvariable=self.log_count, bg=self.CARD, fg="#69d7a5", font=("Segoe UI", 8)).pack(side="right")
+        self.log_view = tk.Text(outer, height=6, wrap="word", state="disabled", bg=self.BG, fg="#c7d7ce", insertbackground=self.FG, relief="flat", highlightthickness=1, highlightbackground=self.BORDER, font=("Consolas", 8))
+        self.log_view.pack(fill="x", padx=22)
+        tk.Button(outer, text="Copiar log", command=self.copy_log, bg="#171a18", fg="#cde8d7", activebackground="#202521", activeforeground="white", relief="flat", font=("Segoe UI", 8, "bold"), pady=7, cursor="hand2").pack(fill="x", padx=22, pady=(5, 10))
         actions = tk.Frame(self.footer, bg=self.CARD)
         actions.pack(fill="x", padx=12, pady=(10, 0))
         self.generate_btn = tk.Button(actions, text="✧  GENERAR LANDING PAGE", command=self.generate, bg="#171a18", fg=self.FG, activebackground="#202521", activeforeground=self.GREEN, relief="flat", font=("Segoe UI", 10, "bold"), pady=13, cursor="hand2")
@@ -406,6 +419,7 @@ class App:
         self.last_data = None
         self._set_busy(True, "EXTRAYENDO DATOS…")
         self.status.set("Abriendo la ficha en el navegador. Espera a que termine de cargar…")
+        self._log("INFO", "Generación iniciada; se validó la URL de Google Maps.")
         owner_notes = self._get_owner_notes()
         threading.Thread(target=self._work, args=(url, self.get_photos.get(), self.template.get(), self.configure_whatsapp.get(), 0, True, self.api_key.get().strip() or os.getenv("OPENAI_API_KEY", ""), owner_notes, self.model.get(), ART_LABELS[self.art_direction.get()], public_url), daemon=True).start()
 
@@ -419,6 +433,7 @@ class App:
             data["photos"] = []
         self.variant_count += 1
         self._set_busy(True, "CREANDO OTRA VERSIÓN…")
+        self._log("INFO", f"Regeneración iniciada (variante {self.variant_count}).")
         threading.Thread(target=self._work, args=(data, self.get_photos.get(), self.template.get(), self.configure_whatsapp.get(), self.variant_count, False, self.api_key.get().strip() or os.getenv("OPENAI_API_KEY", ""), data.get("owner_notes", ""), self.model.get(), ART_LABELS[self.art_direction.get()], self.public_url.get().strip() or data.get("public_url", "")), daemon=True).start()
 
     def _get_owner_notes(self):
@@ -463,16 +478,19 @@ class App:
 
     def _publish_worker(self, folder):
         try:
+            self._log("INFO", f"Publicación iniciada para la carpeta {folder}.")
             result = publish_site_folder(
                 folder,
-                progress=lambda text: self.root.after(0, lambda message=text: self.status.set(message)),
+                progress=lambda text: (self._log("INFO", text), self.root.after(0, lambda message=text: self.status.set(message))),
             )
             self.root.after(0, lambda: self._publish_done(result))
         except Exception as exc:
+            self._log("ERROR", f"Falló la publicación: {exc}", traceback.format_exc())
             self.root.after(0, lambda error=str(exc): self._publish_error(error))
 
     def _publish_done(self, result):
         self.download_btn_state(False)
+        self._log("INFO", f"Publicación finalizada; repo={result.get('repo_url')}, pages={result.get('site_url')}, listo={result.get('ready')}.")
         site_url = result["site_url"] + "/"
         self.public_url.set(site_url)
         self.published_url.set("Abrir sitio publicado: " + site_url)
@@ -495,10 +513,12 @@ class App:
     def _publish_error(self, text):
         self.download_btn_state(False)
         self.status.set("No se pudo completar la publicación en GitHub.")
+        self._log("ERROR", f"No se completó la publicación: {text}")
         messagebox.showerror("No se pudo subir la página", text)
 
     def _download_category_worker(self, family, repos):
         completed, errors = 0, []
+        self._log("INFO", f"Descarga de referencias iniciada: {len(repos)} elementos para {family}.")
         for number, repo_name in enumerate(repos, 1):
             target = TEMPLATE_SOURCES["uiuxlabz"] / repo_name
             if (target / "index.html").is_file():
@@ -510,6 +530,7 @@ class App:
                 completed += 1
             except Exception as exc:
                 errors.append(f"{repo_name}: {exc}")
+                self._log("WARN", f"No se pudo descargar la referencia {repo_name}: {exc}")
         self.root.after(0, lambda: self._download_done(family, completed, len(repos), errors))
 
     def _download_done(self, family, completed, total, errors):
@@ -518,6 +539,7 @@ class App:
         if errors:
             summary += f" Fallaron {len(errors)} descargas; revisa la conexión."
         self.status.set(summary)
+        self._log("INFO" if not errors else "WARN", summary)
         if errors:
             messagebox.showwarning("Biblioteca parcialmente descargada", summary + "\n\n" + "\n".join(errors[:5]))
         else:
@@ -553,6 +575,7 @@ class App:
             self.status.set(f"Referencia agregada al catálogo: {target}")
             messagebox.showinfo("Referencia importada", f"Se agregó a {family}. El motor no copia textos, imágenes demo ni scripts de esta plantilla; revisa su licencia si reutilizas algún recurso.\n\n{target}")
         except Exception as exc:
+            self._log("ERROR", f"No se pudo importar el ZIP: {exc}", traceback.format_exc())
             messagebox.showerror("No se pudo importar", str(exc))
 
     def _set_busy(self, busy, text=None):
@@ -563,7 +586,9 @@ class App:
 
     def _work(self, payload, get_photos, template_name, use_whatsapp, variant, should_extract, api_key="", owner_notes="", model="gpt-4.1", direction="", public_url=""):
         try:
+            self._log("INFO", "Extrayendo datos visibles de Maps…" if should_extract else "Reutilizando los datos de Maps guardados para regenerar.")
             source_data = extract_listing(payload, get_photos) if should_extract else payload
+            self._log("INFO", f"Datos de ficha listos: negocio={source_data.get('name') or 'sin nombre'}, rubro={source_data.get('category') or 'sin categoría'}, fotos={len(source_data.get('photos', []))}, reseñas={len(source_data.get('reviews', []))}.")
             if owner_notes:
                 source_data["owner_notes"] = owner_notes
             data = copy.deepcopy(source_data)
@@ -575,10 +600,17 @@ class App:
                 previous = [p for p in OUT_DIR.glob(slug(data.get("name", "")) + "-*") if p.is_dir()]
                 variant = max(variant, len(previous))
             self.root.after(0, lambda: self.status.set("Redactando contenido con IA…" if api_key else "Preparando landing con el contenido local…"))
+            self._log("INFO", f"Generando sitio; plantilla={template_name}, modelo={model if api_key else 'local'}, variante={variant}.")
             folder, data, content = generate_site(data, template_name, OUT_DIR, variant, api_key, model, use_whatsapp, download_listing_photos if get_photos else None, direction)
+            self._log("INFO", f"Landing generada en {folder}; dirección={content.get('art_direction')}, origen={content.get('source', 'local')}.")
             self.root.after(0, lambda: self._done(folder, data, source_data, template_name, variant, content))
         except Exception as exc:
-            self.root.after(0, lambda: self._error(str(exc)))
+            # Tkinter runs callbacks after this except block has exited. Capture
+            # the message now because Python clears the exception variable at
+            # the end of the block (otherwise the callback itself raises NameError).
+            error_message = str(exc)
+            self._log("ERROR", f"Error durante la generación: {error_message}", traceback.format_exc())
+            self.root.after(0, lambda message=error_message: self._error(message))
 
     def _done(self, folder, data, source_data, template_name, variant, content):
         self.last_data = copy.deepcopy(source_data)
@@ -587,6 +619,7 @@ class App:
         mode = "IA" if content.get("source") in {"openai", "openai_cache"} else ("modo local (IA no disponible)" if content.get("api_error") else "modo local")
         report = json.loads((folder / "quality_report.json").read_text(encoding="utf-8"))
         quality = "QA aprobado" if report.get("status") == "passed" else "QA requiere revisión"
+        self._log("INFO", f"Control de calidad finalizado: {quality}; errores críticos={len(report.get('critical_errors', []))}, advertencias={len(report.get('warnings', []))}.")
         self.status.set(f"{mode} · {quality} · dirección {content.get('art_direction')}\nGuardada: {folder}\nLas versiones anteriores se conservan en salida/.")
         webbrowser.open((folder / "index.html").as_uri())
         notice = f"\n\nLa IA no respondió; se usó el modo local. Detalle: {content['api_error']}" if content.get("api_error") else ""
@@ -596,6 +629,48 @@ class App:
         self._set_busy(False, "✧  GENERAR LANDING PAGE")
         self.status.set("No se pudo extraer la ficha. Revisa la URL y vuelve a intentarlo.")
         messagebox.showerror("No se pudo generar", text)
+
+    def _log(self, level, message, details=""):
+        from datetime import datetime
+        timestamp = datetime.now().astimezone().isoformat(timespec="seconds")
+        entry = f"[{timestamp}] [{level}] {message}"
+        if details:
+            entry += "\n" + details.rstrip()
+        with self.log_lock:
+            self.log_entries.append(entry)
+            self.log_entries = self.log_entries[-300:]
+            entries = list(self.log_entries)
+        try:
+            log_path = ROOT / "usage" / "app.log"
+            log_path.parent.mkdir(parents=True, exist_ok=True)
+            with log_path.open("a", encoding="utf-8") as handle:
+                handle.write(entry + "\n")
+        except OSError:
+            pass
+        self.root.after(0, lambda current=entries: self._render_log(current))
+
+    def _render_log(self, entries):
+        self.log_view.configure(state="normal")
+        self.log_view.delete("1.0", "end")
+        self.log_view.insert("end", "\n".join(entries))
+        self.log_view.see("end")
+        self.log_view.configure(state="disabled")
+        self.log_count.set(f"{len(entries)} eventos")
+        if entries and "[ERROR]" in entries[-1]:
+            self.canvas.update_idletasks()
+            self.canvas.yview_moveto(1.0)
+
+    def copy_log(self):
+        with self.log_lock:
+            content = "\n".join(self.log_entries)
+        self.root.clipboard_clear()
+        self.root.clipboard_append(content or "No hay eventos registrados.")
+        self.root.update()
+        self.status.set("Registro copiado al portapapeles." if content else "No hay eventos para copiar.")
+
+    def _report_callback_exception(self, exception_type, exception, tb):
+        details = "".join(traceback.format_exception(exception_type, exception, tb))
+        self._log("ERROR", f"Excepción no controlada en callback de la interfaz: {exception}", details)
 
     def run(self):
         self.root.mainloop()

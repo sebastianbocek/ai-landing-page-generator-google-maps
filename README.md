@@ -52,6 +52,8 @@ Los efectos son una capa selectiva sobre las familias visuales existentes, no pl
 7. Pulsa **Regenerar** para producir otra combinación sin borrar los borradores anteriores.
 8. Pulsa **Subir página web**, selecciona una carpeta de `salida/` que contenga `index.html` en la raíz y espera a que termine la publicación.
 
+La GUI incluye un **Registro de actividad** con las etapas de extracción, generación, control de calidad y publicación. Si aparece un error, copia el registro con **Copiar log** y compártelo para diagnosticarlo. El archivo completo también se guarda localmente en `usage/app.log`; puede incluir nombres de negocios y rutas locales, pero no registra la clave de OpenAI.
+
 ## Publicar con GitHub Pages
 
 Instala [Git for Windows](https://git-scm.com/download/win) y [GitHub CLI](https://cli.github.com/). Si todavía no autorizaste tu cuenta, al pulsar **Subir página web** el programa abrirá una consola visible y el navegador para completar el inicio de sesión de GitHub. Al terminar, la misma subida continúa automáticamente. GitHub CLI guarda la sesión en el almacén de credenciales del sistema; el generador no guarda ni solicita un token.
