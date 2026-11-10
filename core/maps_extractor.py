@@ -44,9 +44,9 @@ EXTRACTION_JS = r"""() => {
 
 PHOTO_TAB_JS = r"""() => {
   const root = document.querySelector('[role="main"]') || document.body;
-  const button = [...root.querySelectorAll('button,[role="button"],[role="tab"]')].find(el => {
-    const label = (el.innerText || el.getAttribute('aria-label') || '').trim();
-    return /ver fotos|\b\d+ fotos?\b|see photos|photos|fotos/i.test(label);
+  const button = [...root.querySelectorAll('button,[role="tab"]')].find(el => {
+    const label = (el.getAttribute('aria-label') || el.innerText || '').replace(/\s+/g, ' ').trim();
+    return /^(ver fotos|fotos|see photos|photos|\d+ fotos?)$/i.test(label);
   });
   if (!button) return false;
   button.click(); return true;
@@ -117,15 +117,9 @@ def _dismiss_optional_sign_in_prompt(page, log=None) -> bool:
 
 def extract_listing(url: str, get_photos: bool, log=None) -> dict:
     with sync_playwright() as p:
-        # Use the installed Chrome channel first. Google Maps can present an
-        # unnecessary sign-in prompt in Playwright's bundled Chromium even for
-        # public listings. This still opens a fresh, logged-out browser session.
-        try:
-            browser = p.chromium.launch(headless=False, channel="chrome")
-        except PlaywrightError:
-            if log:
-                log("WARN", "No se pudo iniciar Chrome instalado; se usará Chromium de Playwright.")
-            browser = p.chromium.launch(headless=False)
+        # Keep the same browser engine that previously opened public Maps
+        # listings without prompting for a Google account.
+        browser = p.chromium.launch(headless=False)
         try:
             page = browser.new_page(locale="es-AR")
             page.goto(url, wait_until="domcontentloaded", timeout=60000)
@@ -146,6 +140,7 @@ def extract_listing(url: str, get_photos: bool, log=None) -> dict:
                 opened_photos = _stable_evaluate(page, PHOTO_TAB_JS, "la apertura de fotos", log)
                 if opened_photos:
                     page.wait_for_timeout(800)
+                    _dismiss_optional_sign_in_prompt(page, log)
                     for photo_index in range(8):
                         current = _stable_evaluate(page, EXTRACTION_JS, "la lectura de fotos", log)
                         image_sources.extend(current.get("images", []))
@@ -159,13 +154,24 @@ def extract_listing(url: str, get_photos: bool, log=None) -> dict:
             # Load the actual review cards, even when the listing overview already exposed some snippets.
             opened_reviews = _stable_evaluate(page, r"""() => {
               const root = document.querySelector('[role="main"]') || document.body;
-              const tab = [...root.querySelectorAll('button,[role="tab"],[role="button"]')]
-                .find(el => /opiniones|reseñas|reviews|avis/i.test((el.innerText || el.getAttribute('aria-label') || '').trim()));
+              const isReviewsTab = el => {
+                const label = (el.getAttribute('aria-label') || el.innerText || '').replace(/\s+/g, ' ').trim();
+                return /^(opiniones|reseñas|reviews)(?:\s+\d+|\s*\(\d+\))?$/i.test(label);
+              };
+              // Prefer a real tab and require its exact accessible label; do
+              // not click an unrelated control based on a partial word match.
+              const tabs = [...root.querySelectorAll('[role="tab"]')];
+              const tab = tabs.find(isReviewsTab) || [...root.querySelectorAll('button')].find(isReviewsTab);
               if (!tab) return false;
               tab.click(); return true;
             }""", "la apertura de reseñas", log)
             if opened_reviews:
+                if log:
+                    log("INFO", "Se abrió la pestaña con etiqueta exacta de reseñas; leyendo su contenido público.")
                 page.wait_for_timeout(800)
+                _dismiss_optional_sign_in_prompt(page, log)
+                if "accounts.google.com" in page.url:
+                    raise RuntimeError("Al abrir reseñas, Google Maps redirigió a la pantalla de acceso. Se detuvo la extracción sin iniciar sesión.")
                 collected = list(data.get("reviews", []))
                 for _ in range(8):
                     current = _stable_evaluate(page, EXTRACTION_JS, "la lectura de reseñas", log)
@@ -188,6 +194,8 @@ def extract_listing(url: str, get_photos: bool, log=None) -> dict:
                     key = (review.get("author", ""), review.get("text", ""))
                     if key not in seen:
                         seen.add(key); data["reviews"].append(review)
+            elif log:
+                log("INFO", "No se encontró una pestaña exacta de reseñas; se usarán únicamente las opiniones visibles de la ficha.")
             data["finalUrl"] = listing_url
         finally:
             browser.close()
