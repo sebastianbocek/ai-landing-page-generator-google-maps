@@ -594,7 +594,7 @@ class App:
     def _work(self, payload, get_photos, template_name, use_whatsapp, variant, should_extract, api_key="", owner_notes="", model="gpt-4.1", direction="", public_url=""):
         try:
             self._log("INFO", "Extrayendo datos visibles de Maps…" if should_extract else "Reutilizando los datos de Maps guardados para regenerar.")
-            source_data = extract_listing(payload, get_photos) if should_extract else payload
+            source_data = extract_listing(payload, get_photos, log=self._log) if should_extract else payload
             self._log("INFO", f"Datos de ficha listos: negocio={source_data.get('name') or 'sin nombre'}, rubro={source_data.get('category') or 'sin categoría'}, fotos={len(source_data.get('photos', []))}, reseñas={len(source_data.get('reviews', []))}.")
             if owner_notes:
                 source_data["owner_notes"] = owner_notes

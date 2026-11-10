@@ -66,6 +66,8 @@ GitHub Pages puede tardar unos minutos en mostrar el sitio después de configura
 
 La extracción no intenta resolver CAPTCHA, entrar en cuentas ni eludir restricciones. La ficha puede cambiar según el idioma, el estado de carga o la estructura de Maps; los datos faltantes quedan vacíos y se indican en los archivos de salida. En “Lo que comparten sus clientes” solo se muestran reseñas auténticas con una puntuación estrictamente superior a 4 estrellas, tras validar su texto y origen. La calificación general del negocio se conserva como dato separado.
 
+Si Google Maps redirige la ficha mientras Playwright lee el contenido, el extractor espera a que la página se estabilice y reintenta la lectura hasta tres veces; cada reintento aparece en el Registro de actividad de la GUI.
+
 ## Qué decide la IA
 
 La IA actúa como directora creativa. Produce una especificación JSON validada, no HTML libre. Decide la familia de estilo, composición, secciones y redacción. El renderer propio controla las secciones, inserta únicamente datos disponibles, escapa contenido y construye los enlaces de contacto.

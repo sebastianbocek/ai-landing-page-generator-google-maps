@@ -3,7 +3,7 @@ from __future__ import annotations
 import re
 from datetime import datetime
 from urllib.parse import parse_qs, urlparse
-from playwright.sync_api import TimeoutError as PlaywrightTimeoutError, sync_playwright
+from playwright.sync_api import Error as PlaywrightError, TimeoutError as PlaywrightTimeoutError, sync_playwright
 
 
 def clean(value: str) -> str:
@@ -63,7 +63,36 @@ NEXT_PHOTO_JS = r"""() => {
 
 
 
-def extract_listing(url: str, get_photos: bool) -> dict:
+def _stable_evaluate(page, script: str, purpose: str, log=None, attempts: int = 4):
+    """Re-run a Maps DOM read after SPA redirects destroy the JS execution context."""
+    last_error = None
+    for attempt in range(1, attempts + 1):
+        try:
+            return page.evaluate(script)
+        except PlaywrightError as exc:
+            last_error = exc
+            message = str(exc).casefold()
+            navigation_race = any(token in message for token in (
+                "execution context was destroyed", "most likely because of a navigation",
+                "frame was detached", "cannot find context with specified id",
+            ))
+            if not navigation_race or attempt == attempts or page.is_closed():
+                raise
+            if log:
+                log("WARN", f"Google Maps navegó durante {purpose}; reintentando ({attempt}/{attempts - 1}).")
+            try:
+                page.wait_for_load_state("domcontentloaded", timeout=12000)
+            except PlaywrightTimeoutError:
+                pass
+            try:
+                page.locator('[role="main"]').wait_for(timeout=12000)
+            except PlaywrightTimeoutError:
+                pass
+            page.wait_for_timeout(450 * attempt)
+    raise RuntimeError(f"Google Maps no estabilizó la página durante {purpose}: {last_error}")
+
+
+def extract_listing(url: str, get_photos: bool, log=None) -> dict:
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         try:
@@ -74,17 +103,17 @@ def extract_listing(url: str, get_photos: bool) -> dict:
                 page.wait_for_timeout(2200)
             except PlaywrightTimeoutError:
                 pass
-            data = page.evaluate(EXTRACTION_JS)
+            data = _stable_evaluate(page, EXTRACTION_JS, "la lectura de la ficha", log)
             listing_url = data.get("finalUrl") or page.url
             if get_photos:
                 image_sources = list(data.get("images", []))
-                opened_photos = page.evaluate(PHOTO_TAB_JS)
+                opened_photos = _stable_evaluate(page, PHOTO_TAB_JS, "la apertura de fotos", log)
                 if opened_photos:
                     page.wait_for_timeout(800)
                     for photo_index in range(8):
-                        current = page.evaluate(EXTRACTION_JS)
+                        current = _stable_evaluate(page, EXTRACTION_JS, "la lectura de fotos", log)
                         image_sources.extend(current.get("images", []))
-                        if photo_index == 7 or not page.evaluate(NEXT_PHOTO_JS):
+                        if photo_index == 7 or not _stable_evaluate(page, NEXT_PHOTO_JS, "la navegación de fotos", log):
                             break
                         page.wait_for_timeout(300)
                     page.keyboard.press("Escape")
@@ -92,20 +121,20 @@ def extract_listing(url: str, get_photos: bool) -> dict:
                 data["images"] = list(dict.fromkeys(image_sources))[:24]
 
             # Load the actual review cards, even when the listing overview already exposed some snippets.
-            opened_reviews = page.evaluate(r"""() => {
+            opened_reviews = _stable_evaluate(page, r"""() => {
               const root = document.querySelector('[role="main"]') || document.body;
               const tab = [...root.querySelectorAll('button,[role="tab"],[role="button"]')]
                 .find(el => /opiniones|reseñas|reviews|avis/i.test((el.innerText || el.getAttribute('aria-label') || '').trim()));
               if (!tab) return false;
               tab.click(); return true;
-            }""")
+            }""", "la apertura de reseñas", log)
             if opened_reviews:
                 page.wait_for_timeout(800)
                 collected = list(data.get("reviews", []))
                 for _ in range(8):
-                    current = page.evaluate(EXTRACTION_JS)
+                    current = _stable_evaluate(page, EXTRACTION_JS, "la lectura de reseñas", log)
                     collected.extend(current.get("reviews", []))
-                    page.evaluate(r"""() => {
+                    _stable_evaluate(page, r"""() => {
                       const card = document.querySelector('[data-review-id],.jftiEf');
                       let node = card?.parentElement;
                       while (node && node !== document.body) {
@@ -115,7 +144,7 @@ def extract_listing(url: str, get_photos: bool) -> dict:
                         node = node.parentElement;
                       }
                       return false;
-                    }""")
+                    }""", "el desplazamiento de reseñas", log)
                     page.wait_for_timeout(300)
                 seen = set()
                 data["reviews"] = []
