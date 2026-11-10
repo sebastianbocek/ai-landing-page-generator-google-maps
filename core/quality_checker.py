@@ -22,11 +22,18 @@ def check_site(folder: Path, data: dict, screenshots: bool = True) -> dict:
             page = browser.new_page()
             page.on("pageerror", lambda error: report["console_errors"].append(str(error)[:300]))
             page.goto(file.resolve().as_uri(), wait_until="networkidle", timeout=45000)
-            page.wait_for_timeout(350)
+            # Let the entrance choreography finish before measuring or capturing
+            # the page; otherwise screenshots can show an invisible hero midway
+            # through its clip-path reveal.
+            page.wait_for_timeout(2800)
             report["title"] = page.title()
             report["h1_count"] = page.locator("h1").count()
             if report["h1_count"] != 1:
                 report["critical_errors"].append(f"Se esperaba un único H1, hay {report['h1_count']}.")
+            # Eagerly load offscreen photos before checking naturalWidth. Without
+            # this, browser lazy-loading can be reported as a broken local file.
+            page.locator("img:not(.viewer-image)").evaluate_all("els => els.forEach(img => img.loading = 'eager')")
+            page.evaluate("Promise.all([...document.querySelectorAll('img:not(.viewer-image)')].map(img => img.decode().catch(() => null)))")
             # The lightbox contains an intentionally empty image until a visitor opens it.
             image_results = page.locator("img").evaluate_all("els => els.filter(i => !(i.classList.contains('viewer-image') && !i.closest('dialog')?.open)).map(i => ({src:i.currentSrc||i.src, ok:i.complete && i.naturalWidth>0}))")
             report["broken_images"] = [item["src"] for item in image_results if not item["ok"]]
@@ -65,11 +72,12 @@ def check_site(folder: Path, data: dict, screenshots: bool = True) -> dict:
                         report["critical_errors"].append("El menú móvil no se abre.")
                     page.locator(".menu").click()
                 if screenshots and key in {"mobile_375", "desktop_1440"}:
-                    # Trigger scroll reveal animations before capturing the full page.
-                    page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-                    page.wait_for_timeout(750)
+                    # Trigger each reveal and allow its GSAP entrance to settle.
+                    for section in page.locator(".reveal").all():
+                        section.scroll_into_view_if_needed(timeout=3000)
+                        page.wait_for_timeout(520)
                     page.evaluate("window.scrollTo(0, 0)")
-                    page.wait_for_timeout(250)
+                    page.wait_for_timeout(450)
                     page.screenshot(path=str(shots / ("mobile.png" if width < 500 else "desktop.png")), full_page=True)
                     report["screenshots"].append(str(Path("screenshots") / ("mobile.png" if width < 500 else "desktop.png")))
             browser.close()

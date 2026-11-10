@@ -115,6 +115,7 @@ def inline_motion_bundle() -> str:
     contemporary_local: { duration: 0.72, stagger: 0.1, ease: "power3.out", heading: "words", mask: 0.92 }
   };
   const profile = profiles[direction] || profiles.modern_minimal;
+  const headingMode = effects.includes("editorial_reveal") ? "lines" : profile.heading;
 
   const makeLines = (element) => {
     if (!element || element.dataset.linesReady) return [];
@@ -155,7 +156,7 @@ def inline_motion_bundle() -> str:
   };
   const heading = document.querySelector("[data-motion-heading]");
   let titleTargets = [];
-  if (profile.heading === "lines") titleTargets = makeLines(heading);
+  if (headingMode === "lines") titleTargets = makeLines(heading);
   else if (heading) {
     const text = heading.textContent.trim();
     heading.setAttribute("aria-label", text);
@@ -175,13 +176,18 @@ def inline_motion_bundle() -> str:
   const hero = gsap.timeline({ defaults: { ease: profile.ease } });
   hero.fromTo(".nav", { y: -14, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 0.45 })
     .fromTo(".hero-copy > .eyebrow", { y: 18, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: profile.duration * 0.72 }, "-=0.12")
-    .fromTo(titleTargets, { yPercent: profile.heading === "lines" ? 112 : 38, autoAlpha: 0 },
-      { yPercent: 0, autoAlpha: 1, duration: profile.duration, stagger: profile.stagger }, "-=0.12")
+    .fromTo(titleTargets, { yPercent: headingMode === "lines" ? 112 : 38, autoAlpha: 0 },
+      { yPercent: 0, autoAlpha: 1, duration: profile.duration, stagger: effects.includes("editorial_reveal") ? Math.max(0.12, profile.stagger) : profile.stagger }, "-=0.12")
     .fromTo(".hero-copy > p, .hero-copy .actions, .hero-rating",
       { y: direction === "bold_creative" ? 26 : 14, autoAlpha: 0 },
       { y: 0, autoAlpha: 1, duration: profile.duration * 0.82, stagger: profile.stagger * 0.75 }, "-=0.16")
-    .fromTo(".hero-media", { clipPath: "inset(0 0 100% 0)", autoAlpha: 0 },
-      { clipPath: "inset(0 0 0% 0)", autoAlpha: 1, duration: profile.mask }, "-=0.46")
+    .fromTo(".hero-media", {
+      clipPath: effects.includes("editorial_reveal") ? "inset(0 0 0 100% round 18px)" : "inset(0 0 100% 0)",
+      autoAlpha: 0
+    }, {
+      clipPath: effects.includes("editorial_reveal") ? "inset(0 0 0 0 round 18px)" : "inset(0 0 0% 0)",
+      autoAlpha: 1, duration: effects.includes("editorial_reveal") ? Math.max(1.05, profile.mask) : profile.mask
+    }, "-=0.46")
     .fromTo(".hero-photo, .hero-art", { scale: direction === "luxury" ? 1.12 : 1.06 },
       { scale: 1, duration: profile.mask + 0.25 }, "<");
 
@@ -197,6 +203,15 @@ def inline_motion_bundle() -> str:
       ease: profile.ease, scrollTrigger: { trigger: section, start: "top 78%", once: true }
     });
   });
+
+  if (effects.includes("editorial_reveal")) {
+    document.querySelectorAll(".section-head h2").forEach((heading) => {
+      gsap.fromTo(heading, { yPercent: 55, autoAlpha: 0 }, {
+        yPercent: 0, autoAlpha: 1, duration: 0.9, ease: "power3.out",
+        scrollTrigger: { trigger: heading, start: "top 88%", once: true }
+      });
+    });
+  }
 
   const progress = document.querySelector(".scroll-progress");
   if (progress) gsap.to(progress, {
