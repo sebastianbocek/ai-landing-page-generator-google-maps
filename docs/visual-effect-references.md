@@ -24,7 +24,7 @@ Son búsquedas dinámicas, no colecciones con una lista finita de plantillas par
 
 ## Efectos propios del generador
 
-La especificación JSON asistida por IA elige uno o dos efectos compatibles con la dirección artística, rubro, cantidad de fotos y material disponible. Cada regeneración recibe una clave de variación para que el modelo pueda diferenciar versiones sin perder coherencia:
+La especificación JSON asistida por IA elige uno o dos efectos compatibles con la dirección artística, rubro, cantidad de fotos y material disponible. Cada regeneración recibe una clave de variación y las firmas visuales de los seis borradores anteriores más recientes para que el modelo evite repetir la misma combinación sin perder coherencia:
 
 - `glass_surfaces`: paneles translúcidos de apoyo; se limita a direcciones visuales que lo toleran.
 - `ambient_orbits`: detalles orbitales CSS decorativos detrás/alrededor de la imagen, sin simular fotografías del negocio.

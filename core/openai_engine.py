@@ -3,7 +3,9 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 import time
+import unicodedata
 from pathlib import Path
 
 from .data_cleaner import business_cache_key
@@ -44,10 +46,11 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
     facts["creative_variant"] = int(variant) + 1
     facts["variation_key"] = hashlib.sha256(f"{data.get('name')}:{data.get('category')}:{family}:{variant}".encode()).hexdigest()[:10]
     facts["available_visual_effects"] = list(VISUAL_EFFECTS)
+    facts["previous_designs"] = _previous_design_directions(data, usage_dir)
     prompt = (
         "Sos director creativo y estratega de contenido para sitios locales. Diseñá una página original, moderna, "
         "minimalista y en español argentino. Devuelve una especificación JSON exacta al esquema. Elige dirección artística, "
-        "composición, photo_treatment y visual_effects. Elegí uno o dos efectos (nunca una lista vacía) analizando rubro, dirección artística, fotos y meta comercial; el renderer ejecutará exactamente esa selección. Priorizá al menos un efecto perceptible después de la entrada. No elijas siempre editorial_reveal: rota creativamente entre variantes, usando creative_variant y variation_key como semilla para producir una dirección distinta cuando sea apropiado, sin aleatoriedad que contradiga el rubro. No uses la misma combinación por defecto en todos los sitios. "
+        "composición, photo_treatment y visual_effects. Elegí uno o dos efectos (nunca una lista vacía) analizando rubro, dirección artística, fotos y meta comercial; el renderer ejecutará exactamente esa selección. Priorizá al menos un efecto perceptible después de la entrada. No elijas siempre editorial_reveal: usa creative_variant y variation_key para producir una dirección distinta sin aleatoriedad que contradiga el rubro. Compara con previous_designs y evita repetir la combinación, layout y dirección artística más recientes; cambia al menos uno y, si encaja, dos de esos ejes. No uses la misma combinación por defecto en todos los sitios. "
         "Catálogo visual_effects: glass_surfaces (superficies translúcidas en puntos de interfaz, solo si el estilo lo sostiene), ambient_orbits (motivo orbital animado en el hero, sin reemplazar fotos reales), editorial_reveal (título por líneas y máscara horizontal del hero), kinetic_gallery (recorrido táctil por galería solo con 4 o más fotos relevantes), photo_depth (respuesta 3D/parallax del hero al puntero y transición Flip al ampliar foto). Usa exclusivamente valores de available_visual_effects. Evita glass en salud y rubros que requieren confianza sobria; en esos casos elige reveal editorial o profundidad de foto. La variación debe cambiar al menos un efecto o la composición frente a otras versiones de la misma ficha cuando sea compatible. "
         "Combina el peso visual del hero, el espacio en blanco y las secciones en un ritmo editorial; evita bloques centrados repetidos. "
         "Usa exclusivamente los hechos entregados. No inventes servicios, "
@@ -96,6 +99,24 @@ def record_usage(model: str, input_tokens: int, output_tokens: int, estimated_co
     row = {"timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()), "model": model, "input_tokens": input_tokens, "output_tokens": output_tokens, "estimated_cost_usd": estimated_cost}
     with (target / "openai-usage.jsonl").open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+
+def _previous_design_directions(data: dict, usage_dir: Path | None, limit: int = 6) -> list[dict]:
+    """Give the creative director compact signatures of earlier local drafts."""
+    base = usage_dir or ROOT / "usage"
+    output_root = base.parent / "salida"
+    raw = unicodedata.normalize("NFKD", str(data.get("name") or "negocio")).encode("ascii", "ignore").decode()
+    slug = re.sub(r"[^a-zA-Z0-9]+", "-", raw).strip("-").lower() or "negocio"
+    folders = sorted(output_root.glob(f"{slug}-landing*"), key=lambda folder: folder.stat().st_mtime, reverse=True)
+    previous = []
+    for folder in folders[:limit]:
+        spec_file = folder / "design_spec.json"
+        try:
+            spec = json.loads(spec_file.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        previous.append({key: spec.get(key) for key in ("art_direction", "layout", "photo_treatment", "visual_effects")})
+    return previous
 
 
 def fallback_after_api_error(data: dict, family: str, error: Exception, variant: int = 0) -> dict:
