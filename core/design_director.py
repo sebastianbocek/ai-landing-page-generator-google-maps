@@ -4,7 +4,7 @@ import hashlib
 
 ART_DIRECTIONS = ("editorial_premium", "luxury", "modern_minimal", "corporate_premium", "bold_creative", "organic_natural", "dark_elegant", "contemporary_local")
 PHOTO_TREATMENTS = ("editorial_crop", "bento_mosaic", "film_strip", "minimal_grid")
-VISUAL_EFFECTS = ("glass_surfaces", "ambient_orbits", "editorial_reveal", "kinetic_gallery", "none")
+VISUAL_EFFECTS = ("glass_surfaces", "ambient_orbits", "editorial_reveal", "kinetic_gallery", "photo_depth")
 PALETTES = {
     "editorial_premium": ("#f4f0e8", "#fffdf9", "#202520", "#23675d"),
     "luxury": ("#171715", "#22211e", "#f4efe5", "#c7a66a"),
@@ -53,9 +53,10 @@ def validate_design_spec(spec: dict) -> dict:
         spec["visual_effects"] = []
     if (not isinstance(spec["visual_effects"], list) or len(spec["visual_effects"]) > 2
             or any(effect not in VISUAL_EFFECTS for effect in spec["visual_effects"])
-            or ("none" in spec["visual_effects"] and len(spec["visual_effects"]) > 1)
             or len(set(spec["visual_effects"])) != len(spec["visual_effects"])):
         raise ValueError("La selección de efectos visuales no es válida.")
+    if not spec["visual_effects"]:
+        raise ValueError("La dirección de diseño debe elegir al menos un efecto visual.")
     for group, keys in (("hero", ("headline", "description")), ("introduction", ("title", "text")), ("contact", ("title", "text")), ("seo", ("title", "description"))):
         if any(not isinstance(spec[group].get(k), str) for k in keys):
             raise ValueError(f"La sección {group} tiene contenido no válido.")
@@ -64,13 +65,9 @@ def validate_design_spec(spec: dict) -> dict:
     return spec
 
 
-def adapt_visual_effects(spec: dict, data: dict) -> dict:
-    """Add one compatible interaction when the AI chose only an entrance effect.
-
-    Entrance motion alone is invisible in a finished screenshot. A second,
-    content-aware treatment gives the published page a recognizable interaction.
-    """
-    effects = [item for item in spec.get("visual_effects", []) if item != "none"]
+def apply_local_visual_effect_policy(spec: dict, data: dict) -> dict:
+    """Choose content-aware visual treatments when generation runs without AI."""
+    effects = list(spec.get("visual_effects", []))
     category = str(data.get("category") or "").casefold()
     direction = spec.get("art_direction", "modern_minimal")
     photo_count = len(data.get("photos", []))
@@ -109,6 +106,10 @@ def _local_effects(data: dict, direction: str, seed: int) -> list[str]:
         effects.append("editorial_reveal")
     if photos >= 4 and any(word in category for word in ("belleza", "peluquer", "restaurante", "hotel", "fotograf", "estética", "estetica")):
         effects.append("kinetic_gallery")
+    if photos and not effects:
+        effects.append("photo_depth")
+    if not effects:
+        effects.append("ambient_orbits")
     return list(dict.fromkeys(effects))[:2]
 
 

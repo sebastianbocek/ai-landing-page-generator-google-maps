@@ -148,6 +148,8 @@ def _effect_css(effects: list[str]) -> str:
         rules.append("body[data-effects*='editorial_reveal'] .hero-line-clip,body[data-effects*='editorial_reveal'] .section-head{overflow:hidden}body[data-effects*='editorial_reveal'] .hero-line-clip{padding-bottom:.12em;margin-bottom:-.12em}body[data-effects*='editorial_reveal'] .hero-photo{will-change:clip-path,transform}body[data-effects*='editorial_reveal'] .section-head h2{text-wrap:balance}")
     if "kinetic_gallery" in effects:
         rules.append("body[data-effects*='kinetic_gallery'] .gallery-grid .photo-trigger{transform:translateY(var(--gallery-offset,0));transition:transform .7s cubic-bezier(.2,.75,.25,1),box-shadow .45s}body[data-effects*='kinetic_gallery'] .gallery-grid .photo-trigger:nth-child(even){--gallery-offset:18px}body[data-effects*='kinetic_gallery'] .gallery-grid .photo-trigger:hover{--gallery-offset:0}")
+    if "photo_depth" in effects:
+        rules.append("body[data-effects*='photo_depth'] .hero-photo-trigger{perspective:1100px;transform-style:preserve-3d}body[data-effects*='photo_depth'] .hero-photo{transform-style:preserve-3d;will-change:transform,filter;transition:filter .35s,box-shadow .45s}body[data-effects*='photo_depth'] .hero-photo-trigger:hover .hero-photo{filter:saturate(1.08) contrast(1.02);box-shadow:0 34px 86px color-mix(in srgb,var(--ink) 25%,transparent)}@media(hover:none){body[data-effects*='photo_depth'] .hero-photo{will-change:auto}}@media(prefers-reduced-motion:reduce){body[data-effects*='photo_depth'] .hero-photo{will-change:auto}}")
     return "".join(rules)
 
 

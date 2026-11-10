@@ -76,6 +76,13 @@ ART_LABELS = {
     "Elegante oscuro": "dark_elegant",
     "Negocio local contemporáneo": "contemporary_local",
 }
+EFFECT_LABELS = {
+    "glass_surfaces": "superficies glass",
+    "ambient_orbits": "órbitas ambientales",
+    "editorial_reveal": "revelado editorial",
+    "kinetic_gallery": "galería cinética",
+    "photo_depth": "profundidad interactiva",
+}
 
 
 def infer_template_family(category: str) -> str:
@@ -621,10 +628,12 @@ class App:
         report = json.loads((folder / "quality_report.json").read_text(encoding="utf-8"))
         quality = "QA aprobado" if report.get("status") == "passed" else "QA requiere revisión"
         self._log("INFO", f"Control de calidad finalizado: {quality}; errores críticos={len(report.get('critical_errors', []))}, advertencias={len(report.get('warnings', []))}.")
-        self.status.set(f"{mode} · {quality} · dirección {content.get('art_direction')}\nGuardada: {folder}\nLas versiones anteriores se conservan en salida/.")
+        effects = ", ".join(EFFECT_LABELS.get(effect, effect) for effect in content.get("visual_effects", [])) or "ninguno"
+        effect_author = "elegidos por IA" if content.get("source") in {"openai", "openai_cache"} else "seleccionados en modo local"
+        self.status.set(f"{mode} · {quality} · dirección {content.get('art_direction')}\nEfectos {effect_author}: {effects}\nGuardada: {folder}\nLas versiones anteriores se conservan en salida/.")
         webbrowser.open((folder / "index.html").as_uri())
         notice = f"\n\nLa IA no respondió; se usó el modo local. Detalle: {content['api_error']}" if content.get("api_error") else ""
-        messagebox.showinfo("Landing creada", f"Borrador de {data['name']} listo.\nModo: {mode}.\nControl: {quality}.{notice}\n\nNo se borró ninguna versión anterior.\n\nCarpeta:\n{folder}")
+        messagebox.showinfo("Landing creada", f"Borrador de {data['name']} listo.\nModo: {mode}.\nControl: {quality}.\nEfectos: {effects}.{notice}\n\nNo se borró ninguna versión anterior.\n\nCarpeta:\n{folder}")
 
     def _error(self, text):
         self._set_busy(False, "✧  GENERAR LANDING PAGE")

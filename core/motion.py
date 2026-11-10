@@ -47,7 +47,7 @@ def inline_motion_bundle() -> str:
 
   const closeViewer = () => {
     if (!dialog || !dialog.open) return;
-    const state = gsapReady && !reduced && viewerImage ? Flip.getState(viewerImage) : null;
+    const state = effects.includes("photo_depth") && gsapReady && !reduced && viewerImage ? Flip.getState(viewerImage) : null;
     dialog.close();
     if (state && triggerBeforeOpen) {
       Flip.from(state, {
@@ -62,7 +62,7 @@ def inline_motion_bundle() -> str:
     trigger.addEventListener("click", () => {
       const source = trigger.querySelector("img");
       triggerBeforeOpen = trigger;
-      const state = gsapReady && !reduced ? Flip.getState(source) : null;
+      const state = effects.includes("photo_depth") && gsapReady && !reduced ? Flip.getState(source) : null;
       paintViewer(photos.indexOf(source), 1, false);
       if (!dialog.open) dialog.showModal();
       if (state) requestAnimationFrame(() => Flip.from(state, {
@@ -256,12 +256,19 @@ def inline_motion_bundle() -> str:
     });
     const media = document.querySelector(".hero-media");
     const photo = media?.querySelector(".hero-photo");
-    if (media && photo) {
+    if (media && photo && effects.includes("photo_depth")) {
       media.addEventListener("pointermove", (event) => {
         const box = media.getBoundingClientRect();
-        gsap.to(photo, { x: (event.clientX - box.left - box.width / 2) * 0.009, y: (event.clientY - box.top - box.height / 2) * 0.009, duration: 0.5 });
+        const dx = event.clientX - box.left - box.width / 2;
+        const dy = event.clientY - box.top - box.height / 2;
+        gsap.to(photo, {
+          x: dx * 0.022, y: dy * 0.022,
+          rotationY: dx * 0.018, rotationX: -dy * 0.014,
+          scale: 1.045, transformPerspective: 1100,
+          duration: 0.36, ease: "power2.out"
+        });
       });
-      media.addEventListener("pointerleave", () => gsap.to(photo, { x: 0, y: 0, duration: 0.65 }));
+      media.addEventListener("pointerleave", () => gsap.to(photo, { x: 0, y: 0, rotationX: 0, rotationY: 0, scale: 1, duration: 0.65, ease: "power3.out" }));
     }
   }
 })();

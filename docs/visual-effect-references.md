@@ -24,11 +24,12 @@ Son búsquedas dinámicas, no colecciones con una lista finita de plantillas par
 
 ## Efectos propios del generador
 
-La especificación JSON asistida por IA permite elegir cero, uno o dos efectos compatibles con la dirección artística, rubro, cantidad de fotos y material disponible:
+La especificación JSON asistida por IA elige uno o dos efectos compatibles con la dirección artística, rubro, cantidad de fotos y material disponible. Cada regeneración recibe una clave de variación para que el modelo pueda diferenciar versiones sin perder coherencia:
 
 - `glass_surfaces`: paneles translúcidos de apoyo; se limita a direcciones visuales que lo toleran.
 - `ambient_orbits`: detalles orbitales CSS decorativos detrás/alrededor de la imagen, sin simular fotografías del negocio.
 - `editorial_reveal`: énfasis tipográfico y revelados dentro del sistema de movimiento existente.
 - `kinetic_gallery`: desplazamiento guiado de galería cuando existen al menos cuatro fotos; en pantallas táctiles conserva el scroll nativo.
+- `photo_depth`: movimiento 3D del hero según el puntero y transición Flip al ampliar una fotografía.
 
-El JSON estricto impide devolver nombres de efecto arbitrarios. En modo local se seleccionan efectos mediante reglas de contenido. `prefers-reduced-motion` desactiva animaciones decorativas; los estilos se integran al HTML de salida y no requieren cargar CodePen ni un CDN.
+El JSON estricto impide devolver nombres de efecto arbitrarios. En modo API el modelo elige los efectos y el renderer ejecuta esa lista; en modo local se seleccionan mediante reglas de contenido. `prefers-reduced-motion` desactiva animaciones decorativas; los estilos se integran al HTML de salida y no requieren cargar CodePen ni un CDN.

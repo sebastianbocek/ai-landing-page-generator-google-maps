@@ -1,12 +1,13 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import time
 from pathlib import Path
 
 from .data_cleaner import business_cache_key
-from .design_director import ART_DIRECTIONS, adapt_visual_effects, local_design_spec, validate_design_spec
+from .design_director import ART_DIRECTIONS, VISUAL_EFFECTS, apply_local_visual_effect_policy, local_design_spec, validate_design_spec
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = json.loads((ROOT / "schemas" / "landing_schema.json").read_text(encoding="utf-8"))
@@ -21,7 +22,7 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
         if art_direction_override not in ART_DIRECTIONS:
             raise ValueError("La dirección artística manual no es válida.")
         fallback["art_direction"] = art_direction_override
-    adapt_visual_effects(fallback, data)
+    apply_local_visual_effect_policy(fallback, data)
     if not api_key.strip():
         return fallback
     cache_root = (usage_dir or ROOT / "usage") / "cache"
@@ -31,10 +32,8 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
     if cache_file.is_file():
         try:
             cached = json.loads(cache_file.read_text(encoding="utf-8"))
-            adapt_visual_effects(cached, data)
             validate_design_spec(cached)
             cached["source"] = "openai_cache"
-            cache_file.write_text(json.dumps(cached, ensure_ascii=False, indent=2), encoding="utf-8")
             return cached
         except (OSError, ValueError, json.JSONDecodeError):
             cache_file.unlink(missing_ok=True)
@@ -42,11 +41,14 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
     client = OpenAI(api_key=api_key.strip(), max_retries=1, timeout=90)
     facts = {k: data.get(k) for k in ("name", "category", "description", "address", "city", "coordinates", "hours_visible", "rating", "review_count", "reviews", "owner_notes") if data.get(k)}
     facts["photo_count"] = len(data.get("photos", []))
+    facts["creative_variant"] = int(variant) + 1
+    facts["variation_key"] = hashlib.sha256(f"{data.get('name')}:{data.get('category')}:{family}:{variant}".encode()).hexdigest()[:10]
+    facts["available_visual_effects"] = list(VISUAL_EFFECTS)
     prompt = (
         "Sos director creativo y estratega de contenido para sitios locales. Diseñá una página original, moderna, "
         "minimalista y en español argentino. Devuelve una especificación JSON exacta al esquema. Elige dirección artística, "
-        "composición, photo_treatment y un efecto visual distintivo más un complemento cuando el material lo permita. Elige hasta dos visual_effects del catálogo según rubro, dirección artística y cantidad de fotografías; prioriza una interacción o una capa visual que siga perceptible luego de cargar, no solo una animación de entrada. No uses una cuadrícula idéntica en todos los sitios. "
-        "Efectos disponibles: glass_surfaces (acentos de vidrio, solo para estilos modernos/tech), ambient_orbits (formas atmosféricas abstractas cuando no sustituyan fotos reales), editorial_reveal (título revelado por líneas y máscara horizontal de hero, con entrada visible pero refinada) y kinetic_gallery (galería táctil/animada solo con al menos 4 fotos relevantes). Usa [] si no aporta. Evita glass en salud y rubros que requieren confianza sobria; no fuerces todos los efectos en cada web. Nunca marques none junto con otro efecto. "
+        "composición, photo_treatment y visual_effects. Elegí uno o dos efectos (nunca una lista vacía) analizando rubro, dirección artística, fotos y meta comercial; el renderer ejecutará exactamente esa selección. Priorizá al menos un efecto perceptible después de la entrada. No elijas siempre editorial_reveal: rota creativamente entre variantes, usando creative_variant y variation_key como semilla para producir una dirección distinta cuando sea apropiado, sin aleatoriedad que contradiga el rubro. No uses la misma combinación por defecto en todos los sitios. "
+        "Catálogo visual_effects: glass_surfaces (superficies translúcidas en puntos de interfaz, solo si el estilo lo sostiene), ambient_orbits (motivo orbital animado en el hero, sin reemplazar fotos reales), editorial_reveal (título por líneas y máscara horizontal del hero), kinetic_gallery (recorrido táctil por galería solo con 4 o más fotos relevantes), photo_depth (respuesta 3D/parallax del hero al puntero y transición Flip al ampliar foto). Usa exclusivamente valores de available_visual_effects. Evita glass en salud y rubros que requieren confianza sobria; en esos casos elige reveal editorial o profundidad de foto. La variación debe cambiar al menos un efecto o la composición frente a otras versiones de la misma ficha cuando sea compatible. "
         "Combina el peso visual del hero, el espacio en blanco y las secciones en un ritmo editorial; evita bloques centrados repetidos. "
         "Usa exclusivamente los hechos entregados. No inventes servicios, "
         "equipo, certificaciones, horarios, premios, resultados, testimonios, precios, experiencia, atención personalizada, "
@@ -71,7 +73,6 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
             result["art_direction"] = art_direction_override
         if len(data.get("photos", [])) < 4:
             result["visual_effects"] = [effect for effect in result.get("visual_effects", []) if effect != "kinetic_gallery"]
-        adapt_visual_effects(result, data)
         result["source"] = "openai"
         validate_design_spec(result)
         usage = getattr(response, "usage", None)
@@ -99,6 +100,6 @@ def record_usage(model: str, input_tokens: int, output_tokens: int, estimated_co
 
 def fallback_after_api_error(data: dict, family: str, error: Exception, variant: int = 0) -> dict:
     result = local_design_spec(data, family, variant)
-    adapt_visual_effects(result, data)
+    apply_local_visual_effect_policy(result, data)
     result["api_error"] = f"{type(error).__name__}: {str(error)[:240]}"
     return result
