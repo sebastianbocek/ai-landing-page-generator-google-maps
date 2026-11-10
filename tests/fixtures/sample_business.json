@@ -1,0 +1,18 @@
+{
+  "test_data": true,
+  "name": "Estudio de Salud de Prueba",
+  "category": "Kinesiólogo",
+  "description": "Centro ficticio para pruebas automatizadas; no representa un negocio real.",
+  "address": "Calle de Prueba 100, Ciudad Demo, Argentina",
+  "phone": "011 15-5555-0123",
+  "website": "",
+  "rating": "4.8",
+  "review_count": "12",
+  "source_url": "https://www.google.com/maps/place/TEST-DATA",
+  "photos": [],
+  "reviews": [
+    {"author": "Persona de prueba", "text": "La atención fue clara y amable durante la consulta.", "rating": "5", "date": "Hace una semana"},
+    {"author": "Usuario de Google", "text": "Foto de persona de prueba", "rating": "", "date": ""},
+    {"author": "Persona de prueba", "text": "La atención fue clara y amable durante la consulta.", "rating": "5", "date": "Hace una semana"}
+  ]
+}

@@ -1,0 +1,10 @@
+:root {
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --content-width: 70rem;
+  --motion-fast: 180ms;
+  --motion-standard: 280ms;
+}

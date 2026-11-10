@@ -1,0 +1,5 @@
+/* Base breakpoints are included in the standalone page renderer so output has no CSS dependency. */
+@media (max-width: 760px) {
+  .service-grid, .review-grid { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

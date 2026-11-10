@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["industry", "goal", "art_direction", "layout", "photo_treatment", "sections", "hero", "introduction", "services", "contact", "seo"],
+  "properties": {
+    "industry": {"type": "string"},
+    "goal": {"type": "string"},
+    "art_direction": {"type": "string", "enum": ["editorial_premium", "luxury", "modern_minimal", "corporate_premium", "bold_creative", "organic_natural", "dark_elegant", "contemporary_local"]},
+    "layout": {"type": "string", "enum": ["split", "editorial", "centered", "immersive"]},
+    "photo_treatment": {"type": "string", "enum": ["editorial_crop", "bento_mosaic", "film_strip", "minimal_grid"]},
+    "sections": {"type": "array", "items": {"type": "string", "enum": ["trust", "introduction", "services", "gallery", "reviews", "location", "contact"]}},
+    "hero": {"type": "object", "additionalProperties": false, "required": ["eyebrow", "headline", "description", "primary_cta", "secondary_cta", "visual_note"], "properties": {"eyebrow": {"type": "string"}, "headline": {"type": "string"}, "description": {"type": "string"}, "primary_cta": {"type": "string"}, "secondary_cta": {"type": "string"}, "visual_note": {"type": "string"}}},
+    "introduction": {"type": "object", "additionalProperties": false, "required": ["title", "text"], "properties": {"title": {"type": "string"}, "text": {"type": "string"}}},
+    "services": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["title", "description"], "properties": {"title": {"type": "string"}, "description": {"type": "string"}}}},
+    "contact": {"type": "object", "additionalProperties": false, "required": ["title", "text"], "properties": {"title": {"type": "string"}, "text": {"type": "string"}}},
+    "seo": {"type": "object", "additionalProperties": false, "required": ["title", "description"], "properties": {"title": {"type": "string"}, "description": {"type": "string"}}}
+  }
+}

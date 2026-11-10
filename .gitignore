@@ -1,0 +1,10 @@
+.env
+usage/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tests/preview-output/
+.codex-gsap-tmp/
+salida/
+plantillas/fuentes/
+**/__pycache__/

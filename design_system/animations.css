@@ -1,0 +1,7 @@
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy, .hero-media, .section-head { animation: enter .55s ease-out both; }
+  .hero-media { animation-delay: 90ms; }
+  .service-card, .review-card { transition: transform var(--motion-standard), box-shadow var(--motion-standard); }
+  .service-card:hover, .review-card:hover { transform: translateY(-3px); box-shadow: 0 16px 42px #16221d14; }
+  @keyframes enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+}
