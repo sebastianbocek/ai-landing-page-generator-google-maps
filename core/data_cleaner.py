@@ -65,7 +65,7 @@ def normalize_business(data: dict) -> dict:
 
 def business_cache_key(data: dict, model: str, family: str, variant: int) -> str:
     import hashlib, json
-    relevant = {k: data.get(k) for k in ("name", "category", "address", "rating", "review_count", "reviews", "owner_notes")}
+    relevant = {k: data.get(k) for k in ("name", "category", "address", "phone_e164", "rating", "review_count", "reviews", "owner_notes")}
     relevant["photo_count"] = len(data.get("photos", []))
     relevant.update(model=model, family=family, variant=variant)
     payload = json.dumps(relevant, sort_keys=True, ensure_ascii=False)
@@ -102,3 +102,19 @@ def normalize_phone_ar(raw: str) -> tuple[str, str]:
         return "", "invalid_length"
     mobile = international and digits.startswith("549") or (not international and "15" in digits)
     return ("+549" if mobile else "+54") + national, "validated_argentina_mobile" if mobile else "validated_argentina_number"
+
+
+def normalize_whatsapp_number(raw: str) -> tuple[str, str]:
+    """Validate an explicitly international number, or normalize an Argentine local number."""
+    value = clean_text(raw)
+    digits = re.sub(r"\D", "", value)
+    if not digits:
+        return "", "missing"
+    explicit = value.startswith("+") or digits.startswith("00")
+    if explicit:
+        if digits.startswith("00"):
+            digits = digits[2:]
+        if not 8 <= len(digits) <= 15:
+            return "", "invalid_international_length"
+        return "+" + digits, "validated_international_number"
+    return normalize_phone_ar(value)

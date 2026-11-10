@@ -305,6 +305,8 @@ class App:
         self.get_photos = BooleanVar(value=True)
         self.configure_whatsapp = BooleanVar(value=True)
         self.logo_path = StringVar(value="")
+        self.business_name_override = StringVar(value="")
+        self.whatsapp_number_override = StringVar(value="")
         self.extra_photo_paths = []
         self.extra_photo_summary = StringVar(value="No hay fotos adicionales seleccionadas.")
         self.status = StringVar(value="Vista previa local: no se publica automáticamente.")
@@ -346,6 +348,12 @@ class App:
         tk.Label(outer, text="GENERADOR DE SITIOS WEB DESDE UNA FICHA DE MAPS", bg=self.CARD, fg=self.MUTED, font=("Segoe UI", 9)).pack(anchor="w", padx=22, pady=(0, 19))
         self._label(outer, "URL DE GOOGLE MAPS")
         tk.Entry(outer, textvariable=self.url, bg=self.BG, fg=self.FG, insertbackground=self.FG, relief="flat", highlightthickness=1, highlightbackground=self.BORDER, highlightcolor=self.GREEN, font=("Segoe UI", 10)).pack(fill="x", padx=22, ipady=13)
+        self._label(outer, "NOMBRE DEL NEGOCIO (OPCIONAL)")
+        tk.Entry(outer, textvariable=self.business_name_override, bg=self.BG, fg=self.FG, insertbackground=self.FG, relief="flat", highlightthickness=1, highlightbackground=self.BORDER, highlightcolor=self.GREEN, font=("Segoe UI", 10)).pack(fill="x", padx=22, ipady=10)
+        tk.Label(outer, text="Si lo dejas vacío, se usa el nombre de la ficha de Google Maps.", bg=self.CARD, fg="#7f8983", font=("Segoe UI", 8), wraplength=580, justify="left").pack(anchor="w", padx=22, pady=(5, 0))
+        self._label(outer, "TELÉFONO DE CONTACTO / WHATSAPP (OPCIONAL)")
+        tk.Entry(outer, textvariable=self.whatsapp_number_override, bg=self.BG, fg=self.FG, insertbackground=self.FG, relief="flat", highlightthickness=1, highlightbackground=self.BORDER, highlightcolor=self.GREEN, font=("Segoe UI", 10)).pack(fill="x", padx=22, ipady=10)
+        tk.Label(outer, text="Al completarlo, reemplaza el número visible, los enlaces para llamar y el WhatsApp en toda la landing. Incluye el prefijo internacional, por ejemplo +54 9 11 1234-5678. Vacío = número de Maps.", bg=self.CARD, fg="#7f8983", font=("Segoe UI", 8), wraplength=580, justify="left").pack(anchor="w", padx=22, pady=(5, 0))
         self._label(outer, "URL PÚBLICA FINAL DEL SITIO (OPCIONAL)")
         tk.Entry(outer, textvariable=self.public_url, bg=self.BG, fg=self.FG, insertbackground=self.FG, relief="flat", highlightthickness=1, highlightbackground=self.BORDER, highlightcolor=self.GREEN, font=("Segoe UI", 10)).pack(fill="x", padx=22, ipady=11)
         tk.Label(outer, text="Al publicarlo, pega aquí la URL HTTPS definitiva para generar canonical, Open Graph y sitemap. Sin ella, la vista previa queda en noindex.", bg=self.CARD, fg="#7f8983", font=("Segoe UI", 8), wraplength=580, justify="left").pack(anchor="w", padx=22, pady=(5, 0))
@@ -439,6 +447,13 @@ class App:
         if not self.get_info.get():
             messagebox.showinfo("Información necesaria", "Activa la extracción de información para generar una landing con los datos del negocio.")
             return
+        custom_whatsapp = self.whatsapp_number_override.get().strip()
+        if custom_whatsapp:
+            from core.data_cleaner import normalize_whatsapp_number
+            normalized, reason = normalize_whatsapp_number(custom_whatsapp)
+            if not normalized:
+                messagebox.showerror("Número no válido", f"No pude validar el número ({reason}). Incluye un número internacional completo, por ejemplo +54 9 11 1234-5678.")
+                return
         from core.seo_generator import public_site_url
         public_url = self.public_url.get().strip()
         if public_url and not public_site_url(public_url):
@@ -449,12 +464,19 @@ class App:
         self.status.set("Abriendo la ficha en el navegador. Espera a que termine de cargar…")
         self._log("INFO", "Generación iniciada; se validó la URL de Google Maps.")
         owner_notes = self._get_owner_notes()
-        threading.Thread(target=self._work, args=(url, self.get_photos.get(), self.template.get(), self.configure_whatsapp.get(), 0, True, self.api_key.get().strip() or os.getenv("OPENAI_API_KEY", ""), owner_notes, self.model.get(), ART_LABELS[self.art_direction.get()], public_url, self.logo_path.get(), list(self.extra_photo_paths)), daemon=True).start()
+        threading.Thread(target=self._work, args=(url, self.get_photos.get(), self.template.get(), self.configure_whatsapp.get(), 0, True, self.api_key.get().strip() or os.getenv("OPENAI_API_KEY", ""), owner_notes, self.model.get(), ART_LABELS[self.art_direction.get()], public_url, self.logo_path.get(), list(self.extra_photo_paths), self.business_name_override.get().strip(), custom_whatsapp), daemon=True).start()
 
     def regenerate(self):
         if not self.last_data:
             messagebox.showinfo("Primero genera una página", "Pega una URL, elige la plantilla y genera el primer borrador. Después podrás regenerarlo sin volver a extraer los datos.")
             return
+        custom_whatsapp = self.whatsapp_number_override.get().strip()
+        if custom_whatsapp:
+            from core.data_cleaner import normalize_whatsapp_number
+            normalized, reason = normalize_whatsapp_number(custom_whatsapp)
+            if not normalized:
+                messagebox.showerror("Número no válido", f"No pude validar el número ({reason}). Incluye un número internacional completo, por ejemplo +54 9 11 1234-5678.")
+                return
         data = copy.deepcopy(self.last_data)
         data["owner_notes"] = self._get_owner_notes()
         if not self.get_photos.get():
@@ -462,7 +484,7 @@ class App:
         self.variant_count += 1
         self._set_busy(True, "CREANDO OTRA VERSIÓN…")
         self._log("INFO", f"Regeneración iniciada (variante {self.variant_count}).")
-        threading.Thread(target=self._work, args=(data, self.get_photos.get(), self.template.get(), self.configure_whatsapp.get(), self.variant_count, False, self.api_key.get().strip() or os.getenv("OPENAI_API_KEY", ""), data.get("owner_notes", ""), self.model.get(), ART_LABELS[self.art_direction.get()], self.public_url.get().strip() or data.get("public_url", ""), self.logo_path.get(), list(self.extra_photo_paths)), daemon=True).start()
+        threading.Thread(target=self._work, args=(data, self.get_photos.get(), self.template.get(), self.configure_whatsapp.get(), self.variant_count, False, self.api_key.get().strip() or os.getenv("OPENAI_API_KEY", ""), data.get("owner_notes", ""), self.model.get(), ART_LABELS[self.art_direction.get()], self.public_url.get().strip() or data.get("public_url", ""), self.logo_path.get(), list(self.extra_photo_paths), self.business_name_override.get().strip(), custom_whatsapp), daemon=True).start()
 
     def choose_logo(self):
         path = filedialog.askopenfilename(title="Selecciona el logo del negocio", filetypes=[("Imágenes", "*.png *.jpg *.jpeg *.webp *.bmp *.gif *.tif *.tiff"), ("Todos los archivos", "*.*")])
@@ -671,12 +693,14 @@ class App:
         self.download_templates_btn.configure(state="disabled" if busy else "normal")
         self.update_btn.configure(state="disabled" if busy or self.updating else "normal")
 
-    def _work(self, payload, get_photos, template_name, use_whatsapp, variant, should_extract, api_key="", owner_notes="", model="gpt-4.1", direction="", public_url="", logo_path="", extra_photo_paths=None):
+    def _work(self, payload, get_photos, template_name, use_whatsapp, variant, should_extract, api_key="", owner_notes="", model="gpt-4.1", direction="", public_url="", logo_path="", extra_photo_paths=None, business_name_override="", whatsapp_number_override=""):
         try:
             self._log("INFO", "Extrayendo datos visibles de Maps…" if should_extract else "Reutilizando los datos de Maps guardados para regenerar.")
             source_data = extract_listing(payload, get_photos, log=self._log) if should_extract else payload
             source_data["custom_logo_path"] = logo_path
             source_data["custom_photo_paths"] = list(extra_photo_paths or [])
+            source_data["business_name_override"] = business_name_override
+            source_data["whatsapp_number_override"] = whatsapp_number_override
             self._log("INFO", f"Datos de ficha listos: negocio={source_data.get('name') or 'sin nombre'}, rubro={source_data.get('category') or 'sin categoría'}, fotos={len(source_data.get('photos', []))}, reseñas={len(source_data.get('reviews', []))}.")
             if owner_notes:
                 source_data["owner_notes"] = owner_notes

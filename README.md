@@ -45,14 +45,15 @@ Los efectos son una capa selectiva sobre las familias visuales existentes, no pl
 ## Uso
 
 1. Pega una URL pública de Google Maps.
-2. Elige una familia de negocio o deja la detección automática.
-3. Elige una dirección artística o deja que la IA la defina.
-4. Selecciona un modelo y, si quieres, agrega notas con datos confirmados del negocio.
-5. Opcionalmente, usa **Elegir logo** y **Agregar fotos** para sumar imágenes propias. El logo se muestra en la navegación y las fotos se incorporan a la galería; se optimizan como WebP dentro de `assets/`.
-6. Pulsa **Generar landing page**. El extractor abre la ficha pública en Chrome instalado como visitante, cierra los avisos opcionales de acceso y recoge la información que puede verificar en pantalla.
-7. Se crea una carpeta nueva en `salida/`; la GUI abre el HTML y muestra el estado del control de calidad.
-8. Pulsa **Regenerar** para producir otra combinación sin borrar los borradores anteriores.
-9. Pulsa **Subir página web**, selecciona una carpeta de `salida/` que contenga `index.html` en la raíz y espera a que termine la publicación.
+2. Si hace falta, completa el nombre del negocio y el teléfono de contacto/WhatsApp. Si el teléfono se completa, reemplaza el número de Maps en el texto visible, los enlaces de llamada y los botones de WhatsApp. Acepta números internacionales con prefijo, o números locales de Argentina.
+3. Elige una familia de negocio o deja la detección automática.
+4. Elige una dirección artística o deja que la IA la defina.
+5. Selecciona un modelo y, si quieres, agrega notas con datos confirmados del negocio.
+6. Opcionalmente, usa **Elegir logo** y **Agregar fotos** para sumar imágenes propias. El logo se muestra en la navegación y las fotos se incorporan a la galería; se optimizan como WebP dentro de `assets/`.
+7. Pulsa **Generar landing page**. El extractor abre la ficha pública en Chrome instalado como visitante, cierra los avisos opcionales de acceso y recoge la información que puede verificar en pantalla.
+8. Se crea una carpeta nueva en `salida/`; la GUI abre el HTML y muestra el estado del control de calidad.
+9. Pulsa **Regenerar** para producir otra combinación sin borrar los borradores anteriores.
+10. Pulsa **Subir página web**, selecciona una carpeta de `salida/` que contenga `index.html` en la raíz y espera a que termine la publicación.
 
 El botón **Actualizar a la última versión** descarga el código de la rama `main` de GitHub. Conserva `salida/`, `usage/` y `.env`; en un clon Git también omite archivos rastreados con cambios locales. Reinicia la aplicación al terminar para cargar la versión actualizada.
 
