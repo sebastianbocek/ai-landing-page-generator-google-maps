@@ -8,12 +8,15 @@ from pathlib import Path
 
 from .business_analyzer import analyze_business
 from .html_renderer import render_html
+from .image_manager import save_user_images
 from .openai_engine import build_design_spec, fallback_after_api_error
 from .quality_checker import check_site
 
 
 def generate_site(raw_data: dict, family: str, output_root: Path, variant: int = 0, api_key: str = "", model: str | None = None, whatsapp_enabled: bool = True, photo_saver=None, art_direction: str = "") -> tuple[Path, dict, dict]:
     data = analyze_business(raw_data, family, whatsapp_enabled)
+    custom_logo_path = data.pop("custom_logo_path", "")
+    custom_photo_paths = data.pop("custom_photo_paths", [])
     try:
         spec = build_design_spec(data, family, api_key, model, variant, usage_dir=output_root.parent / "usage", art_direction_override=art_direction)
     except Exception as exc:
@@ -43,6 +46,15 @@ def generate_site(raw_data: dict, family: str, output_root: Path, variant: int =
     elif data.get("photos"):
         page_data["photo_sources"] = list(data.get("photos", []))
         page_data["photos"] = []
+    if custom_photo_paths:
+        photo_slots = max(0, 17 - len(page_data.get("photos", [])))
+        uploaded = save_user_images(custom_photo_paths, assets_dir, "foto-agregada", limit=photo_slots)
+        page_data.setdefault("photos", []).extend(f"assets/{item}" for item in uploaded)
+    page_data["photos"] = page_data.get("photos", [])[:17]
+    if custom_logo_path:
+        logos = save_user_images([custom_logo_path], assets_dir, "logo", limit=1)
+        if logos:
+            page_data["logo"] = f"assets/{logos[0]}"
     if page_data.get("photos"):
         page_data["missing_fields"] = [field for field in page_data.get("missing_fields", []) if field != "photos"]
     elif "photos" not in page_data.get("missing_fields", []):

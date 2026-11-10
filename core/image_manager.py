@@ -46,3 +46,37 @@ def download_listing_photos(data: dict, output_dir: Path, limit: int = 5) -> lis
             manifest.append({"source": source, "status": "unavailable", "reason": type(exc).__name__})
     (output_dir / "image_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
     return files
+
+
+def save_user_images(paths: list[str], output_dir: Path, prefix: str, limit: int = 12) -> list[str]:
+    """Validate and optimize user-selected images into portable WebP assets."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    manifest_path = output_dir / "image_manifest.json"
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.is_file() else []
+    except (OSError, json.JSONDecodeError):
+        manifest = []
+    files = []
+    for index, raw_path in enumerate(paths[:limit], 1):
+        source = Path(raw_path).expanduser()
+        try:
+            if not source.is_file():
+                raise ValueError("No se encontró el archivo seleccionado.")
+            if source.stat().st_size > MAX_IMAGE_BYTES:
+                raise ValueError("La imagen supera el límite de 8 MB.")
+            with Image.open(source) as image:
+                if image.width * image.height > MAX_PIXELS:
+                    raise ValueError("La imagen supera el límite de resolución.")
+                image.seek(0)
+                image.load()
+                has_alpha = image.mode in ("RGBA", "LA") or (image.mode == "P" and "transparency" in image.info)
+                image = image.convert("RGBA" if has_alpha else "RGB")
+                image.thumbnail((1800, 1400), Image.Resampling.LANCZOS)
+                filename = f"{prefix}-{index:02d}.webp"
+                image.save(output_dir / filename, "WEBP", quality=88, method=5)
+            files.append(filename)
+            manifest.append({"file": filename, "source": "user_selected", "status": "saved_user_image"})
+        except Exception as exc:
+            manifest.append({"source": source.name, "status": "unavailable", "reason": str(exc)[:240]})
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    return files

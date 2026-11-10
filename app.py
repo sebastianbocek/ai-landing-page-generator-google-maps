@@ -304,10 +304,15 @@ class App:
         self.get_info = BooleanVar(value=True)
         self.get_photos = BooleanVar(value=True)
         self.configure_whatsapp = BooleanVar(value=True)
+        self.logo_path = StringVar(value="")
+        self.extra_photo_paths = []
+        self.extra_photo_summary = StringVar(value="No hay fotos adicionales seleccionadas.")
         self.status = StringVar(value="Vista previa local: no se publica automáticamente.")
         self.published_url = StringVar(value="")
         self.last_data = None
         self.variant_count = 0
+        self.generation_busy = False
+        self.updating = False
         self.log_entries = []
         self.log_lock = threading.Lock()
         self._build()
@@ -368,6 +373,14 @@ class App:
         self._check(outer, "Extraer información visible de la ficha", self.get_info)
         self._check(outer, "Incluir fotografías disponibles en Maps", self.get_photos)
         self._check(outer, "Configurar botón de WhatsApp con el teléfono", self.configure_whatsapp)
+        self._label(outer, "FOTOS Y LOGO PROPIOS (OPCIONAL)")
+        image_actions = tk.Frame(outer, bg=self.CARD)
+        image_actions.pack(fill="x", padx=22)
+        tk.Button(image_actions, text="＋ Elegir logo", command=self.choose_logo, bg="#171a18", fg="#cde8d7", activebackground="#202521", activeforeground="white", relief="flat", font=("Segoe UI", 8, "bold"), pady=8, cursor="hand2").pack(side="left", fill="x", expand=True, padx=(0, 4))
+        tk.Button(image_actions, text="＋ Agregar fotos", command=self.choose_extra_photos, bg="#171a18", fg="#cde8d7", activebackground="#202521", activeforeground="white", relief="flat", font=("Segoe UI", 8, "bold"), pady=8, cursor="hand2").pack(side="left", fill="x", expand=True, padx=4)
+        tk.Button(image_actions, text="Limpiar selección", command=self.clear_user_images, bg="#171a18", fg="#cde8d7", activebackground="#202521", activeforeground="white", relief="flat", font=("Segoe UI", 8, "bold"), pady=8, cursor="hand2").pack(side="left", fill="x", expand=True, padx=(4, 0))
+        self.image_selection_label = tk.Label(outer, textvariable=self.extra_photo_summary, bg=self.CARD, fg="#7f8983", font=("Segoe UI", 8), wraplength=580, justify="left")
+        self.image_selection_label.pack(anchor="w", padx=22, pady=(5, 0))
         log_header = tk.Frame(outer, bg=self.CARD)
         log_header.pack(fill="x", padx=22, pady=(18, 6))
         tk.Label(log_header, text="REGISTRO DE ACTIVIDAD", bg=self.CARD, fg="#c4cac6", font=("Segoe UI", 9, "bold")).pack(side="left")
@@ -387,6 +400,8 @@ class App:
         self.publish_btn = tk.Button(publish_actions, text="↑  SUBIR PÁGINA WEB", command=self.publish_page, bg="#075c43", fg="white", activebackground="#087553", activeforeground="white", relief="flat", font=("Segoe UI", 9, "bold"), pady=11, cursor="hand2")
         self.publish_btn.pack(fill="x")
         tk.Label(publish_actions, text="Crea un repositorio público y configura GitHub Pages automáticamente.", bg=self.CARD, fg="#7f8983", font=("Segoe UI", 8)).pack(anchor="w", pady=(4, 0))
+        self.update_btn = tk.Button(self.footer, text="↻  ACTUALIZAR A LA ÚLTIMA VERSIÓN", command=self.update_application, bg="#123d30", fg="#dcf7e9", activebackground="#18553f", activeforeground="white", relief="flat", font=("Segoe UI", 9, "bold"), pady=9, cursor="hand2")
+        self.update_btn.pack(fill="x", padx=12, pady=(7, 0))
         library_actions = tk.Frame(self.footer, bg=self.CARD)
         library_actions.pack(fill="x", padx=12, pady=(7, 0))
         self.download_templates_btn = tk.Button(library_actions, text="↓ Descargar referencias visuales", command=self.download_category, bg="#171a18", fg="#cde8d7", activebackground="#202521", activeforeground="white", relief="flat", font=("Segoe UI", 8, "bold"), pady=9, cursor="hand2")
@@ -434,7 +449,7 @@ class App:
         self.status.set("Abriendo la ficha en el navegador. Espera a que termine de cargar…")
         self._log("INFO", "Generación iniciada; se validó la URL de Google Maps.")
         owner_notes = self._get_owner_notes()
-        threading.Thread(target=self._work, args=(url, self.get_photos.get(), self.template.get(), self.configure_whatsapp.get(), 0, True, self.api_key.get().strip() or os.getenv("OPENAI_API_KEY", ""), owner_notes, self.model.get(), ART_LABELS[self.art_direction.get()], public_url), daemon=True).start()
+        threading.Thread(target=self._work, args=(url, self.get_photos.get(), self.template.get(), self.configure_whatsapp.get(), 0, True, self.api_key.get().strip() or os.getenv("OPENAI_API_KEY", ""), owner_notes, self.model.get(), ART_LABELS[self.art_direction.get()], public_url, self.logo_path.get(), list(self.extra_photo_paths)), daemon=True).start()
 
     def regenerate(self):
         if not self.last_data:
@@ -447,7 +462,67 @@ class App:
         self.variant_count += 1
         self._set_busy(True, "CREANDO OTRA VERSIÓN…")
         self._log("INFO", f"Regeneración iniciada (variante {self.variant_count}).")
-        threading.Thread(target=self._work, args=(data, self.get_photos.get(), self.template.get(), self.configure_whatsapp.get(), self.variant_count, False, self.api_key.get().strip() or os.getenv("OPENAI_API_KEY", ""), data.get("owner_notes", ""), self.model.get(), ART_LABELS[self.art_direction.get()], self.public_url.get().strip() or data.get("public_url", "")), daemon=True).start()
+        threading.Thread(target=self._work, args=(data, self.get_photos.get(), self.template.get(), self.configure_whatsapp.get(), self.variant_count, False, self.api_key.get().strip() or os.getenv("OPENAI_API_KEY", ""), data.get("owner_notes", ""), self.model.get(), ART_LABELS[self.art_direction.get()], self.public_url.get().strip() or data.get("public_url", ""), self.logo_path.get(), list(self.extra_photo_paths)), daemon=True).start()
+
+    def choose_logo(self):
+        path = filedialog.askopenfilename(title="Selecciona el logo del negocio", filetypes=[("Imágenes", "*.png *.jpg *.jpeg *.webp *.bmp *.gif *.tif *.tiff"), ("Todos los archivos", "*.*")])
+        if path:
+            self.logo_path.set(path)
+            self._refresh_image_selection()
+
+    def choose_extra_photos(self):
+        paths = filedialog.askopenfilenames(title="Selecciona fotos adicionales del negocio", filetypes=[("Imágenes", "*.png *.jpg *.jpeg *.webp *.bmp *.gif *.tif *.tiff"), ("Todos los archivos", "*.*")])
+        if paths:
+            combined = list(dict.fromkeys([*self.extra_photo_paths, *paths]))
+            self.extra_photo_paths = combined[:12]
+            if len(combined) > 12:
+                messagebox.showinfo("Límite de fotos", "Puedes agregar hasta 12 fotos propias. Las primeras 12 quedaron seleccionadas.")
+            self._refresh_image_selection()
+
+    def clear_user_images(self):
+        self.logo_path.set("")
+        self.extra_photo_paths = []
+        self._refresh_image_selection()
+
+    def _refresh_image_selection(self):
+        logo = Path(self.logo_path.get()).name if self.logo_path.get() else "sin logo"
+        photos = len(self.extra_photo_paths)
+        self.extra_photo_summary.set(f"Logo: {logo} · Fotos adicionales: {photos}")
+
+    def update_application(self):
+        if self.generation_busy:
+            messagebox.showinfo("Generación en curso", "Espera a que termine la generación antes de actualizar la aplicación.")
+            return
+        if not messagebox.askyesno("Actualizar aplicación", "Se descargará la última versión pública desde GitHub. Se conservan salida/, usage/ y .env. Los archivos modificados en un clon Git se omiten. Al terminar, cierra y vuelve a abrir el programa para cargar la actualización. ¿Continuar?"):
+            return
+        self.updating = True
+        self.update_btn.configure(state="disabled", text="DESCARGANDO ACTUALIZACIÓN…")
+        self.status.set("Descargando y aplicando la última versión desde GitHub…")
+        self._log("INFO", "Actualización de la aplicación iniciada desde GitHub.")
+        threading.Thread(target=self._update_worker, daemon=True).start()
+
+    def _update_worker(self):
+        try:
+            from core.updater import update_project
+            updated, skipped = update_project(ROOT)
+            self.root.after(0, lambda count=updated, preserve=skipped: self._update_done(count, preserve))
+        except Exception as exc:
+            error = str(exc)
+            self._log("ERROR", f"No se pudo actualizar la aplicación: {error}", traceback.format_exc())
+            self.root.after(0, lambda message=error: self._update_failed(message))
+
+    def _update_done(self, updated, skipped):
+        self.updating = False
+        self.update_btn.configure(state="disabled" if self.generation_busy else "normal", text="↻  ACTUALIZAR A LA ÚLTIMA VERSIÓN")
+        self.status.set(f"Actualización aplicada: {updated} archivos · reinicia la aplicación para usarla.")
+        self._log("INFO", f"Actualización aplicada: {updated} archivos; archivos modificados omitidos={skipped}.")
+        messagebox.showinfo("Actualización descargada", f"Se actualizaron {updated} archivos.\nSe omitieron {skipped} archivos modificados localmente.\n\nCierra y vuelve a abrir la aplicación para usar la nueva versión.")
+
+    def _update_failed(self, error):
+        self.updating = False
+        self.update_btn.configure(state="disabled" if self.generation_busy else "normal", text="↻  ACTUALIZAR A LA ÚLTIMA VERSIÓN")
+        self.status.set("No se pudo completar la actualización. Revisa el registro de actividad.")
+        messagebox.showerror("No se pudo actualizar", error)
 
     def _get_owner_notes(self):
         value = self.notes.get("1.0", "end").strip()
@@ -589,15 +664,19 @@ class App:
             messagebox.showerror("No se pudo importar", str(exc))
 
     def _set_busy(self, busy, text=None):
+        self.generation_busy = busy
         self.generate_btn.configure(state="disabled" if busy else "normal", text=text or "✧  GENERAR OTRA LANDING PAGE")
         self.regenerate_btn.configure(state="disabled" if busy or not self.last_data else "normal")
         self.publish_btn.configure(state="disabled" if busy else "normal")
         self.download_templates_btn.configure(state="disabled" if busy else "normal")
+        self.update_btn.configure(state="disabled" if busy or self.updating else "normal")
 
-    def _work(self, payload, get_photos, template_name, use_whatsapp, variant, should_extract, api_key="", owner_notes="", model="gpt-4.1", direction="", public_url=""):
+    def _work(self, payload, get_photos, template_name, use_whatsapp, variant, should_extract, api_key="", owner_notes="", model="gpt-4.1", direction="", public_url="", logo_path="", extra_photo_paths=None):
         try:
             self._log("INFO", "Extrayendo datos visibles de Maps…" if should_extract else "Reutilizando los datos de Maps guardados para regenerar.")
             source_data = extract_listing(payload, get_photos, log=self._log) if should_extract else payload
+            source_data["custom_logo_path"] = logo_path
+            source_data["custom_photo_paths"] = list(extra_photo_paths or [])
             self._log("INFO", f"Datos de ficha listos: negocio={source_data.get('name') or 'sin nombre'}, rubro={source_data.get('category') or 'sin categoría'}, fotos={len(source_data.get('photos', []))}, reseñas={len(source_data.get('reviews', []))}.")
             if owner_notes:
                 source_data["owner_notes"] = owner_notes

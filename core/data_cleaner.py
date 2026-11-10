@@ -36,7 +36,7 @@ def normalize_business(data: dict) -> dict:
         result[key] = clean_text(result.get(key))
     result["source_url"] = normalize_url(result["source_url"])
     result["website"] = "" if is_social_url(result["website"]) else normalize_url(result["website"])
-    result["photos"] = list(dict.fromkeys(clean_text(x) for x in result.get("photos", []) if clean_text(x)))[:8]
+    result["photos"] = list(dict.fromkeys(clean_text(x) for x in result.get("photos", []) if clean_text(x)))[:20]
     result["rating"] = clean_text(result.get("rating"))
     result["review_count"] = clean_text(result.get("review_count") or result.get("rating_count"))
     try:

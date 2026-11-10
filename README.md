@@ -48,10 +48,13 @@ Los efectos son una capa selectiva sobre las familias visuales existentes, no pl
 2. Elige una familia de negocio o deja la detección automática.
 3. Elige una dirección artística o deja que la IA la defina.
 4. Selecciona un modelo y, si quieres, agrega notas con datos confirmados del negocio.
-5. Pulsa **Generar landing page**. El extractor abre la ficha pública en Chrome instalado como visitante, cierra los avisos opcionales de acceso y recoge la información que puede verificar en pantalla.
-6. Se crea una carpeta nueva en `salida/`; la GUI abre el HTML y muestra el estado del control de calidad.
-7. Pulsa **Regenerar** para producir otra combinación sin borrar los borradores anteriores.
-8. Pulsa **Subir página web**, selecciona una carpeta de `salida/` que contenga `index.html` en la raíz y espera a que termine la publicación.
+5. Opcionalmente, usa **Elegir logo** y **Agregar fotos** para sumar imágenes propias. El logo se muestra en la navegación y las fotos se incorporan a la galería; se optimizan como WebP dentro de `assets/`.
+6. Pulsa **Generar landing page**. El extractor abre la ficha pública en Chrome instalado como visitante, cierra los avisos opcionales de acceso y recoge la información que puede verificar en pantalla.
+7. Se crea una carpeta nueva en `salida/`; la GUI abre el HTML y muestra el estado del control de calidad.
+8. Pulsa **Regenerar** para producir otra combinación sin borrar los borradores anteriores.
+9. Pulsa **Subir página web**, selecciona una carpeta de `salida/` que contenga `index.html` en la raíz y espera a que termine la publicación.
+
+El botón **Actualizar a la última versión** descarga el código de la rama `main` de GitHub. Conserva `salida/`, `usage/` y `.env`; en un clon Git también omite archivos rastreados con cambios locales. Reinicia la aplicación al terminar para cargar la versión actualizada.
 
 La GUI incluye un **Registro de actividad** con las etapas de extracción, generación, control de calidad y publicación. **Descargar referencias visuales** verifica y descarga las referencias UIUXLabz de todas las categorías, sin necesitar una ficha ni una categoría seleccionada; las demás colecciones ya vienen en la descarga del proyecto. Si aparece un error, copia el registro con **Copiar log** y compártelo para diagnosticarlo. El archivo completo también se guarda localmente en `usage/app.log`; puede incluir nombres de negocios y rutas locales, pero no registra la clave de OpenAI.
 
