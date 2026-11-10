@@ -42,7 +42,8 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
     prompt = (
         "Sos director creativo y estratega de contenido para sitios locales. Diseñá una página original, moderna, "
         "minimalista y en español argentino. Devuelve una especificación JSON exacta al esquema. Elige dirección artística, "
-        "composición y photo_treatment que encajen con el rubro y la cantidad de fotografías; no uses una cuadrícula idéntica en todos los sitios. "
+        "composición, photo_treatment y hasta dos visual_effects del catálogo que encajen con el rubro, dirección artística y cantidad de fotografías; no uses una cuadrícula idéntica en todos los sitios. "
+        "Efectos disponibles: glass_surfaces (acentos de vidrio, solo para estilos modernos/tech), ambient_orbits (formas atmosféricas abstractas cuando no sustituyan fotos reales), editorial_reveal (revelado tipográfico/fotográfico sutil) y kinetic_gallery (galería táctil/animada solo con al menos 4 fotos relevantes). Usa [] si no aporta. Evita glass en salud y rubros que requieren confianza sobria; no fuerces todos los efectos en cada web. Nunca marques none junto con otro efecto. "
         "Combina el peso visual del hero, el espacio en blanco y las secciones en un ritmo editorial; evita bloques centrados repetidos. "
         "Usa exclusivamente los hechos entregados. No inventes servicios, "
         "equipo, certificaciones, horarios, premios, resultados, testimonios, precios, experiencia, atención personalizada, "
@@ -65,6 +66,8 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
         result = json.loads(response.output_text)
         if art_direction_override:
             result["art_direction"] = art_direction_override
+        if len(data.get("photos", [])) < 4:
+            result["visual_effects"] = [effect for effect in result.get("visual_effects", []) if effect != "kinetic_gallery"]
         result["source"] = "openai"
         validate_design_spec(result)
         usage = getattr(response, "usage", None)

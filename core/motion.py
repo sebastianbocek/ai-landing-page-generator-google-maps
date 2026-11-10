@@ -14,6 +14,7 @@ def inline_motion_bundle() -> str:
     runtime = r"""
 (() => {
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const effects = (document.body.dataset.effects || "").split(/\s+/).filter(Boolean);
   const gsapReady = !!(window.gsap && window.Flip && window.ScrollTrigger);
   if (gsapReady) gsap.registerPlugin(Flip, ScrollTrigger, Observer);
 
@@ -208,7 +209,7 @@ def inline_motion_bundle() -> str:
   if (gallery && track && track.children.length) {
     // Pinning a short gallery creates a long, visually empty scroll segment.
     // Reserve the guided desktop sequence for galleries with enough material.
-    if (track.children.length >= 4) {
+    if (track.children.length >= 4 && effects.includes("kinetic_gallery")) {
       gsap.matchMedia().add("(min-width: 761px)", () => {
         track.classList.add("gallery-track");
         const animation = gsap.to(track, {

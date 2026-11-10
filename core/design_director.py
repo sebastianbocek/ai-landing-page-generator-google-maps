@@ -4,6 +4,7 @@ import hashlib
 
 ART_DIRECTIONS = ("editorial_premium", "luxury", "modern_minimal", "corporate_premium", "bold_creative", "organic_natural", "dark_elegant", "contemporary_local")
 PHOTO_TREATMENTS = ("editorial_crop", "bento_mosaic", "film_strip", "minimal_grid")
+VISUAL_EFFECTS = ("glass_surfaces", "ambient_orbits", "editorial_reveal", "kinetic_gallery", "none")
 PALETTES = {
     "editorial_premium": ("#f4f0e8", "#fffdf9", "#202520", "#23675d"),
     "luxury": ("#171715", "#22211e", "#f4efe5", "#c7a66a"),
@@ -26,6 +27,7 @@ def local_design_spec(data: dict, family: str, variant: int = 0) -> dict:
         "art_direction": direction,
         "layout": ("split", "editorial", "centered", "immersive")[(seed // 8) % 4],
         "photo_treatment": PHOTO_TREATMENTS[(seed // 16) % len(PHOTO_TREATMENTS)],
+        "visual_effects": _local_effects(data, direction, seed),
         "sections": ["trust", "introduction", "services", "gallery", "reviews", "location", "contact"],
         "hero": {"eyebrow": data.get("category") or family, "headline": data.get("name") or "Negocio local", "description": data.get("description") or _location_line(data), "primary_cta": "Consultar por WhatsApp", "secondary_cta": "Ver ubicación", "visual_note": "Composición editorial con fotografías auténticas disponibles; no simular fotos del local."},
         "introduction": {"title": "Un primer acercamiento", "text": data.get("description") or _location_line(data)},
@@ -46,12 +48,36 @@ def validate_design_spec(spec: dict) -> dict:
         raise ValueError("La composición elegida no está permitida.")
     if spec["photo_treatment"] not in PHOTO_TREATMENTS:
         raise ValueError("El tratamiento de fotografía no está permitido.")
+    if "visual_effects" not in spec:
+        # Backward compatible with previously cached/generated JSON specs.
+        spec["visual_effects"] = []
+    if (not isinstance(spec["visual_effects"], list) or len(spec["visual_effects"]) > 2
+            or any(effect not in VISUAL_EFFECTS for effect in spec["visual_effects"])
+            or ("none" in spec["visual_effects"] and len(spec["visual_effects"]) > 1)
+            or len(set(spec["visual_effects"])) != len(spec["visual_effects"])):
+        raise ValueError("La selección de efectos visuales no es válida.")
     for group, keys in (("hero", ("headline", "description")), ("introduction", ("title", "text")), ("contact", ("title", "text")), ("seo", ("title", "description"))):
         if any(not isinstance(spec[group].get(k), str) for k in keys):
             raise ValueError(f"La sección {group} tiene contenido no válido.")
     if not isinstance(spec["services"], list) or not isinstance(spec["sections"], list):
         raise ValueError("La estructura de secciones no es válida.")
     return spec
+
+
+def _local_effects(data: dict, direction: str, seed: int) -> list[str]:
+    """Choose restrained, content-aware effects when generation runs without AI."""
+    category = str(data.get("category") or "").casefold()
+    photos = len(data.get("photos", []))
+    effects = []
+    if direction in {"modern_minimal", "dark_elegant", "bold_creative"} and seed % 3 == 0:
+        effects.append("glass_surfaces")
+    if direction in {"bold_creative", "dark_elegant", "contemporary_local"} and not photos:
+        effects.append("ambient_orbits")
+    if direction in {"editorial_premium", "luxury", "organic_natural"}:
+        effects.append("editorial_reveal")
+    if photos >= 4 and any(word in category for word in ("belleza", "peluquer", "restaurante", "hotel", "fotograf", "estética", "estetica")):
+        effects.append("kinetic_gallery")
+    return list(dict.fromkeys(effects))[:2]
 
 
 def palette_for(direction: str) -> dict:

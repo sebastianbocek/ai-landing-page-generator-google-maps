@@ -11,12 +11,15 @@ Aplicación de escritorio para crear landing pages comerciales a partir de una f
 - Importa información visible de una ficha de Google Maps y fotos disponibles.
 - Genera contenido y dirección visual mediante OpenAI Structured Outputs; también funciona sin API key.
 - Produce páginas HTML independientes con diseño responsive, animaciones, galería y llamadas a la acción.
+- Selecciona hasta dos tratamientos visuales según rubro, dirección artística y cantidad de fotos: vidrio sutil, órbitas ambientales, revelado editorial o galería cinética.
 - Incluye únicamente reseñas verificadas con una puntuación superior a 4 estrellas.
 - Crea metadatos SEO, datos estructurados, sitemap y robots cuando se proporciona la URL pública.
 - Permite regenerar variantes y conserva cada borrador en una carpeta separada.
 - Publica el sitio en un repositorio público y configura GitHub Pages desde la GUI.
 
 La API de OpenAI solo se usa durante la generación. El sitio resultante es HTML, CSS y JavaScript autónomo.
+
+Los efectos son una capa selectiva sobre las familias visuales existentes, no plantillas importadas. El modelo devuelve `visual_effects` dentro del JSON validado; si no hay API, se aplican reglas locales conservadoras. Los efectos pueden quedar vacíos. Las galerías animadas solo se activan con suficiente material fotográfico y se degradan a desplazamiento táctil en móvil.
 
 > Los sitios son borradores para revisión. No se publican automáticamente ni garantizan posicionamiento. Verifica cada dato y consigue autorización para reutilizar fotografías, reseñas y demás materiales antes de entregar un sitio.
 
@@ -89,6 +92,10 @@ Después de publicar: verifica el dominio en Google Search Console, inspecciona 
 Las páginas exportadas incluyen GSAP 3.15.1 con ScrollTrigger, Flip y Observer embebidos, así que estas interacciones funcionan desde el HTML local sin depender de un CDN. La entrada del hero cambia según la dirección artística: títulos por líneas en estilos editoriales y luxury, movimientos de palabras más activos en bold y minimal, y máscaras y ritmos propios para las demás familias. También hay revelados por scroll, progreso de lectura y microinteracciones.
 
 Las fotos del negocio se pueden abrir en una vista inmersiva, navegar con flechas o teclado y cerrar para animarlas de vuelta a su posición original. Cuando hay suficientes fotos se activa un recorrido horizontal fijado en escritorio; en móvil queda como carrusel deslizable nativo. Tres o más reseñas verificadas se presentan en un carrusel táctil con controles, y los servicios confirmados se pueden expandir. Los diseños combinan tipografía y motivos SVG por dirección artística, con composiciones asimétricas cuando el contenido permite darles espacio.
+
+La IA también puede combinar, como máximo, dos efectos de una biblioteca pequeña: `glass_surfaces` agrega paneles translúcidos en puntos de apoyo; `ambient_orbits` añade formas orbitales abstractas sin reemplazar fotografías; `editorial_reveal` enfatiza la composición tipográfica; `kinetic_gallery` habilita un recorrido de galería solo si hay al menos cuatro imágenes. La IA evita vidrio en rubros donde una estética sobria ayuda a la confianza y no fuerza movimiento si el contenido no lo sostiene. El movimiento respeta `prefers-reduced-motion` y se mantiene sin dependencias externas de runtime.
+
+Las referencias visuales revisadas están en [docs/visual-effect-references.md](docs/visual-effect-references.md). Se implementaron tratamientos originales inspirados en patrones generales de diseño; no se descargó ni se copió en bloque el código, los assets o las plantillas de los autores de CodePen. Las búsquedas públicas son catálogos dinámicos y no un conjunto cerrado de temas.
 
 El movimiento se desactiva cuando el sistema operativo solicita `prefers-reduced-motion`. Se conserva el scroll nativo; el sitio no bloquea ni reemplaza la navegación del navegador. Las cabeceras de licencia de GSAP quedan incluidas en el HTML exportado y la referencia de licencia está en `core/vendor/gsap/NOTICE.md`.
 
