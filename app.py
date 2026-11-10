@@ -602,7 +602,8 @@ class App:
             self.root.after(0, lambda: self.status.set("Redactando contenido con IA…" if api_key else "Preparando landing con el contenido local…"))
             self._log("INFO", f"Generando sitio; plantilla={template_name}, modelo={model if api_key else 'local'}, variante={variant}.")
             folder, data, content = generate_site(data, template_name, OUT_DIR, variant, api_key, model, use_whatsapp, download_listing_photos if get_photos else None, direction)
-            self._log("INFO", f"Landing generada en {folder}; dirección={content.get('art_direction')}, origen={content.get('source', 'local')}.")
+            effects = ", ".join(content.get("visual_effects", [])) or "sin efecto adicional"
+            self._log("INFO", f"Landing generada en {folder}; dirección={content.get('art_direction')}, efectos={effects}, origen={content.get('source', 'local')}.")
             self.root.after(0, lambda: self._done(folder, data, source_data, template_name, variant, content))
         except Exception as exc:
             # Tkinter runs callbacks after this except block has exited. Capture

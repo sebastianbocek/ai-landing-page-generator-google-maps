@@ -6,7 +6,7 @@ import time
 from pathlib import Path
 
 from .data_cleaner import business_cache_key
-from .design_director import ART_DIRECTIONS, local_design_spec, validate_design_spec
+from .design_director import ART_DIRECTIONS, adapt_visual_effects, local_design_spec, validate_design_spec
 
 ROOT = Path(__file__).resolve().parents[1]
 SCHEMA = json.loads((ROOT / "schemas" / "landing_schema.json").read_text(encoding="utf-8"))
@@ -21,6 +21,7 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
         if art_direction_override not in ART_DIRECTIONS:
             raise ValueError("La dirección artística manual no es válida.")
         fallback["art_direction"] = art_direction_override
+    adapt_visual_effects(fallback, data)
     if not api_key.strip():
         return fallback
     cache_root = (usage_dir or ROOT / "usage") / "cache"
@@ -30,8 +31,10 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
     if cache_file.is_file():
         try:
             cached = json.loads(cache_file.read_text(encoding="utf-8"))
+            adapt_visual_effects(cached, data)
             validate_design_spec(cached)
             cached["source"] = "openai_cache"
+            cache_file.write_text(json.dumps(cached, ensure_ascii=False, indent=2), encoding="utf-8")
             return cached
         except (OSError, ValueError, json.JSONDecodeError):
             cache_file.unlink(missing_ok=True)
@@ -42,7 +45,7 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
     prompt = (
         "Sos director creativo y estratega de contenido para sitios locales. Diseñá una página original, moderna, "
         "minimalista y en español argentino. Devuelve una especificación JSON exacta al esquema. Elige dirección artística, "
-        "composición, photo_treatment y hasta dos visual_effects del catálogo que encajen con el rubro, dirección artística y cantidad de fotografías; no uses una cuadrícula idéntica en todos los sitios. "
+        "composición, photo_treatment y un efecto visual distintivo más un complemento cuando el material lo permita. Elige hasta dos visual_effects del catálogo según rubro, dirección artística y cantidad de fotografías; prioriza una interacción o una capa visual que siga perceptible luego de cargar, no solo una animación de entrada. No uses una cuadrícula idéntica en todos los sitios. "
         "Efectos disponibles: glass_surfaces (acentos de vidrio, solo para estilos modernos/tech), ambient_orbits (formas atmosféricas abstractas cuando no sustituyan fotos reales), editorial_reveal (título revelado por líneas y máscara horizontal de hero, con entrada visible pero refinada) y kinetic_gallery (galería táctil/animada solo con al menos 4 fotos relevantes). Usa [] si no aporta. Evita glass en salud y rubros que requieren confianza sobria; no fuerces todos los efectos en cada web. Nunca marques none junto con otro efecto. "
         "Combina el peso visual del hero, el espacio en blanco y las secciones en un ritmo editorial; evita bloques centrados repetidos. "
         "Usa exclusivamente los hechos entregados. No inventes servicios, "
@@ -68,6 +71,7 @@ def build_design_spec(data: dict, family: str, api_key: str = "", model: str | N
             result["art_direction"] = art_direction_override
         if len(data.get("photos", [])) < 4:
             result["visual_effects"] = [effect for effect in result.get("visual_effects", []) if effect != "kinetic_gallery"]
+        adapt_visual_effects(result, data)
         result["source"] = "openai"
         validate_design_spec(result)
         usage = getattr(response, "usage", None)
@@ -95,5 +99,6 @@ def record_usage(model: str, input_tokens: int, output_tokens: int, estimated_co
 
 def fallback_after_api_error(data: dict, family: str, error: Exception, variant: int = 0) -> dict:
     result = local_design_spec(data, family, variant)
+    adapt_visual_effects(result, data)
     result["api_error"] = f"{type(error).__name__}: {str(error)[:240]}"
     return result

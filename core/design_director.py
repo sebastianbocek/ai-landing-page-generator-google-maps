@@ -64,6 +64,38 @@ def validate_design_spec(spec: dict) -> dict:
     return spec
 
 
+def adapt_visual_effects(spec: dict, data: dict) -> dict:
+    """Add one compatible interaction when the AI chose only an entrance effect.
+
+    Entrance motion alone is invisible in a finished screenshot. A second,
+    content-aware treatment gives the published page a recognizable interaction.
+    """
+    effects = [item for item in spec.get("visual_effects", []) if item != "none"]
+    category = str(data.get("category") or "").casefold()
+    direction = spec.get("art_direction", "modern_minimal")
+    photo_count = len(data.get("photos", []))
+    visual_categories = ("belleza", "peluquer", "restaurante", "hotel", "fotograf", "salón", "salon", "eventos")
+    technical_categories = ("aire acondicionado", "reparación", "reparacion", "servicio técnico", "servicio tecnico", "electric", "plomer", "climat", "instalación", "instalacion", "mantenimiento", "construcción", "construccion")
+    sensitive_categories = ("salud", "médic", "medic", "odont", "kinesi", "abog", "contad", "terapia", "psicol")
+
+    complement = None
+    if photo_count >= 4 and any(word in category for word in visual_categories):
+        complement = "kinetic_gallery"
+    elif photo_count and any(word in category for word in technical_categories):
+        complement = "ambient_orbits"
+    elif photo_count and not any(word in category for word in sensitive_categories) and direction in {"modern_minimal", "bold_creative", "dark_elegant", "contemporary_local"}:
+        complement = "glass_surfaces"
+    elif photo_count:
+        complement = "ambient_orbits"
+    elif not effects:
+        complement = "ambient_orbits"
+
+    if complement and complement not in effects and len(effects) < 2:
+        effects.append(complement)
+    spec["visual_effects"] = effects[:2]
+    return spec
+
+
 def _local_effects(data: dict, direction: str, seed: int) -> list[str]:
     """Choose restrained, content-aware effects when generation runs without AI."""
     category = str(data.get("category") or "").casefold()
