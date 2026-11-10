@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact — CONSULT</title>
+<meta name="description" content="Contact CONSULT — book a 45-minute working session. No deck, just your P&L and the constraint you feel most.">
+<link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" href="index.html"><span class="brand__mark">C</span> CONSULT</a>
+    <nav class="nav" data-nav aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn--primary" href="contact.html" style="padding:10px 16px">Start a diagnostic</a>
+    <button class="burger" data-burger aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+  <div class="mobile" data-mobile>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> · Contact</div>
+    <h1 class="display">Bring the constraint — we bring the choices</h1>
+    <p class="lead" style="max-width:62ch">A 45-minute working session. No deck. Bring your P&amp;L and the thing that keeps you up at night. We map it together and leave you with a priced next step.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="align-items:start">
+      <!-- form -->
+      <div class="card reveal" style="padding:22px">
+        <div class="eyebrow">Working session</div>
+        <h2 style="margin-top:6px; font-size:22px">Book a session</h2>
+        <p class="small" style="margin-top:6px">Tell us a bit about the constraint and we will reply within one business day.</p>
+
+        <form data-form style="margin-top:18px; display:grid; gap:14px" novalidate>
+          <div class="grid grid-2" style="gap:14px">
+            <div class="field">
+              <label for="name">Full name *</label>
+              <input class="input" id="name" name="name" type="text" placeholder="Alex Rivera" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input class="input" id="company" name="company" type="text" placeholder="Acme Inc." autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Work email *</label>
+            <input class="input" id="email" name="email" type="email" placeholder="alex@acme.com" required autocomplete="email">
+          </div>
+
+          <div class="field">
+            <label for="topic">What hurts most?</label>
+            <select class="select" id="topic" name="topic">
+              <option value="">Select a constraint</option>
+              <option>Growth &amp; pipeline</option>
+              <option>Pricing &amp; packaging</option>
+              <option>Operations &amp; margin</option>
+              <option>Organization &amp; talent</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Tell us about the constraint *</label>
+            <textarea class="textarea" id="message" name="message" placeholder="What is the one thing that, if fixed, would change the trajectory? A few sentences is enough." required></textarea>
+          </div>
+
+          <div class="form-ok" role="status" aria-live="polite"></div>
+          <div class="form-err" role="alert" aria-live="assertive"></div>
+
+          <button class="btn btn--primary" type="submit" style="width:100%">Request a working session</button>
+          <p class="small" style="text-align:center">No spam. No pitch deck. We reply within one business day.</p>
+        </form>
+      </div>
+
+      <!-- side -->
+      <div class="stack reveal" style="transition-delay:.06s">
+        <div class="card" style="padding:22px">
+          <div class="eyebrow">Contact</div>
+          <h3 style="margin-top:6px">Reach us directly</h3>
+          <div style="display:grid; gap:12px; margin-top:14px">
+            <div>
+              <div class="small" style="font-weight:700; color:var(--ink)">Email</div>
+              <a class="link" href="mailto:hello@consult.example">hello@consult.example</a>
+            </div>
+            <div>
+              <div class="small" style="font-weight:700; color:var(--ink)">Phone</div>
+              <a class="link" href="tel:+15550142200">+1 (555) 014-2200</a>
+            </div>
+            <div>
+              <div class="small" style="font-weight:700; color:var(--ink)">Offices</div>
+              <p class="small">New York · London · Remote advisory worldwide</p>
+            </div>
+            <div>
+              <div class="small" style="font-weight:700; color:var(--ink)">Response time</div>
+              <p class="small">Within one business day — often same day.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding:0; overflow:hidden; aspect-ratio:16/10; background:#E2E8F0">
+          <img src="assets/img/blog-3.jpg" alt="Leadership team in discussion" loading="lazy" style="width:100%;height:100%;object-fit:cover">
+        </div>
+
+        <div class="card" style="padding:20px">
+          <h3 style="font-size:15px">What happens after you write?</h3>
+          <ul class="timeline" style="margin-top:12px">
+            <li><span class="dot" style="width:28px;height:28px;font-size:12px">1</span><span class="small"><strong style="color:var(--ink)">We read the constraint.</strong> A partner reads every inquiry — no SDR filter.</span></li>
+            <li><span class="dot" style="width:28px;height:28px;font-size:12px">2</span><span class="small"><strong style="color:var(--ink)">We propose a focus.</strong> If there is a fit, we suggest a diagnostic scope and a time.</span></li>
+            <li><span class="dot" style="width:28px;height:28px;font-size:12px">3</span><span class="small"><strong style="color:var(--ink)">You choose.</strong> 2-week diagnostic, fixed scope. Then you decide if we ship together.</span></li>
+          </ul>
+        </div>
+
+        <div class="card" style="padding:20px; background:var(--ink); color:#fff; border-color:#1E293B">
+          <h3 style="color:#fff; font-size:15px">Prefer a call?</h3>
+          <p class="small" style="color:#CBD5E1; margin-top:6px">Book directly — 45 minutes, no deck. Bring the P&amp;L and the constraint.</p>
+          <p style="margin-top:12px"><a class="btn btn--primary" href="mailto:hello@consult.example">Email a partner</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand"><i>C</i> CONSULT</div>
+        <p class="small" style="margin-top:10px; color:#94A3B8">Operator-led advisory. We diagnose, design, and deliver — with proof every week.</p>
+        <p class="small" style="margin-top:10px"><a href="contact.html">hello@consult.example</a> · +1 (555) 014-2200</p>
+      </div>
+      <div>
+        <div class="footer__title">Company</div>
+        <ul class="footer__list"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul>
+      </div>
+      <div>
+        <div class="footer__title">Services</div>
+        <ul class="footer__list"><li><a href="services.html">Growth &amp; GTM</a></li><li><a href="services.html">Operations</a></li><li><a href="services.html">Organization</a></li></ul>
+      </div>
+      <div>
+        <div class="footer__title">Working session</div>
+        <p class="small" style="color:#CBD5E1">45 minutes, no deck. Bring your P&amp;L and the constraint you feel most.</p>
+        <p style="margin-top:10px"><a class="btn btn--primary" href="contact.html" style="padding:10px 16px">Book now</a></p>
+      </div>
+    </div>
+    <div class="copy"><span>© <span data-year></span> CONSULT. All rights reserved.</span><span>Crafted for operators.</span></div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

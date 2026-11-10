@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book | Serenity Wellness Spa</title>
+  <meta name="description" content="Book your massage therapy appointment at Serenity Wellness Spa. Contact us for questions, gift certificates, or to schedule your relaxation experience.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 3c-1.5 3-4 5-7 6 0 4 1 8 7 12 6-4 7-8 7-12-3-1-5.5-3-7-6z"/>
+              <path d="M12 8v8M9 11c0 2 1.5 3.5 3 5 1.5-1.5 3-3 3-5"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            Serenity
+            <span>Wellness Spa</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="overline">Get in Touch</span>
+      <h1>Book Your Escape</h1>
+      <p>Ready to experience Serenity? Book your appointment online, give us a call, or send us a message with any questions.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-wrapper">
+          <h2>Book an Appointment</h2>
+          <p>Fill out the form below and we'll confirm your appointment within 2 hours during business hours.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interest</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <optgroup label="Massage Therapy">
+                  <option value="swedish">Swedish Massage</option>
+                  <option value="deep-tissue">Deep Tissue Massage</option>
+                  <option value="hot-stone">Hot Stone Massage</option>
+                  <option value="thai">Thai Massage</option>
+                  <option value="sports">Sports Massage</option>
+                  <option value="prenatal">Prenatal Massage</option>
+                  <option value="couples">Couples Massage</option>
+                </optgroup>
+                <optgroup label="Body Treatments">
+                  <option value="sugar-scrub">Sugar Glow Body Scrub</option>
+                  <option value="salt-scrub">Detoxifying Sea Salt Scrub</option>
+                  <option value="body-wrap">Hydrating Body Wrap</option>
+                  <option value="aromatherapy">Aromatherapy Journey</option>
+                </optgroup>
+                <optgroup label="Facials">
+                  <option value="express-facial">Express Refresh Facial</option>
+                  <option value="signature-facial">Signature Serenity Facial</option>
+                  <option value="anti-aging">Anti-Aging Renewal Facial</option>
+                </optgroup>
+                <optgroup label="Packages">
+                  <option value="refresh">The Refresh Package</option>
+                  <option value="serenity-retreat">Serenity Retreat Package</option>
+                  <option value="couples-escape">Couples Escape Package</option>
+                </optgroup>
+                <option value="gift">Gift Certificate</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferred-date">Preferred Date</label>
+                <input type="date" id="preferred-date" name="preferred-date" required>
+              </div>
+              <div class="form-group">
+                <label for="preferred-time">Preferred Time</label>
+                <select id="preferred-time" name="preferred-time" required>
+                  <option value="">Select a time...</option>
+                  <option value="morning">Morning (9am - 12pm)</option>
+                  <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                  <option value="evening">Evening (4pm - 8pm)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="therapist">Therapist Preference (Optional)</label>
+              <select id="therapist" name="therapist">
+                <option value="">No preference</option>
+                <option value="elena">Elena Rodriguez</option>
+                <option value="maya">Maya Thompson</option>
+                <option value="james">James Chen</option>
+                <option value="sarah">Sarah Williams</option>
+                <option value="marcus">Marcus Johnson</option>
+                <option value="lisa">Lisa Park</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="notes">Special Requests or Health Concerns</label>
+              <textarea id="notes" name="notes" placeholder="Let us know about any areas of concern, injuries, allergies, or preferences..."></textarea>
+            </div>
+            <div class="form-group">
+              <label style="display: flex; align-items: flex-start; gap: 0.75rem; cursor: pointer;">
+                <input type="checkbox" name="first-visit" style="width: auto; margin-top: 4px;">
+                <span style="font-weight: 400; color: var(--text-light);">This is my first visit to Serenity Wellness Spa</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Request Appointment</button>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              Visit Us
+            </h3>
+            <address>
+              456 Tranquil Lane, Suite 100<br>
+              Wellness City, ST 12345
+            </address>
+            <p style="margin-top: 1rem;"><strong>Parking:</strong> Free parking available in the rear lot. Enter from Oak Street.</p>
+          </div>
+
+          <div class="info-card">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+              Hours of Operation
+            </h3>
+            <ul class="hours-list">
+              <li>
+                <span class="day">Monday</span>
+                <span class="time">10:00 AM - 7:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Tuesday</span>
+                <span class="time">9:00 AM - 8:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Wednesday</span>
+                <span class="time">9:00 AM - 8:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Thursday</span>
+                <span class="time">9:00 AM - 8:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Friday</span>
+                <span class="time">9:00 AM - 7:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Saturday</span>
+                <span class="time">9:00 AM - 6:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Sunday</span>
+                <span class="time">10:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72"/>
+                <path d="M15 7a4 4 0 0 1 4 4"/>
+                <path d="M15 3a8 8 0 0 1 8 8"/>
+              </svg>
+              Contact
+            </h3>
+            <p>
+              <strong>Phone:</strong> <a href="tel:+15551234567">(555) 123-4567</a><br>
+              <strong>Email:</strong> <a href="mailto:hello@serenityspa.com">hello@serenityspa.com</a>
+            </p>
+            <p style="margin-top: 1rem;">For same-day appointments, please call us directly.</p>
+          </div>
+
+          <div class="map-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Client Info -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="new-client-info">
+        <h2>First Visit? Here's What to Know</h2>
+        <p>We want your first experience at Serenity to be relaxing from the moment you arrive. Here's everything you need to prepare for your visit.</p>
+        <ul class="checklist">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            Arrive 15 minutes early to complete intake forms and settle in
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            Wear comfortable, loose-fitting clothing
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            Avoid heavy meals 1-2 hours before your appointment
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            Stay hydrated before and after your treatment
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            Communicate your pressure preferences during the session
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 6L9 17l-5-5"/>
+            </svg>
+            Let us know about any health conditions, injuries, or allergies
+          </li>
+        </ul>
+        <a href="services.html" class="btn btn-outline-light btn-lg">View Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="overline">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know before your visit.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>What should I wear to my massage?</h4>
+          <p>You'll undress to your comfort level and be professionally draped with sheets throughout. Most guests remove all clothing, but underwear can be left on if you prefer. For Thai massage, wear comfortable, stretchy clothing.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How far in advance should I book?</h4>
+          <p>We recommend booking 1-2 weeks in advance, especially for evening and weekend appointments. For same-day availability, give us a call and we'll do our best to accommodate you.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What is your cancellation policy?</h4>
+          <p>We require 24 hours notice for cancellations or rescheduling. Late cancellations or no-shows may be charged 50% of the service price. We understand emergencies happen and will work with you.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Is gratuity expected?</h4>
+          <p>Gratuity is always appreciated but never expected. If you'd like to tip, 15-20% is customary. Tips can be added to your card payment or given in cash directly to your therapist.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What if I have health conditions?</h4>
+          <p>Please let us know about any medical conditions, recent surgeries, or injuries when booking. Some conditions may require a doctor's clearance. We'll work with you to ensure a safe and beneficial treatment.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What if I'm running late?</h4>
+          <p>Please call us if you're running late. We'll do our best to accommodate your full service, but your appointment may need to be shortened to respect the next guest's time.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I request a specific therapist?</h4>
+          <p>Absolutely. When booking, let us know your preference and we'll do our best to schedule you with that therapist. If they're unavailable, we'll recommend someone with similar skills.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you offer gift certificates?</h4>
+          <p>Yes! Gift certificates are available for any dollar amount or specific services. They can be purchased in-spa, over the phone, or by contacting us through the form above. Physical and digital options available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-sage">
+    <div class="container">
+      <div class="cta-section">
+        <h2>Still Have Questions?</h2>
+        <p>Our team is happy to help you choose the right treatment or answer any questions you might have.</p>
+        <div class="cta-buttons">
+          <a href="tel:+15551234567" class="btn btn-primary btn-lg" style="background: var(--white); color: var(--primary-dark);">Call (555) 123-4567</a>
+          <a href="mailto:hello@serenityspa.com" class="btn btn-outline-light btn-lg">Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">
+            Serenity
+            <span>Wellness Spa</span>
+          </div>
+          <p>A sanctuary of calm where expert therapists help you restore your balance and rediscover wellness.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.425 1.81-2.425.853 0 1.265.64 1.265 1.409 0 .858-.546 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.177-4.068-2.845 0-4.515 2.135-4.515 4.34 0 .859.331 1.781.745 2.281a.3.3 0 0 1 .069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Massage Therapy</a></li>
+            <li><a href="services.html">Body Treatments</a></li>
+            <li><a href="services.html">Facial Treatments</a></li>
+            <li><a href="services.html">Spa Packages</a></li>
+            <li><a href="contact.html">Gift Certificates</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>456 Tranquil Lane<br>Suite 100<br>Wellness City, ST 12345</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>(555) 123-4567</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <span>hello@serenityspa.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Serenity Wellness Spa. All rights reserved. Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

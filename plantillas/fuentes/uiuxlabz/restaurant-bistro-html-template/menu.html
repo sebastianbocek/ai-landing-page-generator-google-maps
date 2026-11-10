@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - RESTORAN</title>
+  <meta name="description" content="Explore the RESTORAN menu. From signature mains to handcrafted desserts, discover dishes made with locally sourced, seasonal ingredients.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/img/logo-white.svg" alt="RESTORAN">
+      </a>
+      <div class="navbar__menu">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="menu.html" class="navbar__link navbar__link--active">Menu</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+        <a href="contact.html" class="navbar__cta"><span class="btn btn--primary">Reserve a Table</span></a>
+      </div>
+      <button class="navbar__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/img/menu-bg.svg" alt="RESTORAN menu">
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Our Menu</h1>
+      <p class="page-hero__breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Menu</p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Curated With Passion</span>
+        <h2 class="section-header__title">Seasonal Flavors, Timeless Craft</h2>
+        <div class="section-header__divider"></div>
+        <p class="section-header__text">Every dish begins with the finest local produce, prepared with techniques refined over generations.</p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="menu-categories reveal">
+        <button class="menu-category-btn active" data-category="all">All</button>
+        <button class="menu-category-btn" data-category="starters">Starters</button>
+        <button class="menu-category-btn" data-category="mains">Mains</button>
+        <button class="menu-category-btn" data-category="seafood">Seafood</button>
+        <button class="menu-category-btn" data-category="desserts">Desserts</button>
+        <button class="menu-category-btn" data-category="drinks">Drinks</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid">
+
+        <!-- Starters -->
+        <div class="menu-item reveal" data-category="starters">
+          <div class="menu-item__image">
+            <img src="assets/img/food-5.svg" alt="Burrata Caprese">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Burrata Caprese</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$18</span>
+            </div>
+            <p class="menu-item__desc">Creamy burrata, heirloom tomatoes, fresh basil, aged balsamic, extra virgin olive oil.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="starters">
+          <div class="menu-item__image">
+            <img src="assets/img/food-6.svg" alt="Foie Gras Terrine">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Foie Gras Terrine</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$28</span>
+            </div>
+            <p class="menu-item__desc">Duck foie gras, brioche toast, fig compote, fleur de sel, microgreens.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--spice">Chef's Special</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="starters">
+          <div class="menu-item__image">
+            <img src="assets/img/food-1.svg" alt="Seared Scallops">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Seared Scallops</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$24</span>
+            </div>
+            <p class="menu-item__desc">Diver scallops, cauliflower purée, pancetta crisps, brown butter, capers.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Gluten Free</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="starters">
+          <div class="menu-item__image">
+            <img src="assets/img/food-2.svg" alt="French Onion Soup">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">French Onion Soup</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$16</span>
+            </div>
+            <p class="menu-item__desc">Caramelized onions, rich beef consommé, gruyère crouton, fresh thyme.</p>
+          </div>
+        </div>
+
+        <!-- Mains -->
+        <div class="menu-item reveal" data-category="mains">
+          <div class="menu-item__image">
+            <img src="assets/img/food-3.svg" alt="Wagyu Beef Tenderloin">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Wagyu Beef Tenderloin</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$68</span>
+            </div>
+            <p class="menu-item__desc">A5 Japanese wagyu, truffle jus, roasted root vegetables, red wine reduction.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--spice">Signature</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="mains">
+          <div class="menu-item__image">
+            <img src="assets/img/food-4.svg" alt="Duck Confit">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Duck Confit</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$48</span>
+            </div>
+            <p class="menu-item__desc">Slow-cooked duck leg, creamy polenta, braised red cabbage, orange glaze.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Gluten Free</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="mains">
+          <div class="menu-item__image">
+            <img src="assets/img/food-1.svg" alt="Black Truffle Risotto">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Black Truffle Risotto</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$44</span>
+            </div>
+            <p class="menu-item__desc">Arborio rice, black winter truffle, aged parmesan, mascarpone, truffle oil.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Vegetarian</span>
+              <span class="menu-item__tag menu-item__tag--spice">Seasonal</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="mains">
+          <div class="menu-item__image">
+            <img src="assets/img/food-2.svg" alt="Lamb Rack">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Herb-Crusted Lamb Rack</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$56</span>
+            </div>
+            <p class="menu-item__desc">New Zealand lamb, rosemary crust, potato gratin, minted pea purée, rosemary jus.</p>
+          </div>
+        </div>
+
+        <!-- Seafood -->
+        <div class="menu-item reveal" data-category="seafood">
+          <div class="menu-item__image">
+            <img src="assets/img/food-5.svg" alt="Pan-Seared Sea Bass">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Pan-Seared Sea Bass</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$52</span>
+            </div>
+            <p class="menu-item__desc">Chilean sea bass, saffron risotto, blistered cherry tomatoes, basil oil.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Gluten Free</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="seafood">
+          <div class="menu-item__image">
+            <img src="assets/img/food-6.svg" alt="Lobster Thermidor">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Lobster Thermidor</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$72</span>
+            </div>
+            <p class="menu-item__desc">Whole Maine lobster, cognac cream sauce, gruyère gratin, asparagus, drawn butter.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--spice">Premium</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="seafood">
+          <div class="menu-item__image">
+            <img src="assets/img/food-1.svg" alt="Grilled Octopus">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Grilled Octopus</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$36</span>
+            </div>
+            <p class="menu-item__desc">Spanish octopus, fingerling potatoes, chorizo crumble, smoked paprika aioli.</p>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-item reveal" data-category="desserts">
+          <div class="menu-item__image">
+            <img src="assets/img/food-2.svg" alt="Crème Brûlée">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Crème Brûlée</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$14</span>
+            </div>
+            <p class="menu-item__desc">Madagascar vanilla bean, caramelized sugar crust, fresh berries, edible flowers.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Vegetarian</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="desserts">
+          <div class="menu-item__image">
+            <img src="assets/img/food-3.svg" alt="Chocolate Fondant">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Chocolate Fondant</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$16</span>
+            </div>
+            <p class="menu-item__desc">Valrhona dark chocolate, molten center, vanilla ice cream, cocoa tuile.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--spice">Popular</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="desserts">
+          <div class="menu-item__image">
+            <img src="assets/img/food-4.svg" alt="Tarte Tatin">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Tarte Tatin</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$15</span>
+            </div>
+            <p class="menu-item__desc">Caramelized apple, puff pastry, Calvados cream, salted caramel drizzle.</p>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="desserts">
+          <div class="menu-item__image">
+            <img src="assets/img/food-5.svg" alt="Panna Cotta">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Panna Cotta Trio</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$18</span>
+            </div>
+            <p class="menu-item__desc">Classic vanilla, espresso, and raspberry panna cotta, citrus tuile, berry coulis.</p>
+          </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-item reveal" data-category="drinks">
+          <div class="menu-item__image">
+            <img src="assets/img/ambiance-1.svg" alt="Signature Cocktails">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Signature Cocktails</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$16</span>
+            </div>
+            <p class="menu-item__desc">Ask your server about our seasonal cocktail selection, crafted by our in-house mixologist.</p>
+          </div>
+        </div>
+
+        <div class="menu-item reveal" data-category="drinks">
+          <div class="menu-item__image">
+            <img src="assets/img/ambiance-2.svg" alt="Wine Selection">
+          </div>
+          <div class="menu-item__info">
+            <div class="menu-item__header">
+              <span class="menu-item__name">Wine by the Glass</span>
+              <span class="menu-item__dots"></span>
+              <span class="menu-item__price">$14 - $32</span>
+            </div>
+            <p class="menu-item__desc">A curated list of old and new world wines, selected to complement our menu perfectly.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Sommelier's Choice</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation CTA -->
+  <section class="reservation-cta">
+    <div class="reservation-cta__bg">
+      <img src="assets/img/reservation.svg" alt="Reservation background">
+    </div>
+    <div class="reservation-cta__overlay"></div>
+    <div class="container reservation-cta__content reveal">
+      <h2 class="reservation-cta__title">Ready to Dine?</h2>
+      <p class="reservation-cta__text">Secure your table and let us prepare an unforgettable culinary experience for you.</p>
+      <a href="contact.html" class="btn btn--primary">Reserve Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/img/logo-white.svg" alt="RESTORAN">
+          </div>
+          <p class="footer__desc">Where every meal tells a story. A premium dining experience crafted with passion, locally sourced ingredients, and unwavering attention to detail.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">TW</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Hours</h4>
+          <ul class="footer__links">
+            <li><a href="#">Mon - Thu: 11am - 10pm</a></li>
+            <li><a href="#">Fri - Sat: 11am - 11pm</a></li>
+            <li><a href="#">Sunday: 10am - 9pm</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Get in Touch</h4>
+          <div class="footer__contact-item">
+            <span>&#9679;</span>
+            <span>742 Evergreen Terrace<br>New York, NY 10001</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>&#9679;</span>
+            <span>(555) 123-4567</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>&#9679;</span>
+            <span>hello@restoran.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span class="footer-year">2026</span> RESTORAN. All rights reserved.</span>
+        <span>Crafted with care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

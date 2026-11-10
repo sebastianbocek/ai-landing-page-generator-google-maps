@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — iCREAM Artisanal Ice Cream Shop</title>
+  <meta name="description" content="Browse the full iCREAM menu — scoops, sundaes, gelato, sorbet, drinks and scoop cakes. All prices in USD.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍨</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════ Header / Navigation ═══════════ -->
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="iCREAM home">
+        <span class="brand-mark" aria-hidden="true">🍨</span>
+        i<em>CREAM</em>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="service.html">Flavors</a>
+        <a class="nav-link" href="product.html">Menu</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="btn btn--raspberry nav-cta" href="product.html">Order a Scoop</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════ Page hero ═══════════ -->
+    <section class="page-hero">
+      <img class="bg" src="assets/img/header.jpg" alt="The iCREAM menu board">
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span>›</span><span>Menu</span>
+          </nav>
+          <h1>Our full scoop menu</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ Menu with filter ═══════════ -->
+    <section class="section reveal" id="menu">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">All Prices in USD</span>
+          <h2>Everything we serve</h2>
+          <p class="lead">Scoops, sundaes, gelato, sorbet, shakes and scoop cakes — all made fresh in-house daily.</p>
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="filters" role="tablist" aria-label="Filter menu by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="ice-cream" role="tab" aria-selected="false">Ice Cream</button>
+          <button class="filter-btn" data-filter="gelato" role="tab" aria-selected="false">Gelato</button>
+          <button class="filter-btn" data-filter="sorbet" role="tab" aria-selected="false">Sorbet</button>
+          <button class="filter-btn" data-filter="sundae" role="tab" aria-selected="false">Sundaes</button>
+          <button class="filter-btn" data-filter="drink" role="tab" aria-selected="false">Drinks</button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <!-- Ice Cream -->
+          <article class="card menu-card" data-category="ice-cream">
+            <div class="thumb"><img src="assets/img/product-1.jpg" alt="Madagascar Vanilla Bean" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Classic</span>
+              <div class="menu-card__row"><h3>Madagascar Vanilla Bean</h3><span class="dots" aria-hidden="true"></span><span class="price">$4.5</span></div>
+              <p>Real vanilla seeds, 12-month-aged cream. Single scoop, single cone or cup.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="ice-cream">
+            <div class="thumb"><img src="assets/img/product-2.jpg" alt="Belgian Chocolate" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Rich</span>
+              <div class="menu-card__row"><h3>Belgian Chocolate</h3><span class="dots" aria-hidden="true"></span><span class="price">$4.8</span></div>
+              <p>70% dark Belgian couverture folded into fudge-brownie ripple.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="ice-cream">
+            <div class="thumb"><img src="assets/img/product-3.jpg" alt="Fresh Strawberry" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Seasonal</span>
+              <div class="menu-card__row"><h3>Fresh Strawberry</h3><span class="dots" aria-hidden="true"></span><span class="price">$4.5</span></div>
+              <p>Slow-roasted local strawberries swirled through sweet cream.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="ice-cream">
+            <div class="thumb"><img src="assets/img/product-5.jpg" alt="Mint Chocolate Chip" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Refreshing</span>
+              <div class="menu-card__row"><h3>Mint Chocolate Chip</h3><span class="dots" aria-hidden="true"></span><span class="price">$4.5</span></div>
+              <p>Fresh garden mint, shaved dark chocolate. Zero artificial colouring.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="ice-cream">
+            <div class="thumb"><img src="assets/img/service-1.jpg" alt="Honeycomb Crunch" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Limited</span>
+              <div class="menu-card__row"><h3>Honeycomb Crunch</h3><span class="dots" aria-hidden="true"></span><span class="price">$5.0</span></div>
+              <p>Raw honey from BeeJoy farm, candied honeycomb pieces, salted butter.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="ice-cream">
+            <div class="thumb"><img src="assets/img/service-2.jpg" alt="Salted Caramel" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Popular</span>
+              <div class="menu-card__row"><h3>Salted Caramel</h3><span class="dots" aria-hidden="true"></span><span class="price">$4.8</span></div>
+              <p>House-made caramel ribbon, flaky sea salt, dark caramel chunks.</p>
+            </div>
+          </article>
+
+          <!-- Gelato -->
+          <article class="card menu-card" data-category="gelato">
+            <div class="thumb"><img src="assets/img/product-4.jpg" alt="Sicilian Pistachio Gelato" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Gelato</span>
+              <div class="menu-card__row"><h3>Sicilian Pistachio</h3><span class="dots" aria-hidden="true"></span><span class="price">$5.2</span></div>
+              <p>Bronte pistachios stone-ground into a silky, nutty gelato.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="gelato">
+            <div class="thumb"><img src="assets/img/service-3.jpg" alt="Stracciatella Gelato" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Gelato</span>
+              <div class="menu-card__row"><h3>Stracciatella</h3><span class="dots" aria-hidden="true"></span><span class="price">$5.0</span></div>
+              <p>Milk gelato, shards of melted dark chocolate, no egg yolks.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="gelato">
+            <div class="thumb"><img src="assets/img/service-4.jpg" alt="Hazelnut Gelato" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Gelato</span>
+              <div class="menu-card__row"><h3>Piedmont Hazelnut</h3><span class="dots" aria-hidden="true"></span><span class="price">$5.5</span></div>
+              <p>Italian-imported Tonda Gentile hazelnuts, slow-roasted, double-ground.</p>
+            </div>
+          </article>
+
+          <!-- Sorbet -->
+          <article class="card menu-card" data-category="sorbet">
+            <div class="thumb"><img src="assets/img/team-1.jpg" alt="Raspberry Sorbet" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Vegan</span>
+              <div class="menu-card__row"><h3>Raspberry Sorbet</h3><span class="dots" aria-hidden="true"></span><span class="price">$4.2</span></div>
+              <p>Whole raspberries, lemon, cane sugar. Dairy-free, egg-free, pure joy.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="sorbet">
+            <div class="thumb"><img src="assets/img/team-2.jpg" alt="Mango & Passion Sorbet" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Vegan</span>
+              <div class="menu-card__row"><h3>Mango &amp; Passion</h3><span class="dots" aria-hidden="true"></span><span class="price">$4.2</span></div>
+              <p>Alphonso mango pulp, passion fruit seeds, a splash of lime.</p>
+            </div>
+          </article>
+
+          <!-- Sundaes -->
+          <article class="card menu-card" data-category="sundae">
+            <div class="thumb"><img src="assets/img/team-3.jpg" alt="Sunday Sundae" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Sunday Only</span>
+              <div class="menu-card__row"><h3>Sunday Sundae</h3><span class="dots" aria-hidden="true"></span><span class="price">$6.9</span></div>
+              <p>Two scoops, warm brownie, caramelized banana, chantilly &amp; cherry.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="sundae">
+            <div class="thumb"><img src="assets/img/team-4.jpg" alt="Brownie Explosion Sundae" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Sundae</span>
+              <div class="menu-card__row"><h3>Brownie Explosion</h3><span class="dots" aria-hidden="true"></span><span class="price">$7.5</span></div>
+              <p>Warm fudge brownie, three scoops, whipped cream, sprinkles, nuts.</p>
+            </div>
+          </article>
+
+          <!-- Drinks -->
+          <article class="card menu-card" data-category="drink">
+            <div class="thumb"><img src="assets/img/team-1.jpg" alt="Vanilla Milkshake" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Drink</span>
+              <div class="menu-card__row"><h3>Vanilla Shake</h3><span class="dots" aria-hidden="true"></span><span class="price">$5.5</span></div>
+              <p>Three scoops, whole milk, whipped cream, straw (yes, the metal kind).</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="drink">
+            <div class="thumb"><img src="assets/img/team-2.jpg" alt="Chocolate Shake" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Drink</span>
+              <div class="menu-card__row"><h3>Chocolate Shake</h3><span class="dots" aria-hidden="true"></span><span class="price">$5.5</span></div>
+              <p>Belgian chocolate ice cream, fudge sauce, whipped cream, the works.</p>
+            </div>
+          </article>
+
+          <article class="card menu-card" data-category="drink">
+            <div class="thumb"><img src="assets/img/team-3.jpg" alt="Strawberry Smoothie" loading="lazy"></div>
+            <div class="menu-card__body">
+              <span class="tag">Drink</span>
+              <div class="menu-card__row"><h3>Strawberry Smoothie</h3><span class="dots" aria-hidden="true"></span><span class="price">$6.0</span></div>
+              <p>Fresh strawberry sorbet, banana, oat milk, honey. Vegan-friendly.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ribbon divider -->
+    <svg class="ribbon" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1440 90"><path d="M0 0h1440v24c-240 44-480 44-720 44S240 68 0 24V0Z" fill="#fff1f5"/><path d="M0 10h1440v14c-240 44-480 44-720 44S240 68 0 24V10Z" fill="#fff" opacity=".6"/></svg>
+
+    <!-- ═══════════ Scoop cake info ═══════════ -->
+    <section class="section section--milk reveal" style="padding-top:0;">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Custom Orders</span>
+          <h2>Scoop cakes &amp; party platters</h2>
+          <p class="lead">Need a 3-tier ice cream cake or a tower of 50 mini-scoops? We do that.</p>
+        </div>
+        <div class="split">
+          <div class="split__media">
+            <div class="photo"><img src="assets/img/promotion.jpg" alt="iCREAM custom scoop cake" loading="lazy"></div>
+            <div class="badge-float"><b>48h</b> Notice needed</div>
+          </div>
+          <div class="split__content">
+            <ul class="split__list">
+              <li><span class="tick">✓</span><div><b>Scoop Cakes</b><span>Your choice of 2-3 flavours, hand-piped frosting, custom message. Feeds 6–20.</span></div></li>
+              <li><span class="tick">✓</span><div><b>Mini-Scoop Platters</b><span>50–100 mini scoops on a board — perfect for office parties and weddings.</span></div></li>
+              <li><span class="tick">✓</span><div><b>Dessert Catering</b><span>We bring the full mobile bar: two flavours, toppings, warm cones, and a smile.</span></div></li>
+            </ul>
+            <a class="btn btn--raspberry" href="contact.html">Order a Cake</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ Footer ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="iCREAM home">
+            <span class="brand-mark" aria-hidden="true">🍨</span>
+            i<em>CREAM</em>
+          </a>
+          <p>Small-batch artisanal ice cream, churned daily from local dairy and seasonal fruit. Find us at the corner of Maple &amp; Cherry Street — follow the smell of warm waffle cones.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">👍</a>
+            <a href="#" aria-label="X / Twitter">🐦</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Our Flavors</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <ul class="footer-links">
+            <li><a href="product.html">Ice Cream Scoops</a></li>
+            <li><a href="product.html">Sundaes</a></li>
+            <li><a href="product.html">Gelato</a></li>
+            <li><a href="product.html">Sorbet</a></li>
+            <li><a href="product.html">Scoop Cakes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Scoop Club</h4>
+          <p>Join the newsletter for flavour drops, secret Sunday specials and birthday scoops.</p>
+          <form class="newsletter" data-form novalidate>
+            <label class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);" for="nl-email">Email address</label>
+            <input type="email" id="nl-email" name="email" placeholder="you@example.com" required>
+            <button class="btn btn--raspberry" type="submit">Join</button>
+            <div class="form-ok">Welcome to the Scoop Club! 🍨</div>
+            <div class="form-err">Please enter your email address.</div>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p style="margin:0;">© <span data-year>2025</span> iCREAM — Artisanal Ice Cream &amp; Dessert Shop. Made with <span class="heart">♥</span> and way too much sugar.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Menu filter — inline, does not modify main.js
+    (function(){
+      var grid = document.getElementById('menu-grid');
+      var btns = document.querySelectorAll('.filter-btn');
+      var items = grid.querySelectorAll('[data-category]');
+      btns.forEach(function(btn){
+        btn.addEventListener('click', function(){
+          btns.forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+          btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+          var filter = btn.getAttribute('data-filter');
+          items.forEach(function(item){
+            if(filter === 'all' || item.getAttribute('data-category') === filter){
+              item.removeAttribute('hidden');
+            } else {
+              item.setAttribute('hidden','');
+            }
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

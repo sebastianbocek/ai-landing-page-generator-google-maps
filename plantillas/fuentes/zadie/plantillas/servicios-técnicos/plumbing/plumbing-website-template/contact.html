@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Clearwater Plumbing</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-wrench"></i></div>
+        <div class="logo-text">Clear<span>water</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="tel:5551234567" class="header-cta">Call Now: (555) 123-4567</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">We're Here to Help</div>
+        <h1>
+          Get In
+          <span>Touch</span>
+        </h1>
+        <p class="hero-description">Have a question or need to schedule service? Reach out anytime. Our friendly team is ready to help with all your plumbing needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Call us for immediate assistance or fill out the form to schedule a service appointment. We respond to all inquiries within one business day.</p>
+          <ul class="contact-details">
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">(555) 123-4567</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">info@clearwaterplumbing.com</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="contact-label">Office Address</div>
+                <div class="contact-value">123 Main Street, Suite 100<br>Anytown, ST 12345</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <div class="contact-label">Business Hours</div>
+                <div class="contact-value">Mon–Fri: 7am–6pm<br>Sat: 8am–4pm<br>Emergency: 24/7</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Service Address</label>
+              <input type="text" id="address" name="address" placeholder="Street address, city, zip">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="drain-cleaning">Drain Cleaning</option>
+                <option value="water-heater">Water Heater</option>
+                <option value="leak-detection">Leak Detection</option>
+                <option value="fixture-install">Fixture Installation</option>
+                <option value="repiping">Repiping</option>
+                <option value="emergency">Emergency Repair</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Describe Your Issue</label>
+              <textarea id="message" name="message" placeholder="Please describe the plumbing issue you're experiencing, including any relevant details like when it started, what you've noticed, etc."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="preferred-time">Preferred Appointment Time</label>
+              <select id="preferred-time" name="preferred-time">
+                <option value="">Select preferred time...</option>
+                <option value="morning">Morning (7am–12pm)</option>
+                <option value="afternoon">Afternoon (12pm–5pm)</option>
+                <option value="asap">As Soon As Possible</option>
+                <option value="flexible">Flexible</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Submit Request <span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <div class="section-tag">Service Area</div>
+          <h2 class="section-title">Areas We Serve</h2>
+          <p class="about-text">
+            Clearwater Plumbing proudly serves the greater metro area and surrounding communities. Our technicians are familiar with local building codes and water conditions, ensuring compliant and effective solutions for your home or business.
+          </p>
+          <ul class="about-list">
+            <li>Downtown & Midtown</li>
+            <li>Oakwood Heights</li>
+            <li>Riverside Terrace</li>
+            <li>Cedar Hills</li>
+            <li>Lakewood</li>
+            <li>Northgate</li>
+            <li>Southside</li>
+            <li>West End</li>
+          </ul>
+          <p class="about-text" style="margin-top: 1rem;">Don't see your area listed? Give us a call — we may still be able to help!</p>
+        </div>
+        <div class="about-image">
+          <div class="about-image-main" style="background: linear-gradient(145deg, #c17f59 0%, #d4a574 100%);; background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+          <div class="about-image-accent" style="background: var(--navy-deep);">
+            <div class="accent-number">30+</div>
+            <div class="accent-text">Mile Radius</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency CTA -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">24/7 Emergency</div>
+        <h2 class="section-title">Plumbing Emergency?</h2>
+        <p class="section-subtitle">Don't wait — call our emergency line now. A real person answers 24 hours a day, 7 days a week.</p>
+        <div style="margin-top: 2rem;">
+          <a href="tel:5551234567" class="btn btn-primary" style="font-size: 1.25rem; padding: 1.25rem 2.5rem;">Call (555) 123-4567</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title">Common Questions</h2>
+      </div>
+      <div class="about-grid" style="gap: 2rem;">
+        <div class="about-content" style="padding-right: 0;">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Do you charge for estimates?</h3>
+          <p class="about-text">No. We provide free estimates for all plumbing work. There's no trip charge or obligation.</p>
+
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem; margin-top: 2rem;">Are your plumbers licensed?</h3>
+          <p class="about-text">Yes. All our technicians are fully licensed, background-checked, and insured. We're also bonded for your protection.</p>
+
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem; margin-top: 2rem;">Do you offer warranties?</h3>
+          <p class="about-text">Yes. All our work is backed by a satisfaction guarantee. Parts and labor warranties vary by service — ask your technician for details.</p>
+        </div>
+        <div class="about-content" style="padding-right: 0;">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">What payment methods do you accept?</h3>
+          <p class="about-text">We accept cash, checks, and all major credit cards. Financing is available for larger projects.</p>
+
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem; margin-top: 2rem;">How quickly can you come out?</h3>
+          <p class="about-text">For emergencies, we typically arrive within 1–2 hours. For non-urgent service, we can often schedule same-day or next-day appointments.</p>
+
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem; margin-top: 2rem;">Do you work on weekends?</h3>
+          <p class="about-text">Yes. We're available Saturdays from 8am–4pm for scheduled appointments, and our emergency line is available 24/7.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Ready to Get Started?</h2>
+        <p>We're standing by to help with your plumbing needs.</p>
+      </div>
+      <a href="tel:5551234567" class="cta-button">Call Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-wrench"></i></div>
+          <div class="logo-text">Clear<span>water</span></div>
+        </a>
+        <p>Serving the greater metro area with reliable plumbing services since 1987. Licensed, bonded, and insured.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">X</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Drain Cleaning</a></li>
+          <li><a href="services.html">Water Heaters</a></li>
+          <li><a href="services.html">Leak Detection</a></li>
+          <li><a href="services.html">Emergency Repairs</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="footer-links">
+          <li>(555) 123-4567</li>
+          <li>info@clearwaterplumbing.com</li>
+          <li>123 Main Street, Suite 100</li>
+          <li>Anytown, ST 12345</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Clearwater Plumbing. All rights reserved.</p>
+      <p>License #PLB-12345 | Bonded & Insured</p>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

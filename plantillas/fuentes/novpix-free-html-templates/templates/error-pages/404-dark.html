@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Signal lost — Lantern</title>
+  <meta name="description" content="Error 404: the requested page could not be found on this server.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="404 — Signal lost — Lantern">
+  <meta property="og:description" content="Error 404: the requested page could not be found on this server.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-image.svg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect width='30' height='30' rx='9' fill='%234f46e5'/%3E%3Cpath d='M11 8h8l-1.5 4h-5zM10.5 13h9v7a4.5 4.5 0 0 1-9 0z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body class="p-dark">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg-grid" aria-hidden="true"></div><div class="scan" aria-hidden="true"></div>
+  <header class="bar">
+    <a class="logo" href="index.html" aria-label="Lantern home"><svg viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="9" style="fill:var(--brand)"/><path d="M11 8h8l-1.5 4h-5zM10.5 13h9v7a4.5 4.5 0 0 1-9 0z" fill="#fff"/><circle cx="15" cy="17.5" r="1.6" style="fill:var(--brand)"/></svg><span data-zt="brandName">Lantern</span></a>
+    <nav aria-label="Primary"><a href="index.html">Home</a><a href="index.html">Blog</a><a href="index.html">Help centre</a><a href="mailto:support@lantern.example">Contact</a></nav>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <p class="glitch" data-text="404" aria-hidden="true">404</p>
+      <h1 data-zt="heading">Signal lost. Page not found.</h1>
+      <p>We searched every server, cache and dusty corner of the internet. Nothing. The page may have been moved or deleted.</p>
+      <div class="terminal">
+        <div class="tbar" aria-hidden="true"><i></i><i></i><i></i><span>lantern — zsh</span></div>
+        <pre id="term" aria-label="Server log"><span class="dim">$</span> curl -I https://lantern.example<span class="req-path">/this-page</span>
+<span class="err">HTTP/2 404 Not Found</span>
+<span class="dim">$</span> find / -name "this-page"
+<span class="dim">find: no matches in 2,048 directories</span>
+<span class="dim">$</span> suggest --nearest
+<span class="ok">→ /  (home)</span>   <span class="ok">→ /blog</span>   <span class="ok">→ /help</span>
+<span class="dim">$</span> <span class="cursor"></span></pre>
+      </div>
+      <div class="actions" style="justify-content:center">
+        <a class="btn btn-primary" href="index.html"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Return home</a>
+        <a class="btn btn-ghost" href="mailto:support@lantern.example">Report a broken link</a>
+      </div>
+    </div>
+  </main>
+  <footer class="foot">
+    <span>&copy; <span data-year>2026</span> <span data-zt="brandName">Lantern</span>. All rights reserved.</span>
+    <span><a href="index.html">All error pages</a></span>
+  </footer>
+</body>
+</html>

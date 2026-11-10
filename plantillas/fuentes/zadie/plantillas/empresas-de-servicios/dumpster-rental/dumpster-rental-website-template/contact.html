@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Quote — BinDrop Dumpster Rental Chicago</title>
+  <meta name="description" content="Request a dumpster rental quote online or call (773) 555-0149. Same-day delivery available in the Chicago metro area.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">
+        <div class="logo-mark-inner"></div>
+      </div>
+      <div class="logo-text">Bin<span>Drop</span></div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Sizes &amp; Pricing</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Get a Quote</a>
+    </nav>
+    <a href="tel:7735550149" class="header-phone">(773) 555-0149</a>
+    <a href="contact.html" class="btn btn-primary header-cta">Get a Quote</a>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <span class="section-label">Get a Quote</span>
+      <h1 class="section-title light">Tell us what you need.</h1>
+      <p>Fill out the form and we'll get back to you with a firm price within the hour. Or just call us — we pick up.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form + Sidebar -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Quote Form -->
+      <div class="form-section">
+        <h2>Quick Quote Request</h2>
+        <form action="#" method="POST">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Marco" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Reyes" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(773) 555-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <input type="text" id="address" name="address" placeholder="1234 N Milwaukee Ave, Chicago, IL 60622" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="size">Dumpster Size</label>
+              <select id="size" name="size" required>
+                <option value="">-- Select a size --</option>
+                <option value="10">10-Yard — $275/week</option>
+                <option value="15">15-Yard — $325/week (Most Popular)</option>
+                <option value="20">20-Yard — $375/week</option>
+                <option value="30">30-Yard — $450/week</option>
+                <option value="concrete">Concrete/Dirt Only — Call for quote</option>
+                <option value="unknown">Not sure — Help me choose</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="placement">Placement Location</label>
+              <select id="placement" name="placement">
+                <option value="">-- Where will it go? --</option>
+                <option value="driveway">Private driveway</option>
+                <option value="parking">Private parking lot</option>
+                <option value="street">Public street</option>
+                <option value="alley">Alley</option>
+                <option value="unsure">Not sure</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="start-date">Preferred Start Date</label>
+              <input type="date" id="start-date" name="start_date" required>
+            </div>
+            <div class="form-group">
+              <label for="duration">Rental Duration</label>
+              <select id="duration" name="duration">
+                <option value="1-week">1 week (standard)</option>
+                <option value="2-weeks">2 weeks</option>
+                <option value="3-weeks">3 weeks</option>
+                <option value="1-month">1 month+</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="materials">What are you disposing?</label>
+            <textarea id="materials" name="materials" placeholder="Ex: Drywall, carpet, old furniture, bathroom fixtures from a full gut remodel. No concrete or hazmat."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Anything else we should know?</label>
+            <textarea id="notes" name="notes" placeholder="Gate codes, tight access, specific drop placement, permit questions, etc." style="min-height:80px;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px;font-size:1rem;">
+            Submit Quote Request
+          </button>
+
+          <p style="font-size:0.8rem;color:var(--text-light);margin-top:12px;text-align:center;">
+            We respond within 1 hour during business hours (Mon–Sat, 7am–6pm). For same-day delivery, call directly.
+          </p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="contact-sidebar">
+
+        <div class="contact-card dark-card">
+          <h3>Call or text us directly</h3>
+          <div class="contact-detail">
+            <div class="contact-item">
+              <label style="color:rgba(255,255,255,0.4);">Phone</label>
+              <a href="tel:7735550149" style="color:var(--primary);font-size:1.3rem;">(773) 555-0149</a>
+            </div>
+            <div class="contact-item">
+              <label style="color:rgba(255,255,255,0.4);">Email</label>
+              <a href="mailto:drop@bindroprental.com" style="color:rgba(255,255,255,0.75);font-weight:600;font-size:0.9rem;">drop@bindroprental.com</a>
+            </div>
+            <div class="contact-item">
+              <label style="color:rgba(255,255,255,0.4);">Hours</label>
+              <p style="color:rgba(255,255,255,0.65);font-size:0.9rem;font-weight:600;">Mon–Sat: 7am–6pm<br>Emergency pickup: 24/7</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card">
+          <h3>Service Area ZIP Codes</h3>
+          <div class="zip-list">
+            <div class="zip-tag">60601</div>
+            <div class="zip-tag">60602</div>
+            <div class="zip-tag">60607</div>
+            <div class="zip-tag">60614</div>
+            <div class="zip-tag">60618</div>
+            <div class="zip-tag">60622</div>
+            <div class="zip-tag">60625</div>
+            <div class="zip-tag">60630</div>
+            <div class="zip-tag">60640</div>
+            <div class="zip-tag">60647</div>
+            <div class="zip-tag">60651</div>
+            <div class="zip-tag">60657</div>
+            <div class="zip-tag">60660</div>
+            <div class="zip-tag">60707</div>
+            <div class="zip-tag">60077</div>
+            <div class="zip-tag">60201</div>
+            <div class="zip-tag">60202</div>
+            <div class="zip-tag">60304</div>
+            <div class="zip-tag">60402</div>
+            <div class="zip-tag">60513</div>
+            <div class="zip-tag">60525</div>
+            <div class="zip-tag">60558</div>
+            <div class="zip-tag">60827</div>
+            <div class="zip-tag">60426</div>
+          </div>
+          <p style="font-size:0.78rem;color:var(--text-light);margin-top:12px;">Don't see your zip? Call us — coverage extends up to 40 miles from the city center.</p>
+        </div>
+
+        <div class="contact-card" style="background:var(--primary);border-color:var(--primary);">
+          <h3 style="color:var(--dark);">Need it today?</h3>
+          <p style="font-size:0.9rem;color:rgba(0,0,0,0.65);margin-bottom:16px;">Order by 10am for same-day delivery in most of the metro. Don't wait on the form — call us.</p>
+          <a href="tel:7735550149" class="btn btn-dark" style="width:100%;justify-content:center;">(773) 555-0149</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section">
+  <div class="container">
+    <span class="section-label">FAQ</span>
+    <h2 class="section-title">Common questions.</h2>
+    <p class="section-intro">The things people ask most before they order.</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How long can I keep the dumpster?</button>
+        <div class="faq-a">Standard rentals include 7 days from the delivery date. If you need more time, we charge $15 per additional day. Just give us a call before your pickup date and we'll extend it. For long-term projects (4+ weeks), ask about our monthly rates — they're significantly lower per day.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Where does the dumpster get placed?</button>
+        <div class="faq-a">Most customers place it in their driveway, which is ideal — no permit needed and it's on private property. If you don't have a driveway or need it in the street, we can arrange that with the appropriate city permit. Alley placement is also possible. Just tell us the situation when you order and we'll figure it out with you.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do I need a permit?</button>
+        <div class="faq-a">If the dumpster goes on your private property (driveway, parking lot, yard), no permit is needed. If it has to go on a public street, alley, or parkway, you'll need a City of Chicago right-of-way permit. Costs vary by ward but typically run $75–$175. We can pull the permit for you — just let us know when ordering. We know all the ward offices.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What can't go in the dumpster?</button>
+        <div class="faq-a">Prohibited items include: hazardous waste (paint, solvents, oils), asbestos materials, tires, electronics (TVs, computers), appliances containing Freon (refrigerators, AC units, dehumidifiers), propane tanks, batteries, and any liquids. Concrete and dirt require a specialty bin — call us for a separate quote. When in doubt, call before you throw.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What happens if I go over the weight limit?</button>
+        <div class="faq-a">Each dumpster size comes with a weight allowance. If the load exceeds that limit when weighed at the transfer station, we charge $65 per additional ton. We'll call you before pickup if we think it might be close based on what you've told us you're disposing. Heavy materials like dirt, concrete, and tile fill up weight limits much faster than lighter debris.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I get same-day delivery?</button>
+        <div class="faq-a">Yes, in most cases. Order by 10am and we can typically deliver the same day to most Chicago and inner-suburb addresses. Outer suburbs may require next-day. Call us directly for same-day orders — don't rely on the form if you need it fast. (773) 555-0149.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Will the dumpster damage my driveway?</button>
+        <div class="faq-a">We use rubber protection boards under every container to distribute weight and protect concrete and asphalt surfaces. The driver will position them carefully before the drop. In 14 years, we've had exactly zero driveway damage complaints — and we plan to keep it that way. If you have a particularly new or delicate surface, mention it and we'll take extra precautions.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I overfill the dumpster?</button>
+        <div class="faq-a">No. Debris must sit at or below the fill line on the container walls. Overfilled bins cannot be legally transported on public roads. If a driver arrives and finds an overfilled bin, you'll need to remove the excess before we can haul it. Fill it level, not piled high, and you'll be fine.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you recycle any of the material?</button>
+        <div class="faq-a">Yes. We work with licensed transfer stations that sort and divert recyclable materials from the landfill. Metals, concrete, and clean wood are typically separated for recycling or repurposing. We can't provide individual recycling reports for residential jobs, but our disposal process exceeds Illinois EPA standards.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-about">
+        <div class="logo">
+          <div class="logo-mark">
+            <div class="logo-mark-inner"></div>
+          </div>
+          <div class="logo-text">Bin<span>Drop</span></div>
+        </div>
+        <p>Local, family-owned dumpster rental serving Chicago and the metro area since 2011. Same-day delivery, flat-rate pricing, no surprises.</p>
+        <a href="tel:7735550149" class="footer-phone">(773) 555-0149</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sizes</h4>
+        <ul>
+          <li><a href="services.html">10-Yard — $275/wk</a></li>
+          <li><a href="services.html">15-Yard — $325/wk</a></li>
+          <li><a href="services.html">20-Yard — $375/wk</a></li>
+          <li><a href="services.html">30-Yard — $450/wk</a></li>
+          <li><a href="services.html">Concrete Dumpsters</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About BinDrop</a></li>
+          <li><a href="about.html">Our Fleet</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+          <li><a href="contact.html">Service Area</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:7735550149">(773) 555-0149</a></li>
+          <li><a href="mailto:drop@bindroprental.com">drop@bindroprental.com</a></li>
+          <li><a href="contact.html">Chicago, IL Metro</a></li>
+          <li><a href="contact.html">Mon–Sat: 7am–6pm</a></li>
+          <li><a href="contact.html">Emergency: 24/7</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 BinDrop Dumpster Rental. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      document.querySelectorAll('.faq-q').forEach(b => b.setAttribute('aria-expanded', 'false'));
+      if (!wasOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>

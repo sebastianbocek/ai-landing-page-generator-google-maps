@@ -454,18 +454,15 @@ class App:
         return "" if value.startswith("Ej.:") else value
 
     def download_category(self):
-        family = self.template.get()
-        if family == AUTO_TEMPLATE:
-            if not self.last_data:
-                messagebox.showinfo("Categoría automática", "Genera primero una página para obtener la categoría visible en Google Maps, o selecciona manualmente una familia.")
-                return
-            family = infer_template_family(self.last_data.get("category", ""))
-        repos = UIUX_CATALOG["families"].get(family, [])
+        # The reference-library action is global; it must not depend on a
+        # category inferred from a Maps listing or a manually selected family.
+        family = "todas las categorías"
+        repos = sorted({repo for family_repos in UIUX_CATALOG["families"].values() for repo in family_repos})
         if not repos:
-            messagebox.showinfo("Catálogo vacío", "No hay plantillas de GitHub asociadas a esta categoría.")
+            messagebox.showinfo("Catálogo vacío", "No hay plantillas de UIUXLabz en el catálogo.")
             return
         self.download_btn_state(True)
-        self.status.set(f"Descargando {len(repos)} plantillas de UIUXLabz para {family}…")
+        self.status.set(f"Verificando y descargando {len(repos)} referencias visuales de todas las categorías…")
         threading.Thread(target=self._download_category_worker, args=(family, repos), daemon=True).start()
 
     def download_btn_state(self, busy):
@@ -548,7 +545,7 @@ class App:
 
     def _download_done(self, family, completed, total, errors):
         self.download_btn_state(False)
-        summary = f"Catálogo {family}: {completed}/{total} referencias disponibles. La generación usa el renderer propio con dirección de IA."
+        summary = f"Catálogo de {family}: {completed}/{total} referencias UIUXLabz disponibles. Las plantillas de 100 Free, Novpix, Spicer Designs y Zadie se incluyen en el proyecto descargado. La generación usa el renderer propio con dirección de IA."
         if errors:
             summary += f" Fallaron {len(errors)} descargas; revisa la conexión."
         self.status.set(summary)

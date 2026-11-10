@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | GuardLine Pest Solutions</title>
+  <meta name="description" content="Schedule a free pest inspection or contact GuardLine Pest Solutions. Same-day service available for emergencies. Call (555) 392-7378.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Nunito+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">GuardLine</span>
+          <span class="logo-sub">Pest Solutions</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary header-cta">Get Free Inspection</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <h1>Get in Touch</h1>
+        <p>Schedule your free inspection or ask us anything. We typically respond within 2 hours during business hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form-section">
+          <h2>Request Service</h2>
+          <p>Fill out the form below and we'll get back to you within 2 hours. For emergencies, call us directly.</p>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+              </div>
+              <div class="form-group">
+                <label for="address">Property Address</label>
+                <input type="text" id="address" name="address" placeholder="Street address">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pest-type">Pest Type</label>
+                <select id="pest-type" name="pest-type">
+                  <option value="">Select pest type</option>
+                  <option value="ants">Ants</option>
+                  <option value="termites">Termites</option>
+                  <option value="rodents">Rodents (Mice/Rats)</option>
+                  <option value="roaches">Cockroaches</option>
+                  <option value="mosquitoes">Mosquitoes/Ticks</option>
+                  <option value="bed-bugs">Bed Bugs</option>
+                  <option value="spiders">Spiders</option>
+                  <option value="wildlife">Wildlife (Raccoons, Squirrels, etc.)</option>
+                  <option value="wasps">Wasps/Hornets</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="urgency">Urgency Level</label>
+                <select id="urgency" name="urgency">
+                  <option value="">How urgent is this?</option>
+                  <option value="emergency">Emergency (same-day needed)</option>
+                  <option value="soon">Soon (within a few days)</option>
+                  <option value="scheduled">Scheduled (within 1-2 weeks)</option>
+                  <option value="consultation">Just need a consultation</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="description">Describe the Issue</label>
+              <textarea id="description" name="description" placeholder="Tell us about the pest problem: where you're seeing activity, how long it's been going on, and any other details that might help." rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Submit Request</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-section">
+          <h2>Contact Info</h2>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h4>Office</h4>
+              <p>2840 Industrial Parkway<br>Suite 100, Greenfield, ST 45678</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>(555) 392-7378</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>info@guardlinepest.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div>
+              <h4>Service Area</h4>
+              <p>50-mile radius from Greenfield, including Springfield, Oakwood, Riverside, and Cedar Hills</p>
+            </div>
+          </div>
+
+          <div class="contact-hours">
+            <h4>Business Hours</h4>
+            <ul class="hours-list">
+              <li><span>Monday - Friday</span><span>7:00 AM - 6:00 PM</span></li>
+              <li><span>Saturday</span><span>8:00 AM - 2:00 PM</span></li>
+              <li><span>Sunday</span><span>Closed</span></li>
+              <li><span>Emergency</span><span>24/7 Hotline</span></li>
+            </ul>
+          </div>
+
+          <div class="emergency-box">
+            <p>24/7 Emergency Line</p>
+            <a href="tel:+15553927378">(555) 392-7378</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area Map -->
+  <section class="section section-green">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Coverage</p>
+        <h2 class="section-title">Our Service Area</h2>
+        <div class="section-divider">
+          <span></span>
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span></span>
+        </div>
+      </div>
+      <div class="map-container">
+        <div class="map-placeholder">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <p>Service Area Map</p>
+          <p style="font-family: var(--font-body); font-size: 0.875rem; color: rgba(255,255,255,0.4); margin-top: 0.5rem;">50-mile radius from Greenfield, ST</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">FAQ</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="section-divider">
+          <span></span>
+          <i class="fa-solid fa-circle-question"></i>
+          <span></span>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Are your treatments safe for kids and pets?</h3>
+          <p>Yes. We use EPA-registered products applied according to strict safety protocols. Most treatments are dry within 30 minutes and safe for re-entry. We'll provide specific instructions for your situation, and we always offer pet-safe and organic options when requested.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How long does a typical treatment take?</h3>
+          <p>A standard treatment takes 30-60 minutes depending on the size of your home and the type of pest. Specialized treatments like termite barriers or bed bug heat treatments can take 4-8 hours. We'll give you an accurate estimate before we start.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need to leave the house during treatment?</h3>
+          <p>For most standard treatments, no. We use targeted application methods that are safe for occupied homes. For bed bug heat treatments and certain fumigation services, we'll ask you to vacate for a specific period and will let you know in advance.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What's your satisfaction guarantee?</h3>
+          <p>If pests return between scheduled treatments, we come back and re-treat at no additional cost. For one-time services, our guarantee covers 60-90 days depending on the treatment. If you're not satisfied, we make it right.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How often should I schedule treatments?</h3>
+          <p>For ongoing protection, we recommend quarterly treatments at minimum. Homes with a history of pest issues or in high-activity areas benefit from bi-monthly service. Our annual plans include regular treatments on a schedule that fits your needs.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you offer organic or green options?</h3>
+          <p>Absolutely. We offer botanical-based and organic treatment options for customers who prefer them. These products are effective for many common pest situations. During your inspection, we'll discuss which approach makes the most sense for your specific problem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 style="color: var(--white);">Ready to Get Started?</h2>
+        <p>Your free inspection is one call away. No pressure, no obligation. Just honest assessment and clear recommendations.</p>
+        <a href="tel:+15553927378" class="btn btn-primary"><i class="fa-solid fa-phone"></i> Call (555) 392-7378</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="logo-text">
+              <span class="logo-main">GuardLine</span>
+              <span class="logo-sub">Pest Solutions</span>
+            </div>
+          </a>
+          <p>Science-based pest management that protects your home and family. Licensed, insured, and committed to your satisfaction.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+            <a href="#" aria-label="Nextdoor"><i class="fa-solid fa-house-chimney"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">General Pest Control</a></li>
+            <li><a href="services.html">Termite Protection</a></li>
+            <li><a href="services.html">Rodent Control</a></li>
+            <li><a href="services.html">Bed Bug Removal</a></li>
+            <li><a href="services.html">Annual Plans</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>2840 Industrial Parkway<br>Suite 100, Greenfield, ST 45678</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>(555) 392-7378</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>info@guardlinepest.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 GuardLine Pest Solutions. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

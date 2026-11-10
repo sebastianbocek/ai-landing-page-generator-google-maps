@@ -1,0 +1,15 @@
+{
+  "slug": "fitness",
+  "name": "Volt — gym & fitness website",
+  "category": "business",
+  "description": "An energetic one-page gym website with a tabbed class timetable, coach profiles, membership pricing, a BMI calculator, transformation stories and a free-trial signup.",
+  "tags": ["gym", "fitness", "personal trainer", "crossfit", "one page", "dark mode"],
+  "pages": ["index.html"],
+  "features": ["Responsive", "Dark design", "Mobile menu", "Class timetable tabs (keyboard accessible)", "Monthly / yearly pricing toggle", "BMI calculator (metric & imperial)", "Transformation stories", "Free trial signup form", "Scroll reveal animations", "Reduced-motion support", "Works without JavaScript"],
+  "fonts": [
+    {"family": "Anton", "source": "Google Fonts", "license": "OFL"},
+    {"family": "Manrope", "source": "Google Fonts", "license": "OFL"}
+  ],
+  "colors": {"brand": "#c6ff3d", "accent": "#ff4d2e", "bg": "#0c0d10", "text": "#f4f5f7"},
+  "customizable": {"brand": true, "accent": true, "brandName": true, "heading": true}
+}

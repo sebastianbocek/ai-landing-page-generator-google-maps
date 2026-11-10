@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Photo placeholder: two rings">
+  <rect width="600" height="600" fill="#efe7dc"/>
+  <circle cx="300" cy="300" r="220" fill="#f6efe6"/>
+  <g fill="none" stroke-width="18"><circle cx="255" cy="310" r="80" stroke="#d6b36a"/><circle cx="345" cy="290" r="80" stroke="#c9a257"/></g>
+  <path d="M232 238l23-28 23 28-23 20z" fill="#fff" stroke="#e7d3a8" stroke-width="3"/>
+  <g fill="#a9b595" transform="translate(120 460) rotate(-20)"><path d="M0 0c20-14 48-14 64 0-16 14-44 14-64 0z"/><path d="M60 0c20-14 48-14 64 0-16 14-44 14-64 0z" fill="#8a9a74"/></g>
+</svg>

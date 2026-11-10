@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a calm bedroom">
+  <rect width="800" height="600" fill="#e8ece6"/>
+  <rect y="460" width="800" height="140" fill="#b89a7a"/>
+  <rect x="220" y="170" width="360" height="190" rx="14" fill="#c8a15a"/>
+  <rect x="180" y="330" width="440" height="140" rx="16" fill="#f7f4ee"/>
+  <rect x="180" y="380" width="440" height="90" rx="16" fill="#1f4d45"/>
+  <path d="M180 395h440" stroke="#2c6358" stroke-width="6"/>
+  <rect x="230" y="290" width="140" height="60" rx="18" fill="#fff"/><rect x="430" y="290" width="140" height="60" rx="18" fill="#fff"/>
+  <path d="M200 470v24M600 470v24" stroke="#2b3a44" stroke-width="10"/>
+  <rect x="80" y="340" width="80" height="120" rx="6" fill="#f7f4ee"/><path d="M80 400h80" stroke="#d9d4c7" stroke-width="3"/>
+  <path d="M120 340v-50" stroke="#2b3a44" stroke-width="3"/><path d="M96 290h48l-8-30h-32z" fill="#e9e3d6"/>
+  <rect x="640" y="340" width="80" height="120" rx="6" fill="#f7f4ee"/><path d="M640 400h80" stroke="#d9d4c7" stroke-width="3"/>
+  <path d="M680 340v-30" stroke="#6b4f3a" stroke-width="3"/><g fill="#4f7a5a"><circle cx="668" cy="304" r="14"/><circle cx="692" cy="300" r="16"/><circle cx="680" cy="286" r="14"/></g>
+  <rect x="330" y="60" width="140" height="90" fill="#f7f4ee" stroke="#2b3a44" stroke-width="5"/><path d="M345 135c30-40 60-40 110-10" stroke="#c8623e" stroke-width="5" fill="none"/>
+</svg>

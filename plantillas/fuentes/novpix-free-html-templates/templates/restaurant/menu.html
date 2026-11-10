@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — Ember &amp; Olive</title>
+  <meta name="description" content="The full Ember & Olive menu: small plates, hand-rolled pasta, wood-fired mains, pizza, desserts and drinks, with vegetarian, vegan and gluten-free options marked.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Menu — Ember & Olive">
+  <meta property="og:description" content="Seasonal plates, hand-rolled pasta and natural wine, cooked over live fire.">
+  <meta property="og:image" content="assets/img/hero-plate.svg">
+  <meta name="theme-color" content="#241510">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23a63a0d'/%3E%3Cpath d='M32 14c8 10 12 16 12 22a12 12 0 0 1-24 0c0-6 4-12 12-22z' fill='%23fbf5ec'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>document.documentElement.classList.remove('no-js')</script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span>Tue–Sun · Dinner from 5:30pm · Weekend brunch</span>
+      <span class="hide-sm"><a href="tel:+15550142020">(555) 014-2020</a> · 48 Orchard Lane, Riverside</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main">
+      <a class="logo" href="index.html" aria-label="Ember & Olive home">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 8c6 7 9 12 9 16.5a9 9 0 0 1-18 0C11 20 14 15 20 8z" fill="currentColor"/><path d="M20 18c2.5 3 4 5 4 7a4 4 0 0 1-8 0c0-2 1.5-4 4-7z" fill="var(--bg)"/></svg>
+        <span data-zt="brandName">Ember &amp; Olive</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#story">Our story</a></li>
+        <li><a href="menu.html" aria-current="page">Menu</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#visit">Visit</a></li>
+        <li><a class="btn btn-primary" href="index.html#reserve">Book a table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main id="main">
+    <header class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Autumn menu · 2026</p>
+        <h1 data-zt="heading">Our menu</h1>
+        <p class="lead">Seasonal, simple and cooked over live fire. Everything is made in-house — let us know about allergies and we'll gladly adapt.</p>
+        <div class="legend" aria-label="Dietary key">
+          <span><span class="tag tag-v">V</span> Vegetarian</span>
+          <span><span class="tag tag-vg">VG</span> Vegan</span>
+          <span><span class="tag tag-gf">GF</span> Gluten-free</span>
+          <span><span class="tag tag-df">DF</span> Dairy-free</span>
+          <span><span class="tag tag-sp">🌶 Spicy</span> Spicy</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="menu-tabs" aria-label="Menu sections">
+      <div class="wrap">
+        <a href="#small">Small plates</a>
+        <a href="#pasta">Hand-rolled pasta</a>
+        <a href="#fire">From the fire</a>
+        <a href="#pizza">Pizza</a>
+        <a href="#dessert">Desserts</a>
+        <a href="#drinks">Drinks</a>
+      </div>
+    </nav>
+
+    <div class="wrap" style="padding-top:2.5rem">
+      <div class="filters" role="group" aria-label="Filter by diet">
+        <button type="button" data-filter="all" aria-pressed="true">Show all</button>
+        <button type="button" data-filter="v" aria-pressed="false">Vegetarian</button>
+        <button type="button" data-filter="vg" aria-pressed="false">Vegan</button>
+        <button type="button" data-filter="gf" aria-pressed="false">Gluten-free</button>
+        <button type="button" data-filter="df" aria-pressed="false">Dairy-free</button>
+      </div>
+      <p class="no-results" hidden>No dishes match that filter — ask your server, we can often adapt.</p>
+
+      <section class="menu-cat" id="small" aria-labelledby="small-h">
+        <div class="menu-cat-head"><h2 id="small-h">Small plates</h2><p>Made for sharing. We suggest two or three for the table.</p></div>
+        <ul class="menu-list">
+          <li class="menu-item" data-tags="v"><div class="mi-top"><h3>Wood-oven focaccia</h3><span class="dots" aria-hidden="true"></span><span class="price">$7</span></div><p>Rosemary, flaky salt, cultured butter or olive oil.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span></div></li>
+          <li class="menu-item" data-tags="v gf"><div class="mi-top"><h3>Burrata &amp; stone fruit</h3><span class="dots" aria-hidden="true"></span><span class="price">$15</span></div><p>Grilled peach, basil oil, toasted hazelnut.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span><span class="tag tag-gf" title="Gluten-free">GF</span></div></li>
+          <li class="menu-item" data-tags="gf df sp"><div class="mi-top"><h3>Charred broccolini</h3><span class="dots" aria-hidden="true"></span><span class="price">$12</span></div><p>Chilli, lemon, almond crumb, anchovy dressing.</p><div class="tags"><span class="tag tag-gf" title="Gluten-free">GF</span><span class="tag tag-df" title="Dairy-free">DF</span><span class="tag tag-sp" title="Spicy">🌶 Spicy</span></div></li>
+          <li class="menu-item" data-tags="vg gf df"><div class="mi-top"><h3>Crispy chickpeas</h3><span class="dots" aria-hidden="true"></span><span class="price">$8</span></div><p>Smoked paprika, garlic aioli.</p><div class="tags"><span class="tag tag-vg" title="Vegan">VG</span><span class="tag tag-gf" title="Gluten-free">GF</span><span class="tag tag-df" title="Dairy-free">DF</span></div></li>
+          <li class="menu-item" data-tags="gf"><div class="mi-top"><h3>Beef carpaccio</h3><span class="dots" aria-hidden="true"></span><span class="price">$16</span></div><p>Aged parmesan, capers, rocket, lemon.</p><div class="tags"><span class="tag tag-gf" title="Gluten-free">GF</span></div></li>
+          <li class="menu-item" data-tags="v gf new"><div class="mi-top"><h3>Ember squash velouté</h3><span class="dots" aria-hidden="true"></span><span class="price">$12</span></div><p>Sage brown butter, pumpkin seeds.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span><span class="tag tag-gf" title="Gluten-free">GF</span><span class="tag tag-new" title="New this season">New</span></div></li>
+        </ul>
+        <aside class="menu-feature"><img src="assets/img/dish-soup.svg" alt="" loading="lazy" width="400" height="400"><div><h3>Ember squash velouté</h3><p>Our chef's favourite this autumn — fire-roasted squash, blended silky and finished tableside.</p></div></aside>
+      </section>
+
+      <section class="menu-cat" id="pasta" aria-labelledby="pasta-h">
+        <div class="menu-cat-head"><h2 id="pasta-h">Hand-rolled pasta</h2><p>Made each morning by Elena. Gluten-free pasta available for any dish (+$3).</p></div>
+        <ul class="menu-list">
+          <li class="menu-item" data-tags="v"><div class="mi-top"><h3>Tagliatelle al pomodoro</h3><span class="dots" aria-hidden="true"></span><span class="price">$19</span></div><p>Blistered tomatoes, basil, aged pecorino.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span></div></li>
+          <li class="menu-item" data-tags="v new"><div class="mi-top"><h3>Squash tortelli</h3><span class="dots" aria-hidden="true"></span><span class="price">$23</span></div><p>Brown butter, crispy sage, amaretti.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span><span class="tag tag-new" title="New this season">New</span></div></li>
+          <li class="menu-item" data-tags="v"><div class="mi-top"><h3>Cacio e pepe</h3><span class="dots" aria-hidden="true"></span><span class="price">$20</span></div><p>Tonnarelli, pecorino romano, cracked pepper.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span></div></li>
+          <li class="menu-item" data-tags=""><div class="mi-top"><h3>Slow ragù pappardelle</h3><span class="dots" aria-hidden="true"></span><span class="price">$25</span></div><p>Eight-hour beef &amp; pork ragù, parmesan.</p></li>
+          <li class="menu-item" data-tags="sp"><div class="mi-top"><h3>Nduja rigatoni</h3><span class="dots" aria-hidden="true"></span><span class="price">$22</span></div><p>Spicy nduja, tomato, whipped ricotta.</p><div class="tags"><span class="tag tag-sp" title="Spicy">🌶 Spicy</span></div></li>
+          <li class="menu-item" data-tags="vg df"><div class="mi-top"><h3>Wild mushroom orecchiette</h3><span class="dots" aria-hidden="true"></span><span class="price">$21</span></div><p>Garlic, thyme, olive oil, walnut.</p><div class="tags"><span class="tag tag-vg" title="Vegan">VG</span><span class="tag tag-df" title="Dairy-free">DF</span></div></li>
+        </ul>
+      </section>
+
+      <section class="menu-cat" id="fire" aria-labelledby="fire-h">
+        <div class="menu-cat-head"><h2 id="fire-h">From the fire</h2><p>Cooked over oak and apple wood in our sixty-year-old oven.</p></div>
+        <ul class="menu-list">
+          <li class="menu-item" data-tags="gf df"><div class="mi-top"><h3>Whole roasted sea bream</h3><span class="dots" aria-hidden="true"></span><span class="price">$34</span></div><p>Salsa verde, charred lemon, potatoes.</p><div class="tags"><span class="tag tag-gf" title="Gluten-free">GF</span><span class="tag tag-df" title="Dairy-free">DF</span></div></li>
+          <li class="menu-item" data-tags="gf df"><div class="mi-top"><h3>Half chicken al mattone</h3><span class="dots" aria-hidden="true"></span><span class="price">$29</span></div><p>Brick-pressed, garlic, rosemary jus.</p><div class="tags"><span class="tag tag-gf" title="Gluten-free">GF</span><span class="tag tag-df" title="Dairy-free">DF</span></div></li>
+          <li class="menu-item" data-tags="gf"><div class="mi-top"><h3>Dry-aged ribeye (12oz)</h3><span class="dots" aria-hidden="true"></span><span class="price">$48</span></div><p>Bone marrow butter, watercress.</p><div class="tags"><span class="tag tag-gf" title="Gluten-free">GF</span></div></li>
+          <li class="menu-item" data-tags="vg gf df"><div class="mi-top"><h3>Ember-roasted cauliflower</h3><span class="dots" aria-hidden="true"></span><span class="price">$22</span></div><p>Tahini, pomegranate, dukkah.</p><div class="tags"><span class="tag tag-vg" title="Vegan">VG</span><span class="tag tag-gf" title="Gluten-free">GF</span><span class="tag tag-df" title="Dairy-free">DF</span></div></li>
+        </ul>
+      </section>
+
+      <section class="menu-cat" id="pizza" aria-labelledby="pizza-h">
+        <div class="menu-cat-head"><h2 id="pizza-h">Pizza</h2><p>72-hour naturally leavened dough, blistered at 480°C.</p></div>
+        <ul class="menu-list">
+          <li class="menu-item" data-tags="v"><div class="mi-top"><h3>Margherita</h3><span class="dots" aria-hidden="true"></span><span class="price">$18</span></div><p>San Marzano, fior di latte, basil.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span></div></li>
+          <li class="menu-item" data-tags="sp"><div class="mi-top"><h3>Diavola</h3><span class="dots" aria-hidden="true"></span><span class="price">$21</span></div><p>Spicy salami, chilli honey, mozzarella.</p><div class="tags"><span class="tag tag-sp" title="Spicy">🌶 Spicy</span></div></li>
+          <li class="menu-item" data-tags="v"><div class="mi-top"><h3>Bianca</h3><span class="dots" aria-hidden="true"></span><span class="price">$19</span></div><p>Ricotta, garlic, lemon zest, rocket.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span></div></li>
+          <li class="menu-item" data-tags="vg df"><div class="mi-top"><h3>Marinara</h3><span class="dots" aria-hidden="true"></span><span class="price">$15</span></div><p>Tomato, oregano, garlic, olive oil.</p><div class="tags"><span class="tag tag-vg" title="Vegan">VG</span><span class="tag tag-df" title="Dairy-free">DF</span></div></li>
+        </ul>
+        <aside class="menu-feature"><img src="assets/img/dish-pizza.svg" alt="" loading="lazy" width="400" height="400"><div><h3>Pizza night · Tuesdays</h3><p>Any pizza and a glass of house wine for $22, all evening every Tuesday.</p></div></aside>
+      </section>
+
+      <section class="menu-cat" id="dessert" aria-labelledby="dessert-h">
+        <div class="menu-cat-head"><h2 id="dessert-h">Desserts</h2><p>Pair with a glass of vin santo or a fire-pulled espresso.</p></div>
+        <ul class="menu-list">
+          <li class="menu-item" data-tags="v"><div class="mi-top"><h3>Fig &amp; honey tart</h3><span class="dots" aria-hidden="true"></span><span class="price">$11</span></div><p>Brown butter pastry, mascarpone, thyme.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span></div></li>
+          <li class="menu-item" data-tags="v"><div class="mi-top"><h3>Olive-oil cake</h3><span class="dots" aria-hidden="true"></span><span class="price">$10</span></div><p>Whipped cream, macerated cherries.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span></div></li>
+          <li class="menu-item" data-tags="v gf"><div class="mi-top"><h3>Dark chocolate torta</h3><span class="dots" aria-hidden="true"></span><span class="price">$11</span></div><p>Flourless, sea salt, crème fraîche.</p><div class="tags"><span class="tag tag-v" title="Vegetarian">V</span><span class="tag tag-gf" title="Gluten-free">GF</span></div></li>
+          <li class="menu-item" data-tags="vg gf df"><div class="mi-top"><h3>Seasonal sorbet</h3><span class="dots" aria-hidden="true"></span><span class="price">$8</span></div><p>Three scoops, ask about today's flavours.</p><div class="tags"><span class="tag tag-vg" title="Vegan">VG</span><span class="tag tag-gf" title="Gluten-free">GF</span><span class="tag tag-df" title="Dairy-free">DF</span></div></li>
+        </ul>
+      </section>
+
+      <section class="menu-cat" id="drinks" aria-labelledby="drinks-h">
+        <div class="menu-cat-head"><h2 id="drinks-h">Drinks</h2><p>A short, rotating list of natural and low-intervention wines, plus house cocktails.</p></div>
+        <ul class="menu-list">
+          <li class="menu-item" data-tags="vg"><div class="mi-top"><h3>House red or white</h3><span class="dots" aria-hidden="true"></span><span class="price">$11</span></div><p>Glass $11 · carafe $30.</p><div class="tags"><span class="tag tag-vg" title="Vegan">VG</span></div></li>
+          <li class="menu-item" data-tags="vg"><div class="mi-top"><h3>Orange wine flight</h3><span class="dots" aria-hidden="true"></span><span class="price">$18</span></div><p>Three skin-contact pours, 3oz each.</p><div class="tags"><span class="tag tag-vg" title="Vegan">VG</span></div></li>
+          <li class="menu-item" data-tags=""><div class="mi-top"><h3>Ember Negroni</h3><span class="dots" aria-hidden="true"></span><span class="price">$15</span></div><p>Smoked gin, bitter orange, vermouth.</p></li>
+          <li class="menu-item" data-tags="vg"><div class="mi-top"><h3>Garden spritz (0%)</h3><span class="dots" aria-hidden="true"></span><span class="price">$9</span></div><p>Verjus, rosemary, tonic, citrus.</p><div class="tags"><span class="tag tag-vg" title="Vegan">VG</span></div></li>
+          <li class="menu-item" data-tags="vg gf"><div class="mi-top"><h3>Fire-pulled espresso</h3><span class="dots" aria-hidden="true"></span><span class="price">$4</span></div><p>Single-origin, roasted locally.</p><div class="tags"><span class="tag tag-vg" title="Vegan">VG</span><span class="tag tag-gf" title="Gluten-free">GF</span></div></li>
+          <li class="menu-item" data-tags="vg gf df"><div class="mi-top"><h3>Sparkling lemonade</h3><span class="dots" aria-hidden="true"></span><span class="price">$6</span></div><p>Pressed lemons, thyme, soda.</p><div class="tags"><span class="tag tag-vg" title="Vegan">VG</span><span class="tag tag-gf" title="Gluten-free">GF</span><span class="tag tag-df" title="Dairy-free">DF</span></div></li>
+        </ul>
+      </section>
+
+      <p class="menu-note">Please tell us about any allergies before ordering. A discretionary 18% service charge is added to parties of six or more; 100% goes to our team. Menu changes with the seasons — prices in USD.</p>
+    </div>
+
+    <section class="section" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta">
+          <div>
+            <h2 id="cta-title">Hungry yet?</h2>
+            <p style="margin:.6rem 0 0;opacity:.9">Tables open 60 days ahead. Walk-ins welcome at the bar.</p>
+          </div>
+          <a class="btn" href="index.html#reserve">Book a table</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true" style="color:var(--gold)"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 8c6 7 9 12 9 16.5a9 9 0 0 1-18 0C11 20 14 15 20 8z" fill="currentColor"/></svg><span data-zt="brandName">Ember &amp; Olive</span></a>
+          <p style="margin-top:1rem;max-width:22rem">A neighbourhood wood-fired kitchen and wine bar on Orchard Lane.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.4 2.3 1.9 3.8 4 4v3.2c-1.5 0-2.8-.4-4-1.2V15a6 6 0 1 1-6-6v3.3a2.7 2.7 0 1 0 2.7 2.7V3H16z"/></svg></a>
+          </div>
+        </div>
+        <div><h2>Explore</h2><ul><li><a href="menu.html">Menu</a></li><li><a href="index.html#story">Our story</a></li><li><a href="index.html#gallery">Gallery</a></li><li><a href="index.html#reserve">Reservations</a></li></ul></div>
+        <div><h2>Hours</h2><ul><li>Tue–Thu 5:30–10pm</li><li>Fri 5–11pm</li><li>Sat 10am–11pm</li><li>Sun 10am–9pm</li></ul></div>
+        <div>
+          <h2>Newsletter</h2>
+          <p>Seasonal menus &amp; winemaker dinners, once a month.</p>
+          <!-- Wire to your mailing list provider (e.g. Buttondown, Mailchimp embed action URL). -->
+          <form class="news" action="#" method="post"><label class="sr-only" for="nl-email">Email address</label><input id="nl-email" type="email" name="email" placeholder="you@email.com" required><button class="btn btn-primary" type="submit">Join</button></form>
+          <p class="form-msg" role="status" hidden></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> <span data-zt="brandName">Ember &amp; Olive</span>. All rights reserved.</span>
+        <span>Template by ZumaTools</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

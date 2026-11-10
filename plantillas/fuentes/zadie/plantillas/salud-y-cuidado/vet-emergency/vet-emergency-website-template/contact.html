@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Directions | VetAlert Emergency Hospital - Austin, TX</title>
+  <meta name="description" content="Contact VetAlert Emergency Hospital in Austin, TX. Call our 24/7 emergency line at (512) 555-VETS. Get directions, submit a contact form, or view our FAQs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+  
+
+  <!-- Urgent Bar -->
+  <div class="urgent-bar">
+    <span class="pulse-dot"></span>
+    24/7 Emergency Line: <a href="tel:+15125558387">(512) 555-VETS</a> &mdash; We're Open Right Now
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        <div class="logo-text">VetAlert<span>Emergency Hospital</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="tel:+15125558387" class="nav-cta"><i class="fa-solid fa-phone"></i> Call Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Emergency Phone Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat; padding: 60px 0;">
+    <div class="container">
+      <p style="font-size: 1rem; opacity: 0.85; margin-bottom: 8px;">If this is an emergency, do not fill out a form.</p>
+      <h1 style="font-size: 2rem; margin-bottom: 12px;">Call Us Immediately</h1>
+      <div style="font-family: var(--font-heading); font-size: 3.5rem; font-weight: 700; margin: 20px 0;">
+        <a href="tel:+15125558387" style="color: #fff; text-decoration: none;"><i class="fa-solid fa-phone-volume" style="font-size: 2.5rem; margin-right: 14px; animation: ring 1.5s ease-in-out infinite;"></i>(512) 555-VETS</a>
+      </div>
+      <p style="font-size: 1.1rem; opacity: 0.9;">We are <strong>OPEN 24/7/365</strong>. A veterinarian is always on-site and ready.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div>
+          <div class="emergency-phone-box">
+            <h2>Emergency Line</h2>
+            <p>For life-threatening emergencies, always call first so we can prepare for your arrival.</p>
+            <div class="phone-number">
+              <a href="tel:+15125558387">(512) 555-VETS</a>
+            </div>
+            <p style="font-size: 0.95rem;"><strong>Open 24 hours a day, 7 days a week, 365 days a year.</strong></p>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <strong>Address</strong>
+                  <span>4821 Emergency Way, Austin, TX 78745</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="fa-solid fa-clock"></i>
+                <div>
+                  <strong>Hours</strong>
+                  <span>24/7/365 -- We never close</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                  <strong>Email (non-emergency)</strong>
+                  <span>help@vetalert.com</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="fa-solid fa-car"></i>
+                <div>
+                  <strong>Parking</strong>
+                  <span>Free lot with pull-up emergency entrance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="form-card">
+          <h3>Contact Us</h3>
+          <p>For non-urgent questions, appointment follow-ups, or general inquiries. If your pet is having an emergency, please call us instead of filling out this form.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="owner-name">Your Name <span class="required">*</span></label>
+                <input type="text" id="owner-name" name="owner-name" placeholder="Full name" required>
+              </div>
+              <div class="form-group form-group-phone">
+                <label for="owner-phone">Phone Number <span class="required">*</span></label>
+                <input type="tel" id="owner-phone" name="owner-phone" placeholder="(512) 555-0000" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="pet-name">Pet's Name</label>
+                <input type="text" id="pet-name" name="pet-name" placeholder="Your pet's name">
+              </div>
+              <div class="form-group">
+                <label for="pet-species">Species / Breed</label>
+                <input type="text" id="pet-species" name="pet-species" placeholder="e.g., Dog - Golden Retriever">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="emergency-desc">Describe the Situation</label>
+              <textarea id="emergency-desc" name="emergency-desc" placeholder="What symptoms is your pet experiencing? What happened?"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="symptom-duration">How Long Ago Did Symptoms Start?</label>
+              <select id="symptom-duration" name="symptom-duration">
+                <option value="">Select a timeframe</option>
+                <option value="less-than-1-hour">Less than 1 hour ago</option>
+                <option value="1-4-hours">1 - 4 hours ago</option>
+                <option value="4-12-hours">4 - 12 hours ago</option>
+                <option value="12-24-hours">12 - 24 hours ago</option>
+                <option value="more-than-24-hours">More than 24 hours ago</option>
+                <option value="not-sure">Not sure</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100;"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="map-placeholder">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <p>Map Placeholder</p>
+        <p style="font-size: 0.85rem; margin-top: 4px;">4821 Emergency Way, Austin, TX 78745</p>
+      </div>
+      <div style="text-align: center; margin-top: 20px;">
+        <p style="color: var(--color-gray); font-size: 0.95rem;"><strong>Directions:</strong> Located off South Lamar Blvd, just south of Ben White Blvd. Look for the red VetAlert sign. Emergency pull-up entrance is on the east side of the building.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="section" style="background: var(--color-gray-light);">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 50px;">
+        <span class="section-label">FAQs</span>
+        <h2 class="section-title">Common Questions</h2>
+        <p class="section-subtitle">We know visiting an emergency vet is stressful. Here are answers to the questions we hear most often.</p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item open">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            Should I call before coming in?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, if possible. Calling ahead allows us to prepare for your pet's arrival, have the right team ready, and give you instructions on how to safely transport your pet. However, if you can't call -- just come. We will never turn away an emergency.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            What should I bring when I come in?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Bring any medications your pet is currently taking, your pet's vaccination records if available, and a form of payment. If your pet ingested something toxic, bring the packaging or a photo of the substance. Most importantly, bring yourself -- your pet needs you there.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            Will my regular veterinarian be notified?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We send a detailed summary of your pet's visit, including diagnostics, treatment, and follow-up recommendations, to your regular veterinarian within 24 hours of discharge. This ensures continuity of care and helps your primary vet pick up right where we left off.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            What are my payment options?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We accept all major credit and debit cards, cash, and checks. We also work with CareCredit and Scratchpay for financing options, and we accept all major pet insurance providers. Our front desk staff can help you apply for financing on the spot. We always provide a written estimate before beginning treatment so there are no surprises.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            How long will my pet need to stay?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>It depends entirely on your pet's condition. Some emergencies are resolved in a few hours with treatment and observation. More critical cases may require 24 to 72 hours of ICU care, or longer for post-surgical recovery. We'll give you an estimated timeline as soon as we have a clear picture of your pet's needs, and we'll update you regularly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            Can I stay with my pet during treatment?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>You are welcome to stay in our waiting area for as long as you'd like. During initial triage and active treatment, we may need to take your pet to the treatment area where owners are not permitted for safety reasons. However, once your pet is stabilized, we can often arrange visits. For ICU patients, we schedule visiting hours and will always keep you informed by phone or text.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Don't Wait. Call Now.</h2>
+      <p>If your pet is experiencing an emergency, every minute counts. Our team is standing by 24/7 to help.</p>
+      <div class="cta-phone">
+        <i class="fa-solid fa-phone-volume"></i>
+        <a href="tel:+15125558387">(512) 555-VETS</a>
+      </div>
+      <a href="tel:+15125558387" class="btn btn-white btn-lg"><i class="fa-solid fa-phone"></i> Call Emergency Line</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">VetAlert<span>Emergency Hospital</span></div>
+          <p>Austin's trusted 24/7 emergency and critical care hospital for pets. Board-certified specialists, state-of-the-art facility, compassionate team.</p>
+          <div class="footer-emergency">
+            <i class="fa-solid fa-phone-volume"></i>
+            <a href="tel:+15125558387">(512) 555-VETS</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services &amp; Pricing</a></li>
+            <li><a href="contact.html">Contact &amp; Directions</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul class="footer-hours">
+            <li><span>Monday - Sunday</span><span>24 Hours</span></li>
+            <li><span>Holidays</span><span>24 Hours</span></li>
+            <li><span>We Never Close</span><span>Ever</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+15125558387">(512) 555-VETS</a>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>4821 Emergency Way<br>Austin, TX 78745</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:help@vetalert.com">help@vetalert.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 VetAlert Emergency Hospital. All rights reserved. Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

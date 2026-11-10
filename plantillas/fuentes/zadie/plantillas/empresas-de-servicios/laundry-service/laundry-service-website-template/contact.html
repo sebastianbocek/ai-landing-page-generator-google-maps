@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | FreshWave Laundry Service</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-soap"></i></div>
+        <div class="logo-text">
+          FreshWave
+          <span>Laundry Service</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Schedule Pickup</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">Get In Touch</div>
+        <h1>
+          Contact
+          <span>Us</span>
+        </h1>
+        <p class="hero-description">Have questions or ready to schedule your first pickup? We're here to help! Reach out anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="contact-section">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="section-tag">Reach Out</div>
+            <h2 class="section-title">Get in Touch</h2>
+            <p style="color: var(--gray-dark); line-height: 1.7; margin-bottom: 2rem;">We're available 7 days a week to answer your questions and schedule pickups. Contact us by phone, email, or fill out the form and we'll get back to you within a few hours.</p>
+
+            <ul class="contact-details">
+              <li>
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <div class="contact-label">Main Facility</div>
+                  <div class="contact-value">123 Clean Street<br>City Center, ST 12345</div>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="contact-label">Phone</div>
+                  <div class="contact-value">(555) 123-4567</div>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">hello@freshwave.com</div>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                  <div class="contact-label">Customer Service Hours</div>
+                  <div class="contact-value">
+                    Monday–Friday: 7am–9pm<br>
+                    Saturday–Sunday: 8am–8pm
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon"><i class="fa-solid fa-truck"></i></div>
+                <div>
+                  <div class="contact-label">Pickup & Delivery Hours</div>
+                  <div class="contact-value">
+                    7 days a week<br>
+                    7am–9pm (flexible scheduling)
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div style="margin-top: 2rem; padding: 1.5rem; background: var(--white); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+              <h3 style="font-size: 1.125rem; font-weight: 700; margin-bottom: 0.75rem;">Drop-Off Location</h3>
+              <p style="color: var(--gray-dark); line-height: 1.7;">
+                Prefer to drop off in person? Visit our facility at 123 Clean Street during business hours. We have convenient parking and a friendly staff ready to assist you. No appointment needed!
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; font-family: var(--font-heading);">Send Us a Message</h3>
+            <p style="color: var(--gray-dark); margin-bottom: 1.5rem;">Fill out the form below and we'll respond within a few hours.</p>
+
+            <form>
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" class="form-input" required>
+              </div>
+
+              <div class="form-group">
+                <label for="address" class="form-label">Service Address</label>
+                <input type="text" id="address" name="address" class="form-input" placeholder="For pickup & delivery inquiries">
+              </div>
+
+              <div class="form-group">
+                <label for="service" class="form-label">Service Interested In *</label>
+                <select id="service" name="service" class="form-select" required>
+                  <option value="">Select a service...</option>
+                  <option value="wash-fold">Wash & Fold</option>
+                  <option value="dry-cleaning">Dry Cleaning</option>
+                  <option value="pickup-delivery">Pickup & Delivery</option>
+                  <option value="commercial">Commercial Laundry</option>
+                  <option value="specialty">Specialty Items</option>
+                  <option value="alterations">Alterations & Repairs</option>
+                  <option value="subscription">Subscription Plans</option>
+                  <option value="other">Other / General Question</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" name="message" class="form-textarea" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary form-submit">
+                Send Message
+                <span>→</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Areas -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Where We Serve</div>
+        <h2 class="section-title">Service Areas</h2>
+        <p class="section-subtitle">We proudly serve the following neighborhoods with free pickup and delivery.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="feature-title">Downtown</h3>
+          <p class="feature-text">City Center, Financial District, Arts District, Historic Quarter</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="feature-title">Westside</h3>
+          <p class="feature-text">West End, Park Heights, Riverside, Sunset Hills</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="feature-title">Eastside</h3>
+          <p class="feature-text">East Village, Marina Bay, Lakefront, Harbor View</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="feature-title">Northside</h3>
+          <p class="feature-text">North Hills, University District, Woodland, Garden Heights</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="feature-title">Southside</h3>
+          <p class="feature-text">South Bay, Airport Area, Industrial Park, Meadowbrook</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="feature-title">Suburbs</h3>
+          <p class="feature-text">Within 10 miles of our facility - check our website to confirm your address</p>
+        </div>
+      </div>
+      <p style="text-align: center; margin-top: 2rem; color: var(--gray-dark);">Don't see your area listed? Contact us! We're constantly expanding our service area and may be able to accommodate special requests.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Overview -->
+  <section class="section section-fresh">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Transparent Pricing</div>
+        <h2 class="section-title">Pricing at a Glance</h2>
+        <p class="section-subtitle">Simple, straightforward pricing with no hidden fees.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-content">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Wash & Fold</h3>
+          <ul class="about-list">
+            <li>$1.50 per pound (10 lb minimum)</li>
+            <li>24-hour turnaround</li>
+            <li>Free pickup & delivery over $30</li>
+            <li>Eco-friendly detergents included</li>
+          </ul>
+
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2rem;">Dry Cleaning</h3>
+          <ul class="about-list">
+            <li>Shirts: $4.50 | Pants: $7.00</li>
+            <li>Suits: $16.00 | Dresses: $12-$20</li>
+            <li>2-3 day turnaround</li>
+            <li>Rush service available (+50%)</li>
+          </ul>
+
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2rem;">Commercial Laundry</h3>
+          <ul class="about-list">
+            <li>Custom pricing based on volume</li>
+            <li>Scheduled regular pickups</li>
+            <li>Dedicated account manager</li>
+            <li>Contact us for a free quote</li>
+          </ul>
+        </div>
+        <div class="about-content">
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Subscription Plans</h3>
+          <ul class="about-list">
+            <li>Basic: $60/month (2 pickups)</li>
+            <li>Family: $110/month (4 pickups)</li>
+            <li>Premium: $200/month (8 pickups)</li>
+            <li>Save up to $0.35 per pound</li>
+          </ul>
+
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2rem;">Specialty Items</h3>
+          <ul class="about-list">
+            <li>Wedding dresses: Starting at $200</li>
+            <li>Comforters: $25-$45</li>
+            <li>Curtains: $15-$25 per panel</li>
+            <li>5-7 day turnaround</li>
+          </ul>
+
+          <h3 style="font-size: 1.5rem; margin-bottom: 1rem; margin-top: 2rem;">Alterations</h3>
+          <ul class="about-list">
+            <li>Basic hem: $12</li>
+            <li>Zipper replacement: $18-$30</li>
+            <li>Take in/let out: $20-$30</li>
+            <li>5-7 day turnaround</li>
+          </ul>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a href="services.html" class="btn btn-primary">View Full Service Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Questions?</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find answers to common questions about our services.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">How do I schedule a pickup?</h3>
+          <p class="faq-answer">
+            You can schedule a pickup through our website, mobile app, or by calling us at (555) 123-4567. We offer flexible time slots from 7am to 9pm, 7 days a week. You'll receive a confirmation email and text reminder before your scheduled pickup.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What is your turnaround time?</h3>
+          <p class="faq-answer">
+            For wash & fold service, we offer 24-hour turnaround if your order is picked up by 9am. Dry cleaning typically takes 2-3 business days. Specialty items like wedding dresses and alterations take 5-7 days. Rush service is available for an additional fee.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you use eco-friendly products?</h3>
+          <p class="faq-answer">
+            Yes! We exclusively use biodegradable, plant-based detergents that are hypoallergenic and safe for sensitive skin. Our dry cleaning process uses environmentally responsible solvents. We also use Energy Star certified machines that conserve water and energy.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Is there a minimum order for pickup and delivery?</h3>
+          <p class="faq-answer">
+            For wash & fold, there's a 10-pound minimum. Pickup and delivery is free on orders over $30. Orders under $30 have a $5.99 delivery fee. There's no minimum for dry cleaning or specialty services.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How do you handle special care items?</h3>
+          <p class="faq-answer">
+            We carefully read care labels and follow manufacturer instructions for all garments. Items requiring special attention are hand-washed or dry cleaned separately. If you have specific instructions for any item, just include a note and we'll follow your preferences.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What if I'm not satisfied with the results?</h3>
+          <p class="faq-answer">
+            We stand behind our work with a 100% satisfaction guarantee. If you're not completely happy with any item, we'll re-clean it for free. If the issue persists, we'll issue a full refund. Your satisfaction is our priority.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you offer contactless service?</h3>
+          <p class="faq-answer">
+            Yes! You can schedule contactless pickup and delivery. Simply leave your laundry bag at your door at the scheduled time, and we'll leave your clean items in the same spot. Payment is handled securely online.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Can I track my order?</h3>
+          <p class="faq-answer">
+            Absolutely! Once we pick up your laundry, you'll receive text updates when it arrives at our facility, when cleaning is complete, and when it's out for delivery. You can also check your order status anytime through our website or app.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What payment methods do you accept?</h3>
+          <p class="faq-answer">
+            We accept all major credit cards (Visa, Mastercard, American Express, Discover), debit cards, and digital payments through our app. For commercial accounts, we offer invoicing with flexible payment terms.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you offer commercial laundry services?</h3>
+          <p class="faq-answer">
+            Yes! We partner with hotels, restaurants, gyms, salons, and offices for bulk laundry services. We offer volume pricing, scheduled regular pickups, and dedicated account management. Contact us for a free consultation and custom quote.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Ready to Make Laundry Easy?</h2>
+        <p>Schedule your first pickup today and get 20% off!</p>
+      </div>
+      <a href="#" class="cta-button">Schedule Pickup</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-soap"></i></div>
+          <div class="logo-text">
+            FreshWave
+            <span>Laundry Service</span>
+          </div>
+        </a>
+        <p>Professional laundry and dry cleaning services with convenient pickup and delivery. Making laundry easy since 2015.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">ig</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#wash-fold">Wash & Fold</a></li>
+          <li><a href="services.html#dry-cleaning">Dry Cleaning</a></li>
+          <li><a href="services.html#pickup-delivery">Pickup & Delivery</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="services.html#specialty">Specialty Items</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-links">
+          <li>123 Clean Street</li>
+          <li>City Center, ST 12345</li>
+          <li>(555) 123-4567</li>
+          <li>hello@freshwave.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 FreshWave Laundry Service. All rights reserved.</p>
+      <p>Fresh • Clean • Convenient</p>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

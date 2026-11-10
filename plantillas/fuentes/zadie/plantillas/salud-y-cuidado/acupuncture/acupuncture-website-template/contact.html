@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book an Appointment | Meridian Acupuncture & Wellness | San Francisco</title>
+  <meta name="description" content="Book an appointment at Meridian Acupuncture & Wellness in San Francisco. New and returning patients welcome. Most insurance accepted. Call (555) 428-7193 or submit our online form." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+<body>
+
+
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <i class="fa-solid fa-seedling"></i>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">Meridian</span>
+        <span class="logo-tagline">Acupuncture &amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn-book">
+      <i class="fa-regular fa-calendar"></i>
+      Book Appointment
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Contact</span>
+      </div>
+      <h1>Book an Appointment</h1>
+      <p>New and returning patients welcome. Submit the form below and we'll confirm your appointment within one business day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT SECTION
+     ============================================================ -->
+<section class="section bg-rice">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Appointment Form -->
+      <div class="contact-form-wrapper">
+        <h2>Request an Appointment</h2>
+        <p>Fill out the form below with as much detail as you'd like. We'll review your information before confirming a time, so the more context you provide, the more we can prepare for you.</p>
+
+        <form action="#" method="POST">
+
+          <!-- Name row -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name <span style="color: var(--gold);">*</span></label>
+              <input class="form-input" type="text" id="first-name" name="first_name" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name <span style="color: var(--gold);">*</span></label>
+              <input class="form-input" type="text" id="last-name" name="last_name" placeholder="Smith" required />
+            </div>
+          </div>
+
+          <!-- Contact row -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address <span style="color: var(--gold);">*</span></label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="jane@example.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number <span style="color: var(--gold);">*</span></label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required />
+            </div>
+          </div>
+
+          <!-- Patient type and service -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="patient-type">New or Returning Patient? <span style="color: var(--gold);">*</span></label>
+              <select class="form-select" id="patient-type" name="patient_type" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="new">New Patient</option>
+                <option value="returning">Returning Patient</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">Service of Interest <span style="color: var(--gold);">*</span></label>
+              <select class="form-select" id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="acupuncture">Traditional Acupuncture</option>
+                <option value="facial">Facial / Cosmetic Acupuncture</option>
+                <option value="cupping">Cupping Therapy</option>
+                <option value="moxibustion">Moxibustion</option>
+                <option value="guasha">Gua Sha</option>
+                <option value="herbal">Herbal Medicine Consultation</option>
+                <option value="tuina">Tui Na Massage</option>
+                <option value="fertility">Fertility &amp; Women's Health</option>
+                <option value="pain">Pain Management</option>
+                <option value="unsure">Not Sure — Initial Consultation</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Insurance -->
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="insurance">Insurance Carrier</label>
+              <input class="form-input" type="text" id="insurance" name="insurance" placeholder="e.g., Blue Cross, Aetna, Self-pay" />
+              <p class="form-hint">Leave blank if paying out of pocket or if unsure. We'll discuss coverage options at your visit.</p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="referral">How Did You Hear About Us?</label>
+              <select class="form-select" id="referral" name="referral">
+                <option value="" disabled selected>Select one</option>
+                <option value="google">Google Search</option>
+                <option value="friend">Friend or Family Referral</option>
+                <option value="physician">Physician Referral</option>
+                <option value="yelp">Yelp</option>
+                <option value="instagram">Instagram</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Preferred days -->
+          <div class="form-group">
+            <label class="form-label">Preferred Appointment Days</label>
+            <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-top: var(--space-2);">
+              <label style="display: flex; align-items: center; gap: var(--space-2); font-size: 0.9rem; cursor: pointer;">
+                <input type="checkbox" name="days" value="monday" style="accent-color: var(--teal-mid);" /> Monday
+              </label>
+              <label style="display: flex; align-items: center; gap: var(--space-2); font-size: 0.9rem; cursor: pointer;">
+                <input type="checkbox" name="days" value="tuesday" style="accent-color: var(--teal-mid);" /> Tuesday
+              </label>
+              <label style="display: flex; align-items: center; gap: var(--space-2); font-size: 0.9rem; cursor: pointer;">
+                <input type="checkbox" name="days" value="wednesday" style="accent-color: var(--teal-mid);" /> Wednesday
+              </label>
+              <label style="display: flex; align-items: center; gap: var(--space-2); font-size: 0.9rem; cursor: pointer;">
+                <input type="checkbox" name="days" value="thursday" style="accent-color: var(--teal-mid);" /> Thursday
+              </label>
+              <label style="display: flex; align-items: center; gap: var(--space-2); font-size: 0.9rem; cursor: pointer;">
+                <input type="checkbox" name="days" value="friday" style="accent-color: var(--teal-mid);" /> Friday
+              </label>
+              <label style="display: flex; align-items: center; gap: var(--space-2); font-size: 0.9rem; cursor: pointer;">
+                <input type="checkbox" name="days" value="saturday" style="accent-color: var(--teal-mid);" /> Saturday
+              </label>
+            </div>
+          </div>
+
+          <!-- Preferred times -->
+          <div class="form-group">
+            <label class="form-label" for="preferred-time">Preferred Time of Day</label>
+            <select class="form-select" id="preferred-time" name="preferred_time">
+              <option value="" disabled selected>Select a preference</option>
+              <option value="morning">Morning (9 am – 12 pm)</option>
+              <option value="early-afternoon">Early Afternoon (12 pm – 2 pm)</option>
+              <option value="afternoon">Afternoon (2 pm – 5 pm)</option>
+              <option value="evening">Evening (5 pm – 7 pm, limited availability)</option>
+              <option value="flexible">Flexible — any available time</option>
+            </select>
+          </div>
+
+          <!-- Health concern -->
+          <div class="form-group">
+            <label class="form-label" for="concern">Chief Health Concern / Reason for Visit <span style="color: var(--gold);">*</span></label>
+            <textarea class="form-textarea" id="concern" name="concern" placeholder="Please describe your primary health concern, how long you've had it, any treatments you've tried, and anything else you'd like Dr. Wei to know before your visit." rows="5" required></textarea>
+            <p class="form-hint">All information is kept strictly confidential and protected under HIPAA.</p>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            <i class="fa-regular fa-paper-plane"></i>
+            Submit Appointment Request
+          </button>
+
+          <p style="font-size: 0.8rem; color: var(--stone-light); margin-top: var(--space-4); text-align: center;">We respond to all appointment requests within one business day. For urgent needs, please call us directly at <a href="tel:5554287193" style="color: var(--teal-mid);">(555) 428-7193</a>.</p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="contact-sidebar">
+
+        <!-- Contact Info -->
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value"><a href="tel:5554287193">(555) 428-7193</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value"><a href="mailto:wellness@meridianacupuncture.com">wellness@meridianacupuncture.com</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="contact-info-label">Location</div>
+              <div class="contact-info-value">1240 Pacific Avenue, Suite 3B<br />San Francisco, CA 94109</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item" style="margin-bottom: 0;">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-square-parking"></i>
+            </div>
+            <div>
+              <div class="contact-info-label">Parking</div>
+              <div class="contact-info-value">Street parking on Pacific Ave. 5-min walk from California St. cable car line.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Office Hours -->
+        <div class="contact-info-card">
+          <h3>Office Hours</h3>
+          <table class="hours-table">
+            <tbody>
+              <tr>
+                <td>Monday</td>
+                <td>9:00 am – 6:00 pm</td>
+              </tr>
+              <tr>
+                <td>Tuesday</td>
+                <td>9:00 am – 6:00 pm</td>
+              </tr>
+              <tr>
+                <td>Wednesday</td>
+                <td>9:00 am – 6:00 pm</td>
+              </tr>
+              <tr>
+                <td>Thursday</td>
+                <td>9:00 am – 7:00 pm</td>
+              </tr>
+              <tr>
+                <td>Friday</td>
+                <td>9:00 am – 5:00 pm</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10:00 am – 3:00 pm</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td class="closed">Closed</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size: 0.8rem; color: var(--stone-light); margin-top: var(--space-4); margin-bottom: 0;">Last appointments booked one hour before closing. Holiday hours may vary — call ahead to confirm.</p>
+        </div>
+
+        <!-- Insurance -->
+        <div class="contact-info-card" id="insurance">
+          <h3>Insurance Accepted</h3>
+          <p style="font-size: 0.875rem; color: var(--stone-light); margin-bottom: var(--space-4);">We accept most major carriers. Contact us or your insurer to confirm your acupuncture benefits before your first visit.</p>
+          <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+            <div style="display: flex; align-items: center; gap: var(--space-3); font-size: 0.875rem; padding: var(--space-2) 0; border-bottom: 1px solid var(--border);">
+              <i class="fa-solid fa-check" style="color: var(--teal-mid); font-size: 0.75rem; width: 14px;"></i>
+              Blue Cross Blue Shield
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-3); font-size: 0.875rem; padding: var(--space-2) 0; border-bottom: 1px solid var(--border);">
+              <i class="fa-solid fa-check" style="color: var(--teal-mid); font-size: 0.75rem; width: 14px;"></i>
+              Aetna
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-3); font-size: 0.875rem; padding: var(--space-2) 0; border-bottom: 1px solid var(--border);">
+              <i class="fa-solid fa-check" style="color: var(--teal-mid); font-size: 0.75rem; width: 14px;"></i>
+              Cigna
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-3); font-size: 0.875rem; padding: var(--space-2) 0; border-bottom: 1px solid var(--border);">
+              <i class="fa-solid fa-check" style="color: var(--teal-mid); font-size: 0.75rem; width: 14px;"></i>
+              United Healthcare
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-3); font-size: 0.875rem; padding: var(--space-2) 0; border-bottom: 1px solid var(--border);">
+              <i class="fa-solid fa-check" style="color: var(--teal-mid); font-size: 0.75rem; width: 14px;"></i>
+              Anthem / Kaiser Permanente
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-3); font-size: 0.875rem; padding: var(--space-2) 0; border-bottom: 1px solid var(--border);">
+              <i class="fa-solid fa-check" style="color: var(--teal-mid); font-size: 0.75rem; width: 14px;"></i>
+              Health Net / Covered California
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-3); font-size: 0.875rem; padding: var(--space-2) 0; border-bottom: 1px solid var(--border);">
+              <i class="fa-solid fa-check" style="color: var(--teal-mid); font-size: 0.75rem; width: 14px;"></i>
+              Medicare Advantage Plans
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-3); font-size: 0.875rem; padding: var(--space-2) 0; border-bottom: 1px solid var(--border);">
+              <i class="fa-solid fa-check" style="color: var(--teal-mid); font-size: 0.75rem; width: 14px;"></i>
+              Workers' Compensation
+            </div>
+            <div style="display: flex; align-items: center; gap: var(--space-3); font-size: 0.875rem; padding: var(--space-2) 0;">
+              <i class="fa-solid fa-check" style="color: var(--teal-mid); font-size: 0.75rem; width: 14px;"></i>
+              Self-Pay &amp; Sliding Scale
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <span class="gold-rule"></span>
+      <p>New to acupuncture? Here are answers to the questions we hear most often from first-time patients.</p>
+    </div>
+
+    <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+
+      <div class="faq-item open">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Does acupuncture hurt? What will I feel?
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          Most patients are surprised by how little they feel. Acupuncture needles are hair-thin — nothing like the hypodermic needles used for injections. You may feel a subtle heaviness, warmth, or tingling at the needle site, which is called the "arrival of Qi" and is considered a positive sign. Once all needles are placed, most patients find the experience deeply relaxing. It is not uncommon for patients to fall asleep during treatment. Some points are more sensitive than others, and Dr. Wei will always check in about your comfort throughout the session.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How many sessions will I need before seeing results?
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          This depends significantly on how long you've had the condition and how complex it is. Acute conditions — a recent injury, acute stress, a cold — often respond within one to three sessions. Chronic conditions that have been present for months or years typically require a course of six to twelve sessions before the changes consolidate and hold between appointments. Most patients notice some shift in the first two to three sessions, even if the full resolution takes longer. Dr. Wei will give you a specific recommendation at your initial consultation based on her assessment of your case.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Does my insurance cover acupuncture?
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          Coverage for acupuncture has expanded considerably in recent years. The Affordable Care Act requires most plans to cover acupuncture for chronic lower back pain. Many plans now cover a broader range of conditions as well. We accept most major insurance carriers including Blue Cross Blue Shield, Aetna, Cigna, United Healthcare, and Anthem. We recommend calling the member services number on your insurance card and asking specifically about your acupuncture benefits — how many visits are covered, what your copay or deductible is, and whether you need a referral. We are happy to help you navigate this process.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Is acupuncture safe? Are there any risks I should know about?
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          Acupuncture is one of the safest clinical interventions available when performed by a trained, licensed practitioner. Dr. Wei uses only sterile, single-use, FDA-cleared needles that are disposed of immediately after each treatment. The most common side effects are mild and temporary: slight bruising, soreness, or tiredness after a session. Serious adverse events are extremely rare. Dr. Wei will take a thorough medical history at your first visit and will note any contraindications, such as a bleeding disorder, pacemaker, or pregnancy (some points are contraindicated in pregnancy, though acupuncture is generally safe and beneficial during pregnancy when delivered by a qualified practitioner). All relevant factors will be discussed openly before treatment begins.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Can I combine acupuncture with my existing Western medical treatment?
+          <i class="fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-answer">
+          Yes, and this is often the most effective approach. Acupuncture works extremely well alongside conventional medical treatment — it does not conflict with medications or procedures, and it can help manage side effects of Western treatments (chemotherapy fatigue and nausea, post-surgical pain, medication-related digestive upset, and so on). Dr. Wei works collaboratively with many referring physicians and specialists in the Bay Area and welcomes co-management of complex cases. She will ask about all medications and supplements you are taking, and if you are prescribed herbal medicine, she will check for any potential interactions before prescribing. We encourage open communication between all your providers and are happy to send treatment summaries to your primary care physician upon request.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ============================================================
+     MAP AREA PLACEHOLDER
+     ============================================================ -->
+<section class="section-sm bg-rice">
+  <div class="container">
+    <div style="background: linear-gradient(160deg, #e8e4de 0%, var(--border) 100%); border-radius: var(--radius-lg); height: 280px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);">
+      <div style="text-align: center;">
+        <i class="fa-solid fa-map-location-dot" style="font-size: 2rem; color: var(--teal-mid); margin-bottom: var(--space-4); display: block;"></i>
+        <p style="font-weight: 700; color: var(--stone); margin-bottom: var(--space-2);">1240 Pacific Avenue, Suite 3B</p>
+        <p style="color: var(--stone-light); font-size: 0.875rem; margin-bottom: 0;">San Francisco, CA 94109 &nbsp;|&nbsp; Pacific Heights neighborhood</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Meridian</span>
+            <span class="logo-tagline">Acupuncture &amp; Wellness</span>
+          </div>
+        </a>
+        <p>Traditional Chinese Medicine practiced with precision, care, and deep respect for your individual health journey. Serving San Francisco since 2008.</p>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>1240 Pacific Avenue, Suite 3B<br />San Francisco, CA 94109</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:5554287193">(555) 428-7193</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <a href="mailto:wellness@meridianacupuncture.com">wellness@meridianacupuncture.com</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Dr. Wei</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Book an Appointment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#acupuncture">Traditional Acupuncture</a></li>
+          <li><a href="services.html#cupping">Cupping Therapy</a></li>
+          <li><a href="services.html#herbal">Herbal Medicine</a></li>
+          <li><a href="services.html#fertility">Fertility &amp; Women's Health</a></li>
+          <li><a href="services.html#pain">Pain Management</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Office Hours</h4>
+        <div class="footer-hours">
+          <div class="footer-hours-row">
+            <span class="day">Mon – Wed</span>
+            <span>9 am – 6 pm</span>
+          </div>
+          <div class="footer-hours-row">
+            <span class="day">Thursday</span>
+            <span>9 am – 7 pm</span>
+          </div>
+          <div class="footer-hours-row">
+            <span class="day">Friday</span>
+            <span>9 am – 5 pm</span>
+          </div>
+          <div class="footer-hours-row">
+            <span class="day">Saturday</span>
+            <span>10 am – 3 pm</span>
+          </div>
+          <div class="footer-hours-row">
+            <span class="day">Sunday</span>
+            <span class="closed">Closed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Meridian Acupuncture &amp; Wellness. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>const navToggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.nav');if(navToggle&&nav){navToggle.addEventListener('click',()=>{const isOpen=nav.classList.toggle('nav-open');navToggle.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);});}</script>
+<script>
+  function toggleFaq(el) {
+    const item = el.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>

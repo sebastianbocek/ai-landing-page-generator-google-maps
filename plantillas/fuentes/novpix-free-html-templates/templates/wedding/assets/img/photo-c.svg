@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Photo placeholder: bouquet of flowers">
+  <rect width="600" height="600" fill="#e8ece0"/>
+  <g stroke="#6f7d5c" stroke-width="6" stroke-linecap="round"><path d="M300 560 290 360M300 560l-60-190M300 560l70-190M300 560l-10-220"/></g>
+  <path d="M250 470h100l-20 60h-60z" fill="#f6efe6"/>
+  <g><circle cx="230" cy="330" r="50" fill="#e8c1b8"/><circle cx="230" cy="330" r="28" fill="#d0928a"/><circle cx="360" cy="320" r="56" fill="#f1d6cf"/><circle cx="360" cy="320" r="30" fill="#dfa89c"/><circle cx="295" cy="260" r="48" fill="#fff"/><circle cx="295" cy="260" r="20" fill="#e7d3a8"/><circle cx="300" cy="370" r="40" fill="#c98f86"/></g>
+  <g fill="#a9b595"><ellipse cx="180" cy="400" rx="40" ry="16" transform="rotate(-30 180 400)"/><ellipse cx="420" cy="400" rx="40" ry="16" transform="rotate(30 420 400)"/></g>
+</svg>

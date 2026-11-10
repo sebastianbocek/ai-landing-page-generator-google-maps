@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Bright Spark Electric | Get a Free Estimate</title>
+  <meta name="description" content="Contact Bright Spark Electric for a free estimate on residential or commercial electrical services. 24/7 emergency service available. Licensed, bonded, and insured.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="logo-text">
+          Bright Spark
+          <span>Electric</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="header-phone">
+        <span class="phone-label">24/7 Emergency</span>
+        <a href="tel:5557592473" class="phone-number">(555) 759-2473</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">Free Estimates</div>
+        <h1>
+          Get in
+          <span class="highlight">Touch</span>
+        </h1>
+        <p class="hero-description">Ready to discuss your electrical project? Request a free estimate, schedule service, or contact us with questions. We're here to help.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Call, email, or fill out the form. We respond to all inquiries within 24 hours.</p>
+
+          <ul class="contact-details">
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value"><a href="tel:5557592473" style="color: inherit;">(555) 759-2473</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">info@brightsparkelectric.com</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="contact-label">Office</div>
+                <div class="contact-value">1247 Voltage Way<br>Anytown, ST 12345</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <div class="contact-label">Office Hours</div>
+                <div class="contact-value">Mon-Fri: 7am - 6pm<br>Sat: 8am - 2pm</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="emergency-box">
+            <h4>Electrical Emergency?</h4>
+            <div class="phone"><a href="tel:5557592473" style="color: inherit;">(555) 759-2473</a></div>
+            <p style="font-size: 0.85rem; color: var(--gray); margin-top: 0.5rem;">Available 24/7 for emergencies</p>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <h3>Request a Free Estimate</h3>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="service-type">Service Type</label>
+                <select id="service-type" name="service-type" required>
+                  <option value="">Select a service...</option>
+                  <option value="residential">Residential Electrical</option>
+                  <option value="commercial">Commercial Electrical</option>
+                  <option value="emergency">Emergency Repair</option>
+                  <option value="ev-charger">EV Charger Installation</option>
+                  <option value="panel-upgrade">Panel Upgrade</option>
+                  <option value="smart-home">Smart Home/Automation</option>
+                  <option value="generator">Generator Installation</option>
+                  <option value="inspection">Electrical Inspection</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="timeframe">Preferred Timeframe</label>
+                <select id="timeframe" name="timeframe">
+                  <option value="">Select timeframe...</option>
+                  <option value="asap">As Soon As Possible</option>
+                  <option value="this-week">This Week</option>
+                  <option value="next-week">Next Week</option>
+                  <option value="this-month">Within the Month</option>
+                  <option value="planning">Just Planning</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label for="address">Property Address</label>
+              <input type="text" id="address" name="address" placeholder="Where is the work needed?">
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" placeholder="Tell us about your electrical project or issue..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Request Free Estimate
+              <span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Service Area</div>
+        <h2 class="section-title">Areas We Serve</h2>
+        <p class="section-subtitle">We provide residential and commercial electrical services throughout the greater metro area. Same-day service available in most locations.</p>
+      </div>
+      <div class="credentials-grid cols-4">
+        <div class="credential-item">
+          <div class="credential-icon"><i class="fa-solid fa-city"></i></div>
+          <div class="credential-title">Downtown</div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon"><i class="fa-solid fa-tree"></i></div>
+          <div class="credential-title">Northside</div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon"><i class="fa-solid fa-sun"></i></div>
+          <div class="credential-title">Eastview</div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon"><i class="fa-solid fa-house"></i></div>
+          <div class="credential-title">West Hills</div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon"><i class="fa-solid fa-water"></i></div>
+          <div class="credential-title">Riverside</div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon"><i class="fa-solid fa-tree"></i></div>
+          <div class="credential-title">Oakdale</div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon"><i class="fa-solid fa-mountain"></i></div>
+          <div class="credential-title">Summit Park</div>
+        </div>
+        <div class="credential-item">
+          <div class="credential-icon"><i class="fa-solid fa-image"></i></div>
+          <div class="credential-title">Lakewood</div>
+        </div>
+      </div>
+      <p style="text-align: center; color: var(--gray); margin-top: 2rem;">
+        Not sure if we service your area? Give us a call at <a href="tel:5557592473" style="color: var(--electric-yellow);">(555) 759-2473</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title">Common Questions</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4 class="faq-question">How quickly can you respond to an emergency?</h4>
+          <p class="faq-answer">For electrical emergencies, we aim to have a licensed electrician at your location within 1-2 hours. Our 24/7 line is (555) 759-2473.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">Do you provide free estimates?</h4>
+          <p class="faq-answer">Yes. We provide free written estimates for all residential and commercial projects. There's no obligation and no pressure.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">Are you licensed and insured?</h4>
+          <p class="faq-answer">Yes. Bright Spark Electric holds a Master Electrician license (#ELEC-13579), carries $2M in liability insurance, and is fully bonded.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">What forms of payment do you accept?</h4>
+          <p class="faq-answer">We accept cash, checks, and all major credit cards. For larger projects, we also offer financing options through our partners.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">Do you handle permits and inspections?</h4>
+          <p class="faq-answer">Yes. For work that requires permits, we handle the permit application, coordinate inspections, and ensure everything passes code.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">What's your warranty policy?</h4>
+          <p class="faq-answer">All our work comes with a 5-year workmanship warranty. If there's any issue with our installation, we'll return and fix it at no charge.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">Can you work around my schedule?</h4>
+          <p class="faq-answer">Absolutely. We offer morning, afternoon, and evening appointments. We'll work with you to find a time that fits your schedule.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">Do you clean up after the job?</h4>
+          <p class="faq-answer">Always. We treat your home with respect. When the job is done, we clean up completely. You'll never know we were there except for the work we did.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Prefer to Talk?</h2>
+        <p>Our team is ready to answer your questions and schedule your service.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="tel:5557592473" class="btn btn-dark">Call (555) 759-2473</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="logo-text">
+            Bright Spark
+            <span>Electric</span>
+          </div>
+        </a>
+        <p>Licensed electrical contractors serving residential and commercial customers since 2009. Safety, quality, and honest pricing guaranteed.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">X</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Residential</a></li>
+          <li><a href="services.html">Commercial</a></li>
+          <li><a href="services.html">Emergency Repairs</a></li>
+          <li><a href="services.html">EV Chargers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="footer-links">
+          <li>(555) 759-2473</li>
+          <li>info@brightsparkelectric.com</li>
+          <li>1247 Voltage Way</li>
+          <li>Anytown, ST 12345</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Bright Spark Electric. All rights reserved.</p>
+      <p>License #ELEC-13579 | Bonded & Insured</p>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

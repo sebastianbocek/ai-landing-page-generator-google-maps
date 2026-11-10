@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contact Us | GreenScape Design & Maintenance</title>
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+ <!-- Header -->
+ <header class="header">
+ <div class="header-inner">
+ <a href="index.html" class="logo">
+ <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+ <div class="logo-text">
+ GreenScape
+ <span>Design & Maintenance</span>
+ </div>
+ </a>
+ <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ <nav class="nav">
+ <a href="index.html" class="nav-link">Home</a>
+ <a href="about.html" class="nav-link">About</a>
+ <a href="services.html" class="nav-link">Services</a>
+ <a href="contact.html" class="nav-link active">Contact</a>
+ </nav>
+ <a href="contact.html" class="header-cta">Free Consultation</a>
+ </div>
+ </header>
+
+ <!-- Page Hero -->
+ <section class="hero page-hero">
+ <div class="hero-content">
+ <h1>Let's Transform Your Outdoor Space</h1>
+ <p>Schedule your free consultation today. We'll visit your property, discuss your vision, and provide a detailed quote.</p>
+ </div>
+ </section>
+
+ <!-- Contact Form & Info -->
+ <section class="section section-white">
+ <div class="container">
+ <div class="content-grid">
+ <div class="contact-form">
+ <h2 style="margin-bottom: var(--spacing-md);">Request a Free Consultation</h2>
+ <form>
+ <div class="form-group">
+ <label for="name" class="form-label">Full Name *</label>
+ <input type="text" id="name" name="name" class="form-input" required>
+ </div>
+ <div class="form-group">
+ <label for="email" class="form-label">Email Address *</label>
+ <input type="email" id="email" name="email" class="form-input" required>
+ </div>
+ <div class="form-group">
+ <label for="phone" class="form-label">Phone Number *</label>
+ <input type="tel" id="phone" name="phone" class="form-input" required>
+ </div>
+ <div class="form-group">
+ <label for="address" class="form-label">Property Address</label>
+ <input type="text" id="address" name="address" class="form-input">
+ </div>
+ <div class="form-group">
+ <label for="property-type" class="form-label">Property Type *</label>
+ <select id="property-type" name="property-type" class="form-select" required>
+ <option value="">Select property type...</option>
+ <option value="residential">Residential</option>
+ <option value="commercial">Commercial</option>
+ <option value="hoa">HOA/Multi-Family</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label class="form-label">Services Interested In *</label>
+ <div class="form-checkbox-group">
+ <label class="form-checkbox-label">
+ <input type="checkbox" name="services" value="design" class="form-checkbox">
+ Landscape Design
+ </label>
+ <label class="form-checkbox-label">
+ <input type="checkbox" name="services" value="maintenance" class="form-checkbox">
+ Lawn Maintenance
+ </label>
+ <label class="form-checkbox-label">
+ <input type="checkbox" name="services" value="hardscaping" class="form-checkbox">
+ Hardscaping
+ </label>
+ <label class="form-checkbox-label">
+ <input type="checkbox" name="services" value="irrigation" class="form-checkbox">
+ Irrigation
+ </label>
+ <label class="form-checkbox-label">
+ <input type="checkbox" name="services" value="tree-services" class="form-checkbox">
+ Tree Services
+ </label>
+ <label class="form-checkbox-label">
+ <input type="checkbox" name="services" value="seasonal" class="form-checkbox">
+ Seasonal Services
+ </label>
+ </div>
+ </div>
+ <div class="form-group">
+ <label for="message" class="form-label">Project Details</label>
+ <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your project, timeline, and any specific requirements..."></textarea>
+ </div>
+ <div class="form-group">
+ <label for="timeline" class="form-label">Project Timeline</label>
+ <select id="timeline" name="timeline" class="form-select">
+ <option value="">When would you like to start?</option>
+ <option value="asap">As soon as possible</option>
+ <option value="1-month">Within 1 month</option>
+ <option value="1-3-months">1-3 months</option>
+ <option value="3-6-months">3-6 months</option>
+ <option value="planning">Just planning ahead</option>
+ </select>
+ </div>
+ <button type="submit" class="btn btn-primary" style="width: 100%;">Request Free Consultation</button>
+ </form>
+ </div>
+ <div>
+ <div class="contact-info">
+ <h3>Get In Touch</h3>
+ <div class="info-item">
+ <div class="info-label">Phone</div>
+ <div class="info-value">
+ <a href="tel:5551234567">(555) 123-4567</a>
+ </div>
+ </div>
+ <div class="info-item">
+ <div class="info-label">Email</div>
+ <div class="info-value">
+ <a href="mailto:info@greenscapedm.com">info@greenscapedm.com</a>
+ </div>
+ </div>
+ <div class="info-item">
+ <div class="info-label">Office Location</div>
+ <div class="info-value">
+ 1234 Landscape Drive<br>
+ Charlotte, NC 28201
+ </div>
+ </div>
+ <div class="info-item">
+ <div class="info-label">Business Hours</div>
+ <div class="info-value">
+ Monday - Friday: 7:00am - 6:00pm<br>
+ Saturday: 8:00am - 4:00pm<br>
+ Sunday: Closed
+ </div>
+ </div>
+ <div class="info-item">
+ <div class="info-label">Emergency Tree Service</div>
+ <div class="info-value">
+ <a href="tel:5551234567">(555) 123-4567</a><br>
+ Available 24/7 for storm damage
+ </div>
+ </div>
+ </div>
+ <div style="margin-top: var(--spacing-md);">
+ <div class="service-area-box">
+ <h4>Service Area</h4>
+ <p style="margin-bottom: var(--spacing-sm); color: var(--earth);">We proudly serve Charlotte and surrounding communities within a 30-mile radius.</p>
+ <div class="zip-codes">
+ <span class="zip-code">28201</span>
+ <span class="zip-code">28202</span>
+ <span class="zip-code">28203</span>
+ <span class="zip-code">28204</span>
+ <span class="zip-code">28205</span>
+ <span class="zip-code">28206</span>
+ <span class="zip-code">28207</span>
+ <span class="zip-code">28208</span>
+ <span class="zip-code">28209</span>
+ <span class="zip-code">28210</span>
+ <span class="zip-code">28211</span>
+ <span class="zip-code">28212</span>
+ <span class="zip-code">28213</span>
+ <span class="zip-code">28214</span>
+ <span class="zip-code">28215</span>
+ <span class="zip-code">28216</span>
+ <span class="zip-code">28217</span>
+ <span class="zip-code">28226</span>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- FAQ Section -->
+ <section class="section section-light" id="faq">
+ <div class="container">
+ <div class="section-header center">
+ <div class="section-tag">Common Questions</div>
+ <h2>Frequently Asked Questions</h2>
+ <p class="section-subtitle">Find answers to common questions about our services, pricing, and process.</p>
+ </div>
+ <div class="faq-list">
+ <div class="faq-item">
+ <h4 class="faq-question">How long does a typical landscape design project take from start to finish?</h4>
+ <p class="faq-answer">
+ The timeline varies based on project scope. Design consultations and plans typically take 2-3 weeks. Installation can range from a few days for simple projects to 4-6 weeks for comprehensive landscape renovations. We'll provide a detailed timeline during your consultation.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Do you offer payment plans or financing for larger projects?</h4>
+ <p class="faq-answer">
+ Yes! We offer flexible payment schedules for projects over $5,000. Typically, we require a 30% deposit to begin, 40% at mid-project, and 30% upon completion. We also partner with financing companies that offer low-interest payment plans for qualified customers.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Are maintenance contracts required, or can I hire you for one-time services?</h4>
+ <p class="faq-answer">
+ We offer both! While maintenance contracts ensure consistent care and priority scheduling, we're happy to provide one-time services like spring cleanup, mulch installation, or seasonal pruning. Contact us to discuss your needs.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">What happens if I'm not satisfied with the work?</h4>
+ <p class="faq-answer">
+ Your satisfaction is our top priority. We stand behind our work with a satisfaction guarantee. If you're not happy with any aspect of our service, we'll work with you to make it right. We also offer a one-year warranty on plant installations (with proper care) and workmanship.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Do you provide free estimates?</h4>
+ <p class="faq-answer">
+ Yes! We offer free, no-obligation consultations and estimates for all services. We'll visit your property, assess your needs, and provide a detailed written quote. Design services have a fee that's credited toward your project if you proceed with installation.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Are you licensed and insured?</h4>
+ <p class="faq-answer">
+ Absolutely. GreenScape is fully licensed as a landscape contractor in North Carolina (License #12345) and carries comprehensive liability insurance and workers' compensation coverage. We're happy to provide proof of insurance upon request.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Do you use organic or eco-friendly products?</h4>
+ <p class="faq-answer">
+ Yes! We prioritize sustainable practices and offer organic fertilization programs, natural pest control methods, and environmentally responsible products. We can customize our approach based on your preferences for organic or traditional methods.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">How far in advance should I schedule services?</h4>
+ <p class="faq-answer">
+ For maintenance contracts, we recommend contacting us 2-4 weeks before your desired start date. Design and installation projects should be scheduled 4-8 weeks in advance, especially during our busy spring and fall seasons. Emergency tree services are available 24/7.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Do you handle irrigation system repairs and winterization?</h4>
+ <p class="faq-answer">
+ Yes! Our irrigation specialists handle all system repairs, maintenance, upgrades, winterization (blow-outs), and spring start-ups. We also offer annual service contracts that include seasonal system checks and adjustments.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Can you work with HOA guidelines and restrictions?</h4>
+ <p class="faq-answer">
+ Absolutely. We have extensive experience working within HOA requirements and can help ensure your landscape design meets all community guidelines. We can also attend HOA meetings on your behalf if architectural approval is needed.
+ </p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Service Overview -->
+ <section class="section section-white">
+ <div class="container">
+ <div class="section-header center">
+ <div class="section-tag">Quick Reference</div>
+ <h2>Service Pricing Overview</h2>
+ <p class="section-subtitle">Here's a quick overview of our pricing structure. Contact us for a detailed, customized quote for your specific needs.</p>
+ </div>
+ <div class="services-grid">
+ <div class="feature-card">
+ <div class="feature-icon"><i class="fa-solid fa-palette"></i></div>
+ <h3>Landscape Design</h3>
+ <p style="margin-bottom: var(--spacing-sm);">Custom plans, 3D renderings, plant selection</p>
+ <p><strong>Starting at $500</strong></p>
+ <p style="font-size: 0.9rem; color: var(--gray);">Credited toward installation</p>
+ </div>
+ <div class="feature-card">
+ <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+ <h3>Lawn Maintenance</h3>
+ <p style="margin-bottom: var(--spacing-sm);">Weekly mowing, seasonal care, contracts available</p>
+ <p><strong>$150-$425/month</strong></p>
+ <p style="font-size: 0.9rem; color: var(--gray);">Based on property size and service level</p>
+ </div>
+ <div class="feature-card">
+ <div class="feature-icon"><i class="fa-solid fa-layer-group"></i></div>
+ <h3>Hardscaping</h3>
+ <p style="margin-bottom: var(--spacing-sm);">Patios, walls, outdoor living spaces</p>
+ <p><strong>Custom quotes</strong></p>
+ <p style="font-size: 0.9rem; color: var(--gray);">Based on materials and project scope</p>
+ </div>
+ <div class="feature-card">
+ <div class="feature-icon"><i class="fa-solid fa-droplet"></i></div>
+ <h3>Irrigation</h3>
+ <p style="margin-bottom: var(--spacing-sm);">Installation, repairs, smart controllers</p>
+ <p><strong>Starting at $2,500</strong></p>
+ <p style="font-size: 0.9rem; color: var(--gray);">New system installation</p>
+ </div>
+ <div class="feature-card">
+ <div class="feature-icon"><i class="fa-solid fa-tree"></i></div>
+ <h3>Tree Services</h3>
+ <p style="margin-bottom: var(--spacing-sm);">Pruning, removal, stump grinding</p>
+ <p><strong>Starting at $300</strong></p>
+ <p style="font-size: 0.9rem; color: var(--gray);">Varies by tree size and service</p>
+ </div>
+ <div class="feature-card">
+ <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+ <h3>Seasonal Services</h3>
+ <p style="margin-bottom: var(--spacing-sm);">Spring/fall cleanup, seasonal planting</p>
+ <p><strong>$200-$400</strong></p>
+ <p style="font-size: 0.9rem; color: var(--gray);">Based on property size</p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- CTA Banner -->
+ <section class="section section-light">
+ <div class="container">
+ <div class="cta-banner">
+ <h2>Have Questions? Let's Talk!</h2>
+ <p>Call us at (555) 123-4567 or fill out the form above to schedule your free consultation.</p>
+ <a href="tel:5551234567" class="btn btn-outline">Call Now</a>
+ </div>
+ </div>
+ </section>
+
+ <!-- Footer -->
+ <footer class="footer">
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <a href="index.html" class="logo">
+ <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+ <div class="logo-text">
+ GreenScape
+ <span>Design & Maintenance</span>
+ </div>
+ </a>
+ <p>
+ Creating beautiful, sustainable outdoor spaces with professional landscape design, maintenance, and hardscaping services. Transforming properties throughout the metro area since 2009.
+ </p>
+ <div class="footer-social">
+ <a href="#" class="social-link" aria-label="Facebook">f</a>
+ <a href="#" class="social-link" aria-label="Instagram">ig</a>
+ <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+ </div>
+ </div>
+ <div class="footer-column">
+ <h4>Quick Links</h4>
+ <ul class="footer-links">
+ <li><a href="index.html">Home</a></li>
+ <li><a href="about.html">About Us</a></li>
+ <li><a href="services.html">Services</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ <li><a href="contact.html#faq">FAQ</a></li>
+ </ul>
+ </div>
+ <div class="footer-column">
+ <h4>Services</h4>
+ <ul class="footer-links">
+ <li><a href="services.html#design">Landscape Design</a></li>
+ <li><a href="services.html#maintenance">Lawn Care</a></li>
+ <li><a href="services.html#hardscaping">Hardscaping</a></li>
+ <li><a href="services.html#irrigation">Irrigation</a></li>
+ <li><a href="services.html#tree-services">Tree Services</a></li>
+ </ul>
+ </div>
+ <div class="footer-column">
+ <h4>Contact Us</h4>
+ <ul class="footer-links">
+ <li>(555) 123-4567</li>
+ <li>info@greenscapedm.com</li>
+ <li> 1234 Landscape Drive<br>&nbsp;&nbsp;&nbsp;&nbsp;Charlotte, NC 28201</li>
+ <li>Mon-Sat: 7am-6pm</li>
+ </ul>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <p>&copy; 2024 GreenScape Design & Maintenance. All rights reserved.</p>
+ <p>Licensed & Insured | NC Landscape Contractor #12345</p>
+ <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+ </div>
+ </footer>
+ <!-- Mobile Nav Toggle -->
+ <script>
+ const navToggle = document.querySelector('.nav-toggle');
+ const nav = document.querySelector('.nav');
+ if (navToggle && nav) {
+ navToggle.addEventListener('click', () => {
+ const isOpen = nav.classList.toggle('nav-open');
+ navToggle.classList.toggle('active');
+ navToggle.setAttribute('aria-expanded', isOpen);
+ });
+ }
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact MAKAAN — Get in touch with our real estate agents, schedule a consultation, or visit our offices.">
+  <title>Contact Us — MAKAAN</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-icon">M</div>
+        <div class="header__logo-text">MAKA<span>A</span>N</div>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="listings.html" class="nav__link">Listings</a>
+        <a href="contact.html" class="nav__link active">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <a href="tel:+18005551234" class="btn btn--ghost btn--sm">+1 800 555 1234</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Get Started</a>
+      </div>
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html" class="mobile-nav__link">Home</a>
+      <a href="about.html" class="mobile-nav__link">About</a>
+      <a href="listings.html" class="mobile-nav__link">Listings</a>
+      <a href="contact.html" class="mobile-nav__link active">Contact</a>
+      <div class="mobile-nav__actions">
+        <a href="tel:+18005551234" class="btn btn--ghost">+1 800 555 1234</a>
+        <a href="contact.html" class="btn btn--primary">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container page-hero__content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <span class="breadcrumb__current">Contact</span>
+      </div>
+      <h1>Get in Touch</h1>
+      <p>Have a question or ready to start your property journey? We are here to help.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT SECTION ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div class="contact-form reveal-left">
+          <h3 style="font-family:var(--font-heading); font-size:var(--fs-xl); color:var(--clr-navy); margin-bottom:var(--space-2);">Send Us a Message</h3>
+          <p style="font-size:var(--fs-sm); color:var(--clr-gray-500); margin-bottom:var(--space-8);">Fill out the form below and our team will get back to you within 24 hours.</p>
+
+          <form data-form="contact">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-first">First Name</label>
+                <input type="text" id="contact-first" name="first_name" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-last">Last Name</label>
+                <input type="text" id="contact-last" name="last_name" placeholder="Doe" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number</label>
+                <input type="tel" id="contact-phone" name="phone" placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <select id="contact-subject" name="subject" required>
+                <option value="">Select a topic</option>
+                <option value="buying">I want to buy a property</option>
+                <option value="selling">I want to sell a property</option>
+                <option value="renting">I am looking to rent</option>
+                <option value="consultation">Schedule a consultation</option>
+                <option value="other">Other inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" placeholder="Tell us about your property needs, budget, preferred locations, or any questions you have..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Send Message &#8594;</button>
+            <div class="form-ok">&#10003; Thank you! Your message has been sent. We will get back to you shortly.</div>
+            <div class="form-err">&#10007; Please fill in all required fields correctly.</div>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="reveal-right" style="display:flex; flex-direction:column; gap:var(--space-8);">
+
+          <!-- Agent Card 1 -->
+          <div class="agent-card">
+            <div class="agent-card__header">
+              <div class="agent-card__avatar">
+                <img src="assets/img/team-1.jpg" alt="David Harrison" loading="lazy">
+              </div>
+              <div>
+                <div class="agent-card__name">David Harrison</div>
+                <div class="agent-card__role">Founder & Lead Agent</div>
+              </div>
+            </div>
+            <div class="agent-card__info">
+              <div class="agent-card__info-item">
+                <div class="agent-card__info-icon">&#128222;</div>
+                <span>+1 (555) 100-2001</span>
+              </div>
+              <div class="agent-card__info-item">
+                <div class="agent-card__info-icon">&#9993;</div>
+                <span>david@makaan.com</span>
+              </div>
+              <div class="agent-card__info-item">
+                <div class="agent-card__info-icon">&#128205;</div>
+                <span>Downtown Office</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agent Card 2 -->
+          <div class="agent-card">
+            <div class="agent-card__header">
+              <div class="agent-card__avatar">
+                <img src="assets/img/team-2.jpg" alt="Priya Sharma" loading="lazy">
+              </div>
+              <div>
+                <div class="agent-card__name">Priya Sharma</div>
+                <div class="agent-card__role">Senior Property Consultant</div>
+              </div>
+            </div>
+            <div class="agent-card__info">
+              <div class="agent-card__info-item">
+                <div class="agent-card__info-icon">&#128222;</div>
+                <span>+1 (555) 100-2002</span>
+              </div>
+              <div class="agent-card__info-item">
+                <div class="agent-card__info-icon">&#9993;</div>
+                <span>priya@makaan.com</span>
+              </div>
+              <div class="agent-card__info-item">
+                <div class="agent-card__info-icon">&#128205;</div>
+                <span>Greenwood Office</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Office Locations -->
+          <div style="margin-top:var(--space-2);">
+            <h4 style="font-family:var(--font-heading); font-size:var(--fs-md); font-weight:var(--fw-bold); color:var(--clr-navy); margin-bottom:var(--space-4);">Our Offices</h4>
+            <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+              <div class="office-card">
+                <div class="office-card__icon">&#127970;</div>
+                <div class="office-card__title">Downtown Office</div>
+                <div class="office-card__address">150 Central Avenue, Suite 200<br>Downtown, ST 10001<br>Mon - Fri: 9:00 AM - 6:00 PM</div>
+              </div>
+              <div class="office-card">
+                <div class="office-card__icon">&#127970;</div>
+                <div class="office-card__title">Greenwood Branch</div>
+                <div class="office-card__address">88 Maple Drive<br>Greenwood Heights, ST 10002<br>Mon - Fri: 9:00 AM - 5:00 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="header__logo" style="margin-bottom:var(--space-2);">
+            <div class="header__logo-icon">M</div>
+            <div class="header__logo-text" style="color:#fff;">MAKA<span>A</span>N</div>
+          </a>
+          <p class="footer__brand-desc">Helping families find their dream homes since 2009. Expert guidance, local knowledge, and a commitment to making your property journey seamless.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">X</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="about.html" class="footer__link">About Us</a>
+            <a href="listings.html" class="footer__link">Property Listings</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="#" class="footer__link">Market Reports</a>
+            <a href="#" class="footer__link">Blog</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Properties</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Houses for Sale</a>
+            <a href="#" class="footer__link">Apartments</a>
+            <a href="#" class="footer__link">Luxury Villas</a>
+            <a href="#" class="footer__link">Commercial</a>
+            <a href="#" class="footer__link">New Developments</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Stay Updated</h4>
+          <p style="font-size:var(--fs-sm); margin-bottom:var(--space-4); color:var(--clr-gray-500);">Get the latest listings and market insights delivered to your inbox.</p>
+          <div class="footer__newsletter">
+            <form class="footer__newsletter-form">
+              <input type="email" class="footer__newsletter-input" placeholder="Your email address" aria-label="Email for newsletter">
+              <button type="submit" class="footer__newsletter-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> MAKAAN. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

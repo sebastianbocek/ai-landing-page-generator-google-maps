@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Request a bid from Groundbreak Excavation. Tell us your project details and we'll respond within 24 hours. Serving Central Ohio." />
+  <title>Contact &amp; Get a Bid | Groundbreak Excavation — Columbus, OH</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+<body>
+
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-truck-pickup"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Groundbreak</span>
+          <span class="logo-sub">Excavation</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contact.html" class="btn btn-primary">Request Bid</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <span class="section-label">Get a Bid</span>
+      <h1>Let's Talk About Your Project</h1>
+      <p>
+        Fill out the bid request form below and Todd will personally review it. We respond
+        to all inquiries within one business day. Site visits are free, and we don't charge
+        for estimates.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- BID REQUEST FORM -->
+      <div class="form-card">
+        <h2>Bid Request Form</h2>
+        <p>The more detail you give us, the more accurate our estimate will be. All fields marked with <span style="color:var(--primary);">*</span> are required.</p>
+
+        <form action="#" method="POST">
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label for="company">Company Name <span>*</span></label>
+              <input type="text" id="company" name="company" placeholder="Henley Commercial Properties" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-name">Contact Name <span>*</span></label>
+              <input type="text" id="contact-name" name="contact_name" placeholder="Marcus Henley" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address <span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="marcus@henleyprop.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number <span>*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(614) 555-0000" required />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="project-address">Project Site Address <span>*</span></label>
+              <input type="text" id="project-address" name="project_address" placeholder="1234 County Road 47, Sunbury, OH 43074" required />
+            </div>
+
+            <div class="form-group">
+              <label for="project-type">Project Type <span>*</span></label>
+              <select id="project-type" name="project_type" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="clearing">Site Clearing &amp; Grubbing</option>
+                <option value="grading">Grading &amp; Earthwork</option>
+                <option value="trenching">Trenching &amp; Utility Installation</option>
+                <option value="pond">Pond &amp; Lake Excavation</option>
+                <option value="demolition">Demolition &amp; Hauling</option>
+                <option value="rock-breaking">Rock Breaking</option>
+                <option value="land-dev">Land Development</option>
+                <option value="septic">Septic System Excavation</option>
+                <option value="multiple">Multiple Services</option>
+                <option value="other">Other / Unsure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="acreage">Acreage / Project Scope</label>
+              <input type="text" id="acreage" name="acreage" placeholder="e.g. 14 acres, 3,000 LF trench" />
+            </div>
+
+            <div class="form-group">
+              <label for="timeline">Desired Start Date <span>*</span></label>
+              <input type="text" id="timeline" name="timeline" placeholder="e.g. March 2025, ASAP, Flexible" required />
+            </div>
+
+            <div class="form-group">
+              <label for="project-owner">Project Owner / Client</label>
+              <input type="text" id="project-owner" name="project_owner" placeholder="If different from your company" />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="site-conditions">Known Site Conditions</label>
+              <input type="text" id="site-conditions" name="site_conditions" placeholder="e.g. Heavy timber, existing structures, known rock, wetland areas, utility conflicts..." />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="description">Project Description <span>*</span></label>
+              <textarea id="description" name="description" placeholder="Describe the scope of work. Include what work has already been done, what plans or engineering documents exist, and any constraints we should know about (access limitations, adjacent structures, tight schedule, phasing requirements, etc.)." required></textarea>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="how-heard">How Did You Hear About Us?</label>
+              <select id="how-heard" name="how_heard">
+                <option value="" disabled selected>Select one</option>
+                <option value="referral">Referral from colleague or contractor</option>
+                <option value="google">Google Search</option>
+                <option value="previous">Previous client</option>
+                <option value="website">Found our website</option>
+                <option value="social">Social media</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" style="font-size:1rem;padding:1rem 2.5rem;">
+              <i class="fa-solid fa-paper-plane"></i> Submit Bid Request
+            </button>
+            <p style="font-size:0.8rem;color:var(--gray);margin-top:0.75rem;">
+              We respond to all inquiries within one business day. Detailed requests get faster, more accurate estimates.
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+
+        <div class="contact-info-card">
+          <h3>Direct Contact</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <a href="tel:+15554837291">(555) 483-7291</a>
+              <br>Call or text during business hours
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <a href="mailto:bids@groundbreakexc.com">bids@groundbreakexc.com</a>
+              <br>For bids and project inquiries
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Office Location</strong>
+              1847 Industrial Parkway<br>
+              Columbus, OH 43215
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Business Hours</strong>
+              Mon&ndash;Fri: 6:00am &ndash; 6:00pm<br>
+              Saturday: 7:00am &ndash; 3:00pm<br>
+              Sunday: Closed (emergency line available)
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <h3>What to Expect</h3>
+          <div style="display:flex;flex-direction:column;gap:1rem;">
+            <div style="display:flex;gap:0.875rem;align-items:flex-start;">
+              <div style="width:32px;height:32px;background:rgba(255,193,7,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:0.8rem;flex-shrink:0;">
+                <i class="fa-solid fa-1"></i>
+              </div>
+              <div>
+                <p style="font-size:0.85rem;font-weight:700;color:var(--white);margin-bottom:0.2rem;">Same-day acknowledgment</p>
+                <p style="font-size:0.8rem;color:var(--gray);line-height:1.5;">You'll receive a confirmation email that we received your request within a few hours.</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:0.875rem;align-items:flex-start;">
+              <div style="width:32px;height:32px;background:rgba(255,193,7,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:0.8rem;flex-shrink:0;">
+                <i class="fa-solid fa-2"></i>
+              </div>
+              <div>
+                <p style="font-size:0.85rem;font-weight:700;color:var(--white);margin-bottom:0.2rem;">Site visit scheduling</p>
+                <p style="font-size:0.8rem;color:var(--gray);line-height:1.5;">Todd or our lead estimator will contact you to schedule a free site visit within 48 hours.</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:0.875rem;align-items:flex-start;">
+              <div style="width:32px;height:32px;background:rgba(255,193,7,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:0.8rem;flex-shrink:0;">
+                <i class="fa-solid fa-3"></i>
+              </div>
+              <div>
+                <p style="font-size:0.85rem;font-weight:700;color:var(--white);margin-bottom:0.2rem;">Written estimate delivery</p>
+                <p style="font-size:0.8rem;color:var(--gray);line-height:1.5;">Detailed written bid within 3&ndash;5 business days of the site visit for most projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-card" style="background:rgba(255,193,7,0.06);border-color:rgba(255,193,7,0.2);">
+          <h3 style="color:var(--primary);">Prefer to Call?</h3>
+          <p style="font-size:0.875rem;color:var(--gray);margin-bottom:1.25rem;line-height:1.6;">
+            Todd answers his phone. If you get voicemail, he'll call back the same business day.
+            For urgent bid timelines, calling is always faster than email.
+          </p>
+          <a href="tel:+15554837291" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <i class="fa-solid fa-phone"></i> (555) 483-7291
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Common Questions</h2>
+      <p class="section-desc">
+        Things people ask us before they call. If your question isn't here, just ask.
+      </p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-circle-question"></i>
+          Do you charge for estimates?
+        </h3>
+        <p>
+          No. Site visits and written estimates are always free. We invest time in putting together
+          an accurate bid because it's good for both of us. A detailed estimate protects you from
+          surprise change orders and ensures we're pricing the actual work, not a guess.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-circle-question"></i>
+          How long does it take to get a bid back after the site visit?
+        </h3>
+        <p>
+          For most residential and small commercial projects, we turn around written bids within
+          3&ndash;5 business days of the site visit. For large or complex development projects,
+          it may take 5&ndash;10 business days to produce a comprehensive estimate. If you have
+          a hard deadline for bid submission, let us know upfront and we'll do our best to accommodate.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-circle-question"></i>
+          Do you handle the permitting for excavation work?
+        </h3>
+        <p>
+          It depends on the permit type. We assist with NPDES construction stormwater permits
+          and can pull grading and excavation permits in most Central Ohio municipalities.
+          However, septic permits, wetland permits (Section 404), and tree removal permits
+          typically require the property owner or their design engineer to initiate. We'll advise
+          you at estimate on what's needed and who handles each permit.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-circle-question"></i>
+          Can you work with my civil engineer or general contractor directly?
+        </h3>
+        <p>
+          Absolutely. We work directly with civil engineers, architects, GCs, and developers on
+          a regular basis. We can coordinate submittals, attend pre-construction meetings, and
+          work within a project's master schedule. For subcontract work, we execute our scope
+          independently and flag coordination issues proactively so they don't become schedule problems.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-circle-question"></i>
+          What happens if we hit unexpected rock or poor soil conditions mid-project?
+        </h3>
+        <p>
+          We address it immediately and transparently. For projects where rock is a possibility,
+          we typically include a unit price for rock removal in the original bid so there's no
+          sticker shock if we hit it. For other unforeseen conditions, we document what was
+          encountered, provide a written change order with revised pricing, and get approval
+          before proceeding. We don't hide problems or absorb costs silently.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-truck-pickup"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Groundbreak</span>
+            <span class="logo-sub">Excavation</span>
+          </div>
+        </a>
+        <p>
+          Heavy excavation and site work contractor based in Columbus, Ohio.
+          Serving residential and commercial clients across Central Ohio since 2004.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> Site Clearing</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> Grading &amp; Earthwork</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> Trenching &amp; Utilities</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> Pond Excavation</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> Demolition</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> Rock Breaking</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> About Us</a></li>
+          <li><a href="about.html#fleet"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> Our Fleet</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> Services</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> Get a Bid</a></li>
+          <li><a href="contact.html#faq"><i class="fa-solid fa-chevron-right" style="font-size:0.65rem;color:var(--primary);"></i> FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span><a href="tel:+15554837291">(555) 483-7291</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span><a href="mailto:bids@groundbreakexc.com">bids@groundbreakexc.com</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Columbus, OH 43215</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Mon&ndash;Fri 6am&ndash;6pm<br>Sat 7am&ndash;3pm</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Groundbreak Excavation. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>const navToggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.nav');if(navToggle&&nav){navToggle.addEventListener('click',()=>{const isOpen=nav.classList.toggle('nav-open');navToggle.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);});}</script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule an Inspection — TrueView Home Inspections</title>
+  <meta name="description" content="Schedule a home inspection in Dallas-Fort Worth. Request a buyer's, pre-listing, new construction, or specialty inspection. Same-week availability. (972) 555-0138.">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+          <polyline points="9,22 9,12 15,12 15,22"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        TrueView
+        <span>Home Inspections</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Schedule</a>
+    </nav>
+    <a href="tel:9725550138" class="btn btn-primary header-cta">(972) 555-0138</a>
+  </div>
+</header>
+
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <div class="page-header-inner">
+      <span class="section-label">Get Scheduled</span>
+      <h1>Request an Inspection</h1>
+      <p>Fill out the form below and we'll confirm your appointment within a few hours. Need something faster? Call us directly at (972) 555-0138.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section class="section" style="background: var(--bg-section);">
+  <div class="container">
+    <div class="contact-layout">
+      <!-- Form -->
+      <div class="form-wrapper">
+        <div class="form-title">Inspection Request</div>
+        <p class="form-subtitle">We'll follow up within 2-4 hours on business days to confirm your appointment and answer any questions.</p>
+        <form action="#" method="post">
+          <div class="form-grid">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name</label>
+              <input class="form-input" type="text" id="first-name" name="first-name" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name</label>
+              <input class="form-input" type="text" id="last-name" name="last-name" placeholder="Smith" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="(214) 555-0000" required>
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="property-address">Property Address</label>
+              <input class="form-input" type="text" id="property-address" name="property-address" placeholder="1234 Oak Creek Lane, Plano, TX 75023" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inspection-type">Inspection Type</label>
+              <select class="form-select" id="inspection-type" name="inspection-type" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="buyers">Buyer's Home Inspection</option>
+                <option value="pre-listing">Seller's Pre-Listing Inspection</option>
+                <option value="new-construction">New Construction — Single Phase</option>
+                <option value="new-construction-full">New Construction — Full Build (3 phases)</option>
+                <option value="warranty">11-Month Warranty Inspection</option>
+                <option value="commercial">Commercial Property Inspection</option>
+                <option value="reinspection">Re-Inspection</option>
+                <option value="unsure">Not Sure — Help Me Choose</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="sq-footage">Approximate Square Footage</label>
+              <select class="form-select" id="sq-footage" name="sq-footage">
+                <option value="" disabled selected>Select range</option>
+                <option value="under-1500">Under 1,500 sq ft</option>
+                <option value="1500-2000">1,500 – 2,000 sq ft</option>
+                <option value="2000-3000">2,000 – 3,000 sq ft</option>
+                <option value="3000-4000">3,000 – 4,000 sq ft</option>
+                <option value="4000-5000">4,000 – 5,000 sq ft</option>
+                <option value="over-5000">Over 5,000 sq ft</option>
+                <option value="commercial">Commercial (varies)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="closing-date">Closing Date (if applicable)</label>
+              <input class="form-input" type="date" id="closing-date" name="closing-date">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="preferred-date">Preferred Inspection Date</label>
+              <input class="form-input" type="date" id="preferred-date" name="preferred-date">
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="agent-name">Real Estate Agent Name (optional)</label>
+              <input class="form-input" type="text" id="agent-name" name="agent-name" placeholder="Agent's full name">
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="agent-phone">Agent Phone / Brokerage (optional)</label>
+              <input class="form-input" type="text" id="agent-phone" name="agent-phone" placeholder="(214) 555-0000 — Keller Williams Frisco">
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="add-ons">Add-On Services (optional)</label>
+              <select class="form-select" id="add-ons" name="add-ons">
+                <option value="" disabled selected>Any additional testing?</option>
+                <option value="none">None — standard inspection only</option>
+                <option value="radon">Radon Testing (+$125)</option>
+                <option value="mold">Mold Screening (+$150)</option>
+                <option value="sewer">Sewer Scope (+$175)</option>
+                <option value="pool">Pool &amp; Spa Inspection (+$100)</option>
+                <option value="thermal">Thermal Imaging (+$95)</option>
+                <option value="multiple">Multiple — I'll explain in notes</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label class="form-label" for="notes">Anything Else We Should Know</label>
+              <textarea class="form-textarea" id="notes" name="notes" placeholder="Property access instructions, specific concerns, crawl space or unusual features — anything that helps us prepare."></textarea>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary btn-lg">Submit Inspection Request</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div class="contact-info-column">
+        <div class="info-card">
+          <h3>Contact Information</h3>
+          <div class="contact-detail">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.77 7.26 19.79 19.79 0 01.71 3.52 2 2 0 012.7 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.66A16 16 0 0015.34 17l1.02-1.02a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="detail-label">Phone</div>
+              <div class="detail-value"><a href="tel:9725550138">(972) 555-0138</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="detail-label">Email</div>
+              <div class="detail-value"><a href="mailto:inspect@trueviewhome.com">inspect@trueviewhome.com</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="detail-label">Service Area</div>
+              <div class="detail-value">Dallas-Fort Worth Metroplex, TX</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>Scheduling Availability</h3>
+          <div class="hours-list">
+            <div class="hours-row">
+              <span>Monday – Friday</span>
+              <span>7:00 AM – 6:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span>Saturday</span>
+              <span>8:00 AM – 4:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span>Sunday</span>
+              <span>By request only</span>
+            </div>
+          </div>
+          <p style="margin-top:1.25rem; font-size:0.88rem; color:var(--text-muted); margin-bottom:0;">Most inspections can be scheduled within 2-3 business days. If you have a closing deadline, call us — we'll do our best to accommodate.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>For Real Estate Agents</h3>
+          <p style="font-size:0.9rem; margin-bottom:1rem;">We work with agents every day. You can book on behalf of your clients, and we'll copy you on all communications and the final report. Quick response guaranteed — we know your timelines are tight.</p>
+          <a href="tel:9725550138" class="btn btn-outline-dark" style="width:100%; justify-content:center;">Call Direct: (972) 555-0138</a>
+        </div>
+
+        <div class="info-card">
+          <h3>Service Area Counties</h3>
+          <ul class="counties-list" style="grid-template-columns: 1fr 1fr;">
+            <li class="county-item">Dallas</li>
+            <li class="county-item">Tarrant</li>
+            <li class="county-item">Collin</li>
+            <li class="county-item">Denton</li>
+            <li class="county-item">Rockwall</li>
+            <li class="county-item">Kaufman</li>
+            <li class="county-item">Ellis</li>
+            <li class="county-item">Johnson</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section">
+  <div class="container">
+    <div class="section-header centered">
+      <span class="section-label">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Answers to the questions we hear most often from buyers, sellers, and first-timers.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">
+          How long does a home inspection take?
+          <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+        <div class="faq-answer">
+          Plan on 3 to 4 hours for most single-family homes up to 3,000 square feet. Larger homes, homes with crawl spaces, or properties with multiple HVAC systems or detached structures will take longer. We don't cut the time short to fit more appointments — when we're done, we're done.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Should I be present during the inspection?
+          <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+        <div class="faq-answer">
+          We strongly encourage it. Attending your inspection is one of the most valuable things you can do as a buyer. You'll see issues in context, ask questions in real time, and leave with a much better understanding of what you're buying. Most people who attend say it's the most useful two hours of their home purchase process. You don't need to follow the inspector the entire time — come for the second half and the walkthrough at minimum.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          When do I get my inspection report?
+          <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+        <div class="faq-answer">
+          You'll receive your full digital report within 24 hours of the inspection — typically the same evening for morning inspections. Reports are delivered via secure link and include all photos, findings, and our repair priority recommendations. You can share the report with your agent, attorney, or anyone else directly from the link.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Can a house "fail" an inspection?
+          <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+        <div class="faq-answer">
+          No. A home inspection is not a pass/fail test. We document the condition of the property as it exists at the time of inspection. Every home has issues — including brand new ones. Our job is to give you a clear picture of what those issues are, how significant they are, and what it might cost to address them. What you do with that information is your decision, made in negotiation with the seller.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you inspect new construction homes?
+          <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+        <div class="faq-answer">
+          Absolutely — and we strongly recommend it. New doesn't mean defect-free. Builders work with subcontractors under tight deadlines, and code inspections by the municipality are quick pass/fail checks, not thorough assessments. Our phase inspections catch problems at framing, pre-drywall, and final stages — when they're far easier and cheaper to fix than after you've moved in.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Does the inspector accept referrals from agents or contractors?
+          <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+        <div class="faq-answer">
+          We do not participate in referral arrangements with real estate agents, contractors, or any third party with a financial stake in our findings. Our only obligation is to you, the client. We're paid by you to give you an honest, thorough assessment — full stop. You're welcome to use an agent's recommended inspector, but you should also feel free to choose your own. It's your money and your property.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          What happens if issues are found after closing that weren't in the report?
+          <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+        <div class="faq-answer">
+          We inspect visible and accessible areas at the time of inspection. Some defects are genuinely hidden — behind finished walls, under flooring, or inside sealed systems. We carry Errors and Omissions insurance and encourage any concerns to be brought to us directly. We'll review the situation and respond honestly. We're not in the business of covering our tracks — if we missed something, we want to know.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          How do I pay, and when is payment due?
+          <svg class="faq-icon" viewBox="0 0 24 24"><polyline points="6,9 12,15 18,9"/></svg>
+        </div>
+        <div class="faq-answer">
+          Payment is due at the time of inspection, before the report is delivered. We accept credit and debit cards, Zelle, and Venmo. We do not accept payment from agents or sellers — only from the client who hired us. This keeps our financial relationship clean and unambiguous.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <span class="section-label">Still Have Questions?</span>
+      <h2>Call Us — We Pick Up.</h2>
+      <p>Not a phone tree. Not a voicemail box. If it's during business hours, someone on our team picks up.</p>
+      <div class="cta-actions">
+        <a href="tel:9725550138" class="btn btn-primary btn-lg">(972) 555-0138</a>
+        <a href="mailto:inspect@trueviewhome.com" class="btn btn-outline btn-lg">inspect@trueviewhome.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              <polyline points="9,22 9,12 15,12 15,22"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            TrueView
+            <span>Home Inspections</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Thorough inspections. Clear reports. No surprises. Serving the Dallas-Fort Worth metroplex since 2012.</p>
+        <div class="footer-contact">
+          <a href="tel:9725550138">(972) 555-0138</a>
+          <a href="mailto:inspect@trueviewhome.com">inspect@trueviewhome.com</a>
+          <a href="#">Dallas-Fort Worth, TX</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Buyer's Inspection</a></li>
+          <li><a href="services.html">Pre-Listing Inspection</a></li>
+          <li><a href="services.html">New Construction</a></li>
+          <li><a href="services.html">Warranty Inspection</a></li>
+          <li><a href="services.html">Commercial</a></li>
+          <li><a href="services.html">Radon Testing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Our Inspectors</a></li>
+          <li><a href="about.html">Certifications</a></li>
+          <li><a href="about.html">Service Area</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Schedule</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Request Inspection</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="tel:9725550138">(972) 555-0138</a></li>
+        </ul>
+        <div style="margin-top:1.5rem;">
+          <p style="font-size:0.82rem; color:rgba(255,255,255,0.4); margin-bottom:0.5rem;">TREC License #12847</p>
+          <p style="font-size:0.82rem; color:rgba(255,255,255,0.4);">InterNACHI #NACHI-19041502</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 TrueView Home Inspections. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+
+</body>
+</html>

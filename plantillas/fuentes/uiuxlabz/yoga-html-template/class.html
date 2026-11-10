@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the weekly class schedule at Sattva Studio — Hatha, Vinyasa, Iyengar, Kundalini, Yin and Prenatal yoga, every day of the week.">
+  <title>Yoga Classes &amp; Schedule | Sattva Studio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .level-tag {
+      display: inline-block; font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      padding: 0.2rem 0.7rem; border-radius: 999px; margin-bottom: 0.6rem;
+      background: var(--sand-light); color: var(--moss);
+    }
+    .class-actions { margin-top: 1rem; }
+    .schedule-table {
+      width: 100%; border-collapse: collapse; margin-top: 1rem;
+      background: var(--lark); border-radius: var(--radius-lg); overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .schedule-table th, .schedule-table td {
+      padding: 0.9rem 1rem; text-align: left; border-bottom: 1px solid var(--line);
+      font-size: 0.9rem;
+    }
+    .schedule-table th {
+      background: var(--moss); color: var(--lark); font-weight: 600;
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em;
+    }
+    .schedule-table tr:last-child td { border-bottom: none; }
+    .schedule-table tr:hover td { background: var(--cream); }
+    .day-label { font-weight: 700; color: var(--moss-dark); }
+  </style>
+</head>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Sattva Studio home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img"><path d="M12 2c1.8 3 3 5.2 3 7.4 0 1.9-1.2 3.4-3 3.4s-3-1.5-3-3.4C9 7.2 10.2 5 12 2Z"/><path d="M6 9c.5 1.8.7 3.2.7 4.6 0 2.8-2 4.6-4.4 4.4 1-2.5 1.6-4.6 1.6-6.3 0-1-.2-2-.8-3L6 9Z"/><path d="M18 9l2.9-.3c-.6 1-.8 2-.8 3 0 1.7.6 3.8 1.6 6.3-2.4.2-4.4-1.6-4.4-4.4 0-1.4.2-2.8.7-4.6Z"/><path d="M12 12.8c1.4 1.6 3.1 2.9 5 4 .6 2 .6 3.9.1 5.8h-5.1c1.9-.9 3.4-1.9 4.7-3.2C14.6 18 13.2 17.4 12 17.4s-2.6.6-4.7 2c1.3 1.3 2.8 2.3 4.7 3.2H6.9c-.5-1.9-.5-3.8.1-5.8 1.9-1.1 3.6-2.4 5-4Z"/></svg>
+        </span>
+        Sattva
+      </a>
+      <nav aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="class.html" class="nav-link">Classes</a></li>
+          <li><a href="price.html" class="nav-link">Pricing</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="btn btn-primary btn-sm nav-cta">Book a Class</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======= Page Header ======= -->
+    <section class="page-header">
+      <div class="container reveal">
+        <p class="kicker">Classes</p>
+        <h1>Find your practice this week</h1>
+        <p>Six styles, fourteen teachers, forty hours a week. Every class is small enough that your name gets remembered.</p>
+      </div>
+    </section>
+
+    <!-- ======= Classes Grid ======= -->
+    <section class="section">
+      <div class="container">
+        <div class="class-grid">
+          <article class="class-card reveal">
+            <img src="assets/img/class-1.jpg" alt="Hatha Foundations class in progress at Sattva">
+            <div class="class-card-body">
+              <span class="level-tag">All levels</span>
+              <h3>Hatha Foundations</h3>
+              <div class="class-meta">
+                <span>Mon · Wed · Fri</span><span>8:00 – 9:00</span>
+              </div>
+              <p>A slow, clear sequence that builds your vocabulary of poses. Perfect for starting out or coming back.</p>
+              <div class="class-actions"><a href="contact.html" class="btn btn-ghost btn-sm">Book this class</a></div>
+            </div>
+          </article>
+          <article class="class-card reveal reveal-delay-1">
+            <img src="assets/img/class-2.jpg" alt="Vinyasa Flow class in progress at Sattva">
+            <div class="class-card-body">
+              <span class="level-tag">Intermediate</span>
+              <h3>Vinyasa Flow</h3>
+              <div class="class-meta">
+                <span>Tue · Thu · Sat</span><span>9:15 – 10:15</span>
+              </div>
+              <p>Sun salutations and linking flows that build warmth, stamina and a moving meditation.</p>
+              <div class="class-actions"><a href="contact.html" class="btn btn-ghost btn-sm">Book this class</a></div>
+            </div>
+          </article>
+          <article class="class-card reveal reveal-delay-2">
+            <img src="assets/img/class-3.jpg" alt="Iyengar Alignment class with props at Sattva">
+            <div class="class-card-body">
+              <span class="level-tag">All levels</span>
+              <h3>Iyengar Alignment</h3>
+              <div class="class-meta">
+                <span>Mon · Fri</span><span>17:30 – 18:45</span>
+              </div>
+              <p>Props, precision and patience. Learn exactly how each pose should serve your unique skeleton.</p>
+              <div class="class-actions"><a href="contact.html" class="btn btn-ghost btn-sm">Book this class</a></div>
+            </div>
+          </article>
+          <article class="class-card reveal">
+            <img src="assets/img/class-4.jpg" alt="Kundalini Awakening class at Sattva">
+            <div class="class-card-body">
+              <span class="level-tag">All levels</span>
+              <h3>Kundalini Awakening</h3>
+              <div class="class-meta">
+                <span>Wed · Sat</span><span>11:00 – 12:15</span>
+              </div>
+              <p>Breathwork, mantra and gentle kriyas to lift energy and clear the fog from a long week.</p>
+              <div class="class-actions"><a href="contact.html" class="btn btn-ghost btn-sm">Book this class</a></div>
+            </div>
+          </article>
+          <article class="class-card reveal reveal-delay-1">
+            <img src="assets/img/class-5.jpg" alt="Restorative Yin class at Sattva">
+            <div class="class-card-body">
+              <span class="level-tag">All levels</span>
+              <h3>Restorative Yin</h3>
+              <div class="class-meta">
+                <span>Thu · Sun</span><span>19:00 – 20:00</span>
+              </div>
+              <p>Long, quiet floor holds with bolsters and warmth. The deepest pause your nervous system can take.</p>
+              <div class="class-actions"><a href="contact.html" class="btn btn-ghost btn-sm">Book this class</a></div>
+            </div>
+          </article>
+          <article class="class-card reveal reveal-delay-2">
+            <img src="assets/img/class-6.jpg" alt="Prenatal and postnatal yoga class at Sattva">
+            <div class="class-card-body">
+              <span class="level-tag">Gentle</span>
+              <h3>Prenatal &amp; Postnatal</h3>
+              <div class="class-meta">
+                <span>Tue · Thu</span><span>10:30 – 11:30</span>
+              </div>
+              <p>Supported, breath-led practice for every stage — with a specialist teacher in the room each time.</p>
+              <div class="class-actions"><a href="contact.html" class="btn btn-ghost btn-sm">Book this class</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Schedule ======= -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="kicker">Weekly schedule</p>
+          <h2>The studio, day by day</h2>
+        </div>
+        <div class="reveal">
+          <table class="schedule-table">
+            <thead>
+              <tr>
+                <th>Day</th>
+                <th>Class</th>
+                <th>Time</th>
+                <th>Teacher</th>
+                <th>Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="day-label">Monday</td><td>Hatha Foundations</td><td>8:00 – 9:00</td><td>Maya Linden</td><td>All levels</td></tr>
+              <tr><td class="day-label">Monday</td><td>Iyengar Alignment</td><td>17:30 – 18:45</td><td>Elena Petrova</td><td>All levels</td></tr>
+              <tr><td class="day-label">Tuesday</td><td>Vinyasa Flow</td><td>9:15 – 10:15</td><td>Ravi Sharma</td><td>Intermediate</td></tr>
+              <tr><td class="day-label">Tuesday</td><td>Prenatal &amp; Postnatal</td><td>10:30 – 11:30</td><td>Priya Nair</td><td>Gentle</td></tr>
+              <tr><td class="day-label">Wednesday</td><td>Hatha Foundations</td><td>8:00 – 9:00</td><td>Maya Linden</td><td>All levels</td></tr>
+              <tr><td class="day-label">Wednesday</td><td>Kundalini Awakening</td><td>11:00 – 12:15</td><td>David Okafor</td><td>All levels</td></tr>
+              <tr><td class="day-label">Thursday</td><td>Vinyasa Flow</td><td>9:15 – 10:15</td><td>Kate Glover</td><td>Intermediate</td></tr>
+              <tr><td class="day-label">Thursday</td><td>Restorative Yin</td><td>19:00 – 20:00</td><td>Elena Petrova</td><td>All levels</td></tr>
+              <tr><td class="day-label">Friday</td><td>Hatha Foundations</td><td>8:00 – 9:00</td><td>Millie Harper</td><td>All levels</td></tr>
+              <tr><td class="day-label">Friday</td><td>Iyengar Alignment</td><td>17:30 – 18:45</td><td>Elena Petrova</td><td>All levels</td></tr>
+              <tr><td class="day-label">Saturday</td><td>Vinyasa Flow</td><td>9:15 – 10:15</td><td>Ravi Sharma</td><td>Intermediate</td></tr>
+              <tr><td class="day-label">Saturday</td><td>Kundalini Awakening</td><td>11:00 – 12:15</td><td>David Okafor</td><td>All levels</td></tr>
+              <tr><td class="day-label">Sunday</td><td>Restorative Yin</td><td>19:00 – 20:00</td><td>Kate Glover</td><td>All levels</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Retreats CTA ======= -->
+    <section class="discount-banner reveal">
+      <div class="container">
+        <p class="kicker" style="color: var(--clay-light);">Retreats</p>
+        <h2>Come away for a weekend by the creek</h2>
+        <p>Twice a year we take the whole practice outdoors — sunrise flow, forest walks, fire-side meditation and meals cooked together.</p>
+        <a href="contact.html" class="btn btn-primary">Ask About Retreats</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="Sattva Studio home">
+            <span class="logo-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img"><path d="M12 2c1.8 3 3 5.2 3 7.4 0 1.9-1.2 3.4-3 3.4s-3-1.5-3-3.4C9 7.2 10.2 5 12 2Z"/><path d="M6 9c.5 1.8.7 3.2.7 4.6 0 2.8-2 4.6-4.4 4.4 1-2.5 1.6-4.6 1.6-6.3 0-1-.2-2-.8-3L6 9Z"/><path d="M18 9l2.9-.3c-.6 1-.8 2-.8 3 0 1.7.6 3.8 1.6 6.3-2.4.2-4.4-1.6-4.4-4.4 0-1.4.2-2.8.7-4.6Z"/><path d="M12 12.8c1.4 1.6 3.1 2.9 5 4 .6 2 .6 3.9.1 5.8h-5.1c1.9-.9 3.4-1.9 4.7-3.2C14.6 18 13.2 17.4 12 17.4s-2.6.6-4.7 2c1.3 1.3 2.8 2.3 4.7 3.2H6.9c-.5-1.9-.5-3.8.1-5.8 1.9-1.1 3.6-2.4 5-4Z"/></svg>
+            </span>
+            Sattva
+          </a>
+          <p>A quiet studio for yoga, breath and retreats — built in the valley, practiced one breath at a time.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Sattva on Instagram">Ig</a>
+            <a href="#" aria-label="Sattva on Facebook">Fb</a>
+            <a href="#" aria-label="Sattva on YouTube">Yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="class.html">Classes</a></li>
+            <li><a href="price.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Book a Class</a></li>
+            <li><a href="contact.html">Private Sessions</a></li>
+            <li><a href="class.html">Retreats</a></li>
+            <li><a href="team.html">Our Teachers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <ul>
+            <li>12 Cedar Lane</li>
+            <li>Maplewood Valley, CA</li>
+            <li>Mon – Sun, 6:00 – 20:30</li>
+            <li>hello@sattvastudio.co</li>
+            <li>+1 (555) 019-2847</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Sattva Studio. Breathe in, breathe out.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

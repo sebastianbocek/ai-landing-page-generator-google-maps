@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Milestone Event Co.</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- ============================================================
+     Header
+     ============================================================ -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">Milestone <span>Event Co.</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="nav-cta">Book a Consult</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================================================
+     Page Hero
+     ============================================================ -->
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Get in Touch</span>
+    <h1>Let's Talk About Your Event</h1>
+    <p>Fill out the inquiry form below and we'll be in touch within 24 hours to schedule your complimentary consultation.</p>
+  </div>
+</section>
+<div class="page-hero-border"></div>
+
+<!-- ============================================================
+     Contact Grid
+     ============================================================ -->
+<section class="section contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Inquiry Form -->
+      <div class="inquiry-form">
+        <div class="form-heading">
+          <span class="eyebrow">Event Inquiry</span>
+          <h3>Tell Us About Your Event</h3>
+        </div>
+        <form action="#" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Claire" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Ashworth" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="claire@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(615) 555-0000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="event-type">Event Type</label>
+            <select id="event-type" name="event_type" required>
+              <option value="" disabled selected>Select an event type</option>
+              <option value="wedding">Wedding</option>
+              <option value="partial">Partial Planning / Month-Of Coordination</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="milestone">Milestone Celebration (Birthday, Anniversary, etc.)</option>
+              <option value="social">Social Gathering</option>
+              <option value="design">Design &amp; Styling Only</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="event-date">Estimated Event Date</label>
+              <input type="date" id="event-date" name="event_date">
+            </div>
+            <div class="form-group">
+              <label for="guest-count">Estimated Guest Count</label>
+              <select id="guest-count" name="guest_count">
+                <option value="" disabled selected>Select a range</option>
+                <option value="under-25">Under 25</option>
+                <option value="25-50">25 to 50</option>
+                <option value="50-100">50 to 100</option>
+                <option value="100-200">100 to 200</option>
+                <option value="200-plus">200+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="budget">Approximate Budget Range</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected>Select a budget range</option>
+              <option value="under-5k">Under $5,000</option>
+              <option value="5k-10k">$5,000 to $10,000</option>
+              <option value="10k-25k">$10,000 to $25,000</option>
+              <option value="25k-50k">$25,000 to $50,000</option>
+              <option value="50k-plus">$50,000+</option>
+              <option value="flexible">Flexible / Not Sure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="venue">Do you have a venue in mind?</label>
+            <input type="text" id="venue" name="venue" placeholder="Venue name or 'Not yet'">
+          </div>
+          <div class="form-group">
+            <label for="vision">Tell Us About Your Vision</label>
+            <textarea id="vision" name="vision" rows="5" placeholder="Share anything that feels relevant, the vibe you're going for, details that matter to you, inspiration you've collected, or questions you have. No detail is too small."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="how-heard">How Did You Hear About Us?</label>
+            <select id="how-heard" name="how_heard">
+              <option value="" disabled selected>Select one</option>
+              <option value="instagram">Instagram</option>
+              <option value="pinterest">Pinterest</option>
+              <option value="referral">Referral from a friend</option>
+              <option value="vendor">Referral from a vendor</option>
+              <option value="google">Google search</option>
+              <option value="knot">The Knot</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" style="width:100%;text-align:center;">Submit Inquiry</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="contact-sidebar">
+        <div class="response-promise">
+          <i class="fa-solid fa-clock"></i>
+          <h4>We Respond Within 24 Hours</h4>
+          <p>Usually sooner. We know that reaching out to a planner takes courage. We'll get back to you promptly.</p>
+        </div>
+
+        <div class="contact-info-card">
+          <h4>Find Us</h4>
+          <div class="contact-detail">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Studio by appointment<br>Nashville, Tennessee</p>
+          </div>
+          <div class="contact-detail">
+            <i class="fa-solid fa-phone"></i>
+            <p><a href="tel:+16155550147" style="color:inherit;">(615) 555-0147</a><br>Mon–Fri, 9am–6pm CST</p>
+          </div>
+          <div class="contact-detail">
+            <i class="fa-solid fa-envelope"></i>
+            <p><a href="mailto:hello@milestoneeventco.com" style="color:inherit;">hello@milestoneeventco.com</a></p>
+          </div>
+          <div class="contact-detail">
+            <i class="fa-solid fa-plane"></i>
+            <p>We travel throughout Tennessee, Georgia, Alabama, and South Carolina. Destination events considered case by case.</p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <h4>Consultations</h4>
+          <div class="contact-detail">
+            <i class="fa-solid fa-calendar-check"></i>
+            <p>Initial consultations are complimentary and run approximately 30 to 45 minutes. We offer in-person meetings at our Nashville studio or video calls for out-of-town clients.</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <h4>Follow Our Work</h4>
+          <div class="social-row">
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-pinterest"></i> Pinterest</a>
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider-gold">
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section faq-section">
+  <div class="container">
+    <div class="section-label">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <span class="gold-rule"></span>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>How far in advance should I book?</h4>
+        <p>For full-service weddings, we recommend booking 12 to 18 months in advance, especially for Saturday dates between May and October. Corporate events and social celebrations can often be planned in 4 to 8 weeks, depending on complexity.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do you require a deposit?</h4>
+        <p>Yes. We require a 30% non-refundable deposit at contract signing to secure your date. The remaining balance is due 30 days before your event. We accept all major credit cards, ACH transfer, and check.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What is your cancellation policy?</h4>
+        <p>The initial deposit is non-refundable. If you cancel more than 90 days before your event, any additional payments beyond the deposit will be refunded. Cancellations within 90 days of the event are not eligible for a refund of any payments made.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do you work with clients' preferred vendors?</h4>
+        <p>Absolutely. We're happy to work with vendors you've already selected or who were referred by family and friends. We'll vet them, communicate professionally, and integrate them into our planning process seamlessly.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do you travel for events outside Nashville?</h4>
+        <p>Yes. We regularly work throughout Tennessee, Georgia, Alabama, and South Carolina. We also consider destination events internationally on a case-by-case basis. Travel fees apply for events outside a 50-mile radius of Nashville.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I do just the design and hire someone else for logistics?</h4>
+        <p>Yes, our Design &amp; Styling package is available as a standalone service. We'll develop your full visual concept, mood boards, vendor recommendations, and a design deck your planner or family members can execute.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How many weddings do you take per year?</h4>
+        <p>We cap ourselves at 18 full-service weddings per year. This is intentional. It means every couple gets meaningful attention, every email gets answered the same day, and no event is treated like an afterthought.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What if something goes wrong on the day?</h4>
+        <p>This is exactly why you hire a professional planner. We carry an on-site emergency kit, maintain backup vendor contacts, and are trained to handle everything from a missing florist to a venue hiccup without you ever knowing it happened.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA Banner
+     ============================================================ -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Still Have Questions?</h2>
+    <p>Call or email us directly. We're a real team of people who love talking about events and we're happy to chat before you're ready to commit to anything.</p>
+    <div class="cta-actions">
+      <a href="tel:+16155550147" class="btn btn-gold">Call (615) 555-0147</a>
+      <a href="mailto:hello@milestoneeventco.com" class="btn btn-ghost">Send an Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Footer
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Milestone <span>Event Co.</span></a>
+        <p>Full-service event planning for weddings, corporate celebrations, and every milestone worth marking. Based in Nashville. Traveling across the South and beyond.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html#weddings">Wedding Planning</a></li>
+          <li><a href="services.html#partial">Partial Planning</a></li>
+          <li><a href="services.html#corporate">Corporate Events</a></li>
+          <li><a href="services.html#milestones">Milestone Celebrations</a></li>
+          <li><a href="services.html#design">Design &amp; Styling</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#team">Our Team</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="mailto:hello@milestoneeventco.com">hello@milestoneeventco.com</a></li>
+          <li><a href="tel:+16155550147">(615) 555-0147</a></li>
+          <li><a href="#">Nashville, TN</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Milestone Event Co. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

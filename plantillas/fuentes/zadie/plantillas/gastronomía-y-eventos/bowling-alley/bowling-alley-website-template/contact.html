@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Lucky Strike Lanes | Book a Lane, Ask a Question</title>
+  <meta name="description" content="Contact Lucky Strike Lanes to book a lane, plan a party, join a league, or ask a question. Call, email, or fill out our contact form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">Lucky <span>Strike</span> Lanes</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Lanes & Pricing</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Book a Lane</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="lane-stripe-bg"></div>
+    <h1 class="neon-text-pink neon-flicker-pink">Get in <span class="neon-text-cyan">Touch</span></h1>
+    <p>Book a lane, plan a party, join a league, or just say hello. We'd love to hear from you.</p>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section pin-decoration">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <span class="section-label label-cyan">Send Us a Message</span>
+          <h2 style="margin-bottom: 30px;">Contact Form</h2>
+          <form action="#" method="POST">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+              </div>
+              <div class="form-group">
+                <label for="inquiry">Inquiry Type</label>
+                <select id="inquiry" name="inquiry">
+                  <option value="general">General Question</option>
+                  <option value="party">Birthday Party Booking</option>
+                  <option value="league">League Information</option>
+                  <option value="corporate">Corporate Event</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date">
+              </div>
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" placeholder="Estimated headcount" min="1">
+              </div>
+              <div class="form-group full-width">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" placeholder="Tell us what you're planning or ask us anything..." required></textarea>
+              </div>
+              <div class="form-group full-width">
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div>
+          <span class="section-label label-pink">Contact Info</span>
+          <h2 style="margin-bottom: 30px;">Reach Us Directly</h2>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <h4>Address</h4>
+                <p>742 Kingpin Blvd<br>Pinsville, TX 75001</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+15557325867">(555) 732-5867</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:info@luckystrikelanes.com">info@luckystrikelanes.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <h4>Hours</h4>
+                <table class="hours-table" style="margin-top: 4px;">
+                  <tr><td>Mon - Thu</td><td>12 PM - 11 PM</td></tr>
+                  <tr><td>Friday</td><td>10 AM - 1 AM</td></tr>
+                  <tr><td>Saturday</td><td>10 AM - 1 AM</td></tr>
+                  <tr><td>Sunday</td><td>10 AM - 10 PM</td></tr>
+                </table>
+                <p style="margin-top: 8px; font-size: 0.85rem;"><strong style="color: var(--neon-yellow);">Cosmic Bowl:</strong> Fri & Sat, 9 PM - Midnight</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="section section-alt" style="padding: 0 0 80px;">
+    <div class="container">
+      <div class="map-placeholder">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Map - 742 Kingpin Blvd, Pinsville, TX 75001</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section star-decoration">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label label-yellow">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to the questions we hear most often at the front desk.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> Do I need a reservation to bowl?</h4>
+          <p>Walk-ins are always welcome, and we rarely turn anyone away during weekday daytime hours. However, we strongly recommend reserving lanes for weekend evenings and cosmic bowling nights, as those fill up fast. You can call us at (555) 732-5867 or use the contact form above to reserve. Birthday parties and corporate events always require advance booking.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> Are there age restrictions for cosmic bowling?</h4>
+          <p>Cosmic bowling is open to all ages until 10 PM on Friday and Saturday nights. After 10 PM, cosmic bowling is 18+ only. Guests under 18 must be accompanied by a parent or guardian before the cutoff. Our regular open bowling sessions are always family-friendly with no age restrictions.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> Do you serve food at the bowling alley?</h4>
+          <p>Absolutely. Our kitchen is open during all bowling hours and serves burgers, chicken wings, loaded nachos, pizza, fries, mozzarella sticks, and more. We also have a full bar with 24 craft beers on tap, cocktails, wine, and non-alcoholic beverages. Food and drinks can be ordered right from your lane and delivered to your seating area.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> What shoe sizes do you carry for rental?</h4>
+          <p>We carry rental shoes in all sizes, from toddler size 7 all the way up to men's size 15 and women's size 13. All rental shoes are sanitized between uses. If you prefer, you can bring your own bowling shoes or purchase a pair from our pro shop.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> When is cosmic bowling and what does it include?</h4>
+          <p>Cosmic bowling runs every Friday and Saturday night from 9 PM to midnight. The experience includes blacklights, neon glow-in-the-dark pins, fog machines, a laser light show, and a live DJ playing top hits. The cosmic bowl rate is $45 per lane per hour and includes shoe rental for everyone in your group. It's the most popular session we offer, so reserving ahead is highly recommended.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> How do I sign up for a league?</h4>
+          <p>League registration opens twice a year: in August for the fall/winter season and in January for the spring/summer season. You can sign up as an individual (we'll place you on a team) or register a full team. Stop by the front desk, call us at (555) 732-5867, or fill out the contact form above with "League Information" as the inquiry type. We'll get you set up and ready to compete.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section-dark">
+    <div class="container">
+      <h2 class="neon-text-cyan neon-flicker">Let's Roll</h2>
+      <p>Whether you're planning a party, joining a league, or just looking for a fun night out, we're here to help.</p>
+      <div class="cta-info">
+        <div class="cta-info-item">
+          <i class="fas fa-phone"></i>
+          <span>(555) 732-5867</span>
+        </div>
+        <div class="cta-info-item">
+          <i class="fas fa-envelope"></i>
+          <span>info@luckystrikelanes.com</span>
+        </div>
+        <div class="cta-info-item">
+          <i class="fas fa-location-dot"></i>
+          <span>742 Kingpin Blvd, Pinsville, TX 75001</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Lucky <span style="color: var(--secondary);">Strike</span> Lanes</h4>
+          <p>Family-owned and operated since 1987. 32 lanes, a full bar, retro arcade, and the best cosmic bowling nights in town. Come roll with us.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Lanes & Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <table class="hours-table">
+            <tr><td>Mon - Thu</td><td>12 PM - 11 PM</td></tr>
+            <tr><td>Friday</td><td>10 AM - 1 AM</td></tr>
+            <tr><td>Saturday</td><td>10 AM - 1 AM</td></tr>
+            <tr><td>Sunday</td><td>10 AM - 10 PM</td></tr>
+          </table>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+15557325867"><i class="fas fa-phone" style="margin-right:8px; color: var(--accent);"></i>(555) 732-5867</a></li>
+            <li><a href="mailto:info@luckystrikelanes.com"><i class="fas fa-envelope" style="margin-right:8px; color: var(--accent);"></i>info@luckystrikelanes.com</a></li>
+            <li><a href="#"><i class="fas fa-location-dot" style="margin-right:8px; color: var(--accent);"></i>742 Kingpin Blvd, Pinsville, TX 75001</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lucky Strike Lanes. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

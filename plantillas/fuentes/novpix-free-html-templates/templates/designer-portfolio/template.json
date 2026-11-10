@@ -1,0 +1,15 @@
+{
+  "slug": "designer-portfolio",
+  "name": "Mara — Designer & illustrator portfolio",
+  "category": "portfolio",
+  "description": "Editorial portfolio template for designers and illustrators: staggered work grid with hover reveals, about, services, clients, contact form and a case study page.",
+  "tags": ["portfolio", "designer", "illustrator", "editorial", "case study", "creative"],
+  "pages": ["index.html", "project.html"],
+  "features": ["Responsive", "Staggered work grid", "Hover reveals", "Case study page", "Scroll reveal animations", "Mobile menu", "Contact form (demo)", "Reduced-motion support", "Original SVG artwork"],
+  "fonts": [
+    { "family": "Fraunces", "source": "Google Fonts", "license": "OFL" },
+    { "family": "Inter", "source": "Google Fonts", "license": "OFL" }
+  ],
+  "colors": { "brand": "#c4501f", "accent": "#2f5d50", "bg": "#f5efe4", "text": "#16181d" },
+  "customizable": { "brand": true, "accent": true, "brandName": true, "heading": true }
+}

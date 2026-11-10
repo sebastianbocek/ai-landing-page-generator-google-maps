@@ -1,0 +1,16 @@
+{
+  "slug": "wedding",
+  "name": "Evermore — Wedding website",
+  "category": "event",
+  "description": "Romantic wedding website template with live countdown, love-story timeline, schedule, venue and travel, RSVP with meal choices, registry and FAQ.",
+  "tags": ["wedding", "rsvp", "save the date", "event", "romantic", "floral"],
+  "pages": ["index.html"],
+  "features": ["Responsive", "Mobile menu", "Live countdown", "Story timeline", "Event schedule", "Venue & travel with hotels", "RSVP form with per-guest meal choice", "Registry links", "FAQ accordion (no JS needed)", "Photo gallery placeholders", "Hand-drawn floral SVG ornaments", "Reduced-motion friendly", "No dependencies"],
+  "fonts": [
+    {"family": "Cormorant Garamond", "source": "Google Fonts", "license": "OFL"},
+    {"family": "Pinyon Script", "source": "Google Fonts", "license": "OFL"},
+    {"family": "Jost", "source": "Google Fonts", "license": "OFL"}
+  ],
+  "colors": {"brand": "#5f6e4d", "accent": "#b86f64", "bg": "#fbf8f3", "text": "#2f2a26"},
+  "customizable": {"brand": true, "accent": true, "brandName": true, "heading": true}
+}

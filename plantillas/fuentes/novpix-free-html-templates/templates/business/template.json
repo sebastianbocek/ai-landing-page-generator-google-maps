@@ -1,0 +1,15 @@
+{
+  "slug": "business",
+  "name": "Meridian — Corporate & consulting website",
+  "category": "business",
+  "description": "Crisp corporate website template for consulting and professional-services firms: services, stats, case studies, testimonials, team, pricing and contact pages.",
+  "tags": ["business", "corporate", "consulting", "agency", "professional services", "multi-page"],
+  "pages": ["index.html", "services.html", "about.html", "contact.html"],
+  "features": ["Responsive", "Mobile menu", "4 pages", "Hero with data-dashboard visual", "Services & engagement pricing", "Animated stat counters", "Case studies with metrics", "Testimonials", "Team section", "Company timeline", "FAQ accordion (no JS needed)", "Contact form with service chips", "Office map blocks", "Newsletter form", "Reduced-motion friendly", "No dependencies"],
+  "fonts": [
+    {"family": "Plus Jakarta Sans", "source": "Google Fonts", "license": "OFL"},
+    {"family": "Inter", "source": "Google Fonts", "license": "OFL"}
+  ],
+  "colors": {"brand": "#1b4dd8", "accent": "#0fb5a6", "bg": "#ffffff", "text": "#0e1b2e"},
+  "customizable": {"brand": true, "accent": true, "brandName": true, "heading": true}
+}

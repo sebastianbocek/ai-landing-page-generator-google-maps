@@ -1,0 +1,18 @@
+{
+  "slug": "link-in-bio",
+  "name": "Linkly — link in bio page (3 styles)",
+  "category": "personal",
+  "description": "A tiny, fast link-in-bio page for creators in three styles — soft, glass and bold — with links, socials, a featured video and a newsletter form.",
+  "tags": ["link in bio", "creator", "linktree alternative", "instagram", "tiktok", "mobile first"],
+  "pages": ["index.html", "variant-glass.html", "variant-bold.html"],
+  "features": ["Mobile-first", "3 style variants", "Featured link badge", "Social icons", "Featured video card", "Newsletter form", "Native share / copy link", "Reduced-motion support", "No framework, ~25 KB per page"],
+  "fonts": [
+    {"family": "Fraunces", "source": "Google Fonts", "license": "OFL"},
+    {"family": "Inter", "source": "Google Fonts", "license": "OFL"},
+    {"family": "Plus Jakarta Sans", "source": "Google Fonts", "license": "OFL"},
+    {"family": "Space Grotesk", "source": "Google Fonts", "license": "OFL"},
+    {"family": "Archivo Black", "source": "Google Fonts", "license": "OFL"}
+  ],
+  "colors": {"brand": "#c93d63", "accent": "#ffb58a", "bg": "#fbf3ee", "text": "#2b2142"},
+  "customizable": {"brand": true, "accent": true, "brandName": true, "heading": true}
+}

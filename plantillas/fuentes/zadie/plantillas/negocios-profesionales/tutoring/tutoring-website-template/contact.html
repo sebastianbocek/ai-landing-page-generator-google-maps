@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | BrightPath Tutoring</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="logo-text">
+          BrightPath
+          <span>Tutoring Center</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Start Learning</a>
+    </div>
+  </header>
+
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-content">
+        <div class="section-label">Get in Touch</div>
+        <h1>Let's Find Your Child's Bright Path</h1>
+        <p>Book a free assessment, ask a question, or just say hello. We usually respond within a few hours during business hours.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-form-card">
+          <h2>Book a Free Assessment</h2>
+          <p>Tell us about your child and we'll set up a time to meet. The assessment is free, takes about 30 minutes, and comes with a personalized recommendation.</p>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="parent-name">Parent/Guardian Name</label>
+                <input type="text" id="parent-name" name="parent-name" placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(512) 000-0000">
+              </div>
+              <div class="form-group">
+                <label for="student-grade">Student's Grade Level</label>
+                <select id="student-grade" name="student-grade">
+                  <option value="" disabled selected>Select grade level</option>
+                  <option value="k-2">Kindergarten - 2nd Grade</option>
+                  <option value="3-5">3rd - 5th Grade</option>
+                  <option value="6-8">6th - 8th Grade</option>
+                  <option value="9-10">9th - 10th Grade</option>
+                  <option value="11-12">11th - 12th Grade</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subjects">Subjects Needed</label>
+              <input type="text" id="subjects" name="subjects" placeholder="e.g., Algebra, Reading, SAT Prep">
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us More</label>
+              <textarea id="message" name="message" placeholder="Anything else we should know? Current challenges, goals, scheduling preferences, etc."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Book Free Assessment <i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </div>
+
+        <div>
+          <div class="contact-info-card">
+            <h3>Contact Info</h3>
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Visit Us</h4>
+                <p>415 Learning Lane<br>Austin, TX 78701</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>Call Us</h4>
+                <p>(512) 456-7890</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>Email Us</h4>
+                <p>hello@brightpathtutoring.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4>Hours</h4>
+                <p>Mon-Fri: 3:00 PM - 8:00 PM<br>Saturday: 9:00 AM - 3:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+            <div class="map-placeholder">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span>Map Placeholder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Common Questions</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to the questions we hear most from parents.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4><i class="fa-solid fa-circle-question"></i> How do I know if my child needs tutoring?</h4>
+          <p>If your child is struggling with homework, losing confidence, or falling behind in a subject, tutoring can help. Our free assessment identifies specific gaps so you'll know exactly where they stand. There's no obligation.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fa-solid fa-circle-question"></i> How are tutors matched with students?</h4>
+          <p>We match based on subject expertise, grade level experience, and personality fit. If the match isn't right after the first couple sessions, we'll switch tutors at no extra cost. The right fit matters.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fa-solid fa-circle-question"></i> How long until we see improvement?</h4>
+          <p>Most families see noticeable improvement within 4-6 weeks. Some students show progress faster, especially in specific subjects. We set realistic goals upfront and track progress monthly so you can see the change.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fa-solid fa-circle-question"></i> Can I cancel or change my plan?</h4>
+          <p>Yes. All plans are month-to-month with no long-term contracts. You can upgrade, downgrade, or cancel with 7 days notice before your next billing cycle. We want you here because it's working, not because you're locked in.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fa-solid fa-circle-question"></i> Do you offer online tutoring?</h4>
+          <p>We do. All of our programs are available in-person at our Austin location or online via video call. Online sessions use a shared digital whiteboard and screen sharing for an interactive experience.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fa-solid fa-circle-question"></i> What if we need to reschedule a session?</h4>
+          <p>We understand schedules change. Cancel or reschedule with at least 24 hours notice and there's no charge. Same-day cancellations are counted as a used session to be fair to our tutors.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section class="service-area-section">
+    <div class="container">
+      <div class="service-area-content">
+        <div>
+          <h3>Serving the Greater Austin Area</h3>
+          <p>In-person at our Learning Lane location or online anywhere in Texas.</p>
+        </div>
+        <div class="service-area-badges">
+          <span class="area-badge">Downtown Austin</span>
+          <span class="area-badge">South Austin</span>
+          <span class="area-badge">Round Rock</span>
+          <span class="area-badge">Cedar Park</span>
+          <span class="area-badge">Pflugerville</span>
+          <span class="area-badge">Online Statewide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="logo-text">
+              BrightPath
+              <span>Tutoring Center</span>
+            </div>
+          </a>
+          <p>Personalized tutoring for K-12 students in Austin, TX. We help every learner build confidence, improve grades, and reach their full potential.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="services.html">Elementary Tutoring</a></li>
+            <li><a href="services.html">Middle School</a></li>
+            <li><a href="services.html">High School</a></li>
+            <li><a href="services.html">SAT/ACT Prep</a></li>
+            <li><a href="services.html">Homework Help</a></li>
+            <li><a href="services.html">Summer Programs</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Our Tutors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+15124567890"><i class="fa-solid fa-phone"></i> (512) 456-7890</a></li>
+            <li><a href="mailto:hello@brightpathtutoring.com"><i class="fa-solid fa-envelope"></i> hello@brightpath.com</a></li>
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i> 415 Learning Lane, Austin, TX 78701</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BrightPath Tutoring. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

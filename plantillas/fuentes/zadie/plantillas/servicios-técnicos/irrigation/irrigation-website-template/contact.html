@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | AquaGreen Irrigation - Scottsdale, AZ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-droplet"></i></div>
+        <div class="logo-text">
+          AquaGreen
+          <span>Irrigation Solutions</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Free Estimate</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="section-label"><i class="fa-solid fa-envelope"></i> Get in Touch</div>
+      <h1>Contact AquaGreen Irrigation</h1>
+      <p>Ready for a free estimate or need a repair? Fill out the form below or call us directly. We typically respond within a few hours during business days.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-form-wrapper">
+          <h2 style="margin-bottom: 0.5rem;">Request a Free Estimate</h2>
+          <p style="color: var(--gray); margin-bottom: 2rem;">Tell us about your project and we will get back to you with a detailed quote. All estimates include a complimentary on-site property assessment.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(480) 555-0000">
+              </div>
+              <div class="form-group">
+                <label for="property-type">Property Type</label>
+                <select id="property-type" name="property-type">
+                  <option value="" disabled selected>Select property type</option>
+                  <option value="residential">Residential</option>
+                  <option value="commercial">Commercial</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Select a service</option>
+                <option value="sprinkler-installation">Sprinkler System Installation</option>
+                <option value="irrigation-repair">Irrigation Repair & Troubleshooting</option>
+                <option value="smart-controller">Smart Controller Installation</option>
+                <option value="drip-irrigation">Drip Irrigation System</option>
+                <option value="seasonal-maintenance">Seasonal Maintenance</option>
+                <option value="landscape-lighting">Landscape Lighting</option>
+                <option value="maintenance-plan">Maintenance Plan</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" placeholder="Tell us about your property, what you need, and any specific concerns or goals. Include approximate yard size if known."></textarea>
+              <div class="form-note">The more detail you provide, the more accurate our initial estimate will be.</div>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Request</button>
+          </form>
+        </div>
+
+        <div class="contact-sidebar">
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-info-text">
+                <strong>Address</strong>
+                7200 E Camelback Rd, Ste 120<br>Scottsdale, AZ 85251
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-info-text">
+                <strong>Phone</strong>
+                <a href="tel:+14805551234" style="color: var(--primary);">(480) 555-1234</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-info-text">
+                <strong>Email</strong>
+                <a href="mailto:info@aquagreenirrigation.com" style="color: var(--primary);">info@aquagreenirrigation.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="contact-info-text">
+                <strong>Hours</strong>
+                Mon - Fri: 7:00 AM - 5:00 PM<br>
+                Sat: 8:00 AM - 12:00 PM<br>
+                Sun: Closed
+              </div>
+            </div>
+          </div>
+
+          <div class="map-placeholder">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Map - Scottsdale, AZ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label"><i class="fa-solid fa-circle-question"></i> FAQ</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the questions we hear most from homeowners and property managers about irrigation systems and our services.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>How much water will I actually save with a new system?</h4>
+          <p>Most of our clients see a 20-30% reduction in water usage after upgrading to a properly designed system with matched precipitation rates and smart controller scheduling. The exact savings depend on your current system's condition, your landscape, and your watering habits. We can provide a projected savings estimate during your free consultation.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How long does a sprinkler installation take?</h4>
+          <p>A typical residential installation takes 1-3 days depending on the size of the property and complexity of the design. Smaller front-yard-only systems can be completed in a single day. Larger commercial projects usually run 3-7 days. We will give you an accurate timeline during the estimate process.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What is a smart controller and is it worth the upgrade?</h4>
+          <p>A smart controller is a WiFi-connected irrigation timer that automatically adjusts watering schedules based on local weather, soil type, sun exposure, and plant type. Most clients recoup the cost of the upgrade within 6-12 months through water savings alone. You can also monitor and control your system from your phone anywhere in the world.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How often should my irrigation system be serviced?</h4>
+          <p>We recommend a minimum of two maintenance visits per year: one in early spring to prepare for summer and one in late fall to adjust for cooler months. Properties with larger systems or high water usage benefit from quarterly visits. Our maintenance plans cover all of this at a discounted rate.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What areas do you serve?</h4>
+          <p>We serve the greater Phoenix metro area, including Scottsdale, Phoenix, Tempe, Mesa, Chandler, Gilbert, Paradise Valley, and Fountain Hills. We occasionally take on projects in other parts of Maricopa County. If you are unsure whether you are in our service area, give us a call and we will let you know.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What warranties do you offer?</h4>
+          <p>All new installations come with a 2-year workmanship warranty covering labor and materials. The equipment we install (Rain Bird, Hunter, Rachio) carries manufacturer warranties ranging from 2-5 years depending on the product. Repairs carry a 90-day warranty on both parts and labor. Maintenance plan members receive extended warranty coverage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Prefer to Talk to Someone Directly?</h2>
+        <p>Our team is available Monday through Friday, 7 AM to 5 PM, and Saturday mornings. Call us for a quick answer or to schedule your free on-site estimate.</p>
+        <div class="cta-buttons">
+          <a href="tel:+14805551234" class="btn btn-white"><i class="fa-solid fa-phone"></i> (480) 555-1234</a>
+          <a href="mailto:info@aquagreenirrigation.com" class="btn btn-outline" style="border-color: var(--white); color: var(--white);"><i class="fa-solid fa-envelope"></i> Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon"><i class="fa-solid fa-droplet"></i></div>
+            <div class="footer-logo-text">AquaGreen Irrigation</div>
+          </div>
+          <p>Professional irrigation installation, repair, and maintenance serving Scottsdale and the greater Phoenix metro area. Licensed, bonded, and insured with over 15 years of experience.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+            <a href="#" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html">Sprinkler Installation</a>
+          <a href="services.html">Irrigation Repair</a>
+          <a href="services.html">Smart Controllers</a>
+          <a href="services.html">Drip Irrigation</a>
+          <a href="services.html">Maintenance Plans</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="about.html">Our Team</a>
+          <a href="about.html">Certifications</a>
+          <a href="about.html">Service Area</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+14805551234">(480) 555-1234</a>
+          <a href="mailto:info@aquagreenirrigation.com">info@aquagreenirrigation.com</a>
+          <a href="#">7200 E Camelback Rd, Ste 120<br>Scottsdale, AZ 85251</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 AquaGreen Irrigation. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

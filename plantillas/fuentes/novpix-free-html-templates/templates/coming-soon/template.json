@@ -1,0 +1,15 @@
+{
+  "slug": "coming-soon",
+  "name": "Aube — coming soon page",
+  "category": "utility",
+  "description": "An elegant coming soon page with a live launch countdown, waitlist email signup, social links and a softly animated background, in dark and light variants.",
+  "tags": ["coming soon", "launch", "countdown", "waitlist", "under construction", "elegant"],
+  "pages": ["index.html", "dawn.html"],
+  "features": ["Responsive", "Live countdown (date set in main.js)", "Email waitlist form", "Two colour variants (dusk/dawn)", "Animated gradient background", "Animated botanical line art", "Social links", "Reduced-motion support", "Works without JS", "No framework"],
+  "fonts": [
+    { "family": "Cormorant Garamond", "source": "Google Fonts", "license": "OFL" },
+    { "family": "Manrope", "source": "Google Fonts", "license": "OFL" }
+  ],
+  "colors": { "brand": "#e9c46a", "accent": "#f4a3a8", "bg": "#0d1024", "text": "#f5efe6" },
+  "customizable": { "brand": true, "accent": true, "brandName": true, "heading": true }
+}

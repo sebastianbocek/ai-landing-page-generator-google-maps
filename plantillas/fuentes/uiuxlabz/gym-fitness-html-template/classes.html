@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes - FITCORE</title>
+  <meta name="description" content="Explore FITCORE's full class schedule -- HIIT, strength training, yoga, boxing, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M4 14h3v4H4zM7 12h2v8H7zM25 14h3v4h-3zM23 12h2v8h-2zM9 15h14v2H9zM10 13h2v6h-2zM20 13h2v6h-2z"/></svg>
+        Fit<span>Core</span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="classes.html" class="nav__link active">Classes</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <div class="nav__cta">
+          <a href="contact.html#register" class="btn btn--primary">Join Now</a>
+        </div>
+      </nav>
+      <div class="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/img/fitness-goal-banner.png" alt="FITCORE classes overview">
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="container page-hero__content">
+      <h1>Our <span class="text-red">Classes</span></h1>
+      <p>Find the perfect class to match your goals and schedule.</p>
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Classes</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Class Schedule Table -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Weekly Schedule</span>
+        <h2>Class Timetable</h2>
+        <p>Plan your week with our comprehensive class schedule. All classes are included in Pro and Elite memberships.</p>
+      </div>
+      <div class="schedule-table-wrapper reveal">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="class-time">6:00 AM</td>
+              <td class="class-name">HIIT Burn</td>
+              <td class="class-name">Power Lift</td>
+              <td class="class-name">HIIT Burn</td>
+              <td class="class-name">Power Lift</td>
+              <td class="class-name">HIIT Burn</td>
+              <td class="class-name">Bootcamp</td>
+            </tr>
+            <tr>
+              <td class="class-time">7:30 AM</td>
+              <td class="class-name">Spin Cycle</td>
+              <td class="class-name">Yoga Flow</td>
+              <td class="class-name">Spin Cycle</td>
+              <td class="class-name">Yoga Flow</td>
+              <td class="class-name">Spin Cycle</td>
+              <td class="class-name">HIIT Burn</td>
+            </tr>
+            <tr>
+              <td class="class-time">9:00 AM</td>
+              <td class="class-name">Pilates</td>
+              <td class="class-name">Core Blast</td>
+              <td class="class-name">Pilates</td>
+              <td class="class-name">Core Blast</td>
+              <td class="class-name">Pilates</td>
+              <td class="class-name">Yoga Flow</td>
+            </tr>
+            <tr>
+              <td class="class-time">12:00 PM</td>
+              <td class="class-name">Express HIIT</td>
+              <td class="class-name">Boxing Basics</td>
+              <td class="class-name">Express HIIT</td>
+              <td class="class-name">Boxing Basics</td>
+              <td class="class-name">Express HIIT</td>
+              <td>--</td>
+            </tr>
+            <tr>
+              <td class="class-time">5:30 PM</td>
+              <td class="class-name">Yoga Flow</td>
+              <td class="class-name">Kickboxing</td>
+              <td class="class-name">Yoga Flow</td>
+              <td class="class-name">Kickboxing</td>
+              <td class="class-name">Yoga Flow</td>
+              <td>--</td>
+            </tr>
+            <tr>
+              <td class="class-time">7:00 PM</td>
+              <td class="class-name">Power Lift</td>
+              <td class="class-name">Boxing Advanced</td>
+              <td class="class-name">Power Lift</td>
+              <td class="class-name">Boxing Advanced</td>
+              <td class="class-name">Open Gym</td>
+              <td>--</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Class Cards -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Class Details</span>
+        <h2>Explore Our Programs</h2>
+        <p>Every class is designed by certified coaches to deliver maximum results in minimum time.</p>
+      </div>
+      <div class="schedule-grid">
+        <div class="class-card reveal">
+          <div class="class-card__image">
+            <img src="assets/img/work-1.jpg" alt="HIIT Burn class">
+            <span class="class-card__tag">Popular</span>
+          </div>
+          <div class="class-card__body">
+            <div class="class-card__time">
+              <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Mon / Wed / Fri &middot; 6:00 AM
+            </div>
+            <h4>HIIT Burn</h4>
+            <p>High-intensity interval training that alternates between explosive effort and active recovery. Burns up to 500 calories per session.</p>
+            <div class="class-card__meta">
+              <span>Coach: Marcus</span>
+              <span>45 min</span>
+            </div>
+          </div>
+        </div>
+        <div class="class-card reveal">
+          <div class="class-card__image">
+            <img src="assets/img/work-2.jpg" alt="Power Lift class">
+            <span class="class-card__tag">Strength</span>
+          </div>
+          <div class="class-card__body">
+            <div class="class-card__time">
+              <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Tue / Thu &middot; 6:00 AM &amp; 7:00 PM
+            </div>
+            <h4>Power Lift</h4>
+            <p>Focus on compound lifts -- squat, bench, deadlift, overhead press. Progressive overload coaching for serious strength gains.</p>
+            <div class="class-card__meta">
+              <span>Coach: Elena</span>
+              <span>60 min</span>
+            </div>
+          </div>
+        </div>
+        <div class="class-card reveal">
+          <div class="class-card__image">
+            <img src="assets/img/work-3.jpg" alt="Yoga Flow class">
+          </div>
+          <div class="class-card__body">
+            <div class="class-card__time">
+              <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Mon / Wed / Fri &middot; 5:30 PM
+            </div>
+            <h4>Yoga Flow</h4>
+            <p>Vinyasa-style sequences connecting breath with movement. Improves flexibility, core stability, and mental focus.</p>
+            <div class="class-card__meta">
+              <span>Coach: Aria</span>
+              <span>50 min</span>
+            </div>
+          </div>
+        </div>
+        <div class="class-card reveal">
+          <div class="class-card__image">
+            <img src="assets/img/work-10.jpg" alt="Boxing class">
+            <span class="class-card__tag">Cardio</span>
+          </div>
+          <div class="class-card__body">
+            <div class="class-card__time">
+              <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Tue / Thu &middot; 5:30 PM
+            </div>
+            <h4>Kickboxing</h4>
+            <p>Cardio-focused combat training combining punches, kicks, and footwork. Total body workout that builds coordination and endurance.</p>
+            <div class="class-card__meta">
+              <span>Coach: Jake</span>
+              <span>55 min</span>
+            </div>
+          </div>
+        </div>
+        <div class="class-card reveal">
+          <div class="class-card__image">
+            <img src="assets/img/work-11.jpg" alt="Spin Cycle class">
+          </div>
+          <div class="class-card__body">
+            <div class="class-card__time">
+              <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Mon / Wed / Fri &middot; 7:30 AM
+            </div>
+            <h4>Spin Cycle</h4>
+            <p>Heart-pumping indoor cycling with hill climbs, sprints, and endurance rides set to high-energy music tracks.</p>
+            <div class="class-card__meta">
+              <span>Coach: Marcus</span>
+              <span>45 min</span>
+            </div>
+          </div>
+        </div>
+        <div class="class-card reveal">
+          <div class="class-card__image">
+            <img src="assets/img/work-12.jpg" alt="Bootcamp class">
+            <span class="class-card__tag">New</span>
+          </div>
+          <div class="class-card__body">
+            <div class="class-card__time">
+              <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Saturday &middot; 6:00 AM
+            </div>
+            <h4>Bootcamp</h4>
+            <p>Military-style group workout combining strength, cardio, and agility drills. Push your limits with the whole crew.</p>
+            <div class="class-card__meta">
+              <span>Coach: Jake &amp; Elena</span>
+              <span>60 min</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container" style="position:relative; z-index:2;">
+      <h2 class="reveal">Can't Decide? Try Them All.</h2>
+      <p class="reveal">Get a free 7-day pass and experience every class FITCORE has to offer.</p>
+      <a href="contact.html#register" class="btn btn--outline btn--lg reveal">Get Free Trial Pass</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="footer__brand">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M4 14h3v4H4zM7 12h2v8H7zM25 14h3v4h-3zM23 12h2v8h-2zM9 15h14v2H9zM10 13h2v6h-2zM20 13h2v6h-2z"/></svg>
+            Fit<span>Core</span>
+          </a>
+          <p>Premium fitness facilities and expert coaching to help you become the strongest version of yourself. Open 24/7, 365 days a year.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Classes</h4>
+          <ul class="footer__links">
+            <li><a href="classes.html">HIIT Burn</a></li>
+            <li><a href="classes.html">Power Lift</a></li>
+            <li><a href="classes.html">Yoga Flow</a></li>
+            <li><a href="classes.html">Boxing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul class="footer__contact">
+            <li>
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              123 Fitness Avenue, Downtown, NY 10001
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.12.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0122 16.92z"/></svg>
+              +1 (555) 123-4567
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@fitcore.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span data-year></span> FITCORE. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.43.36a9.09 9.09 0 01-2.88 1.1A4.52 4.52 0 0012 7.53v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Join Now Pulse Badge -->
+  <a href="contact.html#register" class="pulse-badge" aria-label="Join Now">Join<br>Now</a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

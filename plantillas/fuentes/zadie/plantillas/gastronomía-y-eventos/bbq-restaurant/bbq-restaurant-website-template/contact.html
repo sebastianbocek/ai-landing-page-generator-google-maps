@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Smokehouse & Vine</title>
+  <meta name="description" content="Reserve a table, ask about catering, or get directions to Smokehouse & Vine in Austin, TX.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patua+One&family=Hind:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <i class="fas fa-fire logo-icon"></i>
+      <div class="logo-text">Smokehouse <span>&</span> Vine</div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Menu</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-accent">Reserve a Table</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+    <h1>Contact Us</h1>
+    <hr class="ember-line">
+    <p>Reserve a table, book catering, or just say hello. We're always happy to hear from you.</p>
+  </div>
+</section>
+
+<!-- Contact Form + Info -->
+<section class="section section-darker smoke-overlay">
+  <div class="container">
+    <div class="grid-2">
+      <!-- Form -->
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <hr class="ember-line" style="margin-left:0; margin-bottom:28px;">
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(512) 555-0000">
+            </div>
+            <div class="form-group">
+              <label for="party-size">Party Size</label>
+              <select id="party-size" name="party-size">
+                <option value="">Select party size</option>
+                <option value="1-2">1 - 2 guests</option>
+                <option value="3-4">3 - 4 guests</option>
+                <option value="5-6">5 - 6 guests</option>
+                <option value="7-10">7 - 10 guests</option>
+                <option value="11-20">11 - 20 guests</option>
+                <option value="20+">20+ guests</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="event-type">Event Type</label>
+            <select id="event-type" name="event-type">
+              <option value="">Select event type</option>
+              <option value="dinner">Dinner Reservation</option>
+              <option value="lunch">Lunch Reservation</option>
+              <option value="catering">Catering Inquiry</option>
+              <option value="private-event">Private Event</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your visit or event..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent" style="width:100%;">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div>
+        <div class="contact-info-card">
+          <h4>Get in Touch</h4>
+          <div class="contact-info-item">
+            <i class="fas fa-location-dot"></i>
+            <p>1247 Ember Trail Road<br>Austin, TX 78701</p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-phone"></i>
+            <p><a href="tel:+15125550187">(512) 555-0187</a></p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <p><a href="mailto:hello@smokehouseandvine.com">hello@smokehouseandvine.com</a></p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <h4>Hours</h4>
+          <ul class="hours-list">
+            <li><span>Monday</span><span>Closed</span></li>
+            <li><span>Tuesday - Thursday</span><span>11am - 9pm</span></li>
+            <li><span>Friday - Saturday</span><span>11am - 10pm</span></li>
+            <li><span>Sunday</span><span>11am - 8pm</span></li>
+          </ul>
+        </div>
+
+        <div class="contact-info-card">
+          <h4>Follow Us</h4>
+          <div class="footer-social" style="margin-top:0;">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map -->
+<section class="section section-wood">
+  <div class="container">
+    <div class="section-header">
+      <h2>Find Us</h2>
+      <hr class="ember-line">
+    </div>
+    <div class="map-placeholder">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>1247 Ember Trail Road, Austin, TX 78701</p>
+      <p style="font-size:0.85rem;">Map placeholder - embed your Google Map here</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-darker">
+  <div class="container">
+    <div class="section-header">
+      <h2>Frequently Asked</h2>
+      <hr class="ember-line">
+      <p>Quick answers to the questions we hear most.</p>
+    </div>
+    <div style="max-width:800px; margin:0 auto;">
+      <div class="faq-item">
+        <h4><i class="fas fa-fire"></i> Do you take reservations?</h4>
+        <p>We accept reservations for parties of 6 or more. For smaller groups, we operate on a first-come, first-served basis. You can call us at (512) 555-0187 or use the contact form above to request a reservation. We recommend booking at least 48 hours in advance for weekend dinners.</p>
+      </div>
+      <div class="faq-item">
+        <h4><i class="fas fa-fire"></i> How long is the typical wait?</h4>
+        <p>On weekdays, you can usually walk right in during lunch and expect a 10-15 minute wait for dinner. Weekends are busier -- Friday and Saturday dinner waits can run 30-45 minutes during peak hours (6-8pm). We don't have a formal waitlist app, but we'll take your name at the door and text you when your table is ready.</p>
+      </div>
+      <div class="faq-item">
+        <h4><i class="fas fa-fire"></i> Do you cater events?</h4>
+        <p>Yes. We cater everything from backyard cookouts to corporate events and weddings. We have three standard platter sizes (10, 25, and 50 people) and we're happy to build custom packages for larger groups. Catering orders require at least one week's notice. Reach out through the form above or call us to get started.</p>
+      </div>
+      <div class="faq-item">
+        <h4><i class="fas fa-fire"></i> Do you have options for dietary restrictions?</h4>
+        <p>Our smoked turkey is our leanest protein option, and several of our sides are vegetarian-friendly: the coleslaw, potato salad, cornbread, and collard greens (without the ham hock, available on request). We can accommodate most common allergies if you let us know when ordering. Our menu is not gluten-free, but our meats and most sides are naturally gluten-free.</p>
+      </div>
+      <div class="faq-item">
+        <h4><i class="fas fa-fire"></i> Where do I park?</h4>
+        <p>We have a dedicated lot behind the building with about 40 spaces. Street parking is also available on Ember Trail Road and the surrounding blocks. On busy weekend nights, the lot can fill up, so street parking or rideshare is a good backup plan. Bike racks are available out front.</p>
+      </div>
+      <div class="faq-item">
+        <h4><i class="fas fa-fire"></i> Can I book a private event?</h4>
+        <p>We have a semi-private dining area that seats up to 30 guests, available for private events Tuesday through Thursday and for Sunday brunch. Full restaurant buyouts are available on Monday (our regular closed day) for parties of 80 or more. Contact us at least two weeks in advance for private event inquiries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>See You at the Table</h2>
+    <hr class="ember-line">
+    <p>Walk-ins always welcome. The smokers are lit and the seats are waiting.</p>
+    <div class="cta-info" style="margin-top:40px;">
+      <div class="cta-info-item">
+        <i class="fas fa-clock"></i>
+        <h4>Hours</h4>
+        <p>Tuesday - Thursday: 11am - 9pm</p>
+        <p>Friday - Saturday: 11am - 10pm</p>
+        <p>Sunday: 11am - 8pm</p>
+        <p>Monday: Closed</p>
+      </div>
+      <div class="cta-info-item">
+        <i class="fas fa-location-dot"></i>
+        <h4>Location</h4>
+        <p>1247 Ember Trail Road<br>Austin, TX 78701</p>
+      </div>
+      <div class="cta-info-item">
+        <i class="fas fa-phone"></i>
+        <h4>Call Us</h4>
+        <p>(512) 555-0187</p>
+        <p style="margin-top:4px;">hello@smokehouseandvine.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:16px;">
+          <i class="fas fa-fire logo-icon"></i>
+          <div class="logo-text">Smokehouse <span>&</span> Vine</div>
+        </div>
+        <p>Wood-fired BBQ and curated drinks in the heart of Austin. We've been burning oak and pulling pork since 2018. Come hungry, leave happy.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Smoked Meats</a></li>
+          <li><a href="services.html">Sandwiches</a></li>
+          <li><a href="services.html">Sides</a></li>
+          <li><a href="services.html">Drinks</a></li>
+          <li><a href="services.html">Catering</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul class="footer-links">
+          <li><span style="color:var(--color-gray);">Tue - Thu: 11am - 9pm</span></li>
+          <li><span style="color:var(--color-gray);">Fri - Sat: 11am - 10pm</span></li>
+          <li><span style="color:var(--color-gray);">Sunday: 11am - 8pm</span></li>
+          <li><span style="color:var(--color-gray);">Monday: Closed</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Smokehouse & Vine. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

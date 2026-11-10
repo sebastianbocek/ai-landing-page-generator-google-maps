@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZEPHYR — Cool Air, Calmly Delivered · AC &amp; Climate Service</title>
+  <meta name="description" content="Premium residential and commercial air conditioning, heating, and indoor climate service. Same-day diagnostics, honest pricing, 24/7 comfort — delivered calmly." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <span class="badge"><span class="dot pulse-dot"></span>READY TODAY</span>
+      <span>Same-day service · 24/7 comfort line</span>
+      <span class="spacer"></span>
+      <a href="tel:+14155550134">+1 (415) 555-0134</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">Zeph<em>yr</em></a>
+      <nav id="mainnav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="service.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="cta">Book a Visit</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-words">
+        <span class="hero-eyebrow">✦ Comfort, on your terms</span>
+        <h1>Cool air,<br />calmly&nbsp;delivered.</h1>
+        <p class="lead">
+          Premium air conditioning &amp; climate care for your home or office.
+          Diagnostics-first service, honest pricing, and a cool breeze that
+          follows you home.
+        </p>
+
+        <!-- Temperature slider — drag to set your perfect climate -->
+        <div class="temp-zone">
+          <div class="temp-label">
+            <span id="tempreadout" role="status" aria-live="polite" aria-valuenow="74" class="temp-readout">74<sup>°F</sup></span>
+            <span class="temp-mode temp-mode--comf" id="tempmode">Comfortable</span>
+          </div>
+          <input type="range" id="tempthermo" class="temp-slider" min="60" max="90" step="1" value="74" aria-label="Set your ideal temperature" />
+          <div class="temp-scale"><span>60°</span><span>75°</span><span>90°</span></div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn--ice">Schedule Service →</a>
+          <a href="service.html" class="btn btn--outline">Explore Services</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-chips">
+          <span class="chip chip--cool"><em>2h</em> avg. response</span>
+          <span class="chip chip--comf"><em>18°</em> cooler, fast</span>
+          <span class="chip chip--warm"><em>24/7</em> comfort line</span>
+        </div>
+        <div class="hero-img-wrap">
+          <img class="hero-img float" src="assets/img/carousel-1.jpg" alt="Modern air conditioning unit in a bright living space" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat-cell reveal">
+        <div class="stat-num"><span data-count="18">0</span><small>yr</small></div>
+        <div class="stat-label">Of calm, reliable service</div>
+      </div>
+      <div class="stat-cell reveal d1">
+        <div class="stat-num"><span data-count="12000">0</span><small>+</small></div>
+        <div class="stat-label">Systems kept comfortable</div>
+      </div>
+      <div class="stat-cell reveal d2">
+        <div class="stat-num"><span data-count="4.9">0</span><small>★</small></div>
+        <div class="stat-label">Average client rating</div>
+      </div>
+      <div class="stat-cell reveal d3">
+        <div class="stat-num"><span data-count="2">0</span><small>h</small></div>
+        <div class="stat-label">Average response time</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--frost">
+    <div class="container">
+      <span class="section-label">What we do</span>
+      <h2 class="section-title">Care for every corner<br />of your climate</h2>
+      <p class="section-desc">
+        From a single window unit to a full multi-zone system — calm, careful,
+        and never rushed.
+      </p>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="icon">❄</div>
+          <h3>AC Repair</h3>
+          <p>Same-day diagnostics and repair for every make and model. Most fixes finished on the first visit.</p>
+          <span class="tag">Same-day</span>
+        </div>
+        <div class="service-card reveal d1">
+          <div class="icon">☀</div>
+          <h3>Heating &amp; Furnaces</h3>
+          <p>Quiet, efficient warmth for the coldest months — annual tune-ups and full replacements.</p>
+          <span class="tag">Tune-ups</span>
+        </div>
+        <div class="service-card reveal d2">
+          <div class="icon">◎</div>
+          <h3>New Installations</h3>
+          <p>Systems sized to your actual space and installed with care, from ductless to central.</p>
+          <span class="tag">10-yr warranty</span>
+        </div>
+        <div class="service-card reveal">
+          <div class="icon">✦</div>
+          <h3>Maintenance Plans</h3>
+          <p>Two gentle tune-ups a year that cut energy bills and prevent surprises.</p>
+          <span class="tag">Save 18%</span>
+        </div>
+        <div class="service-card reveal d1">
+          <div class="icon">◍</div>
+          <h3>Indoor Air Quality</h3>
+          <p>Purifiers, humidifiers, and ventilation that help you breathe easier, sleep deeper.</p>
+          <span class="tag">Pure air</span>
+        </div>
+        <div class="service-card reveal d2">
+          <div class="icon">✕</div>
+          <h3>Emergency Service</h3>
+          <p>AC failure in a heatwave? We answer day and night — average response of just two hours.</p>
+          <span class="tag">24/7</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section--glass">
+    <div class="container">
+      <span class="section-label">How it works</span>
+      <h2 class="section-title text-center" style="text-align:center">Effortless, from call to cool</h2>
+      <p class="section-desc text-center" style="text-align:center;margin-left:auto;margin-right:auto">
+        Three gentle steps — no pressure, no surprises.
+      </p>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <span class="icon">☎</span>
+          <h3>Tell us what's wrong</h3>
+          <p>Call or book online. We listen first, then schedule a time that suits you — often the same day.</p>
+        </div>
+        <div class="step-card reveal d1">
+          <span class="icon">🔍</span>
+          <h3>We diagnose with care</h3>
+          <p>A thorough, written check of your system — temperatures, airflow, pressures. No guesswork, ever.</p>
+        </div>
+        <div class="step-card reveal d2">
+          <span class="icon">❄</span>
+          <h3>You breathe easy</h3>
+          <p>Transparent quote, tidy work, and a system that runs quietly for years to come.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE SPLIT -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="feature-split">
+        <div class="frame reveal">
+          <img src="assets/img/feature.jpg" alt="ZEPHYR technician checking an air conditioning system" />
+        </div>
+        <div>
+          <span class="section-label">Our promise</span>
+          <h2 class="section-title">Measure first.<br />Fix second. <em style="color:var(--ice-600);font-style:normal">Always.</em></h2>
+          <p class="section-desc">
+            Most problems start long before they're felt. Our technicians arrive
+            with thermal cameras and digital gauges — not guesswork — and explain
+            everything in plain language before any work begins.
+          </p>
+          <ul>
+            <li class="reveal"><span class="ic">✓</span><div><b>Written diagnostics</b><span>Every visit ends with a clear, itemized report.</span></div></li>
+            <li class="reveal d1"><span class="ic">✓</span><div><b>Upfront pricing</b><span>Approved before work starts. No surprise invoices.</span></div></li>
+            <li class="reveal d2"><span class="ic">✓</span><div><b>Certified &amp; insured</b><span>EPA-certified technicians, fully bonded.</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="section section--surface">
+    <div class="container">
+      <span class="section-label">Simple pricing</span>
+      <h2 class="section-title text-center" style="text-align:center">Plans that breathe easy</h2>
+      <p class="section-desc text-center" style="text-align:center;margin-left:auto;margin-right:auto">
+        Transparent packages — pick the one that fits your home and season.
+      </p>
+      <div class="pricing-grid">
+        <div class="plan reveal">
+          <h3>Breeze</h3>
+          <div class="price">$89<small>/visit</small></div>
+          <span class="per">One-time service call</span>
+          <ul>
+            <li>Full system diagnostic</li>
+            <li>Filter &amp; coil inspection</li>
+            <li>Refrigerant check</li>
+            <li>Written report</li>
+          </ul>
+          <a href="contact.html" class="btn btn--outline btn--wide">Book a Visit</a>
+        </div>
+        <div class="plan plan--featured reveal d1">
+          <span class="plan-badge">Most loved</span>
+          <h3>Balance</h3>
+          <div class="price">$19<small>/mo</small></div>
+          <span class="per">Seasonal care plan</span>
+          <ul>
+            <li>2 tune-ups per year</li>
+            <li>Priority same-day booking</li>
+            <li>15% off any repair</li>
+            <li>Extended system warranty</li>
+            <li>Annual air-quality check</li>
+          </ul>
+          <a href="contact.html" class="btn btn--ice btn--wide">Join the Plan</a>
+        </div>
+        <div class="plan reveal d2">
+          <h3>Sanctuary</h3>
+          <div class="price">$29<small>/mo</small></div>
+          <span class="per">Full climate coverage</span>
+          <ul>
+            <li>Everything in Balance</li>
+            <li>24/7 emergency response</li>
+            <li>No overtime charges</li>
+            <li>Whole-home air quality</li>
+          </ul>
+          <a href="contact.html" class="btn btn--outline btn--wide">Go All In</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section section--frost">
+    <div class="container">
+      <span class="section-label">Kind words</span>
+      <h2 class="section-title text-center" style="text-align:center">Comfort, appreciated</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"They found the issue in ten minutes, quoted before starting, and had us cool again that same afternoon. Calm, kind, professional."</p>
+          <div class="who"><span class="avatar">J</span><div><b>Jordan M.</b><br /><span>Homeowner, Mission District</span></div></div>
+        </div>
+        <div class="testimonial-card reveal d1">
+          <div class="stars">★★★★★</div>
+          <p>"Our whole office signed up for the Balance plan. The tune-ups are on time every season and the energy bill dropped noticeably."</p>
+          <div class="who"><span class="avatar">S</span><div><b>Priya S.</b><br /><span>Office Manager, SoMa</span></div></div>
+        </div>
+        <div class="testimonial-card reveal d2">
+          <div class="stars">★★★★★</div>
+          <p>"Emergency call at 9pm on a Saturday — they arrived in under two hours and didn't charge overtime. I tell everyone about them."</p>
+          <div class="who"><span class="avatar">D</span><div><b>Daniel R.</b><br /><span>Rental Owner, Noe Valley</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--white">
+    <div class="container">
+      <span class="section-label">Good to know</span>
+      <h2 class="section-title text-center" style="text-align:center">Questions, answered</h2>
+      <div class="faq">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">How fast can you get here? <span>+</span></button>
+          <div class="faq-a">For most calls we arrive the same day. Emergency service runs 24/7 with an average response time of about two hours.</div>
+        </div>
+        <div class="faq-item reveal d1">
+          <button class="faq-q" aria-expanded="false">Will I get a written quote before work starts? <span>+</span></button>
+          <div class="faq-a">Always. We diagnose, explain your options in plain language, and confirm a fixed price with you before any work begins — no surprises on the invoice.</div>
+        </div>
+        <div class="faq-item reveal d2">
+          <button class="faq-q" aria-expanded="false">Do you service all brands? <span>+</span></button>
+          <div class="faq-a">Yes — Carrier, Trane, Lennox, Mitsubishi, Daikin, Rheem, and most others. Our technicians are manufacturer-trained on the major systems.</div>
+        </div>
+        <div class="faq-item reveal d3">
+          <button class="faq-q" aria-expanded="false">Is there a maintenance plan right for a small home? <span>+</span></button>
+          <div class="faq-a">Absolutely. The Balance plan is designed for single homes and small offices: two tune-ups a year, priority booking, and 15% off repairs.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <div>
+        <span class="section-label">Get started</span>
+        <h2>Ready for cooler,<br />calmer days?</h2>
+        <p>Same-week appointments. Honest pricing. Comfort delivered calmly.</p>
+      </div>
+      <div class="actions">
+        <a href="contact.html" class="btn btn--ice">Book a Visit →</a>
+        <a href="tel:+14155550134" class="btn btn--outline">+1 (415) 555-0134</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">Zeph<em>yr</em></div>
+          <p>Premium air conditioning &amp; climate care, delivered calmly since 2008.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <a href="service.html">AC Repair</a><br />
+          <a href="service.html">Heating</a><br />
+          <a href="service.html">Installation</a><br />
+          <a href="service.html">Maintenance</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About</a><br />
+          <a href="about.html">Our Promise</a><br />
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Comfort Line</h4>
+          <a href="tel:+14155550134">+1 (415) 555-0134</a><br />
+          <span style="font-size:.8rem;color:rgba(255,255,255,.5)">24/7 — no overtime charges</span>
+        </div>
+      </div>
+      <div class="base">
+        <span>© <span data-year></span> ZEPHYR Climate Care</span>
+        <span>Lic #CL-20084712 · Fully insured</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

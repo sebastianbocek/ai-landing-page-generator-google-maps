@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tandem email pack — 5 responsive HTML email templates</title>
+<meta name="description" content="Five responsive, dark-mode-ready HTML email templates — newsletter, welcome, receipt, password reset and event invite — built with tables and bulletproof buttons.">
+<meta property="og:title" content="Tandem email pack — 5 responsive HTML emails">
+<meta property="og:description" content="Newsletter, welcome, receipt, password reset and event invite. Table-based, 600px, dark mode, Outlook-friendly buttons.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/newsletter-hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234f46e5'/%3E%3Cpath d='M7 11l9 6 9-6M7 10h18v13H7z' fill='none' stroke='white' stroke-width='2.2' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#viewer">Skip to preview</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="index.html"><span class="mark" aria-hidden="true">T</span><span data-zt="brandName">Tandem</span> <span class="pill">Email pack</span></a>
+    <a class="btn btn-sm" href="README.md">How to use</a>
+  </div>
+</header>
+
+<main>
+  <section class="intro wrap">
+    <h1 data-zt="heading">Five emails your product actually needs.</h1>
+    <p class="lead">Responsive HTML email templates built the old-school, reliable way: nested tables, inline styles, 600&nbsp;px max width, bulletproof buttons for Outlook and a dark-mode media query. Swap the copy, keep the structure.</p>
+    <ul class="facts">
+      <li>Table layout</li><li>Inline styles</li><li>Dark mode</li><li>Preheader text</li><li>VML buttons for Outlook</li><li>No web fonts</li>
+    </ul>
+  </section>
+
+  <section id="viewer" class="viewer wrap" aria-label="Email previews">
+    <nav class="list" aria-label="Templates">
+      <a href="newsletter.html" data-email class="is-active" aria-current="true"><strong>Newsletter</strong><span>Hero, stories, tip box</span></a>
+      <a href="welcome.html" data-email><strong>Welcome</strong><span>Onboarding steps</span></a>
+      <a href="receipt.html" data-email><strong>Receipt</strong><span>Line items &amp; totals</span></a>
+      <a href="password-reset.html" data-email><strong>Password reset</strong><span>Security, fallback link</span></a>
+      <a href="event-invite.html" data-email><strong>Event invite</strong><span>Details, RSVP, agenda</span></a>
+    </nav>
+    <div class="stage">
+      <div class="toolbar">
+        <div class="seg" role="group" aria-label="Preview width">
+          <button type="button" data-width="600" aria-pressed="true">Desktop · 600</button>
+          <button type="button" data-width="360" aria-pressed="false">Mobile · 360</button>
+        </div>
+        <div class="seg" role="group" aria-label="Colour scheme">
+          <button type="button" data-scheme="light" aria-pressed="true">Light</button>
+          <button type="button" data-scheme="dark" aria-pressed="false">Dark</button>
+        </div>
+        <a class="open" href="newsletter.html" target="_blank" rel="noopener" data-open>Open in new tab ↗</a>
+      </div>
+      <div class="frame-wrap">
+        <iframe src="newsletter.html" title="Email preview: Newsletter" data-frame loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="notes wrap" aria-labelledby="notes-h">
+    <h2 id="notes-h">Before you hit send</h2>
+    <div class="note-grid">
+      <article><h3>Test in your ESP</h3><p>Every inbox renders differently. Send tests from Mailchimp, Postmark, SendGrid, Resend or your ESP of choice and check Gmail, Outlook and Apple Mail before launch.</p></article>
+      <article><h3>Inline if needed</h3><p>Styles are already inline where it matters. If your ESP doesn't inline the <code>&lt;style&gt;</code> block, run the file through a CSS inliner first.</p></article>
+      <article><h3>Host your images</h3><p>Upload the files in <code>assets/img</code> to your ESP or CDN and replace the relative <code>src</code> paths with absolute URLs.</p></article>
+      <article><h3>Merge tags</h3><p>Placeholders like <code>{{first_name}}</code> use a neutral syntax — change them to your ESP's format (<code>*|FNAME|*</code>, <code>{{ .Name }}</code>…).</p></article>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <p>© <span data-year>2026</span> <span data-zt="brandName">Tandem</span> email pack · MIT licensed · Made by ZumaTools</p>
+</footer>
+</body>
+</html>

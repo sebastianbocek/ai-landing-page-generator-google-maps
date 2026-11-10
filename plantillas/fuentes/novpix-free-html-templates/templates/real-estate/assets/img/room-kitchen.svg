@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a modern kitchen">
+  <rect width="800" height="600" fill="#f3f1ec"/>
+  <rect y="480" width="800" height="120" fill="#d9d4c7"/>
+  <rect x="60" y="80" width="680" height="120" fill="#1f4d45"/>
+  <path d="M230 80v120M400 80v120M570 80v120" stroke="#163a34" stroke-width="4"/>
+  <g fill="#c8a15a"><rect x="210" y="180" width="12" height="4"/><rect x="380" y="180" width="12" height="4"/><rect x="550" y="180" width="12" height="4"/></g>
+  <rect x="60" y="200" width="680" height="140" fill="#fff"/>
+  <path d="M60 230h680M60 260h680M60 290h680M60 320h680" stroke="#ece8e0" stroke-width="2"/>
+  <rect x="60" y="340" width="680" height="18" fill="#e9e3d6"/>
+  <rect x="60" y="358" width="680" height="122" fill="#1f4d45"/>
+  <path d="M230 358v122M400 358v122M570 358v122" stroke="#163a34" stroke-width="4"/>
+  <g fill="#c8a15a"><rect x="140" y="376" width="40" height="5" rx="2"/><rect x="300" y="376" width="40" height="5" rx="2"/><rect x="470" y="376" width="40" height="5" rx="2"/><rect x="640" y="376" width="40" height="5" rx="2"/></g>
+  <rect x="440" y="300" width="120" height="40" fill="#2b3a44"/><rect x="460" y="310" width="80" height="8" fill="#555"/>
+  <path d="M200 340v-70h20v-10h30" fill="none" stroke="#9aa6a0" stroke-width="6"/>
+  <g><rect x="620" y="290" width="30" height="50" rx="6" fill="#c8623e"/><path d="M630 300v-20c0-10 20-10 20 0" stroke="#4f7a5a" stroke-width="6" fill="none"/></g>
+  <g fill="#c8a15a"><path d="M260 20v40M540 20v40" stroke="#2b3a44" stroke-width="2"/><circle cx="260" cy="70" r="16"/><circle cx="540" cy="70" r="16"/></g>
+  <rect x="160" y="430" width="480" height="60" rx="6" fill="#fff" opacity=".0"/>
+</svg>

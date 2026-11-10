@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Golden Crust Bakery | Visit, Order, or Inquire</title>
+  <meta name="description" content="Visit Golden Crust Bakery in Millbrook Village, place special orders, or inquire about catering and wholesale. Find our hours, location, and contact form.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-bread-slice"></i></div>
+        <div class="logo-text">
+          Golden Crust
+          <span>Artisan Bakery</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Menu</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Order Special</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>→</span>
+          <span>Contact</span>
+        </div>
+        <h1>Get in <span>Touch</span></h1>
+        <p class="hero-description">Visit our bakery, place a special order, or just say hello. We'd love to hear from you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: var(--space-lg);">Send Us a Message</h3>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Your Name *</label>
+                <input type="text" id="name" name="name" class="form-input" required placeholder="Jane Smith">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="(802) 555-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-input" required placeholder="jane@example.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="inquiry">What can we help you with? *</label>
+              <select id="inquiry" name="inquiry" class="form-select" required>
+                <option value="">Select an option...</option>
+                <option value="special-order">Special Order (Cake, Custom Item)</option>
+                <option value="catering">Catering Inquiry</option>
+                <option value="wholesale">Wholesale Account</option>
+                <option value="wedding">Wedding Cake Consultation</option>
+                <option value="feedback">Feedback or Compliment</option>
+                <option value="general">General Question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="date">Event/Pickup Date (if applicable)</label>
+              <input type="date" id="date" name="date" class="form-input">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Your Message *</label>
+              <textarea id="message" name="message" class="form-textarea" required
+                placeholder="Tell us about your order, event, or question. The more detail, the better!"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-details">
+              <h4>Visit Our Bakery</h4>
+              <p>
+                142 Mill Street<br>
+                Millbrook Village, VT 05602
+              </p>
+              <p style="margin-top: var(--space-sm); font-size: 0.9rem; color: var(--warm-gray);">Street parking available. Additional lot behind building.</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-details">
+              <h4>Call Us</h4>
+              <p>
+                <a href="tel:+18025551234">(802) 555-1234</a>
+              </p>
+              <p style="margin-top: var(--space-sm); font-size: 0.9rem; color: var(--warm-gray);">Best reached during bakery hours. For special orders, email is preferred.</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-details">
+              <h4>Email Us</h4>
+              <p>
+                <a href="mailto:hello@goldencrust.com">hello@goldencrust.com</a>
+              </p>
+              <p style="margin-top: var(--space-sm); font-size: 0.9rem; color: var(--warm-gray);">We respond within 24 hours on business days.</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-details">
+              <h4>Bakery Hours</h4>
+              <div class="hours-table">
+                <div class="hours-row">
+                  <span class="hours-day">Tuesday - Friday</span>
+                  <span class="hours-time">6:00 AM - 5:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Saturday</span>
+                  <span class="hours-time">6:00 AM - 4:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Sunday</span>
+                  <span class="hours-time">7:00 AM - 2:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Monday</span>
+                  <span class="hours-time">Closed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Order -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Ordering Info</div>
+        <h2 class="section-title">How to Order</h2>
+        <p class="section-subtitle">Whether you're picking up a baguette or ordering a wedding cake, here's what to know.</p>
+      </div>
+      <div class="features-grid">
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-person-walking"></i></div>
+          <h3 class="card-title">Walk-In Purchases</h3>
+          <p class="card-text">Stop by anytime during bakery hours. First come, first served on all daily items. Popular items sell out early, especially on weekends.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-phone"></i></div>
+          <h3 class="card-title">Same-Day Reservations</h3>
+          <p class="card-text">Want to guarantee your favorites? Call before 10 AM and we'll set aside items for pickup that day. Payment at pickup.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-pen-to-square"></i></div>
+          <h3 class="card-title">Special Orders</h3>
+          <p class="card-text">Custom cakes and large orders require 48-72 hours notice. Wedding cakes require consultation at least 4-6 weeks in advance.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fa-solid fa-car"></i></div>
+          <h3 class="card-title">Wholesale Delivery</h3>
+          <p class="card-text">Free delivery within 15 miles for wholesale accounts meeting minimum order requirements. Morning delivery, 6 days a week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-light">
+    <div class="container container-narrow">
+      <div class="section-header center">
+        <div class="section-tag">Questions</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How far in advance do I need to order a custom cake?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            For simple custom cakes (our existing flavors, basic decoration), we need
+            at least 48-72 hours notice. For wedding cakes or elaborate custom designs,
+            please contact us at least 4-6 weeks in advance. During busy seasons
+            (May-June, November-December), we recommend booking even earlier.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you offer wedding cake tastings?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes! We offer complimentary tastings for couples who book their wedding
+            cake with us. Tastings are held on Tuesday afternoons by appointment only.
+            You'll sample up to four cake and filling combinations. Contact us to schedule.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What are the minimums for wholesale accounts?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Our minimum order is 10 loaves (or equivalent value in other products)
+            per delivery. We deliver free within 15 miles for accounts meeting this
+            minimum. Orders are placed weekly, with orders due by 4 PM two days before
+            delivery. Contact us to set up an account and discuss your needs.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I reserve items for same-day pickup?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Yes! Call us before 10 AM and we'll set aside your items. We hold
+            reservations until 2 PM—after that, items may be returned to the case.
+            This is great for popular items like croissants and sourdough that sell
+            out early on weekends.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you deliver to homes or offices?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            We don't offer regular retail delivery, but we do deliver catering orders
+            over $150 within 10 miles for a $20 fee. For large special orders (like
+            wedding cakes), we can arrange delivery—just ask when you order.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you accommodate dietary restrictions?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Some items are naturally vegan (sourdough, baguettes) or can be made
+            without nuts. We offer gluten-free brownies. However, everything is made
+            in a shared kitchen with wheat, dairy, eggs, and nuts—we cannot guarantee
+            any item is completely allergen-free. Please discuss specific needs with
+            our staff.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What's the best time to come for fresh bread?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            Our pastries come out around 6 AM when we open. Artisan breads are ready
+            by 7:30 AM. If you want something warm from the oven, those are the times
+            to be here. By mid-morning, selection is at its peak. By afternoon, popular
+            items may be sold out, but we often bake cookies around 2 PM.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I tour the bakery or take a baking class?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            We host a free bread-making class on the first Sunday of every month—check
+            our social media for sign-ups. Private bakery tours aren't available due to
+            space constraints and food safety requirements, but you can see our bakers
+            at work through the window from the front counter!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="section section-warm">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Find Us</div>
+        <h2 class="section-title">Getting Here</h2>
+      </div>
+      <div style="background: var(--flour-white); border-radius: var(--radius-lg); padding: var(--space-3xl); text-align: center; box-shadow: var(--shadow-md);">
+        <div style="font-size: 4rem; margin-bottom: var(--space-lg);"></div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: var(--space-md);">142 Mill Street, Millbrook Village, VT 05602</h3>
+        <p style="color: var(--chocolate-medium); max-width: 600px; margin: 0 auto var(--space-lg);">We're located in the heart of downtown Millbrook Village, just two blocks south of the farmer's market square. Look for the golden awning and follow your nose!</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-xl); margin-top: var(--space-xl);">
+          <div style="text-align: left;">
+            <h4 style="font-family: var(--font-heading); font-weight: 600; margin-bottom: var(--space-sm);">By Car</h4>
+            <p style="color: var(--chocolate-medium); font-size: 0.95rem;">
+              Street parking available on Mill Street and Oak Avenue.<br>
+              Additional parking lot behind the building (enter from Oak Ave).
+            </p>
+          </div>
+          <div style="text-align: left;">
+            <h4 style="font-family: var(--font-heading); font-weight: 600; margin-bottom: var(--space-sm);">By Bus</h4>
+            <p style="color: var(--chocolate-medium); font-size: 0.95rem;">
+              Green Mountain Transit Route 7 stops at Mill & Main.<br>
+              We're a 2-minute walk from the bus stop.
+            </p>
+          </div>
+          <div style="text-align: left;">
+            <h4 style="font-family: var(--font-heading); font-weight: 600; margin-bottom: var(--space-sm);">On Foot</h4>
+            <p style="color: var(--chocolate-medium); font-size: 0.95rem;">
+              10-minute walk from Millbrook Town Green.<br>
+              Perfect after a stroll through the Saturday farmer's market!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">We Can't Wait to See You</h2>
+        <p class="cta-text">Whether you're grabbing a croissant on your way to work or planning your dream wedding cake, we're here to make your day a little sweeter.</p>
+        <div class="cta-buttons">
+          <a href="services.html" class="btn btn-primary btn-lg">View Our Menu</a>
+          <a href="about.html" class="btn btn-outline btn-lg">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-bread-slice"></i></div>
+          <div class="logo-text">
+            Golden Crust
+            <span>Artisan Bakery</span>
+          </div>
+        </a>
+        <p>Handcrafted breads, pastries, and desserts made with love, locally-sourced ingredients, and time-honored techniques.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">ig</a>
+          <a href="#" class="social-link">tw</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="services.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Offerings</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#breads">Artisan Breads</a></li>
+          <li><a href="services.html#pastries">Pastries</a></li>
+          <li><a href="services.html#cakes">Cakes & Desserts</a></li>
+          <li><a href="services.html#special-orders">Special Orders</a></li>
+          <li><a href="services.html#catering">Catering</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li>142 Mill Street</li>
+          <li>Millbrook Village, VT 05602</li>
+          <li><a href="tel:+18025551234">(802) 555-1234</a></li>
+          <li><a href="mailto:hello@goldencrust.com">hello@goldencrust.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Golden Crust Bakery. All rights reserved.</p>
+      <p>Baked with in Millbrook Village</p>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+    </div>
+  </footer>
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

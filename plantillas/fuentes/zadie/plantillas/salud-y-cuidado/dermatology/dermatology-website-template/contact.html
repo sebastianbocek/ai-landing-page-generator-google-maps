@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Clarity Dermatology</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-sun"></i></div>
+        <div class="logo-text">
+          Clarity
+          <span>Dermatology</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Book Appointment</a>
+    </div>
+  </header>
+
+  <!-- Contact Hero -->
+  <section class="contact-hero">
+    <div class="container">
+      <span class="section-label">Get in Touch</span>
+      <h1>Book Your <span>Appointment</span></h1>
+      <p>New patients welcome. Request an appointment online or call us directly. We typically schedule new patients within one week.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <h2 style="margin-bottom: 8px;">Request an Appointment</h2>
+          <p style="color: var(--text-muted); margin-bottom: 32px;">Fill out the form below and we'll contact you within one business day to confirm your appointment.</p>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(480) 555-0000" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="medical">Medical Dermatology</option>
+                <option value="cosmetic">Cosmetic Procedures</option>
+                <option value="screening">Skin Cancer Screening</option>
+                <option value="acne">Acne &amp; Rosacea Treatment</option>
+                <option value="injectables">Injectable Treatments</option>
+                <option value="laser">Laser Therapy</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="patient-type">Patient Status</label>
+              <select id="patient-type" name="patient-type">
+                <option value="new">New Patient</option>
+                <option value="existing">Existing Patient</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Concern</label>
+              <textarea id="message" name="message" rows="5" placeholder="Briefly describe your skin concern or what you'd like to address..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Request Appointment</button>
+          </form>
+        </div>
+        <div class="contact-info-cards">
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Visit Our Clinic</h4>
+              <p>200 Meridian Plaza, Suite 300<br>Scottsdale, AZ 85251</p>
+              <a href="#">Get Directions</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Call Us</h4>
+              <p>Main: <a href="tel:4805559876">(480) 555-9876</a><br>Fax: (480) 555-9877</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="mailto:info@claritydermatology.com">info@claritydermatology.com</a></p>
+              <p>We respond within one business day.</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Monday - Friday: 8:00am - 5:00pm<br>Saturday: 9:00am - 1:00pm<br>Sunday: Closed</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon"><i class="fa-solid fa-car"></i></div>
+            <div>
+              <h4>Parking</h4>
+              <p>Free covered parking available in the Meridian Plaza garage. Enter from the east side of the building.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section-alt" style="padding: 0;">
+    <div class="container" style="padding-top: 64px; padding-bottom: 64px;">
+      <div class="map-placeholder">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <span>Map: 200 Meridian Plaza, Suite 300, Scottsdale, AZ 85251</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Common Questions</h2>
+        <p>Answers to the questions we hear most often. Don't see yours? Give us a call.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question">
+            Do I need a referral to see a dermatologist?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              In most cases, no. Most PPO insurance plans allow you to see a dermatologist without a referral. Some HMO plans do require one from your primary care physician. If you're unsure, call us and our team will help verify your insurance requirements before your visit.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How quickly can I get an appointment?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We typically schedule new patients within one week. For urgent concerns like rapidly changing moles or severe skin reactions, we offer same-day or next-day appointments. Call our office directly for urgent scheduling.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What should I bring to my first appointment?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Please bring your photo ID, insurance card, a list of current medications, and any relevant medical records. If you have photos of a skin condition that comes and goes, those are extremely helpful. Arrive 15 minutes early to complete paperwork, or download our forms online beforehand.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Does insurance cover cosmetic dermatology procedures?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Cosmetic procedures like Botox, fillers, and chemical peels are generally not covered by insurance. Medical dermatology services, including skin cancer screenings, eczema treatment, and acne management, are typically covered. We'll clearly explain which services fall under medical versus cosmetic before any treatment begins.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How often should I get a skin cancer screening?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We recommend annual full-body skin exams for all adults. If you have risk factors like a history of sunburns, fair skin, family history of melanoma, or many moles, you may benefit from more frequent screenings every 6 months. Your dermatologist will recommend a schedule based on your individual risk profile.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What is the cancellation policy?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We ask for at least 24 hours notice if you need to cancel or reschedule your appointment. Late cancellations or no-shows may incur a $50 fee. We understand that things come up, so just give us a call as soon as you know you need to change your appointment. There is no fee for your first late cancellation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Service Area</span>
+        <h2>Serving the Greater Scottsdale Area</h2>
+        <p>Conveniently located in central Scottsdale, we serve patients from across the Phoenix metropolitan area.</p>
+      </div>
+      <div class="insurance-logos">
+        <div class="insurance-logo">Scottsdale</div>
+        <div class="insurance-logo">Phoenix</div>
+        <div class="insurance-logo">Tempe</div>
+        <div class="insurance-logo">Mesa</div>
+        <div class="insurance-logo">Paradise Valley</div>
+        <div class="insurance-logo">Chandler</div>
+        <div class="insurance-logo">Gilbert</div>
+        <div class="insurance-logo">Fountain Hills</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Prefer to Call?</h2>
+        <p>Our front desk team is available during office hours to schedule your appointment and answer any questions.</p>
+        <div class="cta-buttons">
+          <a href="tel:4805559876" class="btn btn-white"><i class="fa-solid fa-phone"></i> (480) 555-9876</a>
+        </div>
+        <p class="cta-phone">Mon-Fri 8am-5pm &middot; Sat 9am-1pm</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-sun"></i></div>
+            <div class="logo-text">
+              Clarity
+              <span>Dermatology</span>
+            </div>
+          </a>
+          <p>Board-certified dermatologists providing comprehensive medical, cosmetic, and surgical skin care in Scottsdale, Arizona.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#medical">Medical Dermatology</a></li>
+            <li><a href="services.html#cosmetic">Cosmetic Procedures</a></li>
+            <li><a href="services.html#cancer">Skin Cancer Screening</a></li>
+            <li><a href="services.html#acne">Acne &amp; Rosacea</a></li>
+            <li><a href="services.html#injectables">Injectables</a></li>
+            <li><a href="services.html#laser">Laser Therapy</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact Us</h4>
+          <ul class="footer-links">
+            <li>(480) 555-9876</li>
+            <li>info@claritydermatology.com</li>
+            <li>200 Meridian Plaza<br>Suite 300<br>Scottsdale, AZ 85251</li>
+            <li>Mon-Fri: 8am-5pm<br>Sat: 9am-1pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Clarity Dermatology. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <p><a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+  <!-- FAQ Toggle -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var wasActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('active');
+        });
+        if (!wasActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

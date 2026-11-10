@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Spoke & Chain Cyclery</title>
+  <meta name="description" content="Contact Spoke & Chain Cyclery. Schedule a repair, ask a question, or find our Portland shop hours and location.">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark"></div>
+      <div class="logo-text">
+        <span class="logo-name">Spoke &amp; Chain</span>
+        <span class="logo-tagline">Cyclery &mdash; Portland, OR</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" role="navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="contact.html" class="header-cta">Book a Repair</a>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-label">Get in Touch</div>
+    <h1 class="page-hero-title">We're Here.<br>Come Find Us.</h1>
+    <p class="page-hero-text">Drop in during shop hours, give us a call, or fill out the form below. For service requests, the form helps us pull the right parts before you arrive.</p>
+  </div>
+</section>
+
+<!-- Contact Main -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Forms Column -->
+      <div>
+        <!-- General Contact Form -->
+        <div class="contact-form-wrap" style="margin-bottom: var(--space-6);">
+          <h2 class="form-title">Send a Message</h2>
+          <p class="form-subtitle">Questions about services, pricing, or availability? We usually reply within a few hours during shop hours.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="first-name">First Name</label>
+                <input class="form-input" type="text" id="first-name" name="first_name" placeholder="Marcus" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last-name">Last Name</label>
+                <input class="form-input" type="text" id="last-name" name="last_name" placeholder="Webb">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone (optional)</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="(503) 555-0000">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="What can we help you with?" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Service Request Form -->
+        <div class="contact-form-wrap">
+          <h2 class="form-title">Service Request</h2>
+          <p class="form-subtitle">Dropping off a bike? Fill this out ahead of time and we'll have the right parts and tools ready when you arrive.</p>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label class="form-label" for="sr-name">Your Name</label>
+              <input class="form-input" type="text" id="sr-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="sr-email">Email Address</label>
+              <input class="form-input" type="email" id="sr-email" name="email" placeholder="you@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="sr-phone">Phone Number</label>
+              <input class="form-input" type="tel" id="sr-phone" name="phone" placeholder="(503) 555-0000" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="bike-type">Bike Type</label>
+                <select class="form-select" id="bike-type" name="bike_type" required>
+                  <option value="" disabled selected>Select type</option>
+                  <option value="road">Road Bike</option>
+                  <option value="gravel">Gravel Bike</option>
+                  <option value="mountain">Mountain Bike</option>
+                  <option value="commuter">Commuter / Hybrid</option>
+                  <option value="ebike">E-Bike</option>
+                  <option value="cruiser">Cruiser / Beach</option>
+                  <option value="kids">Kids' Bike</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="bike-brand">Bike Brand &amp; Model</label>
+                <input class="form-input" type="text" id="bike-brand" name="bike_brand" placeholder="e.g. Trek Domane SL5">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service-type">Service Needed</label>
+              <select class="form-select" id="service-type" name="service_type" required>
+                <option value="" disabled selected>Select service</option>
+                <option value="basic-tune">Basic Tune-Up ($45)</option>
+                <option value="standard-tune">Standard Tune-Up ($75)</option>
+                <option value="full-overhaul">Full Overhaul ($120+)</option>
+                <option value="flat-repair">Flat Repair ($15)</option>
+                <option value="brake-service">Brake Service</option>
+                <option value="gear-adjustment">Gear Adjustment</option>
+                <option value="wheel-true">Wheel Truing</option>
+                <option value="fitting">Bike Fitting ($85)</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="issue">Describe the Issue</label>
+              <textarea class="form-textarea" id="issue" name="issue_description" placeholder="Tell us what's happening. The more detail, the better. Clicking when you pedal? Brakes feel spongy? Can't shift into the small ring?" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="preferred-date">Preferred Drop-Off Date</label>
+              <input class="form-input" type="date" id="preferred-date" name="preferred_date">
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">Submit Service Request</button>
+            <p style="font-size: 0.8rem; color: var(--accent); text-align: center; margin-top: var(--space-3);">We'll confirm your appointment by phone or email within 1 business day.</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Info Column -->
+      <div class="contact-info-wrap">
+
+        <!-- Contact Details -->
+        <div class="contact-info-block">
+          <div class="contact-info-title">Contact Info</div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.98-.98a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Phone</div>
+              <div class="contact-detail-value"><a href="tel:5035550142">(503) 555-0142</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value"><a href="mailto:hello@spokeandchain.com">hello@spokeandchain.com</a></div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail-label">Address</div>
+              <div class="contact-detail-value">2847 SE Division St<br>Portland, OR 97202</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hours -->
+        <div class="contact-info-block">
+          <div class="contact-info-title">Shop Hours</div>
+          <div class="hours-table">
+            <div class="hours-row">
+              <span class="hours-day">Monday</span>
+              <span class="hours-time">9:00 AM &ndash; 7:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Tuesday</span>
+              <span class="hours-time">9:00 AM &ndash; 7:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Wednesday</span>
+              <span class="hours-time">9:00 AM &ndash; 7:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Thursday</span>
+              <span class="hours-time">9:00 AM &ndash; 7:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Friday</span>
+              <span class="hours-time">9:00 AM &ndash; 7:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time">8:00 AM &ndash; 6:00 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time">10:00 AM &ndash; 4:00 PM</span>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--accent); margin-top: var(--space-3);">We're closed on major holidays. Check our Instagram for holiday hours.</p>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="contact-info-block" style="padding: var(--space-4);">
+          <div class="map-placeholder">
+            <div class="map-pin"></div>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--gray-dark); margin-top: var(--space-4); text-align: center;">2847 SE Division St, Portland, OR 97202</p>
+          <div style="text-align: center; margin-top: var(--space-3);">
+            <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.8rem; padding: var(--space-2) var(--space-5);">Open in Google Maps</a>
+          </div>
+        </div>
+
+        <!-- Getting Here -->
+        <div class="contact-info-block">
+          <div class="contact-info-title">Getting Here</div>
+          <p style="font-size: 0.9rem; color: var(--gray-dark); line-height: 1.7; margin-bottom: var(--space-4);">We're on SE Division between 28th and 29th, in the heart of one of Portland's most bike-friendly corridors. There's bike parking out front and a car spot in the alley.</p>
+          <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+            <div style="display: flex; gap: var(--space-3); align-items: flex-start;">
+              <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); min-width: 40px; margin-top: 2px;">Bus</div>
+              <div style="font-size: 0.9rem; color: var(--gray-dark);">TriMet Line 4 (Division) stops half a block away. Line 10 (Harold) is two blocks north.</div>
+            </div>
+            <div style="display: flex; gap: var(--space-3); align-items: flex-start;">
+              <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); min-width: 40px; margin-top: 2px;">Bike</div>
+              <div style="font-size: 0.9rem; color: var(--gray-dark);">Clinton Street Greenway and the SE Woodward protected bike lanes are both nearby. Secure bike parking out front.</div>
+            </div>
+            <div style="display: flex; gap: var(--space-3); align-items: flex-start;">
+              <div style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--primary); min-width: 40px; margin-top: 2px;">Car</div>
+              <div style="font-size: 0.9rem; color: var(--gray-dark);">Street parking on Division and adjacent side streets. Free parking in the alley behind the shop (first come).</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background: var(--white);">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Common Questions</div>
+      <h2 class="section-title">FAQ</h2>
+      <p class="section-subtitle">The questions we hear most. If yours isn't here, just ask.</p>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question" aria-expanded="true">
+            How long does a typical repair take?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            It depends on what you need. Flat repairs and brake adjustments are usually same-day or next-day. Basic tune-ups are 1&ndash;2 days. Standard tune-ups and more involved repairs are typically 2&ndash;4 business days. Full overhauls can take 4&ndash;7 days depending on parts availability. We'll give you a specific estimate when you drop the bike off, and we'll call if anything changes.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do I need an appointment to drop off my bike?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            No appointment needed for most repairs. Just bring it in during shop hours and we'll take a look. For bike fittings, you do need an appointment since those are booked by session with Keiko. If you're coming in for a larger service and want to make sure we can see it the same day, it's worth calling ahead.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What's your pricing policy on parts?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            We charge cost on parts. No markup. Labor rates are how we make our money, so you're not getting marked up on a chain or a brake pad. If a repair requires parts you'd rather source yourself, we're happy to install them, though we can't warranty parts we didn't supply.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you work on all bike brands?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Yes. We work on everything from department store bikes to high-end carbon race bikes. The only bikes we typically don't work on are those with proprietary proprietary systems that require dealer-specific tools we don't carry. If you're unsure, call and describe your bike and we'll tell you honestly whether we can help.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer a warranty on repairs?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Yes. We stand behind all our labor for 30 days. If something we worked on fails within 30 days due to our workmanship, we'll fix it free. Parts we supply are covered by the manufacturer's warranty. If we find something we missed, we'll own it and make it right without an argument.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I watch while my bike gets worked on?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Absolutely. The shop floor is open and we're happy to walk you through what we're doing. We'd rather have customers who understand their bikes. If you want to learn, ask questions.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What do I need to bring for a rental?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            A valid credit card for the security hold ($300), and that's it. We'll fit you to the bike, go over the controls, and hand you a helmet and lock. Renters must be 18+ or accompanied by a parent or guardian. No cycling experience necessary for city bikes.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you buy used bikes?
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            Occasionally. We take in used bikes on consignment when we have space on the floor, and we sometimes buy bikes outright if they're a good fit for our inventory. Bring it in and we'll take a look. We can't quote values over the phone or email.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-inner">
+      <h2 class="cta-title">Still Have Questions? Just Call Us.</h2>
+      <div class="cta-actions">
+        <a href="tel:5035550142" class="btn btn-dark">Call (503) 555-0142</a>
+        <a href="mailto:hello@spokeandchain.com" class="btn btn-secondary">Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-mark"></div>
+          <div class="footer-logo-name">Spoke &amp; Chain Cyclery</div>
+        </div>
+        <p class="footer-tagline">Portland's neighborhood bike shop. We keep you rolling through whatever the city throws at you.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="social-link" aria-label="Facebook">FB</a>
+          <a href="#" class="social-link" aria-label="Strava">ST</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="services.html" class="footer-link">Services &amp; Pricing</a>
+          <a href="services.html#rentals" class="footer-link">Rentals</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Services</div>
+        <div class="footer-links">
+          <a href="services.html#repair" class="footer-link">Bike Repair</a>
+          <a href="services.html#fitting" class="footer-link">Bike Fitting</a>
+          <a href="services.html#tuneups" class="footer-link">Tune-Ups</a>
+          <a href="services.html#rentals" class="footer-link">Bike Rentals</a>
+          <a href="services.html#accessories" class="footer-link">Parts &amp; Accessories</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <p class="footer-contact-item"><a href="tel:5035550142">(503) 555-0142</a></p>
+        <p class="footer-contact-item"><a href="mailto:hello@spokeandchain.com">hello@spokeandchain.com</a></p>
+        <p class="footer-contact-item">Portland, OR</p>
+        <p class="footer-contact-item">Mon&ndash;Fri: 9am&ndash;7pm<br>Sat: 8am&ndash;6pm<br>Sun: 10am&ndash;4pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Spoke &amp; Chain Cyclery. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#" class="footer-legal-link">Privacy Policy</a>
+        <a href="#" class="footer-legal-link">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        button.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Consultation — Crestline Wealth Advisors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-name">Crestline Wealth</span>
+      <span class="logo-tag">Advisors &amp; Planners</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn--navy header-cta">Schedule a Consultation</a>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container--narrow">
+    <p class="section-label" style="text-align:center;">Schedule a Consultation</p>
+    <h1>Start with a Conversation</h1>
+    <p>Your first meeting is complimentary and confidential. We'll listen, and we won't pitch you anything.</p>
+  </div>
+</section>
+
+<!-- Contact Main -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Form -->
+      <div class="contact-form-wrap">
+        <p class="section-label">Request a Consultation</p>
+        <h2>Tell Us About Your Situation</h2>
+        <p class="form-intro">The more context you share, the better prepared we'll be for our first conversation. All information is kept strictly confidential.</p>
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Margaret" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Whitfield" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(919) 555-0100">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="age-range">Age Range</label>
+            <select id="age-range" name="age_range">
+              <option value="" disabled selected>Select your age range</option>
+              <option>Under 40</option>
+              <option>40 – 49</option>
+              <option>50 – 59</option>
+              <option>60 – 69</option>
+              <option>70 or older</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="assets">Investable Assets (approximate)</label>
+            <select id="assets" name="investable_assets">
+              <option value="" disabled selected>Select a range</option>
+              <option>Under $250,000</option>
+              <option>$250,000 – $499,999</option>
+              <option>$500,000 – $999,999</option>
+              <option>$1,000,000 – $2,499,999</option>
+              <option>$2,500,000 – $4,999,999</option>
+              <option>$5,000,000 or more</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="concern">Primary Financial Concern</label>
+            <select id="concern" name="primary_concern">
+              <option value="" disabled selected>What brings you to us?</option>
+              <option>Retirement planning &amp; income</option>
+              <option>Investment management</option>
+              <option>Estate planning &amp; legacy</option>
+              <option>Tax strategy</option>
+              <option>Business exit / transition</option>
+              <option>Inheritance or windfall</option>
+              <option>Widowhood / divorce financial planning</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message" placeholder="Share any context that would help us prepare for our first conversation. There are no wrong answers here."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" style="width: 100%; font-size: 1rem; padding: 1rem;">Request a Consultation</button>
+          <p style="font-size: 0.75rem; color: var(--gray); text-align: center; margin-top: 1rem;">We respond within one business day. Your information is never shared or sold.</p>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info-section">
+        <p class="section-label">Our Office</p>
+        <h2>Reach Us Directly</h2>
+        <div class="gold-rule gold-rule--left"></div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <strong>Office Address</strong>
+            <p>480 Crestline Drive, Suite 300<br>Raleigh, NC 27601<br>Located in the Crestline Office Park, free parking available.</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <strong>Phone</strong>
+            <p><a href="tel:+19195550192" style="color: var(--accent);">(919) 555-0192</a><br>Monday through Friday, 8:30am – 5:30pm ET</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <strong>Email</strong>
+            <p><a href="mailto:hello@crestlinewealth.com" style="color: var(--accent);">hello@crestlinewealth.com</a><br>We respond within one business day.</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon"><i class="fa-solid fa-video"></i></div>
+          <div>
+            <strong>Virtual Meetings Available</strong>
+            <p>We work with clients throughout North Carolina and can conduct all meetings via Zoom or phone if preferred. In-person meetings available by appointment.</p>
+          </div>
+        </div>
+
+        <!-- Office exterior photo -->
+        <div class="map-placeholder">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--alt">
+  <div class="container--narrow">
+    <div class="section-header">
+      <p class="section-label">Common Questions</p>
+      <h2>What People Ask Before Getting Started</h2>
+      <div class="gold-rule"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">
+          What does "fiduciary" actually mean?
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="faq-answer">
+          A fiduciary is legally required to act in your best interest at all times. This is a higher standard than the "suitability" standard that many broker-dealers operate under, which only requires that a recommendation be "suitable" — not necessarily optimal. As an RIA, we are bound to the fiduciary standard every time we give advice.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          How are you paid? Are there hidden fees?
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="faq-answer">
+          We are a fee-only firm. Our only revenue comes from fees paid directly by our clients — either as a percentage of assets under management (0.75–1.25% annually) or as flat planning fees. We receive no commissions, no referral payments, and no compensation from any product provider. All fees are disclosed in writing before you engage us. Our ADV Part 2 contains the complete fee schedule.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you have a minimum asset requirement?
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="faq-answer">
+          Our standard minimum is $500,000 in investable assets. This allows us to do comprehensive planning that meaningfully impacts your financial outcomes. We occasionally make exceptions for clients who are on a strong savings trajectory and expect to reach that threshold within a few years. We're happy to have an initial conversation regardless.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          What happens in the first meeting?
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="faq-answer">
+          The first meeting is 60 minutes and is entirely about you. We'll ask about your current situation, your goals, your concerns, and what's worked or hasn't worked in your financial life so far. We won't pitch products or push you to make any decisions. At the end, we'll give you an honest sense of whether we think we can help and what working together would look like. There's no pressure and no obligation.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you manage investments directly, or use outside managers?
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="faq-answer">
+          We manage investments directly for our clients. Accounts are held in custody at Charles Schwab or Fidelity Investments — large, reputable custodians where you retain direct ownership of all assets. We have trading authority on your accounts but can never move money to ourselves. You receive statements directly from the custodian independent of anything we send.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          What's your investment philosophy?
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="faq-answer">
+          We follow an evidence-based, passive-leaning investment approach. The academic evidence strongly supports diversified, low-cost portfolios over active stock-picking or market timing. We use index funds and ETFs as core holdings and tilt portfolios based on factors supported by decades of research. We do not chase performance, trade frequently, or speculate. Our goal is a portfolio you can hold through market cycles without making costly emotional decisions.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Regulatory Disclosures -->
+<section class="section">
+  <div class="container--narrow">
+    <div class="section-header">
+      <p class="section-label">Regulatory Information</p>
+      <h2>Disclosures</h2>
+      <div class="gold-rule"></div>
+    </div>
+    <div style="background-color: var(--white); border: 1px solid var(--gray-light); border-radius: var(--radius-md); padding: 2.5rem;">
+      <p style="font-size: 0.875rem; color: var(--gray); line-height: 1.85; margin-bottom: 1.25rem;"><strong style="color: var(--gray-dark);">Registration:</strong> Crestline Wealth Advisors, LLC is a Registered Investment Adviser with the State of North Carolina, CRD# [000000]. Registration does not imply a certain level of skill or training. Our Form ADV Part 2, which describes our business practices, services, fees, and potential conflicts of interest, is available upon request or at <a href="https://adviserinfo.sec.gov" target="_blank" rel="noopener" style="color: var(--accent);">adviserinfo.sec.gov</a>.</p>
+      <p style="font-size: 0.875rem; color: var(--gray); line-height: 1.85; margin-bottom: 1.25rem;"><strong style="color: var(--gray-dark);">Investment Risk:</strong> All investing involves risk, including the possible loss of principal. Past performance is not indicative of future results. The value of investments may fluctuate, and investors may receive back less than they invest. Diversification and asset allocation do not guarantee a profit or protect against loss.</p>
+      <p style="font-size: 0.875rem; color: var(--gray); line-height: 1.85; margin-bottom: 1.25rem;"><strong style="color: var(--gray-dark);">No Tax or Legal Advice:</strong> The information on this website and provided in meetings is for general informational and educational purposes only. It does not constitute tax advice or legal advice. Please consult a qualified CPA or attorney for guidance on your specific tax or legal situation.</p>
+      <p style="font-size: 0.875rem; color: var(--gray); line-height: 1.85;"><strong style="color: var(--gray-dark);">Scope of Services:</strong> Crestline Wealth Advisors provides investment advisory and financial planning services only. We do not sell insurance products, securities as a broker-dealer, or any product for which we receive third-party compensation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-name">Crestline Wealth</span>
+          <span class="logo-tag">Advisors &amp; Planners</span>
+        </div>
+        <p class="footer-tagline">Independent, fee-only financial planning for individuals and families navigating complex financial lives.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About the Firm</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact &amp; Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Retirement Planning</a></li>
+          <li><a href="services.html">Investment Management</a></li>
+          <li><a href="services.html">Estate Planning</a></li>
+          <li><a href="services.html">Tax Strategy</a></li>
+          <li><a href="services.html">Business Owner Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          480 Crestline Drive, Suite 300<br>
+          Raleigh, NC 27601<br>
+          <br>
+          <a href="tel:+19195550192">(919) 555-0192</a><br>
+          <a href="mailto:hello@crestlinewealth.com">hello@crestlinewealth.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-disclosure">
+      <p>Crestline Wealth Advisors, LLC is a Registered Investment Adviser with the State of North Carolina. Registration does not imply a certain level of skill or training. The information on this website is for informational purposes only and does not constitute investment advice. Past performance is not indicative of future results. Investing involves risk, including the possible loss of principal. Please review our ADV Part 2 for a full description of our services, fees, and conflicts of interest before engaging our services.</p>
+    </div>
+    <div class="footer-bottom" style="margin-top: 1.5rem;">
+      <div class="footer-bottom-row">
+        <p>&copy; 2024 Crestline Wealth Advisors, LLC. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">ADV Part 2</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Get a free estimate from Bedrock Concrete &amp; Masonry in Denver, CO. Call (555) 628-4730 or fill out our estimate request form. Frank responds within one business day.">
+<title>Get a Free Estimate | Bedrock Concrete &amp; Masonry | Denver, CO</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Bedrock</span>
+          <span class="logo-sub">Concrete &amp; Masonry</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta">Get Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">/</span>
+        <span>Contact</span>
+      </div>
+      <h1>Get a Free Estimate</h1>
+      <p>Fill out the form and Frank will follow up within one business day to schedule a site visit. No obligation, no pressure.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <div class="form-card">
+        <h2>Estimate Request</h2>
+        <p class="form-intro">Tell us about your project. The more detail you provide, the more accurate our initial response will be. We'll schedule a site visit to finalize the estimate.</p>
+
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name <span class="required">*</span></label>
+              <input type="text" id="first-name" name="first_name" placeholder="Frank" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name <span class="required">*</span></label>
+              <input type="text" id="last-name" name="last_name" placeholder="Russo" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="project-address">Project Address <span class="required">*</span></label>
+            <input type="text" id="project-address" name="project_address" placeholder="123 Main Street, Denver, CO 80202" required>
+          </div>
+
+          <div class="form-group">
+            <label for="service-type">Service Type <span class="required">*</span></label>
+            <select id="service-type" name="service_type" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option value="flatwork">Concrete Flatwork (Driveway, Patio, Walkway)</option>
+              <option value="stamped">Stamped or Decorative Concrete</option>
+              <option value="foundation-new">Foundation -- New Pour</option>
+              <option value="foundation-repair">Foundation -- Repair</option>
+              <option value="retaining-wall">Retaining Wall</option>
+              <option value="masonry-block">Masonry -- Block or Brick Wall</option>
+              <option value="masonry-chimney">Masonry -- Chimney Repair or Rebuild</option>
+              <option value="masonry-veneer">Masonry -- Stone Veneer</option>
+              <option value="commercial">Commercial Concrete</option>
+              <option value="repair-crack">Concrete Repair -- Cracks</option>
+              <option value="repair-lifting">Concrete Repair -- Slab Lifting</option>
+              <option value="repair-resurfacing">Concrete Repair -- Resurfacing</option>
+              <option value="other">Other / Not Sure</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="project-description">Project Description <span class="required">*</span></label>
+            <textarea id="project-description" name="project_description" rows="5" placeholder="Describe your project in as much detail as you have. What's the current situation? What do you want to have when the work is done? Any existing damage or conditions we should know about?" required></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="square-footage">Approximate Square Footage</label>
+              <input type="number" id="square-footage" name="square_footage" placeholder="e.g. 400">
+            </div>
+            <div class="form-group">
+              <label for="timeline">Desired Timeline</label>
+              <select id="timeline" name="timeline">
+                <option value="" disabled selected>When do you want to start?</option>
+                <option value="asap">As soon as possible</option>
+                <option value="1month">Within 1 month</option>
+                <option value="3months">Within 3 months</option>
+                <option value="6months">Within 6 months</option>
+                <option value="planning">Just planning / getting estimates</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="project-type">Residential or Commercial?</label>
+            <select id="project-type" name="project_type">
+              <option value="" disabled selected>Select one...</option>
+              <option value="residential">Residential -- Single Family Home</option>
+              <option value="residential-multi">Residential -- Multi-Family</option>
+              <option value="commercial-small">Commercial -- Small Business</option>
+              <option value="commercial-large">Commercial -- Larger Property</option>
+              <option value="hoa">HOA or Common Area</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="referral">How Did You Hear About Us?</label>
+            <select id="referral" name="referral">
+              <option value="" disabled selected>Select one...</option>
+              <option value="google">Google Search</option>
+              <option value="neighbor">Neighbor or Friend</option>
+              <option value="nextdoor">Nextdoor</option>
+              <option value="houzz">Houzz</option>
+              <option value="thumbtack">Thumbtack</option>
+              <option value="yard-sign">Yard Sign</option>
+              <option value="repeat">Returning Customer</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="additional-notes">Anything Else We Should Know?</label>
+            <textarea id="additional-notes" name="additional_notes" rows="3" placeholder="Access restrictions, preferred contact times, questions about materials or process..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit btn-lg">
+            <i class="fa-solid fa-paper-plane"></i>
+            Submit Estimate Request
+          </button>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+
+        <div class="sidebar-card">
+          <h3>Contact Bedrock</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <a href="tel:5556284730">(555) 628-4730</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <a href="mailto:frank@bedrockconcrete.com">frank@bedrockconcrete.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Service Area</strong>
+              <span>Denver Metro, CO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Business Hours</h3>
+          <ul class="hours-list">
+            <li><strong>Monday</strong> <span>7:00am -- 5:00pm</span></li>
+            <li><strong>Tuesday</strong> <span>7:00am -- 5:00pm</span></li>
+            <li><strong>Wednesday</strong> <span>7:00am -- 5:00pm</span></li>
+            <li><strong>Thursday</strong> <span>7:00am -- 5:00pm</span></li>
+            <li><strong>Friday</strong> <span>7:00am -- 5:00pm</span></li>
+            <li><strong>Saturday</strong> <span>8:00am -- 2:00pm</span></li>
+            <li><strong>Sunday</strong> <span>Closed</span></li>
+          </ul>
+          <p style="font-size: 0.85rem; color: var(--gray-text); margin-top: 1rem; margin-bottom: 0;">Estimates and emergency consultations available outside these hours. Call the main number for after-hours requests.</p>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>What to Expect</h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; gap: 0.875rem;">
+              <div style="width: 32px; height: 32px; background: var(--brick-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; font-weight: 700; flex-shrink: 0;">1</div>
+              <div>
+                <strong style="font-size: 0.9rem; color: var(--primary-dark); display: block;">Submit Request</strong>
+                <span style="font-size: 0.85rem; color: var(--gray-text);">Fill out the form or give us a call.</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.875rem;">
+              <div style="width: 32px; height: 32px; background: var(--brick-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; font-weight: 700; flex-shrink: 0;">2</div>
+              <div>
+                <strong style="font-size: 0.9rem; color: var(--primary-dark); display: block;">Frank Follows Up</strong>
+                <span style="font-size: 0.85rem; color: var(--gray-text);">Within one business day to schedule a site visit.</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.875rem;">
+              <div style="width: 32px; height: 32px; background: var(--brick-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; font-weight: 700; flex-shrink: 0;">3</div>
+              <div>
+                <strong style="font-size: 0.9rem; color: var(--primary-dark); display: block;">Site Visit</strong>
+                <span style="font-size: 0.85rem; color: var(--gray-text);">Frank visits the site, measures, and evaluates the job.</span>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.875rem;">
+              <div style="width: 32px; height: 32px; background: var(--brick-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.8rem; font-weight: 700; flex-shrink: 0;">4</div>
+              <div>
+                <strong style="font-size: 0.9rem; color: var(--primary-dark); display: block;">Written Estimate</strong>
+                <span style="font-size: 0.85rem; color: var(--gray-text);">You get a detailed, itemized estimate within 48 hours of the visit.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-card" style="background: var(--primary-dark); border-color: transparent;">
+          <h3 style="color: var(--white); border-color: var(--brick-red);">Credentials</h3>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+              <i class="fa-solid fa-certificate" style="color: var(--sand); width: 16px;"></i>
+              <span style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Colorado State Licensed</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+              <i class="fa-solid fa-shield-halved" style="color: var(--sand); width: 16px;"></i>
+              <span style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">$2M Liability Insurance</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+              <i class="fa-solid fa-hard-hat" style="color: var(--sand); width: 16px;"></i>
+              <span style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">Worker's Compensation on All Crew</span>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: center;">
+              <i class="fa-solid fa-graduation-cap" style="color: var(--sand); width: 16px;"></i>
+              <span style="font-size: 0.9rem; color: rgba(255,255,255,0.8);">ACI Field Testing Certified</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section section-surface">
+  <div class="container">
+    <div class="section-header">
+      <span class="label">Common Questions</span>
+      <h2>Before You Call, Check Here First</h2>
+      <p>The questions we hear most often, answered honestly.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How long does a concrete driveway or patio take to cure before we can use it?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Fresh concrete reaches about 70% of its design strength within 7 days and is generally ready for foot traffic after 24 to 48 hours depending on temperature and mix design. We ask that you keep vehicle traffic off new driveways for at least 7 days, and heavy vehicles like loaded trucks or RVs for 28 days. We use curing compound on all pours to slow moisture loss and help the concrete reach full strength. We'll give you specific guidance based on your project and the weather at the time of pour.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Why do concrete slabs crack, and does that mean something went wrong?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Concrete cracks. That's not a defect -- it's a physical property of the material. All concrete shrinks slightly as it cures, and that shrinkage causes cracking. The goal of proper installation is to control where cracks occur, not to eliminate them entirely. Control joints are scored or saw-cut into the slab to give the concrete a predetermined weak spot to crack along, keeping cracks out of the middle of the pour and in straight, predictable lines. Hair-thin cracks along control joints are normal and expected. Wide cracks, cracks through the middle of a slab with no control joint nearby, or cracks accompanied by movement are different issues that warrant attention.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do I need a permit for a new driveway, patio, or retaining wall?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>It depends on your jurisdiction and the scope of work. In most Denver metro municipalities, residential concrete flatwork (driveways, patios, walkways) does not require a permit unless it connects to public sidewalk, in which case a right-of-way permit is typically needed. Retaining walls over 4 feet in height generally require a permit and engineered drawings in Jefferson, Arapahoe, and Douglas counties. Foundation work almost always requires a permit. We handle permit applications on all work that requires them. If you're not sure whether your project needs a permit, ask us and we'll find out before we start.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How does concrete hold up through Denver's winters and freeze-thaw cycles?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Denver's climate is genuinely tough on concrete. You can have a 65-degree afternoon followed by overnight temps below 20 in the same week. That freeze-thaw cycling is the primary cause of surface spalling, delamination, and joint deterioration. We address this with air-entrained concrete mixes, which introduce microscopic air voids that give water somewhere to expand when it freezes, dramatically reducing surface damage. We also specify proper 4,000 psi mix designs for exterior work, use fiber reinforcement in appropriate applications, and place control joints to manage shrinkage cracks. Properly installed, concrete flatwork should last 30-plus years in Colorado with minimal maintenance.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Can you work in the winter or do you shut down from November through March?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>We work year-round. Winter concrete work requires more planning and care, but it's very doable with the right approach. We use heated enclosures and blankets to protect fresh pours from freezing during curing, adjust our mix design for low-temperature placement, and schedule around weather windows that are genuinely unsuitable (pouring in an active snowstorm is not a good idea for anyone). We will not pour concrete when ground temperatures are below freezing without proper protection in place. We're transparent about what winter work requires and will not cut corners to get a job done in cold weather that will fail in the spring.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA CITIES -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="label">Service Area</span>
+      <h2>Cities and Towns We Serve</h2>
+      <p>We work throughout the Denver metro area. If your city isn't listed, call us. We'll let you know if we can make the trip.</p>
+    </div>
+    <div class="cities-grid">
+      <div class="city-tag">Denver</div>
+      <div class="city-tag">Lakewood</div>
+      <div class="city-tag">Aurora</div>
+      <div class="city-tag">Arvada</div>
+      <div class="city-tag">Westminster</div>
+      <div class="city-tag">Thornton</div>
+      <div class="city-tag">Englewood</div>
+      <div class="city-tag">Centennial</div>
+      <div class="city-tag">Littleton</div>
+      <div class="city-tag">Highlands Ranch</div>
+      <div class="city-tag">Parker</div>
+      <div class="city-tag">Castle Rock</div>
+      <div class="city-tag">Boulder</div>
+      <div class="city-tag">Broomfield</div>
+      <div class="city-tag">Louisville</div>
+      <div class="city-tag">Lafayette</div>
+      <div class="city-tag">Wheat Ridge</div>
+      <div class="city-tag">Golden</div>
+      <div class="city-tag">Commerce City</div>
+      <div class="city-tag">Glendale</div>
+      <div class="city-tag">Sheridan</div>
+      <div class="city-tag">Lone Tree</div>
+      <div class="city-tag">Ken Caryl</div>
+      <div class="city-tag">Castle Pines</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Bedrock</span>
+            <span class="logo-sub">Concrete &amp; Masonry</span>
+          </div>
+        </a>
+        <p>Licensed and bonded concrete and masonry contractor serving the Denver metro area since 2003. Owner-operated with 22 years of experience and 1,200+ completed projects.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#flatwork">Concrete Flatwork</a></li>
+          <li><a href="services.html#foundations">Foundation Work</a></li>
+          <li><a href="services.html#retaining-walls">Retaining Walls</a></li>
+          <li><a href="services.html#masonry">Masonry Work</a></li>
+          <li><a href="services.html#commercial">Commercial Concrete</a></li>
+          <li><a href="services.html#repair">Concrete Repair</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Frank</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Get Estimate</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:5556284730">(555) 628-4730</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:frank@bedrockconcrete.com">frank@bedrockconcrete.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Denver, CO 80202</span>
+        </div>
+        <h4 style="margin-top:1.5rem;">Hours</h4>
+        <ul class="footer-hours">
+          <li>Mon -- Fri: 7:00am -- 5:00pm</li>
+          <li>Saturday: 8:00am -- 2:00pm</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2025 Bedrock Concrete &amp; Masonry. All rights reserved.</span>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>const t=document.querySelector('.nav-toggle');const n=document.querySelector('.nav');if(t&&n){t.addEventListener('click',()=>{const o=n.classList.toggle('nav-open');t.classList.toggle('active');t.setAttribute('aria-expanded',o);});}</script>
+</body>
+</html>

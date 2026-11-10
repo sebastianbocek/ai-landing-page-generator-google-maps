@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aube — Botanical skincare, launching soon</title>
+  <meta name="description" content="Aube is a small-batch botanical skincare line made with cold-pressed oils and nothing you can't pronounce. Join the waitlist for early access and 20% off.">
+  <meta property="og:title" content="Aube — launching soon">
+  <meta property="og:description" content="Small-batch botanical skincare. Join the waitlist for early access.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-image.svg">
+  <meta name="theme-color" content="#0d1024">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Ccircle cx='17' cy='21' r='9' fill='none' stroke='%23e9c46a' stroke-width='2.4'/%3E%3Cpath d='M3 21h28M17 3v5M6.5 8.5l3.2 3.2M27.5 8.5l-3.2 3.2' stroke='%23e9c46a' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="bg" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><div class="stars"></div><div class="grain"></div></div>
+  <svg class="botanical left" viewBox="0 0 360 520" aria-hidden="true"><path d="M60 520C80 400 120 300 200 200S330 60 340 10"/><path d="M150 290c-40-10-80-40-96-86 46 4 86 34 96 86Z"/><path d="M178 244c10-44 40-80 88-92-6 46-40 80-88 92Z"/><path d="M112 370c-44 0-86-22-110-62 46-6 90 18 110 62Z"/><path d="M232 170c-34-24-54-64-50-110 40 20 58 62 50 110Z"/><path d="M270 128c24-34 64-52 104-46-18 40-60 56-104 46Z"/><path d="M96 430c34-24 78-30 116-10-34 26-78 30-116 10Z"/><path d="M300 80c-4-22 4-44 22-56 6 22-2 44-22 56Z"/></svg>
+  <svg class="botanical right" viewBox="0 0 360 520" aria-hidden="true"><path d="M60 520C80 400 120 300 200 200S330 60 340 10"/><path d="M150 290c-40-10-80-40-96-86 46 4 86 34 96 86Z"/><path d="M178 244c10-44 40-80 88-92-6 46-40 80-88 92Z"/><path d="M112 370c-44 0-86-22-110-62 46-6 90 18 110 62Z"/><path d="M232 170c-34-24-54-64-50-110 40 20 58 62 50 110Z"/><path d="M270 128c24-34 64-52 104-46-18 40-60 56-104 46Z"/><path d="M96 430c34-24 78-30 116-10-34 26-78 30-116 10Z"/><path d="M300 80c-4-22 4-44 22-56 6 22-2 44-22 56Z"/></svg>
+
+  <header class="top">
+    <a class="logo" href="index.html" aria-label="Aube home"><svg viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="21" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 21h28M17 3v5M6.5 8.5l3.2 3.2M27.5 8.5l-3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-zt="brandName">Aube</span></a>
+    <a class="contact" href="mailto:hello@aube.example">hello@aube.example</a>
+  </header>
+
+  <main id="main">
+    <div class="stage">
+      <p class="eyebrow fade">Launching this winter</p>
+      <h1 class="fade d1" data-zt="heading">Something <em>beautiful</em> is blooming.</h1>
+      <p class="lead fade d2">Aube is small-batch botanical skincare made with cold-pressed oils and nothing you can't pronounce. We're putting the final touches on our first collection.</p>
+
+      <section class="fade d3" aria-label="Countdown to launch">
+        <ol class="countdown" id="countdown" role="timer" aria-live="off">
+          <li><b data-unit="days">67</b><span>Days</span></li>
+          <li><b data-unit="hours">00</b><span>Hours</span></li>
+          <li><b data-unit="minutes">00</b><span>Minutes</span></li>
+          <li><b data-unit="seconds">00</b><span>Seconds</span></li>
+        </ol>
+        <p class="launch-date">Doors open <strong id="launch-date">1 December 2026, 9:00</strong></p>
+      </section>
+
+      <div class="fade d4">
+        <!-- Wire this form: set action to your Formspree endpoint (https://formspree.io/f/xxxx),
+             or add name="waitlist" data-netlify="true" on Netlify, then remove data-demo-form.
+             Mailchimp/ConvertKit/Buttondown embed URLs work too. -->
+        <form class="signup" action="#" method="post" data-demo-form novalidate>
+          <label class="visually-hidden" for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+          <button type="submit">Notify me</button>
+        </form>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+        <p class="privacy">Early access + 20% off launch day. No spam, unsubscribe anytime.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bottom">
+    <span>&copy; <span data-year>2026</span> <span data-zt="brandName">Aube</span> Botanicals · <a class="variant-link" href="dawn.html">Dawn version</a></span>
+    <ul class="socials">
+      <li><a href="#main" aria-label="Aube on Instagram"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg></a></li>
+      <li><a href="#main" aria-label="Aube on Pinterest"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 20l2-8.5M11 14.5c.6.9 1.5 1.3 2.5 1.3 2.3 0 3.8-2.2 3.8-4.6A5 5 0 0 0 12 6.5 5.2 5.2 0 0 0 6.7 11.6c0 1 .4 2 1.2 2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a></li>
+      <li><a href="#main" aria-label="Aube on TikTok"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 2.5 2.5 4.5 5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a></li>
+      <li><a href="mailto:hello@aube.example" aria-label="Email Aube"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+    </ul>
+  </footer>
+</body>
+</html>

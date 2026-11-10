@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Free Estimate — ProFinish Collision Center</title>
+  <meta name="description" content="Request a free estimate or get in touch with ProFinish Collision Center in St. Louis. We respond within 24 hours and handle all insurance.">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body class="page-body">
+
+
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark">PF</div>
+      <div class="logo-text">
+        <span class="logo-name">ProFinish</span>
+        <span class="logo-tagline">Collision Center</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" role="navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn-primary header-cta">Free Estimate</a>
+  </div>
+</header>
+
+<!-- ===================== PAGE HERO ===================== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>Contact</span>
+    </div>
+    <h1>Get a Free Estimate</h1>
+    <p>Fill out the form below and we'll get back to you within one business day with a written estimate. No obligation, no pressure.</p>
+  </div>
+</section>
+
+<!-- ===================== CONTACT FORM + SIDEBAR ===================== -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form">
+        <h3>Request Your Free Estimate</h3>
+        <p class="form-subtitle">We'll review your information and reach out within 24 hours. You can also call or email us directly.</p>
+
+        <form action="#" method="post">
+          <!-- Contact Info -->
+          <div class="form-section-title">Your Information</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Marcus" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Thompson" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(314) 555-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required>
+            </div>
+          </div>
+
+          <!-- Vehicle Info -->
+          <div class="form-section-title" style="margin-top: 8px;">Vehicle Information</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vehicle-year">Year</label>
+              <input type="number" id="vehicle-year" name="vehicle_year" placeholder="2021" min="1990" max="2025">
+            </div>
+            <div class="form-group">
+              <label for="vehicle-make">Make</label>
+              <input type="text" id="vehicle-make" name="vehicle_make" placeholder="Toyota">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vehicle-model">Model</label>
+              <input type="text" id="vehicle-model" name="vehicle_model" placeholder="Camry">
+            </div>
+            <div class="form-group">
+              <label for="vehicle-color">Color</label>
+              <input type="text" id="vehicle-color" name="vehicle_color" placeholder="Silver">
+            </div>
+          </div>
+
+          <!-- Damage Info -->
+          <div class="form-section-title" style="margin-top: 8px;">Damage Description</div>
+          <div class="form-group">
+            <label for="damage-type">Type of Damage</label>
+            <select id="damage-type" name="damage_type">
+              <option value="" disabled selected>Select damage type</option>
+              <option value="collision">Collision Damage</option>
+              <option value="dent">Dent / Ding</option>
+              <option value="hail">Hail Damage</option>
+              <option value="paint">Paint Damage / Scratch</option>
+              <option value="glass">Glass / Windshield</option>
+              <option value="frame">Frame or Structural</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="damage-description">Describe the Damage</label>
+            <textarea id="damage-description" name="damage_description" placeholder="Describe where the damage is located and how it happened. The more detail you include, the more accurate our initial estimate can be." rows="4"></textarea>
+          </div>
+
+          <!-- Insurance Info -->
+          <div class="form-section-title" style="margin-top: 8px;">Insurance Information</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="insurance-company">Insurance Company</label>
+              <select id="insurance-company" name="insurance_company">
+                <option value="" disabled selected>Select carrier</option>
+                <option value="state-farm">State Farm</option>
+                <option value="geico">GEICO</option>
+                <option value="allstate">Allstate</option>
+                <option value="progressive">Progressive</option>
+                <option value="usaa">USAA</option>
+                <option value="liberty-mutual">Liberty Mutual</option>
+                <option value="other">Other</option>
+                <option value="none">Paying Out of Pocket</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="claim-number">Claim Number (if known)</label>
+              <input type="text" id="claim-number" name="claim_number" placeholder="Optional">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="preferred-contact">Best Way to Reach You</label>
+            <select id="preferred-contact" name="preferred_contact">
+              <option value="phone">Phone call</option>
+              <option value="text">Text message</option>
+              <option value="email">Email</option>
+            </select>
+          </div>
+
+          <button type="submit" class="form-submit">Submit Estimate Request</button>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.36 12 19.79 19.79 0 011.3 3.36 2 2 0 013.28 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <p><a href="tel:+13145550156">(314) 555-0156</a></p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <p><a href="mailto:repairs@profinishcollision.com">repairs@profinishcollision.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Address</strong>
+              <p>St. Louis, MO<br>Directions available by phone</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <h3>Hours of Operation</h3>
+          <div class="hours-table">
+            <div class="hours-row">
+              <span class="day">Monday</span>
+              <span class="time">7:30am – 6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Tuesday</span>
+              <span class="time">7:30am – 6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Wednesday</span>
+              <span class="time">7:30am – 6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Thursday</span>
+              <span class="time">7:30am – 6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Friday</span>
+              <span class="time">7:30am – 6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Saturday</span>
+              <span class="time">8:00am – 2:00pm</span>
+            </div>
+            <div class="hours-row closed">
+              <span class="day">Sunday</span>
+              <span class="time">Closed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-card" style="padding: 0; overflow: hidden;">
+          <div class="map-placeholder"></div>
+          <div style="padding: 16px 20px;">
+            <p style="font-size: 0.85rem; color: var(--accent); margin-bottom: 4px; font-weight: 600;">St. Louis, Missouri</p>
+            <p style="font-size: 0.8rem; color: var(--text-lighter); margin-bottom: 0;">Call for exact address and directions.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section section--white">
+  <div class="container">
+    <div class="section-header section-header--center">
+      <div class="section-label">Common Questions</div>
+      <h2>Before You Call</h2>
+      <p>Answers to the questions we get most often. Still have one that's not here? Call us.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-question">
+          How long will my repair take?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>It depends on the extent of the damage. Minor dent removal and spot paint jobs are often done in 1–2 days. A full front or rear end reconstruction involving structural work, panel replacement, and paint typically takes 7–14 business days. We give you a time estimate upfront, and if the timeline changes due to parts availability or discovered damage, we call you before adjusting the schedule.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Do I need a rental car? How does that work?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>If your claim includes rental coverage (most collision claims do), we coordinate the rental directly when you drop off your vehicle. Enterprise picks you up from our shop. Your insurance is billed directly, and you pay nothing for the rental until you hit your daily limit or time limit. If you don't have rental coverage, we can get you a preferred rate through our local partner agencies.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Should I go through insurance or pay out of pocket?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>It depends on the cost of the repair relative to your deductible, and whether you're concerned about a rate increase. For minor damage under $1,000, paying out of pocket often makes sense. For anything significant, insurance typically saves you substantially. We'll give you an honest assessment of repair cost during your estimate so you can make an informed decision before you file anything. We never pressure you either way.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What does "direct repair facility" mean for my insurance?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Being a preferred or direct repair facility for an insurance company means we've agreed to certain processes that allow the insurer to skip sending an independent adjuster to your vehicle. In practice, this speeds up the approval process considerably. We submit the estimate digitally, they approve it, and we start work. You're not required to use a direct repair facility — you always have the right to choose your own shop, regardless of what an insurance representative tells you.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Is my repair actually warranted for life?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes. For as long as you own the vehicle, any defect in materials or workmanship from a repair we performed is fixed at no charge. This covers paint adhesion, panel gaps, structural repair, and anything else we touched. The warranty does not cover new damage, wear and tear, or damage caused by subsequent accidents. If you sell the vehicle, the warranty transfers to the new owner.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Can I get an estimate without bringing my car in?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>You can submit photos through the form above and we'll give you a preliminary estimate. Keep in mind that photo estimates can miss hidden damage that's only visible once the panel is removed. For any structural damage or significant collision work, we strongly recommend bringing the vehicle in so we can assess it properly and give you a more accurate number before we commit to any timeline or cost.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Will my car look exactly like it did before?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>That's the goal every time. Our computerized color matching reads your vehicle's actual existing paint — not just the factory code — and adjusts for weathering and fade. On modern vehicles with complex paint systems like tri-coat metallic or matte finishes, we blend the repair into adjacent panels as needed so the color transition is invisible. We don't release a vehicle until we're satisfied with the match.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark">PF</div>
+          <div class="logo-text">
+            <span class="logo-name">ProFinish</span>
+            <span class="logo-tagline">Collision Center</span>
+          </div>
+        </a>
+        <p>St. Louis's trusted auto body and collision repair shop since 2003. I-CAR Gold certified with a lifetime warranty on all repairs.</p>
+        <a href="tel:+13145550156" class="footer-phone">(314) 555-0156</a>
+        <p class="footer-address">St. Louis, MO</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Collision Repair</a></li>
+          <li><a href="services.html">Paintless Dent Repair</a></li>
+          <li><a href="services.html">Paint &amp; Refinishing</a></li>
+          <li><a href="services.html">Frame Straightening</a></li>
+          <li><a href="services.html">Glass Replacement</a></li>
+          <li><a href="services.html">Insurance Claims</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Our Team</a></li>
+          <li><a href="about.html">Certifications</a></li>
+          <li><a href="about.html">Facility</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul>
+          <li><a href="contact.html">Mon–Fri: 7:30am – 6pm</a></li>
+          <li><a href="contact.html">Saturday: 8am – 2pm</a></li>
+          <li><a href="contact.html">Sunday: Closed</a></li>
+          <li><a href="contact.html">Free Estimates</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 ProFinish Collision Center. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

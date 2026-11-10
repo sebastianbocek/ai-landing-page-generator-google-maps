@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - FreshFiber Carpet Care</title>
+  <meta name="description" content="Contact FreshFiber Carpet Care for a free estimate. Call (973) 555-1234, email us, or fill out our online form. Same-day appointments available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-sparkles"></i></div>
+        FreshFiber
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <div class="header-cta-mobile">
+          <a href="contact.html" class="btn btn-primary">Get Free Quote</a>
+        </div>
+      </nav>
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta">Get Free Quote</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span class="current">Contact</span>
+      </div>
+      <h1>Get in Touch</h1>
+      <p>Request your free estimate, ask a question, or schedule your cleaning. We typically respond within one business hour.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Request a Free Estimate</h2>
+          <p>Fill out the form below and we'll get back to you with a detailed quote, usually within the hour.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="(973) 555-1234" required>
+              </div>
+              <div class="form-group">
+                <label for="service">Service Type *</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="residential-carpet">Residential Carpet Cleaning</option>
+                  <option value="commercial-carpet">Commercial Carpet Cleaning</option>
+                  <option value="upholstery">Upholstery Cleaning</option>
+                  <option value="tile-grout">Tile &amp; Grout Cleaning</option>
+                  <option value="area-rug">Area Rug Cleaning</option>
+                  <option value="water-damage">Water Damage Restoration</option>
+                  <option value="carpet-protection">Carpet Protection (Scotchgard)</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="rooms">Number of Rooms/Areas</label>
+                <input type="number" id="rooms" name="rooms" placeholder="e.g., 4" min="1">
+              </div>
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" placeholder="Tell us about your space, any specific concerns (pet stains, allergies, etc.), or questions you have."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; justify-content: center;">
+              <i class="fas fa-paper-plane"></i> Send Request
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div>
+                <h4>Our Office</h4>
+                <p>247 Main Street, Suite 12<br>Maplewood, NJ 07040</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+19735551234">(973) 555-1234</a></p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:hello@freshfibercarpet.com">hello@freshfibercarpet.com</a></p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4>Business Hours</h4>
+                <p>Monday - Friday: 7:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                <p style="margin-top: 4px; font-size: 0.85rem; color: var(--color-secondary); font-weight: 600;">Emergency water damage: 24/7</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder">
+            <i class="fas fa-map-marker-alt"></i> Map - 247 Main St, Maplewood, NJ
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the questions we hear most often from homeowners and business managers.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <button class="faq-question" aria-expanded="true">
+            How long does it take for carpets to dry after cleaning?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Most carpets are dry within 4 to 8 hours after hot water extraction cleaning. Drying time depends on humidity, carpet thickness, and air circulation. We leave air movers running when possible and recommend keeping windows open or fans on to speed things up. Our low-moisture cleaning method dries in as little as 1 to 2 hours.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is your cleaning safe for pets and kids?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Absolutely. We use plant-based, non-toxic cleaning solutions that are EPA Safer Choice certified. There are no harsh chemicals, no strong fumes, and no residues that could harm children or pets. Once the carpet is dry, it's completely safe for everyone -- including crawling babies and curious dogs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How often should carpets be professionally cleaned?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Most carpet manufacturers recommend professional cleaning every 12 to 18 months to maintain your warranty and keep carpets in good condition. If you have pets, young children, allergies, or heavy foot traffic, we recommend every 6 to 12 months. Regular cleaning extends the life of your carpet and improves indoor air quality.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you move furniture?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Yes, we move standard furniture like dining chairs, small tables, and lightweight items at no extra charge. For larger or heavier pieces -- like sectional sofas, beds, and entertainment centers -- we clean around and under them as much as possible. If you'd like us to move heavy furniture, just let us know ahead of time and we can arrange it.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What about tough stains like red wine, coffee, or pet urine?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>We treat tough stains with specialized pre-treatment solutions before the main cleaning. Most stains come out completely. For older or set-in stains (like pet urine that has soaked into the padding), we'll be upfront about what to expect. In some cases, we may recommend enzyme treatments or additional visits. We'll never promise results we can't deliver.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What areas do you serve?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>We serve communities throughout northern New Jersey, including Maplewood, South Orange, Montclair, West Orange, Millburn, Short Hills, Livingston, Summit, Chatham, Madison, Morristown, and Glen Ridge. If your town isn't listed, give us a call -- we may still be able to service your area or provide a referral.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Still Have Questions?</h2>
+      <p>We're happy to help. Give us a call and we'll walk you through everything -- from pricing to what to expect on cleaning day.</p>
+      <a href="tel:+19735551234" class="btn btn-accent btn-lg"><i class="fas fa-phone"></i> Call (973) 555-1234</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-sparkles"></i></div>
+            FreshFiber
+          </a>
+          <p>Professional carpet, upholstery, and tile cleaning for homes and businesses. Proudly serving northern New Jersey since 2010.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Carpet Cleaning</a>
+            <a href="services.html">Upholstery Cleaning</a>
+            <a href="services.html">Tile &amp; Grout</a>
+            <a href="services.html">Area Rug Cleaning</a>
+            <a href="services.html">Water Damage</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-location-dot"></i>
+            <span>247 Main Street, Suite 12<br>Maplewood, NJ 07040</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span><a href="tel:+19735551234">(973) 555-1234</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span><a href="mailto:hello@freshfibercarpet.com">hello@freshfibercarpet.com</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 FreshFiber Carpet Care. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+<script>
+  document.querySelectorAll('.faq-question').forEach(function(button) {
+    button.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>

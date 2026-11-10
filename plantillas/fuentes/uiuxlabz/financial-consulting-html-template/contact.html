@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — FINANZA Financial Consulting</title>
+  <meta name="description" content="Get in touch with FINANZA. Schedule a free consultation, ask a question, or visit our office. We're here to help.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="mailto:hello@finanza.com"><i class="fas fa-envelope"></i> hello@finanza.com</a>
+        <a href="tel:+18005551234"><i class="fas fa-phone"></i> +1 (800) 555-1234</a>
+      </div>
+      <div class="top-bar-right">
+        <span><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 6:00 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon"><i class="fas fa-chart-line"></i></span>
+        FINANZA
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Get a Consultation</a>
+      </div>
+      <button class="burger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-overlay"></div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header" style="background-image: url('assets/img/about.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+      <h1 class="reveal">Contact Us</h1>
+      <div class="breadcrumb reveal">
+        <a href="index.html">Home</a>
+        <span class="sep"><i class="fas fa-chevron-right"></i></span>
+        <span class="current">Contact</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Office Info -->
+        <div>
+          <div class="section-header" style="text-align:left;max-width:100%;margin-bottom:2rem;">
+            <span class="section-tag"><i class="fas fa-map-marker-alt"></i> Get In Touch</span>
+            <h2 style="text-align:left;">Let's Start a Conversation</h2>
+            <p style="text-align:left;">Whether you have a question about our services, pricing, or need a custom consultation — we're here for you.</p>
+          </div>
+
+          <div class="contact-info-card reveal">
+            <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <h4>Our Office</h4>
+              <p>233 S. Wacker Drive, Suite 4200<br>Chicago, IL 60606</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal">
+            <div class="info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (800) 555-1234<br>+1 (312) 555-5678</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@finanza.com<br>consulting@finanza.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal">
+            <div class="info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday - Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-wrap reveal">
+          <h3 style="font-family:var(--heading);color:var(--navy);font-size:1.3rem;margin-bottom:0.5rem;">Send Us a Message</h3>
+          <p style="color:var(--text-light);font-size:0.9rem;margin-bottom:1.5rem;">Fill out the form below and we'll respond within 24 business hours.</p>
+          <form data-form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Doe" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <option value="tax">Tax Planning</option>
+                <option value="audit">Audit &amp; Assurance</option>
+                <option value="advisory">Business Advisory</option>
+                <option value="wealth">Wealth Management</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your financial needs or questions..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary-custom" style="width:100%;justify-content:center;">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-ok">
+              <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. We'll be in touch within 24 hours.
+            </div>
+            <div class="form-err">
+              <i class="fas fa-exclamation-circle"></i> Please fill in all required fields correctly before submitting.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-text">
+        <h2>Prefer to Talk Directly?</h2>
+        <p>Call us at +1 (800) 555-1234 for an immediate conversation with one of our senior consultants.</p>
+      </div>
+      <a href="tel:+18005551234" class="btn-primary-custom btn-red">
+        Call Now <i class="fas fa-phone"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <span class="brand-dot"></span> FINANZA
+          </div>
+          <p>Delivering expert financial consulting since 2003. We help businesses and individuals navigate tax, audit, advisory, and wealth management with clarity and confidence.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html#tax">Tax Planning</a>
+            <a href="services.html#audit">Audit &amp; Assurance</a>
+            <a href="services.html#advisory">Business Advisory</a>
+            <a href="services.html#wealth">Wealth Management</a>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Informed</h4>
+          <p>Get quarterly insights on tax policy changes and financial strategies delivered to your inbox.</p>
+          <form class="footer-newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> FINANZA. All rights reserved.</p>
+        <p>
+          <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

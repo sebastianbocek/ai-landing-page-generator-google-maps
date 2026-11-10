@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Service | Crystal View Window Cleaning | Seattle, WA</title>
+  <meta name="description" content="Book window cleaning in Seattle. Request a free quote from Crystal View Window Cleaning. Most quotes done by phone in under five minutes." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+<body>
+
+
+
+<!-- Trust Bar -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <span class="trust-item"><i class="fa-solid fa-shield-halved"></i> Fully Insured</span>
+      <span class="trust-item"><i class="fa-solid fa-certificate"></i> WCR Certified</span>
+      <span class="trust-item"><i class="fa-solid fa-leaf"></i> Eco Pure-Water System</span>
+      <span class="trust-item"><i class="fa-solid fa-star"></i> 500+ Five-Star Reviews</span>
+      <span class="trust-item"><i class="fa-solid fa-phone"></i> (555) 583-2947</span>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <i class="fa-solid fa-window-restore"></i>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">Crystal View</span>
+        <span class="logo-sub">Window Cleaning</span>
+      </div>
+    </a>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <div class="header-cta">
+      <a href="tel:5555832947" class="header-phone">
+        <i class="fa-solid fa-phone"></i>
+        (555) 583-2947
+      </a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Book Now</a>
+    </div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <strong>Contact &amp; Book</strong>
+    </div>
+    <h1>Get a Free Estimate</h1>
+    <p>Most quotes are done by phone in under five minutes. Fill out the form and we'll get back to you the same business day.</p>
+  </div>
+</section>
+
+<!-- Contact & Booking -->
+<section class="section contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Booking Form -->
+      <div class="booking-form">
+        <h2>Book a Service</h2>
+        <p>Fill out the form below and we'll contact you to confirm your appointment and provide a final quote.</p>
+
+        <form action="#" method="post" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Jennifer" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Williams" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="jennifer@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="(206) 555-0100" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Property Address *</label>
+            <input type="text" id="address" name="address" placeholder="123 Lakeview Drive, Seattle, WA 98102" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service-type">Service Type *</label>
+              <select id="service-type" name="service_type" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="residential">Residential Window Cleaning</option>
+                <option value="commercial">Commercial Window Cleaning</option>
+                <option value="highrise">High-Rise / Rope Access</option>
+                <option value="solar">Solar Panel Cleaning</option>
+                <option value="gutter">Gutter Cleaning</option>
+                <option value="screen">Screen Cleaning &amp; Repair</option>
+                <option value="pressure">Pressure Washing</option>
+                <option value="postconstruction">Post-Construction Cleanup</option>
+                <option value="multiple">Multiple Services</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="property-type">Property Type *</label>
+              <select id="property-type" name="property_type" required>
+                <option value="" disabled selected>Select property type</option>
+                <option value="single-family">Single-Family Home</option>
+                <option value="townhouse">Townhouse / Condo</option>
+                <option value="multi-family">Multi-Family / Apartment</option>
+                <option value="storefront">Retail / Storefront</option>
+                <option value="office">Office Building</option>
+                <option value="industrial">Industrial / Warehouse</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="window-count">Approximate Window Count</label>
+              <select id="window-count" name="window_count">
+                <option value="" disabled selected>Estimate is fine</option>
+                <option value="1-10">1 to 10 windows</option>
+                <option value="11-20">11 to 20 windows</option>
+                <option value="21-35">21 to 35 windows</option>
+                <option value="36-50">36 to 50 windows</option>
+                <option value="50+">More than 50 windows</option>
+                <option value="unsure">Not sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="stories">Number of Stories</label>
+              <select id="stories" name="stories">
+                <option value="" disabled selected>Select stories</option>
+                <option value="1">1 story</option>
+                <option value="2">2 stories</option>
+                <option value="3">3 stories</option>
+                <option value="4+">4 or more stories</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="schedule">Preferred Schedule</label>
+            <select id="schedule" name="schedule">
+              <option value="" disabled selected>When works for you?</option>
+              <option value="asap">As soon as possible</option>
+              <option value="this-week">This week</option>
+              <option value="next-week">Next week</option>
+              <option value="this-month">This month</option>
+              <option value="flexible">I'm flexible</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Anything Else We Should Know?</label>
+            <textarea id="message" name="message" placeholder="Tell us about your property, any access challenges, specific concerns, or questions. The more detail you share, the more accurate your quote will be."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            Submit Request
+          </button>
+
+          <p style="margin-top:1rem; font-size:0.8rem; color:var(--gray-mid); text-align:center;">
+            We respond to all requests within one business day. For urgent needs, please call us directly at <a href="tel:5555832947" style="color:var(--primary); font-weight:600;">(555) 583-2947</a>.
+          </p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="contact-sidebar">
+
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-info-text">
+                <strong>Phone</strong>
+                <a href="tel:5555832947">(555) 583-2947</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <strong>Email</strong>
+                <a href="mailto:mike@crystalviewclean.com">mike@crystalviewclean.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-info-text">
+                <strong>Service Area</strong>
+                <span>Greater Seattle, WA<br>30-mile radius from Seattle</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="contact-info-text">
+                <strong>Owner</strong>
+                <span>Mike Sato, WCR Certified</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hours-card">
+          <h3>Business Hours</h3>
+          <div class="hours-row">
+            <span class="day">Monday</span>
+            <span class="time">7:00 AM - 6:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Tuesday</span>
+            <span class="time">7:00 AM - 6:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Wednesday</span>
+            <span class="time">7:00 AM - 6:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Thursday</span>
+            <span class="time">7:00 AM - 6:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Friday</span>
+            <span class="time">7:00 AM - 6:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Saturday</span>
+            <span class="time">8:00 AM - 4:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span class="day">Sunday</span>
+            <span class="time">Closed</span>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <h3>What to Expect</h3>
+          <div style="display:flex; flex-direction:column; gap:0.85rem; margin-top:0.5rem;">
+            <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+              <div style="width:28px; height:28px; background:var(--primary); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--white); font-size:0.7rem; font-weight:800; flex-shrink:0;">1</div>
+              <div>
+                <strong style="font-size:0.875rem; color:var(--dark); display:block; margin-bottom:0.15rem;">Submit your request</strong>
+                <span style="font-size:0.8rem; color:var(--gray-mid);">Fill out the form or give us a call.</span>
+              </div>
+            </div>
+            <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+              <div style="width:28px; height:28px; background:var(--primary); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--white); font-size:0.7rem; font-weight:800; flex-shrink:0;">2</div>
+              <div>
+                <strong style="font-size:0.875rem; color:var(--dark); display:block; margin-bottom:0.15rem;">We call with your quote</strong>
+                <span style="font-size:0.8rem; color:var(--gray-mid);">Most quotes done by phone in under five minutes.</span>
+              </div>
+            </div>
+            <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+              <div style="width:28px; height:28px; background:var(--primary); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--white); font-size:0.7rem; font-weight:800; flex-shrink:0;">3</div>
+              <div>
+                <strong style="font-size:0.875rem; color:var(--dark); display:block; margin-bottom:0.15rem;">We confirm the appointment</strong>
+                <span style="font-size:0.8rem; color:var(--gray-mid);">You'll get a text reminder the evening before.</span>
+              </div>
+            </div>
+            <div style="display:flex; align-items:flex-start; gap:0.75rem;">
+              <div style="width:28px; height:28px; background:var(--primary); border-radius:50%; display:flex; align-items:center; justify-content:center; color:var(--white); font-size:0.7rem; font-weight:800; flex-shrink:0;">4</div>
+              <div>
+                <strong style="font-size:0.875rem; color:var(--dark); display:block; margin-bottom:0.15rem;">We show up and get it done</strong>
+                <span style="font-size:0.8rem; color:var(--gray-mid);">30-minute heads-up text when we're on the way.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section faq-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2>Common Questions</h2>
+      <p>Answers to the questions we hear most often. Still have one? Give us a call.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How does the pure water system work, and why is it better?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Tap water contains dissolved minerals. When it evaporates, those minerals are left on the glass as water spots or a hazy film. Soap adds another layer of residue that actually attracts dust. Pure water is filtered down to 0 parts per million of dissolved solids through reverse osmosis and deionization. When it contacts the glass, it lifts and bonds with dirt particles. When it dries, it takes those particles with it. Nothing is left behind. No streaks, no spots, no soap film. Windows cleaned with pure water also stay cleaner longer because there's no soap residue for dust to adhere to.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Do I need to be home during the cleaning?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>For exterior-only services, you don't need to be home. We can access the exterior of most properties without entering. For interior window cleaning, we do need access to the inside of your home. Many clients leave a key or door code, and we handle the job while they're at work. We've been doing this for 11 years and understand the trust that requires. We carry full insurance and can provide references on request.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>What if it rains on the day of my appointment?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>We work in light rain. Windows can be cleaned in drizzle with no impact on quality because pure water is what we use anyway. Heavy downpours are different. If the weather is severe enough to affect safety or quality, we'll call you the morning of your appointment to reschedule at no charge. We don't cancel lightly. Seattle is a rainy city, and we've figured out how to work here.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>How long does a typical residential cleaning take?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>It depends on the size of your home and the number of windows. A typical single-story home with 10 to 15 windows takes about 90 minutes for exterior cleaning. Add another 60 minutes for interior. A two-story home with 20 to 30 windows typically runs 2.5 to 3.5 hours for a full interior and exterior service. We'll give you a time estimate when we quote your job so you know what to expect.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span>Are you licensed, bonded, and insured?</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes. Crystal View Window Cleaning is fully licensed to operate in Washington State. We carry general liability insurance and workers' compensation coverage on every job. A certificate of insurance is available at any time without charge. If your HOA, property manager, or employer requires proof of insurance before work begins, just ask and we'll send it over before your appointment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <div class="cta-tag">Still Have Questions?</div>
+      <h2>Just Give Us a Call</h2>
+      <p>We're real people, not a call center. Call Mike directly and get a straight answer. If we can't help you, we'll tell you that too.</p>
+      <div class="cta-buttons">
+        <a href="tel:5555832947" class="btn btn-accent btn-lg">
+          <i class="fa-solid fa-phone"></i>
+          Call (555) 583-2947
+        </a>
+        <a href="mailto:mike@crystalviewclean.com" class="btn btn-outline btn-lg">
+          <i class="fa-solid fa-envelope"></i>
+          Send an Email
+        </a>
+      </div>
+      <p class="cta-note">Available Monday through Saturday. We return all messages the same day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-window-restore"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Crystal View</span>
+            <span class="logo-sub">Window Cleaning</span>
+          </div>
+        </a>
+        <p>Professional window cleaning for Seattle homes and businesses. Eco pure-water system. WCR certified. Fully insured. Serving Greater Seattle for 11 years.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer-social" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer-social" aria-label="Nextdoor"><i class="fa-solid fa-house-user"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Residential Windows</a></li>
+          <li><a href="services.html" class="footer-link">Commercial Windows</a></li>
+          <li><a href="services.html" class="footer-link">High-Rise &amp; Rope Access</a></li>
+          <li><a href="services.html" class="footer-link">Solar Panel Cleaning</a></li>
+          <li><a href="services.html" class="footer-link">Gutter Cleaning</a></li>
+          <li><a href="services.html" class="footer-link">Pressure Washing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html" class="footer-link">About Mike</a></li>
+          <li><a href="about.html#pure-water" class="footer-link">Pure Water System</a></li>
+          <li><a href="about.html#service-area" class="footer-link">Service Area</a></li>
+          <li><a href="contact.html" class="footer-link">Book a Service</a></li>
+          <li><a href="contact.html#faq" class="footer-link">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span><a href="tel:5555832947">(555) 583-2947</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span><a href="mailto:mike@crystalviewclean.com">mike@crystalviewclean.com</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Seattle, WA<br>Greater Seattle Area</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Mon-Fri 7am-6pm<br>Sat 8am-4pm</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Crystal View Window Cleaning. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>const navToggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.nav');if(navToggle&&nav){navToggle.addEventListener('click',()=>{const isOpen=nav.classList.toggle('nav-open');navToggle.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);});}</script>
+</body>
+</html>

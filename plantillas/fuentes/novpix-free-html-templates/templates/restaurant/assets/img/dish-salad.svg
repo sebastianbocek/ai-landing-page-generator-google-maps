@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Illustration of a seasonal garden salad">
+  <rect width="400" height="400" fill="#365314"/>
+  <circle cx="200" cy="215" r="160" fill="#1a2e05" opacity=".35"/>
+  <circle cx="200" cy="200" r="160" fill="#f8f3e8"/>
+  <circle cx="200" cy="200" r="130" fill="#eef4dd"/>
+  <g>
+    <path d="M110 170c20-50 90-60 110-20-30 10-70 40-110 20z" fill="#65a30d"/>
+    <path d="M200 110c50-10 100 30 90 70-40-10-80-30-90-70z" fill="#4d7c0f"/>
+    <path d="M120 250c0-50 60-80 90-50-20 30-50 50-90 50z" fill="#84cc16"/>
+    <path d="M230 290c-30-40 0-100 50-90 0 40-20 70-50 90z" fill="#65a30d"/>
+    <path d="M160 300c30-20 70-10 80 20-30 10-60 10-80-20z" fill="#a3e635"/>
+    <path d="M280 150c30 10 40 50 20 70-20-20-30-40-20-70z" fill="#84cc16"/>
+  </g>
+  <g fill="#dc2626"><circle cx="175" cy="200" r="18"/><circle cx="250" cy="230" r="15"/><circle cx="210" cy="150" r="12"/></g>
+  <g fill="#fff" opacity=".45"><circle cx="170" cy="194" r="5"/><circle cx="246" cy="225" r="4"/></g>
+  <g fill="#fde68a" stroke="#f59e0b" stroke-width="2"><rect x="140" y="220" width="22" height="22" rx="4" transform="rotate(20 151 231)"/><rect x="265" y="185" width="20" height="20" rx="4" transform="rotate(-15 275 195)"/><rect x="200" y="260" width="20" height="20" rx="4"/></g>
+  <g fill="#7c2d12"><ellipse cx="225" cy="195" rx="9" ry="6"/><ellipse cx="160" cy="165" rx="8" ry="5"/><ellipse cx="275" cy="265" rx="8" ry="5"/></g>
+  <g fill="#fef9c3"><circle cx="200" cy="225" r="3"/><circle cx="235" cy="170" r="3"/><circle cx="185" cy="270" r="3"/><circle cx="140" cy="200" r="3"/></g>
+</svg>

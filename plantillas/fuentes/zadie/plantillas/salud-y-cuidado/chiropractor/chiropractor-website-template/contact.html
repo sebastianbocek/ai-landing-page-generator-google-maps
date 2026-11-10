@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Align Wellness Chiropractic</title>
+  <meta name="description" content="Schedule your appointment at Align Wellness Chiropractic. Located in Your City. New patients welcome. Call (555) 123-4567 or book online.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">A</div>
+        Align Wellness
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="contact.html" class="header-cta">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="hero" style="padding: 4rem 2rem;">
+    <div class="section-container" style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <div class="special-offer">New Patient Special: $49 First Visit</div>
+      <h1>Schedule Your Appointment</h1>
+      <p style="font-size: 1.25rem;">Take the first step toward pain-free living. We're here to help.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section">
+    <div class="section-container">
+      <div class="contact-grid">
+        <!-- Appointment Form -->
+        <div>
+          <h2 style="margin-bottom: 2rem;">Request an Appointment</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+              <label for="preferred-date">Preferred Date</label>
+              <input type="date" id="preferred-date" name="preferred-date">
+            </div>
+
+            <div class="form-group">
+              <label for="preferred-time">Preferred Time</label>
+              <select id="preferred-time" name="preferred-time">
+                <option value="">Select a time</option>
+                <option value="morning">Morning (8am - 12pm)</option>
+                <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                <option value="evening">Evening (4pm - 7pm)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="visit-type">Type of Visit</label>
+              <select id="visit-type" name="visit-type">
+                <option value="new-patient">New Patient ($49 Special)</option>
+                <option value="returning">Returning Patient</option>
+                <option value="consultation">Free Consultation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="condition">What brings you in? *</label>
+              <select id="condition" name="condition" required>
+                <option value="">Select primary concern</option>
+                <option value="back-pain">Back Pain</option>
+                <option value="neck-pain">Neck Pain</option>
+                <option value="headaches">Headaches/Migraines</option>
+                <option value="sciatica">Sciatica</option>
+                <option value="sports-injury">Sports Injury</option>
+                <option value="auto-injury">Auto Accident Injury</option>
+                <option value="work-injury">Work Injury</option>
+                <option value="wellness">Wellness/Prevention</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Information</label>
+              <textarea id="message" name="message" placeholder="Tell us more about your condition, symptoms, or any questions you have..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="insurance">Insurance Provider (if applicable)</label>
+              <input type="text" id="insurance" name="insurance" placeholder="e.g., Blue Cross Blue Shield">
+            </div>
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="new-patient-paperwork" name="new-patient-paperwork">
+              <label for="new-patient-paperwork">I would like to receive new patient paperwork via email to complete before my visit</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Request Appointment</button>
+
+            <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--gray-medium);">We'll confirm your appointment within 24 hours. For same-day appointments, please call us directly.</p>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="map-pin"></div>
+            <div class="info-content">
+              <h4>Visit Us</h4>
+              <p>123 Wellness Way<br>Your City, ST 12345</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="phone"></div>
+            <div class="info-content">
+              <h4>Call Us</h4>
+              <p>(555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="mail"></div>
+            <div class="info-content">
+              <h4>Email Us</h4>
+              <p>info@alignwellness.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="clock"></div>
+            <div class="info-content">
+              <h4>Office Hours</h4>
+              <p>
+                Monday: 8:00am - 6:00pm<br>
+                Tuesday: 8:00am - 6:00pm<br>
+                Wednesday: 8:00am - 6:00pm<br>
+                Thursday: 8:00am - 6:00pm<br>
+                Friday: 8:00am - 4:00pm<br>
+                Saturday: 9:00am - 1:00pm<br>
+                Sunday: Closed
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--gray);">
+            <h4 style="margin-bottom: 1rem;">Emergency Care</h4>
+            <p style="color: var(--gray-dark); line-height: 1.8;">For urgent care needs, we offer same-day appointments when available. Call us as early as possible for the best availability.</p>
+          </div>
+
+          <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--gray);">
+            <h4 style="margin-bottom: 1rem;">Parking & Accessibility</h4>
+            <p style="color: var(--gray-dark); line-height: 1.8;">Free parking lot directly in front of building. Wheelchair accessible entrance and treatment rooms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="section section-alt">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-subtitle">First Visit</p>
+        <h2>What to Expect at Your Appointment</h2>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon" data-icon="clipboard"></div>
+          <h3>1. Paperwork (10 min)</h3>
+          <p>Complete health history forms and insurance information. Arrive 10 minutes early or complete paperwork online beforehand.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" data-icon="message"></div>
+          <h3>2. Consultation (15 min)</h3>
+          <p>Discuss your symptoms, medical history, and health goals with Dr. Martinez. This is your chance to ask questions and voice concerns.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" data-icon="search"></div>
+          <h3>3. Examination (20 min)</h3>
+          <p>Comprehensive physical exam including posture analysis, range of motion testing, orthopedic tests, and neurological assessment. X-rays if medically necessary.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" data-icon="spine"></div>
+          <h3>4. First Treatment (10 min)</h3>
+          <p>Most patients receive their first adjustment on day one (if appropriate). We'll explain exactly what we're doing and answer any questions.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" data-icon="clipboard"></div>
+          <h3>5. Treatment Plan (10 min)</h3>
+          <p>Review findings and discuss recommended treatment plan, including frequency of visits, expected timeline, and cost.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon" data-icon="calendar"></div>
+          <h3>6. Schedule Follow-Up</h3>
+          <p>Book your next appointments before leaving. Consistency in the early stages is important for best results.</p>
+        </div>
+      </div>
+
+      <div style="max-width: 800px; margin: 3rem auto 0; text-align: center; padding: 2rem; background: var(--white); border-radius: 12px; box-shadow: var(--shadow-md);">
+        <h3 style="margin-bottom: 1rem; color: var(--primary);">What to Bring</h3>
+        <ul style="text-align: left; color: var(--gray-dark); line-height: 2; max-width: 500px; margin: 0 auto;">
+          <li>Insurance card and photo ID</li>
+          <li>List of current medications</li>
+          <li>Recent imaging (MRI, X-ray) if available</li>
+          <li>Completed new patient forms (if sent ahead)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-subtitle">Common Questions</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Do chiropractic adjustments hurt?</h3>
+          <p>Most patients find adjustments comfortable and even relieving. You may hear popping sounds (gas releasing from joints), but this is normal and painless. Some patients experience mild soreness afterward, similar to post-workout soreness, which typically resolves within 24 hours. If you're nervous about traditional adjustments, we offer gentle low-force techniques that achieve results without cracking.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How many visits will I need?</h3>
+          <p>This varies based on your condition, how long you've had it, and your goals. Acute injuries might require 6-12 visits over 4-6 weeks. Chronic conditions may need more extensive care. We'll provide a clear treatment plan after your initial exam and adjust as you progress. Our goal is to get you better with the minimum number of visits necessary.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does insurance cover chiropractic care?</h3>
+          <p>Most insurance plans include chiropractic coverage, though benefits vary. We accept Blue Cross, Aetna, Cigna, UnitedHealthcare, Medicare, and most major carriers. We'll verify your benefits before your first visit and explain what's covered. We also offer affordable self-pay rates for those without coverage.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do I need a referral from my doctor?</h3>
+          <p>In most states, including ours, chiropractors are portal-of-entry providers, meaning you can see us directly without a referral. However, some insurance plans may require a referral for coverage. We can help you determine if your plan needs one.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Are chiropractic adjustments safe?</h3>
+          <p>Yes, when performed by a licensed chiropractor. Chiropractic is one of the safest drug-free, non-invasive treatments for back pain, neck pain, and headaches. Serious complications are extremely rare. We take a thorough health history and perform careful examination to ensure treatment is safe and appropriate for you.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What should I wear to my appointment?</h3>
+          <p>Wear comfortable, loose-fitting clothing. Athletic wear works great. You don't need to change clothes—we treat you fully clothed. Avoid wearing dresses or restrictive clothing that limits movement.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I be adjusted if I'm pregnant?</h3>
+          <p>Absolutely! Chiropractic care during pregnancy is safe and beneficial. We use specialized techniques and pregnancy pillows for your comfort. Many women find regular adjustments help with pregnancy-related back pain, hip pain, and other discomforts. Dr. Martinez is certified in the Webster Technique specifically for prenatal care.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Will I have to keep coming forever?</h3>
+          <p>No. Our goal is to resolve your problem and teach you how to maintain results. Some patients choose to continue with periodic wellness visits after their condition improves, but this is completely optional. We'll never pressure you into unnecessary treatment.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if chiropractic doesn't help my condition?</h3>
+          <p>Most patients see significant improvement, but chiropractic isn't right for every condition. If we determine your problem would be better addressed by another provider, we'll refer you to the appropriate specialist. We work collaboratively with other healthcare providers to ensure you get the care you need.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can you help with conditions other than back pain?</h3>
+          <p>Yes! While we're known for treating back pain, chiropractic care is effective for neck pain, headaches, sciatica, sports injuries, joint pain, and many musculoskeletal conditions. We also see patients for wellness care and injury prevention. If you're unsure whether we can help, call us—we're happy to discuss your specific situation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section section-alt">
+    <div class="section-container" style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <h2 style="margin-bottom: 1rem;">Still Have Questions?</h2>
+      <p style="font-size: 1.25rem; margin-bottom: 2rem;">Give us a call at (555) 123-4567. We're happy to answer your questions and help you determine if chiropractic care is right for you.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:5551234567" class="btn btn-primary">Call Now</a>
+        <a href="mailto:info@alignwellness.com" class="btn btn-secondary">Send Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Align Wellness Chiropractic</h3>
+          <p>Professional chiropractic care helping you achieve optimal health naturally. Evidence-based treatments, personalized care, and a commitment to your wellness.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Adjustments</a></li>
+            <li><a href="services.html">Rehabilitation</a></li>
+            <li><a href="services.html">Sports Injuries</a></li>
+            <li><a href="services.html">Wellness Care</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>123 Wellness Way</li>
+            <li>Your City, ST 12345</li>
+            <li>(555) 123-4567</li>
+            <li>info@alignwellness.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Align Wellness Chiropractic. All rights reserved. | Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

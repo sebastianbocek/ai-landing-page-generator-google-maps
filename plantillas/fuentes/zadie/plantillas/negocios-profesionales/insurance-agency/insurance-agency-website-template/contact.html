@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Harbor Shield Insurance</title>
+  <meta name="description" content="Get a free insurance quote from Harbor Shield. Contact our team of licensed agents for home, auto, life, and business coverage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        Harbor Shield
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Coverage</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Get in Touch</span>
+      <h1>Request a Free Quote</h1>
+      <p>Tell us what you need and we will shop 20+ carriers to find your best option. No obligation, no pressure.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form below and one of our agents will get back to you within one business day.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 555-0000">
+              </div>
+              <div class="form-group">
+                <label for="coverage">Coverage Type</label>
+                <select id="coverage" name="coverage">
+                  <option value="home">Home Insurance</option>
+                  <option value="auto">Auto Insurance</option>
+                  <option value="life">Life Insurance</option>
+                  <option value="business">Business Insurance</option>
+                  <option value="umbrella">Umbrella Policy</option>
+                  <option value="other">Other / Multiple</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Needs</label>
+              <textarea id="message" name="message" placeholder="What are you looking to cover? Any details about your current policy or situation..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Request a Quote</button>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <div class="contact-info-card">
+            <h3>Contact Info</h3>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4>Office</h4>
+                <p>742 Harbor Drive<br>Bridgeport, CT 06604</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>(555) 555-1234</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>info@harborshieldins.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4>Hours</h4>
+                <p>Mon - Fri: 8:30am - 5:30pm<br>Saturday: 9am - 1pm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote-card">
+            <h3><i class="fa-solid fa-file-invoice"></i> Bring Your Current Policy</h3>
+            <p>Already insured? Bring in your current declarations page and we will do a free coverage comparison. We often find gaps or savings that other agencies missed.</p>
+            <a href="tel:+15555551234" class="btn btn--primary">Call for a Review</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--blue">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Common Questions</span>
+        <h2>Frequently Asked</h2>
+        <p>Answers to the questions we hear most from new and existing clients.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>What does "independent agency" mean?</h4>
+          <p>We are not employed by one insurance company. We represent multiple carriers, which means we can shop around for the best rate and coverage for your specific needs. We work for you, not the insurance company.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How much does a home insurance policy cost?</h4>
+          <p>Home insurance premiums vary based on your home's value, location, age, construction type, and coverage level. In our area, typical homeowner policies range from $1,200 to $3,500 per year. We can usually find savings by comparing multiple carriers.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can you help with a claim?</h4>
+          <p>Absolutely. That is one of the biggest advantages of working with a local agent. When you have a claim, call us first. We will guide you through the process, handle the paperwork, and advocate on your behalf with the insurance company.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How often should I review my insurance?</h4>
+          <p>At least once a year, or whenever you have a major life change like buying a home, getting married, starting a business, or adding a teen driver. We proactively reach out for annual reviews, but you can request one anytime.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you offer payment plans?</h4>
+          <p>Most carriers offer monthly, quarterly, or semi-annual payment plans. Paying in full typically saves you billing fees. We will outline all payment options when we present your quote so you can choose what works best for your budget.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How fast can I get coverage?</h4>
+          <p>For most personal lines (home, auto, renters), we can bind coverage the same day. Business insurance may take a few days depending on the complexity of the policy. In an emergency, call us and we will prioritize your request.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i class="fa-solid fa-shield-halved"></i>
+            Harbor Shield
+          </a>
+          <p>Independent insurance agency serving families and businesses since 1992. We shop 20+ carriers to find you the best coverage at the best price.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Coverage</h4>
+          <div class="footer-links">
+            <a href="services.html">Home Insurance</a>
+            <a href="services.html">Auto Insurance</a>
+            <a href="services.html">Life Insurance</a>
+            <a href="services.html">Business Insurance</a>
+            <a href="services.html">Umbrella Policies</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="about.html">Our Team</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html">Get a Quote</a>
+          </div>
+        </div>
+        <div>
+          <h4>Office Hours</h4>
+          <div class="footer-links">
+            <span>Mon - Fri: 8:30am - 5:30pm</span>
+            <span>Saturday: 9am - 1pm</span>
+            <span>Sunday: Closed</span>
+            <span style="margin-top: 8px;">742 Harbor Drive</span>
+            <span>Bridgeport, CT 06604</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Harbor Shield Insurance. All rights reserved. Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

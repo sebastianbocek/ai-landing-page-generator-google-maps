@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Timberline Deck Co.</title>
+  <meta name="description" content="Contact Timberline Deck Co. for a free deck building estimate. Call (303) 555-8247 or fill out our project inquiry form. Serving the greater Cedar Falls area.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500;600;700;800&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-tree"></i></div>
+        <div class="logo-text">
+          Timberline
+          <span>Deck Company</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Free Estimate</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+      </div>
+      <h1>Let's Talk About Your Project</h1>
+      <p>Fill out the form below and we will get back to you within one business day with next steps and a rough estimate.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section bg-off-white">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form">
+          <h3>Project Inquiry</h3>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(303) 555-0000">
+              </div>
+              <div class="form-group">
+                <label for="project-type">Project Type *</label>
+                <select id="project-type" name="project-type" required>
+                  <option value="" disabled selected>Select a project type</option>
+                  <option value="new-deck">New Deck Construction</option>
+                  <option value="restoration">Deck Restoration / Repair</option>
+                  <option value="pergola">Pergola / Covered Patio</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="budget">Approximate Budget</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>Select a range</option>
+                  <option value="under-10k">Under $10,000</option>
+                  <option value="10k-20k">$10,000 - $20,000</option>
+                  <option value="20k-35k">$20,000 - $35,000</option>
+                  <option value="35k-50k">$35,000 - $50,000</option>
+                  <option value="50k-plus">$50,000+</option>
+                  <option value="unsure">Not sure yet</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="timeline">Desired Timeline</label>
+                <select id="timeline" name="timeline">
+                  <option value="" disabled selected>When do you want to start?</option>
+                  <option value="asap">As soon as possible</option>
+                  <option value="1-3-months">Within 1-3 months</option>
+                  <option value="3-6-months">Within 3-6 months</option>
+                  <option value="6-plus-months">6+ months out</option>
+                  <option value="just-exploring">Just exploring options</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Project</label>
+              <textarea id="message" name="message" placeholder="Describe your vision, the size of the space, any features you want, and anything else that would help us understand your project."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Send Project Inquiry</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <h4>Our Office</h4>
+              <p>742 Sawmill Road, Suite 8<br>Cedar Falls, CO 80123</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+13035558247">(303) 555-8247</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:info@timberlinedeckco.com">info@timberlinedeckco.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Monday - Friday: 7:00 AM - 5:00 PM<br>Saturday: 8:00 AM - 12:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+
+          <!-- Service Area -->
+          <div style="margin-top:12px;">
+            <h4 style="font-family:var(--font-heading);font-size:1.1rem;color:var(--color-primary-dark);margin-bottom:16px;">Service Area</h4>
+            <ul class="service-area-list">
+              <li>Cedar Falls</li>
+              <li>Lakewood</li>
+              <li>Golden</li>
+              <li>Arvada</li>
+              <li>Westminster</li>
+              <li>Boulder</li>
+              <li>Broomfield</li>
+              <li>Thornton</li>
+              <li>Littleton</li>
+              <li>Centennial</li>
+              <li>Castle Rock</li>
+              <li>Parker</li>
+            </ul>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder">
+            <i class="fas fa-map-location-dot"></i>
+            <span>Interactive map would be embedded here</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="plank-divider">
+
+  <!-- FAQ -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the questions we hear most often from homeowners considering a new deck.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question" aria-expanded="true">
+            How long does a typical deck build take?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Most custom deck builds take between 2 to 4 weeks from the start of construction, depending on the size and complexity of the project. The full timeline from initial consultation to completion is typically 6 to 10 weeks, which includes the design phase, permitting, and material ordering. We provide a detailed project schedule before breaking ground so you know exactly what to expect.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do I need a permit to build a deck?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              In most municipalities, yes. Any deck that is attached to the home or is more than 30 inches above grade typically requires a building permit. We handle the entire permitting process for you, including drawing up the plans, submitting the application, and scheduling all required inspections. The cost of permits is included in our project estimate.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What material is best for my deck?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              It depends on your priorities. If budget is the main factor, pressure-treated lumber is reliable and affordable. If you love the look of real wood and do not mind regular maintenance, cedar is beautiful. For minimal maintenance and long-term durability, Trex composite is hard to beat. And if you want the absolute best material that will last 50+ years, Ipe hardwood is the premium choice. We walk through all the options during your consultation so you can make an informed decision.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How much does a new deck cost?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Deck costs vary significantly based on size, materials, complexity, and site conditions. A basic 12x16 pressure-treated deck starts around $15,000, while a large multi-level composite deck with pergola and built-in features can exceed $60,000. We provide free, detailed estimates after an on-site visit so you get an accurate number based on your specific project -- not a vague range from a website calculator.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer financing?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes. We partner with a third-party lending company to offer financing options for qualified homeowners. Plans range from 12 to 60 months with competitive interest rates, and we also offer 12-month same-as-cash options on select projects. We can go over financing options during your consultation, and applying does not affect your credit score.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is included in your warranty?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We offer a lifetime structural warranty on all new deck builds. This covers the framing, ledger board connection, posts, and all load-bearing components. If any structural element fails due to workmanship or materials, we repair or replace it at no cost to you. Additionally, composite and hardwood decking materials come with their own manufacturer warranties (Trex offers a 25-year fade and stain warranty, for example), which we register on your behalf.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">
+            Timberline
+            <span>Deck Company</span>
+          </div>
+          <p>Custom deck design, construction, and restoration. Family-owned and operated since 2003. Licensed, insured, and committed to building decks that last a lifetime.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" aria-label="Houzz"><i class="fab fa-houzz"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Custom Decks</a></li>
+            <li><a href="services.html">Deck Restoration</a></li>
+            <li><a href="services.html">Pergolas & Covers</a></li>
+            <li><a href="services.html">Railings & Stairs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-location-dot"></i> 742 Sawmill Road, Suite 8<br>Cedar Falls, CO 80123</li>
+            <li><i class="fas fa-phone"></i> (303) 555-8247</li>
+            <li><i class="fas fa-envelope"></i> info@timberlinedeckco.com</li>
+            <li><i class="fas fa-clock"></i> Mon - Fri: 7:00 AM - 5:00 PM<br>Sat: 8:00 AM - 12:00 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="plank-divider">
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Timberline Deck Co. All rights reserved. | Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+<script>
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var isActive = item.classList.contains('active');
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(function(el) {
+        el.classList.remove('active');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      // Open clicked (if it was not already open)
+      if (!isActive) {
+        item.classList.add('active');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Page & Binding Books</title>
+  <meta name="description" content="Visit Page & Binding Books at 742 Hawthorne Ave, Portland. Get in touch about events, special orders, book clubs, or just to say hello.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+        <div class="logo-text">Page & Binding<span>Books</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Browse & Events</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Visit Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Questions, special orders, or just want to talk books? We would love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section class="section section--parchment">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div>
+          <h2 style="margin-bottom: 6px;">Send Us a Message</h2>
+          <p style="color: var(--color-gray); margin-bottom: 28px;">We typically respond within one business day.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(503) 555-0000">
+              </div>
+              <div class="form-group">
+                <label for="inquiry">Inquiry Type</label>
+                <select id="inquiry" name="inquiry">
+                  <option value="general">General Inquiry</option>
+                  <option value="event">Event Question</option>
+                  <option value="special-order">Special Order</option>
+                  <option value="book-club">Book Club</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you're looking for, ask about an event, or just say hello..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
+        </div>
+        <!-- Info Sidebar -->
+        <div>
+          <div class="contact-info-card">
+            <h3>Visit the Shop</h3>
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Address</strong>
+                742 Hawthorne Ave<br>Portland, OR 97214
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                (503) 555-0142
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                hello@pageandbinding.com
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <strong>Hours</strong>
+                <table class="hours-table">
+                  <tr><td>Monday - Friday</td><td>9:00 AM - 9:00 PM</td></tr>
+                  <tr><td>Saturday</td><td>9:00 AM - 9:00 PM</td></tr>
+                  <tr><td>Sunday</td><td>10:00 AM - 6:00 PM</td></tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="map-placeholder">
+        <div style="text-align: center;">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>742 Hawthorne Ave, Portland, OR 97214</p>
+          <p style="font-size: 0.8rem; margin-top: 4px;">Interactive map would be displayed here</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <div class="bookmark-divider"><div class="bookmark-icon"></div></div>
+        <p>Quick answers to the questions we hear most often.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            <span>Do you buy used books?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We do accept used books in good condition on a case-by-case basis. Bring them in during business hours and one of our staff will take a look. We offer store credit rather than cash. We're especially interested in literary fiction, poetry, and any titles that complement our existing collection.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            <span>Can you special order a book for me?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. We can order any book currently in print and most out-of-print titles through our network of distributors. Special orders typically arrive within 3-5 business days. There's no extra charge and no minimum order. Just ask at the counter, call us, or send us an email with the title and author.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            <span>Do you have an online store?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We're primarily a brick-and-mortar shop, and that's by design. We believe the best way to discover a book is to hold it, flip through it, and have a conversation about it. That said, we do offer our Monthly Book Box subscription by mail and can ship special orders anywhere in the US. Give us a call for details.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            <span>Is the coffee bar open to everyone?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, completely. You don't need to buy a book to enjoy a coffee, and you don't need to buy a coffee to browse the shelves. The coffee bar is open during all regular store hours. Come in, grab a latte, and settle into the reading nook for as long as you like.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            <span>How do the book clubs work?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We run three book clubs with different schedules and focuses. There's no membership fee or sign-up required -- just show up. We announce each month's selection on our social media and in-store. Members receive a 15% discount on the current book club pick. Complimentary coffee and pastries are provided at every meeting.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            <span>Do you host private events?</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>We do. The shop is available for private events on select evenings, including book launch parties, literary-themed gatherings, corporate book clubs, and small celebrations. We can accommodate up to 40 guests and offer catering through our coffee bar. Contact us at hello@pageandbinding.com for availability and pricing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <h2>We Would Love to Meet You</h2>
+      <div class="bookmark-divider"><div class="bookmark-icon"></div></div>
+      <p>Stop by any time. No appointment needed, no purchase required. Just come in and browse.</p>
+      <div class="cta-info">
+        <div>
+          <i class="fas fa-clock"></i>
+          <span>Mon-Sat 9am-9pm<br>Sun 10am-6pm</span>
+        </div>
+        <div>
+          <i class="fas fa-map-marker-alt"></i>
+          <span>742 Hawthorne Ave<br>Portland, OR 97214</span>
+        </div>
+        <div>
+          <i class="fas fa-phone"></i>
+          <span>(503) 555-0142</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+            <div class="logo-text">Page & Binding<span>Books</span></div>
+          </a>
+          <p>An independent bookshop dedicated to connecting readers with stories that matter. Curated shelves, community events, and really good coffee since 2012.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Browse & Events</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>742 Hawthorne Ave<br>Portland, OR 97214</p>
+          <p style="margin-top: 8px;">(503) 555-0142<br>hello@pageandbinding.com</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <p>Monday - Saturday<br>9:00 AM - 9:00 PM</p>
+          <p style="margin-top: 8px;">Sunday<br>10:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Page & Binding Books. All rights reserved.</span>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

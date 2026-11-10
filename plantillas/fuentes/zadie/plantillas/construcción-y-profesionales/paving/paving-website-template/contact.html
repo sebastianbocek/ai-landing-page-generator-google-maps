@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Quote | BlackTop Pro Paving — Detroit, MI</title>
+  <meta name="description" content="Get a free estimate on your asphalt paving project. Driveways, parking lots, sealcoating, striping — BlackTop Pro covers all of metro Detroit. Call (555) 739-2648.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <i class="fa-solid fa-road"></i>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">BlackTop Pro</span>
+        <span class="logo-sub">Paving</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn-primary header-cta">
+      <i class="fa-solid fa-file-invoice-dollar"></i>
+      Get Free Quote
+    </a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Get a Quote</span>
+      </div>
+      <span class="section-label">Free Estimates</span>
+      <h1>Request a Free Quote</h1>
+      <p class="page-hero-sub">Fill out the form and Ray will follow up within one business day to schedule a site visit. We provide firm estimates — not ballparks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM + SIDEBAR -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Quote Form -->
+      <div class="quote-form">
+        <h2 class="form-title">Project Details</h2>
+        <p class="form-subtitle">The more detail you provide, the more accurate our initial estimate. We'll confirm everything in person.</p>
+
+        <form action="#" method="post" novalidate>
+          <div class="form-grid">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="first-name">First Name <span class="required-star">*</span></label>
+              <input type="text" id="first-name" name="first-name" placeholder="Ray" required autocomplete="given-name">
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Last Name <span class="required-star">*</span></label>
+              <input type="text" id="last-name" name="last-name" placeholder="Kowalski" required autocomplete="family-name">
+            </div>
+
+            <!-- Company (optional) -->
+            <div class="form-group full-width">
+              <label for="company">Company / Property Name <span style="color: var(--gray); font-weight: 400; font-size: 0.75rem; letter-spacing: normal; text-transform: none;">(optional)</span></label>
+              <input type="text" id="company" name="company" placeholder="Acme Property Management" autocomplete="organization">
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email Address <span class="required-star">*</span></label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+            </div>
+
+            <!-- Phone -->
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required-star">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel">
+            </div>
+
+            <!-- Project Address -->
+            <div class="form-group full-width">
+              <label for="address">Project Address <span class="required-star">*</span></label>
+              <input type="text" id="address" name="address" placeholder="123 Main St, Dearborn, MI 48124" required autocomplete="street-address">
+            </div>
+
+            <!-- Service Type -->
+            <div class="form-group full-width">
+              <label for="service">Service Needed <span class="required-star">*</span></label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="new-driveway">New Asphalt Driveway</option>
+                <option value="parking-lot">Parking Lot Paving</option>
+                <option value="repair-patching">Asphalt Repair &amp; Patching</option>
+                <option value="sealcoating">Sealcoating</option>
+                <option value="line-striping">Line Striping &amp; Marking</option>
+                <option value="speed-bumps">Speed Bumps &amp; Wheel Stops</option>
+                <option value="maintenance">Commercial Lot Maintenance</option>
+                <option value="milling">Asphalt Milling</option>
+                <option value="not-sure">Not Sure — Need Assessment</option>
+              </select>
+            </div>
+
+            <!-- Size Estimate -->
+            <div class="form-group">
+              <label for="size">Approximate Size</label>
+              <select id="size" name="size">
+                <option value="" disabled selected>Select size range...</option>
+                <option value="under-1000">Under 1,000 sq ft</option>
+                <option value="1000-5000">1,000 - 5,000 sq ft</option>
+                <option value="5000-15000">5,000 - 15,000 sq ft</option>
+                <option value="15000-50000">15,000 - 50,000 sq ft</option>
+                <option value="over-50000">Over 50,000 sq ft</option>
+                <option value="not-sure">Not Sure</option>
+              </select>
+            </div>
+
+            <!-- Timeline -->
+            <div class="form-group">
+              <label for="timeline">Preferred Timeline</label>
+              <select id="timeline" name="timeline">
+                <option value="" disabled selected>When do you need this done?</option>
+                <option value="asap">As soon as possible</option>
+                <option value="1-month">Within 1 month</option>
+                <option value="1-3-months">1-3 months</option>
+                <option value="3-6-months">3-6 months</option>
+                <option value="planning">Planning ahead (6+ months)</option>
+              </select>
+            </div>
+
+            <!-- Project Description -->
+            <div class="form-group full-width">
+              <label for="description">Project Description</label>
+              <textarea id="description" name="description" placeholder="Describe the current condition of your surface, what you're looking to have done, any specific concerns or access constraints. Photos can be sent after we connect."></textarea>
+            </div>
+
+            <!-- How did you hear about us -->
+            <div class="form-group full-width">
+              <label for="referral">How Did You Hear About Us?</label>
+              <select id="referral" name="referral">
+                <option value="" disabled selected>Select one...</option>
+                <option value="google">Google Search</option>
+                <option value="referral">Referral from friend / colleague</option>
+                <option value="drove-by">Drove by a job site</option>
+                <option value="repeat">Returning customer</option>
+                <option value="social">Social media</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i>
+              Send Quote Request
+            </button>
+          </div>
+          <p class="form-note">
+            <i class="fa-solid fa-lock" style="color: var(--orange);"></i>
+            Your information is never shared or sold. We only use it to follow up on your project.
+          </p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="contact-sidebar">
+
+        <!-- Direct Contact -->
+        <div class="contact-info-card">
+          <h3>Contact Ray Directly</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <a href="tel:5557392648">(555) 739-2648</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <a href="mailto:ray@blacktoppro.com">ray@blacktoppro.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Based in</strong>
+              <span>Detroit, MI — Metro Area Service</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Business Hours</strong>
+              <span>Mon-Fri 7AM-6PM, Sat 7AM-2PM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- What to expect -->
+        <div class="contact-info-card">
+          <h3>What Happens Next</h3>
+
+          <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+            <div style="display: flex; gap: var(--space-4); align-items: flex-start;">
+              <div style="width: 28px; height: 28px; background: var(--orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">1</div>
+              <div>
+                <strong style="display: block; font-size: 0.9rem; color: var(--white); margin-bottom: 3px;">Ray calls you back</strong>
+                <span style="font-size: 0.83rem; color: var(--gray);">Within one business day. He may have a few questions before the site visit.</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: var(--space-4); align-items: flex-start;">
+              <div style="width: 28px; height: 28px; background: var(--orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">2</div>
+              <div>
+                <strong style="display: block; font-size: 0.9rem; color: var(--white); margin-bottom: 3px;">Site visit scheduled</strong>
+                <span style="font-size: 0.83rem; color: var(--gray);">Ray comes out, measures the area, assesses the surface and base condition.</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: var(--space-4); align-items: flex-start;">
+              <div style="width: 28px; height: 28px; background: var(--orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">3</div>
+              <div>
+                <strong style="display: block; font-size: 0.9rem; color: var(--white); margin-bottom: 3px;">Written estimate delivered</strong>
+                <span style="font-size: 0.83rem; color: var(--gray);">You get a detailed written estimate. Firm pricing, not a range.</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: var(--space-4); align-items: flex-start;">
+              <div style="width: 28px; height: 28px; background: var(--orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; flex-shrink: 0; margin-top: 2px;">4</div>
+              <div>
+                <strong style="display: block; font-size: 0.9rem; color: var(--white); margin-bottom: 3px;">Work scheduled</strong>
+                <span style="font-size: 0.83rem; color: var(--gray);">If you approve, we schedule the job. Typical lead time is 1-3 weeks.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- License info -->
+        <div class="contact-info-card">
+          <h3>Licensing &amp; Insurance</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>MI Contractor License</strong>
+              <span>#MI-PV-2834</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>General Liability</strong>
+              <span>$2,000,000 per occurrence</span>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Workers Compensation</strong>
+              <span>Full coverage — all employees</span>
+            </div>
+          </div>
+          <p style="font-size: 0.82rem; color: var(--gray); margin-top: var(--space-4);">Certificates of insurance provided on request for all commercial projects.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--surface">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-heading">Asphalt FAQ</h2>
+      <p class="section-subheading">Answers to the questions we get on almost every estimate call.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How long does new asphalt last?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer" hidden>
+          A properly installed asphalt driveway or parking lot should last 20-30 years with routine maintenance. The key factors are base preparation, asphalt mix quality, drainage, and maintenance schedule. Surfaces that are sealcoated every 3-5 years and crack-filled as needed consistently outlast those that are ignored after install. Michigan's freeze-thaw cycles are hard on pavement — good drainage design is what makes the difference between a surface that lasts 15 years and one that lasts 30.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          When is the best time of year to pave in Michigan?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer" hidden>
+          Asphalt paving season in Michigan runs from late April through October, with the best conditions in May through September. Hot-mix asphalt needs ambient temperatures above 50°F for proper placement and compaction. We do not pave in temperatures below 40°F or when rain is imminent — cold temperatures cause the mix to cool too quickly, and water on the subgrade compromises base compaction. If you're planning a large project, spring booking is recommended since our schedule fills up quickly once the season starts.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Should I repair or replace my asphalt?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer" hidden>
+          It depends on the condition of the base and the extent of surface damage. As a general rule: if less than 25-30% of the surface is failing, targeted repairs plus sealcoating is usually the right answer. If the base has failed in multiple areas, or if the surface is extensively cracked with alligator cracking across large sections, full replacement becomes more cost-effective than ongoing repairs. During our site visit, we'll give you an honest assessment — including cases where patching makes more sense than replacement. We don't push for more work than a surface actually needs.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How long do I have to stay off new asphalt?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer" hidden>
+          Foot traffic: 24 hours. Vehicle traffic: 48-72 hours minimum for residential. For commercial lots with heavy traffic, we recommend 72 hours before opening. New asphalt continues to harden and cure for 6-12 months — during the first summer, it will be soft in direct sun and high heat. Avoid parking in the same spot for extended periods during the first season, and keep vehicle jacks off the surface. By the second season, the asphalt will be fully cured and at full hardness.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you offer payment plans or financing?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer" hidden>
+          For residential projects, we require a deposit at contract signing (typically 30%) with the balance due upon project completion. For larger commercial projects, we structure payment schedules based on project milestones. We do not offer in-house financing, but many homeowners use home equity lines of credit or personal loans for larger driveway projects. For commercial clients, net-30 terms are available on accounts with established credit. Contact Ray to discuss what works for your project.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <span class="section-label">Don't Wait</span>
+      <h2>Cracks Get Worse Over Winter</h2>
+      <p>Water gets into cracks, freezes, and expands — turning a $500 repair into a $5,000 job. If your asphalt is cracking, the time to act is before the snow hits.</p>
+      <div class="cta-actions">
+        <a href="tel:5557392648" class="btn btn-primary">
+          <i class="fa-solid fa-phone"></i>
+          Call (555) 739-2648
+        </a>
+        <a href="mailto:ray@blacktoppro.com" class="btn btn-outline">
+          <i class="fa-solid fa-envelope"></i>
+          Email Ray
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-road"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">BlackTop Pro</span>
+            <span class="logo-sub">Paving</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Commercial and residential asphalt paving, sealcoating, and line striping in metro Detroit. Michigan Licensed Contractor. 25 years of experience.</p>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:5557392648">(555) 739-2648</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:ray@blacktoppro.com">ray@blacktoppro.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Detroit, MI (Metro Area)</span>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Ray</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Get a Quote</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Asphalt Driveways</a></li>
+          <li><a href="services.html">Parking Lot Paving</a></li>
+          <li><a href="services.html">Repair &amp; Patching</a></li>
+          <li><a href="services.html">Sealcoating</a></li>
+          <li><a href="services.html">Line Striping</a></li>
+          <li><a href="services.html">Asphalt Milling</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Hours</h4>
+        <div class="footer-hours">
+          <div class="hour-row">
+            <span>Monday - Friday</span>
+            <span>7:00 AM - 6:00 PM</span>
+          </div>
+          <div class="hour-row">
+            <span>Saturday</span>
+            <span>7:00 AM - 2:00 PM</span>
+          </div>
+          <div class="hour-row">
+            <span>Sunday</span>
+            <span>Closed</span>
+          </div>
+          <div class="hour-row">
+            <span>Emergency</span>
+            <span>Call Anytime</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 BlackTop Pro Paving. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle=document.querySelector('.nav-toggle');
+  const nav=document.querySelector('.nav');
+  if(navToggle&&nav){
+    navToggle.addEventListener('click',()=>{
+      const isOpen=nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded',isOpen);
+    });
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = !answer.hidden;
+      // Close all
+      document.querySelectorAll('.faq-answer').forEach(a => { a.hidden = true; });
+      document.querySelectorAll('.faq-question').forEach(b => { b.setAttribute('aria-expanded', 'false'); });
+      // Open this one if it was closed
+      if (!isOpen) {
+        answer.hidden = false;
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>

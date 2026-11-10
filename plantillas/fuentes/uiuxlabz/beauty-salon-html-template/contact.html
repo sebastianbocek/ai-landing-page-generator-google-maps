@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book your appointment at LUMIÈRE Beauty Salon. Contact, location, and hours.">
+  <title>Contact — LUMIÈRE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">Lumière<span>.</span></a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="pricing.html" class="nav-link">Pricing</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+          <a href="contact.html" class="nav-link nav-cta">Book Now</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero-title reveal">Book an <span style="color:var(--rose);">Appointment</span></h1>
+      <p class="page-hero-desc reveal">We'd love to hear from you. Fill out the form and we'll confirm within 4 hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="booking-grid">
+        <div class="reveal">
+          <h2 class="section-title" style="margin-bottom:var(--space-6);">Send Us a Message</h2>
+          <form class="form" data-form novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="b-name">Full Name</label>
+                <input class="form-input" type="text" id="b-name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="b-email">Email</label>
+                <input class="form-input" type="email" id="b-email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="b-phone">Phone</label>
+                <input class="form-input" type="tel" id="b-phone" name="phone" placeholder="(555) 123-4567" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="b-service">Service</label>
+                <select class="form-select" id="b-service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option>Haircut & Styling</option>
+                  <option>Colour & Balayage</option>
+                  <option>Signature Facial</option>
+                  <option>Bridal Makeup</option>
+                  <option>Gel Manicure</option>
+                  <option>Spa Pedicure</option>
+                  <option>Swedish Massage</option>
+                  <option>Chemical Peel</option>
+                  <option>Hair Treatment</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="b-date">Preferred Date & Time</label>
+              <input class="form-input" type="text" id="b-date" name="date" placeholder="e.g. Saturday, Sept 10 — 2:30pm" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="b-msg">Special Requests</label>
+              <textarea class="form-textarea" id="b-msg" name="message" placeholder="Allergies, preferences, or questions..."></textarea>
+            </div>
+            <button class="btn btn--rose" type="submit" style="align-self:flex-start;">Send Booking Request</button>
+            <div class="form-ok">Thanks! We'll confirm your appointment within 4 hours.</div>
+            <div class="form-err">Please fill in all required fields.</div>
+          </form>
+        </div>
+
+        <div class="reveal">
+          <div class="contact-card">
+            <h3>Visit Us</h3>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div><div class="contact-item-label">Address</div><div class="contact-item-text">128 Rosewood Avenue, Brooklyn, NY 11201</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div><div class="contact-item-label">Phone</div><div class="contact-item-text">(555) 123-LUMI</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div><div class="contact-item-label">Email</div><div class="contact-item-text">hello@lumieresalon.com</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div><div class="contact-item-label">Studio Hours</div>
+                <div class="hours-grid">
+                  <div><span>Mon–Fri</span><span>9:00am – 7:00pm</span></div>
+                  <div><span>Saturday</span><span>9:00am – 7:00pm</span></div>
+                  <div><span>Sunday</span><span>10:00am – 5:00pm</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><div class="footer-brand-logo">Lumière<span>.</span></div><p class="footer-brand-desc">A luxury beauty salon for hair, skin, and body.</p></div>
+        <div><h4 class="footer-heading">Explore</h4><div class="footer-links"><a href="about.html" class="footer-link">About</a><a href="services.html" class="footer-link">Services</a><a href="pricing.html" class="footer-link">Pricing</a></div></div>
+        <div><h4 class="footer-heading">Visit</h4><div class="footer-links"><a href="#" class="footer-link">128 Rosewood Ave, Brooklyn</a><a href="contact.html" class="footer-link">Contact</a></div></div>
+        <div><h4 class="footer-heading">Hours</h4><div class="footer-links"><a href="#" class="footer-link">Mon–Sat: 9am–7pm</a><a href="#" class="footer-link">Sun: 10am–5pm</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; <span data-year></span> LUMIÈRE. All rights reserved.</span><span>Crafted with care ✦</span></div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

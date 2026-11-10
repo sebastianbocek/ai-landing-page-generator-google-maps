@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Aperture Portrait Studio</title>
+  <meta name="description" content="Book your portrait session or get in touch with questions. Schedule a complimentary consultation to discuss your photography vision.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-mark"></div>
+        <div class="logo-text">
+          Aperture
+          <span>Portrait Studio</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Book a Session</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="section-eyebrow">Get in Touch</div>
+      <h1>Let's Connect</h1>
+      <p class="page-hero-description">Ready to book your session or have questions? We'd love to hear from you. Fill out the form below or reach out directly.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+
+          <div class="contact-detail">
+            <h4>Studio Location</h4>
+            <p>742 Evergreen Terrace, Suite 200</p>
+            <p>Springfield, IL 62701</p>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Phone</h4>
+            <p><a href="tel:+12175551234">(217) 555-1234</a></p>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Email</h4>
+            <p><a href="mailto:hello@aperturestudio.com">hello@aperturestudio.com</a></p>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Studio Hours</h4>
+            <p>Tuesday – Friday: 9am – 5pm</p>
+            <p>Saturday: 10am – 4pm</p>
+            <p>Sunday & Monday: Closed</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--warm-gray);">*Sessions available outside regular hours by appointment</p>
+          </div>
+
+          <div class="contact-detail">
+            <h4>Response Time</h4>
+            <p>We respond to all inquiries within 24-48 business hours.</p>
+          </div>
+
+          <div class="contact-social">
+            <a href="#" class="social-link">Fb</a>
+            <a href="#" class="social-link">Ig</a>
+            <a href="#" class="social-link">Pn</a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required placeholder="Your first name">
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required placeholder="Your last name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="sessionType">Session Type *</label>
+              <select id="sessionType" name="sessionType" required>
+                <option value="">Select a session type...</option>
+                <option value="portrait">Portrait Session</option>
+                <option value="family">Family Photography</option>
+                <option value="newborn">Newborn Session</option>
+                <option value="senior">Senior Portraits</option>
+                <option value="headshot">Professional Headshots</option>
+                <option value="wedding">Wedding Photography</option>
+                <option value="event">Event Photography</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="preferredDate">Preferred Date</label>
+                <input type="date" id="preferredDate" name="preferredDate">
+              </div>
+              <div class="form-group">
+                <label for="budget">Estimated Budget</label>
+                <select id="budget" name="budget">
+                  <option value="">Select a range...</option>
+                  <option value="under500">Under $500</option>
+                  <option value="500-1000">$500 - $1,000</option>
+                  <option value="1000-2500">$1,000 - $2,500</option>
+                  <option value="2500-5000">$2,500 - $5,000</option>
+                  <option value="over5000">$5,000+</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="howHeard">How Did You Hear About Us?</label>
+              <select id="howHeard" name="howHeard">
+                <option value="">Select an option...</option>
+                <option value="google">Google Search</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="referral">Friend or Family Referral</option>
+                <option value="wedding-vendor">Wedding Vendor Referral</option>
+                <option value="magazine">Magazine/Publication</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Tell Us About Your Vision *</label>
+              <textarea id="message" name="message" required placeholder="Share any details about your session: who will be photographed, special requests, location preferences, or questions you have..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Send Message</button>
+
+            <p style="font-size: 0.85rem; color: var(--warm-gray); text-align: center; margin-top: var(--space-md);">
+              By submitting this form, you agree to receive email communication from Aperture Portrait Studio.
+              We respect your privacy and will never share your information.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preparation Guides -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">Prepare</div>
+        <h2 class="section-title">Session Preparation</h2>
+        <p class="section-subtitle">Helpful resources to ensure you're ready for a successful session.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>What to Wear</h3>
+          <p>Wondering what to wear? Our comprehensive wardrobe guide covers color coordination, patterns to avoid, and styling tips for every session type.</p>
+          <a href="#" class="btn btn-outline" style="margin-top: auto;">Download Guide</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Newborn Prep</h3>
+          <p>Everything you need to know before your newborn session—from feeding schedules to what to bring, ensuring a smooth and comfortable experience.</p>
+          <a href="#" class="btn btn-outline" style="margin-top: auto;">Download Guide</a>
+        </div>
+
+        <div class="service-card">
+          <h3>Family Session Tips</h3>
+          <p>
+            Preparing the whole family? Our guide includes tips for
+            photographing children of all ages, coordinating outfits,
+            and making the session fun for everyone.
+          </p>
+          <a href="#" class="btn btn-outline" style="margin-top: auto;">Download Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Additional FAQ -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">Common Questions</div>
+        <h2 class="section-title">Before You Book</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you travel for sessions?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes! While our studio is in Springfield, we love on-location sessions
+              and regularly travel throughout central Illinois at no additional charge.
+              For destinations beyond 30 miles, a travel fee may apply. We're also
+              available for destination shoots and travel worldwide for weddings—just ask!
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What is your booking and payment process?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              After our consultation, you'll receive a contract and invoice. A 50%
+              deposit (or full payment for sessions under $500) is required to
+              secure your date. The remaining balance is due on your session day.
+              We accept credit cards, bank transfers, Venmo, and checks.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I see a full gallery before booking?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              During your consultation (in person or virtual), we'll walk through
+              complete galleries from recent sessions so you can see our full
+              delivery, not just the highlight images. This helps ensure our style
+              is the right fit for your vision.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you offer gift certificates?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes! Gift certificates are available in any amount and make wonderful
+              gifts for new parents, graduates, or anyone deserving professional
+              portraits. Gift certificates are valid for one year from purchase
+              and can be applied to any session or product.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What if my children won't cooperate?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Don't worry—we have years of experience photographing children of
+              all ages and temperaments! We build in extra time for breaks, keep
+              sessions playful and pressure-free, and often capture the most genuine
+              moments when kids are just being themselves. Trust the process!
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Do you have a client gallery login?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes! Existing clients can access their galleries at clients.aperturestudio.com.
+              Your private gallery link and password are emailed when your images
+              are ready. Galleries remain active for 30 days after delivery, but
+              images are archived for 2+ years if you need to reorder.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location/Map Section -->
+  <section class="section section-slate">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">Visit Us</div>
+        <h2 class="section-title">Studio Location</h2>
+        <p class="section-subtitle">Located in the heart of Springfield's historic district, our studio offers convenient parking and a welcoming atmosphere.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Address</h3>
+          <p>
+            742 Evergreen Terrace, Suite 200<br>
+            Springfield, IL 62701<br><br>
+            <strong>Cross streets:</strong> Main St & Oak Ave<br>
+            <strong>Building:</strong> The Cornerstone Building (brick, 2nd floor)
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Parking</h3>
+          <p>
+            Free 2-hour street parking available on Evergreen Terrace and Oak Avenue.
+            Additional parking in the municipal lot on Main Street (first hour free).
+            We validate parking for sessions over 2 hours.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <h3>Accessibility</h3>
+          <p>
+            Our building features elevator access to the 2nd floor studio.
+            The studio is wheelchair accessible with wide doorways and an
+            accessible restroom. Please let us know of any special needs when booking.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-xl">
+        <a href="https://maps.google.com" target="_blank" class="btn btn-gold btn-large">Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Prefer to Chat?</h2>
+        <p>Sometimes a quick conversation is easier than email. Give us a call during business hours or schedule a virtual consultation.</p>
+        <div class="cta-buttons">
+          <a href="tel:+12175551234" class="btn btn-gold btn-large">Call (217) 555-1234</a>
+          <a href="services.html" class="btn btn-white btn-large">View Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-mark"></div>
+            <div class="logo-text">
+              Aperture
+              <span>Portrait Studio</span>
+            </div>
+          </a>
+          <p>Creating timeless portraits and capturing life's beautiful moments since 2009.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">Fb</a>
+            <a href="#" class="social-link">Ig</a>
+            <a href="#" class="social-link">Pn</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Galleries</h4>
+          <ul class="footer-links">
+            <li><a href="portfolio-portraits.html">Portraits</a></li>
+            <li><a href="portfolio-families.html">Families</a></li>
+            <li><a href="portfolio-newborns.html">Newborns</a></li>
+            <li><a href="portfolio-weddings.html">Weddings</a></li>
+            <li><a href="portfolio-headshots.html">Headshots</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h4>Get in Touch</h4>
+          <p>742 Evergreen Terrace, Suite 200</p>
+          <p>Springfield, IL 62701</p>
+          <p><a href="tel:+12175551234">(217) 555-1234</a></p>
+          <p><a href="mailto:hello@aperturestudio.com">hello@aperturestudio.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Aperture Portrait Studio. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const isActive = item.classList.contains('active');
+
+        // Close all items
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+        // Open clicked item if it wasn't active
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

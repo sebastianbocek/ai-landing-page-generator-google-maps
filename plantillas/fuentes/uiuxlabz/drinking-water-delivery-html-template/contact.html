@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — RIVULET Spring Water</title>
+  <meta name="description" content="Get in touch with RIVULET — request a tasting, set up a delivery, or ask about wholesale." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <div class="microbar">
+    <div class="container">
+      <span class="dot"></span>
+      <span class="route">Source → Spring → Bottle → You — <b>Batch #0428</b></span>
+      <span class="spacer"></span>
+      <a href="contact.html">Request a tasting →</a>
+    </div>
+  </div>
+
+  <header class="sitehead">
+    <div class="container">
+      <a href="index.html" class="mark"><span class="glyph">💧</span>RIVULE<span>m</span>T</a>
+      <nav id="mainnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">Our Source</a>
+        <a href="service.html">Plans</a>
+        <a href="product.html">Catalogue</a>
+        <a href="blog.html">Journal</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a href="contact.html" class="cta">Start Delivery</a>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <span class="crumb"><a href="index.html">Home</a> / Contact</span>
+      <h1>Let's&nbsp;talk water</h1>
+      <p>Request a free tasting set, set up a delivery, or ask about wholesale and office plans.</p>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="contact-grid">
+        <form id="contactform" class="reveal">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="phone">Phone (optional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="+44 7700 000000" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="postcode">Delivery Postcode</label>
+            <input type="text" id="postcode" name="postcode" placeholder="e.g. SW1A 1AA" />
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="tasting">Free Tasting Set</option>
+              <option value="subscribe">Start a Subscription</option>
+              <option value="wholesale">Wholesale / Office</option>
+              <option value="press">Press Enquiry</option>
+              <option value="other">Something Else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you need..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message →</button>
+          <div class="form-ok" hidden>Thanks — we'll be in touch within 24 hours.</div>
+          <div class="form-err" hidden>Please fill in all required fields.</div>
+        </form>
+        <div>
+          <div class="info-card reveal d1">
+            <h4>Delivery Enquiries</h4>
+            <a href="mailto:hello@rivulet.co.uk">hello@rivulet.co.uk</a><br />
+            <a href="tel:+441234567890">+44 1234 567 890</a>
+            <p style="margin-top:.6rem">Mon–Fri, 8am–6pm</p>
+          </div>
+          <div class="info-card reveal d2" style="margin-top:.8rem">
+            <h4>Wholesale &amp; Office</h4>
+            <a href="mailto:trade@rivulet.co.uk">trade@rivulet.co.uk</a>
+            <p style="margin-top:.6rem">Bulk pricing for offices, restaurants, and hospitality.</p>
+          </div>
+          <div class="info-card reveal d3" style="margin-top:.8rem">
+            <h4>The Spring</h4>
+            <p>RIVULET Spring Water Ltd<br />Llanwrtyd Wells, Powys<br />LD4 4DW, Wales</p>
+            <p style="margin-top:.4rem"><a href="about.html">View source coordinates →</a></p>
+          </div>
+          <div class="info-card reveal" style="margin-top:.8rem">
+            <h4>Check Your Area</h4>
+            <p>We deliver across mainland UK. Enter your postcode above and we'll confirm availability.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><div class="brand">RIVULE<span>m</span>T</div><p>Spring water delivered from source to door.</p></div>
+        <div><h4>Pages</h4><a href="index.html">Home</a><br /><a href="about.html">Our Source</a><br /><a href="service.html">Plans</a><br /><a href="product.html">Catalogue</a><br /><a href="blog.html">Journal</a><br /><a href="contact.html">Contact</a></div>
+        <div><h4>Source Data</h4><a href="about.html">Mineral Profile</a><br /><a href="about.html">Lab Reports</a><br /><a href="about.html">Spring Coordinates</a></div>
+        <div><h4>Company</h4><a href="about.html">About</a><br /><a href="blog.html">Journal</a><br /><a href="contact.html">Wholesale</a></div>
+      </div>
+      <div class="base">
+        <span>© <span data-year></span> RIVULET Spring Water Ltd</span>
+        <span>Source: Llanwrtyd Wells · 52.0667° N, 3.6333° W</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

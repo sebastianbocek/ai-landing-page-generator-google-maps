@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Book Appointment | SwiftSign Notary Services - Charlotte, NC</title>
+  <meta name="description" content="Book your notary appointment with SwiftSign. Contact us by phone, email, or online form. Serving Charlotte, NC and surrounding areas 7 days a week.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-seal"><i class="fas fa-stamp"></i></div>
+      <div class="logo-text">
+        <span class="brand">SwiftSign</span>
+        <span class="tagline">Notary Services</span>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Book Now</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span>Contact</span>
+    </div>
+    <h1>Contact &amp; Book Appointment</h1>
+    <p>Tell us what you need and we will get you scheduled. Same-day appointments available seven days a week.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrapper">
+        <h2>Request an Appointment</h2>
+        <p>Fill out the form below and we will get back to you within one hour during business hours. For urgent requests, please call us directly.</p>
+
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="(704) 555-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Type *</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="general">General Notarization</option>
+                <option value="mobile">Mobile Notary</option>
+                <option value="loan-signing">Loan Signing</option>
+                <option value="ron">Remote Online Notarization</option>
+                <option value="apostille">Apostille &amp; Authentication</option>
+                <option value="certified-copy">Certified Copy</option>
+                <option value="corporate">Bulk / Corporate Package</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="documents">Number of Documents</label>
+              <input type="number" id="documents" name="documents" placeholder="e.g. 3" min="1">
+            </div>
+            <div class="form-group">
+              <label for="datetime">Preferred Date &amp; Time *</label>
+              <input type="text" id="datetime" name="datetime" placeholder="e.g. March 5, 2026 at 2:00 PM" required>
+            </div>
+          </div>
+
+          <div class="form-row" style="grid-template-columns: 1fr;">
+            <div class="form-group">
+              <label for="location">Location / Address</label>
+              <input type="text" id="location" name="location" placeholder="Where should we meet you? (home, office, etc.)">
+            </div>
+          </div>
+
+          <div class="form-row" style="grid-template-columns: 1fr;">
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" placeholder="Tell us about the documents you need notarized, any special requirements, or questions you have."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; justify-content: center;">
+            <i class="fas fa-calendar-check"></i>
+            Submit Appointment Request
+          </button>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="contact-sidebar">
+
+        <!-- Contact Info -->
+        <div class="contact-info-card">
+          <h3>Get in Touch</h3>
+          <div class="contact-info-item">
+            <div class="icon-circle">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <div class="label">Phone</div>
+              <div class="value"><a href="tel:+17045550192" style="color: var(--primary);">(704) 555-0192</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon-circle">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <div class="label">Email</div>
+              <div class="value"><a href="mailto:info@swiftsignnotary.com" style="color: var(--primary);">info@swiftsignnotary.com</a></div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon-circle">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <div class="label">Hours</div>
+              <div class="value">Mon - Sun: 8:00 AM - 8:00 PM</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="icon-circle">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <div class="label">Service Area</div>
+              <div class="value">Charlotte, NC &amp; Surrounding Areas</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+          <i class="fas fa-map-location-dot"></i>
+          <span>Charlotte, NC Metro Area</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background: var(--gray-light);">
+  <div class="container">
+    <div class="section-header">
+      <div class="seal-divider">
+        <span class="line"></span>
+        <span class="seal-icon"><i class="fas fa-circle-question"></i></span>
+        <span class="line"></span>
+      </div>
+      <h2>Frequently Asked Questions</h2>
+      <p>Answers to the most common questions we hear from clients.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>
+          <i class="fas fa-circle-question"></i>
+          What should I bring to my notary appointment?
+        </h4>
+        <p>Bring a valid, unexpired government-issued photo ID (driver's license, passport, or state ID card). You should also bring the unsigned documents that need to be notarized. Do not sign them before the notary arrives -- the notary must witness your signature.</p>
+      </div>
+      <div class="faq-item">
+        <h4>
+          <i class="fas fa-circle-question"></i>
+          What types of ID are accepted?
+        </h4>
+        <p>We accept current, unexpired government-issued photo IDs including a state driver's license, state-issued identification card, U.S. passport or passport card, and U.S. military ID. The name on your ID must match the name on the document being notarized.</p>
+      </div>
+      <div class="faq-item">
+        <h4>
+          <i class="fas fa-circle-question"></i>
+          How long does a notarization take?
+        </h4>
+        <p>A standard notarization with one or two documents typically takes about 10 to 15 minutes. Loan signings are more involved and usually take 45 minutes to an hour, depending on the size of the document package. We always arrive prepared to work efficiently.</p>
+      </div>
+      <div class="faq-item">
+        <h4>
+          <i class="fas fa-circle-question"></i>
+          Can you notarize at a hospital or jail?
+        </h4>
+        <p>Yes. Our mobile notaries regularly travel to hospitals, nursing homes, rehabilitation centers, and correctional facilities. Please call ahead so we can coordinate with the facility's visiting policies and ensure a smooth appointment.</p>
+      </div>
+      <div class="faq-item">
+        <h4>
+          <i class="fas fa-circle-question"></i>
+          What is Remote Online Notarization (RON)?
+        </h4>
+        <p>RON allows you to have documents notarized through a secure video call without meeting the notary in person. You connect via a webcam, verify your identity through knowledge-based questions, and sign your documents electronically. The notary applies a digital seal, and the session is recorded for compliance.</p>
+      </div>
+      <div class="faq-item">
+        <h4>
+          <i class="fas fa-circle-question"></i>
+          What is an apostille?
+        </h4>
+        <p>An apostille is a certificate issued by the Secretary of State that authenticates a notarized document for use in another country that is a member of the Hague Convention. It verifies that the notary's signature and seal are legitimate. If your document is going to a non-Hague country, you may need a different authentication process instead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Still Have Questions?</h2>
+    <p>Call us anytime during business hours. We are happy to walk you through the process and help you figure out exactly what you need.</p>
+    <div class="cta-buttons">
+      <a href="tel:+17045550192" class="btn btn-primary btn-lg">
+        <i class="fas fa-phone"></i>
+        Call (704) 555-0192
+      </a>
+      <a href="mailto:info@swiftsignnotary.com" class="btn btn-secondary btn-lg">
+        <i class="fas fa-envelope"></i>
+        Email Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <div class="logo-seal"><i class="fas fa-stamp"></i></div>
+          <span class="brand">SwiftSign</span>
+        </div>
+        <p>Professional mobile notary services throughout the Charlotte, NC metro area. Licensed, bonded, and insured for your protection.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">Mobile Notary</a>
+        <a href="services.html">Loan Signings</a>
+        <a href="services.html">Remote Online Notarization</a>
+        <a href="services.html">Apostille Services</a>
+        <a href="services.html">Certified Copies</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="about.html">Our Team</a>
+        <a href="services.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+17045550192"><i class="fas fa-phone"></i> (704) 555-0192</a>
+        <a href="mailto:info@swiftsignnotary.com"><i class="fas fa-envelope"></i> info@swiftsignnotary.com</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Charlotte, NC 28202</a>
+        <a href="#"><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 8:00 PM</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SwiftSign Notary Services. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+
+</body>
+</html>

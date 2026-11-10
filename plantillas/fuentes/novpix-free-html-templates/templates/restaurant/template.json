@@ -1,0 +1,15 @@
+{
+  "slug": "restaurant",
+  "name": "Ember & Olive — Restaurant & café website",
+  "category": "business",
+  "description": "Warm restaurant and café template with menu page, dietary filters, reservation form, opening hours, food illustrations and a map block. Free, no build step.",
+  "tags": ["restaurant", "cafe", "menu", "bistro", "food", "reservations"],
+  "pages": ["index.html", "menu.html"],
+  "features": ["Responsive", "Mobile menu", "Full menu page with categories", "Dietary tags & filters", "Reservation form (date, time, party size)", "Opening hours with today highlight", "Illustrated food gallery", "Static map block", "Testimonials", "Newsletter form", "Reduced-motion friendly", "No dependencies"],
+  "fonts": [
+    {"family": "Fraunces", "source": "Google Fonts", "license": "OFL"},
+    {"family": "DM Sans", "source": "Google Fonts", "license": "OFL"}
+  ],
+  "colors": {"brand": "#a63a0d", "accent": "#5b6b2f", "bg": "#fbf5ec", "text": "#2a1a12"},
+  "customizable": {"brand": true, "accent": true, "brandName": true, "heading": true}
+}

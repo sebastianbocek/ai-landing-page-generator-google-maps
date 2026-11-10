@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Us & Catering | Rolling Fire Kitchen</title>
+  <meta name="description" content="Find Rolling Fire Kitchen's current location, book us for catering, or get in touch. We bring the fire to weddings, corporate events, festivals, and private parties.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="fas fa-fire"></i></span>
+        <span class="logo-main">Rolling Fire</span>
+        <span class="logo-sub">Kitchen</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Menu</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary header-cta">Find Us</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <p class="section-label"><i class="fas fa-map-location-dot"></i> Get in Touch</p>
+        <h1>Find Us. Book Us.<br>Eat with Us.</h1>
+        <p>Whether you're looking for lunch today or planning a catering event, we've got you covered. Here's how to reach us.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-section">
+          <h2>Catering Inquiry</h2>
+          <p>Planning an event? Fill out the form and we'll get back to you within 24 hours with a custom quote.</p>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+              </div>
+              <div class="form-group">
+                <label for="event-type">Event Type</label>
+                <select id="event-type" name="event-type" required>
+                  <option value="" disabled selected>Select event type</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="festival">Festival / Market</option>
+                  <option value="private">Private Party</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event-date" required>
+              </div>
+              <div class="form-group">
+                <label for="guest-count">Guest Count</label>
+                <input type="number" id="guest-count" name="guest-count" placeholder="Approx. number" min="1">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Event</label>
+              <textarea id="message" name="message" placeholder="Location, vibe, dietary needs, anything else we should know..." rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+          </form>
+        </div>
+
+        <div class="contact-info-section">
+          <h2>Reach Us</h2>
+          <div class="contact-info-item">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>(555) 867-5309</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p>eat@rollingfirekitchen.com</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Catering Response Time</h4>
+              <p>We respond to all inquiries within 24 hours. For same-week events, give us a call.</p>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <h4>Follow Us for Live Updates</h4>
+            <div class="contact-social-links">
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-schedule">
+            <h4>This Week's Schedule</h4>
+            <ul class="schedule-list">
+              <li><strong>Mon</strong> Downtown Food Park</li>
+              <li><strong>Tue</strong> Tech District (4th & Main)</li>
+              <li><strong>Wed</strong> University Ave Market</li>
+              <li><strong>Thu</strong> Riverside Brewery Lot</li>
+              <li><strong>Fri</strong> The Warehouse District</li>
+              <li><strong>Sat</strong> Farmer's Market & Night Events</li>
+              <li><strong>Sun</strong> Closed (or private events)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label"><i class="fas fa-circle-question"></i> FAQ</p>
+        <h2 class="section-title">Common Questions</h2>
+        <div class="fire-divider">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Do You Cater Private Events?</h3>
+          <p>Absolutely. We cater everything from backyard birthdays to 300-person corporate events. We bring the full truck, the full crew, and cook everything fresh on-site. Fill out the form above or call us to get started.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Where Are You Parked Today?</h3>
+          <p>Our weekly schedule is posted on this page and on our homepage. For real-time updates (including surprise pop-ups and schedule changes), follow us on Instagram @RollingFireKitchen.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do You Have Vegetarian Options?</h3>
+          <p>Yes. Our fire-roasted veggie tacos, the Rolling Fire Bowl with grilled veggies, elote, regular fries, and chips & salsa are all vegetarian. We also have vegan-friendly options. Just ask at the window.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How Far in Advance Should I Book Catering?</h3>
+          <p>We recommend at least 2-3 weeks for most events. For weddings and large corporate events, 4-6 weeks is ideal. That said, we've pulled off last-minute gigs before. Call us and we'll see what we can do.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do You Do Food Truck Festivals?</h3>
+          <p>We love festivals. We participate in local food truck rallies, night markets, and street food events regularly. If you're organizing a festival and want Rolling Fire there, reach out through the form or email us directly.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I Hire You for a Wedding?</h3>
+          <p>100%. Wedding catering is one of our favorite things to do. We'll work with you on a custom menu, timing, and setup. Your guests get fresh, fire-cooked food instead of the usual banquet hall situation. It's always a hit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Let's Make It Happen</h2>
+        <p>Whether it's lunch for one or dinner for 200, we're ready to fire up the grill and feed your people.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="tel:5558675309" class="btn btn-primary"><i class="fas fa-phone"></i> Call Us Now</a>
+          <a href="services.html" class="btn btn-outline-light">See the Menu</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><i class="fas fa-fire"></i></span>
+            <span class="logo-main">Rolling Fire</span>
+            <span class="logo-sub">Kitchen</span>
+          </a>
+          <p>Bold street food cooked over real fire. No rules, no reservations. Just follow the smoke.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="services.html">Menu</a></li>
+            <li><a href="contact.html">Find Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Smash Burgers</a></li>
+            <li><a href="services.html">Street Tacos</a></li>
+            <li><a href="services.html">Loaded Fries</a></li>
+            <li><a href="services.html">Catering</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <i class="fas fa-phone"></i>
+            (555) 867-5309
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            eat@rollingfirekitchen.com
+          </p>
+          <p>
+            <i class="fab fa-instagram"></i>
+            @RollingFireKitchen
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Rolling Fire Kitchen. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

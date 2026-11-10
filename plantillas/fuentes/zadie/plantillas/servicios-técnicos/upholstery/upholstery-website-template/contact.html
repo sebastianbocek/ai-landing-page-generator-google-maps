@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Heritage Upholstery & Design - Savannah, GA</title>
+  <meta name="description" content="Contact Heritage Upholstery & Design for a free upholstery estimate. Visit our Savannah, GA workshop or call us at (912) 555-0147. Pickup and delivery available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Coustard:wght@400;900&family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-couch"></i>
+        </div>
+        <div class="logo-text">
+          Heritage
+          <small>Upholstery & Design</small>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Free Estimate</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero hero-page" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <span class="section-label">Get In Touch</span>
+      <h1>Contact Us</h1>
+      <p>Have a piece that needs attention? Send us the details and we will get back to you with a free estimate within one business day.</p>
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / Contact
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Form -->
+        <div class="contact-form-section">
+          <h2>Request a Free Estimate</h2>
+          <p style="color: var(--color-gray); margin-bottom: var(--space-lg);">Fill out the form below and we will respond within one business day. For faster service, call us directly at <a href="tel:+19125550147" style="font-weight: 600;">(912) 555-0147</a>.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(912) 555-0000">
+              </div>
+              <div class="form-group">
+                <label for="service">Service Type *</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service...</option>
+                  <option value="reupholstery">Furniture Reupholstery</option>
+                  <option value="custom">Custom Furniture</option>
+                  <option value="cushion">Cushion & Foam Replacement</option>
+                  <option value="commercial">Commercial Upholstery</option>
+                  <option value="repair">Furniture Repair</option>
+                  <option value="fabric">Fabric Selection Consultation</option>
+                  <option value="marine">Marine & Outdoor</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="description">Describe Your Piece *</label>
+              <textarea id="description" name="description" placeholder="Tell us about your furniture: What type of piece is it? What condition is it in? What are you hoping to achieve? Any specific fabric or style preferences?" required></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="timeline">Preferred Timeline</label>
+                <select id="timeline" name="timeline">
+                  <option value="">No rush - whenever available</option>
+                  <option value="2weeks">Within 2 weeks</option>
+                  <option value="1month">Within 1 month</option>
+                  <option value="2months">Within 2 months</option>
+                  <option value="flexible">Flexible - just exploring options</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Photos of Your Piece</label>
+                <p class="form-note" style="margin-top: 8px;">Photos help us provide a more accurate estimate. After submitting this form, you can reply to our confirmation email with attached photos, or text them to (912) 555-0147.</p>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Estimate Request</button>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Workshop Address</h4>
+                <p>412 Drayton Street<br>Savannah, GA 31401</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Phone</h4>
+                <p><a href="tel:+19125550147">(912) 555-0147</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Email</h4>
+                <p><a href="mailto:info@heritageupholstery.com">info@heritageupholstery.com</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Business Hours</h4>
+                <p>Mon - Fri: 8:00am - 5:00pm<br>Saturday: 9:00am - 2:00pm<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder">
+            <i class="fas fa-map-marker-alt"></i> 412 Drayton Street, Savannah, GA
+          </div>
+
+          <!-- Quick Contact -->
+          <div class="contact-info-card">
+            <h3>Prefer to Call or Visit?</h3>
+            <p style="color: var(--color-gray); font-size: 0.9rem;">Walk-ins are welcome during business hours. For larger projects, we recommend calling ahead so Bobby or Claire can set aside time for a proper consultation. We also offer free in-home estimates throughout the Savannah metro area.</p>
+            <a href="tel:+19125550147" class="btn btn-secondary btn-sm" style="margin-top: var(--space-sm); width: 100%; justify-content: center;">
+              <i class="fas fa-phone"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <div class="stitch-divider">
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p>Here are answers to the questions we hear most often. If you do not see your question listed, feel free to call or email us.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How long does reupholstery typically take?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Most residential projects take 2-4 weeks from the time we pick up your piece, depending on the complexity and the fabric lead time. Simple jobs like dining chair seats can be turned around in as little as one week. Custom furniture and commercial projects may take 4-8 weeks. We will always give you a clear timeline before starting work.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is it worth reupholstering versus buying new furniture?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>In most cases, yes. Quality furniture built before the 1990s often has hardwood frames, eight-way hand-tied springs, and construction standards that are rare in today's mass-produced pieces. Reupholstering preserves that quality at a fraction of the cost of a comparable new piece. It is also significantly more sustainable. That said, we are always honest: if a piece is not worth the investment, we will tell you.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you pick up and deliver furniture?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We offer pickup and delivery throughout the greater Savannah area, including Tybee Island, Pooler, Richmond Hill, and Hilton Head. For pieces within Savannah proper, pickup and delivery are complimentary. There may be a small fee for locations farther out. We will let you know upfront.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I supply my own fabric?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. Many of our clients come to us with fabric they have sourced themselves. We call this COM (Customer's Own Material). Just let us know what you have and we will confirm the yardage needed and check that it is suitable for your piece. If you need guidance, our design consultant Claire is always happy to help you choose from our in-house library of over 500 options.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What types of furniture do you work on?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>We work on virtually any upholstered piece: sofas, loveseats, sectionals, armchairs, recliners, dining chairs, ottomans, benches, headboards, chaise lounges, restaurant booths, office chairs, boat cushions, patio furniture, and more. If it has padding and fabric, we can probably help. For unusual pieces, just give us a call and we will let you know.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer discounts for commercial or bulk projects?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. We offer volume pricing for commercial clients and larger residential projects. If you have multiple pieces, such as a set of dining chairs, a restaurant full of booths, or an office suite, we will provide a discounted per-unit rate. Contact us with the details and we will put together a custom proposal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label">Still Have Questions?</span>
+      <h2>We Are Here to Help</h2>
+      <div class="stitch-divider stitch-divider-light">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <p>Whether you are ready to start a project or just exploring your options, we are happy to chat. No pressure, no obligation.</p>
+      <a href="tel:+19125550147" class="btn btn-secondary btn-lg">Call (912) 555-0147</a>
+      <a href="mailto:info@heritageupholstery.com" class="btn btn-outline-white btn-lg">Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">
+            Heritage
+            <small>Upholstery & Design</small>
+          </div>
+          <p>A third-generation upholstery workshop in Savannah, GA. We specialize in furniture reupholstery, custom builds, and commercial projects, bringing 40+ years of master craftsmanship to every piece.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Furniture Reupholstery</a></li>
+            <li><a href="services.html">Custom Furniture</a></li>
+            <li><a href="services.html">Commercial Upholstery</a></li>
+            <li><a href="services.html">Cushion Replacement</a></li>
+            <li><a href="services.html">Fabric Selection</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 412 Drayton Street, Savannah, GA 31401</li>
+            <li><i class="fas fa-phone"></i> (912) 555-0147</li>
+            <li><i class="fas fa-envelope"></i> info@heritageupholstery.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 8am - 5pm<br>Sat: 9am - 2pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Heritage Upholstery & Design. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAQ Toggle Script -->
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var item = this.parentElement;
+        var isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(function(faq) {
+          faq.classList.remove('active');
+          faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isActive) {
+          item.classList.add('active');
+          this.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | InkWorks Print Studio</title>
+  <meta name="description" content="Get a quote from InkWorks Print Studio. Contact us by phone, email, or visit our studio. Fast quotes, free proofs, and local delivery available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  </head>
+<body>
+
+
+
+  
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-cmyk">
+          <span class="dot-c"></span>
+          <span class="dot-m"></span>
+          <span class="dot-y"></span>
+          <span class="dot-k"></span>
+        </span>
+        InkWorks
+      </a>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <a href="contact.html" class="btn btn-primary header-cta">Get a Quote</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <span class="hero-label">Get in Touch</span>
+    <h1>Let's Talk Print</h1>
+    <p>Have a project in mind? Send us the details and we'll get back to you with a quote, usually within a few hours.</p>
+    <div class="hero-color-bar">
+      <span class="bar-c"></span>
+      <span class="bar-m"></span>
+      <span class="bar-y"></span>
+      <span class="bar-k"></span>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section class="section-padding color-block-section bg-paper halftone-bg">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Form -->
+        <div>
+          <div class="contact-form">
+            <h2 style="margin-bottom: 0.5rem;">Request a Quote</h2>
+            <p style="color: var(--color-gray); font-size: 0.9rem; margin-bottom: 1.75rem;">Fill out the form below and we'll get back to you with pricing, turnaround, and material recommendations.</p>
+
+            <form action="#" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input type="text" id="name" name="name" placeholder="Your full name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+                </div>
+                <div class="form-group">
+                  <label for="project-type">Project Type *</label>
+                  <select id="project-type" name="project-type" required>
+                    <option value="" disabled selected>Select a project type</option>
+                    <option value="business-cards">Business Cards</option>
+                    <option value="brochures">Brochures &amp; Flyers</option>
+                    <option value="banners">Banners &amp; Large Format</option>
+                    <option value="signage">Signage</option>
+                    <option value="apparel">Apparel &amp; Merch</option>
+                    <option value="stickers">Stickers &amp; Labels</option>
+                    <option value="packaging">Packaging</option>
+                    <option value="design">Design Services</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="quantity">Estimated Quantity</label>
+                  <input type="text" id="quantity" name="quantity" placeholder="e.g., 500, 1000, not sure">
+                </div>
+                <div class="form-group">
+                  <label for="deadline">Deadline</label>
+                  <input type="text" id="deadline" name="deadline" placeholder="e.g., March 15, ASAP, flexible">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Details *</label>
+                <textarea id="message" name="message" placeholder="Tell us about your project -- dimensions, paper preferences, finishes, colors, or anything else that helps us give you an accurate quote." required></textarea>
+              </div>
+
+              <div class="file-note">
+                <i class="fa-solid fa-paperclip"></i>
+                <span>Have files to share? Email them to <strong>files@inkworksstudio.com</strong> or mention them here and we'll follow up.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%; justify-content: center;">
+                <i class="fa-solid fa-paper-plane"></i> Submit Quote Request
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sidebar Info -->
+        <div>
+          <!-- Contact Info -->
+          <div style="margin-bottom: 2rem;">
+            <h3 style="margin-bottom: 1.25rem;">Contact Info</h3>
+            <div class="contact-info-grid" style="grid-template-columns: 1fr;">
+              <div class="contact-info-card">
+                <div class="contact-info-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h4>Visit the Studio</h4>
+                  <p>742 Press Lane, Suite 100<br>Inkville, CA 90210</p>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <div class="contact-info-icon" style="background: var(--color-cyan);">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h4>Call Us</h4>
+                  <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <div class="contact-info-icon" style="background: var(--color-magenta);">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p><a href="mailto:hello@inkworksstudio.com">hello@inkworksstudio.com</a></p>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <div class="contact-info-icon" style="background: var(--color-yellow); color: var(--color-key);">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <h4>Studio Hours</h4>
+                  <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="map-placeholder">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span>Map Placeholder</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-padding">
+    <div class="container text-center">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Common Questions</h2>
+      <p class="section-subtitle">Quick answers to the things our clients ask most. If your question isn't here, just reach out.</p>
+
+      <div class="swatch-divider">
+        <span class="sw-c"></span>
+        <span class="sw-m"></span>
+        <span class="sw-y"></span>
+        <span class="sw-k"></span>
+      </div>
+
+      <div class="faq-list" style="margin-top: 2rem; text-align: left;">
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>What file formats do you accept?</span>
+          </div>
+          <p class="faq-answer">We accept PDF (preferred), Adobe Illustrator (.ai), Photoshop (.psd), InDesign (.indd), EPS, TIFF, and high-resolution JPEG/PNG files. For best results, send vector files or high-resolution raster images at 300 DPI or higher in CMYK color mode. Not sure if your files are print-ready? Send them over and we'll check for free.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>How fast can you turn around a job?</span>
+          </div>
+          <p class="faq-answer">Standard turnaround is 3-5 business days for most products. We offer next-day and same-day rush service on select items like business cards, flyers, and postcards. Large format and specialty jobs may take longer depending on complexity. We'll always give you a clear timeline before you approve.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>Do you offer design services?</span>
+          </div>
+          <p class="faq-answer">Yes. Our in-house graphic designer handles everything from logo creation and branding packages to layout, typesetting, and file preparation. Design rates start at $75/hour, and we offer flat-rate brand packages starting at $499. If you just need file prep or minor adjustments, that starts at $25.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>Is there a minimum order quantity?</span>
+          </div>
+          <p class="faq-answer">For digital printing, there's no minimum -- we'll print 1 piece or 10,000. Screen printed apparel has a minimum of 12 pieces per design. Offset printing is most cost-effective at 500+ units but we can accommodate smaller runs on our digital press at competitive pricing.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>Can I see a proof before you print?</span>
+          </div>
+          <p class="faq-answer">Absolutely. Every job gets a digital proof for your review and approval before it goes to press. We won't print until you sign off. For color-critical work, we also offer printed hard proofs on your actual paper stock so you can see exactly how the final product will look and feel.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fa-solid fa-circle-question"></i>
+            <span>Do you offer shipping and delivery?</span>
+          </div>
+          <p class="faq-answer">Local delivery within the Inkville metro area is free on all orders. For clients outside our delivery zone, we ship via UPS, FedEx, or USPS at competitive rates. You can also pick up your order at our studio during business hours. We'll notify you as soon as your job is ready.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <span class="print-spec" style="background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.15); color: rgba(255,255,255,0.7); margin-bottom: 1.5rem;">SPOT UV</span>
+    <h2>Prefer to Talk?</h2>
+    <p>Call us or stop by the studio. We're happy to walk through your project in person and show you paper and finish samples.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="tel:+15551234567" class="btn btn-primary"><i class="fa-solid fa-phone"></i> (555) 123-4567</a>
+      <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fa-solid fa-location-dot"></i> Get Directions</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-cmyk">
+            <span class="dot-c"></span>
+            <span class="dot-m"></span>
+            <span class="dot-y"></span>
+            <span class="dot-k"></span>
+          </span>
+          InkWorks
+        </a>
+        <p>Full-service print studio delivering sharp, vibrant results for businesses and creatives since 2016. From screen to substrate, we make ink look good.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Services</h4>
+        <div class="footer-links">
+          <a href="services.html">Business Printing</a>
+          <a href="services.html">Large Format</a>
+          <a href="services.html">Signage</a>
+          <a href="services.html">Custom &amp; Specialty</a>
+          <a href="services.html">Apparel</a>
+          <a href="services.html">Design Services</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="footer-heading">Contact</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>742 Press Lane, Suite 100<br>Inkville, CA 90210</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>(555) 123-4567</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>hello@inkworksstudio.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Mon-Fri 8am-6pm | Sat 9am-2pm</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 InkWorks Print Studio. All rights reserved.</span>
+      <span>Design by <a href="https://zadie.studio" target="_blank" rel="noopener">ZADIE</a></span>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle Script -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    navToggle.addEventListener('click', function() {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

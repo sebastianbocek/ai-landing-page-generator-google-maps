@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book | Sharp Edge Barbershop</title>
+  <meta name="description" content="Book your appointment at Sharp Edge Barbershop. Walk-ins welcome. Located at 742 Main Street, Downtown.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-main">Sharp Edge</span>
+        <span class="logo-sub">Barbershop</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary header-cta">Book Now</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <p class="section-label">Get in Touch</p>
+        <h1>Book Your Cut</h1>
+        <p>Walk-ins welcome. Appointments guarantee your spot.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-section">
+          <h2>Request an Appointment</h2>
+          <p>Fill out the form and we'll confirm your booking within the hour during business hours.</p>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Smith">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option value="classic-cut">Classic Cut - $30</option>
+                  <option value="fade">Fade - $35-40</option>
+                  <option value="beard-trim">Beard Trim - $20</option>
+                  <option value="beard-full">Full Beard Service - $35</option>
+                  <option value="hot-shave">Hot Towel Shave - $40</option>
+                  <option value="the-regular">The Regular (Combo) - $45</option>
+                  <option value="the-works">The Works (Combo) - $75</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="barber">Preferred Barber</label>
+                <select id="barber" name="barber">
+                  <option value="">No preference</option>
+                  <option value="marcus">Marcus Rivera</option>
+                  <option value="james">James Thompson</option>
+                  <option value="derek">Derek Kim</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <select id="time" name="time" required>
+                  <option value="">Select a time</option>
+                  <option value="9:00">9:00 AM</option>
+                  <option value="9:30">9:30 AM</option>
+                  <option value="10:00">10:00 AM</option>
+                  <option value="10:30">10:30 AM</option>
+                  <option value="11:00">11:00 AM</option>
+                  <option value="11:30">11:30 AM</option>
+                  <option value="12:00">12:00 PM</option>
+                  <option value="12:30">12:30 PM</option>
+                  <option value="13:00">1:00 PM</option>
+                  <option value="13:30">1:30 PM</option>
+                  <option value="14:00">2:00 PM</option>
+                  <option value="14:30">2:30 PM</option>
+                  <option value="15:00">3:00 PM</option>
+                  <option value="15:30">3:30 PM</option>
+                  <option value="16:00">4:00 PM</option>
+                  <option value="16:30">4:30 PM</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="notes">Additional Notes</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Anything we should know? Style preferences, special requests, etc."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Request Appointment</button>
+          </form>
+        </div>
+        <div class="contact-info-section">
+          <h2>Shop Info</h2>
+          <div class="contact-info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <div>
+              <h4>Location</h4>
+              <p>742 Main Street<br>Downtown, ST 12345</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <div>
+              <h4>Phone</h4>
+              <p>(555) 234-5678</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <div>
+              <h4>Email</h4>
+              <p>hello@sharpedgebarbershop.com</p>
+            </div>
+          </div>
+          <div class="contact-hours">
+            <h4>Shop Hours</h4>
+            <ul class="hours-list">
+              <li><span>Monday</span><span>Closed</span></li>
+              <li><span>Tuesday</span><span>9:00 AM - 7:00 PM</span></li>
+              <li><span>Wednesday</span><span>9:00 AM - 7:00 PM</span></li>
+              <li><span>Thursday</span><span>9:00 AM - 7:00 PM</span></li>
+              <li><span>Friday</span><span>9:00 AM - 7:00 PM</span></li>
+              <li><span>Saturday</span><span>9:00 AM - 5:00 PM</span></li>
+              <li><span>Sunday</span><span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section section-dark">
+    <div class="map-container">
+      <div class="map-placeholder">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <p>742 Main Street, Downtown</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Questions?</p>
+        <h2 class="section-title">Frequently Asked</h2>
+        <div class="stripe-divider">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Do you take walk-ins?</h3>
+          <p>Absolutely. Walk-ins are always welcome. If we're busy, we'll give you an honest wait time estimate. Booking ahead just guarantees you skip the wait.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do I describe what I want?</h3>
+          <p>Pictures are worth a thousand words. Bring a photo if you have one. Otherwise, just tell us what you like and don't like about your current cut, and we'll guide you from there.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Should I wash my hair before?</h3>
+          <p>No need. We'll wash it if the service calls for it. Just come as you are. Clean and dry is fine, but don't stress about it.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How much should I tip?</h3>
+          <p>Tips are never expected but always appreciated. If you're happy with your cut, 15-20% is customary in the industry. Cash or card, your call.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How often should I get a haircut?</h3>
+          <p>For fades and tight cuts, every 2-3 weeks keeps it fresh. Classic cuts can go 4-6 weeks. We'll give you honest advice based on your style.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you cut kids' hair?</h3>
+          <p>We do, and we're patient with the little ones. Kids 12 and under get a discounted rate. Pro tip: mornings when they're less tired work best.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What if I need to cancel?</h3>
+          <p>Life happens. Just give us a call or text with as much notice as you can. We ask for at least 2 hours notice for cancellations when possible.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do you sell gift cards?</h3>
+          <p>Yes, available in any amount. Great gift for the guy who's hard to shop for. Available in-shop or call us to purchase over the phone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policies Section -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Good to Know</p>
+        <h2 class="section-title">Shop Policies</h2>
+        <div class="stripe-divider">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>Parking</h3>
+          <p>Street parking is available on Main Street (2-hour limit). There's also a public lot around the corner on Oak Street. First hour free.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Payment</h3>
+          <p>We accept cash, all major credit cards, Apple Pay, and Google Pay. Whatever's easiest for you.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Late Arrivals</h3>
+          <p>If you're running late, give us a call. We'll do our best to fit you in, but if you're more than 15 minutes late, we may need to reschedule.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Not Happy?</h3>
+          <p>If something's not right, tell us before you leave. We'll fix it. We want you walking out feeling good about your cut. That's the whole point.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-main">Sharp Edge</span>
+            <span class="logo-sub">Barbershop</span>
+          </a>
+          <p>Classic cuts and hot towel shaves in a vintage gentleman's atmosphere. Looking sharp since 2019.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Haircuts</a></li>
+            <li><a href="services.html">Fades</a></li>
+            <li><a href="services.html">Beard Services</a></li>
+            <li><a href="services.html">Hot Towel Shaves</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            742 Main Street<br>Downtown, ST 12345
+          </p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            (555) 234-5678
+          </p>
+          <p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            hello@sharpedgebarbershop.com
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Sharp Edge Barbershop. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

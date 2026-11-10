@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact AllFix Appliance Repair — Book a Service Call</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-top">
+    <div class="container">
+      <span><i class="fa-solid fa-clock"></i> Mon–Sat 7am–7pm &nbsp;|&nbsp; Emergency calls available</span>
+      <span><i class="fa-solid fa-location-dot"></i> Serving Greater Metro Area</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+        <div class="logo-text">
+          <span class="logo-name">AllFix</span>
+          <span class="logo-tagline">Appliance Repair</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <a href="tel:+15555551234" class="header-phone">
+        <i class="fa-solid fa-phone"></i> (555) 555-1234
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <p class="page-breadcrumb"><a href="index.html">Home</a> &rsaquo; Contact</p>
+    <h1>Book a Service Call</h1>
+    <p>Call us directly for same-day service, or fill out the form and we'll get back to you within the hour.</p>
+  </div>
+</section>
+
+<!-- ===== CONTACT MAIN ===== -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="contact-phone-big">
+          <span class="label">Call for Same-Day Service</span>
+          <a href="tel:+15555551234" class="number">(555) 555-1234</a>
+          <span class="hours">Mon–Sat 7am–7pm &nbsp;|&nbsp; Emergency calls available</span>
+        </div>
+
+        <div class="contact-details">
+          <div class="contact-detail-row">
+            <i class="fa-solid fa-phone"></i>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              <span>(555) 555-1234</span>
+            </div>
+          </div>
+          <div class="contact-detail-row">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <span>service@allfixrepair.com</span>
+            </div>
+          </div>
+          <div class="contact-detail-row">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="contact-detail-text">
+              <strong>Service Area</strong>
+              <span>Greater Metro Area &amp; Surrounding Communities</span>
+            </div>
+          </div>
+          <div class="contact-detail-row">
+            <i class="fa-solid fa-clock"></i>
+            <div class="contact-detail-text">
+              <strong>Hours</strong>
+              <span>Mon–Fri 7am–7pm &nbsp;|&nbsp; Sat 8am–5pm &nbsp;|&nbsp; Sun Emergency Only</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="background:var(--primary);border-radius:var(--radius-lg);padding:1.5rem;color:var(--white);">
+          <div style="font-family:var(--font-heading);font-size:0.9rem;margin-bottom:0.6rem;color:var(--secondary);">
+            <i class="fa-solid fa-bolt"></i> &nbsp;Need it fixed today?
+          </div>
+          <p style="font-size:0.875rem;color:rgba(255,255,255,0.8);margin-bottom:1rem;">Call us before noon and we'll get a technician to you the same day. Most repairs are completed in a single visit.</p>
+          <a href="tel:+15555551234" class="btn btn-primary" style="width:100%;justify-content:center;">
+            <i class="fa-solid fa-phone"></i> Call (555) 555-1234
+          </a>
+        </div>
+
+        <div style="margin-top:1.5rem;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:16/9;background-image:url('images/placeholder.jpg');background-size:cover;background-position:center;"></div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form-wrap">
+        <h2 class="form-title">Request a Service Appointment</h2>
+        <form action="#" method="post">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@email.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="appliance">Appliance Type</label>
+              <select id="appliance" name="appliance" required>
+                <option value="" disabled selected>Select appliance...</option>
+                <option>Washer</option>
+                <option>Dryer</option>
+                <option>Refrigerator</option>
+                <option>Freezer</option>
+                <option>Dishwasher</option>
+                <option>Oven / Range / Stove</option>
+                <option>Microwave</option>
+                <option>Garbage Disposal</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="brand">Brand</label>
+              <select id="brand" name="brand">
+                <option value="" disabled selected>Select brand...</option>
+                <option>Whirlpool</option>
+                <option>GE</option>
+                <option>LG</option>
+                <option>Samsung</option>
+                <option>Bosch</option>
+                <option>Maytag</option>
+                <option>KitchenAid</option>
+                <option>Frigidaire</option>
+                <option>Kenmore</option>
+                <option>Amana</option>
+                <option>Electrolux</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="issue">Describe the Issue</label>
+            <textarea id="issue" name="issue" placeholder="Tell us what's happening — e.g. 'Washer fills with water but won't spin. Front-loader, 3 years old.'" required></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="preferred-date">Preferred Date</label>
+              <input type="date" id="preferred-date" name="preferred-date">
+            </div>
+            <div class="form-group">
+              <label for="preferred-time">Preferred Time</label>
+              <select id="preferred-time" name="preferred-time">
+                <option value="" disabled selected>Select window...</option>
+                <option>7am – 10am</option>
+                <option>10am – 1pm</option>
+                <option>1pm – 4pm</option>
+                <option>4pm – 7pm</option>
+                <option>Any time</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Service Address</label>
+            <input type="text" id="address" name="address" placeholder="123 Main St, Springfield">
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;">
+            <i class="fa-solid fa-calendar-check"></i> Submit Service Request
+          </button>
+
+          <p style="font-size:0.8rem;color:var(--gray);text-align:center;margin-top:1rem;">
+            We'll call you back within 1 hour during business hours. For same-day service, call us directly at <a href="tel:+15555551234" style="color:var(--secondary);font-weight:600;">(555) 555-1234</a>.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">FAQ</h2>
+      <p class="section-subtitle">Answers to the questions we get most often. Still have one? Just call.</p>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-question">
+          How much does appliance repair cost?
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Most repairs start between $65 and $99, depending on the appliance type. After a diagnostic inspection, we'll give you a full, upfront price before any work begins. You only pay if you approve the quote. Diagnostic fees are waived when you proceed with the repair.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you offer same-day service?
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Yes, in most cases. Call us before noon and we can usually have a technician at your home the same day. We'll give you a 2-hour arrival window so you're not waiting around all day. Availability varies by location and day of week.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What is your warranty on repairs?
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Every repair is backed by a 90-day warranty on parts and labor. If the same issue returns within 90 days, we'll come back and fix it at no charge. This applies to all repairs, not just major ones.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you use genuine OEM parts?
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          We use genuine OEM parts wherever they're available and cost-effective. When we use aftermarket parts, we'll tell you beforehand and explain why. All parts, OEM or aftermarket, are covered by the same 90-day warranty.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you handle emergency calls?
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Yes. We offer emergency service calls outside of regular business hours for situations like refrigerators that aren't cooling with food inside. Emergency call fees apply. Call us at (555) 555-1234 and we'll assess whether it qualifies as an emergency and get someone to you as quickly as possible.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What happens if my appliance can't be repaired?
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          If the repair would cost more than the appliance is worth, we'll tell you honestly. We'd rather give you sound advice than take your money on a fix that won't pay off. In these cases, we'll only charge the diagnostic fee.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What brands do you service?
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          We service all major brands, including Whirlpool, GE, LG, Samsung, Bosch, Maytag, KitchenAid, Frigidaire, Kenmore, Amana, and Electrolux. Our technicians are factory-trained on the brands we service most. If you have a less common brand, give us a call and we'll let you know.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Do I need to be home during the repair?
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          Yes, someone 18 or older must be present for the duration of the service call. This allows us to review the diagnosis, discuss the quote, and walk you through what was done after the repair is complete.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Still have questions?</h2>
+    <p>Call us and we'll help you figure out what's wrong and what it'll take to fix it.</p>
+    <a href="tel:+15555551234" class="cta-phone">(555) 555-1234</a>
+    <div class="cta-actions">
+      <a href="tel:+15555551234" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </a>
+      <a href="services.html" class="btn btn-outline btn-lg">
+        <i class="fa-solid fa-list"></i> View All Services
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <div class="logo-text">
+            <span class="logo-name">AllFix</span>
+            <span class="logo-tagline">Appliance Repair</span>
+          </div>
+        </a>
+        <p>Fast, reliable appliance repair for your home. We show up, we fix it, we're done.</p>
+        <a href="tel:+15555551234" class="footer-phone">(555) 555-1234</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Washer &amp; Dryer Repair</a></li>
+          <li><a href="services.html">Refrigerator Repair</a></li>
+          <li><a href="services.html">Dishwasher Repair</a></li>
+          <li><a href="services.html">Oven &amp; Range Repair</a></li>
+          <li><a href="services.html">Microwave Repair</a></li>
+          <li><a href="services.html">Garbage Disposal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#team">Our Technicians</a></li>
+          <li><a href="about.html#area">Service Area</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <div class="footer-hours">
+          <div class="hour-row"><span class="day">Monday</span><span class="time">7am – 7pm</span></div>
+          <div class="hour-row"><span class="day">Tuesday</span><span class="time">7am – 7pm</span></div>
+          <div class="hour-row"><span class="day">Wednesday</span><span class="time">7am – 7pm</span></div>
+          <div class="hour-row"><span class="day">Thursday</span><span class="time">7am – 7pm</span></div>
+          <div class="hour-row"><span class="day">Friday</span><span class="time">7am – 7pm</span></div>
+          <div class="hour-row"><span class="day">Saturday</span><span class="time">8am – 5pm</span></div>
+          <div class="hour-row"><span class="day">Sunday</span><span class="time">Emergency Only</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 AllFix Appliance Repair. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Menu | Hearthstone Pizza — Burlington, VT</title>
+  <meta name="description" content="Wood-fired pizzas, house-made pasta, fresh salads, starters, desserts, and catering packages at Hearthstone Pizza in Burlington, VT.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <i class="fa-solid fa-fire-flame-curved"></i>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">Hearthstone</span>
+        <span class="logo-tagline">Pizza &bull; Burlington, VT</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" role="navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link active">Menu</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta">Order Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- MENU HERO -->
+<section class="menu-page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb" style="justify-content: center;">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>Menu</span>
+    </nav>
+    <h1>The Hearthstone Menu</h1>
+    <p>Everything made from scratch. Prices reflect whole pies. Dine in, takeout, or delivery.</p>
+    <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+      <a href="#pizzas" class="btn btn-outline btn-sm">Pizzas</a>
+      <a href="#pasta" class="btn btn-outline btn-sm">Pasta</a>
+      <a href="#starters" class="btn btn-outline btn-sm">Starters</a>
+      <a href="#desserts" class="btn btn-outline btn-sm">Desserts</a>
+      <a href="#catering" class="btn btn-outline-gold btn-sm">Catering</a>
+    </div>
+  </div>
+</section>
+
+<!-- MENU BODY -->
+<section class="section">
+  <div class="container" style="max-width: 960px;">
+
+    <!-- DAILY SPECIALS (gold bordered) -->
+    <div class="menu-specials" id="specials">
+      <div class="menu-specials-badge">Daily Specials &mdash; Ask Your Server</div>
+      <div class="menu-category-header">
+        <h2 class="menu-category-title" style="color: var(--gold-muted);">Chef's Specials</h2>
+        <p class="menu-category-desc">Rotating selections based on what's in season and what Marco feels like making that week. These change often and sell out fast.</p>
+      </div>
+      <div class="menu-items-list">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Vermont Harvest Pizza</div>
+            <p class="menu-item-desc">Roasted butternut squash, caramelized onion, sage cream, fontina, toasted walnuts, and a honey drizzle. Available September through November.</p>
+          </div>
+          <div class="menu-item-price">$23</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Clam &amp; Guanciale</div>
+            <p class="menu-item-desc">White garlic base, littleneck clams, crisped guanciale, fresh chili, parsley, and good olive oil. The one people ask about every winter.</p>
+          </div>
+          <div class="menu-item-price">$27</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Tagliatelle al Limone</div>
+            <p class="menu-item-desc">House-made tagliatelle in lemon butter with Vermont ricotta, black pepper, and chives. Bright and light &mdash; an Elena recipe.</p>
+          </div>
+          <div class="menu-item-price">$21</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Seasonal Affogato</div>
+            <p class="menu-item-desc">Local gelato — flavor changes weekly — drowned in a double shot of espresso. Deceptively simple. Consistently great.</p>
+          </div>
+          <div class="menu-item-price">$9</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CLASSIC PIZZAS -->
+    <div class="menu-category" id="pizzas">
+      <div class="menu-category-header">
+        <h2 class="menu-category-title">Classic Pizzas</h2>
+        <p class="menu-category-desc">All pizzas start with our 72-hour fermented dough, fired in the Valoriani oven at 900&deg;F. Available 12" or 16".</p>
+      </div>
+      <div class="menu-items-list">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Margherita</div>
+            <p class="menu-item-desc">San Marzano tomato, fior di latte mozzarella, fresh basil, extra virgin olive oil. The benchmark. Made 80 times a week.</p>
+          </div>
+          <div class="menu-item-price">$18 / $24</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Pepperoni</div>
+            <p class="menu-item-desc">Tomato, whole-milk mozzarella, cup-and-char pepperoni from Salumi Artisan Cured Meats. The cups crisp and fill with oil in the oven.</p>
+          </div>
+          <div class="menu-item-price">$20 / $27</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Four Cheese</div>
+            <p class="menu-item-desc">Mozzarella, fontina, Vermont goat cheese, and aged Parmigiano. Tomato base, fresh thyme, cracked black pepper.</p>
+          </div>
+          <div class="menu-item-price">$22 / $29</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Sausage &amp; Peppers</div>
+            <p class="menu-item-desc">House-made fennel sausage, roasted red and yellow peppers, mozzarella, tomato, and fresh oregano. Hearty and satisfying.</p>
+          </div>
+          <div class="menu-item-price">$21 / $28</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">BBQ Chicken</div>
+            <p class="menu-item-desc">Pulled rotisserie chicken, smoked mozzarella, red onion, cilantro, and Marco's house-made chipotle BBQ sauce. Not traditional. Very good.</p>
+          </div>
+          <div class="menu-item-price">$21 / $28</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Marinara</div>
+            <p class="menu-item-desc">No cheese. San Marzano tomato, roasted garlic, fresh oregano, and the best olive oil we have. Simple. One of Marco's favorites.</p>
+          </div>
+          <div class="menu-item-price">$15 / $20</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-full">
+
+    <!-- SPECIALTY PIZZAS -->
+    <div class="menu-category">
+      <div class="menu-category-header">
+        <h2 class="menu-category-title">Specialty Pizzas</h2>
+        <p class="menu-category-desc">Bolder flavor combinations developed by Marco over years of experimentation. These are Hearthstone originals.</p>
+      </div>
+      <div class="menu-items-list">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Wild Mushroom Truffle</div>
+            <p class="menu-item-desc">Roasted cremini and shiitake, fontina, garlic cream base, fresh thyme, and black truffle oil finish. No tomato.</p>
+          </div>
+          <div class="menu-item-price">$26 / $34</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Prosciutto &amp; Arugula</div>
+            <p class="menu-item-desc">Tomato base, mozzarella, prosciutto di Parma added post-bake, lemon arugula, shaved Parmigiano, aged balsamic.</p>
+          </div>
+          <div class="menu-item-price">$24 / $32</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Spicy Calabrese</div>
+            <p class="menu-item-desc">Tomato, mozzarella, Calabrese salami, Calabrian chili paste, roasted garlic, fresh basil, and a honey finish to balance the heat.</p>
+          </div>
+          <div class="menu-item-price">$23 / $30</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Seasonal Veggie</div>
+            <p class="menu-item-desc">Rotates with what's available from Intervale Farm. Always vibrant, always well-seasoned. Ask your server what's on tonight.</p>
+          </div>
+          <div class="menu-item-price">$22 / $29</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-full">
+
+    <!-- PASTA -->
+    <div class="menu-category" id="pasta">
+      <div class="menu-category-header">
+        <h2 class="menu-category-title">House-Made Pasta</h2>
+        <p class="menu-category-desc">Pasta made fresh daily. Sauces built low and slow. James runs this part of the kitchen and he does not cut corners.</p>
+      </div>
+      <div class="menu-items-list">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Cacio e Pepe</div>
+            <p class="menu-item-desc">Tonnarelli pasta, Pecorino Romano, Parmigiano Reggiano, and an unreasonable amount of cracked black pepper. No cream. Never.</p>
+          </div>
+          <div class="menu-item-price">$19</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Rigatoni Bolognese</div>
+            <p class="menu-item-desc">A beef and pork ragu braised for four hours with San Marzano tomatoes, red wine, and soffritto. Finished with Parmigiano and a splash of whole milk.</p>
+          </div>
+          <div class="menu-item-price">$22</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Penne all'Arrabiata</div>
+            <p class="menu-item-desc">Crushed San Marzano tomatoes, Calabrian chili, garlic, extra virgin olive oil, and fresh parsley. Spicy, bright, and built for people who mean it.</p>
+          </div>
+          <div class="menu-item-price">$17</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-full">
+
+    <!-- SALADS & STARTERS -->
+    <div class="menu-category" id="starters">
+      <div class="menu-category-header">
+        <h2 class="menu-category-title">Salads &amp; Starters</h2>
+        <p class="menu-category-desc">Light begins that hold their own. The burrata and the arancini are hard to stop ordering.</p>
+      </div>
+      <div class="menu-items-list">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Caesar Salad</div>
+            <p class="menu-item-desc">Romaine, house-made Caesar dressing with anchovy and roasted garlic, house croutons, and shaved Parmigiano. Served whole-leaf.</p>
+          </div>
+          <div class="menu-item-price">$13</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Caprese</div>
+            <p class="menu-item-desc">Shelburne Farms mozzarella, summer tomatoes (or oven-roasted off-season), fresh basil, Vermont floral honey, Maldon salt, and good olive oil.</p>
+          </div>
+          <div class="menu-item-price">$14</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Burrata</div>
+            <p class="menu-item-desc">Whole burrata on a bed of pesto and roasted cherry tomatoes. Served with grilled bread. One of the most-ordered things we make.</p>
+          </div>
+          <div class="menu-item-price">$16</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Bruschetta al Pomodoro</div>
+            <p class="menu-item-desc">Toasted oven bread rubbed with garlic, topped with diced heirloom tomatoes marinated in olive oil, basil, and flaky salt.</p>
+          </div>
+          <div class="menu-item-price">$11</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Arancini</div>
+            <p class="menu-item-desc">Risotto rice balls stuffed with Bolognese and mozzarella, fried crisp, served on a pool of house-made marinara. Three per order.</p>
+          </div>
+          <div class="menu-item-price">$13</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Garlic &amp; Herb Focaccia</div>
+            <p class="menu-item-desc">Thick oven-baked focaccia with rosemary and roasted garlic, finished with flaky salt. Served warm with whipped ricotta.</p>
+          </div>
+          <div class="menu-item-price">$9</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-full">
+
+    <!-- DESSERTS -->
+    <div class="menu-category" id="desserts">
+      <div class="menu-category-header">
+        <h2 class="menu-category-title">Desserts</h2>
+        <p class="menu-category-desc">Elena's department. All made in-house. The tiramisu is made fresh every morning and is gone by 8:30 on weekends.</p>
+      </div>
+      <div class="menu-items-list">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Tiramisu</div>
+            <p class="menu-item-desc">Savoiardi soaked in espresso and Marsala, layered with mascarpone cream, and dusted with Valrhona cocoa. Elena's grandmother's recipe. No substitutions.</p>
+          </div>
+          <div class="menu-item-price">$9</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Cannoli</div>
+            <p class="menu-item-desc">Crispy fried shells filled to order with sweetened ricotta, mini chocolate chips, and candied orange peel. Two per order.</p>
+          </div>
+          <div class="menu-item-price">$8</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Gelato</div>
+            <p class="menu-item-desc">Two scoops from a local creamery. Flavors rotate seasonally — ask your server. Served in a chilled bowl with a crisp wafer.</p>
+          </div>
+          <div class="menu-item-price">$7</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Panna Cotta</div>
+            <p class="menu-item-desc">Silky vanilla cream set firm, served with a seasonal berry compote made from local fruit. Delicate and not overly sweet.</p>
+          </div>
+          <div class="menu-item-price">$8</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="rule-full">
+
+    <!-- DRINKS -->
+    <div class="menu-category">
+      <div class="menu-category-header">
+        <h2 class="menu-category-title">Bar &amp; Beverages</h2>
+        <p class="menu-category-desc">Full bar. We keep the wine list focused on Italian regions and a handful of Vermont craft beers on draft.</p>
+      </div>
+      <div class="menu-items-list">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Draft Beer</div>
+            <p class="menu-item-desc">Rotating selection of Vermont craft brews from Foam, Switchback, and Zero Gravity. Ask your server what's on tap tonight.</p>
+          </div>
+          <div class="menu-item-price">$7&ndash;$9</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">House Red Wine</div>
+            <p class="menu-item-desc">Montepulciano d'Abruzzo. Earthy, medium-bodied, and very good with any of our pizzas.</p>
+          </div>
+          <div class="menu-item-price">$11 glass</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">House White Wine</div>
+            <p class="menu-item-desc">Vermentino di Sardegna. Crisp, citrus-forward, and excellent with the burrata or any seafood special.</p>
+          </div>
+          <div class="menu-item-price">$11 glass</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Negroni</div>
+            <p class="menu-item-desc">Campari, sweet vermouth, and gin, stirred and served over a large ice cube with an orange peel. Marco's nightly drink. Make of that what you will.</p>
+          </div>
+          <div class="menu-item-price">$14</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Aperol Spritz</div>
+            <p class="menu-item-desc">Aperol, Prosecco, and a splash of soda water. Served with an orange slice. Light and approachable — a good way to start any meal.</p>
+          </div>
+          <div class="menu-item-price">$13</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <div class="menu-item-name">Espresso &amp; Americano</div>
+            <p class="menu-item-desc">Italian-roast espresso from a local Burlington roaster. Single or double. Served with a small glass of sparkling water.</p>
+          </div>
+          <div class="menu-item-price">$4 / $5</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CATERING PACKAGES -->
+<section class="section section-alt" id="catering">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Events &amp; Catering</span>
+      <h2 class="section-title">We Bring the Oven to You</h2>
+      <span class="rule-gold"></span>
+      <p class="section-subtitle">We set up our portable wood-fired oven on-site and cook fresh pizzas throughout your event. Weddings, corporate gatherings, neighborhood parties — we've done them all.</p>
+    </div>
+
+    <div class="catering-packages">
+      <div class="package-card">
+        <div class="package-header">
+          <div class="package-name">Neighborhood Gathering</div>
+          <div class="package-guests">20&ndash;40 guests</div>
+          <div class="package-price">$1,200 <span>starting</span></div>
+        </div>
+        <div class="package-body">
+          <ul class="package-includes">
+            <li><i class="fa-solid fa-check"></i> 2 hours of service with portable oven setup</li>
+            <li><i class="fa-solid fa-check"></i> Choice of 4 pizza varieties</li>
+            <li><i class="fa-solid fa-check"></i> Burrata and focaccia starters for the group</li>
+            <li><i class="fa-solid fa-check"></i> Compostable plates, napkins, and serving utensils</li>
+            <li><i class="fa-solid fa-check"></i> Delivery within Chittenden County</li>
+            <li><i class="fa-solid fa-check"></i> One server / pizza helper</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-gold" style="width: 100%; justify-content: center;">Inquire</a>
+        </div>
+      </div>
+
+      <div class="package-card featured">
+        <div class="package-featured-badge">Most Popular</div>
+        <div class="package-header" style="padding-top: 2.5rem;">
+          <div class="package-name">The Full Spread</div>
+          <div class="package-guests">50&ndash;100 guests</div>
+          <div class="package-price">$2,800 <span>starting</span></div>
+        </div>
+        <div class="package-body">
+          <ul class="package-includes">
+            <li><i class="fa-solid fa-check"></i> 3 hours of full service with oven setup</li>
+            <li><i class="fa-solid fa-check"></i> Choice of 6 pizza varieties</li>
+            <li><i class="fa-solid fa-check"></i> Full starter spread: burrata, arancini, bruschetta, focaccia</li>
+            <li><i class="fa-solid fa-check"></i> Dessert selection: tiramisu and cannoli</li>
+            <li><i class="fa-solid fa-check"></i> Two servers and one dedicated pizzaiolo</li>
+            <li><i class="fa-solid fa-check"></i> Real plates and linen napkins on request</li>
+            <li><i class="fa-solid fa-check"></i> Dietary accommodations for gluten-free and vegetarian</li>
+          </ul>
+          <a href="contact.html" class="btn btn-gold" style="width: 100%; justify-content: center;">Inquire</a>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <div class="package-header">
+          <div class="package-name">Corporate &amp; Large Events</div>
+          <div class="package-guests">100&ndash;200 guests</div>
+          <div class="package-price">Custom <span>pricing</span></div>
+        </div>
+        <div class="package-body">
+          <ul class="package-includes">
+            <li><i class="fa-solid fa-check"></i> Up to 4+ hours of service</li>
+            <li><i class="fa-solid fa-check"></i> Full menu customization</li>
+            <li><i class="fa-solid fa-check"></i> Multiple oven stations for high-volume service</li>
+            <li><i class="fa-solid fa-check"></i> Full staffing: servers, runners, and setup crew</li>
+            <li><i class="fa-solid fa-check"></i> Custom menu cards and event branding available</li>
+            <li><i class="fa-solid fa-check"></i> Flexible bar pairing options</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline-gold" style="width: 100%; justify-content: center;">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 3rem; text-align: center; padding: 2rem; background: var(--off-white); border: 1px solid var(--border); border-radius: var(--radius-md);">
+      <p style="font-size: 0.9rem; color: var(--stone); margin-bottom: 0;"><i class="fa-solid fa-circle-info" style="color: var(--brick-red); margin-right: 0.5rem;"></i> All catering packages require a 50% deposit to reserve your date. We book out 6&ndash;8 weeks in advance for summer weekends. Inquire early for July and August dates.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-dark">
+  <div class="container" style="text-align: center;">
+    <span class="section-label">Ready to Order?</span>
+    <h2 class="section-title">Dine In, Take Out, or Come to You</h2>
+    <span class="rule-gold"></span>
+    <p class="section-subtitle" style="margin-bottom: 2.5rem;">Call us at (555) 672-3841 for takeout and delivery. Reserve a table online. Or reach out for catering inquiries — we love a good event.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="contact.html" class="btn btn-gold">
+        <i class="fa-regular fa-calendar"></i> Reserve a Table
+      </a>
+      <a href="tel:5556723841" class="btn btn-outline">
+        <i class="fa-solid fa-phone"></i> Call to Order
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Hearthstone</span>
+            <span class="logo-tagline">Pizza &bull; Burlington, VT</span>
+          </div>
+        </a>
+        <p style="margin-top: 1rem;">Wood-fired artisan pizza made with a Naples-imported oven and Vermont soul. Family-owned by Marco &amp; Elena Vitale since 2015.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Full Menu</a></li>
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="contact.html" class="footer-link">Reservations</a></li>
+          <li><a href="services.html#catering" class="footer-link">Catering</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul class="footer-links">
+          <li><span class="footer-link">Mon: Closed</span></li>
+          <li><span class="footer-link">Tue&ndash;Thu: 4&ndash;9:30 PM</span></li>
+          <li><span class="footer-link">Fri: 4&ndash;10:30 PM</span></li>
+          <li><span class="footer-link">Sat: 12&ndash;10:30 PM</span></li>
+          <li><span class="footer-link">Sun: 12&ndash;9:00 PM</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>142 Church Street<br>Burlington, VT 05401</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>(555) 672-3841</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>hello@hearthstonepizza.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Hearthstone Pizza. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>const navToggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.nav');if(navToggle&&nav){navToggle.addEventListener('click',()=>{const isOpen=nav.classList.toggle('nav-open');navToggle.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);});}</script>
+</body>
+</html>

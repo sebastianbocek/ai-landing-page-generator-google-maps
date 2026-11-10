@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — DGcom Digital Agency</title>
+  <meta name="description" content="Get in touch with DGcom. Let's discuss your next project — web design, development, branding, or growth strategy.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <link rel="stylesheet" href="assets/css/base.css">
+
+  <style>
+    /* Contact page specifics */
+    .contact-section {
+      padding: var(--section-py) 0;
+    }
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 32px; }
+    .contact-info-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .contact-info-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--gradient-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-info-item h4 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+    .contact-info-item p {
+      font-size: 0.9rem;
+      color: var(--gray-400);
+    }
+    .contact-info-item a {
+      color: var(--neon-pink);
+      transition: color var(--transition-base);
+    }
+    .contact-info-item a:hover { color: var(--violet); }
+
+    .contact-form {
+      background: rgba(124,58,237,0.06);
+      border: 1px solid rgba(124,58,237,0.12);
+      border-radius: 20px;
+      padding: 40px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gray-200);
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 12px;
+      border: 1px solid rgba(124,58,237,0.2);
+      background: rgba(15,10,26,0.6);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color var(--transition-base);
+    }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--gray-600);
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--violet);
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .form-group select option {
+      background: var(--surface);
+      color: var(--white);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 40px;
+    }
+    .form-success.show { display: block; }
+    .form-success h3 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+    .form-success p { color: var(--gray-400); }
+
+    @media (max-width: 768px) {
+      .contact-layout { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .contact-form { padding: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav" id="siteNav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon"><i data-lucide="hexagon"></i></span>
+        DGcom
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-outline btn-sm">Let's Talk</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:16px">Let's Talk</a>
+  </div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb-nav"><a href="index.html">Home</a> / Contact</div>
+      <h1>Let's start a <span class="gradient-text">conversation</span></h1>
+      <p>Tell us about your project and we'll get back within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="reveal">
+          <div class="section-label">// Get in Touch</div>
+          <h2 class="section-title" style="margin-bottom:12px">We'd love to hear <span class="gradient-text">from you</span></h2>
+          <p class="section-subtitle" style="margin-bottom:40px">Whether you have a question, a project brief, or just want to say hello — reach out. We're all ears.</p>
+
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i data-lucide="mail" style="width:20px;height:20px;color:#fff"></i></div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:hello@dgcom.studio">hello@dgcom.studio</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i data-lucide="phone" style="width:20px;height:20px;color:#fff"></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i data-lucide="map-pin" style="width:20px;height:20px;color:#fff"></i></div>
+              <div>
+                <h4>Studio</h4>
+                <p>123 Design Quarter, San Francisco, CA 94102</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i data-lucide="clock" style="width:20px;height:20px;color:#fff"></i></div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Mon — Fri, 9:00 AM — 6:00 PM PST</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-2" id="contactFormWrap">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="service">What do you need?</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="web-design">Web Design &amp; Development</option>
+                <option value="app-design">Mobile App Design</option>
+                <option value="branding">Brand Identity &amp; Strategy</option>
+                <option value="seo">Digital Marketing &amp; SEO</option>
+                <option value="ux">UI/UX Design &amp; Research</option>
+                <option value="consulting">Product Strategy &amp; Consulting</option>
+                <option value="other">Something Else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget">
+                <option value="">Select a range...</option>
+                <option value="10k-25k">$10k — $25k</option>
+                <option value="25k-50k">$25k — $50k</option>
+                <option value="50k-100k">$50k — $100k</option>
+                <option value="100k+">$100k+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell us about your project</label>
+              <textarea id="message" name="message" placeholder="What are you building? What problem are you solving? What does success look like?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+              Send Message
+              <i data-lucide="send" style="width:18px;height:18px"></i>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div style="font-size:3rem;margin-bottom:16px">
+              <i data-lucide="check-circle" style="width:56px;height:56px;color:#7C3AED"></i>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Thanks for reaching out. We'll get back to you within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="margin-bottom:4px">
+            <span class="logo-icon"><i data-lucide="hexagon"></i></span>
+            DGcom
+          </a>
+          <p>Crafting bold digital experiences for brands that refuse to blend in.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter" style="width:18px;height:18px"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram" style="width:18px;height:18px"></i></a>
+            <a href="#" aria-label="Dribbble"><i data-lucide="dribbble" style="width:18px;height:18px"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Web Design</a></li>
+            <li><a href="services.html">App Design</a></li>
+            <li><a href="services.html">Branding</a></li>
+            <li><a href="services.html">SEO &amp; Marketing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h5>Stay in the Loop</h5>
+          <p>Insights, case studies, and the occasional hot take — delivered monthly.</p>
+          <form class="newsletter-form" onsubmit="return false">
+            <input type="email" placeholder="your@email.com" aria-label="Email address">
+            <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> DGcom. All rights reserved.</p>
+        <p>Crafted with intent.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i data-lucide="chevron-up" style="width:20px;height:20px"></i>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

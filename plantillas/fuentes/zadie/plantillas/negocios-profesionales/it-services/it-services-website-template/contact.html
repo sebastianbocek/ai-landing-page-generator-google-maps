@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Free IT Assessment — NexGen IT Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">NX</div>
+      <div class="logo-text">
+        <span class="logo-name">NexGen IT</span>
+        <span class="logo-tagline">Managed Solutions</span>
+      </div>
+    </a>
+
+    <nav class="nav" id="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn-primary header-cta btn-sm">Get Free Assessment</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Get in Touch</span>
+    <h1>Free IT Assessment.<br>No Pressure.</h1>
+    <p>Tell us about your business and we'll schedule a 60–90 minute review of your current IT environment. Honest findings, clear recommendations, zero obligation.</p>
+  </div>
+</section>
+
+<!-- Contact Form + Sidebar -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <!-- Form -->
+      <div class="contact-form-card">
+        <h2 class="form-title">Request Your Free Assessment</h2>
+        <p class="form-subtitle">Fill out the form below and we'll reach out within one business day to confirm your assessment time.</p>
+
+        <form action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name *</label>
+              <input class="form-control" type="text" id="first-name" name="first-name" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name *</label>
+              <input class="form-control" type="text" id="last-name" name="last-name" placeholder="Smith" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="company">Company Name *</label>
+            <input class="form-control" type="text" id="company" name="company" placeholder="Acme Corp" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input class="form-control" type="email" id="email" name="email" placeholder="jane@acmecorp.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-control" type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="industry">Industry *</label>
+              <select class="form-control" id="industry" name="industry" required>
+                <option value="" disabled selected>Select your industry</option>
+                <option value="accounting">Accounting / Finance</option>
+                <option value="construction">Construction</option>
+                <option value="healthcare">Healthcare / Medical</option>
+                <option value="legal">Legal</option>
+                <option value="manufacturing">Manufacturing</option>
+                <option value="nonprofit">Nonprofit</option>
+                <option value="real-estate">Real Estate</option>
+                <option value="retail">Retail</option>
+                <option value="technology">Technology</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="employees">Number of Employees *</label>
+              <select class="form-control" id="employees" name="employees" required>
+                <option value="" disabled selected>Select range</option>
+                <option value="1-5">1–5</option>
+                <option value="6-10">6–10</option>
+                <option value="11-25">11–25</option>
+                <option value="26-50">26–50</option>
+                <option value="51-100">51–100</option>
+                <option value="100+">100+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="current-it">Current IT Situation</label>
+            <select class="form-control" id="current-it" name="current-it">
+              <option value="" disabled selected>How do you currently handle IT?</option>
+              <option value="none">No IT support right now</option>
+              <option value="internal">Internal IT staff</option>
+              <option value="break-fix">Break-fix / hourly IT company</option>
+              <option value="msp">Another managed IT provider</option>
+              <option value="diy">We manage it ourselves</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="challenges">Current IT Challenges</label>
+            <textarea class="form-control" id="challenges" name="challenges" placeholder="What IT issues are causing the most frustration? Slow computers, security concerns, unreliable internet, software problems — anything is helpful." rows="5"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="priority">Biggest Priority Right Now</label>
+            <select class="form-control" id="priority" name="priority">
+              <option value="" disabled selected>What's most important to you?</option>
+              <option value="security">Improve cybersecurity</option>
+              <option value="reliability">Reduce downtime and outages</option>
+              <option value="cost">Lower IT costs</option>
+              <option value="cloud">Move to the cloud</option>
+              <option value="compliance">Meet compliance requirements</option>
+              <option value="support">Better day-to-day support</option>
+              <option value="unsure">Not sure — need guidance</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            Request Free Assessment
+          </button>
+          <p style="font-size: 0.75rem; color: var(--gray); margin-top: var(--spacing-3);">
+            We'll respond within one business day. Your information is never shared.
+          </p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="contact-sidebar">
+        <!-- Emergency / Support -->
+        <div class="contact-info-card" style="background: linear-gradient(135deg, rgba(16,185,129,0.06), rgba(6,182,212,0.06)); border-color: rgba(16,185,129,0.25);">
+          <h3 style="color: var(--accent);">
+            <i class="fa-solid fa-phone" style="margin-right: 6px;"></i>
+            24/7 Emergency Support
+          </h3>
+          <p style="font-size: 0.8rem; color: var(--gray); margin-bottom: var(--spacing-4);">
+            For active managed clients with a critical issue outside of business hours:
+          </p>
+          <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent); margin-bottom: var(--spacing-2);">(555) 820-4411</div>
+          <p style="font-size: 0.75rem; color: var(--gray);">Available 24/7 for Business and Enterprise plan clients with P1 issues.</p>
+        </div>
+
+        <!-- General Contact Info -->
+        <div class="contact-info-card">
+          <h3>General Inquiries</h3>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-info-text">
+              <strong>(555) 820-4400</strong>
+              <span>Mon–Fri, 8 AM–6 PM</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-info-text">
+              <strong>hello@nexgenit.com</strong>
+              <span>Response within 4 business hours</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-info-text">
+              <strong>1240 Commerce Blvd, Suite 300</strong>
+              <span>Metro Business Center</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-info-text">
+              <strong>Office Hours</strong>
+              <span>Mon–Fri: 8 AM–6 PM<br>Sat: 10 AM–2 PM (emergency only)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Remote Support -->
+        <div class="remote-support-card">
+          <div style="font-size: 2rem; color: var(--primary); margin-bottom: var(--spacing-3);">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <h3>Remote Support Access</h3>
+          <p>If a technician asked you to start a remote session, click the button below and provide your session code.</p>
+          <a href="#" class="btn btn-secondary" style="width: 100%; justify-content: center;">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            Start Remote Session
+          </a>
+          <p style="font-size: 0.7rem; color: var(--gray); margin-top: var(--spacing-3);">Only use this with a technician actively on the phone with you.</p>
+        </div>
+
+        <!-- Existing Client Ticket -->
+        <div class="contact-info-card">
+          <h3>Existing Client? Submit a Ticket</h3>
+          <p style="font-size: 0.8rem; color: var(--gray); margin-bottom: var(--spacing-4);">
+            Managed clients can submit support tickets via email or our client portal for a faster response and automatic SLA tracking.
+          </p>
+          <a href="mailto:support@nexgenit.com" class="btn btn-ghost" style="width: 100%; justify-content: center;">
+            <i class="fa-solid fa-ticket"></i>
+            Email Support
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="background: var(--bg-card); border-top: 1px solid var(--gray-dark); border-bottom: 1px solid var(--gray-dark);">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Common Questions</h2>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <p class="faq-question">What is managed IT, and how is it different from calling an IT guy when something breaks?</p>
+        <p class="faq-answer">
+          Break-fix IT is reactive. Something breaks, you call, they fix it, you pay. Managed IT is proactive. We monitor your systems constantly, apply patches, and resolve most issues before you ever notice them. You pay a flat monthly rate regardless of how many tickets we close. That alignment of incentives is the key difference.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">What does the contract look like? Can I cancel?</p>
+        <p class="faq-answer">
+          We ask for a 12-month initial agreement, which gives us time to properly onboard your environment and demonstrate value. After that, plans are month-to-month with 30 days written notice to cancel. No penalties, no hidden exit fees.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">How long does onboarding take?</p>
+        <p class="faq-answer">
+          Most clients are fully onboarded within two to four weeks. We deploy our monitoring agents, document your environment, set up remote access tools, integrate with your ticketing system, and schedule a kickoff call with your team. For larger or more complex environments, we may extend that timeline slightly.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Does managed IT include cybersecurity?</p>
+        <p class="faq-answer">
+          Yes. All plans include antivirus, malware protection, and endpoint monitoring. Business and Enterprise plans add email security, and Enterprise includes advanced Endpoint Detection and Response (EDR) plus security awareness training. We also offer standalone cybersecurity assessments as a project service.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">We use Macs. Do you support Apple devices?</p>
+        <p class="faq-answer">
+          Yes. We manage mixed Mac and Windows environments. Our monitoring tools are cross-platform. If your team is Mac-heavy or fully on Apple, we'll confirm our toolset fits your environment during the free assessment.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">What happens if we have a serious outage at 2 AM?</p>
+        <p class="faq-answer">
+          Our monitoring stack alerts our on-call team automatically. For Business and Enterprise clients, we have a 24/7 emergency line. Starter clients receive monitoring alerts and next-business-day response for non-critical issues. For critical outages on Starter, we offer after-hours response at an additional rate.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">Do you handle cloud services like Microsoft 365?</p>
+        <p class="faq-answer">
+          Yes. We're a Microsoft Partner and handle Microsoft 365 licensing, setup, administration, and user management. We also manage Azure infrastructure and can assist with Google Workspace environments. Cloud services administration is included in Business and Enterprise plans.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-question">We're a medical practice. Can you support HIPAA compliance?</p>
+        <p class="faq-answer">
+          Yes. Our Enterprise plan includes HIPAA compliance support. This covers technical safeguards, risk assessments, audit logging, encrypted backup, and staff training. We've worked with medical practices, therapists, and healthcare groups and understand what the regulation actually requires at the infrastructure level.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <span class="section-label">Next Step</span>
+    <h2>Ready to See What Your IT<br>Actually Looks Like?</h2>
+    <p>
+      Most businesses we talk to don't know what they don't know. The free assessment usually surfaces three to five issues that were quietly costing time or creating risk. It's worth an hour of your day.
+    </p>
+    <div class="cta-actions">
+      <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="btn btn-primary btn-lg">
+        <i class="fa-solid fa-calendar-check"></i>
+        Fill Out the Form Above
+      </a>
+      <a href="tel:5558204400" class="btn btn-ghost btn-lg">
+        <i class="fa-solid fa-phone"></i>
+        Call (555) 820-4400
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">NX</div>
+          <div class="logo-text">
+            <span class="logo-name">NexGen IT</span>
+            <span class="logo-tagline">Managed Solutions</span>
+          </div>
+        </a>
+        <p>Proactive managed IT services for small and medium businesses. Flat pricing, local team, 24/7 monitoring.</p>
+        <div class="footer-contact-info">
+          <span class="footer-contact-line"><i class="fa-solid fa-phone"></i> (555) 820-4400</span>
+          <span class="footer-contact-line"><i class="fa-solid fa-envelope"></i> hello@nexgenit.com</span>
+          <span class="footer-contact-line"><i class="fa-solid fa-location-dot"></i> 1240 Commerce Blvd, Suite 300</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Managed IT Services</a></li>
+          <li><a href="services.html" class="footer-link">Cybersecurity</a></li>
+          <li><a href="services.html" class="footer-link">Cloud Solutions</a></li>
+          <li><a href="services.html" class="footer-link">Help Desk Support</a></li>
+          <li><a href="services.html" class="footer-link">Network Infrastructure</a></li>
+          <li><a href="services.html" class="footer-link">Backup &amp; Recovery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="about.html" class="footer-link">Our Team</a></li>
+          <li><a href="about.html" class="footer-link">Certifications</a></li>
+          <li><a href="contact.html" class="footer-link">Contact</a></li>
+          <li><a href="contact.html" class="footer-link">Get a Free Assessment</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html" class="footer-link">Remote Support</a></li>
+          <li><a href="contact.html" class="footer-link">Submit a Ticket</a></li>
+          <li><a href="contact.html" class="footer-link">Emergency Line</a></li>
+          <li><a href="contact.html" class="footer-link">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 NexGen IT Solutions. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

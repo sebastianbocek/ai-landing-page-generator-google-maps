@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Razor & Tonic — a classic men's barbershop for traditional cuts, straight-razor shaves and hot-towel rituals. Book your cut today." />
+  <meta name="keywords" content="barbershop, classic barber, men's haircut, straight razor shave, hot towel shave, beard trim, traditional barbershop" />
+  <title>Razor &amp; Tonic — Classic Men's Barbershop</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💈</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Razor &amp; Tonic — home">
+        <svg class="nav-logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <path d="M6 34L34 6c2-2 5-2 6 0 2 1 2 4 0 6L12 42c-2 2-5 2-6 0-2-1-2-4 0-6z" fill="#C73E3E"/>
+          <path d="M30 12l6 6M24 18l6 6M18 24l6 6" stroke="#F5F0E8" stroke-width="3" stroke-linecap="round"/>
+          <path d="M40 8l4-2-2 4z" fill="#C9A44C"/>
+        </svg>
+        Razor &amp; Tonic
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="contact.html" class="btn btn-primary nav-cta">Book a Cut</a></li>
+        </ul>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero (single background, no crossfade) ===== -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img src="assets/img/hero.png" alt="Interior of the Razor &amp; Tonic barbershop" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-text">
+          <span class="hero-eyebrow">Est. 1958 · Traditional Barbershop</span>
+          <h1 class="hero-title">Classic Cuts.<br /><span>Timeless Craft.</span></h1>
+          <p class="hero-tagline">Razor &amp; Tonic</p>
+          <p class="hero-desc">Where the ritual of the old barbershop lives on — precision fades, straight-razor shaves and hot-towel luxury, served with a cold tonic on the side.</p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">Book Your Cut</a>
+            <a href="services.html" class="btn btn-outline-light">Explore Services</a>
+          </div>
+          <div class="hero-badge-row">
+            <div class="hero-badge">
+              <span class="hero-badge-num">30+</span>
+              <span class="hero-badge-label">Years of Craft</span>
+            </div>
+            <div class="hero-badge">
+              <span class="hero-badge-num">12k</span>
+              <span class="hero-badge-label">Happy Clients</span>
+            </div>
+            <div class="hero-badge">
+              <span class="hero-badge-num">4.9</span>
+              <span class="hero-badge-label">Google Rating</span>
+            </div>
+          </div>
+        </div>
+        <!-- Decorative barber pole (CSS stripes) -->
+        <div class="hero-pole" aria-hidden="true">
+          <div class="hero-pole-cap hero-pole-cap--top"></div>
+          <div class="hero-pole-inner"></div>
+          <div class="hero-pole-cap hero-pole-cap--bottom"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">What We Do</span>
+          <h2 class="section-title">Signature Services</h2>
+          <p class="section-sub">Three pillars of the classic barber trade — honed for decades, performed with pride.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-card-media">
+              <img src="assets/img/service-1.jpg" alt="Precision classic haircut in progress" loading="lazy" />
+              <span class="service-card-icon">✂</span>
+            </div>
+            <div class="service-card-body">
+              <h3>Classic Haircut</h3>
+              <p>A consultation-first cut built on your bone structure and lifestyle — scissor work, razor-neat edges and a finish that holds its shape for weeks.</p>
+              <span class="service-card-price">from $38</span>
+              <a href="pricing.html" class="service-card-link">See Pricing →</a>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card-media">
+              <img src="assets/img/service-2.jpg" alt="Hot towel straight razor shave" loading="lazy" />
+              <span class="service-card-icon">✦</span>
+            </div>
+            <div class="service-card-body">
+              <h3>Hot Towel Shave</h3>
+              <p>The full ritual — warm towels, pre-shave oil, a lethal straight razor and a cold towel finish. The closest shave your face will ever meet.</p>
+              <span class="service-card-price">from $42</span>
+              <a href="pricing.html" class="service-card-link">See Pricing →</a>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-card-media">
+              <img src="assets/img/service-3.jpg" alt="Beard sculpting and trim" loading="lazy" />
+              <span class="service-card-icon">✧</span>
+            </div>
+            <div class="service-card-body">
+              <h3>Beard Sculpting</h3>
+              <p>Line work, shape and conditioning for the modern gentleman's beard — scissor, clipper and straight-razor detailing for a clean, intentional finish.</p>
+              <span class="service-card-price">from $30</span>
+              <a href="pricing.html" class="service-card-link">See Pricing →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Portfolio ===== -->
+    <section class="section section--alt" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">The Work</span>
+          <h2 class="section-title">Recent Fades &amp; Finishes</h2>
+          <p class="section-sub">A few frames from the chair — every cut documented, every client walked to the mirror.</p>
+        </div>
+        <div class="portfolio-grid">
+          <a class="portfolio-item reveal" href="blog.html">
+            <img src="assets/img/portfolio-1.jpg" alt="Slick pompadour haircut result" loading="lazy" />
+            <div class="portfolio-overlay"><h3>The Pompadour</h3><span>Classic Cut</span></div>
+          </a>
+          <a class="portfolio-item reveal" href="blog.html">
+            <img src="assets/img/portfolio-2.jpg" alt="Skin fade with textured top" loading="lazy" />
+            <div class="portfolio-overlay"><h3>Skin Fade</h3><span>Fade &amp; Taper</span></div>
+          </a>
+          <a class="portfolio-item reveal" href="blog.html">
+            <img src="assets/img/portfolio-3.jpg" alt="Clean straight razor shave" loading="lazy" />
+            <div class="portfolio-overlay"><h3>Razor Finish</h3><span>Hot Towel Shave</span></div>
+          </a>
+          <a class="portfolio-item reveal" href="blog.html">
+            <img src="assets/img/portfolio-4.jpg" alt="Sculpted beard with sharp lines" loading="lazy" />
+            <div class="portfolio-overlay"><h3>Beard Sculpt</h3><span>Beard Work</span></div>
+          </a>
+          <a class="portfolio-item reveal" href="blog.html">
+            <img src="assets/img/portfolio-5.jpg" alt="Bold fringe with clipper work" loading="lazy" />
+            <div class="portfolio-overlay"><h3>The Modern Fringe</h3><span>Textured Cut</span></div>
+          </a>
+          <a class="portfolio-item reveal" href="blog.html">
+            <img src="assets/img/portfolio-6.jpg" alt="Sharp low taper with side part" loading="lazy" />
+            <div class="portfolio-overlay"><h3>Executive Taper</h3><span>Business Cut</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section testimonials" id="testimonials">
+      <img class="testimonials-bg" src="assets/img/testimonial-bg.jpg" alt="" aria-hidden="true" />
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Word of Mouth</span>
+          <h2 class="section-title">What the Chair Regulars Say</h2>
+          <p class="section-sub">Walk in a stranger, walk out a regular — that's been the promise for sixty years.</p>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Best hot-towel shave I've ever had, and I've had a few. The barber didn't rush a single pass. You leave feeling ten years lighter."</p>
+            <div class="testimonial-person">
+              <div class="testimonial-avatar"><img src="assets/img/testimonial-1.jpg" alt="Portrait of Daniel Mercer" loading="lazy" /></div>
+              <div>
+                <div class="testimonial-name">Daniel Mercer</div>
+                <div class="testimonial-role">Regular since 2016</div>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"They treat a haircut like a craft, not a transaction. Same barber for five years, same perfect fade every single time."</p>
+            <div class="testimonial-person">
+              <div class="testimonial-avatar"><img src="assets/img/testimonial-2.jpg" alt="Portrait of Marcus Hale" loading="lazy" /></div>
+              <div>
+                <div class="testimonial-name">Marcus Hale</div>
+                <div class="testimonial-role">Client since 2019</div>
+              </div>
+            </div>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Booked online at the last minute, was in the chair in ten minutes. The beard sculpt alone is worth the trip across town."</p>
+            <div class="testimonial-person">
+              <div class="testimonial-avatar"><img src="assets/img/testimonial-3.jpg" alt="Portrait of James Okafor" loading="lazy" /></div>
+              <div>
+                <div class="testimonial-name">James Okafor</div>
+                <div class="testimonial-role">First-time client</div>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Team ===== -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">The Chairmen</span>
+          <h2 class="section-title">Meet the Barbers</h2>
+          <p class="section-sub">Four masters, four chairs, one standard — if it leaves this shop, it's right.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-card-photo">
+              <img src="assets/img/team-1.jpg" alt="Vince Colombo — Master Barber" loading="lazy" />
+              <div class="team-card-social">
+                <a href="#" aria-label="Vince on Instagram">◎</a>
+                <a href="#" aria-label="Vince on Facebook">ⓕ</a>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3>Vince Colombo</h3>
+              <div class="team-role">Master Barber</div>
+              <p class="team-bio">32 years behind the chair. A legend of the pompadour and the closest razor finish in town.</p>
+            </div>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-card-photo">
+              <img src="assets/img/team-2.jpg" alt="Theo Berg — Head Barber" loading="lazy" />
+              <div class="team-card-social">
+                <a href="#" aria-label="Theo on Instagram">◎</a>
+                <a href="#" aria-label="Theo on Facebook">ⓕ</a>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3>Theo Berg</h3>
+              <div class="team-role">Head Barber</div>
+              <p class="team-bio">Precision fades and razor-line beards. If it needs to be sharp, Theo is on it.</p>
+            </div>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-card-photo">
+              <img src="assets/img/team-3.jpg" alt="Rosa Lindqvist — Barber &amp; Stylist" loading="lazy" />
+              <div class="team-card-social">
+                <a href="#" aria-label="Rosa on Instagram">◎</a>
+                <a href="#" aria-label="Rosa on Facebook">ⓕ</a>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3>Rosa Lindqvist</h3>
+              <div class="team-role">Barber &amp; Stylist</div>
+              <p class="team-bio">Texture, scissor work and the modern gentleman's cut. The style whisperer of the shop.</p>
+            </div>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-card-photo">
+              <img src="assets/img/team-4.jpg" alt="Eli Kazemi — Shave Specialist" loading="lazy" />
+              <div class="team-card-social">
+                <a href="#" aria-label="Eli on Instagram">◎</a>
+                <a href="#" aria-label="Eli on Facebook">ⓕ</a>
+              </div>
+            </div>
+            <div class="team-card-body">
+              <h3>Eli Kazemi</h3>
+              <div class="team-role">Shave Specialist</div>
+              <p class="team-bio">The straight razor is his instrument. Hot-towel shaves raised to a meditative art form.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA band ===== -->
+    <section class="cta-band">
+      <div class="container reveal">
+        <h2>Ready for the Chair?</h2>
+        <p>Walk-ins welcome, but the good time slots go fast. Book online in under a minute.</p>
+        <a href="contact.html" class="btn btn-gold">Book Your Cut Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="nav-logo" aria-label="Razor &amp; Tonic — home">
+            <svg class="nav-logo-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M6 34L34 6c2-2 5-2 6 0 2 1 2 4 0 6L12 42c-2 2-5 2-6 0-2-1-2-4 0-6z" fill="#C73E3E"/>
+              <path d="M30 12l6 6M24 18l6 6M18 24l6 6" stroke="#F5F0E8" stroke-width="3" stroke-linecap="round"/>
+              <path d="M40 8l4-2-2 4z" fill="#C9A44C"/>
+            </svg>
+            Razor &amp; Tonic
+          </a>
+          <p>A classic men's barbershop keeping the old trade alive — precision cuts, straight-razor shaves and a cold tonic at the end of every appointment.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Razor &amp; Tonic on Instagram">◎</a>
+            <a href="#" aria-label="Razor &amp; Tonic on Facebook">ⓕ</a>
+            <a href="#" aria-label="Razor &amp; Tonic on X">𝕏</a>
+            <a href="#" aria-label="Razor &amp; Tonic on YouTube">▶</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Classic Haircut</a></li>
+            <li><a href="services.html">Hot Towel Shave</a></li>
+            <li><a href="services.html">Beard Sculpting</a></li>
+            <li><a href="services.html">Skin Fade</a></li>
+            <li><a href="services.html">Kids' Cut</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Find Us</h4>
+          <ul class="footer-contact">
+            <li><span class="fc-icon">⌖</span> 214 Main Street, Old Town District</li>
+            <li><span class="fc-icon">✆</span> <a href="tel:+15550182084">(555) 018-2084</a></li>
+            <li><span class="fc-icon">✉</span> <a href="mailto:hello@razorandtonic.com">hello@razorandtonic.com</a></li>
+            <li><span class="fc-icon">◷</span> Tue – Sat · 9:00 AM – 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Razor &amp; Tonic. All rights reserved.</p>
+        <p>Template by <a href="https://uiuxlabz.com" target="_blank" rel="noopener">uiuxlabz</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

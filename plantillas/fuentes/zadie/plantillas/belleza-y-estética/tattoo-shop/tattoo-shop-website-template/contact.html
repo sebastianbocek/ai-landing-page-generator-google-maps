@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Now | Iron & Ink Tattoo Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-pen-nib"></i></div>
+        <div class="logo-text">
+          Iron & Ink
+          <span>Tattoo Studio</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Book Now</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero">
+    <div class="hero-content">
+      <div class="hero-badge">Walk-Ins Welcome <i class="fa-solid fa-star"></i> Free Consultations</div>
+      <h1>Let's Create Something</h1>
+      <p class="hero-description">Book a consultation, inquire about pricing, or just say hello. We're here to help bring your vision to life.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3 style="margin-bottom: var(--space-lg);">Book a Consultation</h3>
+
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+            </div>
+
+            <div class="form-group">
+              <label for="artist">Preferred Artist</label>
+              <select id="artist" name="artist">
+                <option value="">No preference</option>
+                <option value="marcus">Marcus Cole - Traditional, Japanese</option>
+                <option value="sarah">Sarah Chen - Fine Line, Realism</option>
+                <option value="jake">Jake Rodriguez - Blackwork, Geometric</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="style">Tattoo Style</label>
+              <select id="style" name="style">
+                <option value="">Select a style</option>
+                <option value="traditional">Traditional</option>
+                <option value="neo-traditional">Neo-Traditional</option>
+                <option value="japanese">Japanese</option>
+                <option value="fine-line">Fine Line</option>
+                <option value="realism">Realism</option>
+                <option value="blackwork">Blackwork</option>
+                <option value="geometric">Geometric</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="size">Approximate Size</label>
+              <select id="size" name="size">
+                <option value="">Select size</option>
+                <option value="small">Small (1-3 inches)</option>
+                <option value="medium">Medium (4-6 inches)</option>
+                <option value="large">Large (half sleeve, large piece)</option>
+                <option value="xl">Extra Large (full sleeve, back piece)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="placement">Placement</label>
+              <input type="text" id="placement" name="placement" placeholder="e.g., forearm, upper back, thigh">
+            </div>
+
+            <div class="form-group">
+              <label for="description">Describe Your Idea *</label>
+              <textarea id="description" name="description" placeholder="Tell us about your tattoo idea, any reference images you have, and any other details..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="first-tattoo">Is this your first tattoo?</label>
+              <select id="first-tattoo" name="first-tattoo">
+                <option value="no">No, I have tattoos</option>
+                <option value="yes">Yes, this is my first</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Inquiry</button>
+          </form>
+
+          <p style="font-size: 0.8125rem; color: var(--ash); margin-top: var(--space-md); text-align: center;">We'll respond within 24-48 hours. For urgent inquiries, call us directly.</p>
+        </div>
+
+        <div class="contact-info">
+          <div class="section-header">
+            <div class="section-tag">Get in Touch</div>
+            <h3>Visit the Studio</h3>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h5>Phone</h5>
+                <p>(503) 555-0142</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h5>Email</h5>
+                <p>info@ironandink.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h5>Address</h5>
+                <p>456 Ink Street<br>Portland, OR 97205</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="studio-hours">
+            <h4>Studio Hours</h4>
+            <ul class="hours-list">
+              <li>
+                <span class="day">Monday</span>
+                <span class="time">Closed</span>
+              </li>
+              <li>
+                <span class="day">Tuesday</span>
+                <span class="time">12:00 PM - 8:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Wednesday</span>
+                <span class="time">12:00 PM - 8:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Thursday</span>
+                <span class="time">12:00 PM - 8:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Friday</span>
+                <span class="time">12:00 PM - 9:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Saturday</span>
+                <span class="time">11:00 AM - 7:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Sunday</span>
+                <span class="time">11:00 AM - 5:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-top: var(--space-xl); padding: var(--space-lg); background: var(--charcoal); border-radius: var(--radius-md); border: 1px solid var(--gunmetal);">
+            <h4 style="margin-bottom: var(--space-sm);">Walk-Ins</h4>
+            <p style="font-size: 0.9375rem; margin-bottom: 0;">
+              Walk-ins are welcome for small to medium pieces based on artist availability. For custom work, we recommend booking a consultation to ensure your artist has time to create the perfect design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Info Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">What to Expect</div>
+        <h2>The Process</h2>
+      </div>
+
+      <div class="aftercare-steps">
+        <div class="aftercare-step">
+          <div class="step-number">1</div>
+          <h4>Consultation</h4>
+          <p>We'll discuss your idea, review reference images, and talk placement, size, and style. No commitment required.</p>
+        </div>
+
+        <div class="aftercare-step">
+          <div class="step-number">2</div>
+          <h4>Design & Quote</h4>
+          <p>Your artist creates a custom design based on your consultation. We'll provide a clear quote and answer any questions.</p>
+        </div>
+
+        <div class="aftercare-step">
+          <div class="step-number">3</div>
+          <h4>Book & Deposit</h4>
+          <p>Secure your appointment with a deposit ($100 or 20% for larger pieces). This reserves your spot and goes toward your final cost.</p>
+        </div>
+
+        <div class="aftercare-step">
+          <div class="step-number">4</div>
+          <h4>Tattoo Day</h4>
+          <p>Arrive rested, fed, and hydrated. We'll review the final design, apply the stencil, and get to work creating your piece.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policies Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Policies</div>
+        <h2>Studio Policies</h2>
+        <p class="section-subtitle">A few things to know before your appointment.</p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h4>Age Requirement</h4>
+          <p>You must be 18 years or older with valid government-issued ID. We do not tattoo minors under any circumstances.</p>
+        </div>
+
+        <div class="info-card">
+          <h4>Deposits</h4>
+          <p>Non-refundable deposits of $100 (or 20% for large pieces) are required to book. Deposits apply to your final tattoo cost.</p>
+        </div>
+
+        <div class="info-card">
+          <h4>Cancellations</h4>
+          <p>Please provide at least 48 hours notice for cancellations or rescheduling. Late cancellations forfeit the deposit.</p>
+        </div>
+
+        <div class="info-card">
+          <h4>No-Shows</h4>
+          <p>No-shows forfeit their deposit and may be required to pay full deposit upfront for future appointments.</p>
+        </div>
+
+        <div class="info-card">
+          <h4>Sobriety</h4>
+          <p>We will not tattoo anyone under the influence of alcohol or drugs. If you arrive intoxicated, your appointment will be cancelled.</p>
+        </div>
+
+        <div class="info-card">
+          <h4>Health</h4>
+          <p>Please reschedule if you're feeling unwell. Certain medical conditions may require doctor approval before tattooing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section style="background: var(--gunmetal); height: 400px; display: flex; align-items: center; justify-content: center;">
+    <div style="text-align: center;">
+      <p style="font-size: 4rem; margin-bottom: var(--space-md);"><i class="fa-solid fa-location-dot"></i></p>
+      <h3>456 Ink Street, Portland, OR 97205</h3>
+      <p style="color: var(--ash);">Free street parking available. Located in the Pearl District.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <div class="logo-text">
+              Iron & Ink
+              <span>Tattoo Studio</span>
+            </div>
+          </a>
+          <p>Custom tattoos and body art in downtown Portland. Professional artists, sterile environment, unforgettable ink.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">ig</a>
+            <a href="#" class="social-link">fb</a>
+            <a href="#" class="social-link">tt</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Styles</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Traditional</a></li>
+            <li><a href="services.html">Fine Line</a></li>
+            <li><a href="services.html">Japanese</a></li>
+            <li><a href="services.html">Blackwork</a></li>
+            <li><a href="services.html">Realism</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>456 Ink Street</li>
+            <li>Portland, OR 97205</li>
+            <li>(503) 555-0142</li>
+            <li>info@ironandink.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Iron & Ink Tattoo Studio. All rights reserved.</p>
+        <p>Licensed & Health Department Approved</p>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll header effect -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Little Explorers Learning Center</title>
+  <meta name="description" content="Contact Little Explorers Learning Center to schedule a tour, ask about enrollment, or learn more about our childcare programs in Springfield, IL.">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-sun"></i>
+        </div>
+        <div class="logo-text">
+          Little Explorers
+          <small>Learning Center</small>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Programs</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>We would love to hear from you. Schedule a tour, ask a question, or start the enrollment process.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="parent-name">Parent / Guardian Name</label>
+                <input type="text" id="parent-name" name="parent-name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="child-name">Child's Name</label>
+                <input type="text" id="child-name" name="child-name" placeholder="Your child's name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="child-age">Child's Age</label>
+                <select id="child-age" name="child-age">
+                  <option value="" disabled selected>Select age range</option>
+                  <option value="infant">6 Weeks - 12 Months</option>
+                  <option value="toddler">1 - 2 Years</option>
+                  <option value="preschool">3 - 4 Years</option>
+                  <option value="prek">4 - 5 Years</option>
+                  <option value="school-age">5 - 10 Years</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="program">Program Interest</label>
+                <select id="program" name="program">
+                  <option value="" disabled selected>Select a program</option>
+                  <option value="infant">Infant Care</option>
+                  <option value="toddler">Toddler Program</option>
+                  <option value="preschool">Preschool</option>
+                  <option value="prek">Pre-Kindergarten</option>
+                  <option value="before-after">Before & After School</option>
+                  <option value="summer">Summer Camp</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(217) 555-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your child and any questions you have. We are happy to help!" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <div class="contact-info-item">
+              <div class="contact-info-icon card-icon yellow">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Address</h4>
+                <p>425 Meadow Lane<br>Springfield, IL 62701</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon card-icon blue">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Phone</h4>
+                <p>(217) 555-0183</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon card-icon green">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Email</h4>
+                <p>hello@littleexplorers.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <h3>Hours of Operation</h3>
+            <div class="contact-info-item">
+              <div class="contact-info-icon card-icon yellow">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Monday - Friday</h4>
+                <p>6:30 AM - 6:00 PM</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon card-icon brown">
+                <i class="fas fa-calendar-xmark"></i>
+              </div>
+              <div class="contact-info-text">
+                <h4>Saturday - Sunday</h4>
+                <p>Closed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the questions we hear most from prospective families.</p>
+      </div>
+      <div class="container-narrow" style="padding: 0;">
+        <div class="faq-item active">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            What is the enrollment process?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Enrollment begins with a tour of our facility, which you can schedule by calling us or submitting the form above. During the tour, you will meet the teachers in your child's age group and see the classrooms in action. If you decide Little Explorers is the right fit, we will provide enrollment paperwork that includes your child's health records, immunization history, emergency contacts, and a family information questionnaire. Once the paperwork and a one-time registration fee are submitted, we will work with you to choose a start date and plan a smooth transition.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            What is your sick child policy?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>For the health and safety of all children and staff, we ask that children stay home if they have a fever of 100.4 or higher, vomiting, diarrhea, an undiagnosed rash, or any other contagious symptoms. Children must be symptom-free for a full 24 hours without the aid of medication before returning. If a child becomes ill during the day, we will contact parents or emergency contacts immediately for pickup. We follow all Illinois DCFS guidelines for illness exclusion and reporting.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            What should my child bring?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Each child should bring a complete change of clothes (seasonally appropriate), a water bottle, and any comfort items they may need such as a blanket or stuffed animal for nap time. Infants will need a supply of bottles, formula or breast milk, and diapers. For toddlers still in diapers, please provide a daily supply of diapers and wipes. All items should be clearly labeled with your child's name. We provide all meals, snacks, sunscreen, and nap cots or cribs.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            Do you accommodate allergies and dietary restrictions?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Absolutely. We take allergies and dietary needs very seriously. During enrollment, we collect detailed information about any allergies or dietary restrictions your child has. Our kitchen staff prepares meals with these needs in mind, and allergy action plans are posted in every classroom. We are a nut-aware facility and can accommodate most common dietary restrictions including vegetarian, dairy-free, gluten-free, and cultural or religious dietary practices. If your child has a severe allergy requiring an EpiPen, all classroom staff will be trained on its use.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            What are your holiday closures?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Little Explorers is closed on the following holidays: New Year's Day, Martin Luther King Jr. Day, Presidents' Day, Memorial Day, Independence Day, Labor Day, Thanksgiving Day and the Friday after, Christmas Eve, and Christmas Day. We also close for two staff professional development days each year, which are announced at the start of the school year. A complete holiday calendar is provided to all enrolled families in August and January.</p>
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            Is there a waitlist?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <p>Some of our programs, particularly the Infant Care room, do occasionally reach full enrollment. When this happens, we maintain a waitlist on a first-come, first-served basis. There is no fee to join the waitlist. We will contact you as soon as a spot opens up, and you will have 48 hours to confirm your interest. We recommend scheduling a tour and starting the enrollment process as early as possible, even during pregnancy for infant care, to secure your preferred start date.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Visit?</h2>
+      <p>The best way to get to know Little Explorers is to come see us in person. We would love to show you around and answer all your questions.</p>
+      <a href="tel:2175550183" class="btn btn-white"><i class="fas fa-phone"></i> &nbsp;Call (217) 555-0183</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">
+            Little Explorers
+            <small>Learning Center</small>
+          </div>
+          <p>A warm, nurturing environment where your child discovers the joy of learning through play, creativity, and exploration.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Programs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Programs</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Infant Care</a></li>
+            <li><a href="services.html">Toddler Program</a></li>
+            <li><a href="services.html">Preschool</a></li>
+            <li><a href="services.html">Pre-K</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-location-dot"></i>
+            <span>425 Meadow Lane<br>Springfield, IL 62701</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>(217) 555-0183</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>hello@littleexplorers.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Little Explorers Learning Center. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

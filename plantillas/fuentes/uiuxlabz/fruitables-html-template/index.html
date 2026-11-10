@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FARMFRESH — Organic produce marketplace. Farm-to-table fruits, vegetables, and organic goods delivered fresh daily.">
+  <title>FARMFRESH — Farm to Table, Fresh Daily</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥬</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__brand">
+        <span class="header__brand-icon">🥬</span>
+        FARMFRESH
+      </a>
+
+      <nav class="header__nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="shop.html" class="header__cart" aria-label="Shopping cart">
+          &#128722;
+          <span class="header__cart-count" data-cart-count>0</span>
+        </a>
+        <button class="header__burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__inner container">
+      <div class="hero__content reveal">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          100% Organic Produce
+        </div>
+        <h1 class="hero__title">
+          Farm Fresh,<br><em>Delivered</em>
+        </h1>
+        <p class="hero__subtitle">
+          From our family farms to your table. Handpicked fruits, crisp vegetables,
+          and organic goodness — harvested at peak ripeness and delivered within 24 hours.
+        </p>
+        <div class="hero__actions">
+          <a href="shop.html" class="btn btn--primary btn--lg">Shop Now</a>
+          <a href="about.html" class="btn btn--outline btn--lg">Our Story</a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-number">500+</div>
+            <div class="hero__stat-label">Organic Products</div>
+          </div>
+          <div>
+            <div class="hero__stat-number">50+</div>
+            <div class="hero__stat-label">Local Farms</div>
+          </div>
+          <div>
+            <div class="hero__stat-number">10K+</div>
+            <div class="hero__stat-label">Happy Families</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__image reveal-right">
+        <div class="hero__image-decoration"></div>
+        <img src="assets/img/hero-img.jpg" alt="Fresh organic produce from local farms" loading="eager" width="520" height="400">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORIES ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-label reveal">Browse by Category</div>
+      <h2 class="section-title reveal">Explore Our Fresh Selection</h2>
+      <p class="section-desc reveal mb-8">
+        From orchard-fresh fruits to garden-picked vegetables, find everything you need for a healthier lifestyle.
+      </p>
+
+      <div class="categories__grid reveal-stagger">
+        <a href="shop.html" class="category-card">
+          <div class="category-card__icon">🍎</div>
+          <h3 class="category-card__title">Fresh Fruits</h3>
+          <p class="category-card__count">120+ varieties available</p>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-card__icon">🥕</div>
+          <h3 class="category-card__title">Vegetables</h3>
+          <p class="category-card__count">85+ varieties available</p>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-card__icon">🌿</div>
+          <h3 class="category-card__title">Organic Goods</h3>
+          <p class="category-card__count">200+ certified organic</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PRODUCTS ============ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-label reveal">Featured Products</div>
+      <h2 class="section-title reveal">Handpicked for You</h2>
+      <p class="section-desc reveal mb-8">
+        Our bestsellers, chosen by thousands of families who trust FARMFRESH for quality and freshness.
+      </p>
+
+      <div class="products__grid reveal-stagger">
+        <!-- Product 1 -->
+        <div class="product-card" data-category="fruits">
+          <div class="product-card__image">
+            <img src="assets/img/fruite-item-1.jpg" alt="Fresh Strawberries" loading="lazy" width="400" height="300">
+            <span class="product-card__badge product-card__badge--organic">Organic</span>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Fruits</div>
+            <h3 class="product-card__title">Fresh Strawberries</h3>
+            <p class="product-card__desc">Sweet, juicy strawberries picked at peak ripeness from local organic farms.</p>
+            <div class="product-card__footer">
+              <div class="product-card__price">$4.99</div>
+              <button class="product-card__add" data-add aria-label="Add Fresh Strawberries to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="vegetables">
+          <div class="product-card__image">
+            <img src="assets/img/vegetable-item-1.jpg" alt="Organic Broccoli" loading="lazy" width="400" height="300">
+            <span class="product-card__badge product-card__badge--organic">Organic</span>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Vegetables</div>
+            <h3 class="product-card__title">Organic Broccoli</h3>
+            <p class="product-card__desc">Crisp, green broccoli heads grown without pesticides in rich soil.</p>
+            <div class="product-card__footer">
+              <div class="product-card__price">$3.49</div>
+              <button class="product-card__add" data-add aria-label="Add Organic Broccoli to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="fruits">
+          <div class="product-card__image">
+            <img src="assets/img/fruite-item-2.jpg" alt="Golden Mangoes" loading="lazy" width="400" height="300">
+            <span class="product-card__badge product-card__badge--new">New</span>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Fruits</div>
+            <h3 class="product-card__title">Golden Mangoes</h3>
+            <p class="product-card__desc">Tropical mangoes with rich, velty flesh and an intoxicating sweetness.</p>
+            <div class="product-card__footer">
+              <div class="product-card__price">$6.99</div>
+              <button class="product-card__add" data-add aria-label="Add Golden Mangoes to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="vegetables">
+          <div class="product-card__image">
+            <img src="assets/img/vegetable-item-2.jpg" alt="Heritage Tomatoes" loading="lazy" width="400" height="300">
+            <span class="product-card__badge product-card__badge--sale">Sale</span>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Vegetables</div>
+            <h3 class="product-card__title">Heritage Tomatoes</h3>
+            <p class="product-card__desc">Heirloom varieties bursting with complex, vine-ripened flavor.</p>
+            <div class="product-card__footer">
+              <div class="product-card__price">$5.49 <span class="product-card__price-old">$7.99</span></div>
+              <button class="product-card__add" data-add aria-label="Add Heritage Tomatoes to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-category="fruits">
+          <div class="product-card__image">
+            <img src="assets/img/fruite-item-3.jpg" alt="Fuji Apples" loading="lazy" width="400" height="300">
+            <span class="product-card__badge product-card__badge--organic">Organic</span>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Fruits</div>
+            <h3 class="product-card__title">Fuji Apples</h3>
+            <p class="product-card__desc">Crisp, honey-sweet Fuji apples from our partner orchards.</p>
+            <div class="product-card__footer">
+              <div class="product-card__price">$3.99</div>
+              <button class="product-card__add" data-add aria-label="Add Fuji Apples to cart">+</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" data-category="organic">
+          <div class="product-card__image">
+            <img src="assets/img/vegetable-item-3.png" alt="Mixed Greens Bundle" loading="lazy" width="400" height="300">
+            <span class="product-card__badge product-card__badge--organic">Organic</span>
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__category">Organic</div>
+            <h3 class="product-card__title">Mixed Greens Bundle</h3>
+            <p class="product-card__desc">A curated mix of arugula, spinach, and baby kale for your salads.</p>
+            <div class="product-card__footer">
+              <div class="product-card__price">$5.99</div>
+              <button class="product-card__add" data-add aria-label="Add Mixed Greens Bundle to cart">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 reveal">
+        <a href="shop.html" class="btn btn--outline btn--lg">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / STORY ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="about-story">
+        <div class="about-story__image reveal-left">
+          <img src="assets/img/banner-fruits.jpg" alt="Our family farm" loading="lazy" width="600" height="450">
+        </div>
+        <div class="about-story__text reveal-right">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-title">From Frustration to Freshness</h2>
+          <p>
+            It started with a simple frustration: why is it so hard to find truly fresh,
+            organic produce in the city? We were tired of wilted greens, flavorless tomatoes,
+            and produce that traveled thousands of miles before reaching our plates.
+          </p>
+          <p>
+            So we built FARMFRESH — a direct connection between local organic farmers and
+            your kitchen. No middlemen, no warehouses, no week-old produce. Just honest food,
+            grown with care, delivered with pride.
+          </p>
+          <div class="mt-6">
+            <a href="about.html" class="btn btn--primary">Read Our Full Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BANNER ============ -->
+  <section class="section section--warm">
+    <div class="container">
+      <div class="newsletter__inner reveal-scale" style="background: linear-gradient(135deg, #92400e 0%, #78350f 100%);">
+        <div class="newsletter__content">
+          <h2 class="newsletter__title">Freshness Guaranteed</h2>
+          <p class="newsletter__desc">Every item is backed by our 100% freshness promise. Not happy? We'll replace it, no questions asked.</p>
+        </div>
+        <div class="newsletter__form">
+          <a href="shop.html" class="btn btn--white btn--lg">Start Shopping</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-label reveal">What Families Say</div>
+      <h2 class="section-title reveal">Trusted by 10,000+ Households</h2>
+      <p class="section-desc reveal mb-8">
+        Real stories from families who have made FARMFRESH part of their weekly routine.
+      </p>
+
+      <div class="testimonials__grid reveal-stagger">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__text">
+            "The strawberries taste like they were just picked from the garden. My kids
+            won't eat store-bought fruit anymore — they ask for FARMFRESH every week."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">
+              <img src="assets/img/avatar.jpg" alt="Sarah M." loading="lazy" width="48" height="48">
+            </div>
+            <div>
+              <div class="testimonial-card__name">Sarah M.</div>
+              <div class="testimonial-card__role">Mother of Three</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__text">
+            "As a chef, ingredient quality is everything. FARMFRESH delivers produce that
+            makes my dishes sing. The heritage tomatoes are absolutely incredible."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">
+              <img src="assets/img/testimonial-1.jpg" alt="Chef Marcus" loading="lazy" width="48" height="48">
+            </div>
+            <div>
+              <div class="testimonial-card__name">Chef Marcus</div>
+              <div class="testimonial-card__role">Restaurant Owner</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__text">
+            "I love knowing exactly where my food comes from. The farm profiles on FARMFRESH
+            make me feel connected to the people who grow my food. It's transparent and real."
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">
+              <img src="assets/img/avatar.jpg" alt="Emma T." loading="lazy" width="48" height="48">
+            </div>
+            <div>
+              <div class="testimonial-card__name">Emma T.</div>
+              <div class="testimonial-card__role">Health Enthusiast</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="newsletter__inner reveal-scale">
+        <div class="newsletter__content">
+          <h2 class="newsletter__title">Stay Fresh with Us</h2>
+          <p class="newsletter__desc">
+            Get seasonal recipes, farm updates, and exclusive weekly deals delivered to your inbox.
+          </p>
+        </div>
+        <form class="newsletter__form" data-form>
+          <input
+            type="email"
+            class="newsletter__input"
+            placeholder="Your email address"
+            required
+            aria-label="Email address for newsletter"
+          >
+          <button type="submit" class="newsletter__btn">Subscribe</button>
+          <span class="form-ok">Welcome to the FARMFRESH family! Check your inbox.</span>
+          <span class="form-err">Please enter a valid email address.</span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div>
+          <div class="footer__brand">
+            <span class="footer__brand-icon">🥬</span>
+            FARMFRESH
+          </div>
+          <p class="footer__desc">
+            Connecting local organic farms with your table. Fresh, honest food delivered daily.
+          </p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">&#9733;</a>
+            <a href="#" aria-label="Instagram">&#9734;</a>
+            <a href="#" aria-label="Twitter">&#9733;</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <!-- Categories -->
+        <div>
+          <h4 class="footer__heading">Categories</h4>
+          <div class="footer__links">
+            <a href="shop.html">Fresh Fruits</a>
+            <a href="shop.html">Vegetables</a>
+            <a href="shop.html">Organic Goods</a>
+            <a href="shop.html">Seasonal Picks</a>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h4 class="footer__heading">Newsletter</h4>
+          <p style="font-size: 0.875rem; color: var(--dark-400); margin-bottom: var(--space-3);">
+            Subscribe for weekly farm updates and exclusive deals.
+          </p>
+          <form class="footer__newsletter-input" data-form>
+            <input type="email" placeholder="Your email" required aria-label="Footer newsletter email">
+            <button type="submit">Go</button>
+            <span class="form-ok" style="font-size:12px;padding:4px 8px;margin-top:4px;">Subscribed!</span>
+            <span class="form-err" style="font-size:12px;padding:4px 8px;margin-top:4px;">Enter valid email.</span>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> FARMFRESH. All rights reserved.</p>
+        <div class="footer__payments">
+          <img src="assets/img/payment.png" alt="Accepted payment methods" loading="lazy" height="28">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

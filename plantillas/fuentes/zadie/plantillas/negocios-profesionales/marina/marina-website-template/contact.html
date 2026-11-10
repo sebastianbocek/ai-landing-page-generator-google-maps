@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Harbor Point Marina</title>
+  <meta name="description" content="Contact Harbor Point Marina in Charleston, SC. Request a slip, schedule service, or get directions by road or by water. Office open 7 days a week.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+<!-- ======= HEADER ======= -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="site-logo">
+      <span class="logo-name">Harbor Point Marina</span>
+      <span class="logo-sub">Charleston, SC &bull; Est. 1962</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-secondary header-cta">Request a Slip</a>
+  </div>
+</header>
+
+<!-- ======= PAGE HERO ======= -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-tag">Get In Touch</span>
+    <h1>Contact Harbor Point</h1>
+    <p>Questions about slips, service scheduling, or approaching from the water. We're here seven days a week.</p>
+  </div>
+</section>
+
+<!-- ======= CONTACT FORMS ======= -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- LEFT: FORMS -->
+      <div>
+
+        <!-- General Contact Form -->
+        <div class="contact-form-card" style="margin-bottom: var(--space-8);">
+          <h2>Send Us a Message</h2>
+          <form action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Your last name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(843) 555-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic...</option>
+                <option value="slip-inquiry">Slip Rental Inquiry</option>
+                <option value="dry-storage">Dry Storage Inquiry</option>
+                <option value="service">Boat Repair or Service</option>
+                <option value="launch">Boat Launch Pass</option>
+                <option value="transient">Transient Slip Reservation</option>
+                <option value="winterization">Winterization Package</option>
+                <option value="general">General Question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Slip Inquiry Form -->
+        <div class="inquiry-form-card">
+          <h2>Request a Slip</h2>
+          <p style="color: var(--text-secondary); font-size: var(--text-sm); margin-bottom: var(--space-6); margin-top: -0.5rem;">Fill out the form below and we'll check current availability for your vessel and get back to you within one business day.</p>
+          <form action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="req-name">Your Name</label>
+                <input type="text" id="req-name" name="req_name" placeholder="Full name" required>
+              </div>
+              <div class="form-group">
+                <label for="req-email">Email</label>
+                <input type="email" id="req-email" name="req_email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="boat-name">Boat Name</label>
+              <input type="text" id="boat-name" name="boat_name" placeholder="Name of your vessel">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="boat-length">Boat Length (ft)</label>
+                <input type="number" id="boat-length" name="boat_length" placeholder="e.g. 34" min="12" max="70">
+              </div>
+              <div class="form-group">
+                <label for="boat-beam">Beam (ft)</label>
+                <input type="number" id="boat-beam" name="boat_beam" placeholder="e.g. 12" min="4" max="25">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="boat-draft">Draft (ft)</label>
+                <input type="number" id="boat-draft" name="boat_draft" placeholder="e.g. 3.5" step="0.5" min="1" max="12">
+              </div>
+              <div class="form-group">
+                <label for="boat-type">Power or Sail</label>
+                <select id="boat-type" name="boat_type">
+                  <option value="">Select one...</option>
+                  <option value="powerboat">Powerboat</option>
+                  <option value="sailboat">Sailboat</option>
+                  <option value="catamaran">Catamaran</option>
+                  <option value="houseboat">Houseboat / Liveaboard</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="slip-type">Slip Agreement Type</label>
+              <select id="slip-type" name="slip_type">
+                <option value="">Select one...</option>
+                <option value="seasonal">Seasonal (April–October)</option>
+                <option value="annual">Annual Lease</option>
+                <option value="transient">Transient (1–7 nights)</option>
+                <option value="not-sure">Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="power-req">Power Requirement</label>
+              <select id="power-req" name="power_req">
+                <option value="">Select one...</option>
+                <option value="30a">30-Amp Shore Power</option>
+                <option value="50a">50-Amp Shore Power</option>
+                <option value="none">No Shore Power Needed</option>
+                <option value="not-sure">Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="desired-start">Desired Start Date</label>
+              <input type="date" id="desired-start" name="desired_start">
+              <p class="form-note">Spring slips fill quickly. We process inquiries in order received.</p>
+            </div>
+            <div class="form-group">
+              <label for="req-notes">Anything else we should know?</label>
+              <textarea id="req-notes" name="req_notes" rows="3" placeholder="Additional notes about your boat or requirements..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Slip Request</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: SIDEBAR INFO -->
+      <div class="contact-sidebar">
+
+        <div class="info-card">
+          <h3>Contact Information</h3>
+          <ul class="info-list">
+            <li>
+              <span class="info-label">Phone</span>
+              <a href="tel:+18435550172">(843) 555-0172</a>
+            </li>
+            <li>
+              <span class="info-label">Email</span>
+              <a href="mailto:info@harborpointmarina.com">info@harborpointmarina.com</a>
+            </li>
+            <li>
+              <span class="info-label">VHF</span>
+              <span>Channel 16 (hailing), Channel 68 (working)</span>
+            </li>
+            <li>
+              <span class="info-label">Address</span>
+              <span>Harbor Point Marina, Charleston, SC 29403</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Hours</h3>
+          <div class="hours-grid">
+            <div style="margin-bottom: 0.75rem;">
+              <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.25rem;">Office &amp; Ship's Store</p>
+              <div class="hours-row">
+                <span class="hours-day">Mon – Fri</span>
+                <span class="hours-time">7:00 am – 5:00 pm</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Sat – Sun</span>
+                <span class="hours-time">7:00 am – 5:00 pm</span>
+              </div>
+            </div>
+            <div style="margin-bottom: 0.75rem;">
+              <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.25rem;">Fuel Dock</p>
+              <div class="hours-row">
+                <span class="hours-day">Daily</span>
+                <span class="hours-time">7:00 am – 6:00 pm</span>
+              </div>
+            </div>
+            <div style="margin-bottom: 0.75rem;">
+              <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.25rem;">Service Department</p>
+              <div class="hours-row">
+                <span class="hours-day">Mon – Fri</span>
+                <span class="hours-time">7:30 am – 4:30 pm</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Sat</span>
+                <span class="hours-time">8:00 am – 12:00 pm</span>
+              </div>
+            </div>
+            <div>
+              <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 0.25rem;">Marina Access (Slipholders)</p>
+              <div class="hours-row">
+                <span class="hours-day">Daily</span>
+                <span class="hours-time">24 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>Emergency Contact</h3>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 0.75rem;">For after-hours marina emergencies, slipholder security concerns, or urgent vessel assistance:</p>
+          <p style="font-weight: 700; color: var(--primary-dark); font-size: 1.1rem; margin-bottom: 0.25rem;"><a href="tel:+18435550199" style="color: var(--primary);">(843) 555-0199</a></p>
+          <p style="font-size: 0.8rem; color: var(--text-muted);">After-hours line. Monitored 24/7 during the boating season.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= DIRECTIONS ======= -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Getting Here</span>
+      <h2>Directions to Harbor Point</h2>
+    </div>
+    <div class="directions-grid">
+
+      <div class="directions-block">
+        <h3>By Water</h3>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">Harbor Point is located on the western bank of the Ashley River, approximately 2.2 nautical miles south of the Ashley River Bridge.</p>
+        <ol>
+          <li>Enter the Ashley River from Charleston Harbor on a heading of 195 degrees from the Highway 17 Bridge.</li>
+          <li>Follow the main channel south. Harbor Point is on your starboard side, marked by a green buoy at the entrance channel.</li>
+          <li>The entrance channel bearing is 285 degrees true, marked with red-right-returning daymarks. Depth is 8 feet at mean low water through the channel.</li>
+          <li>Hail us on VHF Channel 16 as you approach and we'll switch to Channel 68 for slip assignment.</li>
+          <li>Fuel dock is immediately to port upon entering the basin. Transient dock is to starboard. Office is the building with the blue roof.</li>
+        </ol>
+        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 1rem;">Approach waypoint: 32°43.8N / 079°58.2W. Shoal water exists east of the marked channel. Do not cut inside the daymarks.</p>
+      </div>
+
+      <div class="directions-block">
+        <h3>By Road</h3>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1.25rem;">Harbor Point Marina is located south of downtown Charleston on the Ashley River waterfront. The address is on Harbor Point Road off Folly Road.</p>
+        <ol>
+          <li>From downtown Charleston, take Folly Road (SC-171 South) from the James Island Connector.</li>
+          <li>Drive south on Folly Road for approximately 4 miles past the strip mall area.</li>
+          <li>Turn right onto Harbor Point Road at the brown marina sign. The turn is just past the Lowcountry Fire Station.</li>
+          <li>Follow Harbor Point Road 0.6 miles to the end. The gate and parking area will be on your left.</li>
+          <li>Boat ramp parking is straight ahead. Office and ship's store are in the building with the nautical flags.</li>
+        </ol>
+        <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 1rem;">Trailer rigs: use the right lane at the entrance gate. Pull-through spaces are available for vehicles with trailers longer than 25 feet.</p>
+      </div>
+
+    </div>
+
+    <!-- Harbor Approach Notes -->
+    <div style="background: var(--primary-dark); border-radius: var(--radius-md); padding: var(--space-8); margin-top: var(--space-8);">
+      <h3 style="color: var(--secondary); font-size: var(--text-xl); margin-bottom: var(--space-4);">Harbor Approach Notes</h3>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8);">
+        <div>
+          <p style="color: rgba(245,240,232,0.8); font-size: 0.875rem; margin-bottom: 0.75rem;"><strong style="color: var(--accent);">Tides:</strong> Charleston Harbor experiences 5.5 to 6.5 foot tidal ranges. Plan your approach and departure with tides in mind, especially if your vessel draws more than 4 feet. Tide tables are posted at the fuel dock and available from the office.</p>
+          <p style="color: rgba(245,240,232,0.8); font-size: 0.875rem;"><strong style="color: var(--accent);">Bridge Clearance:</strong> The Ashley River Bridge (Highway 17) has a 40-foot fixed vertical clearance. Sailboats with taller rigs should note that the James Island Connector bridge provides no access south. All vessels with masts over 40 feet must plan accordingly.</p>
+        </div>
+        <div>
+          <p style="color: rgba(245,240,232,0.8); font-size: 0.875rem; margin-bottom: 0.75rem;"><strong style="color: var(--accent);">Traffic:</strong> The Ashley River channel carries significant commercial and recreational traffic on weekends. Keep a sharp watch for personal watercraft and kayakers in the 5-mph no-wake zones near the marina entrance.</p>
+          <p style="color: rgba(245,240,232,0.8); font-size: 0.875rem;"><strong style="color: var(--accent);">Speed Limit:</strong> The entire marina basin is a no-wake zone. SC law requires minimum wake speed from the marked entrance buoy to all docks. Violations are reported to DNR enforcement and may result in loss of marina privileges.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ======= FAQ ======= -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2>Common Questions</h2>
+      <p>Answers to the things most people ask before they call.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-question">Do you have transient slips and how far in advance should I reserve?</div>
+        <div class="faq-answer">Yes, we maintain approximately 20 slips for transient boaters. During the peak season (Memorial Day through Labor Day), we recommend calling at least 48 to 72 hours ahead. Off-season, you can usually call the same day. We don't take reservations through email for transient slips — call (843) 555-0172 or hail us on VHF 16. Maximum transient stay is 14 consecutive nights.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Is there a pump-out station? Is it self-serve or attended?</div>
+        <div class="faq-answer">Every slip at Harbor Point has an individual pump-out connection at the dock box. Seasonal slipholders get pump-out once per week included; annual leaseholders get twice per week included. Additional pump-outs are $15 each. The fuel dock also has a free-standing pump-out station available to transient vessels and day visitors for $20 per use. Attendants handle pump-out during staffed hours; a self-service station is available at the fuel dock 24 hours.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What security measures does the marina have?</div>
+        <div class="faq-answer">The marina operates with keypad-access gates at all dock entry points. Annual and seasonal slipholders receive a key fob that logs entry and exit. The property has continuous video monitoring at all dock areas, the parking lot, and the service yard. We have a live security patrol from 10pm to 6am during boating season. All guests and service workers sign in at the office. If you observe anything suspicious, contact us directly or call 911.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you allow liveaboards?</div>
+        <div class="faq-answer">We have a limited liveaboard program for annual leaseholders only. Currently, we have a waitlist for liveaboard designation. Liveaboards must comply with SC DHEC regulations regarding holding tanks and must have all USCG-required safety equipment aboard. An annual inspection is required. Liveaboard slips carry a $150/month supplement on the annual lease rate. If you're interested in liveaboard status, mention it when you submit a slip inquiry and we'll put you on the notification list.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">What's included in the winter storage rate?</div>
+        <div class="faq-answer">Winter storage (November through March, or until splash) runs $38 per foot for blocked and covered storage in the yard, or $28 per foot for uncovered blocking. Price includes haul-out, blocking, and re-launch in spring. Jack stands are included. Shore power for battery tenders is available for $40/month. We recommend our winterization package (starting at $285 for single outboards) to protect your engine and systems during storage. Boats stored with us get priority scheduling for spring commissioning.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Can I do my own boat work in my slip or the yard?</div>
+        <div class="faq-answer">Slipholders may perform their own routine maintenance (oil changes, detailing, light mechanical work) in their slips. Work that generates significant mess, noise, or chemical runoff must be done in the designated service area. All bottom paint work must be done in the paint yard with proper containment — this is a regulatory requirement, not a preference. Engines cannot be run at full throttle in the slips. If you want to use the yard for a larger DIY project, talk to us — we can usually arrange access for a small daily fee.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Do you accept credit cards? What are the payment terms for slips?</div>
+        <div class="faq-answer">We accept Visa, MasterCard, and American Express for all fuel, store, and service transactions. For slip rentals, we accept check, ACH bank transfer, or card (with a 3% processing fee for card payments). Seasonal slips require a deposit of one month's equivalent at signing, with the balance due April 1st. Annual leases are billed quarterly. Payment plans are available — ask Claire about what works for your situation.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="site-logo">
+          <span class="logo-name">Harbor Point Marina</span>
+          <span class="logo-sub">Charleston, SC &bull; Est. 1962</span>
+        </a>
+        <p>Full-service marina on the Charleston waterfront. Three generations serving the Lowcountry boating community with wet slips, dry storage, boat repair, and more.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#slips">Wet Slip Rentals</a></li>
+          <li><a href="services.html#dry-storage">Dry Storage</a></li>
+          <li><a href="services.html#repair">Boat Repair</a></li>
+          <li><a href="services.html#fuel">Fuel Dock</a></li>
+          <li><a href="services.html#launch">Boat Launch</a></li>
+          <li><a href="services.html#store">Ship's Store</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <address>
+          Harbor Point Marina<br>
+          Charleston, SC<br><br>
+          <a href="tel:+18435550172">(843) 555-0172</a><br>
+          <a href="mailto:info@harborpointmarina.com">info@harborpointmarina.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Harbor Point Marina. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

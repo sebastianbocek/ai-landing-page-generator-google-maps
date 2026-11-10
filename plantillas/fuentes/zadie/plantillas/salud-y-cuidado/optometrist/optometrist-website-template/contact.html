@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book Appointment | ClearView Eye Care</title>
+  <meta name="description" content="Book your eye exam at ClearView Eye Care. Located at 4520 Vision Parkway, Suite 200. Open Mon-Fri 8am-6pm, Sat 9am-2pm. Call (555) 328-2020.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-eye"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">ClearView</span>
+          <span class="logo-sub">Eye Care</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary header-cta">Book an Exam</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <h1>Book Your Appointment</h1>
+        <p>Request an appointment online or call us directly. Most patients are seen within the same week they reach out.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-section">
+          <h2>Request an Appointment</h2>
+          <p>Fill out the form below and we'll get back to you within one business day to confirm your appointment.</p>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Jane" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="comprehensive-exam">Comprehensive Eye Exam</option>
+                  <option value="contact-lens">Contact Lens Exam & Fitting</option>
+                  <option value="eyeglasses">Eyeglasses</option>
+                  <option value="pediatric">Pediatric Eye Care</option>
+                  <option value="eye-disease">Eye Disease Management</option>
+                  <option value="emergency">Emergency Eye Care</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="preferred-date">Preferred Date</label>
+                <input type="date" id="preferred-date" name="preferred-date">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="insurance">Insurance Provider</label>
+              <select id="insurance" name="insurance">
+                <option value="" disabled selected>Select your insurance</option>
+                <option value="vsp">VSP Vision</option>
+                <option value="eyemed">EyeMed</option>
+                <option value="bcbs">Blue Cross Blue Shield</option>
+                <option value="aetna">Aetna</option>
+                <option value="united">UnitedHealthcare</option>
+                <option value="cigna">Cigna</option>
+                <option value="humana">Humana</option>
+                <option value="medicare">Medicare</option>
+                <option value="other">Other</option>
+                <option value="none">No Insurance / Self-Pay</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Patient Status</label>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="patient-status" value="new" checked>
+                  New Patient
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="patient-status" value="returning">
+                  Returning Patient
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="notes">Additional Notes</label>
+              <textarea id="notes" name="notes" placeholder="Any specific concerns or additional information..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+              <i class="fa-solid fa-paper-plane"></i> Submit Request
+            </button>
+          </form>
+        </div>
+        <div>
+          <div class="contact-info-section">
+            <h2>Get in Touch</h2>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Office Location</h4>
+                <p>4520 Vision Parkway, Suite 200<br>Lakewood, CO 80228</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>(555) 328-2020</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>info@clearvieweyecare.com</p>
+              </div>
+            </div>
+            <div class="contact-hours">
+              <h4>Office Hours</h4>
+              <ul class="hours-list">
+                <li><span>Monday - Friday</span> <span>8:00 AM - 6:00 PM</span></li>
+                <li><span>Saturday</span> <span>9:00 AM - 2:00 PM</span></li>
+                <li><span>Sunday</span> <span>Closed</span></li>
+              </ul>
+            </div>
+            <div class="contact-insurance">
+              <h4>Insurance Accepted</h4>
+              <div class="insurance-list">
+                <span><i class="fa-solid fa-circle-check"></i> VSP Vision</span>
+                <span><i class="fa-solid fa-circle-check"></i> EyeMed</span>
+                <span><i class="fa-solid fa-circle-check"></i> BCBS</span>
+                <span><i class="fa-solid fa-circle-check"></i> Aetna</span>
+                <span><i class="fa-solid fa-circle-check"></i> UHC</span>
+                <span><i class="fa-solid fa-circle-check"></i> Cigna</span>
+                <span><i class="fa-solid fa-circle-check"></i> Humana</span>
+                <span><i class="fa-solid fa-circle-check"></i> Medicare</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">FAQs</p>
+        <h2 class="section-title">Common Questions</h2>
+        <div class="lens-divider">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> How often should I get an eye exam?</h3>
+          <p>Adults should have a comprehensive eye exam every 1-2 years, depending on age and risk factors. Children should be examined annually once they start school. If you have diabetes, a family history of eye disease, or wear contacts, annual exams are recommended.</p>
+        </div>
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> Do you accept my insurance?</h3>
+          <p>We accept most major vision plans including VSP, EyeMed, Blue Cross Blue Shield, Aetna, UnitedHealthcare, Cigna, Humana, and Medicare. If you don't see your plan listed, give us a call and we'll verify your benefits for you.</p>
+        </div>
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> How long is a typical appointment?</h3>
+          <p>A comprehensive eye exam typically takes 45-60 minutes. Contact lens fittings add an additional 20-30 minutes. If you need to select new frames, plan for extra time in our optical shop afterwards.</p>
+        </div>
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> Can I get same-day glasses?</h3>
+          <p>For common single-vision prescriptions, we can often have your glasses ready the same day. More complex prescriptions (progressives, specialty lenses) typically take 5-7 business days. We'll always give you a clear timeline at your appointment.</p>
+        </div>
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> What should I bring to my appointment?</h3>
+          <p>Please bring your current glasses or contacts, your insurance card, a list of current medications, and any relevant medical records. First-time patients should arrive 15 minutes early to complete intake paperwork.</p>
+        </div>
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> Do you see children?</h3>
+          <p>Absolutely. Dr. Park specializes in pediatric eye care and sees children of all ages, from infants to teenagers. We recommend a child's first eye exam at 6 months, then at age 3, and annually once they start school.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Need an Appointment Fast?</h2>
+        <p>Call us directly for same-week scheduling. Our team is ready to help you find a time that works.</p>
+        <a href="tel:5553282020" class="btn btn-white"><i class="fa-solid fa-phone"></i> Call (555) 328-2020</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <div class="logo-text">
+              <span class="logo-main">ClearView</span>
+              <span class="logo-sub">Eye Care</span>
+            </div>
+          </a>
+          <p>Comprehensive eye care for the whole family. Advanced diagnostics, designer eyewear, and personalized treatment plans.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Eye Exams</a></li>
+            <li><a href="services.html">Contact Lenses</a></li>
+            <li><a href="services.html">Eyeglasses</a></li>
+            <li><a href="services.html">Pediatric Care</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            4520 Vision Parkway, Suite 200<br>Lakewood, CO 80228
+          </p>
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            (555) 328-2020
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            info@clearvieweyecare.com
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ClearView Eye Care. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Hatchet Hall Axe Throwing</title>
+  <meta name="description" content="Get in touch with Hatchet Hall. Book a session, plan an event, or ask us anything. Located at 742 Timber Lane, Portland, OR.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-axe" aria-hidden="true"></i></div>
+        <div class="logo-text">HATCHET <span>HALL</span></div>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Book &amp; Pricing</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="services.html" class="btn btn-accent header-cta">Book a Lane</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+      <span class="section-label">Contact</span>
+      <h1>Get in Touch</h1>
+      <p>Questions about booking, events, or just want to say hey? We're here for it.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section class="section wood-bg">
+    <div class="container">
+      <div class="split">
+        <!-- Form -->
+        <div>
+          <h2 class="section-title" style="margin-bottom: 0.5rem;">Send Us a Message</h2>
+          <p style="margin-bottom: 2rem; color: var(--gray);">Fill out the form below and we'll get back to you within 24 hours. For same-day bookings, give us a call.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="(503) 555-0000">
+              </div>
+              <div class="form-group">
+                <label for="event-type" class="form-label">Event Type</label>
+                <select id="event-type" name="event-type" class="form-select">
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="walk-in">Walk-In Session</option>
+                  <option value="group">Group Booking</option>
+                  <option value="league">League Registration</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="private">Private Event</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="group-size" class="form-label">Group Size</label>
+                <input type="number" id="group-size" name="group-size" class="form-input" placeholder="Number of people" min="1">
+              </div>
+              <div class="form-group">
+                <label for="preferred-date" class="form-label">Preferred Date</label>
+                <input type="date" id="preferred-date" name="preferred-date" class="form-input">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Tell us about your event, questions, or anything else..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent" style="width: 100%; justify-content: center;">Send Message <i class="fas fa-arrow-right"></i></button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h2 class="section-title" style="margin-bottom: 2rem;">Find Us</h2>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <h4>Address</h4>
+              <p>742 Timber Lane<br>Portland, OR 97209</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+15035551234">(503) 555-1234</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:info@hatchethall.com">info@hatchethall.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Hours</h4>
+              <div class="hours-table">
+                <div class="hours-row">
+                  <span class="hours-day">Monday</span>
+                  <span class="hours-time">Closed</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Tuesday</span>
+                  <span class="hours-time">4:00 PM - 10:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Wednesday</span>
+                  <span class="hours-time">4:00 PM - 11:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Thursday</span>
+                  <span class="hours-time">4:00 PM - 10:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Friday</span>
+                  <span class="hours-time">2:00 PM - 12:00 AM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Saturday</span>
+                  <span class="hours-time">12:00 PM - 12:00 AM</span>
+                </div>
+                <div class="hours-row">
+                  <span class="hours-day">Sunday</span>
+                  <span class="hours-time">12:00 PM - 8:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="map-placeholder">
+        <i class="fas fa-map-location-dot"></i>
+        <span>Map placeholder -- embed your Google Map here</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-darker">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Common Questions</h2>
+        <p class="section-subtitle center">Everything you need to know before you throw.</p>
+      </div>
+      <div style="max-width: 750px; margin: 0 auto;">
+        <div class="faq-item">
+          <h3 class="faq-question"><i class="fas fa-chevron-right"></i> Is axe throwing safe?</h3>
+          <p class="faq-answer">Yes. Safety is our top priority. Every session begins with a mandatory safety briefing from a certified coach. Our facility is built to IATF (International Axe Throwing Federation) standards, and lanes are supervised at all times. Only one person throws per lane at a time, and all axes are inspected before every session.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question"><i class="fas fa-chevron-right"></i> What's the minimum age to throw?</h3>
+          <p class="faq-answer">You must be at least 12 years old to throw axes at Hatchet Hall. Throwers aged 12-17 must be accompanied by a parent or legal guardian who signs a waiver on their behalf. All minors must have a coach present at their lane at all times.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question"><i class="fas fa-chevron-right"></i> What should I wear?</h3>
+          <p class="faq-answer">Closed-toe shoes are required -- no sandals, flip-flops, or open-toed footwear allowed on the throwing lanes. Beyond that, wear whatever you're comfortable in. We recommend avoiding loose sleeves or dangling jewelry that could interfere with your throw. Think casual and athletic.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question"><i class="fas fa-chevron-right"></i> Can I bring outside food?</h3>
+          <p class="faq-answer">We don't allow outside food or beverages in the venue. We serve a full menu of bar snacks, flatbreads, and shareable platters, plus a curated beer, cocktail, and non-alcoholic drink list. For private events with 20+ people, we can work with you on custom catering options.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question"><i class="fas fa-chevron-right"></i> Do you serve alcohol?</h3>
+          <p class="faq-answer">We sure do. Hatchet Hall has a full bar with 20 rotating craft beer taps, handcrafted cocktails, wine, cider, and non-alcoholic options. We do have a two-drink maximum for active throwers to ensure safety. Once you're done throwing, drink all you want at the lounge and bar.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question"><i class="fas fa-chevron-right"></i> Can we bring our own axes?</h3>
+          <p class="faq-answer">No. For safety and consistency, all axes used at Hatchet Hall are provided by us. Our axes are professionally maintained, balanced, and sharpened before every session. We offer standard and premium axe options -- the premium upgrade is available as an add-on for $10.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section plaid-bg">
+    <div class="container">
+      <h2>Let's Make It Happen</h2>
+      <p>Whether it's a walk-in session or a 60-person event, we're ready when you are.</p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="tel:+15035551234" class="btn btn-accent"><i class="fas fa-phone"></i> Call Us Now</a>
+        <a href="services.html" class="btn btn-outline-light">View Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-axe" aria-hidden="true"></i></div>
+            <div class="logo-text">HATCHET <span>HALL</span></div>
+          </a>
+          <p>Portland's premier axe throwing venue. 12 lanes, craft beer, and the best time you'll have all week.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Book &amp; Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Experiences</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Walk-In Throwing</a></li>
+            <li><a href="services.html">League Night</a></li>
+            <li><a href="services.html">Tournaments</a></li>
+            <li><a href="services.html">Private Events</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:+15035551234">(503) 555-1234</a></li>
+            <li><a href="mailto:info@hatchethall.com">info@hatchethall.com</a></li>
+            <li>742 Timber Lane<br>Portland, OR 97209</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hatchet Hall. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

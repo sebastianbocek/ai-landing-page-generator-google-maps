@@ -1,0 +1,395 @@
+/* ========================================
+   Gallery Page Styles
+   Shared styles for all portfolio sub-pages
+   ======================================== */
+
+/* Gallery Hero */
+.gallery-hero {
+  background: var(--slate-deep);
+  color: var(--white);
+  min-height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  padding-top: var(--header-height);
+  padding-bottom: var(--space-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.gallery-hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.gallery-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  font-size: 0.85rem;
+}
+
+.gallery-breadcrumb a {
+  color: var(--warm-gray-light);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.gallery-breadcrumb a:hover {
+  color: var(--gold);
+}
+
+.gallery-breadcrumb span {
+  color: var(--warm-gray);
+}
+
+.gallery-hero h1 {
+  color: var(--white);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: var(--space-sm);
+}
+
+.gallery-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  color: var(--warm-gray-light);
+  font-size: 0.9rem;
+}
+
+.gallery-hero-meta span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.gallery-hero-meta .gold {
+  color: var(--gold);
+}
+
+/* Gallery Grid Layout */
+.gallery-section {
+  padding: var(--space-2xl) 0 var(--space-3xl);
+  background: var(--white);
+}
+
+.gallery-masonry {
+  columns: 3;
+  column-gap: var(--space-md);
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: var(--space-md);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item img,
+.gallery-item .gallery-placeholder {
+  width: 100%;
+  display: block;
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.gallery-placeholder {
+  background: var(--cream);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Different aspect ratios for variety */
+.gallery-item.landscape .gallery-placeholder { aspect-ratio: 3/2; }
+.gallery-item.portrait .gallery-placeholder { aspect-ratio: 2/3; }
+.gallery-item.square .gallery-placeholder { aspect-ratio: 1/1; }
+.gallery-item.wide .gallery-placeholder { aspect-ratio: 16/9; }
+.gallery-item.tall .gallery-placeholder { aspect-ratio: 9/16; }
+
+.gallery-item:hover img,
+.gallery-item:hover .gallery-placeholder {
+  transform: scale(1.03);
+}
+
+.gallery-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity var(--duration-normal) var(--ease-out);
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-lg);
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  opacity: 1;
+}
+
+.gallery-item-info h4 {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.gallery-item-info span {
+  font-size: 0.8rem;
+  color: var(--gold-light);
+  letter-spacing: 0.05em;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  background: linear-gradient(145deg, var(--cream) 0%, #D4D0C7 100%);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: var(--white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.lightbox-close:hover {
+  background: var(--white);
+  color: var(--slate-deep);
+  border-color: var(--white);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.3);
+  color: var(--white);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.lightbox-nav:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--slate-deep);
+}
+
+.lightbox-prev { left: var(--space-lg); }
+.lightbox-next { right: var(--space-lg); }
+
+.lightbox-caption {
+  position: absolute;
+  bottom: var(--space-lg);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--white);
+}
+
+.lightbox-caption h4 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.lightbox-caption span {
+  font-size: 0.85rem;
+  color: var(--warm-gray-light);
+}
+
+.lightbox-counter {
+  position: absolute;
+  top: var(--space-lg);
+  left: var(--space-lg);
+  font-size: 0.85rem;
+  color: var(--warm-gray-light);
+  letter-spacing: 0.1em;
+}
+
+/* Session Story Card */
+.session-story {
+  background: var(--cream);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-md);
+  break-inside: avoid;
+}
+
+.session-story h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.session-story p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--slate);
+  margin-bottom: var(--space-md);
+}
+
+.session-story .session-meta {
+  display: flex;
+  gap: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(0,0,0,0.08);
+  font-size: 0.85rem;
+  color: var(--warm-gray);
+}
+
+.session-story .session-meta strong {
+  color: var(--slate);
+}
+
+/* Other Galleries Navigation */
+.other-galleries {
+  background: var(--cream);
+  padding: var(--space-2xl) 0;
+}
+
+.galleries-nav {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-nav-link {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--slate);
+  background: var(--white);
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+.gallery-nav-link:hover,
+.gallery-nav-link.active {
+  background: var(--slate-deep);
+  color: var(--white);
+  border-color: var(--slate-deep);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .gallery-masonry {
+    columns: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-masonry {
+    columns: 1;
+  }
+
+  .gallery-hero {
+    min-height: 35vh;
+  }
+
+  .gallery-hero-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .lightbox-nav {
+    width: 44px;
+    height: 44px;
+  }
+
+  .lightbox-prev { left: var(--space-sm); }
+  .lightbox-next { right: var(--space-sm); }
+}
+
+/* ─── Portfolio image cycling ─── */
+/* Weddings */
+.portfolio-weddings .gallery-item:nth-child(4n+1) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-weddings .gallery-item:nth-child(4n+2) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-weddings .gallery-item:nth-child(4n+3) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-weddings .gallery-item:nth-child(4n+0) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+/* Portraits */
+.portfolio-portraits .gallery-item:nth-child(4n+1) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-portraits .gallery-item:nth-child(4n+2) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-portraits .gallery-item:nth-child(4n+3) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-portraits .gallery-item:nth-child(4n+0) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+/* Headshots */
+.portfolio-headshots .gallery-item:nth-child(4n+1) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-headshots .gallery-item:nth-child(4n+2) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-headshots .gallery-item:nth-child(4n+3) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-headshots .gallery-item:nth-child(4n+0) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+/* Newborns */
+.portfolio-newborns .gallery-item:nth-child(4n+1) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-newborns .gallery-item:nth-child(4n+2) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-newborns .gallery-item:nth-child(4n+3) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-newborns .gallery-item:nth-child(4n+0) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+/* Families */
+.portfolio-families .gallery-item:nth-child(4n+1) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-families .gallery-item:nth-child(4n+2) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-families .gallery-item:nth-child(4n+3) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-families .gallery-item:nth-child(4n+0) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+/* Seniors */
+.portfolio-seniors .gallery-item:nth-child(4n+1) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-seniors .gallery-item:nth-child(4n+2) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-seniors .gallery-item:nth-child(4n+3) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }
+.portfolio-seniors .gallery-item:nth-child(4n+0) .gallery-placeholder { background-image: url('images/placeholder.jpg'); }

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Book - Pampered Paws Grooming</title>
+  <meta name="description" content="Book your pet grooming appointment online or contact us with questions. Serving Your City with professional dog and cat grooming services.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-paw"></i></div>
+        Pampered Paws
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="contact.html" class="header-cta">Book Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="hero" style="padding: 4rem 2rem;">
+    <div class="section-container" style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <h1>Book Your Appointment</h1>
+      <p style="font-size: 1.25rem;">Fill out the form below or call us to schedule your pet's grooming session</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section section-alt">
+    <div class="section-container">
+      <div class="contact-grid">
+        <!-- Booking Form -->
+        <div class="contact-form">
+          <h2 style="margin-bottom: var(--spacing-md);">Request an Appointment</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+              <label for="pet-name">Pet's Name *</label>
+              <input type="text" id="pet-name" name="pet-name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="pet-type">Pet Type *</label>
+              <select id="pet-type" name="pet-type" required>
+                <option value="">Select...</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="breed">Breed *</label>
+              <input type="text" id="breed" name="breed" placeholder="e.g., Golden Retriever, Persian Cat" required>
+            </div>
+
+            <div class="form-group">
+              <label for="weight">Approximate Weight *</label>
+              <select id="weight" name="weight" required>
+                <option value="">Select...</option>
+                <option value="small">Small (under 20 lbs)</option>
+                <option value="medium">Medium (20-50 lbs)</option>
+                <option value="large">Large (50-80 lbs)</option>
+                <option value="xl">Extra Large (80+ lbs)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Needed *</label>
+              <select id="service" name="service" required>
+                <option value="">Select...</option>
+                <option value="bath-brush">Bath & Brush</option>
+                <option value="full-groom">Full Grooming</option>
+                <option value="puppy-first">Puppy's First Groom</option>
+                <option value="cat-bath">Cat Bath & Brush</option>
+                <option value="cat-full">Full Cat Grooming</option>
+                <option value="nail-trim">Nail Trim Only</option>
+                <option value="other">Other (describe in message)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="time">Preferred Time *</label>
+              <select id="time" name="time" required>
+                <option value="">Select...</option>
+                <option value="morning">Morning (8am-12pm)</option>
+                <option value="afternoon">Afternoon (12pm-4pm)</option>
+                <option value="evening">Evening (4pm-7pm)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="first-visit">Is this your first visit?</label>
+              <select id="first-visit" name="first-visit">
+                <option value="yes">Yes - First time (20% off!)</option>
+                <option value="no">No - Returning client</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Information</label>
+              <textarea id="message" name="message" placeholder="Any special instructions, health concerns, or behavioral notes we should know about?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Request Appointment</button>
+            <p style="font-size: 0.875rem; color: var(--gray-dark); margin-top: 1rem; text-align: center;">We'll confirm your appointment via email or phone within 24 hours.</p>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="map-pin"></div>
+            <div class="info-content">
+              <h4>Visit Us</h4>
+              <p>456 Bark Avenue<br>Your City, ST 12345</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="phone"></div>
+            <div class="info-content">
+              <h4>Call Us</h4>
+              <p>(555) 123-4567</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="mail"></div>
+            <div class="info-content">
+              <h4>Email Us</h4>
+              <p>hello@pamperedpaws.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="clock"></div>
+            <div class="info-content">
+              <h4>Business Hours</h4>
+              <p>
+                Tuesday - Friday: 8:00am - 6:00pm<br>
+                Saturday: 9:00am - 5:00pm<br>
+                Sunday & Monday: Closed
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; padding: 1.5rem; background: var(--cream); border-radius: var(--radius-md);">
+            <h4 style="color: var(--primary); margin-bottom: 1rem;">Walk-Ins Welcome</h4>
+            <p style="color: var(--dark); margin: 0; font-size: 0.95rem;">Nail trims and ear cleaning available on a first-come, first-served basis. Most other services require appointments to ensure we have enough time to pamper your pet properly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-subtitle">Common Questions</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div class="cards-grid" style="grid-template-columns: 1fr;">
+          <div class="card" style="text-align: left;">
+            <h3>How long does a grooming appointment take?</h3>
+            <p>Bath & Brush appointments typically take 1-1.5 hours. Full grooming appointments range from 2-3 hours depending on your pet's size, coat type, and behavior. We never rush. Your pet gets our full attention for as long as they need.</p>
+          </div>
+
+          <div class="card" style="text-align: left;">
+            <h3>Do you require vaccinations?</h3>
+            <p>Yes. For your pet's safety and the safety of other animals in our salon, we require current vaccinations. Dogs need rabies, distemper, and bordetella (kennel cough). Cats need rabies and FVRCP. Please bring proof of vaccination to your first appointment.</p>
+          </div>
+
+          <div class="card" style="text-align: left;">
+            <h3>Can I stay and watch?</h3>
+            <p>While we understand the desire to watch, most pets actually behave better when their owners aren't present. We have a viewing window where you can peek in if needed. We also offer before and after photos so you can see the transformation.</p>
+          </div>
+
+          <div class="card" style="text-align: left;">
+            <h3>What if my pet has anxiety or aggression issues?</h3>
+            <p>We specialize in anxious and difficult pets! Please inform us about behavioral concerns when booking. We use patient, low-stress handling techniques and can provide extra time. For severe cases, we can recommend calming aids or suggest discussing sedation options with your vet.</p>
+          </div>
+
+          <div class="card" style="text-align: left;">
+            <h3>How often should my pet be groomed?</h3>
+            <p>It depends on breed and coat type. Short-haired dogs: every 8-12 weeks. Long-haired or double-coat breeds: every 4-6 weeks. Cats: every 6-12 weeks for long-haired breeds. We'll recommend a schedule based on your pet's specific needs.</p>
+          </div>
+
+          <div class="card" style="text-align: left;">
+            <h3>What if my dog is heavily matted?</h3>
+            <p>We'll assess the matting and discuss options. Light matting can be brushed out (may incur additional time charges). Severe matting often requires a shorter cut for your pet's comfort and safety. We never brush out mats that cause pain or skin damage.</p>
+          </div>
+
+          <div class="card" style="text-align: left;">
+            <h3>Do you groom cats?</h3>
+            <p>Absolutely! We're certified in feline grooming and understand cat body language. We groom long-haired breeds, seniors who can't self-groom, and cats with matting issues. Our gentle approach makes even grumpy cats tolerate the process.</p>
+          </div>
+
+          <div class="card" style="text-align: left;">
+            <h3>What's your cancellation policy?</h3>
+            <p>We ask for 24 hours notice for cancellations or rescheduling. Late cancellations (less than 24 hours) may incur a $20 fee. No-shows are charged 50% of the scheduled service cost. We understand emergencies happen and handle these on a case-by-case basis.</p>
+          </div>
+
+          <div class="card" style="text-align: left;">
+            <h3>What forms of payment do you accept?</h3>
+            <p>We accept cash, credit cards (Visa, Mastercard, Discover, Amex), and debit cards. Gratuities for exceptional service are always appreciated but never expected. Payment is due at the time of service.</p>
+          </div>
+
+          <div class="card" style="text-align: left;">
+            <h3>Do you offer mobile grooming?</h3>
+            <p>Currently, we operate exclusively from our salon location. However, our facility is designed for comfort and reduced stress. Many anxious pets actually do better in our calm, professional environment than in the unfamiliar setting of a mobile van.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Directions & Parking -->
+  <section class="section section-alt">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-subtitle">Finding Us</p>
+        <h2>Location & Parking</h2>
+      </div>
+
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon" data-icon="map-pin"></div>
+            <h3>Easy to Find</h3>
+            <p>We're located on Bark Avenue between Main Street and Oak Avenue. Look for the bright pink building with the paw print sign. Highly visible from the road.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon" data-icon="calendar"></div>
+            <h3>Free Parking</h3>
+            <p>Dedicated parking lot directly in front of our building with 15 spaces. Overflow street parking available on Bark Avenue. Wheelchair accessible entrance.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon" data-icon="clock"></div>
+            <h3>Arrive Early</h3>
+            <p>Please arrive 5-10 minutes before your appointment to complete any necessary paperwork. Late arrivals may result in shortened grooming time or rescheduling.</p>
+          </div>
+        </div>
+
+        <div style="margin-top: 3rem; padding: 2rem; background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+          <h3 style="text-align: center; margin-bottom: 1.5rem;">Directions</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <div>
+              <h4 style="color: var(--primary); margin-bottom: 0.5rem;">From North (Highway 101)</h4>
+              <p style="color: var(--gray-dark); font-size: 0.95rem;">Take exit 45 for Main Street. Turn right onto Main Street. Continue 2 miles and turn left onto Bark Avenue. We're 3 blocks down on the right.</p>
+            </div>
+            <div>
+              <h4 style="color: var(--primary); margin-bottom: 0.5rem;">From South (Highway 101)</h4>
+              <p style="color: var(--gray-dark); font-size: 0.95rem;">Take exit 42 for Oak Avenue. Turn left onto Oak Avenue. Continue 1.5 miles and turn right onto Bark Avenue. We're 2 blocks up on the left.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="section-container" style="text-align: center; max-width: 800px; margin: 0 auto;">
+      <h2 style="margin-bottom: 1rem;">Questions Before You Book?</h2>
+      <p style="font-size: 1.25rem; margin-bottom: 2rem;">Give us a call! We're happy to discuss your pet's specific needs and recommend the best services.</p>
+      <a href="tel:555-123-4567" class="btn btn-primary">Call (555) 123-4567</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>Pampered Paws Grooming</h3>
+          <p>Professional pet grooming with love and expertise. We've been making pets look and feel their best since 2010. Every pet gets personalized care in our cage-free, stress-free environment.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Full Grooming</a></li>
+            <li><a href="services.html">Bath & Brush</a></li>
+            <li><a href="services.html">Spa Treatments</a></li>
+            <li><a href="services.html">Nail Trims</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>456 Bark Avenue</li>
+            <li>Your City, ST 12345</li>
+            <li>(555) 123-4567</li>
+            <li>hello@pamperedpaws.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Pampered Paws Grooming. All rights reserved. | Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

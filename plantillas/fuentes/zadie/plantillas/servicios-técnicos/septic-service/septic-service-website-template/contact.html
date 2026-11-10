@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | ClearFlow Septic Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-droplet"></i></div>
+        <div class="logo-text">Clear<span>Flow</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Schedule Service</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge"><i class="fa-solid fa-phone"></i> We're Here to Help</div>
+        <h1>Contact Us</h1>
+        <p class="hero-description">Schedule a service, ask a question, or request a free estimate. We respond to all inquiries within one business day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Banner -->
+  <section class="section section-white" style="padding-top:60px;padding-bottom:0;">
+    <div class="container">
+      <div class="emergency-banner">
+        <h3><i class="fa-solid fa-triangle-exclamation"></i> 24/7 Emergency Line</h3>
+        <a href="tel:5559117867" class="emergency-phone">(555) 911-PUMP</a>
+        <p>Sewage backup, tank overflow, or system failure? Call our emergency line anytime, day or night.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="section section-white" style="padding-top:0;">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p>Call us directly or fill out the form. For emergencies, always call. We'll have a truck to you as fast as possible.</p>
+          <ul class="contact-details">
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-label">Main Office</div>
+                <div class="contact-value"><a href="tel:5559117867">(555) 911-PUMP</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+              <div>
+                <div class="contact-label">Emergency Line (24/7)</div>
+                <div class="contact-value"><a href="tel:5559117867">(555) 911-PUMP</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value"><a href="mailto:info@clearflowseptic.com">info@clearflowseptic.com</a></div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="contact-label">Office &amp; Yard</div>
+                <div class="contact-value">482 Industrial Parkway<br>Greenfield, ST 04720</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <div class="contact-label">Office Hours</div>
+                <div class="contact-value">Mon - Fri: 7:00 AM - 5:00 PM<br>Sat: 8:00 AM - 12:00 PM<br>Sun: Emergency Only</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h3>Schedule Service</h3>
+          <p>Fill out the form below and we'll get back to you within one business day. For emergencies, please call.</p>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+              </div>
+              <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="pumping">Septic Pumping</option>
+                  <option value="inspection">Inspection</option>
+                  <option value="installation">New Installation</option>
+                  <option value="repair">Repair</option>
+                  <option value="emergency">Emergency Service</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="property">Property Type</label>
+              <select id="property" name="property">
+                <option value="" disabled selected>Select property type</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your situation. Include your address and any details that will help us prepare."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">Submit Request <i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="section section-offwhite" style="padding-top:0;padding-bottom:40px;">
+    <div class="container">
+      <div class="map-placeholder">
+        <i class="fa-solid fa-map-location-dot"></i> Map - 482 Industrial Parkway, Greenfield, ST 04720
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-offwhite" style="padding-top:40px;">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question"><i class="fa-solid fa-circle-question"></i> How often should I pump my septic tank?</div>
+          <p class="faq-answer">For most households (2-4 people), we recommend pumping every 3-5 years. Larger families, homes with garbage disposals, or properties with heavy water usage may need pumping every 2-3 years. We'll measure your sludge levels during service and give you a personalized recommendation.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><i class="fa-solid fa-circle-question"></i> What are the signs of septic problems?</div>
+          <p class="faq-answer">Watch for slow drains throughout the house (not just one drain), sewage odor inside or outside, wet spots or unusually green grass over the drain field, gurgling sounds in your pipes, or sewage backing up into the lowest drains. If you notice any of these, call us before the problem gets worse.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><i class="fa-solid fa-circle-question"></i> How long does septic pumping take?</div>
+          <p class="faq-answer">A typical residential pumping takes 30-60 minutes once we're on site. This includes locating the tank access, pumping the contents, doing a basic visual inspection, and cleaning up. We'll be respectful of your property and leave the area clean.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><i class="fa-solid fa-circle-question"></i> Do I need to be home during the service?</div>
+          <p class="faq-answer">For routine pumping, you don't need to be home as long as we can access the tank. We just need the tank access uncovered or need to know where it's located. For inspections, installations, or repairs, we recommend being present so we can walk you through our findings.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><i class="fa-solid fa-circle-question"></i> Do you handle permits for new installations?</div>
+          <p class="faq-answer">Yes, we handle the entire permitting process for new septic system installations. This includes the soil testing, system design, permit applications, inspections, and final approval. You don't need to deal with the health department or building office. We take care of all of it.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><i class="fa-solid fa-circle-question"></i> What areas do you serve?</div>
+          <p class="faq-answer">ClearFlow serves the entire tri-county area including Greenfield County, Cedar County, and Mill Creek County. This covers Greenfield Township, Cedar Hills, Millbrook Township, Green Valley, Oakwood Heights, Pine Ridge, River Bend, Summit Lake, and Hartwell. If you're unsure whether we cover your area, just call and ask.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Don't Wait for a Problem</h2>
+        <p>Schedule your septic pumping or inspection today. Regular maintenance prevents costly emergencies.</p>
+      </div>
+      <a href="tel:5559117867" class="cta-button">Call (555) 911-PUMP</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-droplet"></i></div>
+          <div class="logo-text">Clear<span>Flow</span></div>
+        </a>
+        <p>Professional septic services for the tri-county area since 2003. Licensed, insured, and EPA compliant.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-google"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-yelp"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Septic Pumping</a></li>
+          <li><a href="services.html">Inspections</a></li>
+          <li><a href="services.html">Installation</a></li>
+          <li><a href="services.html">Repair</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="footer-links">
+          <li>(555) 911-PUMP</li>
+          <li>info@clearflowseptic.com</li>
+          <li>482 Industrial Parkway</li>
+          <li>Greenfield, ST 04720</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ClearFlow Septic Solutions. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <p>License #SEP-4872 | Fully Insured</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

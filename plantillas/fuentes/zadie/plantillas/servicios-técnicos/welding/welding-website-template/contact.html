@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Ironweld Fabrication — Request a Quote, Houston TX</title>
+  <meta name="description" content="Request a custom fabrication quote from Ironweld Fabrication. Call (555) 763-4182 or email shop@ironweldfab.com. Shop hours Mon-Fri 7am-5pm, Sat 8am-1pm. Houston, TX." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+<body>
+
+
+
+<!-- ========== HEADER ========== -->
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Ironweld</span>
+          <span class="logo-tagline">Fabrication</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary header-cta">
+        <i class="fa-solid fa-file-lines"></i> Get a Quote
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ========== PAGE HERO ========== -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="section-label">Get In Touch</span>
+      <h1>Request a Quote</h1>
+      <p>
+        Tell us about your project. The more detail you include, the faster
+        we can put numbers to it. We typically respond within one business day.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT LAYOUT ========== -->
+<section class="section bg-dark">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- QUOTE FORM -->
+      <div>
+        <h3 style="color:var(--white);margin-bottom:8px;font-size:1.3rem;">Project Quote Request</h3>
+        <p style="margin-bottom:32px;font-size:0.9rem;">
+          Fields marked <span style="color:var(--primary);">*</span> are required.
+          Attach drawings or sketches by emailing them directly to
+          <a href="mailto:shop@ironweldfab.com" style="color:var(--primary);">shop@ironweldfab.com</a>
+          after submitting this form.
+        </p>
+
+        <div class="quote-form">
+          <form action="#" method="POST" novalidate>
+
+            <!-- Name / Company -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">
+                  Full Name <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Marcus Vega"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="company">
+                  Company / Organization
+                </label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  class="form-control"
+                  placeholder="ABC Construction LLC"
+                />
+              </div>
+            </div>
+
+            <!-- Email / Phone -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">
+                  Email Address <span>*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="you@company.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">
+                  Phone Number <span>*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-control"
+                  placeholder="(555) 000-0000"
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Project Type -->
+            <div class="form-group">
+              <label class="form-label" for="project_type">
+                Project Type <span>*</span>
+              </label>
+              <select id="project_type" name="project_type" class="form-control" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="structural">Structural Steel Fabrication</option>
+                <option value="railings">Custom Railings &amp; Gates</option>
+                <option value="skids">Equipment Skids &amp; Platforms</option>
+                <option value="pipe">Pipe Fabrication</option>
+                <option value="repair">Repair &amp; Modification</option>
+                <option value="architectural">Architectural Metalwork</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+
+            <!-- Material / Quantity -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="material">
+                  Primary Material
+                </label>
+                <select id="material" name="material" class="form-control">
+                  <option value="" disabled selected>Select material...</option>
+                  <option value="carbon_a36">Carbon Steel (A36)</option>
+                  <option value="carbon_a572">High Strength Steel (A572)</option>
+                  <option value="ss304">Stainless Steel (304)</option>
+                  <option value="ss316">Stainless Steel (316L)</option>
+                  <option value="chrome_moly">Chrome-Moly (P11/P22)</option>
+                  <option value="aluminum">Aluminum (6061)</option>
+                  <option value="unknown">Not Sure / Let You Decide</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="quantity">
+                  Approximate Quantity / Size
+                </label>
+                <input
+                  type="text"
+                  id="quantity"
+                  name="quantity"
+                  class="form-control"
+                  placeholder="e.g. 12 pipe spools, 40 LF railing"
+                />
+              </div>
+            </div>
+
+            <!-- Deadline -->
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="deadline">
+                  Required By Date
+                </label>
+                <input
+                  type="date"
+                  id="deadline"
+                  name="deadline"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="budget">
+                  Approximate Budget
+                </label>
+                <select id="budget" name="budget" class="form-control">
+                  <option value="" disabled selected>Select range...</option>
+                  <option value="under5k">Under $5,000</option>
+                  <option value="5to15k">$5,000 &ndash; $15,000</option>
+                  <option value="15to50k">$15,000 &ndash; $50,000</option>
+                  <option value="50to150k">$50,000 &ndash; $150,000</option>
+                  <option value="over150k">Over $150,000</option>
+                  <option value="unknown">Prefer Not to Say</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Description -->
+            <div class="form-group">
+              <label class="form-label" for="description">
+                Project Description <span>*</span>
+              </label>
+              <textarea
+                id="description"
+                name="description"
+                class="form-control"
+                rows="6"
+                placeholder="Describe your project. Include material, dimensions, quantities, any code requirements, and what you're trying to accomplish. The more detail you give us, the faster we can respond with a real number."
+                required
+              ></textarea>
+            </div>
+
+            <!-- Drawings -->
+            <div class="form-group">
+              <label class="form-label" for="drawings">
+                Do You Have Drawings?
+              </label>
+              <select id="drawings" name="drawings" class="form-control">
+                <option value="" disabled selected>Select...</option>
+                <option value="yes_engineer">Yes — engineer-stamped drawings</option>
+                <option value="yes_sketches">Yes — hand sketches or CAD files</option>
+                <option value="no_need_design">No — I need design assistance</option>
+                <option value="no_simple">No — it's straightforward enough to describe</option>
+              </select>
+              <p style="font-size:0.78rem;color:var(--gray-dark);margin-top:6px;margin-bottom:0;">
+                Send drawings to <a href="mailto:shop@ironweldfab.com" style="color:var(--primary);">shop@ironweldfab.com</a> after submitting this form.
+              </p>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:16px;">
+              <i class="fa-solid fa-paper-plane"></i> Submit Quote Request
+            </button>
+
+            <p style="font-size:0.78rem;color:var(--gray-dark);text-align:center;margin-top:14px;margin-bottom:0;">
+              We respond within 1 business day. For urgent needs, call <a href="tel:5557634182" style="color:var(--primary);">(555) 763-4182</a>.
+            </p>
+
+          </form>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+
+        <!-- Contact Info -->
+        <div class="contact-info-card">
+          <h4><i class="fa-solid fa-address-card" style="color:var(--primary);margin-right:8px;"></i> Contact Info</h4>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-detail-text">
+              <span class="contact-detail-label">Phone</span>
+              <span class="contact-detail-value">
+                <a href="tel:5557634182">(555) 763-4182</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-detail-text">
+              <span class="contact-detail-label">Email</span>
+              <span class="contact-detail-value">
+                <a href="mailto:shop@ironweldfab.com">shop@ironweldfab.com</a>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-detail-text">
+              <span class="contact-detail-label">Shop Location</span>
+              <span class="contact-detail-value">North Houston, TX<br>
+                <span style="font-size:0.8rem;color:var(--gray-dark);">Address provided on confirmation</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div class="contact-detail-text">
+              <span class="contact-detail-label">Service Area</span>
+              <span class="contact-detail-value">Greater Houston Metro</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shop Hours -->
+        <div class="contact-info-card">
+          <h4><i class="fa-solid fa-clock" style="color:var(--primary);margin-right:8px;"></i> Shop Hours</h4>
+          <div class="hours-grid">
+            <div class="hours-row">
+              <span class="hours-day">Monday</span>
+              <span class="hours-time">7:00am &ndash; 5:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Tuesday</span>
+              <span class="hours-time">7:00am &ndash; 5:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Wednesday</span>
+              <span class="hours-time">7:00am &ndash; 5:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Thursday</span>
+              <span class="hours-time">7:00am &ndash; 5:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Friday</span>
+              <span class="hours-time">7:00am &ndash; 5:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time">8:00am &ndash; 1:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time closed">Closed</span>
+            </div>
+          </div>
+          <p style="font-size:0.78rem;color:var(--gray-dark);margin-top:16px;margin-bottom:0;line-height:1.6;">
+            Emergency repair service may be available outside these hours.
+            Call to discuss.
+          </p>
+        </div>
+
+        <!-- What to Expect -->
+        <div class="contact-info-card">
+          <h4><i class="fa-solid fa-circle-check" style="color:var(--primary);margin-right:8px;"></i> What Happens Next</h4>
+          <div style="display:flex;flex-direction:column;gap:14px;">
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <span style="font-family:var(--font-heading);font-size:1.1rem;color:var(--primary);line-height:1;flex-shrink:0;margin-top:2px;">01</span>
+              <div>
+                <span style="font-family:var(--font-body);font-weight:700;color:var(--white);font-size:0.85rem;display:block;margin-bottom:2px;">We review your request</span>
+                <span style="font-size:0.8rem;color:var(--gray);">Usually within the same business day. Complex jobs may need a day to evaluate properly.</span>
+              </div>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <span style="font-family:var(--font-heading);font-size:1.1rem;color:var(--primary);line-height:1;flex-shrink:0;margin-top:2px;">02</span>
+              <div>
+                <span style="font-family:var(--font-body);font-weight:700;color:var(--white);font-size:0.85rem;display:block;margin-bottom:2px;">We may follow up with questions</span>
+                <span style="font-size:0.8rem;color:var(--gray);">If we need clarification on dimensions, material spec, or finish requirements, we'll reach out before quoting.</span>
+              </div>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start;">
+              <span style="font-family:var(--font-heading);font-size:1.1rem;color:var(--primary);line-height:1;flex-shrink:0;margin-top:2px;">03</span>
+              <div>
+                <span style="font-family:var(--font-body);font-weight:700;color:var(--white);font-size:0.85rem;display:block;margin-bottom:2px;">You get a detailed quote</span>
+                <span style="font-size:0.8rem;color:var(--gray);">Line-item breakdown of materials, labor, and lead time. No vague estimates. No hidden fees.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="section faq-section">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 56px;">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-heading section-heading-center">Frequently Asked</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">What information do I need to provide to get a quote?</span>
+          <i class="fa-solid fa-plus faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            The more detail you give us, the faster and more accurate your quote will be. At minimum, we need to know the type of work (structural steel, pipe, railings, etc.), material, rough dimensions or quantities, and your required delivery date. Engineer-stamped drawings give us everything we need to quote precisely. If you only have sketches or a description, we can still give you a ballpark, but final pricing will require a follow-up conversation. Send any drawings directly to shop@ironweldfab.com.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">What welding processes do you use, and does it matter for my project?</span>
+          <i class="fa-solid fa-plus faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            We use MIG (GMAW), TIG (GTAW), Stick (SMAW), and Flux-Core (FCAW) welding processes. The right process depends on the material, thickness, position, and code requirements. TIG produces the cleanest welds and is used for stainless, aluminum, and precision architectural work. Stick and flux-core handle heavy structural and field work well. MIG is efficient for production work on carbon steel. We select the right process for each application. If your project has a code requirement specifying a process or procedure, let us know and we'll confirm our qualification status before quoting.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">How long does fabrication typically take?</span>
+          <i class="fa-solid fa-plus faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Lead times depend on project size, complexity, and current shop load. For ornamental and repair work, we're often 1 to 3 weeks out. Structural steel packages for commercial projects typically run 3 to 6 weeks from approved drawings. Equipment skids and pipe fabrication with code requirements generally need 3 to 8 weeks, partly to allow time for material procurement and any required documentation. We'll tell you our current lead time at the time of quoting and won't take a job we can't deliver on schedule. Emergency repair work can often be handled faster.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">Do you perform weld testing and inspection? What certifications do you hold?</span>
+          <i class="fa-solid fa-plus faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Our owner, Marcus Vega, is an AWS Certified Welding Inspector (CWI), which qualifies him to examine and document welds to code requirements. He performs in-process and final visual inspection on all structural and pressure work in-house. For non-destructive examination (NDE) including radiographic (RT), ultrasonic (UT), liquid penetrant (PT), and magnetic particle (MT) testing, we coordinate with certified third-party labs. We maintain Welding Procedure Specifications (WPS) and Procedure Qualification Records (PQR) for all common material and process combinations. Full documentation is available on code jobs.
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <span class="faq-question-text">Can you work from my design, or do I need to provide drawings?</span>
+          <i class="fa-solid fa-plus faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            Both options work. For code-required structural and pressure work, we'll need engineer-stamped drawings before fabrication begins. For custom railings, gates, furniture, and ornamental work, we can work from your sketches, photos of a reference design, or even a verbal description. We produce shop drawings for all but the most straightforward jobs, which gives you a chance to review dimensions and details before metal gets cut. For projects where you have no drawings at all, we can assist with the design process or connect you with a structural engineer if your project requires one.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== SERVICE AREA MAP PLACEHOLDER ========== -->
+<section class="section-sm bg-dark">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+
+      <div>
+        <span class="section-label">Service Area</span>
+        <h2 class="section-heading" style="font-size:2rem;">Houston &amp; Surrounding Areas</h2>
+        <p style="margin-bottom:20px;">
+          Our shop is located in north Houston. We deliver completed fabrications
+          throughout the greater Houston metropolitan area and the Gulf Coast region.
+          On-site welding and repair service is available within 60 miles of our shop.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.88rem;color:var(--gray);">
+            <i class="fa-solid fa-location-dot" style="color:var(--primary);width:16px;text-align:center;"></i>
+            Houston, TX (all areas)
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.88rem;color:var(--gray);">
+            <i class="fa-solid fa-location-dot" style="color:var(--primary);width:16px;text-align:center;"></i>
+            Pasadena, Deer Park, La Porte
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.88rem;color:var(--gray);">
+            <i class="fa-solid fa-location-dot" style="color:var(--primary);width:16px;text-align:center;"></i>
+            Baytown, Texas City, Galveston
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.88rem;color:var(--gray);">
+            <i class="fa-solid fa-location-dot" style="color:var(--primary);width:16px;text-align:center;"></i>
+            Beaumont, Port Arthur, Orange
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.88rem;color:var(--gray);">
+            <i class="fa-solid fa-location-dot" style="color:var(--primary);width:16px;text-align:center;"></i>
+            The Woodlands, Conroe, Spring
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.88rem;color:var(--gray);">
+            <i class="fa-solid fa-location-dot" style="color:var(--primary);width:16px;text-align:center;"></i>
+            Sugar Land, Katy, Rosenberg
+          </div>
+        </div>
+        <p style="margin-top:20px;font-size:0.85rem;">
+          Outside this area? Call us. We ship fabricated components nationwide.
+        </p>
+      </div>
+
+      <div
+        style="aspect-ratio:4/3;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border-orange);background-image:url('images/placeholder.jpg');background-size:cover;background-position:center;position:relative;"
+      >
+        <div style="position:absolute;inset:0;background:rgba(10,10,10,0.55);display:flex;align-items:flex-end;justify-content:flex-start;padding:20px;">
+          <a href="#" style="font-size:0.82rem;color:var(--primary);font-weight:600;text-transform:uppercase;letter-spacing:0.1em;border:1px solid var(--border-orange);padding:8px 16px;border-radius:var(--radius-sm);background:rgba(10,10,10,0.7);transition:background var(--transition);" onmouseover="this.style.background='rgba(255,69,0,0.15)';" onmouseout="this.style.background='rgba(10,10,10,0.7)';">
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="section cta-section">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-text">
+        <h2>Ready to Get Started?</h2>
+        <p>
+          Call the shop directly at <a href="tel:5557634182" style="color:var(--primary);font-weight:600;">(555) 763-4182</a> or fill out the
+          quote form above. We'll get back to you with real numbers, not a sales call.
+        </p>
+      </div>
+      <div class="cta-actions">
+        <a href="tel:5557634182" class="btn btn-primary">
+          <i class="fa-solid fa-phone"></i> Call the Shop
+        </a>
+        <a href="mailto:shop@ironweldfab.com" class="btn btn-outline">
+          <i class="fa-solid fa-envelope"></i> Send an Email
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <a href="index.html" class="logo" style="margin-bottom: 0;">
+          <div class="logo-icon">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Ironweld</span>
+            <span class="logo-tagline">Fabrication</span>
+          </div>
+        </a>
+        <p class="footer-brand-desc">
+          Custom metal fabrication and welding for industrial, commercial,
+          and architectural clients. AWS Certified. Houston, TX.
+        </p>
+        <a href="tel:5557634182" class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          (555) 763-4182
+        </a>
+        <a href="mailto:shop@ironweldfab.com" class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          shop@ironweldfab.com
+        </a>
+        <a href="#" class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          Houston, TX
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <div class="footer-links">
+          <a href="services.html" class="footer-link">Structural Steel</a>
+          <a href="services.html" class="footer-link">Railings &amp; Gates</a>
+          <a href="services.html" class="footer-link">Equipment Skids</a>
+          <a href="services.html" class="footer-link">Pipe Fabrication</a>
+          <a href="services.html" class="footer-link">Repair &amp; Modification</a>
+          <a href="services.html" class="footer-link">Architectural Metalwork</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <div class="footer-links">
+          <a href="about.html" class="footer-link">About Us</a>
+          <a href="about.html" class="footer-link">Our Team</a>
+          <a href="about.html" class="footer-link">Shop &amp; Equipment</a>
+          <a href="about.html" class="footer-link">Certifications</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Shop Hours</h5>
+        <div class="hours-grid">
+          <div class="hours-row">
+            <span class="hours-day">Mon &ndash; Fri</span>
+            <span class="hours-time">7am &ndash; 5pm</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Saturday</span>
+            <span class="hours-time">8am &ndash; 1pm</span>
+          </div>
+          <div class="hours-row">
+            <span class="hours-day">Sunday</span>
+            <span class="hours-time closed">Closed</span>
+          </div>
+        </div>
+        <div style="margin-top: 24px;">
+          <a href="contact.html" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 0.82rem; padding: 12px 20px;">
+            <i class="fa-solid fa-file-lines"></i> Get a Quote
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Ironweld Fabrication. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(function(question) {
+    question.addEventListener('click', function() {
+      var item = this.parentElement;
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i) {
+        i.classList.remove('open');
+      });
+      if (!wasOpen) {
+        item.classList.add('open');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Illustration of a sourdough loaf on a board">
+  <rect width="400" height="400" fill="#fef3c7"/>
+  <rect x="40" y="240" width="320" height="90" rx="30" fill="#a16207"/>
+  <rect x="40" y="240" width="320" height="20" rx="10" fill="#ca8a04"/>
+  <circle cx="330" cy="285" r="8" fill="#713f12"/>
+  <ellipse cx="190" cy="240" rx="130" ry="20" fill="#713f12" opacity=".3"/>
+  <path d="M70 230c0-80 60-130 130-130s120 50 120 130z" fill="#b45309"/>
+  <path d="M85 225c0-70 55-112 115-112s105 42 105 112z" fill="#d97706"/>
+  <g fill="none" stroke="#fde68a" stroke-width="7" stroke-linecap="round">
+    <path d="M130 150c20 15 40 15 55 0"/><path d="M175 130c20 15 40 15 55 0"/><path d="M220 150c15 12 35 12 50 0"/>
+  </g>
+  <g fill="#fffbeb" opacity=".6"><circle cx="120" cy="190" r="3"/><circle cx="170" cy="185" r="2"/><circle cx="250" cy="190" r="3"/><circle cx="290" cy="200" r="2"/><circle cx="200" cy="170" r="2"/></g>
+  <g transform="translate(290 150) rotate(20)"><path d="M0 0c10-30 30-40 40-30-5 20-20 35-40 30z" fill="#65a30d"/><path d="M0 0c-10-25-5-45 10-45 5 20 0 35-10 45z" fill="#4d7c0f"/></g>
+</svg>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Zenith Yoga & Wellness</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+        <div class="logo-text">
+          Zenith
+          <span>Yoga & Wellness</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Classes & Pricing</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Start Your Practice</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero">
+    <div class="organic-shape organic-shape-1"></div>
+    <div class="organic-shape organic-shape-2"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">We'd Love to Hear From You</div>
+      <h1>Get in <em>Touch</em></h1>
+      <p class="hero-description">Questions about classes, memberships, or your first visit? We're here to help you begin or deepen your yoga journey.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3 style="font-family: var(--font-heading); font-size: 1.75rem; margin-bottom: var(--space-lg);">Send Us a Message</h3>
+
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(303) 555-0123">
+            </div>
+
+            <div class="form-group">
+              <label for="inquiry">What Can We Help With?</label>
+              <select id="inquiry" name="inquiry" required>
+                <option value="">Select an inquiry type...</option>
+                <option value="new-student">New Student / First Visit</option>
+                <option value="membership">Membership Information</option>
+                <option value="private">Private Session Booking</option>
+                <option value="workshop">Workshop / Training Inquiry</option>
+                <option value="corporate">Corporate / Group Events</option>
+                <option value="general">General Question</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your yoga experience and what you're looking for..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h3 style="font-family: var(--font-heading); font-size: 1.75rem; margin-bottom: var(--space-lg);">Visit Our Studio</h3>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h5>Location</h5>
+                <p>234 Serenity Lane<br>Boulder, CO 80302</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h5>Phone</h5>
+                <p>(303) 555-0192</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h5>Email</h5>
+                <p>hello@zenithyoga.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-square-parking"></i></div>
+              <div>
+                <h5>Parking</h5>
+                <p>Free lot behind building. Street parking also available.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="studio-hours">
+            <h4>Studio Hours</h4>
+            <ul class="hours-list">
+              <li>
+                <span class="day">Monday - Thursday</span>
+                <span class="time">5:30 AM - 9:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Friday</span>
+                <span class="time">5:30 AM - 7:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Saturday</span>
+                <span class="time">8:00 AM - 1:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Sunday</span>
+                <span class="time">8:00 AM - 12:00 PM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Student Guide -->
+  <section class="section section-sage">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">First Time?</div>
+        <h2>Your First <em>Visit</em></h2>
+        <p class="section-subtitle">We want your first experience to be comfortable and welcoming. Here's everything you need to know.</p>
+      </div>
+
+      <div class="benefits-grid" style="margin-top: var(--space-xl);">
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-clock"></i></div>
+          <h4>Arrive Early</h4>
+          <p>Come 15 minutes before your first class to complete a brief intake form, meet your instructor, and get settled.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-shirt"></i></div>
+          <h4>What to Wear</h4>
+          <p>Comfortable, stretchy clothing you can move freely in. Avoid loose tops that might fall over your head in inversions.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-person-praying"></i></div>
+          <h4>What to Bring</h4>
+          <p>Just yourself! We provide mats, blocks, straps, and all props. Bring a water bottle if you'd like.</p>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-icon"><i class="fa-solid fa-utensils"></i></div>
+          <h4>Before Class</h4>
+          <p>Avoid eating a heavy meal 2-3 hours before practice. A light snack 1 hour before is fine if needed.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: var(--space-xl);">
+        <div class="trial-offer" style="max-width: 600px; margin: 0 auto;">
+          <h3>New Student Intro Offer</h3>
+          <div class="price">$29</div>
+          <p>Unlimited classes for your first 7 days. Experience everything Zenith has to offer with no commitment.</p>
+          <a href="#" class="btn btn-primary">Claim Your Intro Week</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">FAQ</div>
+        <h2>Common <em>Questions</em></h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>I've never done yoga before. Where should I start?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Welcome! We recommend starting with our Gentle Flow or Hatha classes, which are designed for all levels including complete beginners. Our instructors offer modifications for every pose, and there's no expectation of flexibility or experience. Just come as you are, and we'll guide you through everything. Many of our regular practitioners started as absolute beginners—you're in good company!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to be flexible to do yoga?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely not! That's like asking if you need to be clean to take a shower. Yoga is the practice of becoming more flexible—both physically and mentally. You'll start exactly where you are, and with consistent practice, you'll notice improvements. Props like blocks and straps help make every pose accessible, no matter your current range of motion.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What's the difference between Vinyasa and Hatha?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Hatha yoga holds poses for longer (typically 5-10 breaths), giving you time to refine alignment and build strength in stillness. It's slower-paced and great for beginners. Vinyasa links poses together in a flowing sequence synchronized with breath, creating more of a "moving meditation." It's more dynamic and cardiovascular. Both styles offer wonderful benefits—try both to see what resonates with you!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do I need to reserve a spot or can I drop in?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We accept both! Online reservations guarantee your spot and are recommended for popular evening and weekend classes. Walk-ins are always welcome based on availability—just arrive 10 minutes early so we can get you set up. For Hot Yoga classes, we strongly recommend reserving in advance as space is limited in our heated studio.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What if I have an injury or physical limitation?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Please let your instructor know before class about any injuries or conditions. All our teachers are trained to offer modifications and alternatives for every pose. Yoga can actually support injury recovery when practiced mindfully. For specific concerns, we recommend a private session first, where we can create a personalized practice that supports your healing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Can I bring my own mat?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Of course! Many regular practitioners prefer their own mat. We also provide high-quality studio mats that are cleaned after every class. If you're just starting out, feel free to use ours until you decide what type of mat you prefer. Our boutique carries a curated selection of eco-friendly mats if you'd like to purchase your own.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How often should I practice?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>The best frequency is whatever you can sustain consistently. Even once a week creates meaningful benefits. Most of our members practice 2-4 times per week, mixing different class styles for balance. Listen to your body—some weeks you might want more dynamic practices, other weeks more restorative. The key is showing up regularly, not pushing yourself to exhaustion.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What's your cancellation policy?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We understand life happens! Please cancel at least 2 hours before class to free up your spot for others. Late cancellations and no-shows for class pack holders will have a class deducted. Unlimited members have a 3-late-cancel per month limit. We're flexible with emergencies—just reach out and we'll work with you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="section section-cream">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2xl); align-items: center;">
+        <div>
+          <div class="section-header">
+            <div class="section-tag">Location</div>
+            <h2>Find Your Way to <em>Zenith</em></h2>
+          </div>
+          <p>We're located in the heart of downtown Boulder, just off Pearl Street in the historic Serenity Building. Look for the sage green awning and peaceful garden entrance.</p>
+          <p>
+            <strong>From Downtown:</strong> Head west on Pearl Street, turn left on Serenity Lane. We're in the brick building on your right.
+          </p>
+          <p>
+            <strong>Parking:</strong> Free lot behind the building (enter from 2nd Street). Street parking also available on Serenity Lane and surrounding streets.
+          </p>
+          <p>
+            <strong>By Bus:</strong> Routes 204 and 225 stop at Pearl & 15th, a 2-minute walk from our studio.
+          </p>
+          <p>
+            <strong>By Bike:</strong> Bike rack available at our front entrance.
+          </p>
+        </div>
+
+        <div style="background: linear-gradient(135deg, var(--sage-muted) 0%, var(--sand-light) 100%); border-radius: var(--radius-lg); height: 400px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: var(--space-md);">
+          <i class="fa-solid fa-map-location-dot" style="font-size: 4rem; color: var(--sage);"></i>
+          <div style="text-align: center;">
+            <strong style="font-family: var(--font-heading); font-size: 1.25rem;">234 Serenity Lane</strong><br>
+            <span style="color: var(--charcoal-muted);">Boulder, CO 80302</span>
+          </div>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-outline" style="margin-top: var(--space-sm);">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate & Events -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Groups & Events</div>
+        <h2>Bring Yoga to Your <em>Team</em></h2>
+        <p class="section-subtitle">We offer customized yoga experiences for businesses, organizations, and private events.</p>
+      </div>
+
+      <div class="studio-features" style="margin-top: var(--space-xl);">
+        <div class="studio-feature">
+          <div class="studio-feature-icon"><i class="fa-solid fa-building"></i></div>
+          <div>
+            <h4>Corporate Wellness</h4>
+            <p>Bring yoga to your workplace with on-site or virtual classes. Improve employee wellbeing, reduce stress, and boost productivity.</p>
+          </div>
+        </div>
+
+        <div class="studio-feature">
+          <div class="studio-feature-icon"><i class="fa-solid fa-cake-candles"></i></div>
+          <div>
+            <h4>Private Parties</h4>
+            <p>Celebrate with yoga! Book our studio for bridal showers, birthdays, team-building, or any special occasion.</p>
+          </div>
+        </div>
+
+        <div class="studio-feature">
+          <div class="studio-feature-icon"><i class="fa-solid fa-handshake"></i></div>
+          <div>
+            <h4>Team Building</h4>
+            <p>Connect your team through mindful movement. We design experiences that build trust, communication, and collective calm.</p>
+          </div>
+        </div>
+
+        <div class="studio-feature">
+          <div class="studio-feature-icon"><i class="fa-solid fa-church"></i></div>
+          <div>
+            <h4>Bridal Yoga</h4>
+            <p>Prepare for your big day with private sessions for the wedding party. Relax, bond, and glow together.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: var(--space-xl);">
+        <p style="color: var(--charcoal-muted); margin-bottom: var(--space-md);">Interested in booking a group event?</p>
+        <a href="mailto:events@zenithyoga.com" class="btn btn-primary">Contact Our Events Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Begin Your Journey Today</h2>
+      <p>Ready to experience Zenith? Start with our intro week and discover the transformative power of yoga.</p>
+      <a href="#" class="btn">Claim Your $29 Intro Week</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="logo-text">
+              Zenith
+              <span>Yoga & Wellness</span>
+            </div>
+          </a>
+          <p>A welcoming space for all bodies and abilities to explore the transformative power of yoga.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">f</a>
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">ig</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Classes & Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Classes</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Vinyasa Flow</a></li>
+            <li><a href="services.html">Hatha Yoga</a></li>
+            <li><a href="services.html">Yin & Restorative</a></li>
+            <li><a href="services.html">Hot Yoga</a></li>
+            <li><a href="services.html">Prenatal Yoga</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>234 Serenity Lane</li>
+            <li>Boulder, CO 80302</li>
+            <li>(303) 555-0192</li>
+            <li>hello@zenithyoga.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Zenith Yoga & Wellness. All rights reserved.</p>
+        <p>Breathe. Move. Transform.</p>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple scroll header effect -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

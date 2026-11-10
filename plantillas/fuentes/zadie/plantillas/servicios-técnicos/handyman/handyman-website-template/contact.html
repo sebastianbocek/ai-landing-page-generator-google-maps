@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Book | FixIt Pro Handyman Services</title>
+  <meta name="description" content="Book a handyman online or call (555) 432-1098. Free estimates, same-week scheduling, and a 90-day workmanship guarantee on all repairs.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="logo-text">
+            FixIt Pro
+            <span>Handyman Services</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <a href="contact.html" class="btn btn-primary header-cta">Book a Handyman</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero hero-page">
+    <div class="container">
+      <div class="hero-content">
+        <span class="section-label" style="color: var(--secondary-light);">Get in Touch</span>
+        <h1>Let's Get It Fixed</h1>
+        <p class="hero-tagline">Tell us what needs doing and we'll get back to you with a free estimate, usually within a few hours. Most jobs can be scheduled the same week.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3>Request a Service</h3>
+          <p>Fill out the form below and we'll get back to you with a free estimate. The more details you share, the more accurate we can be.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="service-type">Service Type</label>
+                <select id="service-type" name="service-type" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="carpentry">Carpentry &amp; Woodwork</option>
+                  <option value="plumbing">Plumbing Repairs</option>
+                  <option value="electrical">Electrical Work</option>
+                  <option value="drywall">Drywall &amp; Painting</option>
+                  <option value="assembly">Furniture Assembly</option>
+                  <option value="tv-mount">TV Mounting</option>
+                  <option value="general">General Repairs</option>
+                  <option value="multiple">Multiple Tasks</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="urgency">How Soon Do You Need It?</label>
+                <select id="urgency" name="urgency" required>
+                  <option value="" disabled selected>Select urgency</option>
+                  <option value="asap">ASAP (within 48 hours)</option>
+                  <option value="this-week">This week</option>
+                  <option value="next-week">Next week</option>
+                  <option value="flexible">I'm flexible</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Property Address</label>
+              <input type="text" id="address" name="address" placeholder="123 Main St, Anytown, USA">
+            </div>
+            <div class="form-group">
+              <label for="description">Describe the Job</label>
+              <textarea id="description" name="description" placeholder="Tell us what needs fixing, building, or installing. Include dimensions, quantities, or photos if possible. The more detail, the better our estimate." rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request</button>
+          </form>
+        </div>
+
+        <div class="contact-sidebar">
+          <h3>Contact Info</h3>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <h4>Call Us</h4>
+              <p><a href="tel:555-432-1098">(555) 432-1098</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@fixitprohandyman.com">hello@fixitprohandyman.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h4>Office</h4>
+              <p>742 Craftsman Drive, Suite 110<br>Anytown, USA 55102</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div>
+              <h4>Service Area</h4>
+              <p>Metro area and suburbs within 25 miles. No travel charge.</p>
+            </div>
+          </div>
+
+          <div class="hours-box">
+            <h4>Business Hours</h4>
+            <table>
+              <tr><td>Monday - Friday</td><td>7:00 AM - 6:00 PM</td></tr>
+              <tr><td>Saturday</td><td>8:00 AM - 4:00 PM</td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-blue">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Common Questions</h2>
+        <p>Quick answers to the things homeowners ask us most.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item open">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <h4>How much does a handyman visit cost?</h4>
+            <div class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Our standard rate is $75/hour for single-task visits and $95/hour for multi-task visits (when you bundle several small jobs into one appointment). Many common tasks have flat-rate pricing, which you can find on our <a href="services.html" style="color: var(--primary);">services page</a>. We always provide a free estimate before starting work.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <h4>Are your handymen licensed and insured?</h4>
+            <div class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Every member of our team is fully licensed, carries general liability insurance, and has passed a background check. We carry $2 million in general liability coverage and workers' compensation insurance. We're happy to provide proof of insurance upon request.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <h4>How soon can you come out?</h4>
+            <div class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Most appointments are available within the same week. For urgent issues, we can often schedule within 24-48 hours. We offer 2-hour arrival windows (for example, 9-11 AM or 1-3 PM) so you're not waiting around all day.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <h4>Do you guarantee your work?</h4>
+            <div class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely. All of our work comes with a 90-day workmanship guarantee. If something we repaired isn't holding up, we'll come back and fix it at no additional charge. Materials are covered by the manufacturer's warranty.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <h4>Do you provide the materials, or do I need to buy them?</h4>
+            <div class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>We can go either way. For common items like screws, drywall compound, caulk, and basic fixtures, we bring them along and include the cost in your quote. For specialty items like specific faucets, custom hardware, or paint colors, we'll let you know what to have on hand. We can also pick up materials for you at cost plus a small trip fee.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+            <h4>What's the minimum charge?</h4>
+            <div class="faq-toggle"><i class="fa-solid fa-chevron-down"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Our minimum is one hour of labor ($75). That said, most small jobs can be bundled together to make the most of that hour. If you have a leaky faucet and a squeaky door, we can handle both in the same visit. We recommend making a list so we can knock everything out at once.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Still Have Questions?</h2>
+      <p>Give us a call. We're happy to talk through your project and give you an honest assessment over the phone.</p>
+      <div class="cta-buttons">
+        <a href="tel:555-432-1098" class="btn btn-primary">Call (555) 432-1098</a>
+        <a href="mailto:hello@fixitprohandyman.com" class="btn btn-outline">Send an Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <div class="logo-text">
+              FixIt Pro
+              <span>Handyman Services</span>
+            </div>
+          </a>
+          <p>Licensed, insured handyman services for homeowners who want the job done right. Serving the metro area for over 12 years.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Carpentry</a></li>
+            <li><a href="services.html">Plumbing</a></li>
+            <li><a href="services.html">Electrical</a></li>
+            <li><a href="services.html">Drywall &amp; Painting</a></li>
+            <li><a href="services.html">Furniture Assembly</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>742 Craftsman Drive<br>Suite 110<br>Anytown, USA 55102</p>
+          <p><a href="tel:555-432-1098">(555) 432-1098</a></p>
+          <p><a href="mailto:hello@fixitprohandyman.com">hello@fixitprohandyman.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FixIt Pro Handyman Services. All rights reserved. Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Photo placeholder: venue arch under stars">
+  <rect width="600" height="800" fill="#3f4735"/>
+  <g fill="#f6efe6" opacity=".8"><circle cx="80" cy="90" r="2"/><circle cx="200" cy="60" r="1.5"/><circle cx="420" cy="100" r="2"/><circle cx="520" cy="50" r="1.5"/><circle cx="330" cy="140" r="1.5"/><circle cx="140" cy="180" r="1.5"/></g>
+  <path d="M130 800V400a170 170 0 0 1 340 0v400z" fill="#5f6e4d"/>
+  <path d="M170 800V410a130 130 0 0 1 260 0v390z" fill="#f3ddd3"/>
+  <path d="M170 620h260v180H170z" fill="#e8c1b8"/>
+  <g stroke="#f7e7b0" stroke-width="2"><path d="M130 330c100 60 240 60 340 0"/></g>
+  <g fill="#f7e7b0"><circle cx="160" cy="345" r="5"/><circle cx="220" cy="365" r="5"/><circle cx="300" cy="372" r="5"/><circle cx="380" cy="365" r="5"/><circle cx="440" cy="345" r="5"/></g>
+  <g fill="#c98f86"><circle cx="150" cy="420" r="18"/><circle cx="450" cy="420" r="18"/><circle cx="140" cy="460" r="12"/><circle cx="460" cy="460" r="12"/></g>
+</svg>

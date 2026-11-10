@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TalentBridge Staffing</title>
+  <meta name="description" content="Get in touch with TalentBridge Staffing. Employers: request staff. Job seekers: submit your resume. Call (614) 555-0180 or fill out our contact form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="header__logo">
+      <div class="header__logo-icon"><i class="fa-solid fa-bridge"></i></div>
+      TalentBridge
+    </a>
+    <nav class="header__nav">
+      <a href="index.html" class="header__nav-link">Home</a>
+      <a href="about.html" class="header__nav-link">About</a>
+      <a href="services.html" class="header__nav-link">Services</a>
+      <a href="contact.html" class="header__nav-link active">Contact</a>
+    </nav>
+    <div class="header__actions">
+      <a href="contact.html" class="btn btn--sm btn--outline-dark">Find Work</a>
+      <a href="contact.html" class="btn btn--sm btn--primary">Find Talent</a>
+    </div>
+    <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav">
+    <a href="index.html" class="mobile-nav__link">Home</a>
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="services.html" class="mobile-nav__link">Services</a>
+    <a href="contact.html" class="mobile-nav__link active">Contact</a>
+    <div class="mobile-nav__actions">
+      <a href="contact.html" class="btn btn--outline-dark">Find Work</a>
+      <a href="contact.html" class="btn btn--primary">Find Talent</a>
+    </div>
+  </nav>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right" style="font-size: 0.65rem;"></i>
+      <span>Contact</span>
+    </div>
+    <h1>Let's Start a Conversation</h1>
+    <p>Whether you are looking to hire or looking for work, we would love to hear from you. Choose your path below and let's get started.</p>
+  </div>
+</section>
+
+<!-- Contact Forms -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="gap: 40px; align-items: start;">
+      <!-- Form Column -->
+      <div>
+        <div class="contact-tabs">
+          <button class="contact-tab active" data-tab="employer">
+            <i class="fa-solid fa-building"></i> I'm an Employer
+          </button>
+          <button class="contact-tab" data-tab="seeker">
+            <i class="fa-solid fa-user"></i> I'm a Job Seeker
+          </button>
+        </div>
+
+        <!-- Employer Form -->
+        <div class="contact-form-panel active" id="employer-form">
+          <h3 style="margin-bottom: 8px;">Request Staffing Support</h3>
+          <p style="color: var(--color-gray); font-size: 0.925rem; margin-bottom: 24px;">Tell us about your hiring needs and a dedicated account manager will follow up within one business day.</p>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="emp-company">Company Name *</label>
+                <input type="text" id="emp-company" name="company" placeholder="Your company name" required>
+              </div>
+              <div class="form-group">
+                <label for="emp-contact">Contact Name *</label>
+                <input type="text" id="emp-contact" name="contact" placeholder="Your full name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="emp-email">Email Address *</label>
+                <input type="email" id="emp-email" name="email" placeholder="you@company.com" required>
+              </div>
+              <div class="form-group">
+                <label for="emp-phone">Phone Number</label>
+                <input type="tel" id="emp-phone" name="phone" placeholder="(555) 123-4567">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="emp-industry">Industry</label>
+                <select id="emp-industry" name="industry">
+                  <option value="">Select your industry</option>
+                  <option value="manufacturing">Manufacturing</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="logistics">Logistics & Warehouse</option>
+                  <option value="technology">Technology</option>
+                  <option value="administrative">Administrative</option>
+                  <option value="skilled-trades">Skilled Trades</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="emp-positions">Number of Positions</label>
+                <select id="emp-positions" name="positions">
+                  <option value="">How many positions?</option>
+                  <option value="1">1</option>
+                  <option value="2-5">2-5</option>
+                  <option value="6-10">6-10</option>
+                  <option value="11-25">11-25</option>
+                  <option value="26-50">26-50</option>
+                  <option value="50+">50+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="emp-urgency">How Urgent Is Your Need?</label>
+              <select id="emp-urgency" name="urgency">
+                <option value="">Select urgency level</option>
+                <option value="immediate">Immediate -- need someone this week</option>
+                <option value="soon">Soon -- within the next 2 weeks</option>
+                <option value="planning">Planning ahead -- next month or later</option>
+                <option value="exploring">Just exploring options</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="emp-message">Tell Us About Your Needs</label>
+              <textarea id="emp-message" name="message" placeholder="Describe the roles you need to fill, any specific requirements, shift details, or other information that will help us understand your needs."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Submit Request <i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </div>
+
+        <!-- Job Seeker Form -->
+        <div class="contact-form-panel" id="seeker-form">
+          <h3 style="margin-bottom: 8px;">Start Your Job Search</h3>
+          <p style="color: var(--color-gray); font-size: 0.925rem; margin-bottom: 24px;">Submit your information and a recruiter will reach out within 24 hours to discuss opportunities. No fees -- ever.</p>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="seek-name">Full Name *</label>
+                <input type="text" id="seek-name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="seek-email">Email Address *</label>
+                <input type="email" id="seek-email" name="email" placeholder="you@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="seek-phone">Phone Number *</label>
+                <input type="tel" id="seek-phone" name="phone" placeholder="(555) 123-4567" required>
+              </div>
+              <div class="form-group">
+                <label for="seek-role">Desired Role or Industry</label>
+                <input type="text" id="seek-role" name="role" placeholder="e.g., Warehouse Supervisor, CNA, IT Support">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="seek-experience">Experience Level</label>
+                <select id="seek-experience" name="experience">
+                  <option value="">Select your experience level</option>
+                  <option value="entry">Entry Level (0-2 years)</option>
+                  <option value="mid">Mid Level (3-5 years)</option>
+                  <option value="senior">Senior Level (6-10 years)</option>
+                  <option value="expert">Expert (10+ years)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="seek-availability">Availability</label>
+                <select id="seek-availability" name="availability">
+                  <option value="">When can you start?</option>
+                  <option value="immediately">Immediately</option>
+                  <option value="1-week">Within 1 week</option>
+                  <option value="2-weeks">Within 2 weeks</option>
+                  <option value="1-month">Within 1 month</option>
+                  <option value="exploring">Just exploring options</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="seek-message">Tell Us About Yourself</label>
+              <textarea id="seek-message" name="message" placeholder="Share a brief summary of your background, the types of roles you are interested in, your preferred work schedule, and anything else that would help us match you with the right opportunity."></textarea>
+            </div>
+            <button type="submit" class="btn btn--secondary btn--lg" style="width: 100%;">Submit Application <i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact Info Column -->
+      <div>
+        <div class="contact-info-card" style="margin-bottom: 24px;">
+          <h3 style="margin-bottom: 20px;">Get In Touch</h3>
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-info-item__content">
+              <h4>Our Office</h4>
+              <p>450 Commerce Drive, Suite 200<br>Columbus, OH 43215</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="contact-info-item__content">
+              <h4>Phone</h4>
+              <p><a href="tel:+16145550180">(614) 555-0180</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info-item__content">
+              <h4>Email</h4>
+              <p><a href="mailto:info@talentbridgestaffing.com">info@talentbridgestaffing.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-item__icon">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div class="contact-info-item__content">
+              <h4>Office Hours</h4>
+              <p>Monday - Friday: 7:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 12:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <p>Interactive map would display here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Answers to the questions we hear most from employers and job seekers.</p>
+    </div>
+    <div style="max-width: 800px; margin: 0 auto;">
+      <div class="faq-item active">
+        <button class="faq-question">
+          How fast can you fill a position?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>For most temporary and light industrial positions, we can have qualified candidates on-site within 24-48 hours. For specialized technical roles or direct hire searches, our typical turnaround is 1-2 weeks for initial candidate presentations. Urgency and role complexity will affect timeline, but we work to move as fast as possible without cutting corners on screening quality.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          What does it cost employers to use TalentBridge?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>For temporary staffing, you pay an hourly bill rate that covers the worker's pay, our markup, payroll taxes, workers' compensation, and benefits administration. For direct hire placements, we charge a one-time placement fee based on a percentage of the candidate's first-year salary. We provide transparent pricing upfront with no hidden fees. Contact us for a customized quote based on your specific needs.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          Do job seekers pay any fees?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>No. Never. Our services are completely free for job seekers. We are paid by the employers who hire through us. There are no registration fees, placement fees, or hidden charges. If anyone asks you to pay for job placement services, that is a red flag -- legitimate staffing agencies never charge candidates.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          What screening do you do on candidates?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Every candidate goes through our multi-step screening process, which includes: a detailed interview assessing skills, experience, and work history; skills testing relevant to the target role; verification of references from previous supervisors; criminal background check; drug screening (where required by the client or industry); and verification of certifications, licenses, and legal work authorization. We customize the screening process based on the role's requirements.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          What is your geographic coverage area?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>We currently serve employers across 12 states: Ohio, Indiana, Michigan, Kentucky, Pennsylvania, West Virginia, Illinois, Tennessee, Virginia, North Carolina, Wisconsin, and Missouri. Our headquarters are in Columbus, Ohio, with satellite offices in key markets. We are expanding our coverage area and can sometimes accommodate requests outside our core territory -- reach out and we will let you know what is possible.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">
+          What if a placement does not work out?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>For temporary placements, we offer a performance guarantee. If a temporary worker does not meet expectations, let your account manager know and we will provide a replacement at no additional cost. For direct hire placements, we include a 90-day guarantee. If the candidate leaves or is terminated for cause within 90 days, we will restart the search at no extra charge. We stand behind every placement we make.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Prefer to Talk to a Real Person?</h2>
+    <p>Give us a call. Our team is here Monday through Saturday and happy to answer any questions you have.</p>
+    <div class="btn-group">
+      <a href="tel:+16145550180" class="btn btn--primary btn--lg"><i class="fa-solid fa-phone"></i> Call (614) 555-0180</a>
+      <a href="mailto:info@talentbridgestaffing.com" class="btn btn--outline btn--lg"><i class="fa-solid fa-envelope"></i> Send an Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">
+          <div class="footer__logo-icon"><i class="fa-solid fa-bridge"></i></div>
+          TalentBridge
+        </a>
+        <p>Connecting top talent with leading employers since 2008. We believe that great companies are built by great people -- and finding them should not be left to chance.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer__column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Job Openings</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4>For Employers</h4>
+        <ul>
+          <li><a href="services.html">Temporary Staffing</a></li>
+          <li><a href="services.html">Direct Hire</a></li>
+          <li><a href="services.html">Temp-to-Perm</a></li>
+          <li><a href="services.html">Payroll Services</a></li>
+          <li><a href="contact.html">Request Staff</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-location-dot"></i> 450 Commerce Dr, Suite 200<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Columbus, OH 43215</a></li>
+          <li><a href="tel:+16145550180"><i class="fa-solid fa-phone"></i> (614) 555-0180</a></li>
+          <li><a href="mailto:info@talentbridgestaffing.com"><i class="fa-solid fa-envelope"></i> info@talentbridgestaffing.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 TalentBridge Staffing. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.studio" target="_blank" rel="noopener">ZADIE</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+  // Mobile Nav Toggle
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+
+  mobileNavToggle.addEventListener('click', function() {
+    this.classList.toggle('active');
+    mobileNav.classList.toggle('active');
+  });
+
+  document.querySelectorAll('.mobile-nav__link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNavToggle.classList.remove('active');
+      mobileNav.classList.remove('active');
+    });
+  });
+
+  // Contact Form Tabs
+  const tabs = document.querySelectorAll('.contact-tab');
+  const panels = document.querySelectorAll('.contact-form-panel');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.getAttribute('data-tab');
+
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+
+      tab.classList.add('active');
+      document.getElementById(target + '-form').classList.add('active');
+    });
+  });
+
+  // FAQ Accordion
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+
+      // Close all
+      faqItems.forEach(i => i.classList.remove('active'));
+
+      // Toggle clicked
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

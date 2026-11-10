@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Morning Light Cafe & Bakery | Asheville, NC</title>
+  <meta name="description" content="Get in touch with Morning Light Cafe & Bakery in Asheville, NC. Reach out for catering, special orders, cooking classes, or just to say hello. Open daily at 6:30 AM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-bread-slice"></i></div>
+        <div class="logo-text">
+          Morning Light
+          <span>Cafe & Bakery</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Menu</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="nav-cta">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+      <span class="section-label">Get in Touch</span>
+      <h1>Contact Us</h1>
+      <p>Questions about catering, special orders, or cooking classes? Or just want to know what is fresh out of the oven? We would love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form below and we will get back to you within one business day. For same-day orders, please call us directly.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(828) 555-0000">
+              </div>
+              <div class="form-group">
+                <label for="inquiry">Inquiry Type</label>
+                <select id="inquiry" name="inquiry" required>
+                  <option value="" disabled selected>Select an inquiry type</option>
+                  <option value="general">General Question</option>
+                  <option value="catering">Catering</option>
+                  <option value="special-order">Special Order</option>
+                  <option value="wholesale">Wholesale</option>
+                  <option value="cooking-class">Cooking Class</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you need. For catering, include the date, number of guests, and any preferences." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <div class="contact-detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Address</h4>
+                <p>142 Haywood St<br>Asheville, NC 28801</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <a href="tel:+18285550174">(828) 555-0174</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:hello@morninglightbakery.com">hello@morninglightbakery.com</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Hours</h4>
+                <p>Mon - Fri: 6:30am - 3pm<br>Saturday: 7am - 4pm<br>Sunday: 7am - 3pm</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder">
+            <i class="fas fa-map-marker-alt"></i> 142 Haywood St, Asheville, NC
+          </div>
+
+          <div class="contact-info-card">
+            <h3>Follow Us</h3>
+            <div class="footer-social" style="margin-top: 8px;">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the questions we hear most often. If yours is not here, send us a message above.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>Do you take custom orders?</h4>
+          <p>Yes. We take custom bread orders, special cake orders, and catering requests. For bread and pastry orders, we ask for at least 48 hours notice. For custom cakes and catering, we recommend reaching out at least one week in advance. Call us or use the contact form above to get started.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Are your items nut-free or gluten-free?</h4>
+          <p>Our bakery handles wheat, tree nuts, dairy, and eggs daily. We cannot guarantee any item is free from allergens. We do not currently offer gluten-free bread or pastries, but we have a few cafe menu items that are naturally gluten-free. Please ask a team member about specific dietary needs when you visit.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you make wedding cakes?</h4>
+          <p>We do. Wedding cakes are handled by consultation with Elena and Yuki. We can create anything from a simple buttercream cake to an elaborate multi-tier design. We recommend booking at least two months in advance. Contact us to schedule a tasting and consultation.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I pre-order bread?</h4>
+          <p>Absolutely. Our most popular loaves, especially the sourdough boule, sell out early. If you want to guarantee a loaf, call us by 2 PM the day before and we will set one aside for you. We also take bulk pre-orders for holidays and special occasions.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you cater events?</h4>
+          <p>Yes. We offer pastry platters, sandwich trays, bread baskets, and full coffee service for events of all sizes. We have catered everything from office meetings to 150-person wedding brunches. Use the contact form and select "Catering" as the inquiry type, or call us to discuss your event.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How do I sign up for cooking classes?</h4>
+          <p>Our baking classes run throughout the year in small groups. You can sign up by contacting us through the form above and selecting "Cooking Class" as the inquiry type. We will send you the upcoming schedule and available dates. Classes fill up fast, so we recommend signing up early.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>We Are Here for You</h2>
+      <p>Whether you are placing a big catering order or just picking up a loaf of bread, we are happy to help.</p>
+      <div class="cta-hours">Open Daily 6:30 AM - 3:00 PM</div>
+      <a href="tel:+18285550174" class="btn btn-accent">Call Us Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h4>Morning Light Cafe & Bakery</h4>
+          <p>A neighborhood bakery and cafe in Asheville, NC. Scratch-made artisan breads, fresh pastries, and specialty coffee, baked with love every morning since 2016.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html#catering">Catering</a></li>
+            <li><a href="services.html#classes">Cooking Classes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><i class="fas fa-map-marker-alt"></i> 142 Haywood St, Asheville, NC 28801</li>
+            <li><i class="fas fa-phone"></i> (828) 555-0174</li>
+            <li><i class="fas fa-envelope"></i> hello@morninglightbakery.com</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul class="footer-hours">
+            <li><span class="day">Mon - Fri</span> <span>6:30am - 3pm</span></li>
+            <li><span class="day">Saturday</span> <span>7am - 4pm</span></li>
+            <li><span class="day">Sunday</span> <span>7am - 3pm</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Morning Light Cafe & Bakery. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

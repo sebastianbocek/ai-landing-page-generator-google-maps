@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 800" fill="none">
+  <rect width="1440" height="800" fill="#111827"/>
+  <circle cx="200" cy="150" r="300" fill="#7C3AED" opacity="0.15"/>
+  <circle cx="1200" cy="600" r="350" fill="#EC4899" opacity="0.12"/>
+  <circle cx="700" cy="400" r="200" fill="#7C3AED" opacity="0.08"/>
+  <path d="M0 600 Q360 500 720 550 T1440 500 V800 H0Z" fill="#7C3AED" opacity="0.1"/>
+  <path d="M0 650 Q360 580 720 620 T1440 570 V800 H0Z" fill="#EC4899" opacity="0.08"/>
+  <rect x="100" y="100" width="80" height="80" rx="16" fill="#7C3AED" opacity="0.2" transform="rotate(15 140 140)"/>
+  <rect x="1250" y="120" width="60" height="60" rx="12" fill="#EC4899" opacity="0.2" transform="rotate(-10 1280 150)"/>
+  <polygon points="600,80 620,120 580,120" fill="#EC4899" opacity="0.15"/>
+  <polygon points="900,200 930,250 870,250" fill="#7C3AED" opacity="0.12"/>
+  <circle cx="400" cy="300" r="4" fill="#EC4899" opacity="0.4"/>
+  <circle cx="800" cy="180" r="3" fill="#7C3AED" opacity="0.4"/>
+  <circle cx="1100" cy="350" r="5" fill="#EC4899" opacity="0.3"/>
+  <circle cx="300" cy="500" r="3" fill="#7C3AED" opacity="0.3"/>
+</svg>

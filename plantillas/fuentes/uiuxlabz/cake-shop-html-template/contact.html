@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Orders — SUCRÉ</title>
+  <meta name="description" content="Order a cake from SUCRÉ — tell us the date and we'll bake around it. Collection and cargo-bike delivery across London." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800&family=DM+Sans:wght@400;500;700;800&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <div class="ribbon"><div class="container"><span><i class="dot"></i> Baked this morning · Collection &amp; delivery</span><span style="opacity:.5">—</span><span>Open daily 08:00–19:00</span><div class="right"><a href="tel:+10000000000">+1 (000) 000-0000</a><span style="opacity:.5">·</span><a href="contact.html">Order now →</a></div></div></div>
+  <header class="sitehead">
+    <div class="container">
+      <a class="mark" href="index.html"><span class="badge">◍</span><span>SUCRÉ <small>patisserie · since 2012</small></span></a>
+      <nav class="navlinks" id="nav"><a href="index.html">Home</a><a href="about.html">Our Story</a><a href="menu.html">Menu</a><a href="services.html">Services</a><a href="contact.html" class="active">Contact</a></nav>
+      <div class="head-cta"><a class="btn btn--ghost btn--sm" href="menu.html">View menu</a><a class="btn btn--rasp btn--sm" href="contact.html">Order</a></div>
+      <button class="burger" aria-label="Menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <section class="section" style="padding-bottom:.8rem">
+    <div class="container">
+      <div class="reveal"><span class="kicker">Contact &amp; orders</span><h1 style="font-size:clamp(2rem,5vw,3.6rem)">Tell us the <em style="color:var(--raspberry); font-style:normal">date.</em></h1><p style="color:var(--cocoa-soft); max-width:52ch; margin-top:.6rem">We'll bake around it. 48 hours for celebration cakes, same-day for counter pastries if you call before noon.</p></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="info reveal">
+          <h3>Visit the counter</h3>
+          <p style="color:#D9C6A8; font-size:.9rem">14 Sugar Lane, London SE1 9LF — a two-minute walk from Borough. Look for the raspberry awning.</p>
+          <div class="row"><div class="ic">✦</div><div><div style="font-family:var(--font-body); font-size:.72rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--butter)">Hours</div>Daily 08:00–19:00<br><span style="font-size:.82rem; color:#D9C6A8">Counter pastries until sold out — call to reserve</span></div></div>
+          <div class="row"><div class="ic">✉</div><div><div style="font-family:var(--font-body); font-size:.72rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--butter)">Orders</div><a href="mailto:hello@sucre.example">hello@sucre.example</a></div></div>
+          <div class="row"><div class="ic">☎</div><div><div style="font-family:var(--font-body); font-size:.72rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--butter)">Phone</div><a href="tel:+10000000000">+1 (000) 000-0000</a></div></div>
+          <div class="row"><div class="ic">♪</div><div><div style="font-family:var(--font-body); font-size:.72rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; color:var(--butter)">Delivery</div>Cargo bike — zone 1–2, £6.50<br><span style="font-size:.82rem; color:#D9C6A8">Free over £45</span></div></div>
+          <div style="margin-top:1rem; border-radius:12px; overflow:hidden; border:1px solid #3D2A1E"><img src="assets/img/bg.jpg" alt="Shop" style="width:100%; aspect-ratio:16/10; object-fit:cover" loading="lazy" /></div>
+        </div>
+
+        <div class="reveal d1" style="background:var(--cream-3); border:2px solid var(--cocoa); border-radius:var(--r-lg); padding:1.2rem; box-shadow: 6px 6px 0 var(--cocoa)">
+          <h3 style="font-size:1.15rem">Order a cake</h3>
+          <p style="color:var(--cocoa-soft); font-size:.88rem">One form, one reply within the hour. Tell us the date, flavour and message — we'll handle the rest.</p>
+          <form data-form novalidate style="margin-top:1rem">
+            <div class="form-row">
+              <div class="field"><label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Your name" required /></div>
+              <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="+1 (___) ___-____" /></div>
+            </div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required /></div>
+            <div class="form-row">
+              <div class="field"><label for="date">Date needed</label><input id="date" name="date" type="date" required /></div>
+              <div class="field"><label for="heads">Guests</label><select id="heads" name="heads"><option>6–8</option><option>10–12</option><option>15–20</option><option>20+</option></select></div>
+            </div>
+            <div class="field"><label for="flavour">Flavour</label><select id="flavour" name="flavour"><option>Vanilla cloud</option><option>Chocolate torte</option><option>Strawberry shortcake</option><option>Lemon tart</option><option>Surprise me</option></select></div>
+            <div class="field"><label for="msg">Message on the cake + any notes</label><textarea id="msg" name="msg" placeholder="e.g. Happy 30th, Maya! — chocolate message, raspberry filling on the side"></textarea></div>
+            <button class="btn btn--rasp" type="submit">Send order</button>
+            <p class="form-ok" hidden>Got it — we'll reply within the hour with a confirmation and collection time. Thank you! ✦</p>
+            <p class="form-err" hidden></p>
+            <p style="font-size:.76rem; color:var(--muted); margin-top:.6rem">We reply from hello@sucre.example — check spam if you don't hear back within the hour.</p>
+          </form>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:1.2rem; border-radius:var(--r-lg); overflow:hidden; border:2px solid var(--cocoa)">
+        <img src="assets/img/offer.jpg" alt="Pastries" style="width:100%; aspect-ratio:21/7; object-fit:cover" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div><div class="brand">SUCRÉ <em>·</em></div><p>Patisserie since 2012. Baked this morning, sold today.</p></div>
+      <div><h4>Shop</h4><ul><li><a href="menu.html">Menu &amp; pricing</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Order</a></li><li><a href="about.html">Our story</a></li></ul></div>
+      <div><h4>Visit</h4><ul><li>14 Sugar Lane, London SE1 9LF</li><li>Daily 08:00–19:00</li><li><a href="mailto:hello@sucre.example">hello@sucre.example</a></li></ul></div>
+      <div><h4>Follow</h4><ul><li><a href="#">Instagram</a></li><li><a href="#">TikTok</a></li><li><a href="#">Careers</a></li></ul></div>
+      <div class="base"><span>© <span data-year>2026</span> SUCRÉ Patisserie</span><span>Baked this morning · Sold today</span></div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

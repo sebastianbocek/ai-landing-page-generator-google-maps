@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" fill="none">
+  <rect width="600" height="400" fill="#1F2937"/>
+  <circle cx="300" cy="200" r="120" fill="#F43F5E" opacity="0.15"/>
+  <circle cx="500" cy="350" r="80" fill="#1F2937" opacity="0.1"/>
+  <rect x="50" y="140" width="200" height="12" rx="6" fill="#F43F5E" opacity="0.3"/>
+  <rect x="50" y="165" width="140" height="8" rx="4" fill="#1F2937" opacity="0.2"/>
+  <text x="300" y="210" font-family="sans-serif" font-size="14" fill="#F43F5E" opacity="0.6" text-anchor="middle">Brand Identity</text>
+</svg>

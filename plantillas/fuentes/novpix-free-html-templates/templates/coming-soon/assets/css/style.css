@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Aube — coming soon page
+   Two colour variants: default (dusk) and <body class="variant-dawn">.
+   Theme tokens: override these to recolour the whole template.
+   ========================================================================== */
+:root {
+  --brand: #e9c46a;          /* gold */
+  --accent: #f4a3a8;         /* rose */
+  --accent-2: #7c8cf8;       /* periwinkle glow */
+  --bg: #0d1024;
+  --bg-2: #161a3a;
+  --surface: rgba(255, 255, 255, .06);
+  --border: rgba(255, 255, 255, .14);
+  --text: #f5efe6;
+  --muted: #b9b4c9;
+  --on-brand: #1a1530;
+  --radius: 18px;
+  --font-display: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+.variant-dawn {
+  --brand: #b5536a;          /* deep rose */
+  --accent: #e8a87c;         /* apricot */
+  --accent-2: #f3c9d0;       /* blush glow */
+  --bg: #fbf4ec;
+  --bg-2: #f6e6da;
+  --surface: rgba(255, 255, 255, .6);
+  --border: rgba(90, 50, 40, .16);
+  --text: #2d1d1b;
+  --muted: #6e5752;
+  --on-brand: #ffffff;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; min-height: 100vh; min-height: 100dvh;
+  background: var(--bg); color: var(--text);
+  font: 400 16px/1.6 var(--font-body); -webkit-font-smoothing: antialiased;
+  display: flex; flex-direction: column; overflow-x: hidden;
+}
+a { color: inherit; }
+svg { display: block; }
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; border-radius: 6px; }
+.skip-link { position: absolute; left: 16px; top: -60px; z-index: 50; background: var(--brand); color: var(--on-brand); padding: 10px 16px; border-radius: 10px; font-weight: 700; text-decoration: none; }
+.skip-link:focus { top: 16px; }
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Animated background */
+.bg { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; background: radial-gradient(120% 90% at 50% 110%, var(--bg-2), var(--bg) 60%); }
+.orb { position: absolute; border-radius: 50%; filter: blur(70px); opacity: .55; will-change: transform; }
+.orb.o1 { width: 46vmax; height: 46vmax; left: -12vmax; top: -14vmax; background: var(--accent-2); animation: drift1 26s ease-in-out infinite alternate; }
+.orb.o2 { width: 38vmax; height: 38vmax; right: -12vmax; top: 18vh; background: var(--accent); opacity: .38; animation: drift2 32s ease-in-out infinite alternate; }
+.orb.o3 { width: 30vmax; height: 30vmax; left: 30vw; bottom: -18vmax; background: var(--brand); opacity: .3; animation: drift3 22s ease-in-out infinite alternate; }
+.variant-dawn .orb { opacity: .5; }
+@keyframes drift1 { to { transform: translate(14vw, 10vh) scale(1.15); } }
+@keyframes drift2 { to { transform: translate(-16vw, -8vh) scale(.9); } }
+@keyframes drift3 { to { transform: translate(-10vw, -12vh) scale(1.2); } }
+.stars { position: absolute; inset: 0; opacity: .8; animation: twinkle 6s ease-in-out infinite alternate;
+  background-image:
+    radial-gradient(1.2px 1.2px at 12% 18%, #fff, transparent), radial-gradient(1px 1px at 28% 72%, #fff, transparent),
+    radial-gradient(1.4px 1.4px at 44% 30%, #fff, transparent), radial-gradient(1px 1px at 63% 14%, #fff, transparent),
+    radial-gradient(1.2px 1.2px at 78% 58%, #fff, transparent), radial-gradient(1px 1px at 88% 26%, #fff, transparent),
+    radial-gradient(1.3px 1.3px at 8% 84%, #fff, transparent), radial-gradient(1px 1px at 52% 88%, #fff, transparent),
+    radial-gradient(1px 1px at 94% 80%, #fff, transparent), radial-gradient(1.2px 1.2px at 36% 50%, #fff, transparent); }
+.variant-dawn .stars { display: none; }
+@keyframes twinkle { to { opacity: .35; } }
+.grain { position: absolute; inset: -50%; opacity: .07; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+.variant-dawn .grain { opacity: .1; }
+
+/* Botanical line art */
+.botanical { position: fixed; z-index: -1; color: var(--brand); opacity: .35; pointer-events: none; width: min(32vw, 360px); height: auto; }
+.botanical.left { left: -30px; bottom: -20px; }
+.botanical.right { right: -40px; top: 60px; transform: scaleX(-1) rotate(12deg); width: min(24vw, 260px); }
+.botanical path { fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-dasharray: 1400; stroke-dashoffset: 1400; animation: grow 5s 0.3s ease forwards; }
+@keyframes grow { to { stroke-dashoffset: 0; } }
+@media (max-width: 700px) { .botanical { opacity: .2; width: 48vw; } .botanical.right { display: none; } }
+
+/* Layout */
+.top { display: flex; justify-content: space-between; align-items: center; padding: 28px clamp(20px, 5vw, 56px); }
+.logo { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font: 600 1.7rem/1 var(--font-display); letter-spacing: .02em; }
+.logo svg { width: 34px; height: 34px; color: var(--brand); }
+.top .contact { font-size: .9rem; color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color .2s, border-color .2s; }
+.top .contact:hover { color: var(--text); border-color: var(--brand); }
+main { flex: 1; display: grid; place-items: center; padding: 20px clamp(20px, 5vw, 56px) 40px; }
+.stage { width: 100%; max-width: 760px; text-align: center; }
+.eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: .78rem; letter-spacing: .32em; text-transform: uppercase; color: var(--brand); margin-bottom: 22px; }
+.eyebrow::before, .eyebrow::after { content: ""; width: 28px; height: 1px; background: currentColor; opacity: .6; }
+h1 { font: 500 clamp(2.9rem, 8.5vw, 6.2rem)/.98 var(--font-display); letter-spacing: -.02em; margin: 0 0 22px; }
+h1 em { font-style: italic; color: var(--brand); }
+.lead { color: var(--muted); font-size: clamp(1.02rem, 1.6vw, 1.15rem); max-width: 540px; margin: 0 auto 40px; }
+
+/* Countdown */
+.countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(8px, 2vw, 18px); max-width: 600px; margin: 0 auto 14px; list-style: none; padding: 0; }
+.countdown li { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: clamp(14px, 3vw, 24px) 6px clamp(12px, 2.4vw, 18px); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); position: relative; overflow: hidden; }
+.countdown li::after { content: ""; position: absolute; left: 20%; right: 20%; bottom: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--brand), transparent); opacity: .7; }
+.countdown b { display: block; font: 500 clamp(2.2rem, 7vw, 4rem)/1 var(--font-display); font-variant-numeric: tabular-nums lining-nums; }
+.countdown span { font-size: clamp(.64rem, 1.8vw, .75rem); letter-spacing: .22em; text-transform: uppercase; color: var(--muted); }
+.launch-date { font-size: .9rem; color: var(--muted); margin: 0 0 40px; }
+.launch-date strong { color: var(--text); font-weight: 600; }
+.countdown b.tick { animation: tick .5s ease; }
+@keyframes tick { from { transform: translateY(-20%); opacity: .3; } }
+
+/* Signup */
+.signup { display: flex; gap: 8px; max-width: 480px; margin: 0 auto; padding: 6px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); transition: border-color .2s, box-shadow .2s; }
+.signup:focus-within { border-color: var(--brand); box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand) 22%, transparent); }
+.signup input { flex: 1; min-width: 0; background: transparent; border: 0; padding: 12px 18px; color: var(--text); font: inherit; }
+.signup input::placeholder { color: var(--muted); }
+.signup input:focus { outline: none; }
+.signup button { border: 0; border-radius: 999px; padding: 12px 24px; background: var(--brand); color: var(--on-brand); font: 700 .95rem var(--font-body); cursor: pointer; transition: transform .2s, filter .2s; white-space: nowrap; }
+.signup button:hover { transform: translateY(-1px); filter: brightness(1.08); }
+.form-msg { min-height: 1.6em; margin: 14px 0 0; font-size: .92rem; color: var(--brand); }
+.privacy { font-size: .8rem; color: var(--muted); margin: 4px 0 0; }
+@media (max-width: 480px) {
+  .signup { flex-direction: column; border-radius: 22px; padding: 8px; }
+  .signup input { text-align: center; }
+}
+
+/* Footer */
+.bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; padding: 22px clamp(20px, 5vw, 56px) 30px; font-size: .85rem; color: var(--muted); }
+.socials { display: flex; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.socials a { width: 42px; height: 42px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--border); background: var(--surface); color: var(--text); transition: background .25s, color .25s, transform .25s; }
+.socials a:hover { background: var(--brand); color: var(--on-brand); transform: translateY(-2px); }
+.socials svg { width: 17px; height: 17px; }
+@media (max-width: 560px) { .bottom { justify-content: center; text-align: center; flex-direction: column-reverse; } }
+
+/* Variant switch (demo only, remove in production) */
+.variant-link { font-size: .85rem; color: var(--muted); }
+
+/* Entrance */
+.fade { animation: fadeUp 1s cubic-bezier(.2,.7,.2,1) both; }
+.fade.d1 { animation-delay: .1s; } .fade.d2 { animation-delay: .2s; } .fade.d3 { animation-delay: .3s; } .fade.d4 { animation-delay: .4s; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
+  .botanical path { stroke-dashoffset: 0; }
+}
+main { padding-top: 0; padding-bottom: 24px; }
+.lead { margin-bottom: 32px; }
+.launch-date { margin-bottom: 30px; }
+.top { padding-top: 22px; padding-bottom: 18px; }

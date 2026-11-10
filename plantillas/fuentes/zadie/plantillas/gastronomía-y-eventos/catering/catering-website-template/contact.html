@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Harvest Table Catering</title>
+  <meta name="description" content="Get in touch with Harvest Table Catering to plan your next event. Submit an inquiry, schedule a tasting, or call us to discuss your wedding, corporate event, or private celebration.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+        <div class="logo-text">
+          Harvest Table
+          <span>Catering Co.</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Menus</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Book a Tasting</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Contact</span>
+        </div>
+        <h1>Plan Your Event</h1>
+        <p class="hero-description">Tell us about your celebration and we'll get back to you within 24 hours with a custom proposal. Every great event starts with a conversation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Event Inquiry Form -->
+        <div class="contact-form">
+          <h2 style="margin-bottom: var(--space-sm); font-size: 1.6rem;">Event Inquiry</h2>
+          <p style="color: var(--charcoal-medium); margin-bottom: var(--space-xl);">Fill out the details below and our events team will reach out to discuss your vision.</p>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name</label>
+                <input type="text" id="name" class="form-input" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" id="email" class="form-input" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="form-input" placeholder="(555) 123-4567">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="event-type">Event Type</label>
+                <select id="event-type" class="form-select" required>
+                  <option value="" disabled selected>Select event type</option>
+                  <option value="wedding">Wedding Reception</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="private-party">Private Party</option>
+                  <option value="holiday">Holiday Celebration</option>
+                  <option value="milestone">Milestone Event</option>
+                  <option value="outdoor">Outdoor Gathering</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="guest-count">Estimated Guest Count</label>
+                <input type="number" id="guest-count" class="form-input" placeholder="Number of guests" min="10">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="event-date">Event Date</label>
+                <input type="date" id="event-date" class="form-input">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="venue">Venue / Location</label>
+              <input type="text" id="venue" class="form-input" placeholder="Venue name or location (if known)">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="details">Event Details</label>
+              <textarea id="details" class="form-textarea" placeholder="Tell us about your vision for the event. Include any dietary requirements, style preferences, or special requests." rows="6"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Inquiry</button>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <!-- Contact Info -->
+          <div class="contact-card">
+            <h3 style="margin-bottom: var(--space-lg); font-size: 1.3rem;">Contact Information</h3>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <strong>Commissary Kitchen</strong>
+                  <p style="margin: 0; color: var(--charcoal-medium);">85 Harvest Lane<br>Asheville, NC 28801</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <strong>Phone</strong>
+                  <p style="margin: 0;"><a href="tel:+18285551847">(828) 555-1847</a></p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <strong>Email</strong>
+                  <p style="margin: 0;"><a href="mailto:hello@harvesttablecatering.com">hello@harvesttablecatering.com</a></p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                  <strong>Office Hours</strong>
+                  <p style="margin: 0; color: var(--charcoal-medium);">Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: By appointment<br>Sunday: Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tasting Appointments -->
+          <div class="contact-card" style="border-top: 4px solid var(--gold);">
+            <h3 style="margin-bottom: var(--space-sm); font-size: 1.3rem;"><i class="fa-solid fa-wine-glass" style="color: var(--gold); margin-right: var(--space-sm);"></i>Tasting Appointments</h3>
+            <p style="color: var(--charcoal-medium); font-size: 0.95rem;">We offer complimentary tastings for events of 50 guests or more. It's a chance to sample dishes, discuss your menu, and experience our approach firsthand. Tastings take place at our commissary kitchen and last about 90 minutes.</p>
+            <p style="color: var(--charcoal-medium); font-size: 0.95rem;">For smaller events, we offer a tasting experience for $75 that's credited toward your final invoice when you book with us.</p>
+          </div>
+
+          <!-- FAQ -->
+          <div class="contact-card">
+            <h3 style="margin-bottom: var(--space-lg); font-size: 1.3rem;">Common Questions</h3>
+            <div class="faq-list">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>How far in advance should I book?</span>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">We recommend booking 3-6 months in advance for weddings and large events. Corporate events and smaller parties can often be accommodated with 4-6 weeks notice. Peak season (May-October) fills quickly, so earlier is always better.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>Do you accommodate dietary restrictions?</span>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">Absolutely. We regularly create menus that accommodate gluten-free, vegan, vegetarian, nut-free, dairy-free, and other dietary needs. Just let us know during the planning process and we'll build options that everyone can enjoy.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>What's included in the catering fee?</span>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">All packages include food preparation, serving staff, setup, and cleanup. The Signature and Grand packages also include table design coordination, a dedicated event captain, and complimentary tastings. Rentals (linens, china, glassware) can be arranged for an additional fee.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>What's your service area?</span>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">We serve the greater Asheville area and all of western North Carolina. We've also traveled to Greenville, SC, Knoxville, TN, and Charlotte, NC for special events. A travel fee may apply for venues more than 60 miles from our commissary kitchen.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span>What is the minimum guest count?</span>
+                  <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">Our minimum is 20 guests for most events. For intimate dinner parties (10-19 guests), we offer a private chef experience with a custom flat fee. Contact us for details on smaller events.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+          <div class="logo-text">
+            Harvest Table
+            <span>Catering Co.</span>
+          </div>
+        </a>
+        <p>Elegant, farm-to-table catering for weddings, corporate events, and private celebrations. Proudly serving the greater Asheville area with seasonal menus crafted from local ingredients.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="services.html">Menus</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Wedding Catering</a></li>
+          <li><a href="services.html">Corporate Events</a></li>
+          <li><a href="services.html">Private Parties</a></li>
+          <li><a href="services.html">Holiday Celebrations</a></li>
+          <li><a href="services.html">Outdoor Events</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li>85 Harvest Lane</li>
+          <li>Asheville, NC 28801</li>
+          <li><a href="tel:+18285551847">(828) 555-1847</a></li>
+          <li><a href="mailto:hello@harvesttablecatering.com">hello@harvesttablecatering.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Harvest Table Catering. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <p><a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

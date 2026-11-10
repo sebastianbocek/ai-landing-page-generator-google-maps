@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Sugar Ring Donuts</title>
+  <meta name="description" content="Get in touch with Sugar Ring Donuts. Place orders, ask about catering, or just say hello. Located at 742 Maple Street, Springfield.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <i class="fas fa-circle-notch"></i> Sugar <span>Ring</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Menu</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li class="nav-cta"><a href="contact.html" class="btn btn--primary">Order Now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero sprinkles" style="background: linear-gradient(rgba(255,248,240,0.82), rgba(255,236,214,0.82)), url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="sprinkle-dot sprinkle-dot--1"></div>
+    <div class="sprinkle-dot sprinkle-dot--3"></div>
+    <div class="sprinkle-dot sprinkle-dot--5"></div>
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Questions, orders, or just want to say hello? We would love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Sidebar -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label for="order-type">Order Type</label>
+              <select id="order-type" name="order-type">
+                <option value="" disabled selected>Select an option</option>
+                <option value="pickup">Pickup Order</option>
+                <option value="dozen">Dozen Box Order</option>
+                <option value="custom">Custom Order (3+ dozen)</option>
+                <option value="catering">Event Catering</option>
+                <option value="question">General Question</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you need. Include your preferred date and any flavor preferences for orders." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <!-- Contact Info -->
+          <div class="contact-info-card">
+            <h3>Contact Info</h3>
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Address</h4>
+                <p>742 Maple Street<br>Springfield, IL 62704</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+15552345678">(555) 234-5678</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:hello@sugarringdonuts.com">hello@sugarringdonuts.com</a></p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fab fa-instagram"></i>
+              <div>
+                <h4>Instagram</h4>
+                <p><a href="#">@sugarringdonuts</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="hours-card">
+            <h3>Shop Hours</h3>
+            <ul class="hours-list">
+              <li><span class="day">Monday</span><span class="time">6:00 AM - 2:00 PM</span></li>
+              <li><span class="day">Tuesday</span><span class="time">6:00 AM - 2:00 PM</span></li>
+              <li><span class="day">Wednesday</span><span class="time">6:00 AM - 2:00 PM</span></li>
+              <li><span class="day">Thursday</span><span class="time">6:00 AM - 2:00 PM</span></li>
+              <li><span class="day">Friday</span><span class="time">6:00 AM - 3:00 PM</span></li>
+              <li><span class="day">Saturday</span><span class="time">6:00 AM - 3:00 PM</span></li>
+              <li><span class="day">Sunday</span><span class="time">7:00 AM - 1:00 PM</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Find Us</span>
+        <h2>Visit Our Shop</h2>
+        <p>We are located on Maple Street in downtown Springfield, with free parking on the street and in the lot behind the building.</p>
+      </div>
+      <div class="map-placeholder">
+        <i class="fas fa-map-marker-alt"></i>
+        <p><strong>742 Maple Street, Springfield, IL 62704</strong></p>
+        <p>Interactive map would be displayed here</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Good Questions</span>
+        <h2>Frequently Asked</h2>
+        <p>Here are the answers to the questions we hear most often.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> How far in advance do I need to place a catering order?</h4>
+          <p>We ask for at least 48 hours notice for custom orders of 3 or more dozen. For event packages with donut walls or towers, we recommend a full week of lead time so we can plan the display and confirm flavors. Same-day dozen box orders are available on a first-come, first-served basis.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> Do you offer any gluten-free or vegan options?</h4>
+          <p>We currently offer two gluten-free cake donuts (Chocolate and Cinnamon Sugar) that are made with a dedicated gluten-free flour blend. We do not currently have vegan options on the regular menu, but we are working on it. Please let us know about any allergies when you place your order.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> How early should I come to get the best selection?</h4>
+          <p>Our full menu is usually available from the time we open until about 10:00 AM. Popular flavors like Maple Bacon and Boston Cream tend to sell out first. If you have your heart set on a specific donut, we recommend arriving before 9:00 AM or calling ahead to reserve.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> Can I order donuts for delivery?</h4>
+          <p>We offer delivery for catering and custom orders of 3 dozen or more within a 15-mile radius of our shop. For smaller orders, we recommend pickup. We do not currently partner with any third-party delivery apps because we want our donuts to reach you in the best possible condition.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> How fresh are the donuts?</h4>
+          <p>Every donut in our display case was made that same morning. Our bakers start at 3:00 AM and the first batch comes out of the fryer around 5:30 AM. We never sell day-old donuts. Anything left at the end of the day is donated to the Springfield Community Kitchen.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> Do you do custom designs for special events?</h4>
+          <p>Absolutely. Our head decorator Marcus can create custom glazes, branded logos, specific color schemes, and themed donut displays for weddings, corporate events, birthday parties, and more. Reach out through the form above or call us directly to discuss your vision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section sprinkles" style="background: linear-gradient(rgba(232,52,90,0.88), rgba(196,42,74,0.88)), url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="sprinkle-dot sprinkle-dot--1"></div>
+    <div class="sprinkle-dot sprinkle-dot--3"></div>
+    <div class="container">
+      <h2>We Cannot Wait to Hear From You</h2>
+      <p>Whether you are ordering a single donut or planning a 500-person event, we are here to help make it sweet.</p>
+      <div class="cta-btns">
+        <a href="tel:+15552345678" class="btn btn--white btn--lg"><i class="fas fa-phone"></i> &nbsp;Call Us Now</a>
+        <a href="services.html" class="btn btn--outline-white btn--lg">Browse Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Sugar Ring</h4>
+          <p>Handcrafted donuts made from scratch daily using family recipes since 1962. Every donut is a little moment of joy, baked with love in our shop on Maple Street.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Menu</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Popular</h4>
+          <a href="services.html">Classic Glazed</a>
+          <a href="services.html">Strawberry Sprinkle</a>
+          <a href="services.html">Maple Bacon</a>
+          <a href="services.html">Boston Cream</a>
+        </div>
+        <div class="footer-col">
+          <h4>Visit Us</h4>
+          <p>742 Maple Street<br>Springfield, IL 62704</p>
+          <p><a href="tel:+15552345678">(555) 234-5678</a></p>
+          <p><a href="mailto:hello@sugarringdonuts.com">hello@sugarringdonuts.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sugar Ring Donuts. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

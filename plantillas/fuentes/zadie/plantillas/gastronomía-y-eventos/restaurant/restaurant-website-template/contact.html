@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations | Osteria Bella</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+        <div class="logo-text">
+          Osteria Bella
+          <span>Modern Italian</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Reserve a Table</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero">
+    <div class="hero-content">
+      <div class="hero-badge">Reservations | Book Online or Call</div>
+      <h1>Reserve Your <em>Table</em></h1>
+      <p class="hero-description">Join us for an unforgettable dining experience. Book online or call us directly.</p>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3 style="margin-bottom: var(--space-lg);">Make a Reservation</h3>
+
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="(503) 555-0000" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+
+              <div class="form-group">
+                <label for="time">Preferred Time *</label>
+                <select id="time" name="time" required>
+                  <option value="">Select a time</option>
+                  <option value="17:00">5:00 PM</option>
+                  <option value="17:30">5:30 PM</option>
+                  <option value="18:00">6:00 PM</option>
+                  <option value="18:30">6:30 PM</option>
+                  <option value="19:00">7:00 PM</option>
+                  <option value="19:30">7:30 PM</option>
+                  <option value="20:00">8:00 PM</option>
+                  <option value="20:30">8:30 PM</option>
+                  <option value="21:00">9:00 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="party-size">Party Size *</label>
+                <select id="party-size" name="party-size" required>
+                  <option value="">Select party size</option>
+                  <option value="1">1 Guest</option>
+                  <option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option>
+                  <option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option>
+                  <option value="6">6 Guests</option>
+                  <option value="7-10">7-10 Guests</option>
+                  <option value="large">11+ Guests (Private Dining)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="seating">Seating Preference</label>
+                <select id="seating" name="seating">
+                  <option value="no-preference">No Preference</option>
+                  <option value="indoor">Indoor</option>
+                  <option value="patio">Patio (Seasonal)</option>
+                  <option value="bar">Bar Area</option>
+                  <option value="chefs-bar">Chef's Bar</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="occasion">Special Occasion?</label>
+              <select id="occasion" name="occasion">
+                <option value="">None</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="date-night">Date Night</option>
+                <option value="business">Business Dinner</option>
+                <option value="celebration">Other Celebration</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Special Requests or Dietary Restrictions</label>
+              <textarea id="notes" name="notes" placeholder="Let us know about allergies, dietary needs, or special requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Request Reservation</button>
+          </form>
+
+          <p style="font-size: 0.8125rem; color: var(--text-light); margin-top: var(--space-md); text-align: center;">We'll confirm your reservation via email or phone within 2 hours during business hours.</p>
+        </div>
+
+        <div class="contact-info">
+          <div class="section-header">
+            <div class="section-tag">Visit Us</div>
+            <h3>Get in Touch</h3>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div>
+                <h5>Reservations</h5>
+                <p>(503) 555-0147</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div>
+                <h5>Email</h5>
+                <p>hello@osteriabella.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div>
+                <h5>Address</h5>
+                <p>456 Main Street<br>Portland, OR 97205</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: var(--space-2xl);">
+            <h4 style="margin-bottom: var(--space-md);">Hours</h4>
+            <ul class="hours-list">
+              <li>
+                <span class="day">Monday</span>
+                <span class="time">Closed</span>
+              </li>
+              <li>
+                <span class="day">Tuesday - Thursday</span>
+                <span class="time">5:00 PM - 10:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Friday - Saturday</span>
+                <span class="time">5:00 PM - 11:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Sunday</span>
+                <span class="time">4:00 PM - 9:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="padding: var(--space-lg); background: var(--olive-muted); border-radius: var(--radius-lg);">
+            <h4 style="margin-bottom: var(--space-sm);">Need a Larger Party?</h4>
+            <p style="font-size: 0.9375rem; margin-bottom: 0;">For groups of 11 or more, please contact us about our private dining room. Email events@osteriabella.com or call to discuss your event.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policies Section -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Good to Know</div>
+        <h2>Reservation <em>Policies</em></h2>
+      </div>
+
+      <div class="features-grid cols-2">
+        <div class="feature-card">
+          <h3>Booking Window</h3>
+          <p>Reservations open 30 days in advance. For peak times (Friday/Saturday 7-8pm), we recommend booking at least 1 week ahead.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Cancellations</h3>
+          <p>Please cancel or modify at least 24 hours before your reservation. Late cancellations or no-shows may result in a $25 per person fee.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Arrival Time</h3>
+          <p>We hold tables for 15 minutes past the reservation time. If you're running late, please call so we can accommodate you.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Large Parties</h3>
+          <p>Groups of 6+ require a credit card to hold the reservation. A 20% gratuity is automatically added for parties of 6 or more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Private Dining Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="private-dining-grid">
+        <div class="private-dining-image"></div>
+        <div class="private-dining-info">
+          <div class="section-tag">Private Events</div>
+          <h3>Private Dining & Events</h3>
+          <p>
+            Our intimate private dining room accommodates up to 20 guests for seated dinners or 30 for cocktail receptions. Perfect for celebrations, corporate gatherings, rehearsal dinners, and milestone events.
+          </p>
+
+          <ul class="private-dining-features">
+            <li>Customized menus tailored to your event</li>
+            <li>Curated wine pairings available</li>
+            <li>Dedicated service team</li>
+            <li>A/V equipment for presentations</li>
+            <li>Flexible room setup options</li>
+          </ul>
+
+          <p>
+            <strong>Minimum spend requirements apply.</strong> Contact our events team to discuss your vision and receive a custom proposal.
+          </p>
+
+          <a href="mailto:events@osteriabella.com" class="btn btn-primary">Inquire About Private Events</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">FAQ</div>
+        <h2>Common <em>Questions</em></h2>
+      </div>
+
+      <div class="container-narrow">
+        <div style="border-bottom: 1px solid var(--border-color); padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">Do you take walk-ins?</h4>
+          <p style="font-size: 0.9375rem;">Yes! We always save a few tables for walk-in guests. Bar seating is first-come, first-served and a great option for smaller parties.</p>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--border-color); padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">Is there a dress code?</h4>
+          <p style="font-size: 0.9375rem;">We're smart casual. Jeans are welcome, but please no athletic wear, flip-flops, or beachwear. When in doubt, dress a little nicer. This is a place for memorable occasions.</p>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--border-color); padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">Do you accommodate dietary restrictions?</h4>
+          <p style="font-size: 0.9375rem;">Absolutely. Please note any allergies or dietary needs when booking. We offer vegetarian options and can prepare gluten-free pasta for any pasta dish.</p>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--border-color); padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">Is there parking available?</h4>
+          <p style="font-size: 0.9375rem;">Street parking is available. We also have a partnership with the Main Street Garage (one block east) offering validated parking for $5 for up to 3 hours.</p>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--border-color); padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">Do you offer gift cards?</h4>
+          <p style="font-size: 0.9375rem;">Yes! Gift cards are available in any denomination. Purchase in-restaurant or call us to order by phone. We'll mail it directly to your recipient.</p>
+        </div>
+
+        <div style="padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">Can you accommodate children?</h4>
+          <p style="font-size: 0.9375rem;">Children are welcome. We don't have a kids' menu, but we're happy to prepare smaller portions of pasta dishes or simple preparations. High chairs available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section style="background: var(--cream-dark); height: 400px; display: flex; align-items: center; justify-content: center;">
+    <div style="text-align: center;">
+      <h3>456 Main Street, Portland, OR 97205</h3>
+      <p style="color: var(--text-light);">Street parking available. Validated parking at Main Street Garage.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-utensils"></i></div>
+            <div class="logo-text">
+              Osteria Bella
+              <span>Modern Italian</span>
+            </div>
+          </a>
+          <p>Modern Italian cuisine crafted with love, served in a space designed for memorable moments.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">ig</a>
+            <a href="#" class="social-link">fb</a>
+            <a href="#" class="social-link">tw</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Reservations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Private Events</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Private Dining</a></li>
+            <li><a href="contact.html">Corporate Events</a></li>
+            <li><a href="contact.html">Wine Dinners</a></li>
+            <li><a href="contact.html">Catering</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>456 Main Street</li>
+            <li>Portland, OR 97205</li>
+            <li>(503) 555-0147</li>
+            <li>hello@osteriabella.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Osteria Bella. All rights reserved.</p>
+        <p>Made with love in Portland</p>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

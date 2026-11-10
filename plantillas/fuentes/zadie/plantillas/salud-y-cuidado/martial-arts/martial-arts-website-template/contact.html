@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Free Trial Class | Rising Sun Martial Arts</title>
+  <meta name="description" content="Book your free trial class at Rising Sun Martial Arts in Scottsdale, AZ. Contact us with questions, find our address, and check the class schedule.">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- HEADER -->
+  <header class="header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-mark"></div>
+        <div class="logo-text">
+          <span class="logo-name">Rising Sun</span>
+          <span class="logo-sub">Martial Arts</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Programs</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="btn btn-primary header-cta">Free Trial Class</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center top;">
+    <div class="container">
+      <div class="page-hero-content">
+        <p class="page-hero-eyebrow">Get Started</p>
+        <h1>Your First Step Starts Here</h1>
+        <p>Book your free trial class, ask a question, or just come in and see the dojo. We're straightforward about what we offer and who it's for.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRIAL FORM + SIDEBAR -->
+  <section class="section trial-form-section" id="trial">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Main form area -->
+        <div>
+          <!-- Trial signup form -->
+          <div class="form-card" style="margin-bottom: var(--space-8);">
+            <h2>Book a Free Trial Class</h2>
+            <p class="subtitle">Your first class is completely free with no commitment. Fill out the form and we'll reach out within one business day to confirm your spot.</p>
+            <form action="#" method="post">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" name="first_name" placeholder="First name" required>
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" id="last-name" name="last_name" placeholder="Last name" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(480) 000-0000">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="student-type">Who is Training?</label>
+                  <select id="student-type" name="student_type" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="myself-adult">Myself (Adult 18+)</option>
+                    <option value="my-teen">My teen (13-17)</option>
+                    <option value="my-child">My child (5-12)</option>
+                    <option value="family">Multiple family members</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="program-interest">Program of Interest</label>
+                  <select id="program-interest" name="program_interest">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="karate">Karate</option>
+                    <option value="judo">Judo</option>
+                    <option value="aikido">Aikido</option>
+                    <option value="not-sure">Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="preferred-day">Preferred Day to Visit</label>
+                <select id="preferred-day" name="preferred_day">
+                  <option value="" disabled selected>Select a day</option>
+                  <option value="monday">Monday</option>
+                  <option value="tuesday">Tuesday</option>
+                  <option value="wednesday">Wednesday</option>
+                  <option value="thursday">Thursday</option>
+                  <option value="saturday">Saturday</option>
+                  <option value="flexible">Flexible, I'll follow your recommendation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="experience">Prior Martial Arts Experience</label>
+                <select id="experience" name="experience">
+                  <option value="none">None, complete beginner</option>
+                  <option value="some">Some background (less than 2 years)</option>
+                  <option value="experienced">Experienced (2+ years, ranked)</option>
+                  <option value="returning">Returning student after a break</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Anything Else? (Optional)</label>
+                <textarea id="message" name="message" placeholder="Questions, specific goals, physical considerations we should know about — anything useful."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Reserve My Free Trial Class</button>
+              <p class="form-note" style="text-align: center; margin-top: var(--space-3);">No payment required. We'll confirm your appointment by email within 24 hours.</p>
+            </form>
+          </div>
+
+          <!-- General inquiry form -->
+          <div class="form-card">
+            <h2 style="font-size: 1.4rem;">General Inquiries</h2>
+            <p class="subtitle">Not ready for a trial class? Have questions first? Send a message and we'll get back to you.</p>
+            <form action="#" method="post">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="inq-name">Your Name</label>
+                  <input type="text" id="inq-name" name="name" placeholder="Full name" required>
+                </div>
+                <div class="form-group">
+                  <label for="inq-email">Email Address</label>
+                  <input type="email" id="inq-email" name="email" placeholder="your@email.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inq-subject">Subject</label>
+                <input type="text" id="inq-subject" name="subject" placeholder="What's your question about?">
+              </div>
+              <div class="form-group">
+                <label for="inq-message">Message</label>
+                <textarea id="inq-message" name="message" placeholder="Your question or message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline btn-lg" style="width: 100%;">Send Message</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="contact-sidebar">
+          <!-- Contact info -->
+          <div class="contact-info-card">
+            <h3>Dojo Information</h3>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <span class="contact-info-label">Address</span>
+                <span class="contact-info-value">8420 E. McDowell Road<br>Suite 105<br>Scottsdale, AZ 85257</span>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-info-label">Phone</span>
+                <span class="contact-info-value"><a href="tel:4805550129">(480) 555-0129</a></span>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-info-label">Email</span>
+                <span class="contact-info-value"><a href="mailto:train@risingsunma.com">train@risingsunma.com</a></span>
+              </div>
+              <div class="contact-info-item">
+                <span class="contact-info-label">Office Hours</span>
+                <span class="contact-info-value">Mon–Fri: 3:00 PM – 8:30 PM<br>Saturday: 8:30 AM – 2:30 PM<br>Sunday: Closed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="map-placeholder" style="margin-bottom: var(--space-6);">
+            Map — 8420 E. McDowell Rd, Scottsdale
+          </div>
+
+          <!-- Quick schedule -->
+          <div style="background: var(--bg-warm); border-radius: var(--radius-md); padding: var(--space-6); border: 1px solid var(--gray-light);">
+            <h3 style="font-family: var(--font-heading); font-size: 1.125rem; margin-bottom: var(--space-4);">Quick Schedule Reference</h3>
+            <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+              <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: var(--space-3); border-bottom: 1px solid var(--gray-light); font-size: 0.875rem;">
+                <span style="font-weight: 600;">Mon & Wed</span>
+                <span style="color: var(--text-muted);">Kids 4:30p, Adults 6:00p</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: var(--space-3); border-bottom: 1px solid var(--gray-light); font-size: 0.875rem;">
+                <span style="font-weight: 600;">Tue & Thu</span>
+                <span style="color: var(--text-muted);">Teens 5:00p, Adults 7:00p</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding-bottom: var(--space-3); border-bottom: 1px solid var(--gray-light); font-size: 0.875rem;">
+                <span style="font-weight: 600;">Friday</span>
+                <span style="color: var(--text-muted);">Open Mat 6:30p</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                <span style="font-weight: 600;">Saturday</span>
+                <span style="color: var(--text-muted);">Kids 9a, Adults 10:30a</span>
+              </div>
+            </div>
+            <div style="margin-top: var(--space-4);">
+              <a href="services.html#schedule" class="btn btn-outline" style="width: 100%; font-size: 0.8rem;">Full Schedule</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-warm">
+    <div class="container">
+      <div class="section-header">
+        <p class="hero-eyebrow" style="justify-content:center;">Before You Come In</p>
+        <h2>Common Questions</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">What should I wear to my first class?</div>
+          <div class="faq-answer">Comfortable athletic clothing — workout pants and a t-shirt are fine. You will train barefoot, so clean feet matter. Do not wear shoes on the mat. We'll provide a loaner gi (uniform) if you want to try the feel of traditional training attire. If you enroll, we ask that you purchase a proper gi within your first month. We have recommendations and can help you order the right size.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Is there an age requirement?</div>
+          <div class="faq-answer">Our youngest students start at age 5 in the Kids Karate program. We have no upper age limit for adults. Our oldest active student is 71. What matters is that you are physically able to train safely. If you have significant health concerns, mention them when you register and we will discuss what modifications or programs make sense for you.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">I'm a complete beginner as an adult. Is that going to be a problem?</div>
+          <div class="faq-answer">No. Adult beginners are common and welcome. The adult class has students at every level, and our instruction is structured so that beginners work on foundational material while advanced students work on more complex curriculum. You will not be thrown into advanced sparring on your first day. You will be taught fundamentals with patience and specificity.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">How does belt testing work?</div>
+          <div class="faq-answer">Sensei Hayashi recommends students for testing when he believes they are ready, not on a fixed calendar. A student who comes to class consistently and applies themselves will typically be ready to test every three to four months in the lower ranks. Testing fees range from $35 to $75. We do not hold artificial testing cycles to collect fees. Rank is earned on the mat, not on a schedule.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Do my kids need to be in good shape or have coordination to start?</div>
+          <div class="faq-answer">Not at all. Martial arts training develops coordination and fitness over time. We don't expect children to arrive with athletic ability — we help build it. Children who feel awkward, unfocused, or unconfident are often the ones who benefit most from structured dojo training. If your child can follow basic instructions and is willing to try, they belong here.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">What is the contract or commitment?</div>
+          <div class="faq-answer">Monthly tuition is billed month-to-month with no long-term contract required. We ask for 30 days' written notice to cancel. There is a one-time registration fee of $65 for new students, which covers their registration with the dojo and initial assessment. The free trial class has no strings attached.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I watch a class before deciding?</div>
+          <div class="faq-answer">Yes, and we encourage it. You're welcome to observe a class from the designated viewing area without obligation. We prefer that prospective adult students actually participate in the free trial rather than only observing, because the experience of training tells you far more than watching. But if you want to see the dojo and a class first, that's completely fine. Call ahead and we'll make sure the timing works.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Do you offer classes for students with prior rank from another school?</div>
+          <div class="faq-answer">Yes. Students with prior rank are welcome to train with us. Sensei Hayashi will assess your current level during your first few classes and place you appropriately. Prior ranks are acknowledged, but formal rank recognition within our JKA-affiliated program requires a technical evaluation. Most experienced students find this straightforward. We don't make anyone re-earn everything from scratch without good reason.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-content">
+        <h2>The Dojo is Open. The Mat is Ready.</h2>
+        <p>Fill out the form above or call us directly. First class is free. The rest is up to you.</p>
+        <div class="cta-actions">
+          <a href="#trial" class="btn btn-primary btn-lg">Book the Free Trial</a>
+          <a href="tel:4805550129" class="btn btn-outline-white btn-lg">Call (480) 555-0129</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <div class="logo-mark"></div>
+            <span class="footer-logo-name">Rising Sun Martial Arts</span>
+          </a>
+          <p>Traditional Japanese martial arts instruction for all ages and experience levels. A real dojo built on discipline, respect, and continuous growth.</p>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">Navigation</p>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About the Dojo</a></li>
+            <li><a href="services.html">Programs & Schedule</a></li>
+            <li><a href="contact.html">Contact & Trial Class</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">Disciplines</p>
+          <ul class="footer-links">
+            <li><a href="services.html">Karate</a></li>
+            <li><a href="services.html">Judo</a></li>
+            <li><a href="services.html">Aikido</a></li>
+            <li><a href="services.html">Iaido</a></li>
+            <li><a href="services.html">Private Lessons</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <p class="footer-heading">Contact</p>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Phone</span>
+            <span class="footer-contact-value"><a href="tel:4805550129">(480) 555-0129</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Email</span>
+            <span class="footer-contact-value"><a href="mailto:train@risingsunma.com">train@risingsunma.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-label">Location</span>
+            <span class="footer-contact-value">Scottsdale, AZ</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Rising Sun Martial Arts. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The Corner Deli</title>
+  <meta name="description" content="Get in touch with The Corner Deli. Place an order, ask about catering, or just say hello. Located at 247 Oak Street, Brooklyn.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="checkered-border-sm"></div>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-sandwich"></i></div>
+        The Corner Deli
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Menu</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="header-cta">Order Online</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <span class="hero-label">Get in Touch</span>
+      <h1>Contact Us</h1>
+      <p>Place an order, ask about catering, or just stop by and say hello. We are always happy to hear from you.</p>
+    </div>
+  </section>
+  <div class="checkered-border"></div>
+
+  <!-- Contact Form + Info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h2 style="margin-bottom: 8px;">Send Us a Message</h2>
+          <p style="color: var(--color-gray); margin-bottom: 28px; font-size: 0.95rem;">Whether it is a catering request, feedback, or a question about the menu, we will get back to you within one business day.</p>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(718) 555-0000">
+            </div>
+            <div class="form-group">
+              <label for="inquiry">Inquiry Type</label>
+              <select id="inquiry" name="inquiry">
+                <option value="general">General Question</option>
+                <option value="catering">Catering Request</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you need..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fas fa-location-dot"></i>
+            <div>
+              <h4>Visit Us</h4>
+              <p>247 Oak Street<br>Brooklyn, NY 11201</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <div>
+              <h4>Call Us</h4>
+              <p>(718) 555-0147<br>Call ahead for pickup orders</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email Us</h4>
+              <p>hello@thecornerdeli.com<br>catering@thecornerdeli.com</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Hours</h4>
+              <p>Monday - Saturday: 6:00 AM - 8:00 PM<br>Sunday: 7:00 AM - 6:00 PM</p>
+            </div>
+          </div>
+          <!-- Map Placeholder -->
+          <div class="map-placeholder">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>247 Oak Street, Brooklyn, NY 11201</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Common Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Got a question? Chances are we have answered it before. If not, give us a call.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4><i class="fas fa-truck" style="margin-right: 8px;"></i> Do you deliver?</h4>
+          <p>We offer delivery within a 2-mile radius through DoorDash and Uber Eats. For large catering orders, we handle delivery ourselves -- just ask when you place the order. There is no delivery fee for catering orders over $200.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-phone" style="margin-right: 8px;"></i> Can I order ahead?</h4>
+          <p>Absolutely. Call us at (718) 555-0147 and we will have your order ready when you arrive. For the lunch rush (11 AM - 1 PM), we recommend calling at least 30 minutes ahead so you do not have to wait.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-wheat-awn" style="margin-right: 8px;"></i> Do you have gluten-free options?</h4>
+          <p>We offer gluten-free wraps as a bread substitute for any sandwich. Our prepared salads (potato salad, coleslaw) are naturally gluten-free. Just let us know your dietary needs and we will work with you.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-users" style="margin-right: 8px;"></i> What is the minimum for catering?</h4>
+          <p>Our smallest catering platters serve 10 people, starting at $29.95 for sides and $79.95 for sandwich trays. There is no order minimum beyond the platter sizes. We ask for 24-hour advance notice for all catering orders.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-scale-balanced" style="margin-right: 8px;"></i> Do you slice meats and cheeses to order?</h4>
+          <p>Yes, that is what the deli counter is for. We carry over 30 varieties of Boar's Head meats and cheeses, all sliced fresh to your preferred thickness. No pre-packaged products. Grab a number and we will take care of you.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-car" style="margin-right: 8px;"></i> Is there parking?</h4>
+          <p>There is metered street parking available on Oak Street and the surrounding blocks. The municipal lot on Elm Avenue (one block south) offers 2-hour free parking. Most of our regulars walk or bike over.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2>Come See Us</h2>
+      <p>The counter is open, the bread is fresh, and Eddie is ready to take your order.</p>
+      <div class="cta-details" style="justify-content: center;">
+        <div><i class="fas fa-clock"></i> Mon-Sat: 6:00 AM - 8:00 PM | Sun: 7:00 AM - 6:00 PM</div>
+        <div><i class="fas fa-location-dot"></i> 247 Oak Street, Brooklyn, NY 11201</div>
+      </div>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="services.html" class="btn btn-secondary">View the Menu</a>
+        <a href="tel:7185550147" class="btn btn-outline">Call to Order</a>
+      </div>
+    </div>
+  </section>
+  <div class="checkered-border"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-sandwich"></i></div>
+            The Corner Deli
+          </a>
+          <p>Family-owned since 1987. Overstuffed sandwiches, house-cured meats, and homemade sides made fresh every day in the heart of the neighborhood.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Menu</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <div class="footer-links">
+            <a href="services.html">Sandwiches</a>
+            <a href="services.html">Hot Entrees</a>
+            <a href="services.html">Sides &amp; Soups</a>
+            <a href="services.html">Catering</a>
+          </div>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <div class="footer-hours">
+            <p>Mon - Sat: 6:00 AM - 8:00 PM</p>
+            <p>Sunday: 7:00 AM - 6:00 PM</p>
+            <p style="margin-top: 12px;">247 Oak Street<br>Brooklyn, NY 11201</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Corner Deli. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

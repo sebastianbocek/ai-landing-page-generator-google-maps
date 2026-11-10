@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with FARMFRESH — contact us for orders, partnerships, or any questions about our organic produce.">
+  <title>Contact Us — FARMFRESH</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥬</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__brand">
+        <span class="header__brand-icon">🥬</span>
+        FARMFRESH
+      </a>
+
+      <nav class="header__nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="shop.html" class="header__cart" aria-label="Shopping cart">
+          &#128722;
+          <span class="header__cart-count" data-cart-count>0</span>
+        </a>
+        <button class="header__burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="page-hero__content">
+      <div class="page-hero__breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+      <h1>Get in Touch</h1>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT CARDS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-cards reveal-stagger">
+        <div class="contact-card">
+          <div class="contact-card__icon">📍</div>
+          <h3 class="contact-card__title">Visit Us</h3>
+          <p class="contact-card__text">
+            142 Orchard Lane<br>
+            Portland, OR 97201
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card__icon">📞</div>
+          <h3 class="contact-card__title">Call Us</h3>
+          <p class="contact-card__text">
+            (503) 555-0142<br>
+            Mon - Fri, 8am - 6pm
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card__icon">✉️</div>
+          <h3 class="contact-card__title">Email Us</h3>
+          <p class="contact-card__text">
+            hello@farmfresh.com<br>
+            We reply within 24 hours
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT FORM ============ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="contact-form-wrapper">
+        <div class="reveal-left">
+          <div class="section-label">Send a Message</div>
+          <h2 class="section-title">We'd Love to Hear From You</h2>
+          <p style="color:var(--color-text-secondary);line-height:var(--leading-relaxed);margin-bottom:var(--space-8);">
+            Whether you have a question about our products, want to partner with us, or just want
+            to say hello — fill out the form and we'll get back to you within 24 hours.
+          </p>
+
+          <form class="contact-form" data-form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <select id="contact-subject" name="subject" required>
+                <option value="" disabled selected>Choose a topic</option>
+                <option value="general">General Inquiry</option>
+                <option value="order">Order Support</option>
+                <option value="partnership">Farm Partnership</option>
+                <option value="wholesale">Wholesale</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+            </div>
+
+            <div>
+              <button type="submit" class="btn btn--primary btn--lg">Send Message</button>
+              <span class="form-ok">Message sent! We'll get back to you within 24 hours.</span>
+              <span class="form-err">Please fill in all fields correctly.</span>
+            </div>
+          </form>
+        </div>
+
+        <div class="reveal-right">
+          <div class="section-label">Find Us</div>
+          <h3 class="section-title" style="font-size:var(--text-2xl);">Farm Headquarters</h3>
+          <p style="color:var(--color-text-secondary);line-height:var(--leading-relaxed);margin-bottom:var(--space-6);">
+            Our main distribution center is located in the heart of Portland's Pearl District.
+            Stop by to see our operation, visit the farm shop, or just say hello.
+          </p>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">📍</div>
+            <div class="contact-detail__text">
+              <strong>Address</strong>
+              <span>142 Orchard Lane, Portland, OR 97201</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">🕐</div>
+            <div class="contact-detail__text">
+              <strong>Farm Shop Hours</strong>
+              <span>Monday - Saturday: 8:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">📞</div>
+            <div class="contact-detail__text">
+              <strong>Phone</strong>
+              <span>(503) 555-0142</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">✉️</div>
+            <div class="contact-detail__text">
+              <strong>Email</strong>
+              <span>hello@farmfresh.com</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail__icon">🚗</div>
+            <div class="contact-detail__text">
+              <strong>Free Delivery Zone</strong>
+              <span>Within 30 miles of Portland metro area</span>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div style="
+            margin-top: var(--space-6);
+            background: var(--green-50);
+            border-radius: var(--radius-lg);
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-muted);
+            font-size: var(--text-sm);
+            border: 2px dashed var(--color-border);
+          ">
+            Map embed area — add your Google Maps iframe here
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ Teaser ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center mb-8 reveal">
+        <div class="section-label" style="justify-content:center;">Frequently Asked</div>
+        <h2 class="section-title" style="margin-left:auto;margin-right:auto;">Common Questions</h2>
+      </div>
+
+      <div style="max-width:700px;margin:0 auto;">
+        <details class="reveal" style="background:var(--white);border-radius:var(--radius-md);padding:var(--space-5);margin-bottom:var(--space-3);box-shadow:var(--shadow-sm);cursor:pointer;">
+          <summary style="font-weight:var(--weight-semibold);font-size:var(--text-base);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            How fast is delivery?
+            <span style="font-size:1.2rem;color:var(--color-primary);transition:transform 0.2s;">+</span>
+          </summary>
+          <p style="margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-secondary);line-height:var(--leading-relaxed);">
+            Most orders are delivered within 24 hours of harvest. We operate delivery routes
+            Monday through Saturday, with next-day delivery available for orders placed before 6 PM.
+          </p>
+        </details>
+
+        <details class="reveal" style="background:var(--white);border-radius:var(--radius-md);padding:var(--space-5);margin-bottom:var(--space-3);box-shadow:var(--shadow-sm);cursor:pointer;">
+          <summary style="font-weight:var(--weight-semibold);font-size:var(--text-base);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            What if I'm not satisfied?
+            <span style="font-size:1.2rem;color:var(--color-primary);transition:transform 0.2s;">+</span>
+          </summary>
+          <p style="margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-secondary);line-height:var(--leading-relaxed);">
+            We offer a 100% freshness guarantee. If anything doesn't meet your expectations,
+            contact us within 48 hours and we'll either replace it or give you a full credit.
+          </p>
+        </details>
+
+        <details class="reveal" style="background:var(--white);border-radius:var(--radius-md);padding:var(--space-5);margin-bottom:var(--space-3);box-shadow:var(--shadow-sm);cursor:pointer;">
+          <summary style="font-weight:var(--weight-semibold);font-size:var(--text-base);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            Can I become a FARMFRESH partner farm?
+            <span style="font-size:1.2rem;color:var(--color-primary);transition:transform 0.2s;">+</span>
+          </summary>
+          <p style="margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-secondary);line-height:var(--leading-relaxed);">
+            Absolutely. We're always looking for certified organic farms within our delivery zones.
+            Reach out through our contact form with details about your farm and we'll be in touch
+            to discuss partnership opportunities.
+          </p>
+        </details>
+
+        <details class="reveal" style="background:var(--white);border-radius:var(--radius-md);padding:var(--space-5);margin-bottom:var(--space-3);box-shadow:var(--shadow-sm);cursor:pointer;">
+          <summary style="font-weight:var(--weight-semibold);font-size:var(--text-base);list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            Do you offer wholesale pricing?
+            <span style="font-size:1.2rem;color:var(--color-primary);transition:transform 0.2s;">+</span>
+          </summary>
+          <p style="margin-top:var(--space-3);font-size:var(--text-sm);color:var(--color-text-secondary);line-height:var(--leading-relaxed);">
+            Yes. We offer volume discounts for restaurants, catering companies, and corporate offices.
+            Contact us with your requirements and we'll create a custom pricing plan for you.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="newsletter__inner reveal-scale">
+        <div class="newsletter__content">
+          <h2 class="newsletter__title">Stay Fresh with Us</h2>
+          <p class="newsletter__desc">
+            Get seasonal recipes, farm updates, and exclusive weekly deals delivered to your inbox.
+          </p>
+        </div>
+        <form class="newsletter__form" data-form>
+          <input
+            type="email"
+            class="newsletter__input"
+            placeholder="Your email address"
+            required
+            aria-label="Email address for newsletter"
+          >
+          <button type="submit" class="newsletter__btn">Subscribe</button>
+          <span class="form-ok">Welcome to the FARMFRESH family! Check your inbox.</span>
+          <span class="form-err">Please enter a valid email address.</span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <span class="footer__brand-icon">🥬</span>
+            FARMFRESH
+          </div>
+          <p class="footer__desc">
+            Connecting local organic farms with your table. Fresh, honest food delivered daily.
+          </p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">&#9733;</a>
+            <a href="#" aria-label="Instagram">&#9734;</a>
+            <a href="#" aria-label="Twitter">&#9733;</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Categories</h4>
+          <div class="footer__links">
+            <a href="shop.html">Fresh Fruits</a>
+            <a href="shop.html">Vegetables</a>
+            <a href="shop.html">Organic Goods</a>
+            <a href="shop.html">Seasonal Picks</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Newsletter</h4>
+          <p style="font-size: 0.875rem; color: var(--dark-400); margin-bottom: var(--space-3);">
+            Subscribe for weekly farm updates and exclusive deals.
+          </p>
+          <form class="footer__newsletter-input" data-form>
+            <input type="email" placeholder="Your email" required aria-label="Footer newsletter email">
+            <button type="submit">Go</button>
+            <span class="form-ok" style="font-size:12px;padding:4px 8px;margin-top:4px;">Subscribed!</span>
+            <span class="form-err" style="font-size:12px;padding:4px 8px;margin-top:4px;">Enter valid email.</span>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> FARMFRESH. All rights reserved.</p>
+        <div class="footer__payments">
+          <img src="assets/img/payment.png" alt="Accepted payment methods" loading="lazy" height="28">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

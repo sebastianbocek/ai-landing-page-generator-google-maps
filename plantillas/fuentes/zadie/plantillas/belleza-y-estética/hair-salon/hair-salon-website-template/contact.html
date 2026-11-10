@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Now | Studio Luxe Hair Salon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">&#10023;</div>
+        <div class="logo-text">
+          Studio Luxe
+          <span>Hair Salon</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Book Now</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero">
+    <div class="hero-content">
+      <div class="hero-badge">New Clients: 15% Off First Visit</div>
+      <h1>Book Your <em>Appointment</em></h1>
+      <p class="hero-description">Ready for beautiful hair? Book online or give us a call. We can't wait to see you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3 style="margin-bottom: var(--space-lg);">Request an Appointment</h3>
+
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
+            </div>
+
+            <div class="form-group">
+              <label for="stylist">Preferred Stylist</label>
+              <select id="stylist" name="stylist">
+                <option value="">No preference</option>
+                <option value="isabella">Isabella Romano - Color, Balayage, Bridal</option>
+                <option value="marcus">Marcus Chen - Precision Cuts, Texture</option>
+                <option value="sofia">Sofia Martinez - Vivid Color, Extensions</option>
+                <option value="emma">Emma Thompson - Blowouts, Styling</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Interested In *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="haircut">Haircut</option>
+                <option value="color-single">Single Process Color</option>
+                <option value="color-highlights">Highlights</option>
+                <option value="color-balayage">Balayage</option>
+                <option value="color-vivid">Vivid/Fashion Color</option>
+                <option value="color-correction">Color Correction</option>
+                <option value="blowout">Blowout</option>
+                <option value="styling">Special Occasion Styling</option>
+                <option value="bridal">Bridal</option>
+                <option value="treatment">Treatment</option>
+                <option value="extensions">Extensions</option>
+                <option value="consultation">Consultation Only</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date">
+            </div>
+
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <select id="time" name="time">
+                <option value="">Select a time</option>
+                <option value="morning">Morning (9am - 12pm)</option>
+                <option value="afternoon">Afternoon (12pm - 4pm)</option>
+                <option value="evening">Evening (4pm - 8pm)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="new-client">Are you a new client?</label>
+              <select id="new-client" name="new-client">
+                <option value="yes">Yes, this is my first visit</option>
+                <option value="no">No, I've been here before</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Additional Notes</label>
+              <textarea id="notes" name="notes" placeholder="Tell us about your hair goals, any concerns, or special requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Request Appointment</button>
+          </form>
+
+          <p style="font-size: 0.8125rem; color: var(--gray); margin-top: var(--space-md); text-align: center;">We'll confirm your appointment within 24 hours via email or phone.</p>
+        </div>
+
+        <div class="contact-info">
+          <div class="section-header">
+            <div class="section-tag">Get in Touch</div>
+            <h3>Visit Us</h3>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h5>Phone</h5>
+                <p>(206) 555-0123</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h5>Email</h5>
+                <p>hello@studioluxe.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h5>Address</h5>
+                <p>789 Elm Avenue<br>Seattle, WA 98101</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="salon-hours">
+            <h4>Salon Hours</h4>
+            <ul class="hours-list">
+              <li>
+                <span class="day">Monday</span>
+                <span class="time">Closed</span>
+              </li>
+              <li>
+                <span class="day">Tuesday</span>
+                <span class="time">10:00 AM - 7:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Wednesday</span>
+                <span class="time">10:00 AM - 7:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Thursday</span>
+                <span class="time">10:00 AM - 8:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Friday</span>
+                <span class="time">9:00 AM - 6:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Saturday</span>
+                <span class="time">9:00 AM - 5:00 PM</span>
+              </li>
+              <li>
+                <span class="day">Sunday</span>
+                <span class="time">Closed</span>
+              </li>
+            </ul>
+          </div>
+
+          <div style="margin-top: var(--space-xl); padding: var(--space-lg); background: var(--blush-muted); border-radius: var(--radius-lg);">
+            <h4 style="margin-bottom: var(--space-sm);">New Client Offer</h4>
+            <p style="font-size: 0.9375rem; margin-bottom: 0;">First-time visitors enjoy 15% off any service. Mention this offer when booking!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policies Section -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Good to Know</div>
+        <h2>Salon <em>Policies</em></h2>
+      </div>
+
+      <div class="services-grid cols-2">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-calendar-days"></i></div>
+          <h3>Booking</h3>
+          <p>We recommend booking 1-2 weeks in advance, especially for color services. Walk-ins are welcome based on availability.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-xmark"></i></div>
+          <h3>Cancellations</h3>
+          <p>Please provide 24 hours notice for cancellations or rescheduling. Late cancellations may incur a fee.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3>Late Arrivals</h3>
+          <p>If you're running late, please call. We'll do our best to accommodate, but may need to modify your service.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-credit-card"></i></div>
+          <h3>Payment</h3>
+          <p>We accept cash, all major credit cards, and Venmo. Gratuity is not included and always appreciated.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">FAQ</div>
+        <h2">Common <em>Questions</em></h2>
+      </div>
+
+      <div class="container-narrow">
+        <div style="border-bottom: 1px solid var(--gray-light); padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">How do I prepare for my color appointment?</h4>
+          <p style="font-size: 0.9375rem;">Don't wash your hair the day of your appointment. Natural oils help protect your scalp. Arrive with dry hair and no styling products. Bring photos of colors you love!</p>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--gray-light); padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">How long will my appointment take?</h4>
+          <p style="font-size: 0.9375rem;">Haircuts: 45-60 minutes. Single process color: 1.5-2 hours. Highlights/Balayage: 2-3 hours. Full transformations or color corrections may take longer.</p>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--gray-light); padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">Do you offer consultations?</h4>
+          <p style="font-size: 0.9375rem;">Yes! Consultations are complimentary and recommended for color corrections, major changes, and extensions. They typically take 15-20 minutes.</p>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--gray-light); padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">Can I bring my kids?</h4>
+          <p style="font-size: 0.9375rem;">We welcome children for kids' cuts. For adult services, we recommend arranging childcare. Our space works best when it's calm and relaxing for everyone.</p>
+        </div>
+
+        <div style="border-bottom: 1px solid var(--gray-light); padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">Do you sell products?</h4>
+          <p style="font-size: 0.9375rem;">Yes! We carry Oribe, Olaplex, and other professional products. Your stylist can recommend the perfect products for your hair type and style.</p>
+        </div>
+
+        <div style="padding: var(--space-md) 0;">
+          <h4 style="margin-bottom: var(--space-sm);">What if I'm unhappy with my service?</h4>
+          <p style="font-size: 0.9375rem;">Your satisfaction is our priority. If something isn't right, contact us within 7 days and we'll make it right. We want you to love your hair!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section style="background: var(--gray-light); height: 400px; display: flex; align-items: center; justify-content: center;">
+    <div style="text-align: center;">
+      <i class="fa-solid fa-location-dot" style="font-size: 3rem; color: var(--blush-dark); margin-bottom: var(--space-md); display: block;"></i>
+      <h3>789 Elm Avenue, Seattle, WA 98101</h3>
+      <p style="color: var(--gray);">Street parking available. Located in Capitol Hill.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">&#10023;</div>
+            <div class="logo-text">
+              Studio Luxe
+              <span>Hair Salon</span>
+            </div>
+          </a>
+          <p>Where artistry meets expertise. Creating beautiful hair and confident clients since 2010.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">ig</a>
+            <a href="#" class="social-link">fb</a>
+            <a href="#" class="social-link">pt</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Haircuts</a></li>
+            <li><a href="services.html">Color</a></li>
+            <li><a href="services.html">Styling</a></li>
+            <li><a href="services.html">Treatments</a></li>
+            <li><a href="services.html">Bridal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>789 Elm Avenue</li>
+            <li>Seattle, WA 98101</li>
+            <li>(206) 555-0123</li>
+            <li>hello@studioluxe.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Studio Luxe Hair Salon. All rights reserved.</p>
+        <p>Crafted with care in Seattle</p>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

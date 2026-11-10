@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Illustration of a Mediterranean villa with pool">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fce1c4"/><stop offset="1" stop-color="#fdf3e6"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#sky)"/>
+  <circle cx="660" cy="110" r="46" fill="#fff" opacity=".55"/>
+  <g fill="#fff" opacity=".7"><ellipse cx="170" cy="110" rx="70" ry="16"/><ellipse cx="220" cy="96" rx="40" ry="16"/><ellipse cx="520" cy="70" rx="50" ry="11"/></g>
+  <path d="M0 470c160-24 300-20 420-8s260 10 380-6v144H0z" fill="#c2c98f"/>
+  <g transform="translate(120 330)"><rect x="-4" width="8" height="200" fill="#7a5a3a"/><g fill="#4f7a3a"><path d="M0 0c-40-10-70 10-80 30 30-15 60-18 80-30z"/><path d="M0 0c40-10 70 10 80 30-30-15-60-18-80-30z"/><path d="M0 0c-20-30-50-40-70-34 26 6 50 20 70 34z"/><path d="M0 0c20-30 50-40 70-34-26 6-50 20-70 34z"/></g></g>
+  <rect x="220" y="300" width="400" height="200" fill="#f7eee0"/>
+  <path d="M200 305h440l-40-50H240z" fill="#c8623e"/>
+  <rect x="360" y="200" width="200" height="100" fill="#f7eee0"/><path d="M345 205h230l-30-40H375z" fill="#c8623e"/>
+  <path d="M395 300v-60a25 25 0 0 1 50 0v60M475 300v-60a25 25 0 0 1 50 0v60" fill="#bcd6e6" stroke="#2b3a44" stroke-width="4"/>
+  <path d="M250 470v-80a30 30 0 0 1 60 0v80z" fill="#bcd6e6" stroke="#2b3a44" stroke-width="4"/>  <path d="M340 470v-80a30 30 0 0 1 60 0v80z" fill="#bcd6e6" stroke="#2b3a44" stroke-width="4"/>  <path d="M440 470v-80a30 30 0 0 1 60 0v80z" fill="#bcd6e6" stroke="#2b3a44" stroke-width="4"/>  <path d="M530 470v-80a30 30 0 0 1 60 0v80z" fill="#bcd6e6" stroke="#2b3a44" stroke-width="4"/>
+  <rect x="160" y="500" width="520" height="40" fill="#e9dcc4"/><rect x="220" y="506" width="380" height="28" rx="4" fill="#5fb3c8"/><path d="M240 520c20-6 40 6 60 0s40-6 60 0 40 6 60 0 40-6 60 0" stroke="#fff" stroke-width="3" fill="none" opacity=".6"/>
+  <g transform="translate(700 420) scale(1.1)"><rect x="-5" y="0" width="10" height="60" fill="#6b4f3a"/><circle cy="-10" r="42" fill="#6b8f4a"/><circle cx="-24" cy="10" r="28" fill="#6b8f4a"/><circle cx="24" cy="8" r="30" fill="#6b8f4a"/><circle cx="-10" cy="-26" r="20" fill="#fff" opacity=".08"/></g>
+  <rect y="540" width="800" height="60" fill="#d9d4c7"/>
+  <rect y="536" width="800" height="6" fill="#c4bdad"/>
+</svg>

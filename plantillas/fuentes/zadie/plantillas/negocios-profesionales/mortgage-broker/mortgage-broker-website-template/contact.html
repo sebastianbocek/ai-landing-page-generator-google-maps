@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | KeyRate Mortgage Group</title>
+  <meta name="description" content="Contact KeyRate Mortgage Group for a free mortgage consultation. Get pre-approved, ask questions, or schedule a meeting with our loan officers.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-key"></i></div>
+        <div class="logo-text">KeyRate<span>Mortgage Group</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Loan Options</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Get Pre-Approved</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Ready to get started? Have a question? Reach out and we'll get back to you within one business day.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <h2 style="margin-bottom:8px;">Send Us a Message</h2>
+          <p style="color:var(--gray);margin-bottom:32px;">Fill out the form below and one of our loan officers will reach out to discuss your options. No obligation, no pressure.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+              </div>
+              <div class="form-group">
+                <label for="loan-type">Loan Type Interest</label>
+                <select id="loan-type" name="loan-type">
+                  <option value="">Select a loan type...</option>
+                  <option value="conventional">Conventional Loan</option>
+                  <option value="fha">FHA Loan</option>
+                  <option value="va">VA Loan</option>
+                  <option value="usda">USDA Loan</option>
+                  <option value="jumbo">Jumbo Loan</option>
+                  <option value="refinance">Refinancing</option>
+                  <option value="not-sure">Not Sure Yet</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="price-range">Purchase Price Range</label>
+                <select id="price-range" name="price-range">
+                  <option value="">Select a range...</option>
+                  <option value="under-200k">Under $200,000</option>
+                  <option value="200k-350k">$200,000 - $350,000</option>
+                  <option value="350k-500k">$350,000 - $500,000</option>
+                  <option value="500k-750k">$500,000 - $750,000</option>
+                  <option value="750k-1m">$750,000 - $1,000,000</option>
+                  <option value="over-1m">Over $1,000,000</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="timeline">Timeline</label>
+                <select id="timeline" name="timeline">
+                  <option value="">Select your timeline...</option>
+                  <option value="browsing">Just Browsing</option>
+                  <option value="3-months">Within 3 Months</option>
+                  <option value="6-months">Within 6 Months</option>
+                  <option value="1-year">Within a Year</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your situation, questions, or anything else we should know..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <p style="font-size:0.8rem;color:var(--gray);margin-top:12px;text-align:center;">By submitting this form, you agree to be contacted about mortgage options. We respect your privacy and will never share your information.</p>
+          </form>
+        </div>
+        <div class="contact-info-sidebar">
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <h4>Our Office</h4>
+              <p>742 Oak Street, Suite 200<br>Springfield, CA 90210</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:5551234567">(555) 123-4567</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:hello@keyratemortgage.com">hello@keyratemortgage.com</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-id-card"></i></div>
+            <div>
+              <h4>NMLS Number</h4>
+              <p>#123456</p>
+            </div>
+          </div>
+          <div class="contact-hours">
+            <h4><i class="fas fa-clock" style="margin-right:8px;color:var(--accent);"></i> Office Hours</h4>
+            <ul>
+              <li><span>Monday - Friday</span><strong>9:00 AM - 6:00 PM</strong></li>
+              <li><span>Saturday</span><strong>10:00 AM - 2:00 PM</strong></li>
+              <li><span>Sunday</span><strong>Closed</strong></li>
+            </ul>
+          </div>
+          <div style="background:var(--off-white);border-radius:var(--radius);padding:20px;border:1px solid rgba(0,0,0,0.04);">
+            <h4 style="margin-bottom:8px;font-size:1rem;"><i class="fas fa-video" style="margin-right:8px;color:var(--secondary);"></i> Virtual Meetings</h4>
+            <p style="font-size:0.9rem;color:var(--gray);">Can't make it to the office? We offer consultations via phone and video call at times that work for your schedule, including evenings by appointment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section-offwhite" style="padding-top:0;">
+    <div class="container">
+      <div class="map-placeholder">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Map would be displayed here - 742 Oak Street, Suite 200, Springfield, CA 90210</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the most common questions we hear from borrowers.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> What's the difference between a mortgage broker and a bank?</h4>
+          <p>A bank can only offer you their own loan products. A mortgage broker like KeyRate works with 50+ lenders to shop rates and terms on your behalf. Think of it like the difference between buying from one dealership versus having someone search every dealership in town for the best deal. Our service costs you nothing extra because we're compensated by the lender you choose.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> How much home can I afford?</h4>
+          <p>A general guideline is that your total monthly housing payment (mortgage, taxes, insurance) should be no more than 28-31% of your gross monthly income. However, the actual amount depends on your specific debt, credit score, down payment, and the loan program. The best way to find out is to get pre-approved - we'll run the numbers together and give you a clear range.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> What credit score do I need to get a mortgage?</h4>
+          <p>It depends on the loan type. FHA loans accept scores as low as 500 (with 10% down) or 580 (with 3.5% down). Conventional loans typically require 620 or higher. VA loans have no official minimum, but most lenders want 620+. The higher your score, the better your rate. If your credit needs work, we can help you create a plan to improve it before applying.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> How long does the mortgage approval process take?</h4>
+          <p>Pre-approval can happen in as little as 24 hours. The full mortgage process from application to closing typically takes 30-45 days, though it can be faster or slower depending on the property, loan type, and how quickly documents are provided. We keep you updated throughout the process so there are no surprises.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> What documents do I need to apply?</h4>
+          <p>The standard list includes: two years of W-2s or tax returns, two months of pay stubs, two months of bank statements, a valid photo ID, and your Social Security number. Self-employed borrowers may need additional documentation like profit and loss statements. We'll provide a complete checklist specific to your situation at the start of the process.</p>
+        </div>
+        <div class="faq-item">
+          <h4><i class="fas fa-circle-question"></i> Do you charge fees for your services?</h4>
+          <p>In most cases, our services cost you nothing out of pocket. We're compensated by the lender you choose through what's called a lender-paid compensation model. This means you get the benefit of rate shopping across 50+ lenders without paying extra for it. We are always transparent about how we're compensated and will explain all costs upfront before you commit to anything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Take the Next Step?</h2>
+      <p>Whether you're buying your first home or refinancing your current mortgage, we're here to help you make the smartest decision.</p>
+      <div class="cta-buttons">
+        <a href="tel:5551234567" class="btn btn-accent btn-lg"><i class="fas fa-phone"></i> Call (555) 123-4567</a>
+        <a href="mailto:hello@keyratemortgage.com" class="btn btn-outline btn-lg"><i class="fas fa-envelope"></i> Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">KeyRate<span>Mortgage Group</span></div>
+          <p>Independent mortgage broker helping families find the right loan from 50+ lender partners. We work for you, not a bank.</p>
+          <p class="footer-nmls">NMLS #123456 | Equal Housing Lender</p>
+          <div class="equal-housing">
+            <i class="fas fa-home"></i>
+            <span>Equal Housing Lender. All loans subject to credit approval. KeyRate Mortgage Group is a licensed mortgage broker and does not make loans. All loan applications are subject to credit and property approval. Programs, rates, terms, and conditions are subject to change without notice. Not all products are available in all states.</span>
+          </div>
+        </div>
+        <div>
+          <h4>Loan Options</h4>
+          <ul>
+            <li><a href="services.html">Conventional Loans</a></li>
+            <li><a href="services.html">FHA Loans</a></li>
+            <li><a href="services.html">VA Loans</a></li>
+            <li><a href="services.html">USDA Loans</a></li>
+            <li><a href="services.html">Jumbo Loans</a></li>
+            <li><a href="services.html">Refinancing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="tel:5551234567"><i class="fas fa-phone" style="width:16px;margin-right:6px;"></i> (555) 123-4567</a></li>
+            <li><a href="mailto:hello@keyratemortgage.com"><i class="fas fa-envelope" style="width:16px;margin-right:6px;"></i> hello@keyratemortgage.com</a></li>
+            <li><a href="#"><i class="fas fa-location-dot" style="width:16px;margin-right:6px;"></i> 742 Oak Street, Suite 200</a></li>
+          </ul>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 KeyRate Mortgage Group. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

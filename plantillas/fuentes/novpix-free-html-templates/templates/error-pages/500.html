@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Something went wrong (500) — Lantern</title>
+  <meta name="description" content="We hit an unexpected error on our side. Our team has been notified. Please try again in a moment.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Something went wrong (500) — Lantern">
+  <meta property="og:description" content="We hit an unexpected error on our side. Our team has been notified. Please try again in a moment.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-image.svg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect width='30' height='30' rx='9' fill='%234f46e5'/%3E%3Cpath d='M11 8h8l-1.5 4h-5zM10.5 13h9v7a4.5 4.5 0 0 1-9 0z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body class="p-500">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="logo" href="index.html" aria-label="Lantern home"><svg viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="9" style="fill:var(--brand)"/><path d="M11 8h8l-1.5 4h-5zM10.5 13h9v7a4.5 4.5 0 0 1-9 0z" fill="#fff"/><circle cx="15" cy="17.5" r="1.6" style="fill:var(--brand)"/></svg><span data-zt="brandName">Lantern</span></a>
+    <nav aria-label="Primary"><a href="index.html">Home</a><a href="index.html">Blog</a><a href="index.html">Help centre</a><a href="mailto:support@lantern.example">Contact</a></nav>
+  </header>
+
+  <main id="main">
+    <div class="card">
+      <svg class="plug" viewBox="0 0 400 300" role="img" aria-labelledby="plug-t">
+        <title id="plug-t">An unplugged cable with a small spark between the plug and socket</title>
+        <circle cx="200" cy="150" r="130" fill="#fde2dc"/>
+        <path d="M-10 190c60 0 70-40 110-40h40" fill="none" stroke="#16161d" stroke-width="10" stroke-linecap="round"/>
+        <rect x="136" y="126" width="44" height="48" rx="10" fill="#16161d"/>
+        <rect x="178" y="136" width="18" height="6" rx="3" fill="#9aa0b4"/><rect x="178" y="158" width="18" height="6" rx="3" fill="#9aa0b4"/>
+        <rect x="244" y="118" width="54" height="64" rx="12" fill="#e0452b"/>
+        <rect x="236" y="136" width="10" height="6" rx="2" fill="#16161d"/><rect x="236" y="158" width="10" height="6" rx="2" fill="#16161d"/>
+        <path d="M298 150h30c40 0 50 40 90 40" fill="none" stroke="#e0452b" stroke-width="10" stroke-linecap="round"/>
+        <g class="spark"><path d="M216 120l6 14 14-4-8 12 12 8-14 2 2 14-10-10-10 10 2-14-14-2 12-8-8-12 14 4z" fill="#ffc745"/></g>
+        <g class="spark" style="animation-delay:-.8s"><circle cx="222" cy="186" r="4" fill="#ffc745"/><circle cx="210" cy="104" r="3" fill="#ffc745"/></g>
+      </svg>
+      <div class="copy">
+        <span class="code">500 · Server error</span>
+        <h1 data-zt="heading">Something came unplugged.</h1>
+        <p>That's on us, not you. An unexpected error happened on our servers and our on-call engineer has already been alerted. Please try again in a minute.</p>
+        <div class="actions">
+          <button class="btn btn-primary" type="button" data-reload><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Try again</button>
+          <a class="btn btn-ghost" href="index.html"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Go home</a>
+        </div>
+        <ul class="status-list" aria-label="System status">
+          <li class="down"><b>Web app</b><span>Investigating</span></li>
+          <li><b>API</b><span>Operational</span></li>
+          <li><b>Payments</b><span>Operational</span></li>
+        </ul>
+        <p class="ref">Reference: <span id="ref-id">LNT-500-7F3A9C</span><button type="button" data-copy="#ref-id">Copy</button></p>
+      </div>
+    </div>
+  </main>
+  <footer class="foot">
+    <span>&copy; <span data-year>2026</span> <span data-zt="brandName">Lantern</span>. All rights reserved.</span>
+    <span><a href="mailto:support@lantern.example">support@lantern.example</a></span>
+  </footer>
+</body>
+</html>

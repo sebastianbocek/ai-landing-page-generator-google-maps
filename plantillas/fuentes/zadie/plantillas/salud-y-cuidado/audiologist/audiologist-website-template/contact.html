@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | SoundLife Hearing Center - Schedule Your Hearing Evaluation</title>
+  <meta name="description" content="Contact SoundLife Hearing Center in Nashville, TN. Schedule a hearing evaluation, ask questions, or request information about our audiology services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <div class="logo-text">
+          <span class="brand-name">SoundLife</span>
+          <span class="brand-tagline">Hearing Center</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-primary btn-sm">Book Evaluation</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero hero-page" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+      <h1>Contact Us</h1>
+      <p>Schedule your hearing evaluation or ask us anything. We're here to help.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Form -->
+        <div class="contact-form-wrapper">
+          <h2>Request an Appointment</h2>
+          <p>Fill out the form below and our team will get back to you within one business day to confirm your appointment.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="(615) 555-0000" required>
+              </div>
+              <div class="form-group">
+                <label for="service">Service You're Interested In</label>
+                <select id="service" name="service">
+                  <option value="">Select a service</option>
+                  <option value="hearing-evaluation">Comprehensive Hearing Evaluation</option>
+                  <option value="hearing-aids">Hearing Aid Fitting & Programming</option>
+                  <option value="hearing-aid-repair">Hearing Aid Repair & Maintenance</option>
+                  <option value="tinnitus">Tinnitus Evaluation & Management</option>
+                  <option value="ear-protection">Custom Ear Protection</option>
+                  <option value="cochlear-implant">Cochlear Implant Support</option>
+                  <option value="pediatric">Pediatric Hearing Services</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row" style="grid-template-columns:1fr;">
+              <div class="form-group">
+                <label for="insurance">Insurance Provider</label>
+                <input type="text" id="insurance" name="insurance" placeholder="e.g., BlueCross BlueShield, Aetna, Medicare">
+              </div>
+            </div>
+            <div class="form-row" style="grid-template-columns:1fr;">
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about your hearing concerns, preferred appointment times, or any questions you have."></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+              Submit Request <i class="fas fa-arrow-right"></i>
+            </button>
+            <p style="font-size:0.85rem;color:var(--color-gray);margin-top:12px;text-align:center;">We typically respond within one business day. For urgent needs, please call us directly.</p>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <!-- Contact Details -->
+          <div class="contact-info-card">
+            <h3>Get in Touch</h3>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Address</strong>
+                <span>2401 Music Row, Suite 200<br>Nashville, TN 37203</span>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Phone</strong>
+                <a href="tel:+16155551234">(615) 555-1234</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Email</strong>
+                <a href="mailto:info@soundlifehearing.com">info@soundlifehearing.com</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fas fa-parking"></i>
+              </div>
+              <div class="contact-detail-text">
+                <strong>Parking</strong>
+                <span>Free parking available in the building lot</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="contact-info-card hours-card">
+            <h3>Office Hours</h3>
+            <div class="hours-list">
+              <div class="hours-row">
+                <span class="day">Monday</span>
+                <span class="time">8:00 AM - 5:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Tuesday</span>
+                <span class="time">8:00 AM - 5:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Wednesday</span>
+                <span class="time">8:00 AM - 5:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Thursday</span>
+                <span class="time">8:00 AM - 5:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Friday</span>
+                <span class="time">8:00 AM - 3:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Saturday</span>
+                <span class="time">By appointment only</span>
+              </div>
+              <div class="hours-row">
+                <span class="day">Sunday</span>
+                <span class="time">Closed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder">
+            <i class="fas fa-map-location-dot"></i>
+            <span>Map - 2401 Music Row, Nashville</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQs</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the questions we hear most often from new and current patients.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            What are the most common signs of hearing loss?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>The most common signs include frequently asking people to repeat themselves, turning the TV volume higher than others prefer, difficulty following conversations in noisy environments (like restaurants), feeling like people are mumbling, and ringing or buzzing in your ears (tinnitus). Hearing loss often develops gradually, so family members may notice changes before you do. If any of these sound familiar, we recommend scheduling a hearing evaluation.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            What should I expect at my first visit?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Your first visit typically takes about 60-90 minutes. It starts with a conversation about your hearing history, lifestyle, and concerns. Then we'll conduct a comprehensive hearing evaluation in our sound booth, which includes testing how well you hear different tones and speech. After the evaluation, your audiologist will review the results with you in detail, explain what they mean, and discuss any recommended next steps. There's no pressure to make decisions on the spot.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            Does insurance cover hearing evaluations and hearing aids?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Coverage varies by plan. Many insurance plans cover diagnostic hearing evaluations, especially when referred by a physician. Hearing aid coverage is less consistent -- some plans provide a benefit every 3-5 years, while others offer no hearing aid coverage. Medicare Part B covers diagnostic hearing exams but does not currently cover hearing aids. We verify your insurance benefits before your appointment so there are no surprises, and we offer payment plans for patients who need them.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            How long do hearing aids last?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Most modern hearing aids last 4-7 years with proper care and maintenance. The lifespan depends on the model, how well they're maintained, your ear chemistry, and how much your hearing changes over time. Technology also advances significantly every few years, so some patients choose to upgrade before their devices reach end of life. Regular cleaning appointments at our office help extend the life of your devices.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            Can tinnitus be treated?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>While there's no universal cure for tinnitus, there are effective management strategies. Our approach includes a specialized tinnitus evaluation to understand the nature and severity of your tinnitus, followed by a personalized treatment plan. Options may include sound therapy (using external sounds to reduce the perception of tinnitus), cognitive behavioral techniques, hearing aids with built-in tinnitus masking features, and counseling to help you habituate to the sound. Most patients see meaningful improvement with consistent treatment.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+            How long does a hearing aid fitting take?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>The initial fitting appointment takes about 60-90 minutes. During this visit, we'll program your hearing aids based on your audiogram, verify the fit with real-ear measurement, teach you how to insert, remove, and care for the devices, and walk you through any smartphone app features. We schedule a follow-up visit within 1-2 weeks to make adjustments based on your real-world experience, and additional follow-ups as needed during your 30-day adjustment period.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Take the First Step Toward Better Hearing</h2>
+      <p>Whether you have questions or are ready to schedule, our team is here for you.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;justify-content:center;">
+        <a href="tel:+16155551234" class="btn btn-white btn-lg"><i class="fas fa-phone"></i> Call (615) 555-1234</a>
+        <a href="mailto:info@soundlifehearing.com" class="btn btn-outline btn-lg" style="border-color: rgba(255,255,255,0.4); color: var(--color-white);"><i class="fas fa-envelope"></i> Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"></div>
+            <div class="logo-text">
+              <span class="brand-name">SoundLife</span>
+              <span class="brand-tagline">Hearing Center</span>
+            </div>
+          </a>
+          <p>Comprehensive audiology services in Nashville, TN. Board-certified audiologists dedicated to helping you hear your best.</p>
+          <div class="footer-social" style="margin-top:20px;">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Google"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Hearing Evaluations</a>
+            <a href="services.html">Hearing Aids</a>
+            <a href="services.html">Tinnitus Management</a>
+            <a href="services.html">Custom Ear Protection</a>
+            <a href="services.html">Cochlear Implants</a>
+          </div>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-location-dot"></i>
+            <span>2401 Music Row, Suite 200<br>Nashville, TN 37203</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>(615) 555-1234</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>info@soundlifehearing.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 SoundLife Hearing Center. All rights reserved. | Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

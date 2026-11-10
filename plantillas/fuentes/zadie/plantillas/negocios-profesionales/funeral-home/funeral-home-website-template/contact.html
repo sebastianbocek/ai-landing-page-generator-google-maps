@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Evergreen Memorial Chapel</title>
+  <meta name="description" content="Reach Evergreen Memorial Chapel 24 hours a day for immediate needs, general inquiries, or pre-planning consultations. Dayton, OH.">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+<!-- Immediate Need Bar -->
+<div class="immediate-need-bar">
+  <strong>Immediate need?</strong> We're available 24 hours a day, every day &mdash; <a href="tel:+19375550118">(937) 555-0118</a>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-text">Evergreen Memorial Chapel</span>
+      <span class="logo-sub">Dayton, Ohio &mdash; Est. 1962</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary header-cta">Get in Touch</a>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="contact-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span style="color:rgba(255,255,255,0.8);">Contact</span>
+    </nav>
+    <h1>We're Here for You</h1>
+    <p>Whether you're facing an immediate need or simply have questions, we welcome your call or message. No question is too small, and there's never any pressure.</p>
+  </div>
+</section>
+
+<!-- Immediate Need Section -->
+<section class="immediate-need-section">
+  <div class="container">
+    <div class="immediate-need-content">
+      <div class="immediate-need-text">
+        <h2>Experiencing an Immediate Loss?</h2>
+        <p>A licensed funeral director is available right now, at any hour of the day or night. Call us first&mdash;we'll guide you through every next step calmly and clearly.</p>
+      </div>
+      <div class="immediate-need-phone">
+        <p class="phone-label">24-Hour Immediate Need Line</p>
+        <span class="phone-number"><a href="tel:+19375550118">(937) 555-0118</a></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Forms -->
+<section class="contact-forms-section">
+  <div class="container">
+    <div class="forms-layout">
+
+      <!-- General Inquiry -->
+      <div class="form-card">
+        <h2>General Inquiry</h2>
+        <p>Have a question about our services, pricing, or anything else? Send us a message and we'll get back to you within a few hours.</p>
+        <form action="#" method="post" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Smith" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(937) 555-0000">
+          </div>
+          <div class="form-group">
+            <label for="subject">What can we help you with?</label>
+            <select id="subject" name="subject">
+              <option value="" disabled selected>Select a topic</option>
+              <option value="general">General question</option>
+              <option value="services">Service information</option>
+              <option value="pricing">Pricing inquiry</option>
+              <option value="grief">Grief support</option>
+              <option value="veteran">Veteran services</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Please share any details that would help us assist you better..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+          <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.875rem;text-align:center;">We respond to all messages within a few hours, typically sooner.</p>
+        </form>
+      </div>
+
+      <!-- Pre-Planning Consultation -->
+      <div id="preplanning" class="form-card">
+        <h2>Pre-Planning Consultation</h2>
+        <p>Ready to learn more about pre-arranging your own services? Request a free, no-obligation consultation with one of our directors.</p>
+        <form action="#" method="post" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pp-first-name">First Name</label>
+              <input type="text" id="pp-first-name" name="first_name" placeholder="Jane" required>
+            </div>
+            <div class="form-group">
+              <label for="pp-last-name">Last Name</label>
+              <input type="text" id="pp-last-name" name="last_name" placeholder="Smith" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="pp-phone">Phone Number</label>
+            <input type="tel" id="pp-phone" name="phone" placeholder="(937) 555-0000" required>
+          </div>
+          <div class="form-group">
+            <label for="pp-email">Email Address</label>
+            <input type="email" id="pp-email" name="email" placeholder="jane@example.com">
+          </div>
+          <div class="form-group">
+            <label for="pp-age">Approximate Age Range</label>
+            <select id="pp-age" name="age_range">
+              <option value="" disabled selected>Select range</option>
+              <option value="under-50">Under 50</option>
+              <option value="50-64">50 to 64</option>
+              <option value="65-74">65 to 74</option>
+              <option value="75-plus">75 or older</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pp-format">Preferred Consultation Format</label>
+            <select id="pp-format" name="format">
+              <option value="" disabled selected>Select preference</option>
+              <option value="in-person">In-person at the chapel</option>
+              <option value="phone">Phone call</option>
+              <option value="home">Home visit</option>
+              <option value="no-preference">No preference</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pp-timing">When would you like to meet?</label>
+            <input type="text" id="pp-timing" name="timing" placeholder="e.g., weekday mornings, any afternoon...">
+          </div>
+          <div class="form-group">
+            <label for="pp-notes">Anything you'd like us to know?</label>
+            <textarea id="pp-notes" name="notes" rows="3" placeholder="Optional&mdash;any questions or topics you'd like to discuss..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent" style="width:100%;">Request Consultation</button>
+          <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.875rem;text-align:center;">No obligation. We'll call you to confirm a time that works.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Info & Location -->
+<section class="contact-info-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Find Us</span>
+      <h2>Location &amp; Contact Details</h2>
+    </div>
+    <div class="contact-info-layout">
+
+      <div>
+        <div class="contact-info-group">
+          <h3>Hours &amp; Contact</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.91-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Phone (Immediate Need)</strong>
+              <a href="tel:+19375550118">(937) 555-0118</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              <a href="mailto:care@evergreenmemorial.com">care@evergreenmemorial.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Office Hours</strong>
+              <span>Monday &ndash; Friday: 8:00 AM &ndash; 6:00 PM<br>Saturday &ndash; Sunday: 10:00 AM &ndash; 4:00 PM<br><em style="color:var(--accent-dark);font-style:normal;font-size:0.85rem;">Immediate need line: 24 hours / 7 days</em></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-group">
+          <h3>Address &amp; Directions</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Address</strong>
+              <span>4821 Springbrook Lane<br>Dayton, OH 45429</span>
+            </div>
+          </div>
+          <div class="contact-detail" style="margin-top: 0.5rem;">
+            <div class="contact-detail-icon" style="visibility:hidden;"></div>
+            <div class="contact-detail-text">
+              <p style="font-size:0.875rem;color:var(--text-muted);margin:0;line-height:1.75;">
+                We are located on Springbrook Lane just off Far Hills Avenue, between Kettering and Oakwood. Parking is available in our private lot with additional overflow on the adjacent street. Fully accessible for guests with mobility needs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-group">
+          <h3>Service Area</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon">
+              <svg viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Counties Served</strong>
+              <span>Montgomery, Greene, Warren, Miami, Clark, and surrounding areas. We regularly arrange services for families throughout southwest Ohio.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div>
+        <div class="map-placeholder">
+          <div class="map-pin">
+            <div class="map-pin-dot"></div>
+            <span class="map-pin-label">Evergreen Memorial Chapel &mdash; Dayton, OH</span>
+          </div>
+        </div>
+        <p style="font-size:0.8rem;color:var(--text-muted);text-align:center;margin-top:0.875rem;">
+          Replace this placeholder with a Google Maps embed for your location.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Common Questions</span>
+      <h2>Answers When You Need Them</h2>
+      <p>It's natural to have questions you've never had to think about before. Here are some of the most common ones we hear from families.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What do I do first when someone passes away?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Call us. That's the first step. Whether your loved one has passed at home, in a hospital, in a care facility, or elsewhere, our team will guide you through exactly what needs to happen next. We'll arrange transportation to our care, help you notify the appropriate parties, and give you time to breathe before any decisions need to be made.</p>
+          <p>If the death occurs in a medical setting, the facility staff will typically notify you. If it occurs at home, you'll need to contact the appropriate authorities (a physician or coroner, depending on circumstances) before calling us&mdash;we can advise you on this as well.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          How long do we have before making arrangements?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>There is no fixed timeline, but most arrangements are made within 24 to 72 hours of death. Practical factors like the condition of the body, embalming, the availability of family members, and cemetery scheduling typically guide the timing. If family members are traveling in from a distance, we can work with you to accommodate a slightly longer timeline.</p>
+          <p>We never rush families through decisions. You can take the time you need to make choices that feel right.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          How do death certificates work, and how many do we need?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>We file the death certificate with the State of Ohio on your behalf. You'll need certified copies to handle most estate matters&mdash;banking, insurance claims, retirement accounts, property titles, and more. Each institution typically requires its own original copy.</p>
+          <p>Most families order between 6 and 10 certified copies. We'll advise you based on your specific situation, and additional copies can always be ordered later from the county vital statistics office, though it's usually easier to get them all at once. Each certified copy has a small state filing fee.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What are the benefits of pre-planning my own funeral?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Pre-planning offers three significant benefits. First, it relieves your family of having to make difficult decisions while they're grieving. Second, it ensures your service reflects your own wishes&mdash;not guesses made under stress. Third, it can protect against future price increases if you choose to pre-fund the arrangements.</p>
+          <p>It's also simply a meaningful thing to do for people you love. Many families tell us that pre-planning a parent's funeral after the fact was one of the hardest parts of the experience. Removing that burden is a genuine act of care.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Is cremation against any religion?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>This varies by faith tradition. Most Protestant Christian denominations, Hinduism, Buddhism, and many other traditions fully accept cremation. The Catholic Church permits cremation, with the understanding that the cremated remains should be treated with the same respect as a body and kept together (not scattered). Some Orthodox Christian, Jewish, and Islamic traditions traditionally prefer burial.</p>
+          <p>We always recommend speaking with your clergy if faith tradition is an important consideration. We're happy to help facilitate that conversation or answer questions as best we can.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          Can we have a personalized or non-traditional service?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely. Many of the most meaningful services we conduct are deeply personal and don't follow a traditional format. Families have held services featuring live bands, photo displays, video tributes, favorite foods, meaningful readings from non-religious texts, and much more. We've helped honor hunters, artists, veterans, gardeners, teachers, and everyone in between in ways that truly reflected who they were.</p>
+          <p>Our job is to help you create something that feels right for your loved one. There's no template we require you to follow.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          What if we can't afford a traditional funeral?
+          <span class="faq-indicator">+</span>
+        </div>
+        <div class="faq-answer">
+          <p>We believe every person deserves a dignified farewell, regardless of financial circumstances. We offer services at a range of price points and will always work with families to find something that is both meaningful and within reach.</p>
+          <p>We can also help you explore available resources, including veteran benefits, Social Security death benefits, and Ohio's indigent burial assistance program. Please don't let financial concerns stop you from calling us&mdash;we'll have an honest, private conversation about what's possible.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-text">Evergreen Memorial Chapel</span>
+          <span class="logo-sub">Dayton, Ohio &mdash; Est. 1962</span>
+        </a>
+        <p>A family-owned funeral home serving the greater Dayton area with compassion and dignity for more than six decades. NFDA member. State of Ohio licensed.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#traditional">Traditional Funeral</a></li>
+          <li><a href="services.html#cremation">Cremation Services</a></li>
+          <li><a href="services.html#preplanning">Pre-Planning</a></li>
+          <li><a href="services.html#grief">Grief Support</a></li>
+          <li><a href="services.html">All Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#team">Our Directors</a></li>
+          <li><a href="about.html#facilities">Our Facilities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6 6l.91-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.03z"/></svg>
+          <span><a href="tel:+19375550118">(937) 555-0118</a><br><small style="color:rgba(255,255,255,0.35);">24 hours / 7 days</small></span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span><a href="mailto:care@evergreenmemorial.com">care@evergreenmemorial.com</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Dayton, OH<br><small style="color:rgba(255,255,255,0.35);">Serving Montgomery, Greene &amp; Warren counties</small></span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Evergreen Memorial Chapel. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">General Price List</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

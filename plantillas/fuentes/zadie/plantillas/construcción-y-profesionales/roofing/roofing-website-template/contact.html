@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Free Estimate | SkyShield Roofing</title>
+  <meta name="description" content="Contact SkyShield Roofing for a free estimate. Serving your area with professional roofing services. Call (555) 123-4567 or request an estimate online.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+<body>
+
+
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">Sky<span>Shield</span> Roofing</a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="contact.html" class="header-cta">Free Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="hero" style="padding: 4rem 0;">
+    <div class="hero-container" style="grid-template-columns: 1fr; text-align: center;">
+      <div class="hero-content">
+        <h1>Get Your Free Estimate</h1>
+        <p>Most estimates provided within 48 hours • No obligation • No pressure</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="section">
+    <div class="section-container">
+      <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 3rem; align-items: start;">
+
+        <!-- Estimate Request Form -->
+        <div>
+          <h2 style="margin-bottom: 1.5rem;">Request Your Free Estimate</h2>
+          <form class="form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Property Address *</label>
+              <input type="text" id="address" name="address" placeholder="Street Address" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" name="city" required>
+              </div>
+
+              <div class="form-group">
+                <label for="zip">ZIP Code *</label>
+                <input type="text" id="zip" name="zip" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Needed *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <option value="new-roof">New Roof Installation</option>
+                <option value="repair">Roof Repair</option>
+                <option value="inspection">Roof Inspection</option>
+                <option value="storm-damage">Storm Damage Assessment</option>
+                <option value="maintenance">Maintenance Program</option>
+                <option value="gutters">Gutters/Siding</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="roof-type">Current Roof Type</label>
+              <select id="roof-type" name="roof-type">
+                <option value="">Select if known...</option>
+                <option value="asphalt">Asphalt Shingles</option>
+                <option value="metal">Metal</option>
+                <option value="tile">Tile</option>
+                <option value="flat">Flat Roof</option>
+                <option value="other">Other/Unknown</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="timeline">Project Timeline</label>
+              <select id="timeline" name="timeline">
+                <option value="">When do you need this done?</option>
+                <option value="emergency">Emergency/ASAP</option>
+                <option value="1-month">Within 1 month</option>
+                <option value="3-months">1-3 months</option>
+                <option value="6-months">3-6 months</option>
+                <option value="planning">Just planning/researching</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="insurance">Is this an insurance claim?</label>
+              <select id="insurance" name="insurance">
+                <option value="">Select one...</option>
+                <option value="yes">Yes - I have filed/will file a claim</option>
+                <option value="maybe">Possibly - Need assessment first</option>
+                <option value="no">No - Paying out of pocket</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your project, any specific concerns, or questions you have..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-preference">Preferred Contact Method</label>
+              <select id="contact-preference" name="contact-preference">
+                <option value="phone">Phone Call</option>
+                <option value="text">Text Message</option>
+                <option value="email">Email</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Request Free Estimate</button>
+
+            <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--secondary);">By submitting this form, you agree to be contacted by SkyShield Roofing regarding your estimate request. We respect your privacy and will never share your information.</p>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="map-pin"></div>
+            <div class="info-content">
+              <h4>Visit Our Office</h4>
+              <p>123 Industrial Parkway<br>Your City, ST 12345</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="phone"></div>
+            <div class="info-content">
+              <h4>Call Us</h4>
+              <p><strong>(555) 123-4567</strong></p>
+              <p style="font-size: 0.875rem; margin-top: 0.25rem;">24/7 Emergency Service Available</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="mail"></div>
+            <div class="info-content">
+              <h4>Email Us</h4>
+              <p>info@skyshieldroofing.com</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon" data-icon="clock"></div>
+            <div class="info-content">
+              <h4>Office Hours</h4>
+              <p>
+                Monday - Friday: 7:00am - 6:00pm<br>
+                Saturday: 8:00am - 4:00pm<br>
+                Sunday: Closed (Emergency service available)
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; padding: 1.5rem; background: rgba(30, 64, 175, 0.1); border-radius: 8px; border-left: 4px solid var(--primary);">
+            <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Emergency Service</h4>
+            <p style="font-size: 0.875rem; line-height: 1.6;">
+              Roof leak or storm damage? We offer 24/7 emergency response for urgent situations. Call us anytime at <strong>(555) 123-4567</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section class="section section-alt">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-subtitle">Service Area</p>
+        <h2>Areas We Serve</h2>
+        <p>Providing professional roofing services throughout the region</p>
+      </div>
+
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <p style="font-size: 1.125rem; color: var(--secondary); margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">We proudly serve homeowners and businesses within a 50-mile radius of our headquarters. Our service area includes:</p>
+      </div>
+
+      <div class="cards-grid" style="margin-bottom: 2rem;">
+        <div class="card" style="text-align: center;">
+          <h3 style="margin-bottom: 1rem;">Primary Areas</h3>
+          <ul style="list-style: none; color: var(--secondary); line-height: 2;">
+            <li>Your City</li>
+            <li>Nearby Town</li>
+            <li>Adjacent City</li>
+            <li>Local Municipality</li>
+          </ul>
+        </div>
+
+        <div class="card" style="text-align: center;">
+          <h3 style="margin-bottom: 1rem;">Extended Areas</h3>
+          <ul style="list-style: none; color: var(--secondary); line-height: 2;">
+            <li>Regional City</li>
+            <li>County Seat</li>
+            <li>Suburban Area</li>
+            <li>Neighboring Town</li>
+          </ul>
+        </div>
+
+        <div class="card" style="text-align: center;">
+          <h3 style="margin-bottom: 1rem;">Also Serving</h3>
+          <ul style="list-style: none; color: var(--secondary); line-height: 2;">
+            <li>Rural Communities</li>
+            <li>Lake Properties</li>
+            <li>Mountain Areas</li>
+            <li>And surrounding areas</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="color: var(--secondary); text-align: center;">
+        Don't see your area listed? <a href="#" style="color: var(--primary); text-decoration: underline;">Contact us</a> to confirm service availability. We may be able to accommodate projects outside our standard service area.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-subtitle">Questions & Answers</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="cards-grid-2">
+        <div class="faq-item">
+          <h3>How much does a new roof cost?</h3>
+          <p>Residential roof replacement typically ranges from $7,500 to $25,000+ depending on size, material choice, roof complexity, and your location. Asphalt shingles are the most economical option ($7,500-$15,000 for average homes), while metal roofing runs $15,000-$30,000+ and tile roofing $20,000-$40,000+. We provide free, detailed estimates with no obligation so you know exactly what to expect.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How long does a roof installation take?</h3>
+          <p>Most residential roof replacements are completed in 1-3 days, depending on the size of your home, weather conditions, and roof complexity. Simple ranch homes often take just one day, while larger two-story homes or complex roof designs may require 2-3 days. We provide a project timeline with your estimate and work efficiently to minimize disruption to your daily routine.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you work with insurance companies?</h3>
+          <p>Yes! We have extensive experience working with all major insurance companies and can handle your storm damage claim from start to finish. We'll meet with your insurance adjuster, provide detailed damage documentation, and advocate for fair settlement. We work within your insurance settlement and deductible, and can even arrange financing for your deductible if needed.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What warranty do you offer?</h3>
+          <p>We offer a lifetime workmanship warranty on all new roof installations, meaning if there's ever a problem with our installation, we'll fix it at no cost to you. Additionally, manufacturer warranties range from 20-50 years depending on the shingle type you choose. We're GAF Master Elite certified, which allows us to offer enhanced manufacturer warranties up to 50 years with full coverage.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How often should I replace my roof?</h3>
+          <p>Asphalt shingle roofs typically last 20-30 years, metal roofs 40-70 years, and tile roofs 50-100 years. However, lifespan depends on climate, installation quality, maintenance, and weather exposure. Signs it's time to replace include widespread shingle damage, multiple leaks, sagging areas, significant granule loss, or a roof approaching its expected lifespan. We offer free inspections to assess your roof's remaining life.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can you repair my roof or does it need full replacement?</h3>
+          <p>We'll always be honest about whether repair or replacement is the right choice. If your roof is relatively new (under 10-15 years), damage is localized, and the rest of the roof is in good condition, repair is usually the best option. If your roof is older, has widespread damage, or has had multiple previous repairs, replacement is often more cost-effective long-term. We'll thoroughly inspect and recommend the most economical solution.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you offer financing?</h3>
+          <p>Yes! We offer flexible financing options including 0% interest for 12 months for qualified applicants, as well as extended payment plans up to 60 months with competitive rates. Financing makes it easy to protect your home now and pay over time. Apply online or when you receive your estimate.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Will you damage my landscaping or property?</h3>
+          <p>We take extensive measures to protect your property. We cover plants and landscaping with tarps, use plywood walkways to protect grass and gardens, place dumpsters on plywood to prevent driveway damage, and use magnetic sweeps to collect nails after completion. We treat your property with the same care we'd want for our own homes.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What happens if it rains during my roof installation?</h3>
+          <p>We monitor weather closely and plan accordingly. If rain is forecast, we may delay start until conditions improve. If unexpected rain occurs during installation, we immediately cover exposed areas with tarps. Most roof tear-offs and installations are done in sections, so your entire roof is never fully exposed at once. In 25 years, we've never had weather cause interior damage to a home.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Are you licensed and insured?</h3>
+          <p>Yes, we are fully licensed (License #123456), bonded, and insured with $2 million in liability coverage and workers' compensation insurance for all employees. This protects you from any liability if an accident occurs on your property. We're also GAF Master Elite certified, CertainTeed SELECT ShingleMaster, and maintain an A+ rating with the Better Business Bureau.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section section-alt">
+    <div class="section-container">
+      <div class="cta-section">
+        <h2>Ready to Get Started?</h2>
+        <p>Contact us today for your free, no-obligation roof estimate.</p>
+        <div class="btn-group" style="justify-content: center;">
+          <a href="#" class="btn btn-primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Request Estimate</a>
+          <a href="tel:555-123-4567" class="btn btn-secondary">(555) 123-4567</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>SkyShield Roofing</h3>
+          <p>Providing professional roofing services to homeowners and businesses since 1999. Licensed, insured, and committed to protecting your most valuable investment.</p>
+          <p><strong>License #123456</strong><br>Fully Bonded & Insured</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Roof Installation</a></li>
+            <li><a href="services.html">Roof Repair</a></li>
+            <li><a href="services.html">Storm Damage</a></li>
+            <li><a href="services.html">Inspections</a></li>
+            <li><a href="services.html">Maintenance</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Service Area</a></li>
+            <li><a href="#">Financing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li>123 Industrial Parkway</li>
+            <li>Your City, ST 12345</li>
+            <li><a href="tel:555-123-4567">(555) 123-4567</a></li>
+            <li><a href="mailto:info@skyshieldroofing.com">info@skyshieldroofing.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 SkyShield Roofing. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

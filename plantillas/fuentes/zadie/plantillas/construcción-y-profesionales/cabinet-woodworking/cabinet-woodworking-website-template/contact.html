@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Graincraft Custom Woodworks</title>
+  <meta name="description" content="Start your custom woodworking project. Free consultations for kitchens, built-ins, vanities, and more. Serving Asheville, NC and Western North Carolina." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+<body>
+
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <i class="fa-solid fa-ruler-combined"></i>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">Graincraft</span>
+        <span class="logo-sub">Custom Woodworks</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <a href="contact.html" class="btn btn-primary header-cta">Start Your Project</a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="page-hero-label">Get in Touch</span>
+    <h1>Let's Talk About Your Project</h1>
+    <p>Tell us what you're thinking. We'll get back to you within one business day to set up a free consultation at your home or job site.</p>
+  </div>
+</section>
+
+<div class="grain-divider"></div>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap">
+        <h2>Project Inquiry</h2>
+        <p>The more detail you share, the better we can prepare for our first conversation. All fields marked with an asterisk are required.</p>
+
+        <form action="#" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name <span class="required">*</span></label>
+              <input type="text" id="first-name" name="first_name" class="form-control" placeholder="Margaret" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name <span class="required">*</span></label>
+              <input type="text" id="last-name" name="last_name" class="form-control" placeholder="Calloway" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="margaret@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="(555) 000-0000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="project-type">Project Type <span class="required">*</span></label>
+            <select id="project-type" name="project_type" class="form-control" required>
+              <option value="" disabled selected>Select a project type</option>
+              <option value="kitchen-cabinets">Custom Kitchen Cabinets</option>
+              <option value="built-ins">Built-In Shelving &amp; Bookcases</option>
+              <option value="bathroom-vanity">Bathroom Vanity</option>
+              <option value="entertainment-center">Entertainment Center / Media Wall</option>
+              <option value="mantel">Mantel &amp; Fireplace Surround</option>
+              <option value="mudroom-closet">Mudroom &amp; Closet System</option>
+              <option value="furniture">Custom Furniture</option>
+              <option value="outdoor-kitchen">Outdoor Kitchen</option>
+              <option value="multiple">Multiple / Not Sure Yet</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="room-space">Room or Space</label>
+              <input type="text" id="room-space" name="room_space" class="form-control" placeholder="e.g., Kitchen, Master Bath, Living Room" />
+            </div>
+            <div class="form-group">
+              <label for="budget-range">Approximate Budget</label>
+              <select id="budget-range" name="budget_range" class="form-control">
+                <option value="" disabled selected>Select a range</option>
+                <option value="under-5k">Under $5,000</option>
+                <option value="5k-10k">$5,000 &ndash; $10,000</option>
+                <option value="10k-25k">$10,000 &ndash; $25,000</option>
+                <option value="25k-50k">$25,000 &ndash; $50,000</option>
+                <option value="over-50k">Over $50,000</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="timeline">Desired Timeline</label>
+              <select id="timeline" name="timeline" class="form-control">
+                <option value="" disabled selected>When do you need it?</option>
+                <option value="asap">As soon as possible</option>
+                <option value="1-3months">Within 1&ndash;3 months</option>
+                <option value="3-6months">3&ndash;6 months from now</option>
+                <option value="6-12months">6&ndash;12 months from now</option>
+                <option value="planning">Still in planning phase</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dimensions">Dimensions (if known)</label>
+              <input type="text" id="dimensions" name="dimensions" class="form-control" placeholder="e.g., 12 ft wall, 9 ft ceiling" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Your City / Town <span class="required">*</span></label>
+            <input type="text" id="location" name="location" class="form-control" placeholder="e.g., Asheville, Black Mountain, Weaverville" required />
+          </div>
+
+          <div class="form-group">
+            <label for="wood-preference">Wood Species Preference</label>
+            <select id="wood-preference" name="wood_preference" class="form-control">
+              <option value="" disabled selected>Any preference?</option>
+              <option value="walnut">Black Walnut</option>
+              <option value="white-oak">White Oak</option>
+              <option value="cherry">American Cherry</option>
+              <option value="maple">Hard Maple</option>
+              <option value="red-oak">Red Oak</option>
+              <option value="painted">Painted (No Wood Grain)</option>
+              <option value="unsure">Not Sure &mdash; Open to Suggestions</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Tell Us About Your Project <span class="required">*</span></label>
+            <textarea id="description" name="description" class="form-control" rows="6" placeholder="Describe what you're envisioning. The more detail the better: style inspiration, functional requirements, must-haves, concerns, etc." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="hear-about">How Did You Hear About Us?</label>
+            <select id="hear-about" name="hear_about" class="form-control">
+              <option value="" disabled selected>Select one</option>
+              <option value="google">Google Search</option>
+              <option value="referral">Friend or Family Referral</option>
+              <option value="houzz">Houzz</option>
+              <option value="instagram">Instagram</option>
+              <option value="contractor">Referred by Contractor</option>
+              <option value="drive-by">Saw Your Work In Person</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:1rem;">
+              <i class="fa-solid fa-paper-plane"></i>
+              Send Project Inquiry
+            </button>
+            <p style="font-size:0.8rem;color:var(--gray);text-align:center;margin-top:0.85rem;">We respond within one business day. No spam. No pressure.</p>
+          </div>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact-detail-label">Phone</div>
+              <div class="contact-detail-value"><a href="tel:+15553126840">(555) 312-6840</a></div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value"><a href="mailto:owen@graincraftwoodworks.com">owen@graincraftwoodworks.com</a></div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact-detail-label">Studio Location</div>
+              <div class="contact-detail-value">1847 Merrimon Ave<br />Asheville, NC 28804</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-map"></i></div>
+            <div>
+              <div class="contact-detail-label">Service Area</div>
+              <div class="contact-detail-value">Asheville, Weaverville, Black Mountain, Swannanoa, Brevard, Hendersonville, Marshall, and surrounding Western NC</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <h3>Studio Hours</h3>
+          <div class="hours-list">
+            <div class="hours-row">
+              <span class="day">Monday &ndash; Friday</span>
+              <span class="time">8:00am &ndash; 5:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Saturday</span>
+              <span class="time">By appointment</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Sunday</span>
+              <span class="time">Closed</span>
+            </div>
+          </div>
+          <p style="font-size:0.82rem;color:var(--gray);margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--border);">Studio visits are by appointment only. Call or email to schedule a time to see the shop, view material samples, and discuss your project in person.</p>
+        </div>
+
+        <div class="contact-info-card" style="background:linear-gradient(135deg,var(--walnut),var(--dark));border-color:var(--walnut);">
+          <h3 style="color:var(--surface);">Current Lead Time</h3>
+          <p style="font-size:2rem;font-family:var(--font-heading);font-weight:700;color:var(--maple-light);margin:0.75rem 0 0.5rem;line-height:1;">8&ndash;12 Weeks</p>
+          <p style="color:rgba(255,255,255,0.65);font-size:0.88rem;margin:0;">We keep this intentional. Projects get the full attention they deserve. Inquire early if you have a specific move-in or renovation date.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="divider divider-center"></div>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>How much does custom cabinetry cost compared to big-box store cabinets?</h4>
+          <i class="fa-solid fa-plus faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Custom cabinetry costs more than stock or semi-custom cabinets, and there's a real reason for it. Stock cabinets use particleboard boxes, stapled drawer bottoms, and cam-lock joinery. They fit standard openings, not your specific walls, and they're built to a price point, not a quality standard.</p>
+          <p style="margin-top:0.75rem;">Our kitchen cabinets start at around $850 per linear foot installed. That's all-in: design, materials, build, finish, and installation. A modest 15-foot kitchen run runs roughly $12,000 to $18,000 depending on species and complexity. For that, you get cabinets that will last 40 years, not 10.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>What is your current lead time and how does scheduling work?</h4>
+          <i class="fa-solid fa-plus faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Our current lead time is 8 to 12 weeks from signed contract to installation. We hold your spot in the schedule with a 30% deposit. The remaining 70% is due upon delivery and installation completion.</p>
+          <p style="margin-top:0.75rem;">Lead times can be longer during peak renovation season (spring and fall) and shorter in winter. If you have a hard deadline tied to a home sale, renovation, or move-in date, let us know upfront so we can plan accordingly. We rarely take rush jobs, but we'll always be honest with you about what's possible.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Do you work with interior designers and general contractors?</h4>
+          <i class="fa-solid fa-plus faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, and we enjoy these relationships when they're well-organized. We work with designers who are involved in the project from the start, who understand custom lead times, and who communicate client expectations clearly. About a third of our projects come through designer or contractor referrals.</p>
+          <p style="margin-top:0.75rem;">For contractor relationships, we coordinate directly on rough-in dimensions, plumbing and electrical locations, and installation scheduling. We need minimum 72 hours' notice for installation days. We do not do same-week installs on active renovation sites without prior agreement in the contract.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Can I bring my own hardware, or do you supply everything?</h4>
+          <i class="fa-solid fa-plus faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <p>You can bring your own pulls and knobs. We ask that you have them on-site before installation day so we can do the layout correctly. For soft-close hinges and drawer slides, we strongly prefer to supply our own Blum hardware. The quality is consistent, the installation is predictable, and we stand behind it under our lifetime structural warranty.</p>
+          <p style="margin-top:0.75rem;">If you have a specific hardware line you love from Emtek, Rocky Mountain Hardware, or a similar brand, we can usually accommodate it. Talk to us during the design phase and we'll confirm compatibility before the build starts.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>What does "lifetime structural warranty" actually cover?</h4>
+          <i class="fa-solid fa-plus faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Our lifetime structural warranty covers defects in joinery, construction, and material failure under normal use. If a dovetail opens up, a drawer box fails at a joint, or a face frame separates from a cabinet box due to our workmanship, we come back and fix it at no charge. No time limit, no questions asked.</p>
+          <p style="margin-top:0.75rem;">The warranty does not cover finish wear from normal use, hardware wear (hinges and slides have manufacturer warranties of their own), water damage from plumbing failures unrelated to our work, or damage from modifications made by others after installation. Cosmetic touch-ups to finish are available at our standard shop rate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Get Started?</h2>
+    <p>Fill out the inquiry form above or give us a call. Either way, the first conversation is on us.</p>
+    <div class="cta-buttons">
+      <a href="tel:+15553126840" class="btn btn-primary"><i class="fa-solid fa-phone"></i> (555) 312-6840</a>
+      <a href="mailto:owen@graincraftwoodworks.com" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Send an Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-ruler-combined"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Graincraft</span>
+            <span class="logo-sub">Custom Woodworks</span>
+          </div>
+        </a>
+        <p>Handcrafted cabinets, built-ins, and furniture made in Asheville, NC. Solid wood. Honest joinery. Built to outlast.</p>
+      </div>
+
+      <div>
+        <div class="footer-heading">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Owen</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Services</div>
+        <ul class="footer-links">
+          <li><a href="services.html">Kitchen Cabinets</a></li>
+          <li><a href="services.html">Built-In Shelving</a></li>
+          <li><a href="services.html">Bathroom Vanities</a></li>
+          <li><a href="services.html">Entertainment Centers</a></li>
+          <li><a href="services.html">Fireplace Mantels</a></li>
+          <li><a href="services.html">Custom Furniture</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="footer-heading">Get in Touch</div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>(555) 312-6840</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>owen@graincraftwoodworks.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Asheville, NC<br />Serving Western NC</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-regular fa-clock"></i>
+          <span>Mon&ndash;Fri 8am&ndash;5pm</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Graincraft Custom Woodworks. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>const navToggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.nav');if(navToggle&&nav){navToggle.addEventListener('click',()=>{const isOpen=nav.classList.toggle('nav-open');navToggle.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);});}</script>
+</body>
+</html>

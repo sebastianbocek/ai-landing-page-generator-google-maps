@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AquaShine — Premium car wash & detailing service. Professional hand wash, ceramic coating, interior detailing, and more.">
+  <meta name="keywords" content="car wash, detailing, auto spa, ceramic coating, AquaShine, premium car care">
+  <title>AquaShine — Premium Car Wash & Detailing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Karla:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+</head>
+<body>
+
+  <!-- ——— Header ——— -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Aqua<span>Shine</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ——— Hero ——— -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="assets/img/carousel-1.jpg" alt="Car wash service" class="active">
+      <img src="assets/img/carousel-2.jpg" alt="Auto detailing interior">
+      <img src="assets/img/carousel-3.jpg" alt="Professional car care">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container" style="position:relative; z-index:2; width:100%;">
+      <div class="hero-content">
+        <div class="hero-badge">✦ Premium Car Care</div>
+        <h1>Your Car Deserves the <span style="color:var(--cyan)">AquaShine</span> Treatment</h1>
+        <p>Expert hand wash, ceramic coating, interior detailing, and paint protection. We bring the showroom shine to your driveway.</p>
+        <div class="hero-actions">
+          <a href="services.html" class="btn btn-primary">Our Services</a>
+          <a href="contact.html" class="btn btn-outline">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+    <!-- Quick Book Strip -->
+    <div class="hero-book">
+      <div class="container">
+        <span class="hero-book-label">📅 Quick Book</span>
+        <form class="hero-book-form" data-form novalidate>
+          <input type="text" class="hero-book-input" placeholder="Your Name" aria-label="Your name" required>
+          <input type="text" class="hero-book-input" placeholder="Car Model" aria-label="Car model" required>
+          <button type="submit" class="btn btn-sky">Book a Wash</button>
+          <span class="form-ok">✅ Request received — we'll call you shortly!</span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Services ——— -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title reveal">Our Premium Services</h2>
+      <p class="section-sub reveal">From a quick hand wash to a full ceramic coating — every service is backed by our 100% satisfaction guarantee.</p>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <img src="assets/img/car-wash-website-template.jpg" alt="Exterior hand wash service" loading="lazy">
+          <div class="service-card-body">
+            <h3>Exterior Hand Wash</h3>
+            <p>Two-bucket method, pH-neutral shampoo, microfiber drying — a gentle yet thorough clean that protects your paint.</p>
+            <a href="services.html" class="service-card-link">Learn More →</a>
+          </div>
+        </article>
+        <article class="service-card reveal">
+          <img src="assets/img/single.jpg" alt="Interior detailing service" loading="lazy">
+          <div class="service-card-body">
+            <h3>Interior Detailing</h3>
+            <p>Deep vacuum, steam cleaning, leather conditioning, and odor removal. Every surface restored to like-new condition.</p>
+            <a href="services.html" class="service-card-link">Learn More →</a>
+          </div>
+        </article>
+        <article class="service-card reveal">
+          <img src="assets/img/about.jpg" alt="Ceramic coating service" loading="lazy">
+          <div class="service-card-body">
+            <h3>Ceramic Coating</h3>
+            <p>Nano-ceramic protection that repels water, UV rays, and dirt. Your car stays cleaner longer with a brilliant gloss.</p>
+            <a href="services.html" class="service-card-link">Learn More →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Stats ——— -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number">12,500+</div>
+          <div class="stat-label">Cars Washed</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">8+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">24</div>
+          <div class="stat-label">Team Members</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number">4.9</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— About ——— -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-split">
+        <div class="about-split-image reveal">
+          <img src="assets/img/about.jpg" alt="AquaShine team at work">
+          <img src="assets/img/car-wash-website-template.jpg" alt="Detailed car finish" loading="lazy">
+        </div>
+        <div class="about-split-text reveal">
+          <h2>Why AquaShine?</h2>
+          <p>We started AquaShine with a simple mission: give every car owner the showroom-quality finish they deserve. What began as a single-bay operation is now a trusted name in auto care.</p>
+          <p>Every vehicle that rolls through our doors gets the same meticulous attention — from economy hatchbacks to exotic supercars.</p>
+          <ul class="about-features">
+            <li>Eco-friendly products</li>
+            <li>Certified detailers</li>
+            <li>100% satisfaction</li>
+            <li>Same-day service</li>
+          </ul>
+          <a href="about.html" class="btn btn-outline-dark">Our Story →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Team ——— -->
+  <section class="section" style="background:var(--gray);">
+    <div class="container">
+      <h2 class="section-title reveal">Meet the Team</h2>
+      <p class="section-sub reveal">Our certified detailers bring years of experience and a passion for perfection.</p>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <img src="assets/img/team-1.jpg" alt="Marcus Rivera" loading="lazy">
+          <div class="team-card-body">
+            <h4>Marcus Rivera</h4>
+            <span>Founder & Lead Detailer</span>
+            <p>15 years in auto detailing. Ceramic coating specialist.</p>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <img src="assets/img/team-2.jpg" alt="Sofia Chen" loading="lazy">
+          <div class="team-card-body">
+            <h4>Sofia Chen</h4>
+            <span>Interior Specialist</span>
+            <p>Leather restoration and deep cleaning expert.</p>
+          </div>
+        </div>
+        <div class="team-card reveal">
+          <img src="assets/img/team-3.jpg" alt="James Okafor" loading="lazy">
+          <div class="team-card-body">
+            <h4>James Okafor</h4>
+            <span>Paint Correction Expert</span>
+            <p>Master of paint polishing and nano-coating.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Testimonials ——— -->
+  <section class="section testimonials">
+    <div class="container">
+      <h2 class="section-title reveal">What Our Customers Say</h2>
+      <p class="section-sub reveal">Real feedback from real clients. We let our results speak for themselves.</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"My car looks better than the day I drove it off the lot. The ceramic coating is incredible."</blockquote>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonial-1.jpg" alt="Sarah Mitchell">
+            <div>
+              <strong>Sarah Mitchell</strong>
+              <span>BMW X5 Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Fast, professional, and the attention to detail is unmatched. AquaShine has a customer for life."</blockquote>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonial-2.jpg" alt="David Park">
+            <div>
+              <strong>David Park</strong>
+              <span>Tesla Model 3 Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Brought my vintage Mustang in for paint correction. The results are absolutely stunning."</blockquote>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonial-3.jpg" alt="Lisa Thompson">
+            <div>
+              <strong>Lisa Thompson</strong>
+              <span>Mustang GT Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <blockquote>"Interior detailing was next-level. They got stains out that I thought were permanent."</blockquote>
+          <div class="testimonial-author">
+            <img src="assets/img/testimonial-4.jpg" alt="Michael Torres">
+            <div>
+              <strong>Michael Torres</strong>
+              <span>SUV Owner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Footer ——— -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Aqua<span>Shine</span></h3>
+          <p>Premium car wash and detailing services. We bring the showroom shine to you.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Hand Wash</a></li>
+            <li><a href="services.html">Interior Detail</a></li>
+            <li><a href="services.html">Ceramic Coating</a></li>
+            <li><a href="services.html">Paint Correction</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li><a href="#">📍 123 Detail Drive, CA</a></li>
+            <li><a href="tel:+18005551234">📞 (800) 555-1234</a></li>
+            <li><a href="mailto:hello@aquashine.com">✉️ hello@aquashine.com</a></li>
+            <li><a href="#">🕐 Mon–Sat: 8AM–6PM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> AquaShine. All rights reserved. Crafted with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ——— Back to Top ——— -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

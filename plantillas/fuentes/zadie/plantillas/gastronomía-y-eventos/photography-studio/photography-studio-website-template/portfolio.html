@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Aperture Portrait Studio</title>
+  <meta name="description" content="Explore our photography portfolio featuring portraits, families, newborns, seniors, weddings, and professional headshots.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Portfolio Page Specific Styles */
+    .portfolio-hero {
+      background: linear-gradient(180deg, var(--slate-deep) 0%, var(--slate) 100%);
+      color: var(--white);
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      padding-top: calc(var(--header-height) + var(--space-2xl));
+      padding-bottom: var(--space-2xl);
+    }
+
+    .portfolio-hero .section-eyebrow {
+      color: var(--gold);
+    }
+
+    .portfolio-hero h1 {
+      color: var(--white);
+    }
+
+    .portfolio-hero .page-hero-description {
+      color: var(--warm-gray-light);
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+    }
+
+    .category-card {
+      position: relative;
+      aspect-ratio: 4/5;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .category-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 40%, transparent 100%);
+      z-index: 1;
+      transition: background var(--duration-normal) var(--ease-out);
+    }
+
+    .category-card:hover::before {
+      background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%);
+    }
+
+    .category-image {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: linear-gradient(145deg, var(--cream) 0%, #E0DCD3 50%, var(--warm-gray-light) 100%);
+      transition: transform var(--duration-slow) var(--ease-out);
+    }
+
+    .category-card:hover .category-image {
+      transform: scale(1.08);
+    }
+
+    .category-content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: var(--space-xl);
+      z-index: 2;
+      transform: translateY(20px);
+      transition: transform var(--duration-normal) var(--ease-out);
+    }
+
+    .category-card:hover .category-content {
+      transform: translateY(0);
+    }
+
+    .category-count {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: var(--space-xs);
+    }
+
+    .category-content h3 {
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      font-weight: 400;
+      color: var(--white);
+      margin-bottom: var(--space-sm);
+    }
+
+    .category-content p {
+      font-size: 0.9rem;
+      color: var(--warm-gray-light);
+      margin-bottom: var(--space-md);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all var(--duration-normal) var(--ease-out) 0.1s;
+    }
+
+    .category-card:hover .category-content p {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .category-link {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-xs);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all var(--duration-normal) var(--ease-out) 0.15s;
+    }
+
+    .category-card:hover .category-link {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .category-link::after {
+      content: '→';
+      transition: transform var(--duration-fast) var(--ease-out);
+    }
+
+    .category-link:hover::after {
+      transform: translateX(4px);
+    }
+
+    /* Featured Work Section */
+    .featured-work {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: var(--space-md);
+      margin-top: var(--space-2xl);
+    }
+
+    .featured-main {
+      aspect-ratio: 16/10;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .featured-side {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .featured-side-item {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .featured-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      background: linear-gradient(145deg, var(--cream) 0%, #D4D0C7 100%);
+      transition: transform var(--duration-slow) var(--ease-out);
+    }
+
+    .featured-main:hover .featured-image,
+    .featured-side-item:hover .featured-image {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 992px) {
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .featured-work {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-side {
+        flex-direction: row;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .category-card {
+        aspect-ratio: 16/10;
+      }
+
+      .featured-side {
+        flex-direction: column;
+      }
+
+      .featured-side-item {
+        aspect-ratio: 16/9;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-mark"></div>
+        <div class="logo-text">
+          Aperture
+          <span>Portrait Studio</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link active">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Book a Session</a>
+    </div>
+  </header>
+
+  <!-- Portfolio Hero -->
+  <section class="portfolio-hero">
+    <div class="page-hero-content">
+      <div class="section-eyebrow">Our Work</div>
+      <h1>Portfolio</h1>
+      <p class="page-hero-description">Explore our collection of portraits, each telling a unique story. Click any category to view the full gallery.</p>
+    </div>
+  </section>
+
+  <!-- Category Grid -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="category-grid">
+        <a href="portfolio-portraits.html" class="category-card">
+          <div class="category-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="category-content">
+            <div class="category-count">24 Images</div>
+            <h3>Portraits</h3>
+            <p>Individual portraits capturing personality and essence</p>
+            <span class="category-link">View Gallery</span>
+          </div>
+        </a>
+
+        <a href="portfolio-families.html" class="category-card">
+          <div class="category-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="category-content">
+            <div class="category-count">32 Images</div>
+            <h3>Families</h3>
+            <p>Celebrating connections and joyful moments together</p>
+            <span class="category-link">View Gallery</span>
+          </div>
+        </a>
+
+        <a href="portfolio-newborns.html" class="category-card">
+          <div class="category-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="category-content">
+            <div class="category-count">28 Images</div>
+            <h3>Newborns</h3>
+            <p>Precious first days captured with gentle artistry</p>
+            <span class="category-link">View Gallery</span>
+          </div>
+        </a>
+
+        <a href="portfolio-seniors.html" class="category-card">
+          <div class="category-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="category-content">
+            <div class="category-count">20 Images</div>
+            <h3>Seniors</h3>
+            <p>Milestone portraits celebrating achievements</p>
+            <span class="category-link">View Gallery</span>
+          </div>
+        </a>
+
+        <a href="portfolio-weddings.html" class="category-card">
+          <div class="category-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="category-content">
+            <div class="category-count">48 Images</div>
+            <h3>Weddings</h3>
+            <p>Love stories documented from vows to celebration</p>
+            <span class="category-link">View Gallery</span>
+          </div>
+        </a>
+
+        <a href="portfolio-headshots.html" class="category-card">
+          <div class="category-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="category-content">
+            <div class="category-count">18 Images</div>
+            <h3>Headshots</h3>
+            <p>Professional portraits for business and branding</p>
+            <span class="category-link">View Gallery</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Recent Work -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-eyebrow">Recent</div>
+        <h2 class="section-title">Featured Sessions</h2>
+        <p class="section-subtitle">A selection of our most recent work from across all categories.</p>
+      </div>
+
+      <div class="featured-work">
+        <div class="featured-main">
+          <div class="featured-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        </div>
+        <div class="featured-side">
+          <div class="featured-side-item">
+            <div class="featured-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+          </div>
+          <div class="featured-side-item">
+            <div class="featured-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-grid" style="margin-top: var(--space-md);">
+        <div class="portfolio-item" style="grid-column: span 4;">
+          <div class="portfolio-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <h4>The Anderson Family</h4>
+              <span>Family Portrait</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" style="grid-column: span 4;">
+          <div class="portfolio-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <h4>Emma's First Week</h4>
+              <span>Newborn Session</span>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-item" style="grid-column: span 4;">
+          <div class="portfolio-image" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+          <div class="portfolio-overlay">
+            <div class="portfolio-info">
+              <h4>Corporate Team</h4>
+              <span>Professional Headshots</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="section section-slate">
+    <div class="container">
+      <div class="testimonial-card" style="max-width: 800px; margin: 0 auto; background: transparent; border: 1px solid rgba(255,255,255,0.1);">
+        <div class="testimonial-content">
+          <p class="testimonial-text" style="color: var(--cream); font-size: 1.5rem;">
+            "The photos exceeded every expectation. Victoria has an incredible
+            ability to make everyone feel comfortable and capture those genuine,
+            unscripted moments that we'll treasure forever."
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"></div>
+            <div class="testimonial-info">
+              <h4 style="color: var(--white);">Rachel & Thomas Bennett</h4>
+              <span style="color: var(--gold);">Wedding Photography</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Love What You See?</h2>
+        <p>Let's create something beautiful together. Book your session and become part of our growing portfolio of cherished memories.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="btn btn-gold btn-large">Book Your Session</a>
+          <a href="services.html" class="btn btn-white btn-large">View Pricing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-mark"></div>
+            <div class="logo-text">
+              Aperture
+              <span>Portrait Studio</span>
+            </div>
+          </a>
+          <p>Creating timeless portraits and capturing life's beautiful moments since 2009.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">Fb</a>
+            <a href="#" class="social-link">Ig</a>
+            <a href="#" class="social-link">Pn</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Galleries</h4>
+          <ul class="footer-links">
+            <li><a href="portfolio-portraits.html">Portraits</a></li>
+            <li><a href="portfolio-families.html">Families</a></li>
+            <li><a href="portfolio-newborns.html">Newborns</a></li>
+            <li><a href="portfolio-weddings.html">Weddings</a></li>
+            <li><a href="portfolio-headshots.html">Headshots</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column footer-contact">
+          <h4>Get in Touch</h4>
+          <p>742 Evergreen Terrace, Suite 200</p>
+          <p>Springfield, IL 62701</p>
+          <p><a href="tel:+12175551234">(217) 555-1234</a></p>
+          <p><a href="mailto:hello@aperturestudio.com">hello@aperturestudio.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Aperture Portrait Studio. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

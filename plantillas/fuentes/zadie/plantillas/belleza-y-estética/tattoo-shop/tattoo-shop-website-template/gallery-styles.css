@@ -1,0 +1,355 @@
+/* ============================================
+   GALLERY STYLES - IRON & INK TATTOO STUDIO
+   ============================================ */
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--smoke);
+  margin-bottom: var(--space-md);
+}
+
+.breadcrumb a {
+  color: var(--smoke);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover {
+  color: var(--crimson);
+}
+
+.breadcrumb span {
+  color: var(--ash);
+}
+
+/* Gallery Hero */
+.gallery-hero {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-md) var(--space-xl);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.gallery-hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: var(--space-sm);
+}
+
+.gallery-meta {
+  color: var(--smoke);
+  font-size: 1rem;
+}
+
+/* Square Thumbnail Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-md);
+  padding: var(--space-lg) var(--space-md);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  background: var(--gunmetal);
+  transition: transform var(--transition-normal);
+  aspect-ratio: 1/1;
+}
+
+.gallery-item:hover {
+  transform: translateY(-4px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+/* Gallery Item Overlay */
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  pointer-events: none;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+/* Lightbox Modal */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.lightbox.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-image {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Lightbox Controls */
+.lightbox-close {
+  position: fixed;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  background: rgba(196, 30, 58, 0.2);
+  border: 2px solid var(--crimson);
+  color: var(--bone);
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1;
+  z-index: 10000;
+}
+
+.lightbox-close:hover {
+  background: var(--crimson);
+  transform: rotate(90deg);
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(196, 30, 58, 0.2);
+  border: 2px solid var(--crimson);
+  color: var(--bone);
+  font-size: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  font-family: var(--font-body);
+  font-weight: 300;
+  z-index: 10000;
+}
+
+.lightbox-prev {
+  left: var(--space-lg);
+}
+
+.lightbox-next {
+  right: var(--space-lg);
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: var(--crimson);
+}
+
+.lightbox-counter {
+  position: fixed;
+  top: var(--space-lg);
+  left: var(--space-lg);
+  color: var(--bone);
+  font-size: 1rem;
+  background: rgba(10, 10, 10, 0.8);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  z-index: 10000;
+}
+
+/* Gallery Navigation Section */
+.gallery-nav {
+  padding: var(--space-xl) var(--space-md);
+  background: var(--charcoal);
+  text-align: center;
+}
+
+.gallery-nav h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: var(--space-lg);
+}
+
+.gallery-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-nav-link {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: var(--bone);
+  padding: var(--space-lg);
+  background: var(--gunmetal);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.gallery-nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(196, 30, 58, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.gallery-nav-link:hover::before {
+  left: 100%;
+}
+
+.gallery-nav-link:hover {
+  border-color: var(--crimson);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow);
+}
+
+.gallery-nav-link h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-xs);
+}
+
+.gallery-nav-link p {
+  font-size: 0.875rem;
+  color: var(--smoke);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    padding: var(--space-md);
+    gap: var(--space-sm);
+  }
+
+  .gallery-hero {
+    padding: var(--space-xl) var(--space-md) var(--space-lg);
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .lightbox-prev {
+    left: var(--space-sm);
+  }
+
+  .lightbox-next {
+    right: var(--space-sm);
+  }
+
+  .lightbox-close {
+    top: var(--space-sm);
+    right: var(--space-sm);
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .lightbox-counter {
+    top: var(--space-sm);
+    left: var(--space-sm);
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .gallery-nav-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Portfolio image cycling ─── */
+.portfolio-blackwork .gallery-grid .gallery-item:nth-child(4n+1) { background-image: url('../images/blackwork-1.jpg'); }
+.portfolio-blackwork .gallery-grid .gallery-item:nth-child(4n+2) { background-image: url('../images/blackwork-2.jpg'); }
+.portfolio-blackwork .gallery-grid .gallery-item:nth-child(4n+3) { background-image: url('../images/blackwork-3.jpg'); }
+.portfolio-blackwork .gallery-grid .gallery-item:nth-child(4n+0) { background-image: url('../images/blackwork-4.jpg'); }
+.portfolio-fine-line .gallery-grid .gallery-item:nth-child(4n+1) { background-image: url('../images/fine-line-1.jpg'); }
+.portfolio-fine-line .gallery-grid .gallery-item:nth-child(4n+2) { background-image: url('../images/fine-line-2.jpg'); }
+.portfolio-fine-line .gallery-grid .gallery-item:nth-child(4n+3) { background-image: url('../images/fine-line-3.jpg'); }
+.portfolio-fine-line .gallery-grid .gallery-item:nth-child(4n+0) { background-image: url('../images/fine-line-4.jpg'); }
+.portfolio-japanese .gallery-grid .gallery-item:nth-child(4n+1) { background-image: url('../images/japanese-1.jpg'); }
+.portfolio-japanese .gallery-grid .gallery-item:nth-child(4n+2) { background-image: url('../images/japanese-2.jpg'); }
+.portfolio-japanese .gallery-grid .gallery-item:nth-child(4n+3) { background-image: url('../images/japanese-3.jpg'); }
+.portfolio-japanese .gallery-grid .gallery-item:nth-child(4n+0) { background-image: url('../images/japanese-4.jpg'); }
+.portfolio-neo-trad .gallery-grid .gallery-item:nth-child(4n+1) { background-image: url('../images/neo-trad-1.jpg'); }
+.portfolio-neo-trad .gallery-grid .gallery-item:nth-child(4n+2) { background-image: url('../images/neo-trad-2.jpg'); }
+.portfolio-neo-trad .gallery-grid .gallery-item:nth-child(4n+3) { background-image: url('../images/neo-trad-3.jpg'); }
+.portfolio-neo-trad .gallery-grid .gallery-item:nth-child(4n+0) { background-image: url('../images/neo-trad-4.jpg'); }
+.portfolio-realism .gallery-grid .gallery-item:nth-child(4n+1) { background-image: url('../images/realism-1.jpg'); }
+.portfolio-realism .gallery-grid .gallery-item:nth-child(4n+2) { background-image: url('../images/realism-2.jpg'); }
+.portfolio-realism .gallery-grid .gallery-item:nth-child(4n+3) { background-image: url('../images/realism-3.jpg'); }
+.portfolio-realism .gallery-grid .gallery-item:nth-child(4n+0) { background-image: url('../images/realism-4.jpg'); }
+.portfolio-traditional .gallery-grid .gallery-item:nth-child(4n+1) { background-image: url('../images/traditional-1.jpg'); }
+.portfolio-traditional .gallery-grid .gallery-item:nth-child(4n+2) { background-image: url('../images/traditional-2.jpg'); }
+.portfolio-traditional .gallery-grid .gallery-item:nth-child(4n+3) { background-image: url('../images/traditional-3.jpg'); }
+.portfolio-traditional .gallery-grid .gallery-item:nth-child(4n+0) { background-image: url('../images/traditional-4.jpg'); }

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations &amp; Contact | Hearthstone Pizza — Burlington, VT</title>
+  <meta name="description" content="Reserve a table, inquire about catering, or get in touch with Hearthstone Pizza in Burlington, VT. Dine-in, takeout, delivery, and private events.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <i class="fa-solid fa-fire-flame-curved"></i>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">Hearthstone</span>
+        <span class="logo-tagline">Pizza &bull; Burlington, VT</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" role="navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Menu</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta">Order Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>Contact</span>
+    </nav>
+    <h1>Reservations &amp; Inquiries</h1>
+    <p>Reserve a table, ask about catering, or just say hello. We're a small team — we read every message and usually reply within a few hours during open days.</p>
+  </div>
+</section>
+
+<!-- CONTACT MAIN -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-card">
+        <h2>Get in Touch</h2>
+        <p>Use this form for table reservations, catering inquiries, and general questions. For same-day orders, please call us at <a href="tel:5556723841" style="color: var(--brick-red); font-weight: 600;">(555) 672-3841</a>.</p>
+
+        <form action="#" method="POST" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Marco" required autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Vitale" required autocomplete="family-name">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(802) 555-0000" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry-type">What can we help you with? *</label>
+            <select id="inquiry-type" name="inquiry_type" required>
+              <option value="" disabled selected>Choose one...</option>
+              <option value="reservation">Table Reservation</option>
+              <option value="catering">Catering Inquiry</option>
+              <option value="private-event">Private Event / Buyout</option>
+              <option value="takeout">Takeout Question</option>
+              <option value="delivery">Delivery Question</option>
+              <option value="other">Something Else</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="visit-date">Preferred Date</label>
+              <input type="date" id="visit-date" name="visit_date">
+            </div>
+            <div class="form-group">
+              <label for="party-size">Party Size</label>
+              <select id="party-size" name="party_size">
+                <option value="" disabled selected>Select...</option>
+                <option value="1-2">1&ndash;2 guests</option>
+                <option value="3-4">3&ndash;4 guests</option>
+                <option value="5-6">5&ndash;6 guests</option>
+                <option value="7-10">7&ndash;10 guests</option>
+                <option value="11-20">11&ndash;20 guests</option>
+                <option value="21-50">21&ndash;50 guests</option>
+                <option value="51+">51+ guests (catering)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="event-type">Event Type (Catering only)</label>
+            <select id="event-type" name="event_type">
+              <option value="" disabled selected>Select if applicable...</option>
+              <option value="wedding">Wedding</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="birthday">Birthday Party</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="graduation">Graduation</option>
+              <option value="backyard">Backyard Gathering</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Special Requests or Details</label>
+            <textarea id="message" name="message" rows="5" placeholder="Let us know about any dietary restrictions, allergy concerns, accessibility needs, or details about your event. The more we know, the better we can prepare."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+            <i class="fa-solid fa-paper-plane"></i> Send Inquiry
+          </button>
+
+          <p style="font-size: 0.8rem; color: var(--stone); text-align: center; margin-top: 1rem; margin-bottom: 0;">We respond within 24 hours on open days. For urgent requests, call <strong>(555) 672-3841</strong>.</p>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+
+        <!-- Location & Hours -->
+        <div class="contact-info-card">
+          <h3>Find Us</h3>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+              <strong>Address</strong>
+              142 Church Street<br>Burlington, VT 05401
+            </p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <p>
+              <strong>Phone</strong>
+              <a href="tel:5556723841" style="color: var(--brick-red);">(555) 672-3841</a>
+            </p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-envelope"></i>
+            <p>
+              <strong>Email</strong>
+              <a href="mailto:hello@hearthstonepizza.com" style="color: var(--brick-red);">hello@hearthstonepizza.com</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Hours -->
+        <div class="contact-info-card">
+          <h3>Hours</h3>
+          <div class="contact-info-item">
+            <i class="fa-regular fa-clock"></i>
+            <p>
+              <strong>Monday</strong>
+              Closed
+            </p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-regular fa-clock"></i>
+            <p>
+              <strong>Tuesday &ndash; Thursday</strong>
+              4:00 PM &ndash; 9:30 PM
+            </p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-regular fa-clock"></i>
+            <p>
+              <strong>Friday</strong>
+              4:00 PM &ndash; 10:30 PM
+            </p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-regular fa-clock"></i>
+            <p>
+              <strong>Saturday</strong>
+              12:00 PM &ndash; 10:30 PM
+            </p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-regular fa-clock"></i>
+            <p>
+              <strong>Sunday</strong>
+              12:00 PM &ndash; 9:00 PM
+            </p>
+          </div>
+        </div>
+
+        <!-- Parking -->
+        <div class="contact-info-card">
+          <h3>Getting Here</h3>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-car"></i>
+            <p>
+              <strong>Parking</strong>
+              Church Street is pedestrian-only. Park at the Marketplace Garage on Cherry Street (2-minute walk). Metered street parking available on Pearl Street and College Street.
+            </p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-bus"></i>
+            <p>
+              <strong>Public Transit</strong>
+              Green Mountain Transit Route 1 stops on Church Street. We're one block from the downtown hub.
+            </p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-bicycle"></i>
+            <p>
+              <strong>Bike Parking</strong>
+              Bike racks available directly outside the restaurant and at City Hall Park, 50 feet away.
+            </p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-wheelchair"></i>
+            <p>
+              <strong>Accessibility</strong>
+              Hearthstone is fully wheelchair accessible. Accessible restrooms available. Please let us know if you need any specific accommodations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div class="contact-info-card" style="text-align: center;">
+          <h3>Follow Along</h3>
+          <p style="font-size: 0.875rem; color: var(--stone); margin-bottom: 1rem;">Daily specials, kitchen moments, and the occasional video of the oven doing its thing.</p>
+          <div style="display: flex; gap: 1rem; justify-content: center;">
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: var(--brick-red); font-size: 0.8rem; text-decoration: none; font-weight: 600;">
+              <i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i>
+              Instagram
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: var(--brick-red); font-size: 0.8rem; text-decoration: none; font-weight: 600;">
+              <i class="fa-brands fa-facebook-f" style="font-size: 1.5rem;"></i>
+              Facebook
+            </a>
+            <a href="#" style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: var(--brick-red); font-size: 0.8rem; text-decoration: none; font-weight: 600;">
+              <i class="fa-brands fa-yelp" style="font-size: 1.5rem;"></i>
+              Yelp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<div style="width: 100%; height: 300px; background: linear-gradient(135deg, #3D2B1F 0%, #6B5344 50%, #8A7A6E 100%); display: flex; align-items: center; justify-content: center; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div style="text-align: center; color: rgba(255,248,240,0.6);">
+    <i class="fa-solid fa-map-location-dot" style="font-size: 2.5rem; color: var(--gold); display: block; margin-bottom: 1rem;"></i>
+    <p style="font-family: var(--font-heading); font-size: 1.1rem; color: var(--off-white); margin-bottom: 0.5rem;">142 Church Street, Burlington VT</p>
+    <p style="font-size: 0.875rem; margin-bottom: 0;">Map embed goes here &mdash; replace with Google Maps iframe</p>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Frequently Asked</h2>
+      <span class="rule-gold"></span>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <h4>
+          <i class="fa-regular fa-calendar-check"></i>
+          Do I need a reservation? How far in advance should I book?
+        </h4>
+        <p>Reservations are strongly recommended for Friday and Saturday evenings, especially parties of 4 or more. We hold a portion of tables for walk-ins every night, but there's no guarantee during peak hours. For weekend dinners, booking 5&ndash;7 days ahead is a good rule. Tuesday through Thursday you can often book same-day with no problem. Use this form or call us directly at (555) 672-3841.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>
+          <i class="fa-solid fa-motorcycle"></i>
+          What's your delivery area? Do you use third-party apps?
+        </h4>
+        <p>We deliver within a 5-mile radius of downtown Burlington, which covers most of the city, South Burlington, and parts of Winooski. We do our own delivery — no third-party apps. That means we control quality, we pay our drivers fairly, and you don't pay platform fees on top of your order. Call us to place a delivery order: (555) 672-3841. Delivery hours match our dine-in hours. Minimum order for delivery is $30.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>
+          <i class="fa-solid fa-people-group"></i>
+          How does catering work? How far out do you book?
+        </h4>
+        <p>We bring a portable wood-fired oven to your venue and cook fresh pizzas on-site throughout your event. We serve parties from 20 to 200 guests. The process starts with an inquiry form or a call — we'll talk through your event, confirm the venue is accessible for the oven setup, and get you a custom quote. We require a 50% deposit to reserve your date. For summer weekends (June through August), we book out 6&ndash;10 weeks. Spring and fall dates often have more flexibility. Winter catering is available for indoor venues.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>
+          <i class="fa-solid fa-wheat-awn-circle-exclamation"></i>
+          Do you have gluten-free options?
+        </h4>
+        <p>We offer a gluten-free pizza crust made with a rice and tapioca flour blend. It's baked in the same oven as our wheat-based pizzas — we use separate tools and handle it carefully, but we cannot guarantee zero cross-contamination. If you have celiac disease, please let us know and we'll talk through what's safe. Our pasta contains gluten. Several menu items — the caprese, burrata, salads, and most desserts — are naturally gluten-free. We're happy to walk you through the menu; just ask your server or call ahead.</p>
+      </div>
+
+      <div class="faq-item">
+        <h4>
+          <i class="fa-solid fa-door-closed"></i>
+          Can we book the restaurant for a private event or full buyout?
+        </h4>
+        <p>Yes. Hearthstone is available for full buyouts on Monday (our usual closed day) and during select off-hours on other days, subject to availability. We can accommodate up to 60 guests for seated dinners and up to 80 for a standing cocktail-style event. A full buyout includes a custom menu, dedicated servers, full bar service, and the full Marco-and-Elena experience. Minimum food and beverage spend applies. For private event inquiries, use the form above and select "Private Event / Buyout" — or call Elena directly at (555) 672-3841.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ORDERING OPTIONS QUICK CTA -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Ready When You Are</span>
+      <h2 class="section-title">Four Ways to Enjoy Hearthstone</h2>
+      <span class="rule-gold"></span>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">
+          <i class="fa-solid fa-chair"></i>
+        </div>
+        <h3>Dine In</h3>
+        <p>Full service, full bar, the whole atmosphere. Book a table and come sit with us. Tuesday through Sunday.</p>
+        <div style="margin-top: 1.5rem;">
+          <a href="#" onclick="document.getElementById('inquiry-type').value='reservation'; document.getElementById('inquiry-type').closest('form').scrollIntoView({behavior:'smooth'}); return false;" class="btn btn-outline-gold btn-sm">Reserve Now</a>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <h3>Takeout</h3>
+        <p>Call ahead, pick up in 20&ndash;30 minutes. Curbside available. No app needed, no fees.</p>
+        <div style="margin-top: 1.5rem;">
+          <a href="tel:5556723841" class="btn btn-outline-gold btn-sm">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <i class="fa-solid fa-motorcycle"></i>
+        </div>
+        <h3>Delivery</h3>
+        <p>Within 5 miles of downtown Burlington. We do our own delivery — call to place your order.</p>
+        <div style="margin-top: 1.5rem;">
+          <a href="tel:5556723841" class="btn btn-outline-gold btn-sm">
+            <i class="fa-solid fa-phone"></i> Order Now
+          </a>
+        </div>
+      </div>
+
+      <div class="why-card">
+        <div class="why-icon">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <h3>Catering</h3>
+        <p>We bring the oven to your event. 20 to 200 guests. Weddings, corporate events, and everything in between.</p>
+        <div style="margin-top: 1.5rem;">
+          <a href="services.html#catering" class="btn btn-outline-gold btn-sm">View Packages</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-fire-flame-curved"></i>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Hearthstone</span>
+            <span class="logo-tagline">Pizza &bull; Burlington, VT</span>
+          </div>
+        </a>
+        <p style="margin-top: 1rem;">Wood-fired artisan pizza made with a Naples-imported oven and Vermont soul. Family-owned by Marco &amp; Elena Vitale since 2015.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Full Menu</a></li>
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="contact.html" class="footer-link">Reservations</a></li>
+          <li><a href="services.html#catering" class="footer-link">Catering</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <ul class="footer-links">
+          <li><span class="footer-link">Mon: Closed</span></li>
+          <li><span class="footer-link">Tue&ndash;Thu: 4&ndash;9:30 PM</span></li>
+          <li><span class="footer-link">Fri: 4&ndash;10:30 PM</span></li>
+          <li><span class="footer-link">Sat: 12&ndash;10:30 PM</span></li>
+          <li><span class="footer-link">Sun: 12&ndash;9:00 PM</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>142 Church Street<br>Burlington, VT 05401</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>(555) 672-3841</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>hello@hearthstonepizza.com</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Hearthstone Pizza. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>const navToggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.nav');if(navToggle&&nav){navToggle.addEventListener('click',()=>{const isOpen=nav.classList.toggle('nav-open');navToggle.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);});}</script>
+</body>
+</html>

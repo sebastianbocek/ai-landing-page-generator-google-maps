@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Enroll — GreenLight Driving Academy</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="10" fill="none" stroke="white" stroke-width="2"/>
+          <circle cx="12" cy="12" r="4" fill="white"/>
+          <line x1="12" y1="2" x2="12" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <line x1="12" y1="18" x2="12" y2="22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <line x1="2" y1="12" x2="6" y2="12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18" y1="12" x2="22" y2="12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        GreenLight Driving
+        <span>Academy</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+      <a href="contact.html" class="btn btn-primary header-cta">Enroll Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-tag" style="background:rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);">Enroll Today</span>
+    <h1>Let's Get You Driving</h1>
+    <p>Fill out the form below and we'll be in touch within one business day to confirm your spot and answer any questions.</p>
+  </div>
+</section>
+
+<!-- Contact Layout -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Enrollment Form -->
+      <div class="contact-form-wrap">
+        <h2>Enrollment Form</h2>
+        <p>Tell us a bit about yourself and what you're looking for. We'll match you with the right instructor and program.</p>
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Jordan" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Smith" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="age">Age *</label>
+              <input type="number" id="age" name="age" placeholder="17" min="15" max="99" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="program">Program Interest *</label>
+            <select id="program" name="program" required>
+              <option value="" disabled selected>Select a program...</option>
+              <option>Teen Driver Program — Starter ($299)</option>
+              <option>Teen Driver Program — Full ($449)</option>
+              <option>Adult Beginner — Essential ($229)</option>
+              <option>Adult Beginner — Complete ($349)</option>
+              <option>Adult Beginner — Intensive ($479)</option>
+              <option>Refresher Course — Single Session ($149)</option>
+              <option>Refresher Course — Confidence Package ($249)</option>
+              <option>Intensive Weekend Course ($499)</option>
+              <option>Not sure — please recommend one</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Preferred Days</label>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" name="days" value="monday"> Monday
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="days" value="tuesday"> Tuesday
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="days" value="wednesday"> Wednesday
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="days" value="thursday"> Thursday
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="days" value="friday"> Friday
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="days" value="saturday"> Saturday
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="time-pref">Preferred Time of Day</label>
+            <select id="time-pref" name="time_preference">
+              <option value="" disabled selected>Select a time preference...</option>
+              <option>Morning (8am-12pm)</option>
+              <option>Afternoon (12pm-4pm)</option>
+              <option>Evening (4pm-6pm)</option>
+              <option>Flexible — any time</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="experience">Current Experience Level</label>
+            <select id="experience" name="experience">
+              <option value="" disabled selected>Select your experience level...</option>
+              <option>Complete beginner — never driven before</option>
+              <option>Some experience with a family member / friend</option>
+              <option>Have a permit, done a few lessons elsewhere</option>
+              <option>Licensed but haven't driven in a while</option>
+              <option>Foreign license holder</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Anything Else We Should Know?</label>
+            <textarea id="message" name="message" placeholder="Any anxiety around driving, specific goals, scheduling constraints, etc. The more we know, the better we can prepare for your first lesson."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:1rem;">
+            <i class="fa-solid fa-circle-check"></i> Submit Enrollment Request
+          </button>
+          <p style="font-size:0.8rem;text-align:center;margin-top:0.75rem;color:var(--gray);max-width:none;">We'll respond within one business day. No deposit required to submit.</p>
+        </form>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="contact-sidebar">
+
+        <!-- Contact Info -->
+        <div class="contact-info-card">
+          <h3>Get in Touch Directly</h3>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-info-text">
+              <div class="label">Phone</div>
+              <div class="value">(555) 842-3300</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-info-text">
+              <div class="label">Email</div>
+              <div class="value">hello@greenlightdriving.com</div>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-info-text">
+              <div class="label">Office Address</div>
+              <div class="value">147 Elmwood Drive, Suite 4<br>Springfield, IL 62701</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Office Hours -->
+        <div class="contact-info-card">
+          <h3>Office Hours</h3>
+          <div class="hours-table">
+            <div class="hours-row">
+              <span class="day">Monday</span>
+              <span class="time">8:00am – 6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Tuesday</span>
+              <span class="time">8:00am – 6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Wednesday</span>
+              <span class="time">8:00am – 6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Thursday</span>
+              <span class="time">8:00am – 6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Friday</span>
+              <span class="time">8:00am – 6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Saturday</span>
+              <span class="time">8:00am – 4:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Sunday</span>
+              <span class="closed">Closed</span>
+            </div>
+          </div>
+          <p style="font-size:0.8rem;margin-top:1rem;color:var(--gray);max-width:none;">Lessons can be scheduled outside office hours — call to arrange.</p>
+        </div>
+
+        <!-- Pickup Zones -->
+        <div class="contact-info-card">
+          <h3><i class="fa-solid fa-location-crosshairs" style="color:var(--primary);margin-right:0.5rem;"></i>Pickup Service Areas</h3>
+          <p style="font-size:0.875rem;max-width:none;margin-bottom:1rem;">We offer free pickup within these zones. A $10 travel fee applies outside the listed areas.</p>
+          <div class="zone-tags">
+            <span class="zone-tag">Downtown Springfield</span>
+            <span class="zone-tag">Elmwood Heights</span>
+            <span class="zone-tag">Riverside</span>
+            <span class="zone-tag">Northgate</span>
+            <span class="zone-tag">Oak Park</span>
+            <span class="zone-tag">Westfield</span>
+            <span class="zone-tag">Lincoln Meadows</span>
+            <span class="zone-tag">Sunnyside</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2>Common Questions</h2>
+      <p>If you don't see your question here, just call or email us. We're happy to talk through anything.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How old do I need to be to start lessons?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>You need to be at least 15 years and 6 months old and hold a valid learner permit. If you're not sure how to get your permit, we can walk you through the process. For adults, there's no upper age limit. We've taught students in their 70s.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How does scheduling work?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Once you enroll, we'll contact you to match you with an instructor who has availability that fits your schedule. Lessons are booked in advance and can be rescheduled with at least 24 hours' notice at no charge. Late cancellations (under 24 hours) are charged at 50% of the lesson rate.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What should I bring to my first lesson?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Bring your learner permit (mandatory — we cannot begin a lesson without it), comfortable flat-soled shoes, and a bottle of water if you like. No special clothing required. Your instructor will provide a pre-lesson briefing and handle everything else.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I book my DMV road test?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>DMV tests are booked directly through the state DMV website or by calling your local DMV office. We'll tell you when we think you're ready, and we can use our GreenLight vehicle for your test if you prefer (included with our DMV Accompaniment add-on). We'll also help you choose the right test center location.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is your refund policy?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Unused lesson hours are fully refundable within 60 days of purchase. Completed lessons are non-refundable. If you fail your DMV test after completing a GreenLight package, we'll give you one complimentary 1-hour practice session as a goodwill gesture. We want to see you pass.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you offer lessons in languages other than English?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Our instructor Tony Reyes is fully bilingual in English and Spanish. Request a bilingual instructor when you enroll and we'll do our best to accommodate. We're working on adding additional languages in 2025.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          I have a foreign driving license. What do I need to do?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Requirements vary depending on your country of origin. Some foreign licenses can be converted directly, while others require passing both the written and road test. Call us before enrolling and we'll help you understand exactly what's needed based on where your license was issued.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2 style="color:var(--white);">Still Have Questions?</h2>
+    <p style="color:rgba(255,255,255,0.8);margin:0.75rem auto 2rem;">Call us at (555) 842-3300 during office hours. We'd rather talk through your situation and help you find the right fit than have you sign up for the wrong thing.</p>
+    <div class="cta-actions">
+      <a href="tel:5558423300" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> Call Us Now</a>
+      <a href="services.html" class="btn btn-outline">View All Programs</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="none" stroke="white" stroke-width="2"/>
+              <circle cx="12" cy="12" r="4" fill="white"/>
+              <line x1="12" y1="2" x2="12" y2="6" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <line x1="12" y1="18" x2="12" y2="22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <line x1="2" y1="12" x2="6" y2="12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              <line x1="18" y1="12" x2="22" y2="12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            GreenLight Driving
+            <span>Academy</span>
+          </div>
+        </div>
+        <p>State-licensed driving school serving the metro area since 2012. We've helped over 2,400 students earn their licenses safely.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services &amp; Pricing</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">Enroll Now</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <div class="footer-links">
+          <a href="services.html">Teen Driver Program</a>
+          <a href="services.html">Adult Beginner</a>
+          <a href="services.html">Refresher Course</a>
+          <a href="services.html">Intensive Weekend</a>
+          <a href="services.html">Online Theory</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-items">
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>(555) 842-3300</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>hello@greenlightdriving.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>147 Elmwood Drive, Suite 4<br>Springfield, IL 62701</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <span>Mon-Fri 8am-6pm<br>Sat 8am-4pm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GreenLight Driving Academy. All rights reserved. Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', false);
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', true);
+      }
+    });
+  });
+</script>
+</body>
+</html>

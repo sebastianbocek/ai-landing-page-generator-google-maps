@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu and Events - The Copper Rail Pub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-main">The Copper Rail</span>
+      <span class="logo-sub">Est. 1987 &bull; Neighborhood Pub</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav" role="navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link active">Menu and Events</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary header-cta">Reserve a Table</a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="label-tag">Food, Drink and Events</span>
+    <h1>Menu and What's On</h1>
+    <p>Brigid's kitchen. Sixteen taps. Five signature cocktails and a whisky list that'll keep you busy. Plus the weekly events calendar.</p>
+  </div>
+</section>
+
+<!-- FOOD MENU -->
+<section class="menu-section section">
+  <div class="container">
+
+    <!-- Starters -->
+    <div class="menu-category">
+      <div class="category-header">
+        <div class="category-icon"><i class="fas fa-leaf"></i></div>
+        <h2>Starters</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Scotch Egg <span class="item-badge badge-popular">Popular</span></div>
+            <div class="item-desc">Soft-boiled free-range egg wrapped in seasoned pork sausage, crumbed and fried to golden. Served with whole-grain mustard and watercress.</div>
+          </div>
+          <div class="item-price">$11</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Brewery Ploughman's</div>
+            <div class="item-desc">Aged cheddar, crumbly Stilton, house pickles, crusty sourdough, apple chutney. Pub eating at its most honest.</div>
+          </div>
+          <div class="item-price">$16</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Crispy Calamari <span class="item-badge badge-new">New</span></div>
+            <div class="item-desc">Lightly dusted rings and tentacles, fried until crisp. Served with lemon aioli and a wedge of charred lemon.</div>
+          </div>
+          <div class="item-price">$14</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Welsh Rarebit <span class="item-badge badge-veg">Veg</span></div>
+            <div class="item-desc">Thick cut toast under a dark ale and mature cheddar sauce. Sharp, malty, and better than you think it's going to be.</div>
+          </div>
+          <div class="item-price">$10</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Soup of the Day <span class="item-badge badge-veg">Veg</span></div>
+            <div class="item-desc">Changes daily. Always served with thick-cut brown bread and salted butter. Ask the bar what's on tonight.</div>
+          </div>
+          <div class="item-price">$9</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Wings (12)</div>
+            <div class="item-desc">Crispy baked wings with your choice of Buffalo, honey garlic, or our house dark ale glaze. Ranch and celery on the side.</div>
+          </div>
+          <div class="item-price">$17</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pub Classics -->
+    <div class="menu-category">
+      <div class="category-header">
+        <div class="category-icon"><i class="fas fa-star"></i></div>
+        <h2>Pub Classics</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Beef and Guinness Stew <span class="item-badge badge-popular">Popular</span></div>
+            <div class="item-desc">Brigid's recipe. Slow-braised beef shin, root vegetables, and a Guinness gravy that takes four hours to get right. Served with colcannon mash.</div>
+          </div>
+          <div class="item-price">$22</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">The Copper Rail Burger <span class="item-badge badge-popular">Popular</span></div>
+            <div class="item-desc">6oz dry-aged beef patty, aged cheddar, crispy smoked bacon, house pickles, shredded lettuce, rail sauce on a brioche bun. Served with thick-cut chips.</div>
+          </div>
+          <div class="item-price">$19</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Fish and Chips</div>
+            <div class="item-desc">Haddock in a Copper Lager beer batter, fried until the batter shatters. Served with thick chips, mushy peas, tartare sauce, and a wedge of lemon.</div>
+          </div>
+          <div class="item-price">$24</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Bangers and Mash</div>
+            <div class="item-desc">Three pork and herb sausages over creamy colcannon mash with a proper onion gravy. The kind of dinner that fixes a bad day.</div>
+          </div>
+          <div class="item-price">$18</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Shepherd's Pie <span class="item-badge badge-new">New</span></div>
+            <div class="item-desc">Braised lamb mince with roasted carrots, peas, and rosemary under a golden mash crust. Baked in individual dishes. Made to order.</div>
+          </div>
+          <div class="item-price">$21</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Mushroom and Stout Pie <span class="item-badge badge-veg">Veg</span></div>
+            <div class="item-desc">Mixed wild mushrooms and caramelized onions in a dark stout sauce, enclosed in buttery shortcrust pastry. Served with a green salad.</div>
+          </div>
+          <div class="item-price">$19</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mains -->
+    <div class="menu-category">
+      <div class="category-header">
+        <div class="category-icon"><i class="fas fa-fire"></i></div>
+        <h2>Mains</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Grilled Half Chicken</div>
+            <div class="item-desc">Free-range half chicken, marinated in herb butter and grilled over charcoal. Served with roasted garlic potatoes and seasonal greens.</div>
+          </div>
+          <div class="item-price">$26</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Ribeye Steak (10oz)</div>
+            <div class="item-desc">Dry-aged ribeye, cooked to your specification, with compound herb butter, watercress salad, and hand-cut chips.</div>
+          </div>
+          <div class="item-price">$38</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Pan-Roasted Salmon</div>
+            <div class="item-desc">Skin-on Atlantic salmon, crispy skin side down, with a warm lentil and spinach salad, capers, and a lemon beurre blanc.</div>
+          </div>
+          <div class="item-price">$28</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Pub Caesar Salad <span class="item-badge badge-veg">Veg option</span></div>
+            <div class="item-desc">House-made Caesar dressing, romaine hearts, shaved Parmesan, sourdough croutons. Add grilled chicken for $6.</div>
+          </div>
+          <div class="item-price">$16</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-category">
+      <div class="category-header">
+        <div class="category-icon"><i class="fas fa-ice-cream"></i></div>
+        <h2>Desserts</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Sticky Toffee Pudding <span class="item-badge badge-popular">Popular</span></div>
+            <div class="item-desc">Dense date sponge, hot toffee sauce, a scoop of vanilla ice cream. The dessert we'll never take off the menu. Order it.</div>
+          </div>
+          <div class="item-price">$11</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Chocolate Guinness Cake</div>
+            <div class="item-desc">A slab of dark chocolate and Guinness cake with a Baileys cream cheese frosting. It's as good as it sounds.</div>
+          </div>
+          <div class="item-price">$10</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Apple and Blackberry Crumble <span class="item-badge badge-veg">Veg</span></div>
+            <div class="item-desc">Seasonal fruit under a buttery oat crumble, served warm with hot custard or vanilla ice cream.</div>
+          </div>
+          <div class="item-price">$10</div>
+        </div>
+        <div class="menu-item">
+          <div class="item-info">
+            <div class="item-name">Cheese Board</div>
+            <div class="item-desc">Three British and Irish cheeses with water biscuits, grapes, walnut bread, and quince paste. Pairs well with a port.</div>
+          </div>
+          <div class="item-price">$18</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DRINKS: DRAFT BEER -->
+<section class="section" style="background: var(--bg-card); border-top: 1px solid rgba(217,119,6,0.2);">
+  <div class="container">
+    <div class="section-header">
+      <div class="copper-rule"><span>&#9830;</span></div>
+      <span class="label-tag">Sixteen Handles</span>
+      <h2>Draft Beer</h2>
+      <p>Our tap list rotates. Here's what's currently pouring. Pint or half-pint available on everything.</p>
+    </div>
+    <div class="drink-grid">
+      <div class="drink-card">
+        <div class="drink-name">Copper Lager</div>
+        <div class="drink-style">American Lager - Local</div>
+        <div class="drink-desc">Our house lager. Light grain, floral hop, clean finish. Made next door by Marlowe Street Brewing.</div>
+        <div class="drink-footer">
+          <span class="drink-abv">4.5% ABV</span>
+          <span class="drink-price">$7 / $4.50</span>
+        </div>
+      </div>
+      <div class="drink-card">
+        <div class="drink-name">Rail Porter</div>
+        <div class="drink-style">English Porter - Local</div>
+        <div class="drink-desc">Dark, roasted malt, dark chocolate, coffee. Our house porter and best seller by a mile.</div>
+        <div class="drink-footer">
+          <span class="drink-abv">5.8% ABV</span>
+          <span class="drink-price">$8 / $5</span>
+        </div>
+      </div>
+      <div class="drink-card">
+        <div class="drink-name">Session IPA</div>
+        <div class="drink-style">Session IPA - Local</div>
+        <div class="drink-desc">West Coast citrus forward, grapefruit nose, dry finish. Built for repeat pints.</div>
+        <div class="drink-footer">
+          <span class="drink-abv">4.2% ABV</span>
+          <span class="drink-price">$8 / $5</span>
+        </div>
+      </div>
+      <div class="drink-card">
+        <div class="drink-name">Red Hand Ale</div>
+        <div class="drink-style">Irish Red Ale - Local</div>
+        <div class="drink-desc">Amber, malty, caramel sweetness. Pat's personal favorite since opening day.</div>
+        <div class="drink-footer">
+          <span class="drink-abv">5.2% ABV</span>
+          <span class="drink-price">$7 / $4.50</span>
+        </div>
+      </div>
+      <div class="drink-card">
+        <div class="drink-name">Bavarian Hefeweizen</div>
+        <div class="drink-style">Wheat Beer - Imported</div>
+        <div class="drink-desc">Cloudy golden wheat, banana and clove on the nose. Served in a proper weizen glass.</div>
+        <div class="drink-footer">
+          <span class="drink-abv">5.4% ABV</span>
+          <span class="drink-price">$8 / $5</span>
+        </div>
+      </div>
+      <div class="drink-card">
+        <div class="drink-name">Midnight Stout</div>
+        <div class="drink-style">Oatmeal Stout - Local</div>
+        <div class="drink-desc">Silky smooth, espresso and dark toffee. Full-bodied but not heavy.</div>
+        <div class="drink-footer">
+          <span class="drink-abv">6.1% ABV</span>
+          <span class="drink-price">$8 / $5</span>
+        </div>
+      </div>
+      <div class="drink-card">
+        <div class="drink-name">Guinness</div>
+        <div class="drink-style">Irish Dry Stout - Imported</div>
+        <div class="drink-desc">The original. Served properly. One hundred and nineteen seconds from pour to table. We don't rush it.</div>
+        <div class="drink-footer">
+          <span class="drink-abv">4.2% ABV</span>
+          <span class="drink-price">$8 / $5</span>
+        </div>
+      </div>
+      <div class="drink-card">
+        <div class="drink-name">Rotating Guest Tap</div>
+        <div class="drink-style">Changes Weekly</div>
+        <div class="drink-desc">Something new every week from a local or regional brewery. Ask the bar what's on tonight.</div>
+        <div class="drink-footer">
+          <span class="drink-abv">Varies</span>
+          <span class="drink-price">Market price</span>
+        </div>
+      </div>
+      <div class="drink-card">
+        <div class="drink-name">Cider on Tap</div>
+        <div class="drink-style">Dry Cider - Regional</div>
+        <div class="drink-desc">Crisp, dry orchard cider from upstate New York. Refreshing and clean.</div>
+        <div class="drink-footer">
+          <span class="drink-abv">5.0% ABV</span>
+          <span class="drink-price">$7 / $4.50</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNATURE COCKTAILS -->
+<section class="menu-section section">
+  <div class="container">
+    <div class="section-header">
+      <div class="copper-rule"><span>&#9830;</span></div>
+      <span class="label-tag">House Specialties</span>
+      <h2>Signature Cocktails</h2>
+      <p>Five cocktails we've been making for years. Nothing trendy, just drinks that work.</p>
+    </div>
+    <div class="cocktail-grid">
+      <div class="cocktail-card">
+        <i class="fas fa-cocktail cocktail-glass"></i>
+        <div class="cocktail-name">The Rail Old Fashioned</div>
+        <div class="cocktail-ingredients">Bulleit Bourbon, house-made brown sugar syrup, Angostura bitters, orange peel</div>
+        <div class="cocktail-price">$14</div>
+      </div>
+      <div class="cocktail-card">
+        <i class="fas fa-whiskey-glass cocktail-glass"></i>
+        <div class="cocktail-name">Black Velvet</div>
+        <div class="cocktail-ingredients">Guinness floated over chilled prosecco. Served in a champagne flute, no garnish.</div>
+        <div class="cocktail-price">$12</div>
+      </div>
+      <div class="cocktail-card">
+        <i class="fas fa-cocktail cocktail-glass"></i>
+        <div class="cocktail-name">Copper Sour</div>
+        <div class="cocktail-ingredients">Jameson Irish Whiskey, fresh lemon juice, honey syrup, egg white, aromatic bitters</div>
+        <div class="cocktail-price">$14</div>
+      </div>
+      <div class="cocktail-card">
+        <i class="fas fa-glass-cheers cocktail-glass"></i>
+        <div class="cocktail-name">Irish Mule</div>
+        <div class="cocktail-ingredients">Tullamore DEW Irish Whiskey, fresh lime juice, ginger beer, mint sprig, copper mug</div>
+        <div class="cocktail-price">$13</div>
+      </div>
+      <div class="cocktail-card">
+        <i class="fas fa-cocktail cocktail-glass"></i>
+        <div class="cocktail-name">Dark and Stormy Rail</div>
+        <div class="cocktail-ingredients">Gosling's Black Seal rum, fresh lime, house ginger syrup, Midnight Stout float, lime wheel</div>
+        <div class="cocktail-price">$15</div>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 2rem; font-size: 0.85rem; color: var(--gray);">Full well bar available. Mocktails on request.</p>
+  </div>
+</section>
+
+<!-- WHISKY SELECTION -->
+<section class="section" style="background: var(--bg-card); border-top: 1px solid rgba(217,119,6,0.2);">
+  <div class="container">
+    <div class="section-header">
+      <div class="copper-rule"><span>&#9830;</span></div>
+      <span class="label-tag">The Back Shelf</span>
+      <h2>Whisky Selection</h2>
+      <p>Thirty-two bottles across Irish, Scotch, and American. We take whisky seriously.</p>
+    </div>
+
+    <div class="menu-category">
+      <div class="category-header">
+        <div class="category-icon"><i class="fas fa-whiskey-glass"></i></div>
+        <h2>Irish Whiskey</h2>
+      </div>
+      <div class="whisky-list">
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Jameson Irish Whiskey</strong><small>Triple distilled, smooth and light</small></div>
+          <div class="whisky-price">$9</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Tullamore D.E.W.</strong><small>Triple blend, honey and toasted wood</small></div>
+          <div class="whisky-price">$10</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Redbreast 12 Year</strong><small>Single pot still, rich and full-bodied</small></div>
+          <div class="whisky-price">$16</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Green Spot</strong><small>Single pot still, fruity and spiced</small></div>
+          <div class="whisky-price">$14</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Knappogue Castle 12 Year</strong><small>Single malt, light and elegant</small></div>
+          <div class="whisky-price">$13</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Connemara Peated</strong><small>The rare peated Irish single malt</small></div>
+          <div class="whisky-price">$15</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category" style="margin-top: 3rem;">
+      <div class="category-header">
+        <div class="category-icon"><i class="fas fa-whiskey-glass"></i></div>
+        <h2>Scotch Whisky</h2>
+      </div>
+      <div class="whisky-list">
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Glenfiddich 12 Year</strong><small>Speyside single malt, fresh pear and oak</small></div>
+          <div class="whisky-price">$14</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Laphroaig 10 Year</strong><small>Islay single malt, peat and sea salt</small></div>
+          <div class="whisky-price">$15</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>The Macallan 12 Year</strong><small>Sherry oak cask, dried fruit and vanilla</small></div>
+          <div class="whisky-price">$18</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Highland Park 12 Year</strong><small>Orkney single malt, heather honey</small></div>
+          <div class="whisky-price">$15</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category" style="margin-top: 3rem;">
+      <div class="category-header">
+        <div class="category-icon"><i class="fas fa-whiskey-glass"></i></div>
+        <h2>American Whiskey</h2>
+      </div>
+      <div class="whisky-list">
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Bulleit Bourbon</strong><small>High rye, spicy and bold</small></div>
+          <div class="whisky-price">$10</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Maker's Mark</strong><small>Wheated bourbon, soft and sweet</small></div>
+          <div class="whisky-price">$10</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Woodford Reserve</strong><small>Small batch Kentucky, complex and balanced</small></div>
+          <div class="whisky-price">$13</div>
+        </div>
+        <div class="whisky-item">
+          <div class="whisky-info"><strong>Elijah Craig Small Batch</strong><small>12 year, caramel and toasted oak</small></div>
+          <div class="whisky-price">$13</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section class="events-section section">
+  <div class="container">
+    <div class="section-header">
+      <div class="copper-rule"><span>&#9830;</span></div>
+      <span class="label-tag">Weekly Calendar</span>
+      <h2>What's On This Week</h2>
+      <p>Something going on nearly every night. No cover charge on any of it.</p>
+    </div>
+    <div class="events-grid">
+      <div class="event-card">
+        <div class="event-day-bar">
+          <i class="fas fa-calendar" style="color: var(--bg); font-size: 0.8rem;"></i>
+          <span>Every Monday</span>
+        </div>
+        <div class="event-body">
+          <h3>Pub Quiz Night</h3>
+          <p>Seven rounds. Teams of up to six. Topics span current events, history, music, geography, and things you absolutely should know but somehow don't. Entry is free. Prize is a round of drinks.</p>
+          <div class="event-time">
+            <i class="fas fa-clock"></i>
+            Starts 8pm. Registration from 7pm.
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-day-bar">
+          <i class="fas fa-calendar" style="color: var(--bg); font-size: 0.8rem;"></i>
+          <span>Every Wednesday</span>
+        </div>
+        <div class="event-body">
+          <h3>Live Music Night</h3>
+          <p>Local bands and solo acts performing original and classic material. Over 200 local musicians hosted since 2008. Check the board inside or our Instagram for this week's performer.</p>
+          <div class="event-time">
+            <i class="fas fa-clock"></i>
+            Doors from 7pm. Music from 9pm.
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-day-bar">
+          <i class="fas fa-calendar" style="color: var(--bg); font-size: 0.8rem;"></i>
+          <span>Fri and Sat, 4pm - 7pm</span>
+        </div>
+        <div class="event-body">
+          <h3>Happy Hour</h3>
+          <p>All draft pints $1 off. House spirits half price. Our Copper Sour and Irish Mule at $10. Bar gets busy from 5:30pm. Come earlier for a seat.</p>
+          <div class="event-time">
+            <i class="fas fa-clock"></i>
+            4pm - 7pm, Friday and Saturday only.
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-day-bar">
+          <i class="fas fa-calendar" style="color: var(--bg); font-size: 0.8rem;"></i>
+          <span>Every Saturday</span>
+        </div>
+        <div class="event-body">
+          <h3>Saturday Sessions</h3>
+          <p>Our weekly live music headliner night. Bigger acts, longer sets, and the best atmosphere of the week. These shows fill up. Come early or book a table.</p>
+          <div class="event-time">
+            <i class="fas fa-clock"></i>
+            Music from 9:30pm until late.
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-day-bar">
+          <i class="fas fa-calendar" style="color: var(--bg); font-size: 0.8rem;"></i>
+          <span>All Weekend</span>
+        </div>
+        <div class="event-body">
+          <h3>Game Day Specials</h3>
+          <p>All major sports on four screens. NFL, NBA, NHL, Premier League, Champions League, Six Nations. Pitchers of Copper Lager from $18. Ask about team-specific specials during big matches.</p>
+          <div class="event-time">
+            <i class="fas fa-clock"></i>
+            Open from 12pm Saturday and Sunday.
+          </div>
+        </div>
+      </div>
+      <div class="event-card">
+        <div class="event-day-bar">
+          <i class="fas fa-calendar" style="color: var(--bg); font-size: 0.8rem;"></i>
+          <span>Monthly</span>
+        </div>
+        <div class="event-body">
+          <h3>Open Mic Night</h3>
+          <p>Last Thursday of every month. The stage is open to anyone. Original music only. Sign-up starts at 7pm. First slot at 8pm. Free entry.</p>
+          <div class="event-time">
+            <i class="fas fa-clock"></i>
+            Last Thursday of the month.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVATE HIRE -->
+<section class="private-hire section" id="private">
+  <div class="container">
+    <div class="hire-inner">
+      <div class="hire-img" style="background-image: url('images/placeholder.jpg'); background-size: cover; background-position: center;"></div>
+      <div class="hire-text">
+        <span class="label-tag">Private Events</span>
+        <h2>Book the Back Room</h2>
+        <p>The Copper Rail's back room holds up to 50 guests and is available for private hire. Birthday parties, work events, anniversaries, farewell drinks. We've done all of it.</p>
+        <p>You get your own bar, your own entrance from the side street, and a dedicated member of our team for the evening. We'll work with you on food and drink packages to suit your budget.</p>
+        <div class="hire-features">
+          <div class="hire-feature">
+            <i class="fas fa-check"></i>
+            Capacity: 20 to 50 guests
+          </div>
+          <div class="hire-feature">
+            <i class="fas fa-check"></i>
+            Private bar with full drinks menu
+          </div>
+          <div class="hire-feature">
+            <i class="fas fa-check"></i>
+            Dedicated event staff for the night
+          </div>
+          <div class="hire-feature">
+            <i class="fas fa-check"></i>
+            Sound system and playlist control
+          </div>
+          <div class="hire-feature">
+            <i class="fas fa-check"></i>
+            Separate entrance from side street
+          </div>
+          <div class="hire-feature">
+            <i class="fas fa-check"></i>
+            Custom food and drink packages available
+          </div>
+        </div>
+        <a href="contact.html#private" class="btn btn-primary">Enquire About Private Hire</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="copper-rule" style="justify-content: center; margin-bottom: 2rem;"><span>&#9830;</span></div>
+    <h2>Ready to Order?</h2>
+    <p>Come in tonight. No reservation required for the bar. Book ahead for a group.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary">
+        <i class="far fa-calendar-check"></i> Reserve a Table
+      </a>
+      <a href="contact.html#private" class="btn btn-outline">
+        <i class="fas fa-door-open"></i> Private Hire Enquiry
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-main">The Copper Rail</span>
+          <span class="logo-sub">Est. 1987 &bull; Neighborhood Pub</span>
+        </div>
+        <p>A proper neighborhood pub on Marlowe Street. The same copper rail, the same good pints, the same good people. Come as you are.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="services.html">Menu and Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#reserve">Reserve a Table</a></li>
+          <li><a href="contact.html#private">Private Hire</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <div class="footer-hours">
+          <div><span>Mon - Thu</span><br>4pm - 1am</div>
+          <div style="margin-top: 0.5rem;"><span>Fri - Sat</span><br>12pm - 2am</div>
+          <div style="margin-top: 0.5rem;"><span>Sunday</span><br>12pm - 12am</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <address>
+          142 Marlowe Street<br>
+          East Village<br>
+          New York, NY 10009<br><br>
+          <a href="tel:+12125550194">(212) 555-0194</a><br>
+          <a href="mailto:hello@copperpub.com">hello@copperpub.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 The Copper Rail Pub. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+
+</body>
+</html>

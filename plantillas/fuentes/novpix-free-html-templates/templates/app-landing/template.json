@@ -1,0 +1,15 @@
+{
+  "slug": "app-landing",
+  "name": "Sprout — mobile app landing page",
+  "category": "landing",
+  "description": "A bright, friendly landing page for a mobile app with CSS-drawn phone mockups, feature sections, a screenshots carousel, reviews and download buttons.",
+  "tags": ["app", "mobile app", "landing page", "startup", "ios", "android", "bright"],
+  "pages": ["index.html"],
+  "features": ["Responsive", "Pure CSS phone mockups", "Screenshots carousel (scroll-snap)", "Neutral iPhone/Android download buttons", "Reviews", "FAQ accordion", "Scroll reveal animations", "Mobile menu", "Reduced-motion support", "No framework"],
+  "fonts": [
+    { "family": "Bricolage Grotesque", "source": "Google Fonts", "license": "OFL" },
+    { "family": "Plus Jakarta Sans", "source": "Google Fonts", "license": "OFL" }
+  ],
+  "colors": { "brand": "#ff5f3a", "accent": "#19c39a", "bg": "#fff8f1", "text": "#1d1633" },
+  "customizable": { "brand": true, "accent": true, "brandName": true, "heading": true }
+}

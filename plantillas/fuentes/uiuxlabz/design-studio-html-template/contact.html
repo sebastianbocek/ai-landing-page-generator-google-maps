@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | PLASERY</title>
+  <meta name="description" content="Get in touch with PLASERY. Tell us about your project and let's explore how design can transform your brand.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/img/logo.svg" alt="PLASERY logo" width="180" height="40">
+      </a>
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="about.html" class="header__nav-link">About</a>
+        <a href="services.html" class="header__nav-link">Services</a>
+        <a href="portfolio.html" class="header__nav-link">Portfolio</a>
+        <a href="blog.html" class="header__nav-link">Blog</a>
+        <a href="contact.html" class="header__cta">Start a Project</a>
+      </nav>
+      <button class="header__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/img/contact-hero.svg" alt="" width="1440" height="400">
+    </div>
+    <div class="container page-hero__content">
+      <span class="page-hero__label">Get in Touch</span>
+      <h1>Let's Start Something</h1>
+      <p>Tell us about your project, your brand, and your vision. We love hearing about new challenges.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section bg-cream">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal-left">
+          <span class="section-header__label">Contact Us</span>
+          <h2>We Would Love to Hear From You</h2>
+          <p>Whether you have a project brief ready or just an idea you want to explore, we are here. Every great partnership starts with a conversation.</p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail__icon">&#9993;</div>
+              <div>
+                <h4>Email Us</h4>
+                <p><a href="mailto:hello@plasery.com">hello@plasery.com</a></p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail__icon">&#9742;</div>
+              <div>
+                <h4>Call Us</h4>
+                <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail__icon">&#9873;</div>
+              <div>
+                <h4>Visit Us</h4>
+                <p>123 Design Avenue, Suite 400<br>San Francisco, CA 94102</p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail__icon">&#9201;</div>
+              <div>
+                <h4>Working Hours</h4>
+                <p>Monday - Friday, 9:00 AM - 6:00 PM (PST)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="reveal-right">
+          <form data-form="contact" style="background:var(--white);padding:var(--space-2xl);border-radius:var(--radius-xl);box-shadow:var(--shadow-md);">
+            <div class="form-group">
+              <label for="contact-name">Full Name *</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address *</label>
+              <input type="email" id="contact-email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-company">Company</label>
+              <input type="text" id="contact-company" name="company" placeholder="Your company name">
+            </div>
+            <div class="form-group">
+              <label for="contact-service">Service Interested In</label>
+              <select id="contact-service" name="service">
+                <option value="">Select a service</option>
+                <option value="brand-strategy">Brand Strategy</option>
+                <option value="visual-identity">Visual Identity</option>
+                <option value="digital-design">Digital Design</option>
+                <option value="creative-direction">Creative Direction</option>
+                <option value="other">Something Else</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Tell Us About Your Project *</label>
+              <textarea id="contact-message" name="message" placeholder="Give us a brief overview of your project, goals, and timeline..." required></textarea>
+            </div>
+            <div class="form-ok">
+              <p style="color:#16A34A;font-weight:600;margin:0;">Thank you! We have received your message and will get back to you within 24 hours.</p>
+            </div>
+            <div class="form-err">
+              <p style="color:var(--coral);font-weight:600;margin:0;">Please fill in all required fields with valid information.</p>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;margin-top:var(--space-lg);">Send Message &rarr;</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html">
+            <img src="assets/img/logo-white.svg" alt="PLASERY" width="180" height="40">
+          </a>
+          <p>Design studio crafting brand identities and digital experiences that shape perception and drive growth.</p>
+        </div>
+        <div>
+          <h5>Pages</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Brand Strategy</a></li>
+            <li><a href="services.html">Visual Identity</a></li>
+            <li><a href="services.html">Digital Design</a></li>
+            <li><a href="services.html">Creative Direction</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="mailto:hello@plasery.com">hello@plasery.com</a></li>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 PLASERY. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Dribbble">Dr</a>
+          <a href="#" aria-label="LinkedIn">Li</a>
+          <a href="#" aria-label="Behance">Be</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

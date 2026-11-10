@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services — FINANZA Financial Consulting</title>
+  <meta name="description" content="Explore FINANZA's full range of financial services: tax planning, audit &amp; assurance, business advisory, and wealth management.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Services page — extra styles */
+    .service-detail { padding: var(--section-py) 0; }
+    .service-detail:nth-child(even) { background: var(--off-white); }
+    .service-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .service-detail-grid.reverse { direction: rtl; }
+    .service-detail-grid.reverse > * { direction: ltr; }
+    .service-detail-img {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+    .service-detail-img img { width: 100%; }
+    .service-detail-content .section-tag { margin-bottom: 0.75rem; }
+    .service-detail-content h2 {
+      font-family: var(--heading);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--navy);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    .service-detail-content > p {
+      color: var(--text-light);
+      margin-bottom: 1.5rem;
+    }
+    .feature-list {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    .feature-list li i { color: var(--blue); font-size: 0.8rem; }
+    .pricing-table {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: var(--section-py);
+    }
+    .pricing-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      text-align: center;
+      border: 2px solid transparent;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .pricing-card.featured {
+      border-color: var(--blue);
+      position: relative;
+    }
+    .pricing-card.featured::before {
+      content: 'Most Popular';
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--blue);
+      color: var(--white);
+      padding: 0.3rem 1rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+    .pricing-card:hover { transform: translateY(-4px); }
+    .pricing-card h3 {
+      font-family: var(--heading);
+      font-size: 1.2rem;
+      color: var(--navy);
+      margin-bottom: 0.5rem;
+    }
+    .pricing-card .price {
+      font-family: var(--heading);
+      font-size: 2.2rem;
+      color: var(--blue);
+      margin-bottom: 0.25rem;
+    }
+    .pricing-card .price small {
+      font-family: var(--body);
+      font-size: 0.85rem;
+      color: var(--text-light);
+      font-weight: 400;
+    }
+    .pricing-card .price-note {
+      color: var(--text-light);
+      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+    .pricing-card ul {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    .pricing-card ul li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0;
+      font-size: 0.9rem;
+      color: var(--text);
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .pricing-card ul li:last-child { border-bottom: none; }
+    .pricing-card ul li i { color: var(--blue); font-size: 0.75rem; flex-shrink: 0; }
+    .process-section {
+      padding: var(--section-py) 0;
+      background: var(--navy);
+      position: relative;
+      overflow: hidden;
+    }
+    .process-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23355EFC' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+    .process-step {
+      text-align: center;
+      color: var(--white);
+    }
+    .step-num {
+      width: 60px;
+      height: 60px;
+      background: var(--blue);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-family: var(--heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 auto 1rem;
+    }
+    .process-step h4 {
+      font-family: var(--heading);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .process-step p {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.9rem;
+    }
+    @media (max-width: 980px) {
+      .service-detail-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .service-detail-grid.reverse { direction: ltr; }
+      .process-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 720px) {
+      .pricing-table { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="mailto:hello@finanza.com"><i class="fas fa-envelope"></i> hello@finanza.com</a>
+        <a href="tel:+18005551234"><i class="fas fa-phone"></i> +1 (800) 555-1234</a>
+      </div>
+      <div class="top-bar-right">
+        <span><i class="fas fa-clock"></i> Mon - Fri: 8:00 AM - 6:00 PM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-icon"><i class="fas fa-chart-line"></i></span>
+        FINANZA
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Get a Consultation</a>
+      </div>
+      <button class="burger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav-overlay"></div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header" style="background-image: url('assets/img/bg.png'); background-size: cover; background-position: center;">
+    <div class="container">
+      <h1 class="reveal">Our Services</h1>
+      <div class="breadcrumb reveal">
+        <a href="index.html">Home</a>
+        <span class="sep"><i class="fas fa-chevron-right"></i></span>
+        <span class="current">Services</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tax Planning -->
+  <section class="service-detail" id="tax">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div class="service-detail-img reveal">
+          <img src="assets/img/service-1.jpg" alt="Tax planning consultation">
+        </div>
+        <div class="service-detail-content">
+          <span class="section-tag"><i class="fas fa-file-invoice-dollar"></i> Tax Planning</span>
+          <h2>Minimize Liability, Maximize Returns</h2>
+          <p>Our tax specialists develop year-round strategies that go beyond simple compliance. We identify every deduction, credit, and timing opportunity to reduce your effective tax rate legally and permanently.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle"></i> Multi-state tax planning &amp; nexus analysis</li>
+            <li><i class="fas fa-check-circle"></i> Entity structure optimization (LLC, S-Corp, C-Corp)</li>
+            <li><i class="fas fa-check-circle"></i> R&amp;D tax credit identification &amp; documentation</li>
+            <li><i class="fas fa-check-circle"></i> Quarterly estimated tax projections</li>
+            <li><i class="fas fa-check-circle"></i> IRS audit defense &amp; representation</li>
+          </ul>
+          <a href="contact.html" class="btn-primary-custom">Get Tax Consultation <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audit & Assurance -->
+  <section class="service-detail" id="audit">
+    <div class="container">
+      <div class="service-detail-grid reverse">
+        <div class="service-detail-img reveal">
+          <img src="assets/img/service-2.jpg" alt="Audit and assurance team at work">
+        </div>
+        <div class="service-detail-content">
+          <span class="section-tag"><i class="fas fa-magnifying-glass-chart"></i> Audit &amp; Assurance</span>
+          <h2>Independent Verification You Can Trust</h2>
+          <p>Our audit team provides thorough, objective assessments of your financial statements and internal controls. We deliver reports that satisfy investors, lenders, and regulators while uncovering operational improvements.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle"></i> Financial statement audits &amp; reviews</li>
+            <li><i class="fas fa-check-circle"></i> Internal control assessments (SOX compliance)</li>
+            <li><i class="fas fa-check-circle"></i> Forensic accounting &amp; fraud examination</li>
+            <li><i class="fas fa-check-circle"></i> Compliance audits (GAAP, IFRS, industry-specific)</li>
+            <li><i class="fas fa-check-circle"></i> Risk assessment &amp; mitigation planning</li>
+          </ul>
+          <a href="contact.html" class="btn-primary-custom">Schedule an Audit <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Advisory -->
+  <section class="service-detail" id="advisory">
+    <div class="container">
+      <div class="service-detail-grid">
+        <div class="service-detail-img reveal">
+          <img src="assets/img/service-3.jpg" alt="Business advisory strategy session">
+        </div>
+        <div class="service-detail-content">
+          <span class="section-tag"><i class="fas fa-people-group"></i> Business Advisory</span>
+          <h2>Strategic Counsel for Complex Decisions</h2>
+          <p>From growth strategy to M&amp;A transactions, our advisory team provides the analytical depth and industry experience that leaders need to make confident, well-informed decisions at every stage.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle"></i> M&amp;A due diligence &amp; valuation</li>
+            <li><i class="fas fa-check-circle"></i> Business restructuring &amp; turnaround</li>
+            <li><i class="fas fa-check-circle"></i> Financial modeling &amp; forecasting</li>
+            <li><i class="fas fa-check-circle"></i> Succession planning &amp; exit strategy</li>
+            <li><i class="fas fa-check-circle"></i> Capital raising &amp; investor relations</li>
+          </ul>
+          <a href="contact.html" class="btn-primary-custom">Explore Advisory <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wealth Management -->
+  <section class="service-detail" id="wealth">
+    <div class="container">
+      <div class="service-detail-grid reverse">
+        <div class="service-detail-img reveal">
+          <img src="assets/img/service-4.jpg" alt="Wealth management portfolio review">
+        </div>
+        <div class="service-detail-content">
+          <span class="section-tag"><i class="fas fa-piggy-bank"></i> Wealth Management</span>
+          <h2>Preserve and Grow Your Legacy</h2>
+          <p>Our wealth management team crafts personalized strategies that align your investments, estate planning, and insurance needs with your long-term financial vision. We serve high-net-worth individuals, families, and business owners.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check-circle"></i> Portfolio construction &amp; rebalancing</li>
+            <li><i class="fas fa-check-circle"></i> Retirement income planning</li>
+            <li><i class="fas fa-check-circle"></i> Estate &amp; trust planning</li>
+            <li><i class="fas fa-check-circle"></i> Tax-efficient investment strategies</li>
+            <li><i class="fas fa-check-circle"></i> Charitable giving &amp; philanthropy advisory</li>
+          </ul>
+          <a href="contact.html" class="btn-primary-custom">Plan Your Future <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fas fa-tag"></i> Pricing</span>
+        <h2>Transparent, Value-Driven Pricing</h2>
+        <p>Every engagement is scoped to your needs. These tiers give you a starting point — final pricing is customized during your consultation.</p>
+      </div>
+      <div class="pricing-table">
+        <div class="pricing-card reveal">
+          <h3>Essentials</h3>
+          <div class="price">$2,500<small>/mo</small></div>
+          <div class="price-note">For small businesses &amp; startups</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Monthly bookkeeping &amp; reconciliation</li>
+            <li><i class="fas fa-check"></i> Quarterly tax projections</li>
+            <li><i class="fas fa-check"></i> Annual financial statements</li>
+            <li><i class="fas fa-check"></i> Email support</li>
+          </ul>
+          <a href="contact.html" class="btn-primary-custom" style="width:100%;justify-content:center;">Get Started</a>
+        </div>
+        <div class="pricing-card featured reveal">
+          <h3>Professional</h3>
+          <div class="price">$6,000<small>/mo</small></div>
+          <div class="price-note">For growing mid-market firms</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Everything in Essentials</li>
+            <li><i class="fas fa-check"></i> Tax planning &amp; optimization</li>
+            <li><i class="fas fa-check"></i> Quarterly advisory meetings</li>
+            <li><i class="fas fa-check"></i> Audit preparation support</li>
+            <li><i class="fas fa-check"></i> Priority phone &amp; email support</li>
+          </ul>
+          <a href="contact.html" class="btn-primary-custom" style="width:100%;justify-content:center;">Choose Professional</a>
+        </div>
+        <div class="pricing-card reveal">
+          <h3>Enterprise</h3>
+          <div class="price">Custom</div>
+          <div class="price-note">For complex, multi-entity operations</div>
+          <ul>
+            <li><i class="fas fa-check"></i> Everything in Professional</li>
+            <li><i class="fas fa-check"></i> Dedicated engagement partner</li>
+            <li><i class="fas fa-check"></i> M&amp;A advisory &amp; due diligence</li>
+            <li><i class="fas fa-check"></i> Wealth management integration</li>
+            <li><i class="fas fa-check"></i> 24/7 priority support</li>
+          </ul>
+          <a href="contact.html" class="btn-primary-custom" style="width:100%;justify-content:center;">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="process-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag" style="background:rgba(255,255,255,0.12);color:var(--white);"><i class="fas fa-route"></i> Our Process</span>
+        <h2 style="color:var(--white);">How We Work With You</h2>
+        <p style="color:rgba(255,255,255,0.65);">A clear, structured approach that delivers results from day one.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <div class="step-num">1</div>
+          <h4>Discovery</h4>
+          <p>We listen. A thorough intake session maps your financial landscape, goals, and pain points.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">2</div>
+          <h4>Analysis</h4>
+          <p>Our team digs into the numbers, identifies opportunities, and benchmarks against industry standards.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">3</div>
+          <h4>Strategy</h4>
+          <p>You receive a clear, actionable plan with timelines, milestones, and expected ROI for every recommendation.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="step-num">4</div>
+          <h4>Execution</h4>
+          <p>We implement alongside you, monitor results, and adjust strategy as conditions evolve.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-text">
+        <h2>Ready to Elevate Your Financial Strategy?</h2>
+        <p>Book a free consultation and discover which services are right for your business.</p>
+      </div>
+      <a href="contact.html" class="btn-primary-custom btn-red">
+        Book Free Consultation <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            <span class="brand-dot"></span> FINANZA
+          </div>
+          <p>Delivering expert financial consulting since 2003. We help businesses and individuals navigate tax, audit, advisory, and wealth management with clarity and confidence.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="services.html#tax">Tax Planning</a>
+            <a href="services.html#audit">Audit &amp; Assurance</a>
+            <a href="services.html#advisory">Business Advisory</a>
+            <a href="services.html#wealth">Wealth Management</a>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Informed</h4>
+          <p>Get quarterly insights on tax policy changes and financial strategies delivered to your inbox.</p>
+          <form class="footer-newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> FINANZA. All rights reserved.</p>
+        <p>
+          <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

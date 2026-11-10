@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events — The Beacon Mosque</title>
+  <meta name="description" content="See what's happening at The Beacon Mosque — community iftars, study weekends, youth nights, festivals, and charitable gatherings throughout the year.">
+  <meta property="og:title" content="Events — The Beacon Mosque">
+  <meta property="og:description" content="See what's happening at The Beacon Mosque — community iftars, study weekends, youth nights, festivals, and charitable gatherings throughout the year.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/events-1.jpg">
+  <meta property="og:url" content="https://thebeaconmosque.org/events">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Calendar (events page) — uses the design-system tokens */
+    .calendar {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .calendar-head {
+      background: linear-gradient(135deg, var(--teal-800), var(--teal-700));
+      color: var(--white);
+      text-align: center;
+      padding: var(--space-md);
+    }
+    .calendar-head h3 {
+      color: var(--white);
+      font-size: 1.4rem;
+      margin-bottom: 0.2rem;
+    }
+    .calendar-head p {
+      color: var(--gold-300);
+      font-size: 0.85rem;
+      margin: 0;
+    }
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+    }
+    .calendar-dow {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      text-align: center;
+      padding: 0.75rem 0.25rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--light);
+    }
+    .calendar-day {
+      position: relative;
+      text-align: center;
+      padding: 0.9rem 0.25rem 1.1rem;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--ink);
+    }
+    .calendar-day:nth-child(7n) { border-right: none; }
+    .calendar-day.other {
+      color: var(--border);
+      background: var(--cream);
+    }
+    .calendar-day.today {
+      background: var(--gold-50);
+      font-weight: 700;
+      color: var(--teal-800);
+    }
+    .calendar-day .event-dot {
+      display: block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold-500);
+      margin: 0.35rem auto 0;
+      box-shadow: 0 0 0 3px var(--gold-100);
+    }
+    .calendar-legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-sm);
+      padding: var(--space-md);
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--ink-soft);
+    }
+    .calendar-legend .dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold-500);
+      margin-right: 0.35rem;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="The Beacon Mosque — Home">
+        <span class="brand-mark" aria-hidden="true"><span>&#9670;</span></span>
+        The Beacon
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="sermons.html">Sermons</a></li>
+          <li><a class="nav-link" href="events.html">Events</a></li>
+          <li><a class="nav-link" href="activities.html">Activities</a></li>
+          <li><a class="nav-link" href="blog.html">Blog</a></li>
+          <li><a class="nav-link" href="team.html">Team</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-gold btn-donate" href="contact.html#donate">Donate</a>
+    </div>
+  </header>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero" aria-label="Events page header">
+    <div class="hero-bg">
+      <img src="assets/img/events-1.jpg" alt="Community members gathering together at The Beacon Mosque" class="active">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="kicker">Events &amp; Gatherings</span>
+      <h1>Come Together in Community</h1>
+      <p>Mark your calendar — there is always something happening at The Beacon Mosque.</p>
+    </div>
+  </section>
+
+  <!-- ========== UPCOMING EVENTS ========== -->
+  <section class="section section-light" aria-labelledby="upcoming-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">What's On</span>
+        <h2 id="upcoming-heading">Upcoming Events</h2>
+        <div class="star-divider" aria-hidden="true"><span class="star8"></span></div>
+        <p>All events are free and open to the whole community — bring your family and friends.</p>
+      </div>
+      <div class="grid-3">
+        <article class="card event-card reveal">
+          <div class="card-img">
+            <img src="assets/img/events-1.jpg" alt="Community iftar dinner at the mosque" loading="lazy">
+            <div class="event-date-badge"><span class="day">5</span> SEP</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span>&#128338; 6:30 PM</span><span>&#128205; Main Hall</span></div>
+            <h3>Community Iftar Dinner</h3>
+            <p>A blessed evening of food, fellowship, and prayer. Everyone is welcome to break bread together.</p>
+            <a href="contact.html" class="card-link">Save My Seat &rarr;</a>
+          </div>
+        </article>
+        <article class="card event-card reveal">
+          <div class="card-img">
+            <img src="assets/img/events-2.jpg" alt="Islamic study circle during the seerah weekend" loading="lazy">
+            <div class="event-date-badge"><span class="day">12</span> SEP</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span>&#128338; 10:00 AM</span><span>&#128205; Seminar Room</span></div>
+            <h3>Seerah Studies Weekend</h3>
+            <p>A two-day intensive on the life of the Prophet (PBUH) with guest scholar Shaykh Omar Hassan.</p>
+            <a href="contact.html" class="card-link">Register Now &rarr;</a>
+          </div>
+        </article>
+        <article class="card event-card reveal">
+          <div class="card-img">
+            <img src="assets/img/events-3.jpg" alt="Youth open mic night at the mosque" loading="lazy">
+            <div class="event-date-badge"><span class="day">19</span> SEP</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span>&#128338; 2:00 PM</span><span>&#128205; Community Hall</span></div>
+            <h3>Youth Open Mic Night</h3>
+            <p>Our talented youth share nasheeds, poetry, and spoken word. Families and friends warmly invited.</p>
+            <a href="contact.html" class="card-link">Event Details &rarr;</a>
+          </div>
+        </article>
+        <article class="card event-card reveal">
+          <div class="card-img">
+            <img src="assets/img/blog-1.jpg" alt="Family festival tables set out at the mosque" loading="lazy">
+            <div class="event-date-badge"><span class="day">26</span> SEP</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span>&#128338; 11:00 AM</span><span>&#128205; Mosque Gardens</span></div>
+            <h3>Family Fun &amp; Food Festival</h3>
+            <p>Stalls, games, and treats for the whole family — a celebration of our community's rich cultures.</p>
+            <a href="contact.html" class="card-link">Event Details &rarr;</a>
+          </div>
+        </article>
+        <article class="card event-card reveal">
+          <div class="card-img">
+            <img src="assets/img/blog-2.jpg" alt="Guests sharing conversation at an interfaith gathering" loading="lazy">
+            <div class="event-date-badge"><span class="day">3</span> OCT</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span>&#128338; 7:00 PM</span><span>&#128205; Main Hall</span></div>
+            <h3>Interfaith Iftar &amp; Dialogue</h3>
+            <p>Breaking fast and breaking barriers — neighbours of every faith share a meal and honest conversation.</p>
+            <a href="contact.html" class="card-link">Reserve a Place &rarr;</a>
+          </div>
+        </article>
+        <article class="card event-card reveal">
+          <div class="card-img">
+            <img src="assets/img/blog-3.jpg" alt="Annual charity gala evening at the mosque" loading="lazy">
+            <div class="event-date-badge"><span class="day">10</span> OCT</div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta"><span>&#128338; 6:00 PM</span><span>&#128205; Grand Hall</span></div>
+            <h3>Annual Charity Gala</h3>
+            <p>A night of dinner, auctions, and giving in support of our zakat fund and community programmes.</p>
+            <a href="contact.html#donate" class="card-link">Support the Gala &rarr;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALENDAR ========== -->
+  <section class="section section-cream" aria-labelledby="calendar-heading">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Month at a Glance</span>
+        <h2 id="calendar-heading">Mark Your Calendar</h2>
+        <div class="star-divider" aria-hidden="true"><span class="star8"></span></div>
+        <p>Highlights for the coming month — full timetables are shared in our weekly newsletter and on the noticeboard.</p>
+      </div>
+      <div class="calendar reveal">
+        <div class="calendar-head">
+          <h3>September 2026</h3>
+          <p>&#128197; The Beacon Mosque Community Calendar</p>
+        </div>
+        <div class="calendar-grid">
+          <div class="calendar-dow">Mon</div>
+          <div class="calendar-dow">Tue</div>
+          <div class="calendar-dow">Wed</div>
+          <div class="calendar-dow">Thu</div>
+          <div class="calendar-dow">Fri</div>
+          <div class="calendar-dow">Sat</div>
+          <div class="calendar-dow">Sun</div>
+          <div class="calendar-day other">31</div>
+          <div class="calendar-day">1</div>
+          <div class="calendar-day">2</div>
+          <div class="calendar-day">3</div>
+          <div class="calendar-day">4</div>
+          <div class="calendar-day"><span>5</span><span class="event-dot"></span></div>
+          <div class="calendar-day">6</div>
+          <div class="calendar-day">7</div>
+          <div class="calendar-day">8</div>
+          <div class="calendar-day">9</div>
+          <div class="calendar-day">10</div>
+          <div class="calendar-day">11</div>
+          <div class="calendar-day"><span>12</span><span class="event-dot"></span></div>
+          <div class="calendar-day">13</div>
+          <div class="calendar-day">14</div>
+          <div class="calendar-day">15</div>
+          <div class="calendar-day">16</div>
+          <div class="calendar-day">17</div>
+          <div class="calendar-day">18</div>
+          <div class="calendar-day"><span>19</span><span class="event-dot"></span></div>
+          <div class="calendar-day">20</div>
+          <div class="calendar-day">21</div>
+          <div class="calendar-day">22</div>
+          <div class="calendar-day">23</div>
+          <div class="calendar-day">24</div>
+          <div class="calendar-day">25</div>
+          <div class="calendar-day"><span>26</span><span class="event-dot"></span></div>
+          <div class="calendar-day">27</div>
+          <div class="calendar-day">28</div>
+          <div class="calendar-day">29</div>
+          <div class="calendar-day">30</div>
+          <div class="calendar-day other">1</div>
+          <div class="calendar-day other">2</div>
+          <div class="calendar-day other">3</div>
+          <div class="calendar-day other">4</div>
+        </div>
+        <div class="calendar-legend">
+          <span><span class="dot"></span>Event day</span>
+          <span>Jumu'ah prayer every Friday at 1:15 PM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOST AN EVENT ========== -->
+  <section class="section section-dark" aria-labelledby="host-heading">
+    <div class="container">
+      <div class="grid-2">
+        <div class="about-intro-img reveal">
+          <div class="dome-frame">
+            <img src="assets/img/about-3.jpg" alt="Intricate architectural detail inside The Beacon Mosque" loading="lazy">
+          </div>
+        </div>
+        <div class="reveal">
+          <span class="kicker">Host With Us</span>
+          <h2 id="host-heading">Bring Your Gathering to The Beacon</h2>
+          <div class="star-divider" aria-hidden="true"><span class="star8"></span></div>
+          <p>From community group meetings to wedding nikkahs and memorials, our halls welcome events of every kind. We offer warm hospitality, full catering support, and a beautiful setting for any occasion.</p>
+          <p>Booking is simple and affordable, with generous rates for community groups and those in need.</p>
+          <a href="contact.html" class="btn btn-gold">Enquire About Booking</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="cta-banner reveal" aria-labelledby="events-cta-heading">
+    <div class="container">
+      <h2 id="events-cta-heading">Never Miss an Event</h2>
+      <p>Subscribe to our newsletter for the full monthly timetable, or follow us on social media for updates as they happen.</p>
+      <a href="contact.html" class="btn btn-gold">Stay in the Loop</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-about">
+        <a class="brand" href="index.html" aria-label="The Beacon Mosque — Home">
+          <span class="brand-mark" aria-hidden="true"><span>&#9670;</span></span>
+          The Beacon
+        </a>
+        <p>For nearly four decades, The Beacon Mosque has been a spiritual home — a place of prayer, learning, and community. Everyone is welcome.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 22v-8h2.5l.5-3H13V9.5c0-.9.3-1.5 1.6-1.5H16V5.2C15.7 5.2 14.7 5 13.6 5 11.2 5 9.5 6.5 9.5 9v2H7v3h2.5v8z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 2c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.8.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.3-.2.7-.3 1.8-.1 1.3-.1 1.7-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.8.2.5.4.8.7 1.1.3.3.6.5 1.1.7.3.1.7.2 1.8.3 1.3.1 1.7.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.8-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.3.2-.7.3-1.8.1-1.3.1-1.7.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.8-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.3-.1-.7-.2-1.8-.3-1.3-.1-1.7-.1-4.8-.1zm0 3.4a5.4 5.4 0 1 1 0 10.8 5.4 5.4 0 0 1 0-10.8zm0 8.9a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zm6.9-9.1a1.3 1.3 0 1 1-2.5 0 1.3 1.3 0 0 1 2.5 0z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4a2.5 2.5 0 0 0-1.8 1.8A26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+          <a href="#" aria-label="X (Twitter)"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.9 7.9L23.2 22h-6.4l-5-6.6L6 22H2.9l7.4-8.5L1.6 2h6.6l4.5 6 5.2-6zm-1.1 18h1.8L7.5 3.9H5.6z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Prayer Times</h3>
+        <div class="footer-prayer-item">
+          <span class="footer-prayer-name">Fajr</span>
+          <span class="footer-prayer-time">5:42 AM</span>
+        </div>
+        <div class="footer-prayer-item">
+          <span class="footer-prayer-name">Dhuhr</span>
+          <span class="footer-prayer-time">1:15 PM</span>
+        </div>
+        <div class="footer-prayer-item">
+          <span class="footer-prayer-name">Asr</span>
+          <span class="footer-prayer-time">4:48 PM</span>
+        </div>
+        <div class="footer-prayer-item">
+          <span class="footer-prayer-name">Maghrib</span>
+          <span class="footer-prayer-time">7:02 PM</span>
+        </div>
+        <div class="footer-prayer-item">
+          <span class="footer-prayer-name">Isha</span>
+          <span class="footer-prayer-time">8:30 PM</span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Stay connected with our weekly newsletter featuring sermons, events, and community news.</p>
+        <form class="newsletter-form" data-form novalidate>
+          <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+          <button class="btn btn-gold" type="submit">Subscribe</button>
+          <p class="form-ok">Thank you for subscribing. You will receive our next edition.</p>
+          <p class="form-err">Please enter a valid email address.</p>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span data-year>2026</span> The Beacon Mosque. All rights reserved.</p>
+        <p>Built with care as a free HTML template.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <a class="back-to-top" href="#top" aria-label="Back to top">&uarr;</a>
+
+  <!-- ========== NOSCRIPT ========== -->
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

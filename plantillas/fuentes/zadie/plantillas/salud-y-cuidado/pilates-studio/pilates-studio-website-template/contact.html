@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Schedule — Core Balance Pilates, Denver, CO</title>
+  <meta name="description" content="Book a trial class, view the weekly class schedule, or contact Core Balance Pilates in Denver, CO.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-text">Core Balance</span>
+      <span class="logo-sub">Pilates Studio &mdash; Denver, CO</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary header-cta">Book a Trial</a>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Get in Touch</span>
+    <h1>Book a Class</h1>
+    <p>Sign up for a trial class, book a private session, or just send us a message. We will get back to you within one business day.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Forms -->
+      <div>
+        <!-- Trial Class Form -->
+        <div class="contact-form-box">
+          <h2>Claim Your Intro Month</h2>
+          <p class="form-subtitle">First full month of unlimited group classes for $49. Fill out the form and we will confirm your start date within 24 hours.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Jane" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(720) 000-0000">
+            </div>
+            <div class="form-group">
+              <label for="experience">Pilates Experience</label>
+              <select id="experience" name="experience">
+                <option value="">Select one&hellip;</option>
+                <option value="none">No experience &mdash; completely new to Pilates</option>
+                <option value="some-mat">Some mat classes at another studio</option>
+                <option value="some-reformer">Some reformer experience</option>
+                <option value="regular">Regular Pilates student returning to practice</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="preferred-time">Preferred Class Time</label>
+              <select id="preferred-time" name="preferred_time">
+                <option value="">Select one&hellip;</option>
+                <option value="early-morning">Early morning (6:00am &ndash; 7:30am)</option>
+                <option value="morning">Morning (8:00am &ndash; 10:00am)</option>
+                <option value="midday">Midday (11:00am &ndash; 1:00pm)</option>
+                <option value="evening">Evening (5:00pm &ndash; 7:30pm)</option>
+                <option value="weekend">Weekend mornings</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="goals">Goals or Notes (optional)</label>
+              <textarea id="goals" name="goals" placeholder="Tell us a little about what you are hoping to work on, any injuries or considerations we should know about, or any questions you have."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Claim Intro Month &mdash; $49</button>
+          </form>
+        </div>
+
+        <!-- General Inquiry Form -->
+        <div class="inquiry-form-box">
+          <h3 style="margin-bottom: var(--spacing-2);">General Inquiry</h3>
+          <p class="form-subtitle">Questions about classes, scheduling, or private sessions? Send us a message.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inq-name">Your Name</label>
+                <input type="text" id="inq-name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="inq-email">Email</label>
+                <input type="email" id="inq-email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inq-subject">Subject</label>
+              <select id="inq-subject" name="subject">
+                <option value="">Select a topic&hellip;</option>
+                <option value="schedule">Class schedule question</option>
+                <option value="private">Private session inquiry</option>
+                <option value="membership">Membership question</option>
+                <option value="injury">Injury or special consideration</option>
+                <option value="gift">Gift certificate</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="inq-message">Message</label>
+              <textarea id="inq-message" name="message" placeholder="How can we help?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline form-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right: Contact Info -->
+      <div class="contact-info">
+
+        <div class="contact-info-block">
+          <h3>Studio Contact</h3>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Phone</strong>
+              (720) 555-0163
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Email</strong>
+              hello@corebalancepilates.com
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-detail-text">
+              <strong>Studio Address</strong>
+              3412 Wyandot Street<br>
+              Denver, CO 80211<br>
+              (Highland neighborhood)
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-block">
+          <h3>Studio Hours</h3>
+          <div style="display: flex; flex-direction: column; gap: var(--spacing-3);">
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding-bottom: var(--spacing-3); border-bottom: 1px solid var(--border);">
+              <span style="font-family: var(--font-heading); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);">Monday &ndash; Friday</span>
+              <span>6:00am &ndash; 7:30pm</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; padding-bottom: var(--spacing-3); border-bottom: 1px solid var(--border);">
+              <span style="font-family: var(--font-heading); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);">Saturday</span>
+              <span>7:00am &ndash; 1:00pm</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem;">
+              <span style="font-family: var(--font-heading); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted);">Sunday</span>
+              <span>8:00am &ndash; 12:00pm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-block">
+          <h3>Parking &amp; Getting Here</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Street parking is available on Wyandot Street and adjacent blocks. The studio is located on the ground floor of a two-story brick building. Look for the frosted glass door marked "Core Balance."</p>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">If you are biking, there is a rack directly outside. The 32 and 33 bus lines stop two blocks away at 35th &amp; Wyandot.</p>
+          <p style="font-size: 0.9rem; color: var(--text-muted);">Please arrive 5 minutes early for your first visit so we can show you around and get you set up on the equipment.</p>
+        </div>
+
+        <div class="contact-info-block" style="background: var(--bg-section); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--spacing-6);">
+          <p style="font-family: var(--font-heading); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--primary); margin-bottom: var(--spacing-3);">New Students</p>
+          <p style="font-size: 0.9rem; color: var(--text-body); font-style: italic; margin-bottom: 0;">We recommend starting with our Intro Series ($99, 4 classes) before joining regular group classes. It gives you the foundation to get more from every session. New students who skip the foundation often feel lost in group classes. The intro series solves that.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Weekly Schedule -->
+<section class="schedule-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Weekly Schedule</span>
+      <h2>Class Timetable</h2>
+      <div class="divider"></div>
+      <p>Schedule is current as of February 2025. Book online or call to reserve your spot.</p>
+    </div>
+    <div class="schedule-table-wrapper">
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-family: var(--font-heading); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--text-muted); white-space: nowrap;">6:00am</td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">All Levels</small></td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Foundations</small></td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">All Levels</small></td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Foundations</small></td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">All Levels</small></td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--font-heading); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--text-muted);">7:30am</td>
+            <td>&mdash;</td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Classical</small></td>
+            <td>&mdash;</td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Classical</small></td>
+            <td>&mdash;</td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">All Levels</small></td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Classical</small></td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--font-heading); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--text-muted);">9:00am</td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">With Props</small></td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Level 1-2</small></td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Fundamentals</small></td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Level 1-2</small></td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">With Props</small></td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Classical</small></td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Foundations</small></td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--font-heading); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--text-muted);">10:30am</td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">All Levels</small></td>
+            <td>&mdash;</td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">All Levels</small></td>
+            <td>&mdash;</td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">All Levels</small></td>
+            <td><span class="class-tag private">Tower</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Tower Flow</small></td>
+            <td>&mdash;</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--font-heading); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--text-muted);">12:00pm</td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Classical</small></td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Fundamentals</small></td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Classical</small></td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Fundamentals</small></td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Classical</small></td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--font-heading); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--text-muted);">5:30pm</td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Foundations</small></td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">All Levels</small></td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Foundations</small></td>
+            <td><span class="class-tag reformer">Reformer</span><br><small style="color:var(--text-muted);font-size:0.78rem;">All Levels</small></td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--font-heading); font-size: 0.72rem; letter-spacing: 0.06em; color: var(--text-muted);">7:00pm</td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Classical</small></td>
+            <td><span class="class-tag private">Tower</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Tower Flow</small></td>
+            <td><span class="class-tag mat">Mat</span><br><small style="color:var(--text-muted);font-size:0.78rem;">With Props</small></td>
+            <td><span class="class-tag private">Tower</span><br><small style="color:var(--text-muted);font-size:0.78rem;">Cadillac</small></td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top: var(--spacing-6); font-size: 0.85rem; color: var(--text-light); font-style: italic; text-align: center;">Private and duet sessions available Monday through Saturday by appointment. Contact us to schedule.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Common Questions</span>
+      <h2>Before Your First Class</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <p class="faq-question">What should I wear?</p>
+        <p class="faq-answer">Form-fitting workout clothes work best. You need to be able to see your alignment and the instructor needs to be able to see yours. Loose shorts or very baggy pants make this harder for both of you. Grip socks are required on the reformer; we sell them at the studio for $14 if you do not have a pair. No shoes in the studio.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-question">What do I need to bring?</p>
+        <p class="faq-answer">Yourself, your grip socks, and a water bottle. We provide everything else: mats, reformer equipment, towels, and all props. There is filtered water in the changing area. You do not need your own mat or any equipment to get started.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-question">I am a complete beginner. Is that okay?</p>
+        <p class="faq-answer">Yes, and we recommend beginning with our Intro Series specifically because of this. Four classes at $99 gives you the foundation to feel confident in group classes and to get more out of every session thereafter. Students who skip the foundation sometimes feel lost in group classes; the Intro Series prevents that. If you want to jump straight into group classes, our Reformer Foundations and Mat Fundamentals classes are the right place to start.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-question">What is the difference between reformer and mat Pilates?</p>
+        <p class="faq-answer">Mat Pilates is the original form and uses only your own bodyweight for resistance. It is deceptively challenging. The reformer uses a carriage, springs, and straps to provide resistance that can support or oppose your movement depending on the exercise. Both are rooted in the classical method. Most dedicated students practice both, and each makes the other more effective. If you can only choose one to start, begin with reformer.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-question">I have an injury or chronic pain. Can I still take class?</p>
+        <p class="faq-answer">In most cases, yes, but please let us know before you book. We recommend starting with private sessions if you have an active injury, post-surgical condition, osteoporosis, or any condition that requires significant modification. This lets us assess your needs properly before you join a group. Many of our most dedicated students came to us because other exercise was not working for their bodies.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-question">What is the cancellation policy?</p>
+        <p class="faq-answer">Group classes can be cancelled up to 12 hours before the class start time without charge. Cancellations within 12 hours or no-shows forfeit the class credit. Private and duet sessions require 24-hour cancellation notice; late cancellations and no-shows are charged in full. We keep our classes small specifically so they can fill, and last-minute cancellations make it harder for students on the waitlist to get a spot.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-question">How quickly will I see results?</p>
+        <p class="faq-answer">Joseph Pilates famously said: in ten sessions you feel the difference, in twenty sessions you see the difference, in thirty sessions you have a new body. Most students notice improved posture and reduced back tension within the first month. Meaningful strength and postural changes typically become visible at the six to eight week mark with two or more sessions per week.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-question">Is Pilates only for women?</p>
+        <p class="faq-answer">No. Joseph Pilates was a man, and his original clientele included boxers and wrestlers. Pilates builds functional core strength, hip stability, and spinal mobility that benefits every body regardless of gender. About 25% of our current students are men. The classical method is demanding in ways that tend to surprise people regardless of how fit they think they are walking in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-text">Core Balance</span>
+          <span class="logo-sub">Pilates Studio</span>
+        </a>
+        <p class="footer-tagline">Classical Pilates, taught with care.</p>
+        <p class="footer-contact-item">(720) 555-0163</p>
+        <p class="footer-contact-item">hello@corebalancepilates.com</p>
+        <p class="footer-contact-item">Denver, CO</p>
+      </div>
+      <div>
+        <p class="footer-heading">Pages</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services &amp; Pricing</a></li>
+          <li><a href="contact.html">Contact &amp; Schedule</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Classes</p>
+        <ul class="footer-links">
+          <li><a href="services.html">Reformer Classes</a></li>
+          <li><a href="services.html">Mat Pilates</a></li>
+          <li><a href="services.html">Tower &amp; Cadillac</a></li>
+          <li><a href="services.html">Private Sessions</a></li>
+          <li><a href="services.html">Duet Sessions</a></li>
+          <li><a href="services.html">Intro Series</a></li>
+        </ul>
+      </div>
+      <div class="footer-hours">
+        <p class="footer-heading">Studio Hours</p>
+        <p>Mon &ndash; Fri: 6:00am &ndash; 7:30pm</p>
+        <p>Saturday: 7:00am &ndash; 1:00pm</p>
+        <p>Sunday: 8:00am &ndash; 12:00pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Core Balance Pilates. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

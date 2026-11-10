@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="result1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A2E" />
+      <stop offset="100%" style="stop-color:#16213E" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#result1Grad)" rx="16"/>
+  <text x="200" y="100" text-anchor="middle" font-family="Manrope, sans-serif" font-size="48" font-weight="800" fill="#65A30D">+340%</text>
+  <text x="200" y="130" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#FFFFFF" opacity="0.7">Organic Traffic Increase</text>
+  <rect x="60" y="160" width="280" height="4" rx="2" fill="#FFFFFF" opacity="0.1"/>
+  <path d="M60 220 Q 130 180 200 200 T 340 160" fill="none" stroke="#65A30D" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="340" cy="160" r="6" fill="#65A30D"/>
+</svg>

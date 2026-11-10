@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book your appointment at SERENITY SPA — call, email, or use our online booking form. Gift cards and day packages available.">
+  <meta name="keywords" content="book spa appointment, spa contact, spa reservations, spa gift card, wellness spa booking">
+  <title>Contact — SERENITY SPA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧖</text></svg>">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">Serenity <em>Spa</em></a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Treatments</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+          <a href="contact.html" class="nav-link nav-cta">Book Now</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero-title reveal">Book Your <span style="color:var(--gold);">Visit</span></h1>
+      <p class="page-hero-desc reveal">Reserve your treatment and let us take care of the rest.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <h2 class="section-title" style="margin-bottom:var(--space-5);">Reserve a Treatment</h2>
+          <form class="form" data-form novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="s-name">Full Name</label>
+                <input class="form-input" type="text" id="s-name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="s-email">Email</label>
+                <input class="form-input" type="email" id="s-email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="s-phone">Phone</label>
+                <input class="form-input" type="tel" id="s-phone" name="phone" placeholder="(555) 123-4567" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="s-service">Treatment</label>
+                <select class="form-select" id="s-service" name="service" required>
+                  <option value="">Select a treatment</option>
+                  <option>Swedish Massage</option>
+                  <option>Deep Tissue Massage</option>
+                  <option>Organic Facial</option>
+                  <option>Hot Stone Therapy</option>
+                  <option>Body Scrub &amp; Wrap</option>
+                  <option>Couples Retreat</option>
+                  <option>Day Spa Package</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="s-date">Preferred Date &amp; Time</label>
+              <input class="form-input" type="text" id="s-date" name="date" placeholder="e.g. Saturday, Sept 19 — 2:00pm" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="s-msg">Notes</label>
+              <textarea class="form-textarea" id="s-msg" name="message" placeholder="Allergies, preferences, or special occasions..."></textarea>
+            </div>
+            <button class="btn btn--gold" type="submit" style="align-self:flex-start;">Reserve Appointment</button>
+            <div class="form-ok">Thank you! Our concierge will confirm your appointment shortly.</div>
+            <div class="form-err">Please fill in all required fields.</div>
+          </form>
+        </div>
+
+        <div class="reveal">
+          <div class="contact-info">
+            <h3>Find Us</h3>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div><div class="contact-item-label">Address</div><div class="contact-item-text">18 Willow Garden Lane, Maple Grove, OR 97009</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div><div class="contact-item-label">Phone</div><div class="contact-item-text">(555) 246-SPAS</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div><div class="contact-item-label">Email</div><div class="contact-item-text">hello@serenityspa.com</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div><div class="contact-item-label">Opening Hours</div>
+                <div class="hours-grid">
+                  <div><span>Mon–Fri</span><span>9:00am – 8:00pm</span></div>
+                  <div><span>Saturday</span><span>9:00am – 8:00pm</span></div>
+                  <div><span>Sunday</span><span>10:00am – 6:00pm</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🎁</div>
+              <div><div class="contact-item-label">Gift Cards</div><div class="contact-item-text">Give the gift of calm — available at the front desk or by phone.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="appointment-banner">
+    <div class="appointment-bg"><img src="assets/img/appointment-background.jpg" alt="Serene spa treatment room" loading="lazy"></div>
+    <div class="appointment-overlay"></div>
+    <div class="container reveal">
+      <h2 class="cta-title">Questions?</h2>
+      <p class="cta-desc">Call us anytime — our concierge is happy to help you choose the perfect treatment.</p>
+      <a href="tel:+1555246SPAS" class="btn btn--white">Call (555) 246-SPAS</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><div class="footer-brand-logo">Serenity <em>Spa</em></div><p class="footer-brand-desc">A luxury wellness sanctuary offering expert treatments, natural botanicals, and a space to simply breathe.</p></div>
+        <div><h4 class="footer-heading">Explore</h4><div class="footer-links"><a href="about.html" class="footer-link">About</a><a href="services.html" class="footer-link">Treatments</a><a href="gallery.html" class="footer-link">Gallery</a></div></div>
+        <div><h4 class="footer-heading">Visit</h4><div class="footer-links"><a href="contact.html" class="footer-link">Find Us</a><a href="contact.html" class="footer-link">Contact</a><a href="contact.html" class="footer-link">Book Now</a></div></div>
+        <div><h4 class="footer-heading">Hours</h4><div class="footer-links"><a href="#" class="footer-link">Mon–Sat: 9am–8pm</a><a href="#" class="footer-link">Sun: 10am–6pm</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; <span data-year></span> SERENITY SPA. All rights reserved.</span><span>Find your peace ✦</span></div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

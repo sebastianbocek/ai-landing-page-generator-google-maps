@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Catering — Scoops & Swirls Creamery</title>
+  <meta name="description" content="Contact Scoops & Swirls Creamery in Savannah, GA. Book catering for your event, order a custom ice cream cake, or just say hello to Patty and Jim.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <i class="fa-solid fa-ice-cream"></i>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">Scoops &amp; Swirls</span>
+        <span class="logo-sub">Creamery</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" role="navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="services.html" class="nav-link">Flavors &amp; Menu</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <a href="services.html" class="header-cta">
+      <i class="fa-solid fa-bowl-food"></i>
+      See Today's Flavors
+    </a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-eyebrow">Contact &amp; Catering</div>
+    <h1 class="page-hero-title">Let's Talk Ice Cream</h1>
+    <p class="page-hero-text">
+      Questions about catering, custom cakes, allergens, or just want to tell us
+      what flavor you want to see next? We're happy to hear from you.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT FORM + SIDEBAR -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-card">
+        <h2 class="form-title">Send Us a Message</h2>
+        <p class="form-subtitle">
+          For catering inquiries, fill out the event details below and we'll get back to
+          you within one business day. For general questions, just leave the event fields blank.
+        </p>
+
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name *</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Patty" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name *</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Holloway" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inquiry-type">Type of Inquiry *</label>
+            <select id="inquiry-type" name="inquiry_type" required>
+              <option value="" disabled selected>Select what brings you here</option>
+              <option value="catering">Catering / Sundae Bar for Event</option>
+              <option value="ice-cream-cake">Custom Ice Cream Cake Order</option>
+              <option value="catering-info">General Catering Information</option>
+              <option value="allergen">Allergen / Dietary Questions</option>
+              <option value="bulk-order">Bulk Pint / Quart Order</option>
+              <option value="feedback">Feedback or Compliment</option>
+              <option value="general">General Question</option>
+            </select>
+          </div>
+
+          <!-- EVENT DETAILS (catering) -->
+          <div style="padding:1.25rem;background:rgba(255,107,157,0.05);border-radius:var(--radius-md);border:1px dashed rgba(255,107,157,0.3);margin-bottom:1.25rem;">
+            <p style="font-size:0.82rem;font-weight:700;color:var(--strawberry);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:1rem;">Event Details (for catering &amp; cake orders)</p>
+
+            <div class="form-row">
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="event-type">Event Type</label>
+                <select id="event-type" name="event_type">
+                  <option value="" disabled selected>Select event type</option>
+                  <option value="wedding">Wedding / Reception</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="graduation">Graduation Party</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="school">School Event</option>
+                  <option value="block-party">Block Party / Neighborhood Event</option>
+                  <option value="holiday">Holiday Party</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin-bottom:0;">
+                <label for="event-date">Event Date</label>
+                <input type="date" id="event-date" name="event_date">
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top:1rem;">
+              <label for="guest-count">Estimated Number of Guests</label>
+              <select id="guest-count" name="guest_count">
+                <option value="" disabled selected>Select approximate guest count</option>
+                <option value="under-25">Under 25 guests</option>
+                <option value="25-50">25 to 50 guests</option>
+                <option value="50-100">50 to 100 guests</option>
+                <option value="100-150">100 to 150 guests</option>
+                <option value="150-250">150 to 250 guests</option>
+                <option value="over-250">Over 250 guests</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom:0;">
+              <label for="special-requests">Dietary Needs or Special Requests</label>
+              <input type="text" id="special-requests" name="special_requests" placeholder="e.g., need dairy-free options, nut allergies in group, specific flavors...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message *</label>
+            <textarea id="message" name="message" placeholder="Tell us a bit more about what you're looking for, any questions you have, or anything that helps us help you..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label style="display:flex;align-items:flex-start;gap:0.6rem;cursor:pointer;font-weight:400;font-size:0.88rem;color:var(--gray);">
+              <input type="checkbox" name="newsletter" style="width:auto;margin-top:3px;accent-color:var(--strawberry);">
+              Sign me up for the Scoops &amp; Swirls email list (monthly flavor updates, seasonal specials, and the occasional coupon).
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1.05rem;padding:1rem;">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Message
+          </button>
+
+          <p style="font-size:0.8rem;color:var(--gray);text-align:center;margin-top:1rem;">
+            We respond to all messages within one business day. For urgent matters, call us at <a href="tel:5558472293" style="color:var(--strawberry);">(555) 847-2293</a>.
+          </p>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+
+        <div class="contact-info-card">
+          <div class="contact-info-title">
+            <i class="fa-solid fa-clock"></i>
+            Store Hours
+          </div>
+          <div class="contact-info-list">
+            <div class="contact-info-row">
+              <i class="fa-solid fa-circle" style="font-size:0.4rem;margin-top:0.45rem;color:var(--mint);"></i>
+              <span><strong>Mon &ndash; Thu:</strong> 12:00 PM &ndash; 9:00 PM</span>
+            </div>
+            <div class="contact-info-row">
+              <i class="fa-solid fa-circle" style="font-size:0.4rem;margin-top:0.45rem;color:var(--mint);"></i>
+              <span><strong>Friday:</strong> 12:00 PM &ndash; 10:00 PM</span>
+            </div>
+            <div class="contact-info-row">
+              <i class="fa-solid fa-circle" style="font-size:0.4rem;margin-top:0.45rem;color:var(--mint);"></i>
+              <span><strong>Saturday:</strong> 11:00 AM &ndash; 10:00 PM</span>
+            </div>
+            <div class="contact-info-row">
+              <i class="fa-solid fa-circle" style="font-size:0.4rem;margin-top:0.45rem;color:var(--mint);"></i>
+              <span><strong>Sunday:</strong> 11:00 AM &ndash; 9:00 PM</span>
+            </div>
+            <div class="contact-info-row">
+              <i class="fa-solid fa-circle" style="font-size:0.4rem;margin-top:0.45rem;color:var(--strawberry);"></i>
+              <span><strong>Thanksgiving &amp; Christmas:</strong> Closed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-title">
+            <i class="fa-solid fa-location-dot"></i>
+            Find Us
+          </div>
+          <div class="contact-info-list">
+            <div class="contact-info-row">
+              <i class="fa-solid fa-map-pin"></i>
+              <span>412 Broughton Street<br>Savannah, GA 31401</span>
+            </div>
+            <div class="contact-info-row">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:5558472293" style="color:var(--strawberry);">(555) 847-2293</a>
+            </div>
+            <div class="contact-info-row">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:hello@scoopsandswirls.com" style="color:var(--strawberry);">hello@scoopsandswirls.com</a>
+            </div>
+            <div class="contact-info-row">
+              <i class="fa-solid fa-car"></i>
+              <span>Free parking in the lot behind the shop off Congress Street.</span>
+            </div>
+          </div>
+
+          <div class="map-placeholder">
+            <span style="position:relative;z-index:1;font-size:0.9rem;">
+              <i class="fa-solid fa-map-pin" style="margin-right:0.5rem;"></i>
+              412 Broughton St, Savannah, GA
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-info-card" style="background:linear-gradient(135deg,var(--mint) 0%,#2d8a55 100%);color:var(--white);">
+          <div class="contact-info-title" style="color:var(--white);">
+            <i class="fa-solid fa-paw"></i>
+            Dog-Friendly Patio
+          </div>
+          <p style="font-size:0.88rem;line-height:1.7;color:rgba(255,255,255,0.9);margin-bottom:1rem;">
+            Leashed dogs are always welcome on our outdoor patio. Every dog gets a free Pup Cup
+            &mdash; a small cup of plain vanilla soft serve made just for pups. No purchase necessary.
+          </p>
+          <p style="font-size:0.82rem;color:rgba(255,255,255,0.7);">
+            Water bowls available on the patio. Please clean up after your dog. One pup cup per dog per visit.
+          </p>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-title">
+            <i class="fa-brands fa-instagram"></i>
+            Follow Along
+          </div>
+          <p style="font-size:0.88rem;color:var(--gray);line-height:1.6;margin-bottom:1rem;">
+            We post the daily flavor board on Instagram every morning before we open.
+            Follow us to know what's scooping before you make the trip.
+          </p>
+          <div style="display:flex;gap:0.75rem;">
+            <a href="#" style="display:flex;align-items:center;gap:0.5rem;background:var(--strawberry);color:var(--white);padding:0.5rem 1rem;border-radius:var(--radius-full);font-size:0.85rem;font-weight:700;text-decoration:none;">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="#" style="display:flex;align-items:center;gap:0.5rem;background:var(--chocolate);color:var(--white);padding:0.5rem 1rem;border-radius:var(--radius-full);font-size:0.85rem;font-weight:700;text-decoration:none;">
+              <i class="fa-brands fa-facebook-f"></i> Facebook
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow"><i class="fa-solid fa-circle-question"></i> Common Questions</span>
+      <h2 class="section-title">Things People Ask Us</h2>
+      <p class="section-subtitle">
+        Here are the questions we get most often. If yours isn't here, just ask.
+      </p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="true">
+          Do you accommodate food allergies? What about dairy-free or vegan options?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, with important caveats. We make all of our products in a shared kitchen where dairy, tree nuts (pecans, pistachios), peanuts, wheat (waffle cones and brownie crust), and eggs are all present. We cannot guarantee any product is completely free from cross-contamination.</p>
+          <p style="margin-top:0.75rem;">That said, we do offer dairy-free sorbets that are made without cream or milk: Lemon Basil Sorbet, Blood Orange Sorbet, Coconut Lime Sorbet, and Watermelon Sorbet (seasonal). These do not contain dairy by recipe but are made in the same facility. Please let us know about any severe allergies when you visit and we can help you choose safely.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I order a custom ice cream cake?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Cake orders require at least one week's notice (10 days for large sheet cakes). You can order by calling us at (555) 847-2293 or sending an email to hello@scoopsandswirls.com. When you order, let us know:</p>
+          <ul style="margin-top:0.5rem;padding-left:1.25rem;list-style:disc;color:var(--gray);">
+            <li style="margin-bottom:0.3rem;">Cake size and number of servings needed</li>
+            <li style="margin-bottom:0.3rem;">Your two preferred ice cream flavors</li>
+            <li style="margin-bottom:0.3rem;">Middle layer preference (hot fudge or caramel)</li>
+            <li style="margin-bottom:0.3rem;">Crust type (brownie or waffle cookie)</li>
+            <li>Any message you'd like written on the cake</li>
+          </ul>
+          <p style="margin-top:0.75rem;">We require a 50% deposit at the time of ordering. The balance is due at pickup. We do not deliver cakes &mdash; all cakes must be picked up at the shop. We'll box them carefully for transport.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How far in advance do I need to book catering?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>For most events, we ask for at least 2 weeks notice. For large events (150+ guests), weddings, or events during peak season (May through September), we recommend booking 4-6 weeks in advance. We book up quickly in summer, so the earlier the better.</p>
+          <p style="margin-top:0.75rem;">To check availability for your event date, use the contact form above or call us directly. We'll let you know within one business day if your date is open. A 25% deposit holds your date while we finalize the details.</p>
+          <p style="margin-top:0.75rem;">We serve Savannah, Pooler, Richmond Hill, Rincon, Tybee Island, Bluffton SC, and surrounding areas within 60 miles. Events outside Chatham County may include travel fees.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What are your seasonal flavors and when do they rotate?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Patty introduces a new seasonal flavor around the first of each month. Seasonal flavors are available while supplies last &mdash; some last the whole month, some sell out in a week. It depends on demand and ingredient availability.</p>
+          <p style="margin-top:0.75rem;">The best way to know what's current is to follow us on Instagram (@scoopsandswirls_savannah) where we post the daily board every morning. We also send monthly email updates to our subscriber list with new seasonal flavor announcements and early-order opportunities for cakes featuring the seasonal flavor.</p>
+          <p style="margin-top:0.75rem;">Our general seasonal calendar:</p>
+          <ul style="margin-top:0.5rem;padding-left:1.25rem;list-style:disc;color:var(--gray);">
+            <li style="margin-bottom:0.3rem;">Winter (Dec-Feb): Peppermint Bark, Cinnamon Horchata, Sweetheart Strawberry Rose</li>
+            <li style="margin-bottom:0.3rem;">Spring (Mar-May): Lemon Poppy Seed, Honey Lavender, Strawberry Rhubarb</li>
+            <li style="margin-bottom:0.3rem;">Summer (Jun-Aug): Watermelon Sorbet, Peach Cobbler, Georgia Peach Melba</li>
+            <li>Fall (Sep-Nov): Pumpkin Spice, Fig &amp; Mascarpone, Apple Cider Caramel</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What exactly is a Pup Cup and is it really free?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, it's really free. A Pup Cup is a small paper cup of plain vanilla soft serve sized just right for a dog. We've been giving them away since the day we opened. It started because Patty's dog Biscuit used to sit outside the shop looking heartbroken every time a human walked out with a cone.</p>
+          <p style="margin-top:0.75rem;">Our patio is fully dog-friendly &mdash; leashed dogs are always welcome at the outdoor tables. We keep water bowls out on warm days. The Pup Cup is available during all open hours, one per dog per visit. No purchase necessary, though we're always happy when you treat yourself too.</p>
+          <p style="margin-top:0.75rem;">Plain vanilla soft serve is generally safe for most dogs in small amounts, but please consult your vet if your dog has specific dietary concerns.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUICK CONTACT STRIP -->
+<section style="padding:4rem 0;background:var(--bg);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;">
+
+      <div style="background:var(--white);border-radius:var(--radius-lg);padding:2rem;text-align:center;box-shadow:var(--shadow-sm);">
+        <div style="width:56px;height:56px;background:rgba(255,107,157,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--strawberry);font-size:1.3rem;margin:0 auto 1rem;">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;color:var(--chocolate);margin-bottom:0.5rem;">Call Us</h3>
+        <p style="font-size:0.88rem;color:var(--gray);margin-bottom:0.75rem;">Talk to Patty or Jim directly during shop hours.</p>
+        <a href="tel:5558472293" style="font-weight:700;color:var(--strawberry);font-size:1rem;">(555) 847-2293</a>
+      </div>
+
+      <div style="background:var(--white);border-radius:var(--radius-lg);padding:2rem;text-align:center;box-shadow:var(--shadow-sm);">
+        <div style="width:56px;height:56px;background:rgba(61,170,110,0.1);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--mint);font-size:1.3rem;margin:0 auto 1rem;">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;color:var(--chocolate);margin-bottom:0.5rem;">Email Us</h3>
+        <p style="font-size:0.88rem;color:var(--gray);margin-bottom:0.75rem;">We respond within one business day.</p>
+        <a href="mailto:hello@scoopsandswirls.com" style="font-weight:700;color:var(--mint);font-size:0.9rem;">hello@scoopsandswirls.com</a>
+      </div>
+
+      <div style="background:var(--white);border-radius:var(--radius-lg);padding:2rem;text-align:center;box-shadow:var(--shadow-sm);">
+        <div style="width:56px;height:56px;background:rgba(255,209,102,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#B8860B;font-size:1.3rem;margin:0 auto 1rem;">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <h3 style="font-family:var(--font-heading);font-size:1.1rem;color:var(--chocolate);margin-bottom:0.5rem;">Visit Us</h3>
+        <p style="font-size:0.88rem;color:var(--gray);margin-bottom:0.75rem;">412 Broughton Street, Savannah, GA</p>
+        <a href="https://maps.google.com" target="_blank" rel="noopener" style="font-weight:700;color:#B8860B;font-size:0.9rem;">Get Directions <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.75rem;"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<section class="cta-strip">
+  <div class="container">
+    <h2 class="cta-strip-title">No Plans This Weekend? Come Get a Scoop.</h2>
+    <p class="cta-strip-text">
+      No reservation needed. Just show up. We're open seven days a week
+      and we always save room for one more customer.
+    </p>
+    <div class="cta-strip-buttons">
+      <a href="services.html" class="btn btn-secondary">
+        <i class="fa-solid fa-list"></i>
+        View the Menu
+      </a>
+      <a href="about.html" class="btn btn-outline">
+        <i class="fa-solid fa-book-open"></i>
+        Our Story
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-logo">
+          <div class="footer-logo-icon">
+            <i class="fa-solid fa-ice-cream"></i>
+          </div>
+          <span class="footer-logo-name">Scoops &amp; Swirls Creamery</span>
+        </a>
+        <p class="footer-tagline">
+          Small-batch, handcrafted ice cream made with local Georgia dairy.
+          Family-owned by Patty &amp; Jim Holloway since 2009.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Navigate</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Flavors &amp; Menu</a></li>
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="contact.html" class="footer-link">Contact &amp; Catering</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">We Serve</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Scooped Ice Cream</a></li>
+          <li><a href="services.html" class="footer-link">Sundaes &amp; Splits</a></li>
+          <li><a href="services.html" class="footer-link">Milkshakes</a></li>
+          <li><a href="services.html" class="footer-link">Soft Serve</a></li>
+          <li><a href="services.html" class="footer-link">Ice Cream Cakes</a></li>
+          <li><a href="contact.html" class="footer-link">Event Catering</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Get In Touch</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-map-pin"></i>
+          <span>412 Broughton Street<br>Savannah, GA 31401</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:5558472293" style="color:rgba(255,255,255,0.6);">(555) 847-2293</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:hello@scoopsandswirls.com" style="color:rgba(255,255,255,0.6);">hello@scoopsandswirls.com</a>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Mon&ndash;Thu: 12&ndash;9pm<br>Fri: 12&ndash;10pm<br>Sat&ndash;Sun: 11am&ndash;10/9pm</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Scoops &amp; Swirls Creamery. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#" class="footer-link" style="font-size:0.8rem;">Privacy Policy</a>
+        <a href="#" class="footer-link" style="font-size:0.8rem;">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>const navToggle=document.querySelector('.nav-toggle');const nav=document.querySelector('.nav');if(navToggle&&nav){navToggle.addEventListener('click',()=>{const isOpen=nav.classList.toggle('nav-open');navToggle.classList.toggle('active');navToggle.setAttribute('aria-expanded',isOpen);});}</script>
+
+<script>
+  // Simple FAQ accordion
+  const faqButtons = document.querySelectorAll('.faq-question');
+  faqButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      const answer = btn.nextElementSibling;
+      const icon = btn.querySelector('i');
+      if (expanded) {
+        btn.setAttribute('aria-expanded', 'false');
+        answer.style.display = 'none';
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        btn.setAttribute('aria-expanded', 'true');
+        answer.style.display = 'block';
+        icon.style.transform = 'rotate(180deg)';
+      }
+    });
+    // Initialize: hide all except first
+    const answer = btn.nextElementSibling;
+    if (btn.getAttribute('aria-expanded') !== 'true') {
+      answer.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>

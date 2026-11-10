@@ -1,0 +1,15 @@
+{
+  "slug": "saas-landing",
+  "name": "Pulse — SaaS landing page",
+  "category": "landing",
+  "description": "A dark, modern SaaS landing page with a hand-built product dashboard mock, features grid, pricing with a monthly/yearly toggle, testimonials and FAQ.",
+  "tags": ["saas", "startup", "landing page", "dark mode", "software", "pricing"],
+  "pages": ["index.html"],
+  "features": ["Responsive", "Dark design", "CSS/SVG product mockup", "Pricing monthly/yearly toggle", "FAQ accordion", "Animated stats counter", "Scroll reveal animations", "Mobile menu", "Reduced-motion support", "No framework"],
+  "fonts": [
+    { "family": "Space Grotesk", "source": "Google Fonts", "license": "OFL" },
+    { "family": "Inter", "source": "Google Fonts", "license": "OFL" }
+  ],
+  "colors": { "brand": "#7c5cff", "accent": "#ffb020", "bg": "#0a0a12", "text": "#ececf4" },
+  "customizable": { "brand": true, "accent": true, "brandName": true, "heading": true }
+}

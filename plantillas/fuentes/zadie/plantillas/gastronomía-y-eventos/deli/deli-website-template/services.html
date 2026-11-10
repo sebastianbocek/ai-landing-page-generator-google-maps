@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - The Corner Deli</title>
+  <meta name="description" content="Classic sandwiches, hot entrees, homemade sides, and catering platters. View the full menu at The Corner Deli -- everything made fresh daily.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="checkered-border-sm"></div>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-sandwich"></i></div>
+        The Corner Deli
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="header-cta">Order Online</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <span class="hero-label">Our Menu</span>
+      <h1>What We're Serving</h1>
+      <p>Everything is made fresh daily with Boar's Head meats, house-baked bread, and recipes that have been perfected over nearly four decades.</p>
+    </div>
+  </section>
+  <div class="checkered-border"></div>
+
+  <!-- Classic Sandwiches -->
+  <section class="menu-section">
+    <div class="container">
+      <div class="menu-category">
+        <div class="menu-category-header">
+          <i class="fas fa-bread-slice"></i>
+          <h2>Classic Sandwiches</h2>
+        </div>
+        <div class="menu-board">
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">The Godfather</div>
+                <div class="menu-item-desc">Capicola, sopressata, Genoa salami, provolone, roasted red peppers, shredded lettuce, tomato, and house vinaigrette on a seeded hero.</div>
+              </div>
+              <div class="menu-item-price">$13.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">The Reuben</div>
+                <div class="menu-item-desc">House-cured corned beef, sauerkraut, Swiss cheese, and homemade Russian dressing on griddled marble rye.</div>
+              </div>
+              <div class="menu-item-price">$13.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Turkey Club Deluxe</div>
+                <div class="menu-item-desc">Oven-roasted turkey breast, crispy bacon, lettuce, tomato, avocado, and herb mayo on triple-decker toast.</div>
+              </div>
+              <div class="menu-item-price">$12.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Classic BLT</div>
+                <div class="menu-item-desc">Thick-cut applewood bacon, crisp lettuce, vine-ripe tomato, and mayo on toasted white bread. Simple and perfect.</div>
+              </div>
+              <div class="menu-item-price">$9.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Philly Cheesesteak</div>
+                <div class="menu-item-desc">Shaved ribeye, sauteed onions and peppers, melted American cheese on a fresh-baked hoagie roll. Add mushrooms +$1.</div>
+              </div>
+              <div class="menu-item-price">$14.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Tuna Melt</div>
+                <div class="menu-item-desc">House-made tuna salad with celery and red onion, melted cheddar cheese on griddled rye bread.</div>
+              </div>
+              <div class="menu-item-price">$10.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Grilled Chicken Pesto</div>
+                <div class="menu-item-desc">Marinated grilled chicken breast, fresh mozzarella, roasted red peppers, and basil pesto on ciabatta.</div>
+              </div>
+              <div class="menu-item-price">$12.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">The Cuban</div>
+                <div class="menu-item-desc">Slow-roasted pulled pork, smoked ham, Swiss cheese, dill pickles, and yellow mustard on a pressed Cuban roll.</div>
+              </div>
+              <div class="menu-item-price">$13.95</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Build Your Own -->
+      <div class="menu-category">
+        <div class="menu-category-header">
+          <i class="fas fa-list-check"></i>
+          <h2>Build Your Own</h2>
+        </div>
+        <div class="build-your-own">
+          <p style="margin-bottom: 24px; color: var(--color-gray); font-size: 0.95rem;">Pick your bread, your protein, your cheese, and load it up. Starting at <strong style="color: var(--color-secondary);">$9.95</strong></p>
+          <div class="build-section">
+            <h4><i class="fas fa-bread-slice" style="margin-right: 8px;"></i> Choose Your Bread</h4>
+            <div class="build-options">
+              <span class="build-option">Seeded Hero</span>
+              <span class="build-option">Marble Rye</span>
+              <span class="build-option">Ciabatta</span>
+              <span class="build-option">Hoagie Roll</span>
+              <span class="build-option">White</span>
+              <span class="build-option">Wheat</span>
+              <span class="build-option">Wrap</span>
+              <span class="build-option">Sourdough</span>
+            </div>
+          </div>
+          <div class="build-section">
+            <h4><i class="fas fa-drumstick-bite" style="margin-right: 8px;"></i> Choose Your Meat</h4>
+            <div class="build-options">
+              <span class="build-option">Turkey Breast</span>
+              <span class="build-option">Roast Beef</span>
+              <span class="build-option">Corned Beef</span>
+              <span class="build-option">Pastrami</span>
+              <span class="build-option">Ham</span>
+              <span class="build-option">Salami</span>
+              <span class="build-option">Capicola</span>
+              <span class="build-option">Grilled Chicken</span>
+              <span class="build-option">Tuna Salad</span>
+              <span class="build-option">Chicken Salad</span>
+            </div>
+          </div>
+          <div class="build-section">
+            <h4><i class="fas fa-cheese" style="margin-right: 8px;"></i> Choose Your Cheese</h4>
+            <div class="build-options">
+              <span class="build-option">American</span>
+              <span class="build-option">Swiss</span>
+              <span class="build-option">Provolone</span>
+              <span class="build-option">Cheddar</span>
+              <span class="build-option">Mozzarella</span>
+              <span class="build-option">Pepper Jack</span>
+              <span class="build-option">Muenster</span>
+            </div>
+          </div>
+          <div class="build-section">
+            <h4><i class="fas fa-pepper-hot" style="margin-right: 8px;"></i> Toppings</h4>
+            <div class="build-options">
+              <span class="build-option">Lettuce</span>
+              <span class="build-option">Tomato</span>
+              <span class="build-option">Onion</span>
+              <span class="build-option">Pickles</span>
+              <span class="build-option">Roasted Peppers</span>
+              <span class="build-option">Hot Peppers</span>
+              <span class="build-option">Avocado +$1.50</span>
+              <span class="build-option">Bacon +$2.00</span>
+              <span class="build-option">Sauerkraut</span>
+              <span class="build-option">Coleslaw</span>
+              <span class="build-option">Mushrooms</span>
+              <span class="build-option">Olives</span>
+            </div>
+          </div>
+          <div class="build-section">
+            <h4><i class="fas fa-jar" style="margin-right: 8px;"></i> Condiments</h4>
+            <div class="build-options">
+              <span class="build-option">Mayo</span>
+              <span class="build-option">Mustard</span>
+              <span class="build-option">Spicy Mustard</span>
+              <span class="build-option">Russian Dressing</span>
+              <span class="build-option">Oil &amp; Vinegar</span>
+              <span class="build-option">Herb Mayo</span>
+              <span class="build-option">Pesto</span>
+              <span class="build-option">Tony's Hot Sauce</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hot Entrees -->
+      <div class="menu-category">
+        <div class="menu-category-header">
+          <i class="fas fa-fire"></i>
+          <h2>Hot Entrees</h2>
+        </div>
+        <div class="menu-board">
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Meatball Parm Hero</div>
+                <div class="menu-item-desc">House-rolled meatballs in marinara, melted mozzarella, and parmesan on a toasted hero. Served with a side of extra sauce.</div>
+              </div>
+              <div class="menu-item-price">$12.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Chicken Cutlet Parm</div>
+                <div class="menu-item-desc">Hand-breaded chicken cutlet, marinara sauce, melted mozzarella, and parmesan on a seeded hero.</div>
+              </div>
+              <div class="menu-item-price">$13.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Eggplant Parm Hero</div>
+                <div class="menu-item-desc">Breaded and fried eggplant, marinara, melted mozzarella, fresh basil on a toasted hero.</div>
+              </div>
+              <div class="menu-item-price">$11.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Sausage &amp; Peppers</div>
+                <div class="menu-item-desc">Sweet Italian sausage with sauteed bell peppers and onions in a light tomato sauce on a hoagie roll.</div>
+              </div>
+              <div class="menu-item-price">$12.95</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sides -->
+      <div class="menu-category">
+        <div class="menu-category-header">
+          <i class="fas fa-bowl-food"></i>
+          <h2>Sides</h2>
+        </div>
+        <div class="menu-board">
+          <div class="menu-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px;">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Homemade Coleslaw</div>
+              </div>
+              <div class="menu-item-price">$3.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Potato Salad</div>
+              </div>
+              <div class="menu-item-price">$3.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Macaroni Salad</div>
+              </div>
+              <div class="menu-item-price">$3.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Pasta Salad</div>
+              </div>
+              <div class="menu-item-price">$4.50</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Half-Sour Pickles</div>
+              </div>
+              <div class="menu-item-price">$2.50</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Chips</div>
+              </div>
+              <div class="menu-item-price">$1.95</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soups -->
+      <div class="menu-category">
+        <div class="menu-category-header">
+          <i class="fas fa-mug-hot"></i>
+          <h2>Soups</h2>
+        </div>
+        <div class="menu-board">
+          <p style="margin-bottom: 16px; color: var(--color-gray); font-size: 0.9rem; font-style: italic;">Two soups daily. Ask at the counter for today's selection.</p>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Chicken Noodle</div>
+                <div class="menu-item-desc">Classic recipe with tender chicken, egg noodles, carrots, and celery. Available daily.</div>
+              </div>
+              <div class="menu-item-price">$5.95 / $7.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Tomato Bisque</div>
+                <div class="menu-item-desc">Creamy roasted tomato soup with a touch of basil. Pairs perfectly with a grilled cheese.</div>
+              </div>
+              <div class="menu-item-price">$5.95 / $7.95</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Italian Wedding</div>
+                <div class="menu-item-desc">Mini meatballs, escarole, and acini di pepe pasta in a savory chicken broth. Seasonal rotation.</div>
+              </div>
+              <div class="menu-item-price">$5.95 / $7.95</div>
+            </div>
+          </div>
+          <p style="margin-top: 12px; color: var(--color-gray); font-size: 0.85rem;">Cup / Bowl</p>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-category">
+        <div class="menu-category-header">
+          <i class="fas fa-glass-water"></i>
+          <h2>Drinks</h2>
+        </div>
+        <div class="menu-board">
+          <div class="menu-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px;">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Fountain Soda</div>
+                <div class="menu-item-desc">Coke, Diet Coke, Sprite, Ginger Ale</div>
+              </div>
+              <div class="menu-item-price">$2.50</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Bottled Water</div>
+              </div>
+              <div class="menu-item-price">$1.50</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Craft Sodas</div>
+                <div class="menu-item-desc">Boylan's Root Beer, Cream Soda, Black Cherry</div>
+              </div>
+              <div class="menu-item-price">$3.50</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Coffee</div>
+                <div class="menu-item-desc">Regular or decaf. Free refills for dine-in.</div>
+              </div>
+              <div class="menu-item-price">$2.25</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catering -->
+  <div class="checkered-border"></div>
+  <section class="chalkboard-green chalkboard section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Feed the Crowd</span>
+        <h2 class="section-title">Catering</h2>
+        <p class="section-subtitle">Party platters, sandwich trays, and sides for groups of any size. 24-hour advance notice for all catering orders.</p>
+      </div>
+      <div style="overflow-x: auto;">
+        <table class="catering-table">
+          <thead>
+            <tr>
+              <th>Platter</th>
+              <th>Serves 10</th>
+              <th>Serves 20</th>
+              <th>Serves 30</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sandwich Tray</strong> -- Assorted sandwiches cut into halves on a bed of lettuce</td>
+              <td>$89.95</td>
+              <td>$169.95</td>
+              <td>$239.95</td>
+            </tr>
+            <tr>
+              <td><strong>Italian Hero Tray</strong> -- 3-foot and 6-foot hero options, sliced and ready to serve</td>
+              <td>$79.95</td>
+              <td>$149.95</td>
+              <td>$219.95</td>
+            </tr>
+            <tr>
+              <td><strong>Wrap Platter</strong> -- Assorted wraps with turkey, chicken, veggie, and Italian options</td>
+              <td>$84.95</td>
+              <td>$159.95</td>
+              <td>$229.95</td>
+            </tr>
+            <tr>
+              <td><strong>Meat &amp; Cheese Tray</strong> -- Sliced Boar's Head meats and cheeses with rolls and condiments</td>
+              <td>$99.95</td>
+              <td>$189.95</td>
+              <td>$269.95</td>
+            </tr>
+            <tr>
+              <td><strong>Side Salad Tray</strong> -- Choice of potato salad, coleslaw, macaroni salad, or pasta salad</td>
+              <td>$34.95</td>
+              <td>$59.95</td>
+              <td>$84.95</td>
+            </tr>
+            <tr>
+              <td><strong>Cookie &amp; Brownie Platter</strong> -- Assorted fresh-baked cookies and brownies</td>
+              <td>$29.95</td>
+              <td>$54.95</td>
+              <td>$79.95</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align: center; color: rgba(255, 253, 245, 0.6); margin-top: 24px; font-size: 0.9rem;">Custom orders welcome. Call us at (718) 555-0147 or <a href="contact.html" style="color: var(--color-accent);">fill out a catering request</a>.</p>
+    </div>
+  </section>
+  <div class="checkered-border"></div>
+
+  <!-- Deli Counter -->
+  <section class="section">
+    <div class="container">
+      <div class="menu-category">
+        <div class="menu-category-header">
+          <i class="fas fa-scale-balanced"></i>
+          <h2>Deli Counter -- By the Pound</h2>
+        </div>
+        <p style="margin-bottom: 24px; color: var(--color-gray);">All meats and cheeses sliced fresh to order. Boar's Head premium quality.</p>
+        <div class="menu-board">
+          <div class="menu-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px;">
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Oven-Roasted Turkey</div>
+              </div>
+              <div class="menu-item-price">$12.99/lb</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">House-Cured Corned Beef</div>
+              </div>
+              <div class="menu-item-price">$15.99/lb</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Roast Beef</div>
+              </div>
+              <div class="menu-item-price">$14.99/lb</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Pastrami</div>
+              </div>
+              <div class="menu-item-price">$15.99/lb</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Genoa Salami</div>
+              </div>
+              <div class="menu-item-price">$11.99/lb</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Smoked Ham</div>
+              </div>
+              <div class="menu-item-price">$10.99/lb</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">American Cheese</div>
+              </div>
+              <div class="menu-item-price">$8.99/lb</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Swiss Cheese</div>
+              </div>
+              <div class="menu-item-price">$9.99/lb</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Provolone</div>
+              </div>
+              <div class="menu-item-price">$9.99/lb</div>
+            </div>
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Fresh Mozzarella</div>
+              </div>
+              <div class="menu-item-price">$10.99/lb</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container text-center">
+      <h2>Ready to Order?</h2>
+      <p>Call ahead, walk in, or place a catering order. We will have it ready when you are.</p>
+      <div class="cta-details" style="justify-content: center;">
+        <div><i class="fas fa-phone"></i> (718) 555-0147</div>
+        <div><i class="fas fa-clock"></i> Mon-Sat: 6:00 AM - 8:00 PM | Sun: 7:00 AM - 6:00 PM</div>
+      </div>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-secondary">Order Online</a>
+        <a href="contact.html" class="btn btn-outline">Catering Inquiry</a>
+      </div>
+    </div>
+  </section>
+  <div class="checkered-border"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-sandwich"></i></div>
+            The Corner Deli
+          </a>
+          <p>Family-owned since 1987. Overstuffed sandwiches, house-cured meats, and homemade sides made fresh every day in the heart of the neighborhood.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Menu</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <div class="footer-links">
+            <a href="services.html">Sandwiches</a>
+            <a href="services.html">Hot Entrees</a>
+            <a href="services.html">Sides &amp; Soups</a>
+            <a href="services.html">Catering</a>
+          </div>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <div class="footer-hours">
+            <p>Mon - Sat: 6:00 AM - 8:00 PM</p>
+            <p>Sunday: 7:00 AM - 6:00 PM</p>
+            <p style="margin-top: 12px;">247 Oak Street<br>Brooklyn, NY 11201</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Corner Deli. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

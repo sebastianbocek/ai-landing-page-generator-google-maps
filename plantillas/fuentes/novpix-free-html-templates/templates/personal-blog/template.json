@@ -1,0 +1,15 @@
+{
+  "slug": "personal-blog",
+  "name": "Iris — Personal blog",
+  "category": "personal",
+  "description": "Clean, readable personal blog template with featured post, tag filtering, newsletter signup, article page with table of contents, code blocks, pull quotes and dark mode.",
+  "tags": ["blog", "personal", "writing", "newsletter", "dark mode", "typography"],
+  "pages": ["index.html", "post.html", "about.html"],
+  "features": ["Responsive", "Dark mode toggle (saved)", "Featured post", "Tag filtering", "Newsletter form (demo)", "Table of contents with scroll-spy", "Reading progress bar", "Auto reading time", "Code blocks with copy button", "Pull quotes & figures", "Author box", "Related posts", "Mobile menu", "Print styles"],
+  "fonts": [
+    { "family": "Newsreader", "source": "Google Fonts", "license": "OFL" },
+    { "family": "Inter", "source": "Google Fonts", "license": "OFL" }
+  ],
+  "colors": { "brand": "#b24a27", "accent": "#2d4a43", "bg": "#fbf8f3", "text": "#1c1b19" },
+  "customizable": { "brand": true, "accent": true, "brandName": true, "heading": true }
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Pressed & Pure</title>
+  <meta name="description" content="Get in touch with Pressed & Pure. Visit our Portland juice bar, inquire about catering, or start your cleanse program today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-blender"></i>
+        Pressed & Pure
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Menu</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Order Now</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Say Hello</span>
+      <h1>Get in Touch</h1>
+      <p>Questions about our menu, catering, or cleanse programs? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(503) 555-0000">
+              </div>
+              <div class="form-group">
+                <label for="inquiry">Inquiry Type</label>
+                <select id="inquiry" name="inquiry">
+                  <option value="general">General Question</option>
+                  <option value="catering">Catering</option>
+                  <option value="cleanse">Cleanse Program</option>
+                  <option value="wholesale">Wholesale</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you're looking for..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <div class="contact-info-card">
+            <h3>Contact Info</h3>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4>Address</h4>
+                <p>123 Greenleaf Avenue<br>Portland, OR 97201</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>(503) 555-1234</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>hello@pressedandpure.com</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4>Hours</h4>
+                <p>Mon - Sat: 7am - 7pm<br>Sunday: 8am - 4pm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="catering-card">
+            <h3><i class="fa-solid fa-champagne-glasses"></i> Catering & Events</h3>
+            <p>We cater corporate events, weddings, fitness events, and private parties. Custom juice bars, smoothie stations, and wellness shot flights for groups of 20 to 500.</p>
+            <a href="mailto:catering@pressedandpure.com" class="btn btn--primary">Email Catering Team</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--green">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Common Questions</span>
+        <h2>Frequently Asked</h2>
+        <p>Quick answers to the things people ask us most.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>What does "cold-pressed" actually mean?</h4>
+          <p>Cold-pressed juice is made using a hydraulic press that extracts juice without generating heat. This preserves more vitamins, minerals, and enzymes compared to centrifugal juicers that create heat and oxidation during the process.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Are all your ingredients really organic?</h4>
+          <p>Yes. Every single ingredient we use is certified organic. We work with 25+ local farms and suppliers, and we verify certifications regularly. We're transparent about our sourcing because we believe you deserve to know what you're drinking.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How long do your juices stay fresh?</h4>
+          <p>Our cold-pressed juices are best consumed within 72 hours and should be kept refrigerated. Since we don't pasteurize or add preservatives, freshness is everything. For the best nutrition, drink them within 24 hours.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I customize my order?</h4>
+          <p>Absolutely. Smoothie bowls and protein smoothies can be customized with different bases, proteins, and toppings. For cold-pressed juices, we stick to our tested recipes to ensure the best flavor and nutrition balance.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you accommodate allergies?</h4>
+          <p>We take allergies seriously. Our menu clearly labels common allergens, and our staff is trained to handle allergy requests. Let us know about your allergies when ordering and we'll make sure your drink is safe.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What should I expect during a cleanse?</h4>
+          <p>Most people feel great by day two. The first day you might experience mild hunger or fatigue as your body adjusts. Our dietitian provides a detailed prep guide and checks in with you daily to make sure you're feeling good throughout the process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i class="fa-solid fa-blender"></i>
+            Pressed & Pure
+          </a>
+          <p>Cold-pressed juices, smoothie bowls, and wellness programs made with 100% organic ingredients. Fueling our community since 2019.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Yelp"><i class="fa-brands fa-yelp"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <div class="footer-links">
+            <a href="services.html">Cold-Pressed Juices</a>
+            <a href="services.html">Smoothie Bowls</a>
+            <a href="services.html">Wellness Shots</a>
+            <a href="services.html">Protein Smoothies</a>
+            <a href="services.html">Cleanse Programs</a>
+          </div>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <div class="footer-links">
+            <a href="about.html">Our Story</a>
+            <a href="about.html">Team</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html">Catering</a>
+          </div>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <div class="footer-links">
+            <span>Mon - Sat: 7am - 7pm</span>
+            <span>Sunday: 8am - 4pm</span>
+            <span style="margin-top: 8px;">123 Greenleaf Ave</span>
+            <span>Portland, OR 97201</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pressed & Pure. All rights reserved. Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

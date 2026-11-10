@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Peak Performance Training - Book your free fitness assessment, get directions, or ask us anything about our training programs.">
+  <title>Contact Us | Peak Performance Training</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">P</span>
+        Peak Performance
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Free Assessment</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Contact</span>
+        </div>
+        <h1>Get Started</h1>
+        <p>Book your free assessment, ask a question, or just stop by and say hello. We're here to help you start your fitness journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form">
+          <h3>Book Your Free Assessment</h3>
+          <p>Fill out this form and we'll reach out within 24 hours to schedule your complimentary fitness assessment and facility tour.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="goal">What's your primary fitness goal? *</label>
+              <select id="goal" name="goal" required>
+                <option value="">Select your goal</option>
+                <option value="weight-loss">Lose weight / body fat</option>
+                <option value="build-muscle">Build muscle / get stronger</option>
+                <option value="athletic-performance">Improve athletic performance</option>
+                <option value="general-fitness">General fitness / feel better</option>
+                <option value="rehab">Recover from injury</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="experience">How would you describe your fitness experience?</label>
+              <select id="experience" name="experience">
+                <option value="">Select your experience level</option>
+                <option value="beginner">Beginner - New to working out</option>
+                <option value="some">Some experience - Worked out on and off</option>
+                <option value="regular">Regular - Exercise consistently</option>
+                <option value="advanced">Advanced - Years of training experience</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="program">Which program interests you most?</label>
+              <select id="program" name="program">
+                <option value="">Select a program</option>
+                <option value="personal">Personal Training (1-on-1)</option>
+                <option value="group">Small Group Training</option>
+                <option value="online">Online Coaching</option>
+                <option value="unsure">Not sure - help me decide</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Anything else you'd like us to know?</label>
+              <textarea id="message" name="message" placeholder="Tell us about any injuries, limitations, or specific questions you have..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Request Assessment</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-icon">L</div>
+              <div class="info-content">
+                <h4>Location</h4>
+                <p>123 Fitness Ave, Suite 200<br>Anytown, ST 12345</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">P</div>
+              <div class="info-content">
+                <h4>Phone</h4>
+                <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">E</div>
+              <div class="info-content">
+                <h4>Email</h4>
+                <p><a href="mailto:train@peakperformance.com">train@peakperformance.com</a></p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">$</div>
+              <div class="info-content">
+                <h4>Free Parking</h4>
+                <p>Dedicated lot behind the building. Enter from Oak Street.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours Section -->
+  <section class="hours-section">
+    <div class="container">
+      <div class="hours-grid">
+        <div class="hours-card">
+          <h3>Training Hours</h3>
+          <ul class="hours-list">
+            <li>
+              <span class="day">Monday - Friday</span>
+              <span class="time">5:00 AM - 9:00 PM</span>
+            </li>
+            <li>
+              <span class="day">Saturday</span>
+              <span class="time">7:00 AM - 5:00 PM</span>
+            </li>
+            <li>
+              <span class="day">Sunday</span>
+              <span class="time">8:00 AM - 2:00 PM</span>
+            </li>
+          </ul>
+        </div>
+        <div class="hours-card">
+          <h3>What to Expect</h3>
+          <ul class="hours-list">
+            <li>
+              <span class="day">Duration</span>
+              <span class="time">60-75 minutes</span>
+            </li>
+            <li>
+              <span class="day">What to Bring</span>
+              <span class="time">Workout clothes, water</span>
+            </li>
+            <li>
+              <span class="day">Arrive</span>
+              <span class="time">10 minutes early</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Questions</span>
+        <h2>Frequently Asked</h2>
+        <p class="section-description">Got questions? We've got answers. If you don't see what you're looking for, just reach out.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>What happens during the free assessment?</h4>
+          <p>We'll tour the facility, discuss your goals, perform a movement screening, take baseline measurements, and recommend the best program for you. The whole thing takes about 60-75 minutes. Wear workout clothes because we'll have you move around a bit.</p>
+        </div>
+        <div class="faq-item">
+          <h4>I'm completely out of shape. Is this for me?</h4>
+          <p>Absolutely. Many of our most successful clients started from zero. We design every program around your current fitness level and progress at your pace. No ego, no judgment. Just results.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What should I bring to my first session?</h4>
+          <p>Comfortable workout clothes, athletic shoes, a water bottle, and a towel. We have water and towels available, but feel free to bring your own. Come ready to move but don't worry about being "prepared." We'll handle the rest.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How quickly will I see results?</h4>
+          <p>Most clients notice improvements in energy and how they feel within 2-3 weeks. Visible changes typically start around 6-8 weeks with consistent training and nutrition. Major transformations happen over 12-16 weeks.</p>
+        </div>
+        <div class="faq-item">
+          <h4>What's your cancellation policy?</h4>
+          <p>We require 24 hours notice to cancel or reschedule a session. Late cancellations or no-shows are charged at full session rate. We know life happens, so we give everyone one "free pass" per quarter for emergencies.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you offer payment plans?</h4>
+          <p>Yes. We accept credit cards, debit, and cash. For larger packages (10-pack and above), we offer interest-free payment plans to spread the cost over 2-3 months. Ask about options during your assessment.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I freeze my membership if I travel?</h4>
+          <p>For clients on monthly programs, you can freeze for up to 30 days per year with 7 days notice. Package sessions don't expire as quickly when you're traveling. We'll work with you to find a solution.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Do you provide nutrition guidance?</h4>
+          <p>Yes. Basic nutrition guidance is included with all training packages. For comprehensive meal planning and macro coaching, we offer add-on nutrition services starting at $99/month. Full nutrition coaching is included in our 20-pack and premium online programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Still Have Questions?</h2>
+        <p>Give us a call or send an email. Our team is happy to answer any questions and help you figure out if Peak Performance is the right fit for you.</p>
+        <div class="cta-buttons">
+          <a href="tel:+15551234567" class="btn btn-accent btn-lg">Call (555) 123-4567</a>
+          <a href="mailto:train@peakperformance.com" class="btn btn-outline btn-lg">Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">P</span>
+            Peak Performance
+          </a>
+          <p>Transform your body, transform your life. Personal training and fitness coaching that delivers real, measurable results.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">IG</a>
+            <a href="#" class="social-link" aria-label="Facebook">FB</a>
+            <a href="#" class="social-link" aria-label="YouTube">YT</a>
+            <a href="#" class="social-link" aria-label="TikTok">TK</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Programs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Programs</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Personal Training</a></li>
+            <li><a href="services.html">Group Training</a></li>
+            <li><a href="services.html">Online Coaching</a></li>
+            <li><a href="services.html">Nutrition Plans</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>123 Fitness Ave, Suite 200</li>
+            <li>Anytown, ST 12345</li>
+            <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+            <li><a href="mailto:train@peakperformance.com">train@peakperformance.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Peak Performance Training. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>

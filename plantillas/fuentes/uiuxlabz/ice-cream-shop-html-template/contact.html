@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — iCREAM Artisanal Ice Cream Shop</title>
+  <meta name="description" content="Visit the iCREAM parlour at 24 Maple Street, book a scoop cake or a mobile sundae bar, or just say hello — we reply fast.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍨</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ═══════════ Header / Navigation ═══════════ -->
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="iCREAM home">
+        <span class="brand-mark" aria-hidden="true">🍨</span>
+        i<em>CREAM</em>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="service.html">Flavors</a>
+        <a class="nav-link" href="product.html">Menu</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="btn btn--raspberry nav-cta" href="product.html">Order a Scoop</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════ Page hero ═══════════ -->
+    <section class="page-hero">
+      <img class="bg" src="assets/img/header.jpg" alt="The iCREAM parlour front">
+      <div class="container">
+        <div class="page-hero__inner">
+          <nav class="crumbs" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span>›</span><span>Contact</span>
+          </nav>
+          <h1>Come say hello</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ Contact info cards ═══════════ -->
+    <section class="section reveal" id="contact">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Visit · Call · Write</span>
+          <h2>Three easy ways to find us</h2>
+          <p class="lead">Walk-ins always welcome — the door is open until the last batch melts.</p>
+        </div>
+        <div class="info-grid">
+          <article class="card info-card">
+            <div class="ic" style="background:var(--straw);">📍</div>
+            <h3>Visit the Parlour</h3>
+            <p>24 Maple Street</p>
+            <p>Oakfield, OR 97001</p>
+            <a href="#map">Get directions ↓</a>
+          </article>
+          <article class="card info-card">
+            <div class="ic" style="background:var(--mint);">📞</div>
+            <h3>Call or Text</h3>
+            <p>Mon–Sun, 9am–9pm</p>
+            <p><a href="tel:+15551234900">+1 (555) 123-4900</a></p>
+            <p><a href="mailto:hello@icream.shop">hello@icream.shop</a></p>
+          </article>
+          <article class="card info-card">
+            <div class="ic" style="background:var(--vanilla);">🕘</div>
+            <h3>Opening Hours</h3>
+            <p>Mon–Fri · 9am – 9pm</p>
+            <p>Sat–Sun · 8am – 10pm</p>
+            <p>Sundays · all-day Sundae special</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ribbon divider -->
+    <svg class="ribbon" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 1440 90"><path d="M0 0h1440v24c-240 44-480 44-720 44S240 68 0 24V0Z" fill="#fff1f5"/><path d="M0 10h1440v14c-240 44-480 44-720 44S240 68 0 24V10Z" fill="#fff" opacity=".6"/></svg>
+
+    <!-- ═══════════ Contact form + map ═══════════ -->
+    <section class="section section--milk reveal" style="padding-top:0;">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Say Something Sweet</span>
+          <h2>Send us a note</h2>
+          <p class="lead">Questions, cake orders, party bookings or flavour dreams — we read everything and reply within a day.</p>
+        </div>
+        <div class="form-wrap">
+          <form data-form novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="f-name">Your name</label>
+                <input type="text" id="f-name" name="name" placeholder="Jane Smith" required>
+              </div>
+              <div class="field">
+                <label for="f-email">Email address</label>
+                <input type="email" id="f-email" name="email" placeholder="jane@example.com" required>
+              </div>
+              <div class="field">
+                <label for="f-topic">Topic</label>
+                <select id="f-topic" name="topic">
+                  <option>General question</option>
+                  <option>Order a scoop cake</option>
+                  <option>Book a sundae bar / event</option>
+                  <option>School / studio visit</option>
+                  <option>Something else delicious</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-date">Preferred date (optional)</label>
+                <input type="date" id="f-date" name="date">
+              </div>
+              <div class="field field--full">
+                <label for="f-msg">Your message</label>
+                <textarea id="f-msg" name="message" placeholder="Tell us everything…" required></textarea>
+              </div>
+            </div>
+            <button class="btn btn--raspberry" type="submit" style="margin-top:1.2rem;">Send Message 🍦</button>
+            <div class="form-ok">Thanks! Your note is on its way — we'll reply within 24 hours.</div>
+            <div class="form-err">Please fill in your name, email and message before sending.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ Map ═══════════ -->
+    <section class="section reveal" id="map" style="padding-top:0;">
+      <div class="container">
+        <div class="sec-head">
+          <span class="eyebrow">Find the Cart</span>
+          <h2>We're easy to find</h2>
+          <p class="lead">Corner of Maple &amp; Cherry — look for the pink awning and the queue.</p>
+        </div>
+        <div class="map-frame">
+          <iframe
+            title="Map showing the iCREAM parlour at 24 Maple Street, Oakfield"
+            src="https://uiuxlabz.com/embed/map/icream"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════ Footer ═══════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="iCREAM home">
+            <span class="brand-mark" aria-hidden="true">🍨</span>
+            i<em>CREAM</em>
+          </a>
+          <p>Small-batch artisanal ice cream, churned daily from local dairy and seasonal fruit. Find us at the corner of Maple &amp; Cherry Street — follow the smell of warm waffle cones.</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Facebook">👍</a>
+            <a href="#" aria-label="X / Twitter">🐦</a>
+            <a href="#" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="service.html">Our Flavors</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Menu</h4>
+          <ul class="footer-links">
+            <li><a href="product.html">Ice Cream Scoops</a></li>
+            <li><a href="product.html">Sundaes</a></li>
+            <li><a href="product.html">Gelato</a></li>
+            <li><a href="product.html">Sorbet</a></li>
+            <li><a href="product.html">Scoop Cakes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Scoop Club</h4>
+          <p>Join the newsletter for flavour drops, secret Sunday specials and birthday scoops.</p>
+          <form class="newsletter" data-form novalidate>
+            <label class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);" for="nl-email">Email address</label>
+            <input type="email" id="nl-email" name="email" placeholder="you@example.com" required>
+            <button class="btn btn--raspberry" type="submit">Join</button>
+            <div class="form-ok">Welcome to the Scoop Club! 🍨</div>
+            <div class="form-err">Please enter your email address.</div>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p style="margin:0;">© <span data-year>2025</span> iCREAM — Artisanal Ice Cream &amp; Dessert Shop. Made with <span class="heart">♥</span> and way too much sugar.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

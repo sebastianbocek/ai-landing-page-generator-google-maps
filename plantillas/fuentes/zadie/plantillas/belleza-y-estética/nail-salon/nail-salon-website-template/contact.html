@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Polished Nail Studio</title>
+  <meta name="description" content="Book your nail appointment at Polished Nail Studio. Online booking available for manicures, pedicures, nail art, and more.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Nunito+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  </head>
+<body>
+
+
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">
+          <span class="logo-icon"><i class="fa-solid fa-hand-sparkles"></i></span>
+          <span>Polished</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="contact.html" class="nav-link active">Book Now</a>
+        </nav>
+
+        <a href="contact.html" class="btn btn-primary header-cta">Book Appointment</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero" style="min-height: 50vh;">
+    <div class="container">
+      <div class="hero-content" style="grid-template-columns: 1fr; text-align: center;">
+        <div class="hero-text">
+          <h1>Book Your Appointment</h1>
+          <p class="subtitle">We can't wait to pamper you</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Cards -->
+  <section class="section">
+    <div class="container">
+      <div class="info-cards">
+        <div class="info-card">
+          <span class="info-card-icon"><i class="fa-solid fa-location-dot"></i></span>
+          <h3>Location</h3>
+          <p>456 Style Avenue<br>Portland, OR 97204</p>
+        </div>
+
+        <div class="info-card">
+          <span class="info-card-icon"><i class="fa-solid fa-phone"></i></span>
+          <h3>Phone</h3>
+          <p>(503) 555-NAIL<br>Call or text us</p>
+        </div>
+
+        <div class="info-card">
+          <span class="info-card-icon"><i class="fa-solid fa-envelope"></i></span>
+          <h3>Email</h3>
+          <p>hello@polishednailstudio.com</p>
+        </div>
+
+        <div class="info-card">
+          <span class="info-card-icon"><i class="fa-solid fa-clock"></i></span>
+          <h3>Hours</h3>
+          <p>Mon-Sat: 9AM-7PM<br>Sun: 10AM-6PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="section section-light">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="section-header">
+          <h2 class="section-title">Book an Appointment</h2>
+          <p class="section-description">Fill out the form below or call us at (503) 555-NAIL</p>
+        </div>
+
+        <form class="card" style="padding: 2rem;">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Requested *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <optgroup label="Manicures">
+                  <option value="classic-mani">Classic Manicure - $25</option>
+                  <option value="spa-mani">Spa Manicure - $35</option>
+                  <option value="gel-mani">Gel Manicure - $40</option>
+                  <option value="luxury-mani">Luxury Manicure - $55</option>
+                </optgroup>
+                <optgroup label="Pedicures">
+                  <option value="classic-pedi">Classic Pedicure - $40</option>
+                  <option value="gel-pedi">Gel Pedicure - $55</option>
+                  <option value="spa-pedi">Spa Pedicure - $60</option>
+                  <option value="luxury-pedi">Luxury Pedicure - $75</option>
+                </optgroup>
+                <optgroup label="Enhancements">
+                  <option value="acrylic-full">Acrylic Full Set - $65</option>
+                  <option value="acrylic-fill">Acrylic Fill - $45</option>
+                  <option value="dip-powder">Dip Powder - $55</option>
+                  <option value="hard-gel">Hard Gel Extensions - $60</option>
+                </optgroup>
+                <optgroup label="Packages">
+                  <option value="classic-combo">Classic Mani-Pedi - $60</option>
+                  <option value="gel-combo">Gel Mani-Pedi - $85</option>
+                  <option value="spa-day">Spa Day Package - $120</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="technician">Preferred Technician</label>
+              <select id="technician" name="technician">
+                <option value="">No preference</option>
+                <option value="sophia">Sophia Lin</option>
+                <option value="maya">Maya Rodriguez</option>
+                <option value="jasmine">Jasmine Park</option>
+                <option value="alex">Alex Chen</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date *</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="time">Preferred Time *</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="nailart">Nail Art or Add-Ons?</label>
+              <textarea id="nailart" name="nailart" rows="3" placeholder="Let us know if you'd like nail art, specific designs, or any service add-ons..."></textarea>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="notes">Additional Notes</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Any allergies, preferences, or special requests?"></textarea>
+            </div>
+
+            <div class="form-group full-width checkbox-group">
+              <input type="checkbox" id="new-client" name="new-client">
+              <label for="new-client">I'm a new client (use code FIRSTPOLISH for 20% off!)</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="margin-top: 1.5rem; width: 100%;">Request Appointment</button>
+          <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem; color: var(--gray-dark);">We'll confirm your appointment within 24 hours</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Group & Bridal Inquiry -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div class="section-header">
+          <h2 class="section-title">Group & Bridal Party Bookings</h2>
+          <p class="section-description">Planning a special event? We'd love to host your group!</p>
+        </div>
+
+        <form class="card" style="padding: 2rem;">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="contact-name">Contact Name *</label>
+              <input type="text" id="contact-name" name="contact-name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address *</label>
+              <input type="email" id="contact-email" name="contact-email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone Number *</label>
+              <input type="tel" id="contact-phone" name="contact-phone" required>
+            </div>
+
+            <div class="form-group">
+              <label for="event-date">Event Date</label>
+              <input type="date" id="event-date" name="event-date">
+            </div>
+
+            <div class="form-group">
+              <label for="event-type">Event Type *</label>
+              <select id="event-type" name="event-type" required>
+                <option value="">Select event type...</option>
+                <option value="bridal">Bridal Party</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="bachelorette">Bachelorette Party</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="other">Other Celebration</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="group-size">Number of People *</label>
+              <input type="number" id="group-size" name="group-size" min="4" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="group-services">Services Interested In</label>
+              <textarea id="group-services" name="group-services" rows="3" placeholder="Which services is your group interested in? (e.g., gel manicures, spa pedicures, nail art)"></textarea>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="group-details">Event Details</label>
+              <textarea id="group-details" name="group-details" rows="4" placeholder="Tell us about your event! Any special requests, themes, or timing preferences?"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="margin-top: 1.5rem; width: 100%;">Submit Group Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Salon Policies -->
+  <section class="section section-gradient">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto;">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Salon Policies</h2>
+
+        <div class="card">
+          <div class="card-content">
+            <h3 class="card-title">Appointments & Walk-Ins</h3>
+            <ul class="card-details">
+              <li>Appointments are strongly recommended to ensure your preferred time and technician</li>
+              <li>Walk-ins are welcome based on technician availability</li>
+              <li>Please arrive 5 minutes early to check in and select your polish color</li>
+              <li>Late arrivals may result in shortened service time or the need to reschedule</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 1.5rem;">
+          <div class="card-content">
+            <h3 class="card-title">Cancellation Policy</h3>
+            <ul class="card-details">
+              <li>Please provide 24 hours notice for cancellations or rescheduling</li>
+              <li>Cancellations with less than 24 hours notice may incur a $20 fee</li>
+              <li>No-shows will be charged 50% of the scheduled service cost</li>
+              <li>We understand emergencies happen—please call us to discuss</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 1.5rem;">
+          <div class="card-content">
+            <h3 class="card-title">Health & Safety</h3>
+            <ul class="card-details">
+              <li>If you're feeling unwell, please reschedule your appointment</li>
+              <li>Let us know about any allergies or sensitivities before your service</li>
+              <li>We cannot perform services on infected nails or skin—we'll reschedule once healed</li>
+              <li>Pregnant clients should consult with their doctor before acrylic or gel services</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 1.5rem;">
+          <div class="card-content">
+            <h3 class="card-title">Payment & Gratuity</h3>
+            <ul class="card-details">
+              <li>We accept cash, credit cards, and digital payments</li>
+              <li>Payment is due at the time of service</li>
+              <li>Gratuities are appreciated but never required (15-20% is standard)</li>
+              <li>Gift certificates are available in any amount</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3 class="faq-question">How long do gel nails last?</h3>
+          <p class="faq-answer">Gel manicures typically last 2-3 weeks without chipping, while gel pedicures can last 4-5 weeks. Longevity depends on nail growth, daily activities, and proper home care. We recommend booking fills or touch-ups when you notice significant growth at the cuticle area.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">What's the difference between gel and acrylic nails?</h3>
+          <p class="faq-answer">Gel nails are cured under UV light and tend to look more natural with a glossy finish. They're more flexible and generally gentler on natural nails. Acrylic nails are created with a liquid and powder mixture that air-dries and tends to be more durable and strong, making them ideal for significant length. Both can be beautiful—we'll help you choose based on your lifestyle and preferences!</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do I need to remove my old polish before I come in?</h3>
+          <p class="faq-answer">No! Polish removal is included in all of our manicure and pedicure services. Come as you are, and we'll take care of everything. If you have gel polish or enhancements, let us know when booking so we can allocate extra time for gentle removal.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Can I bring my own nail polish?</h3>
+          <p class="faq-answer">While we have an extensive collection of OPI, Essie, and CND polishes, you're welcome to bring your own polish if you have a specific color you love. However, we can only use polishes from reputable brands for quality and safety reasons, and we cannot guarantee the longevity of products we haven't tested.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Will nail enhancements damage my natural nails?</h3>
+          <p class="faq-answer">When applied and removed correctly by a trained professional, gel and acrylic enhancements should not damage your natural nails. The key is proper application, using quality products, and most importantly, professional removal—never pick or peel them off! We use gentle techniques and recommend occasional breaks if you wear enhancements long-term.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">How often should I get a manicure or pedicure?</h3>
+          <p class="faq-answer">For regular polish manicures, most clients come in every 1-2 weeks. Gel manicures typically need maintenance every 2-3 weeks. Pedicures generally last longer—we recommend every 3-4 weeks in summer and 4-6 weeks in winter. Acrylic or gel enhancements need fills every 2-3 weeks to maintain their look and prevent lifting.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you sterilize your tools?</h3>
+          <p class="faq-answer">Absolutely! Sanitation is our top priority. All metal implements are sterilized in a medical-grade autoclave between every single client. Files, buffers, and other porous tools are single-use and disposed of after each service. Our pedicure chairs use disposable liners and are thoroughly disinfected between clients. We exceed all state board sanitation requirements.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Can you match a specific nail design I saw on Instagram?</h3>
+          <p class="faq-answer">Yes! We love recreating designs. Please bring reference photos to your appointment or send them when you book. Keep in mind that very intricate designs require additional time and will have an added cost. Our nail artists will let you know if a design is achievable and provide a time and price estimate.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-question">Do you offer bridal party services?</h3>
+          <p class="faq-answer">Yes! We love pampering bridal parties. For groups of 4 or more, we offer customized packages and can accommodate your party at a scheduled time. We recommend booking at least 4-6 weeks in advance, especially during wedding season (May-October). Contact us to discuss your group's needs and receive a custom quote.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Questions? Give Us a Call!</h2>
+      <p>We're happy to help you schedule the perfect appointment</p>
+      <a href="tel:5035556245" class="btn btn-primary btn-lg">(503) 555-NAIL</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>Polished Nail Studio</h3>
+          <p>Portland's premier nail salon offering luxury manicures, pedicures, nail art, and enhancements in a chic, sanitary environment. Experience the perfect blend of artistry and care.</p>
+          <p><strong>Hours:</strong><br>
+          Monday - Saturday: 9:00 AM - 7:00 PM<br>
+          Sunday: 10:00 AM - 6:00 PM</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#manicures">Manicures</a></li>
+            <li><a href="services.html#pedicures">Pedicures</a></li>
+            <li><a href="services.html#enhancements">Enhancements</a></li>
+            <li><a href="services.html#nailart">Nail Art</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li>456 Style Avenue</li>
+            <li>Portland, OR 97204</li>
+            <li>(503) 555-NAIL</li>
+            <li>hello@polishednailstudio.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Polished Nail Studio. All rights reserved. | Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <p>
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

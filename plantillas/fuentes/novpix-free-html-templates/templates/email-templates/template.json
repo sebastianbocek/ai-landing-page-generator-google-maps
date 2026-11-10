@@ -1,0 +1,15 @@
+{
+  "slug": "email-templates",
+  "name": "Tandem — responsive HTML email templates (5-pack)",
+  "category": "email",
+  "description": "Five responsive HTML email templates — newsletter, welcome, receipt, password reset and event invite — table-based, 600px, dark-mode ready, with Outlook buttons.",
+  "tags": ["email", "html email", "newsletter", "transactional", "receipt", "password reset", "dark mode"],
+  "pages": ["index.html", "newsletter.html", "welcome.html", "receipt.html", "password-reset.html", "event-invite.html"],
+  "features": ["Table-based layout", "Inline styles + <style> block", "600px max width, fluid on mobile", "Stacking columns on small screens", "Bulletproof buttons (VML for Outlook)", "Dark-mode media query", "Hidden preheader text", "No web fonts or scripts in emails", "Preview gallery with width & dark toggle"],
+  "fonts": [
+    {"family": "System UI stack (emails)", "source": "System", "license": "n/a"},
+    {"family": "Inter (gallery page only)", "source": "Google Fonts", "license": "OFL"}
+  ],
+  "colors": {"brand": "#4f46e5", "accent": "#f59e0b", "bg": "#f4f3f0", "text": "#1f2937"},
+  "customizable": {"brand": true, "accent": true, "brandName": true, "heading": true}
+}

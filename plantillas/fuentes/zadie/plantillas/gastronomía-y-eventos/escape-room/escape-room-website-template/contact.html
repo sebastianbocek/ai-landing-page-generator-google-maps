@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Now &amp; Contact — The Enigma Room</title>
+  <meta name="description" content="Book an escape room in Seattle or inquire about a private group event. The Enigma Room, Seattle WA. (206) 555-0183.">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+<!-- ============================================================
+     Header
+     ============================================================ -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-name">The Enigma Room</span>
+      <span class="logo-tagline">Escape Rooms &bull; Seattle</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" role="navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">Our Story</a>
+      <a href="services.html" class="nav-link">Rooms &amp; Packages</a>
+      <a href="contact.html" class="nav-link active">Book Now</a>
+      <a href="contact.html" class="nav-cta">Reserve Your Room</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================================================
+     Page Hero
+     ============================================================ -->
+<div class="page-hero">
+  <div class="container">
+    <div class="ornament" style="justify-content:center;">
+      <span class="ornament-line reverse"></span>
+      <span class="ornament-diamond"></span>
+      <span class="ornament-line"></span>
+    </div>
+    <h1 class="page-hero-title">Book Your Room</h1>
+    <p class="page-hero-subtitle">Reserve a standard session online, or reach out about a private event. We&apos;ll get back to group inquiries within 24 hours.</p>
+  </div>
+</div>
+
+<!-- ============================================================
+     Online Booking CTA
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+
+    <div class="booking-banner">
+      <div class="booking-banner-text">
+        <h2>Book Online — It Takes Two Minutes</h2>
+        <p>Choose your room, pick a time, pay securely. Your confirmation arrives instantly.</p>
+      </div>
+      <div style="flex-shrink:0;">
+        <a href="#" class="btn btn-primary" style="font-size:1rem;padding:1rem 2.5rem;">Open Booking System</a>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div>
+        <h2 class="contact-info-title">Contact &amp; Location</h2>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <p class="contact-info-label">Phone</p>
+            <p class="contact-info-value">(206) 555-0183</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <p class="contact-info-label">Email</p>
+            <p class="contact-info-value">escape@theenigmaroom.com</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <p class="contact-info-label">Address</p>
+            <p class="contact-info-value">Seattle, WA<br>Parking available on-site</p>
+          </div>
+        </div>
+
+        <div class="contact-hours">
+          <h3 class="hours-title">Hours of Operation</h3>
+          <div class="hours-row">
+            <span>Monday &ndash; Thursday</span>
+            <span>3:00 PM &ndash; 10:00 PM</span>
+          </div>
+          <div class="hours-row">
+            <span>Friday</span>
+            <span>12:00 PM &ndash; 12:00 AM</span>
+          </div>
+          <div class="hours-row">
+            <span>Saturday</span>
+            <span>10:00 AM &ndash; 12:00 AM</span>
+          </div>
+          <div class="hours-row">
+            <span>Sunday</span>
+            <span>12:00 PM &ndash; 10:00 PM</span>
+          </div>
+          <p style="font-size:0.8rem;color:var(--text-muted);margin-top:var(--space-sm);">Last booking starts 75 minutes before close. Holiday hours vary.</p>
+        </div>
+      </div>
+
+      <!-- Group Inquiry Form -->
+      <div id="group-inquiry">
+        <div class="form-card">
+          <h2 class="form-title">Group &amp; Event Inquiry</h2>
+          <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:var(--space-lg);">Planning a party, corporate event, or large group session? Fill this out and we&apos;ll follow up with availability and options within 24 hours.</p>
+
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="first-name">First Name</label>
+                <input class="form-input" type="text" id="first-name" name="first_name" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last-name">Last Name</label>
+                <input class="form-input" type="text" id="last-name" name="last_name" placeholder="Your last name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input class="form-input" type="tel" id="phone" name="phone" placeholder="(206) 555-0000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="event-type">Event Type</label>
+              <select class="form-select" id="event-type" name="event_type" required>
+                <option value="" disabled selected>Select your event type</option>
+                <option value="corporate">Corporate Team Building</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="bachelorette">Bachelorette / Bachelor Party</option>
+                <option value="date-night">Date Night (2&ndash;4 people)</option>
+                <option value="school">School or Educational Group</option>
+                <option value="other">Other Group Event</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="event-date">Preferred Date</label>
+                <input class="form-input" type="date" id="event-date" name="event_date">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="group-size">Group Size</label>
+                <select class="form-select" id="group-size" name="group_size" required>
+                  <option value="" disabled selected>Number of players</option>
+                  <option value="2-4">2&ndash;4 players</option>
+                  <option value="5-8">5&ndash;8 players</option>
+                  <option value="9-15">9&ndash;15 players</option>
+                  <option value="16-30">16&ndash;30 players</option>
+                  <option value="30+">30+ players</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="room-preference">Room Preference</label>
+              <select class="form-select" id="room-preference" name="room_preference">
+                <option value="" disabled selected>Do you have a room in mind?</option>
+                <option value="alchemist">The Alchemist&apos;s Lab (Difficulty: 3/5)</option>
+                <option value="heist">The Heist (Difficulty: 2/5, great for beginners)</option>
+                <option value="seance">The S&eacute;ance (Difficulty: 4/5)</option>
+                <option value="pharaoh">Pharaoh&apos;s Tomb (Difficulty: 5/5, hardest)</option>
+                <option value="multiple">Multiple rooms / not sure yet</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="special-requests">Special Requests or Notes</label>
+              <textarea class="form-textarea" id="special-requests" name="special_requests" placeholder="Accessibility needs, dietary notes for a larger event, specific timing requirements, questions about our packages..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:1rem;">Send Group Inquiry</button>
+            <p style="font-size:0.8rem;color:var(--text-muted);text-align:center;margin-top:var(--space-sm);">We respond to all group inquiries within 24 hours, often sooner.</p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section section-dark" id="faq">
+  <div class="container">
+    <div class="section-header text-center">
+      <p class="section-label">Before You Arrive</p>
+      <h2 class="section-title">Common Questions</h2>
+      <p class="section-subtitle">First time at an escape room? We&apos;ve answered the questions we hear most often.</p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          What&apos;s the age requirement?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          Players must be 10 years old or older. Players under 16 must have an adult (18+) present in the room with them for the full session. We don&apos;t enforce a strict upper age limit, but we do ask that everyone is physically comfortable spending 60 minutes in a themed indoor space. If you have any concerns, reach out before booking and we&apos;ll discuss the specifics of whichever room you&apos;re considering.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          What should we wear?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          Comfortable clothes you can move in. No special gear required. You won&apos;t be crawling, climbing, or doing anything physically strenuous. Closed-toe shoes are recommended. Leave oversized bags in the lobby, we&apos;ve got lockers for coats, phones, and anything you don&apos;t need inside. Phones stay in the lobby during your session.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Are we really locked in? What if we need to leave?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          You are never truly locked in. Every room has an emergency exit that opens immediately from the inside, no puzzle required, no explanation needed. This is a puzzle game set in a locked room story. The doors are not mechanically preventing your exit. Your Game Master can also pause or stop the session at any time. If you need to step out for any reason, just go. No questions asked.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Any tips for first-timers?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          A few things that consistently separate successful groups from unsuccessful ones: communicate everything out loud, even things that seem irrelevant. Don&apos;t work alone. When someone calls "I found something," everyone stops and looks. Keep found objects organized in one spot and track what you&apos;ve used. Ask for hints when you&apos;re stuck. There&apos;s no penalty and hints are calibrated to keep you in the story. And finally: start with The Heist if it&apos;s your first time.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          What if we don&apos;t escape?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          Most groups don&apos;t escape, especially in their first room. Our overall escape rates are 14% to 58% depending on the room. Not escaping is a completely normal outcome and we&apos;ve worked hard to make it feel like a satisfying narrative conclusion rather than a disappointment. Your Game Master gives you a full debrief after every session regardless of outcome. You&apos;ll see every puzzle you missed, learn how they connected, and usually leave thinking "oh that&apos;s actually brilliant" rather than "we should have gotten that."
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Is The S&eacute;ance actually scary?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          It depends on your baseline. The S&eacute;ance uses atmospheric darkness, temperature changes, and moments of genuine ambiguity to create unease. There are no actors jumping out at you, no loud noises designed to make you scream, and no gore. Players who enjoy psychological horror tend to love it. Players with significant anxiety around paranormal themes sometimes find it uncomfortable. If you&apos;re uncertain, start with The Alchemist&apos;s Lab or The Heist and work your way up.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          Do you offer accessibility accommodations?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          Yes. Our lobby and The Heist and Alchemist&apos;s Lab rooms are wheelchair accessible. The S&eacute;ance and Pharaoh&apos;s Tomb have some level changes that can limit access, but we can often adapt the experience. Reach out before booking and describe your specific needs. We&apos;ve accommodated players with a wide range of physical and cognitive differences and can adjust hint frequency, lighting levels, time extensions, and session pacing. We want the challenge to be the puzzles, not the logistics.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+          What is your cancellation and rescheduling policy?
+          <svg class="faq-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-answer">
+          Cancellations made 48 hours or more before your booking receive a full refund to the original payment method. Cancellations within 48 hours receive a credit valid for 6 months. Rescheduling is always free with 24 hours notice. No-shows forfeit the booking but can contact us within 48 hours to request a credit at our discretion. For groups of 6 or more booked under a private event package, we ask for 72 hours notice for cancellation or rescheduling.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Footer
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="display:inline-flex;margin-bottom:var(--space-md);">
+          <span class="logo-name">The Enigma Room</span>
+        </a>
+        <p class="footer-desc">Seattle&apos;s most immersive escape room experience. Four original worlds. Original puzzles. Sixty minutes to prove what you&apos;re made of.</p>
+        <p style="font-size:0.8rem;color:var(--text-muted);">(206) 555-0183 &bull; escape@theenigmaroom.com</p>
+      </div>
+      <div>
+        <h4 class="footer-heading">Rooms</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">The Alchemist&apos;s Lab</a></li>
+          <li><a href="services.html" class="footer-link">The Heist</a></li>
+          <li><a href="services.html" class="footer-link">The S&eacute;ance</a></li>
+          <li><a href="services.html" class="footer-link">Pharaoh&apos;s Tomb</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="services.html#packages" class="footer-link">Private Events</a></li>
+          <li><a href="services.html#gift-cards" class="footer-link">Gift Cards</a></li>
+          <li><a href="contact.html#faq" class="footer-link">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-heading">Visit Us</h4>
+        <p class="footer-contact-item">Seattle, WA</p>
+        <p class="footer-contact-item">(206) 555-0183</p>
+        <p class="footer-contact-item">escape@theenigmaroom.com</p>
+        <p class="footer-contact-item" style="margin-top:var(--space-sm);">Mon&ndash;Thu: 3pm&ndash;10pm<br>Fri&ndash;Sun: Noon&ndash;Midnight</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 The Enigma Room. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  function toggleFaq(button) {
+    const item = button.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // Close all open items
+    document.querySelectorAll('.faq-item.open').forEach(openItem => {
+      openItem.classList.remove('open');
+      openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    // Open clicked item if it was closed
+    if (!isOpen) {
+      item.classList.add('open');
+      button.setAttribute('aria-expanded', 'true');
+    }
+  }
+</script>
+
+</body>
+</html>

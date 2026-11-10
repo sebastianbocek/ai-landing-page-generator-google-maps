@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Hours — Roots & Bloom Garden Center</title>
+  <meta name="description" content="Visit Roots & Bloom Garden Center in Eugene, OR. Get directions, seasonal hours, and answers to common questions about plant guarantees, returns, and delivery.">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-mark"></div>
+      <div class="logo-text">
+        <span class="logo-name">Roots &amp; Bloom</span>
+        <span class="logo-tagline">Garden Center</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" role="navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <a href="tel:5415550193" class="btn btn-primary header-cta">Call Us</a>
+  </div>
+</header>
+
+<!-- ============================================================
+     CONTACT HERO
+     ============================================================ -->
+<section class="contact-hero">
+  <div class="container">
+    <span class="section-label" style="color: var(--accent-light);">We're Easy to Find</span>
+    <h1>Come Visit the Shop</h1>
+    <p>We're open most days and there's always someone here who can help. Stop by, call, or send us a note.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT MAIN
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap">
+        <h3>Send Us a Message</h3>
+        <form onsubmit="return false;">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" placeholder="Patricia">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" placeholder="Whitfield">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" placeholder="(541) 555-0000">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">What can we help with?</label>
+            <select id="subject">
+              <option value="" disabled selected>Select a topic</option>
+              <option>Plant availability question</option>
+              <option>Landscape design consultation</option>
+              <option>Garden installation quote</option>
+              <option>Delivery scheduling</option>
+              <option>Workshop registration</option>
+              <option>Plant care advice</option>
+              <option>Returns or guarantee</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell us more</label>
+            <textarea id="message" placeholder="Describe your project, your question, or what you're looking for. The more detail you give us, the more useful our answer can be."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.75rem; text-align: center;">We reply to all messages within one business day, usually faster.</p>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info-wrap">
+
+        <!-- Location -->
+        <div class="info-card">
+          <h4>Find Us</h4>
+          <div class="map-placeholder">
+            <div class="map-address-pin">Roots &amp; Bloom Garden Center, Eugene OR</div>
+          </div>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">Address</span>
+              <span class="info-value">2847 Willamette Street<br>Eugene, OR 97405</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone</span>
+              <span class="info-value"><a href="tel:5415550193" style="color: var(--primary);">(541) 555-0193</a></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <span class="info-value"><a href="mailto:hello@rootsandbloom.com" style="color: var(--primary);">hello@rootsandbloom.com</a></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seasonal Hours -->
+        <div class="info-card">
+          <h4>Seasonal Hours</h4>
+          <div style="margin-bottom: 1.25rem;">
+            <p style="font-size: 0.8rem; font-weight: 700; color: var(--secondary); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">Spring &amp; Summer (Apr–Sep)</p>
+            <div class="hours-row">
+              <span class="hours-day">Mon–Fri</span>
+              <span class="hours-time">8:00am–7:00pm <span class="hours-extended">Extended</span></span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time">7:30am–6:00pm <span class="hours-extended">Extended</span></span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time">9:00am–5:00pm <span class="hours-extended">Extended</span></span>
+            </div>
+          </div>
+          <div>
+            <p style="font-size: 0.8rem; font-weight: 700; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">Fall &amp; Winter (Oct–Mar)</p>
+            <div class="hours-row">
+              <span class="hours-day">Mon–Fri</span>
+              <span class="hours-time">8:00am–6:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time">8:00am–5:00pm</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time">10:00am–4:00pm</span>
+            </div>
+          </div>
+          <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.75rem;">Holiday hours vary. Call ahead on major holidays to confirm we're open.</p>
+        </div>
+
+        <!-- Getting Here -->
+        <div class="info-card">
+          <h4>Getting Here</h4>
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">By car</span>
+              <span class="info-value">Off Willamette Street between 28th and 29th Ave. Free parking lot with 40+ spaces including accessible spots at the front entrance.</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">By bus</span>
+              <span class="info-value">LTD Route 24 stops on Willamette at 28th Ave, one block north of the entrance.</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">By bike</span>
+              <span class="info-value">Bike lane on Willamette. Covered bike parking at our north entrance.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DELIVERY SERVICE AREA
+     ============================================================ -->
+<section class="section service-area-bg">
+  <div class="container">
+    <div class="area-layout">
+      <div>
+        <span class="section-label">Delivery &amp; Installation</span>
+        <h2>Our Service Area</h2>
+        <p>We deliver plants, soil, and supplies throughout the greater Eugene area. Garden installation and design consultations are available in the same area.</p>
+        <p>For locations outside the list below, give us a call. Large orders may allow us to extend our range.</p>
+        <div class="area-list">
+          <span class="area-tag">Eugene</span>
+          <span class="area-tag">Springfield</span>
+          <span class="area-tag">Junction City</span>
+          <span class="area-tag">Cottage Grove</span>
+          <span class="area-tag">Creswell</span>
+          <span class="area-tag">Veneta</span>
+          <span class="area-tag">Coburg</span>
+          <span class="area-tag">Alvadore</span>
+          <span class="area-tag">Lowell</span>
+          <span class="area-tag">Dexter</span>
+        </div>
+      </div>
+
+      <div>
+        <div style="background: var(--white); border-radius: var(--radius-xl); padding: var(--space-xl); box-shadow: var(--shadow-md);">
+          <h4 style="margin-bottom: var(--space-md);">Schedule Delivery</h4>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: var(--space-lg);">Call or send us a message with your order details and preferred delivery date. We schedule deliveries Tuesday through Saturday and try to give you a two-hour arrival window.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <a href="tel:5415550193" class="btn btn-primary" style="text-align: center;">(541) 555-0193</a>
+            <a href="mailto:hello@rootsandbloom.com" class="btn btn-outline" style="text-align: center;">hello@rootsandbloom.com</a>
+          </div>
+          <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 0.75rem;">Minimum order $80 for delivery. Pricing depends on order size and distance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Common Questions</span>
+      <h2>Things People Ask Us</h2>
+      <p>Real answers to the questions we hear most often at the shop. If yours isn't here, just call or stop by.</p>
+    </div>
+
+    <div style="max-width: 760px; margin: 0 auto;">
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do you offer a plant guarantee?
+            <div class="faq-chevron"></div>
+          </button>
+          <div class="faq-answer">
+            Yes. We stand behind our plants with a 30-day satisfaction guarantee from the date of purchase. If a plant dies within 30 days and you followed proper care instructions, bring it back with your receipt and we'll replace it or give you store credit. We'll always ask a few questions about care conditions — not to be difficult, but because understanding what went wrong helps us help you succeed with the replacement.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What's your return policy?
+            <div class="faq-chevron"></div>
+          </button>
+          <div class="faq-answer">
+            Unopened products like soil, fertilizers, and garden tools can be returned within 30 days with a receipt. Pottery and planters may be returned within 14 days if unused and in original condition. We don't accept returns on plants that have been planted outdoors unless they're covered under our plant guarantee. If something was damaged or defective when you got it, we'll always make it right.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How do I know if a plant will survive in my yard?
+            <div class="faq-chevron"></div>
+          </button>
+          <div class="faq-answer">
+            That's exactly what we're here for. When you come in, tell us about your yard conditions: how much sun it gets, whether it stays wet or drains well, how big the space is, and what you're hoping the plant will do. Our staff will narrow things down to varieties that genuinely fit. We won't sell you something that's going to struggle. It's not good for you and it's not good for our reputation.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            When is the best time to plant in Eugene?
+            <div class="faq-chevron"></div>
+          </button>
+          <div class="faq-answer">
+            It depends on the plant. Cool-season vegetables like lettuce, kale, and peas can go in as early as late February or early March. Most summer vegetables wait until after the last frost date, typically mid-May in the Eugene area. Perennials and shrubs can be planted in fall or early spring. We give a lot of timing guidance in our workshops, and our staff is always happy to talk through the calendar for whatever you're growing.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do you carry organic products?
+            <div class="faq-chevron"></div>
+          </button>
+          <div class="faq-answer">
+            Yes. We prioritize organic and naturally derived products throughout the shop. Our fertilizers, soil amendments, and pest control options are all organic or OMRI-listed where available. We don't stock synthetic pesticides. If you have specific certifications or requirements for a commercial growing operation, let us know and we'll make sure we're pointing you to the right products.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Can I get care advice after I buy a plant?
+            <div class="faq-chevron"></div>
+          </button>
+          <div class="faq-answer">
+            Absolutely. Bring your plant back to the shop, send us a photo by email, or call during store hours and one of our staff will do their best to help. Every plant we sell comes with a basic care card. For more detailed guidance on specific issues, our free monthly plant clinic (first Saturday of each month) is a great resource. No appointment needed.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do you do custom plant orders?
+            <div class="faq-chevron"></div>
+          </button>
+          <div class="faq-answer">
+            Sometimes. If you're looking for a specific variety we don't typically carry, call or email and describe what you want. If we can source it from one of our growers, we'll let you know timing and pricing. We can't promise to fill every special request, but we try. For large landscape projects requiring specific quantities and varieties, contact us early in the season — late fall or winter is ideal for spring delivery.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do you offer gift cards?
+            <div class="faq-chevron"></div>
+          </button>
+          <div class="faq-answer">
+            Yes. Gift cards are available in any amount at the shop. They work for everything we sell: plants, soil, tools, pottery, workshops, and services. They don't expire. We don't sell them online, but you can call ahead and we can set one aside for pickup if you're in a hurry.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BOTTOM CTA
+     ============================================================ -->
+<section class="section-sm" style="background: var(--primary-dark); text-align: center;">
+  <div class="container">
+    <span class="section-label" style="color: var(--accent-light);">We'd Love to See You</span>
+    <h2 style="color: var(--white); margin-bottom: var(--space-md);">Come Grow With Us</h2>
+    <p style="color: rgba(255,255,255,0.75); max-width: 460px; margin: 0 auto var(--space-xl);">The best gardens start with good advice. Stop by any time and we'll help you figure out exactly where to begin.</p>
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="tel:5415550193" class="btn btn-accent">(541) 555-0193</a>
+      <a href="services.html" class="btn btn-outline-white">Browse Our Plants</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+          <div class="logo-mark"></div>
+          <div class="logo-text">
+            <span class="logo-name">Roots &amp; Bloom</span>
+            <span class="logo-tagline">Garden Center</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Family-owned and rooted in Eugene since 1978. Three generations of gardeners, one great shop.</p>
+        <div class="footer-contact-item"><strong>Phone:</strong> (541) 555-0193</div>
+        <div class="footer-contact-item"><strong>Email:</strong> hello@rootsandbloom.com</div>
+        <div class="footer-contact-item"><strong>Address:</strong> Eugene, OR</div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Plants</a></li>
+          <li><a href="services.html#workshops">Workshops</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul class="footer-links">
+          <li><a href="services.html">Plant Nursery</a></li>
+          <li><a href="services.html#design">Landscape Design</a></li>
+          <li><a href="services.html#installation">Garden Installation</a></li>
+          <li><a href="services.html#delivery">Delivery &amp; Planting</a></li>
+          <li><a href="services.html#supplies">Soil &amp; Supplies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Hours</h5>
+        <div class="hours-row">
+          <span class="hours-day">Mon–Fri</span>
+          <span class="hours-time">8am–6pm</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Saturday</span>
+          <span class="hours-time">8am–5pm</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Sunday</span>
+          <span class="hours-time">10am–4pm</span>
+        </div>
+        <p style="font-size: 0.78rem; color: rgba(255,255,255,0.45); margin-top: 0.75rem;">Extended hours April–June. Call to confirm holiday hours.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Roots &amp; Bloom Garden Center. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-item.open').forEach(el => el.classList.remove('open'));
+    // Open clicked if it was closed
+    if (!isOpen) item.classList.add('open');
+  }
+</script>
+</body>
+</html>

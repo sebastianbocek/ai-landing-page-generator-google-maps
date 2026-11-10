@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Reservations — The Copper Rail Pub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-main">The Copper Rail</span>
+      <span class="logo-sub">Est. 1987 &bull; Neighborhood Pub</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav" role="navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Menu &amp; Events</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="contact.html#reserve" class="btn btn-primary header-cta">Reserve a Table</a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <span class="label-tag">Find Us</span>
+    <h1>Come Pull Up a Stool</h1>
+    <p>Reservations, private hire, or just a question about happy hour. We're easy to find and even easier to reach.</p>
+  </div>
+</section>
+
+<!-- CONTACT INFO STRIP -->
+<section class="contact-strip">
+  <div class="container">
+    <div class="contact-strip-grid">
+      <div class="contact-strip-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <strong>Address</strong>
+          <span>142 Marlowe Street, East Village, NY 10009</span>
+        </div>
+      </div>
+      <div class="contact-strip-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <strong>Phone</strong>
+          <span><a href="tel:+12125550194">(212) 555-0194</a></span>
+        </div>
+      </div>
+      <div class="contact-strip-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <strong>Email</strong>
+          <span><a href="mailto:hello@copperpub.com">hello@copperpub.com</a></span>
+        </div>
+      </div>
+      <div class="contact-strip-item">
+        <i class="fas fa-clock"></i>
+        <div>
+          <strong>Hours</strong>
+          <span>Mon&ndash;Thu 4pm&ndash;1am &bull; Fri&ndash;Sat 12pm&ndash;2am &bull; Sun 12pm&ndash;12am</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION FORM -->
+<section id="reserve" class="section-dark">
+  <div class="container">
+    <div class="contact-layout">
+      <div class="contact-form-col">
+        <span class="label-tag">Reservations</span>
+        <h2>Book a Table</h2>
+        <p class="section-lead">We hold tables for up to 12 guests. Larger parties, please use the private hire enquiry below. Walk-ins always welcome — first come, first served at the bar.</p>
+        <form class="pub-form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-name">Your Name</label>
+              <input type="text" id="res-name" name="name" placeholder="First and last name" required>
+            </div>
+            <div class="form-group">
+              <label for="res-phone">Phone Number</label>
+              <input type="tel" id="res-phone" name="phone" placeholder="(212) 555-0000" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-date">Date</label>
+              <input type="date" id="res-date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="res-time">Preferred Time</label>
+              <select id="res-time" name="time" required>
+                <option value="">Select a time</option>
+                <option>5:00 PM</option>
+                <option>5:30 PM</option>
+                <option>6:00 PM</option>
+                <option>6:30 PM</option>
+                <option>7:00 PM</option>
+                <option>7:30 PM</option>
+                <option>8:00 PM</option>
+                <option>8:30 PM</option>
+                <option>9:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="res-party">Party Size</label>
+              <select id="res-party" name="party_size" required>
+                <option value="">Select size</option>
+                <option>1&ndash;2 guests</option>
+                <option>3&ndash;4 guests</option>
+                <option>5&ndash;6 guests</option>
+                <option>7&ndash;8 guests</option>
+                <option>9&ndash;12 guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="res-occasion">Occasion (optional)</label>
+              <select id="res-occasion" name="occasion">
+                <option value="">No special occasion</option>
+                <option>Birthday</option>
+                <option>Anniversary</option>
+                <option>Work outing</option>
+                <option>First date</option>
+                <option>Just thirsty</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="res-notes">Special Requests</label>
+            <textarea id="res-notes" name="notes" rows="3" placeholder="Dietary restrictions, accessibility needs, anything else we should know..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Reserve My Table</button>
+        </form>
+      </div>
+
+      <div class="contact-side-col">
+        <div class="info-card">
+          <h3><i class="fas fa-info-circle"></i> Reservation Policy</h3>
+          <ul class="policy-list">
+            <li>Tables held for 15 minutes past reservation time</li>
+            <li>Groups over 12 require private hire booking</li>
+            <li>No reservation required for bar seating</li>
+            <li>We don't take deposits — pay on the night</li>
+            <li>Cancellations appreciated with 2+ hours notice</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3><i class="fas fa-calendar-week"></i> Weekly Events</h3>
+          <ul class="events-list">
+            <li><strong>Monday</strong> &mdash; Pub Quiz Night, 8pm</li>
+            <li><strong>Wednesday</strong> &mdash; Live Music, 9pm</li>
+            <li><strong>Friday</strong> &mdash; Happy Hour til 7pm</li>
+            <li><strong>Saturday</strong> &mdash; Live Music, 9pm</li>
+            <li><strong>Sunday</strong> &mdash; Sunday Roast from 12pm</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3><i class="fas fa-parking"></i> Getting Here</h3>
+          <p style="margin:0; color: var(--gray-light);">Nearest subway: L train to 1st Ave (2 min walk). Street parking available on Marlowe St evenings and weekends. We're next door to the old Rialto Cinema.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<div class="map-placeholder">
+  <div class="map-inner">
+    <i class="fas fa-map-marked-alt"></i>
+    <p>142 Marlowe Street, East Village, New York, NY 10009</p>
+    <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+  </div>
+</div>
+
+<!-- PRIVATE HIRE -->
+<section id="private" class="section-padded">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-tag">Private Events</span>
+      <h2>Hire the Whole Pub</h2>
+      <p>Birthday parties, office nights out, send-offs, reunions — we've hosted them all. The Copper Rail is available for exclusive hire Sunday through Thursday from 5pm, and Friday&ndash;Saturday for afternoon slots.</p>
+    </div>
+    <div class="hire-grid">
+      <div class="hire-card">
+        <div class="hire-icon"><i class="fas fa-users"></i></div>
+        <h3>Capacity</h3>
+        <p>Up to 120 standing, 60 seated for dinner. The full pub is yours — bar, dining room, and garden patio.</p>
+      </div>
+      <div class="hire-card">
+        <div class="hire-icon"><i class="fas fa-utensils"></i></div>
+        <h3>Catering</h3>
+        <p>Custom menus available — sharing platters, buffet spreads, sit-down dinners. Our kitchen handles it all.</p>
+      </div>
+      <div class="hire-card">
+        <div class="hire-icon"><i class="fas fa-music"></i></div>
+        <h3>Entertainment</h3>
+        <p>Live music, DJ nights, trivia hosts, and open mic setups. We can arrange it or you can bring your own.</p>
+      </div>
+    </div>
+    <div class="hire-form-wrapper">
+      <h3>Enquire About Private Hire</h3>
+      <form class="pub-form hire-form" action="#" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="hire-name">Your Name</label>
+            <input type="text" id="hire-name" name="name" placeholder="Full name" required>
+          </div>
+          <div class="form-group">
+            <label for="hire-email">Email Address</label>
+            <input type="email" id="hire-email" name="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="hire-date">Event Date</label>
+            <input type="date" id="hire-date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="hire-guests">Expected Guests</label>
+            <input type="number" id="hire-guests" name="guests" placeholder="How many people?" min="20" max="120">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="hire-details">Tell Us About Your Event</label>
+          <textarea id="hire-details" name="details" rows="4" placeholder="Type of event, catering requirements, entertainment needs, anything else..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-chalk">
+  <div class="container">
+    <div class="section-header">
+      <span class="label-tag">Common Questions</span>
+      <h2>We Get Asked This a Lot</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>Do you take walk-ins?</h4>
+        <p>Always. Bar stools are always first-come-first-served. We keep a section open for walk-in dining most nights too. Weekends get busy after 7pm, so reservations help.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is there a dress code?</h4>
+        <p>None whatsoever. Come as you are. We've had people show up in tuxedos and overalls on the same night. Both were welcome.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do you show sports?</h4>
+        <p>Yes — we have four screens and a projector in the back room. NFL, Premier League, NBA, MLB. If there's a big game on, we'll have it. Check with us for major event nights.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is the pub dog-friendly?</h4>
+        <p>Dogs are welcome in the bar area and the garden patio. Not in the dining room, for health regs. Water bowls behind the bar — just ask.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do you have a happy hour?</h4>
+        <p>Every Friday 4pm&ndash;7pm. Half-price draft pints, $2 off house cocktails, and $1 off all shots. No booking required.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I bring a cake?</h4>
+        <p>Absolutely. Let us know when you book and we'll have plates and candles ready. We don't charge a corkage fee for celebration cakes. Just bring enough for the table.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-main">The Copper Rail</span>
+          <span class="logo-sub">Est. 1987 &bull; Neighborhood Pub</span>
+        </a>
+        <p>142 Marlowe Street, East Village, New York, NY 10009</p>
+        <p><a href="tel:+12125550194">(212) 555-0194</a></p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="services.html">Menu &amp; Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#reserve">Reserve a Table</a></li>
+          <li><a href="contact.html#private">Private Hire</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Hours</h4>
+        <div class="footer-hours">
+          <div><span>Mon &ndash; Thu</span><br>4pm &ndash; 1am</div>
+          <div style="margin-top: 0.5rem;"><span>Fri &ndash; Sat</span><br>12pm &ndash; 2am</div>
+          <div style="margin-top: 0.5rem;"><span>Sunday</span><br>12pm &ndash; 12am</div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <address>
+          142 Marlowe Street<br>
+          East Village<br>
+          New York, NY 10009<br><br>
+          <a href="tel:+12125550194">(212) 555-0194</a><br>
+          <a href="mailto:hello@copperpub.com">hello@copperpub.com</a>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 The Copper Rail Pub. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+
+</body>
+</html>

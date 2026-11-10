@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Reservations — Trattoria Bella</title>
+  <meta name="description" content="Reserve your table at Trattoria Bella. Contact us for private events, catering, or general inquiries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Reservation Bar -->
+  <div class="reservation-bar">
+    <div class="container">
+      <span class="live">📞 Reservations: (555) 234-5678</span>
+      <a href="contact.html">Book a Table</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sitehead">
+    <div class="container">
+      <a href="index.html" class="mark">
+        <span class="glyph">B</span>
+        Trattoria Bella
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="cta">Reserve a Table</a>
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- Page Head -->
+  <section class="page-head">
+    <div class="container">
+      <span class="crumb"><a href="index.html">Home</a> / Contact</span>
+      <h1>Reservations & Contact</h1>
+      <p>Book your table or reach out for private events, catering, or any questions.</p>
+    </div>
+  </section>
+
+  <!-- Reservation Form + Info Cards -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Info Cards -->
+      <div class="info-cards" style="margin-bottom:3rem;">
+        <div class="info-card reveal">
+          <div class="icon">📍</div>
+          <h3>Location</h3>
+          <p>123 Via Roma, Little Italy<br>New York, NY 10013</p>
+        </div>
+        <div class="info-card reveal d1">
+          <div class="icon">📞</div>
+          <h3>Phone</h3>
+          <p>(555) 234-5678<br>Call for same-day reservations</p>
+        </div>
+        <div class="info-card reveal d2">
+          <div class="icon">✉️</div>
+          <h3>Email</h3>
+          <p>hello@trattoriabella.com<br>events@trattoriabella.com</p>
+        </div>
+      </div>
+
+      <!-- Reservation Form -->
+      <div style="max-width:700px; margin:0 auto;">
+        <div style="text-align:center; margin-bottom:2rem;">
+          <span class="kicker">Make a Reservation</span>
+          <h2>Reserve Your Table</h2>
+          <p style="color:var(--muted);">Fill out the form below and we'll confirm your reservation within 2 hours.</p>
+        </div>
+
+        <form data-form>
+          <div class="form-row">
+            <div class="field">
+              <label for="res-name">Full Name *</label>
+              <input type="text" id="res-name" name="name" placeholder="Your full name" required>
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              <label for="res-email">Email *</label>
+              <input type="email" id="res-email" name="email" placeholder="you@example.com" required>
+              <span class="error"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="res-phone">Phone *</label>
+              <input type="tel" id="res-phone" name="phone" placeholder="(555) 000-0000" required>
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              <label for="res-guests">Party Size *</label>
+              <select id="res-guests" name="guests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+                <option value="8">8+ Guests (Private Dining)</option>
+              </select>
+              <span class="error"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="res-date">Preferred Date *</label>
+              <input type="date" id="res-date" name="date" required>
+              <span class="error"></span>
+            </div>
+            <div class="field">
+              <label for="res-time">Preferred Time *</label>
+              <select id="res-time" name="time" required>
+                <option value="">Select time</option>
+                <option value="11:30">11:30 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="12:30">12:30 PM</option>
+                <option value="13:00">1:00 PM</option>
+                <option value="13:30">1:30 PM</option>
+                <option value="17:00">5:00 PM</option>
+                <option value="17:30">5:30 PM</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="18:30">6:30 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="19:30">7:30 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="20:30">8:30 PM</option>
+                <option value="21:00">9:00 PM</option>
+              </select>
+              <span class="error"></span>
+            </div>
+          </div>
+
+          <div class="field" style="margin-bottom:1rem;">
+            <label for="res-notes">Special Requests</label>
+            <textarea id="res-notes" name="notes" rows="3" placeholder="Allergies, celebrations, seating preferences..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-wide">Confirm Reservation</button>
+
+          <div class="form-ok">✓ Thank you! Your reservation request has been received. We'll confirm via email within 2 hours.</div>
+          <div class="form-err">Please correct the errors above and try again.</div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Hours -->
+  <section class="section section--wash">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:2rem;">
+        <span class="kicker">Opening Hours</span>
+        <h2>When to Visit</h2>
+      </div>
+
+      <div class="hours-strip" style="border-radius:0;">
+        <div class="container">
+          <div>
+            <span class="day">Monday – Thursday</span>
+            <span class="time">11:30am – 10:00pm</span>
+          </div>
+          <div>
+            <span class="day">Friday – Saturday</span>
+            <span class="time">11:30am – 11:00pm</span>
+          </div>
+          <div>
+            <span class="day">Sunday</span>
+            <span class="time">12:00pm – 9:00pm</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:2rem;">
+        <p style="color:var(--muted); font-size:0.9rem;">Holiday hours may vary. For parties of 8 or more, please call us directly at <a href="tel:+15552345678" style="color:var(--terracotta);">(555) 234-5678</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map / Location Feature -->
+  <section class="section">
+    <div class="container">
+      <div class="feature">
+        <div class="reveal">
+          <span class="kicker">Find Us</span>
+          <h2>Heart of Little Italy</h2>
+          <p>Nestled on Via Roma, just steps from the neighborhood's iconic archway. Look for the terracotta awning and the warm glow of our wood-fired oven.</p>
+          <p><strong>Address:</strong><br>123 Via Roma, Little Italy<br>New York, NY 10013</p>
+          <p><strong>Nearest Transit:</strong><br>Subway: Canal St (A/C/E/J/Z/N/Q/R/W)<br>Bus: M15 to Spring St</p>
+          <p><strong>Parking:</strong><br>Street parking available. Valet service on Friday & Saturday evenings.</p>
+          <a href="https://maps.google.com" class="btn-primary" target="_blank" rel="noopener">Get Directions</a>
+        </div>
+        <div class="frame reveal d1">
+          <img src="assets/img/about-us.jpg" alt="Trattoria Bella exterior" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <div>
+        <span class="kicker">Private Events</span>
+        <h2>Host Your Next Celebration</h2>
+        <p>From intimate dinners to full restaurant buyouts, we'll create a custom experience for your special occasion.</p>
+      </div>
+      <div class="actions">
+        <a href="mailto:events@trattoriabella.com" class="btn-ghost">Inquire About Events</a>
+        <a href="menu.html" class="btn-ghost">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">Trattoria Bella</div>
+          <p>Authentic Italian cuisine made with love. Join us for an unforgettable dining experience in the heart of Little Italy.</p>
+          <p style="font-size:0.8rem; margin-top:0.5rem;">123 Via Roma, Little Italy<br>New York, NY 10013<br>(555) 234-5678</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="menu.html">Our Menu</a>
+          <a href="contact.html">Reservations</a>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <a href="#">Mon–Thu: 11:30–10pm</a>
+          <a href="#">Fri–Sat: 11:30–11pm</a>
+          <a href="#">Sunday: 12–9pm</a>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Yelp</a>
+          <a href="#">Google Maps</a>
+        </div>
+      </div>
+      <div class="base">
+        <span>&copy; <span data-year></span> Trattoria Bella. All rights reserved.</span>
+        <span>Crafted with love in Little Italy</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

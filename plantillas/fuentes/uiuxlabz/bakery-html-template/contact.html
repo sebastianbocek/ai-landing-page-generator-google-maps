@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Brioche &amp; Co. — visit our bakery, call us, or send a message. We handle custom orders, wholesale inquiries, and event bookings.">
+  <meta name="keywords" content="contact bakery, Brioche & Co, bakery near me, order bread, custom cake inquiry, artisan bakery contact">
+  <title>Contact — Brioche &amp; Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥐</text></svg>">
+</head>
+<body>
+
+  <!-- ========== Header ========== -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">🥐 Brioche <span>&amp; Co.</span></a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">Our Story</a></li>
+          <li><a href="products.html" class="nav-link">Bakes</a></li>
+          <li><a href="blog.html" class="nav-link">Journal</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta">Order Now</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== Page Hero ========== -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container page-hero-content">
+      <p class="page-hero-kicker">Get in Touch</p>
+      <h1>Contact</h1>
+      <p>Stop by the shop, give us a call, or drop us a message below. We respond within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- ========== Contact Grid ========== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Form -->
+        <div class="reveal">
+          <p class="section-kicker">Send a Message</p>
+          <h2 class="section-title" style="font-size:clamp(1.4rem,3vw,1.8rem);margin-bottom:24px">Let&rsquo;s start <span>a conversation</span></h2>
+          <form class="form" data-form novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" id="name" name="name" type="text" required placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" id="email" name="email" type="email" required placeholder="you@example.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone <span style="font-weight:400;color:var(--text-muted)">(optional)</span></label>
+              <input class="form-input" id="phone" name="phone" type="tel" placeholder="+1 234 567 890">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <select class="form-select" id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="order">Custom Order</option>
+                <option value="wholesale">Wholesale Inquiry</option>
+                <option value="event">Event Booking</option>
+                <option value="general">General Question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea class="form-textarea" id="message" name="message" required placeholder="Tell us what you need..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div class="form-ok">Thanks for reaching out! We&rsquo;ll get back to you within 24 hours.</div>
+            <div class="form-err">Please fill in all required fields.</div>
+          </form>
+        </div>
+
+        <!-- Right: Info + Hours -->
+        <div class="reveal">
+          <p class="section-kicker">Visit or Call</p>
+          <h2 class="section-title" style="font-size:clamp(1.4rem,3vw,1.8rem);margin-bottom:24px">Our <span>details</span></h2>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <p class="contact-item-label">Address</p>
+                <p class="contact-item-text">42 Baker Street, London, W1U 7AL</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <p class="contact-item-label">Phone</p>
+                <p class="contact-item-text">+44 20 7946 0958</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <p class="contact-item-label">Email</p>
+                <p class="contact-item-text">hello@briocheandco.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div>
+                <p class="contact-item-label">Hours</p>
+                <div class="hours-grid">
+                  <div class="hours-row"><span class="day">Mon &ndash; Fri</span><span class="time">7:00 AM &ndash; 6:00 PM</span></div>
+                  <div class="hours-row"><span class="day">Saturday</span><span class="time">8:00 AM &ndash; 5:00 PM</span></div>
+                  <div class="hours-row"><span class="day">Sunday</span><span class="time">8:00 AM &ndash; 2:00 PM</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="contact-map-placeholder">
+            <span>Find us on Google Maps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">🥐 Brioche <span>&amp; Co.</span></a>
+          <p>Artisan bakery and pastry shop in the heart of the neighbourhood. Handcrafted daily with love, butter, and a little bit of magic.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Pinterest">PT</a>
+            <a href="#" aria-label="TikTok">TT</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="products.html">Menu &amp; Pricing</a></li>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Order Online</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Opening Hours</h4>
+          <ul class="footer-hours">
+            <li><span>Mon &ndash; Fri</span> <span>7:00 AM &ndash; 6:00 PM</span></li>
+            <li><span>Saturday</span> <span>8:00 AM &ndash; 5:00 PM</span></li>
+            <li><span>Sunday</span> <span>8:00 AM &ndash; 2:00 PM</span></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay in Touch</h4>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:12px">Get weekly updates and secret recipes.</p>
+          <form class="newsletter-form" novalidate>
+            <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> Brioche &amp; Co. All rights reserved. Crafted with <span style="color:var(--coral)">&hearts;</span> by <a href="https://uiuxlabz.github.io" target="_blank" rel="noopener">uiuxlabz</a>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== Back to Top ========== -->
+  <button class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

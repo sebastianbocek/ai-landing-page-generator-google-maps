@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Basecamp Climbing Co.</title>
+  <meta name="description" content="Get in touch with Basecamp Climbing Co. Visit us downtown, call, or send a message. Open 7 days a week. Day passes, memberships, classes, and party bookings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Overpass:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        <div class="logo-text">BASECAMP<span>Climbing Co.</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Climbing</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="services.html" class="header-cta">Get a Day Pass</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="page-hero-vertical"></div>
+    <div class="container">
+      <p class="hero-label">Get in Touch</p>
+      <h1 class="page-hero-title">CONTACT US</h1>
+      <p class="page-hero-subtitle">Questions about passes, memberships, parties, or just want to say hi? We are here to help.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Info -->
+  <section class="section" style="padding-top: 100px;">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form">
+          <h2 style="font-family: var(--font-heading); font-size: 1.8rem; color: var(--color-primary); margin-bottom: 24px; letter-spacing: 0.03em;">Send Us a Message</h2>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+              </div>
+              <div class="form-group">
+                <label for="interest">I'm Interested In</label>
+                <select id="interest" name="interest">
+                  <option value="">Select an option</option>
+                  <option value="day-pass">Day Pass</option>
+                  <option value="membership">Membership</option>
+                  <option value="classes">Classes & Instruction</option>
+                  <option value="party">Birthday Party / Group Event</option>
+                  <option value="other">Something Else</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="experience">Climbing Experience</label>
+              <select id="experience" name="experience">
+                <option value="">Select your level</option>
+                <option value="never">Never climbed before</option>
+                <option value="beginner">Beginner (a few times)</option>
+                <option value="intermediate">Intermediate (climb regularly)</option>
+                <option value="advanced">Advanced (projecting hard grades)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you are looking for, any questions, or anything else..." rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-section">
+          <div class="contact-info-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; color: var(--color-white); letter-spacing: 0.05em;">Contact Information</h3>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <i class="fas fa-location-dot"></i>
+                <div>
+                  <strong>Address</strong>
+                  <p>742 Summit Street, Suite 100<br>Denver, CO 80202</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <strong>Phone</strong>
+                  <p><a href="tel:+13035551234">(303) 555-1234</a></p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:hello@basecampclimbing.com">hello@basecampclimbing.com</a></p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <i class="fab fa-instagram"></i>
+                <div>
+                  <strong>Social</strong>
+                  <p><a href="#">@basecampclimbingco</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hours-card">
+            <h3>Gym Hours</h3>
+            <div class="hours-list">
+              <div class="hours-row">
+                <span>Monday - Friday</span>
+                <span>6:00am - 10:00pm</span>
+              </div>
+              <div class="hours-row">
+                <span>Saturday</span>
+                <span>8:00am - 9:00pm</span>
+              </div>
+              <div class="hours-row">
+                <span>Sunday</span>
+                <span>8:00am - 8:00pm</span>
+              </div>
+              <div class="hours-row">
+                <span>Holidays</span>
+                <span>10:00am - 6:00pm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="text-center">
+        <p class="section-label">Find Us</p>
+        <h2 class="section-title section-title--light">Downtown Denver</h2>
+        <p class="section-subtitle section-subtitle--light">Free parking in the lot behind the building. Street parking also available on Summit and 8th. Two blocks from the Market Street light rail station.</p>
+      </div>
+      <div class="map-placeholder">
+        <i class="fas fa-map-location-dot"></i>
+        <p>Map Placeholder - 742 Summit Street, Denver, CO 80202</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section">
+    <div class="container">
+      <div class="text-center">
+        <p class="section-label">Common Questions</p>
+        <h2 class="section-title">FAQ</h2>
+        <p class="section-subtitle">Quick answers to the questions we hear most. Still have questions? Reach out -- we are happy to help.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-circle-question"></i>
+            <span>Do I need any experience to come climb?</span>
+          </div>
+          <p class="faq-answer">Not at all. Many of our members had never touched a climbing wall before their first visit. Our staff will walk you through the basics -- how to put on a harness, how to belay, and how to read the routes. If you want more structured instruction, our Intro to Climbing class covers everything in depth.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-circle-question"></i>
+            <span>Is there a minimum age to climb?</span>
+          </div>
+          <p class="faq-answer">We welcome climbers as young as 6 years old. Climbers under 14 must be accompanied by an adult. All minors need a parent or guardian to sign the liability waiver. Our Kids Climbing Club is designed specifically for ages 6 through 14.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-circle-question"></i>
+            <span>What should I wear?</span>
+          </div>
+          <p class="faq-answer">Comfortable athletic clothing that you can move freely in. Avoid anything too baggy that could get caught on holds. Climbing shoes are available to rent for $6 -- we strongly recommend them over street shoes. Skip the jewelry, especially rings.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-circle-question"></i>
+            <span>Do I need a belay certification?</span>
+          </div>
+          <p class="faq-answer">For bouldering, no -- it is just you and the wall. For top rope and lead climbing, yes. If you have belayed at another gym, we offer a quick belay check (free, takes about 5 minutes). If you are new to belaying, our Intro to Climbing class includes belay instruction and certification.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-circle-question"></i>
+            <span>Can I bring a friend who is not a member?</span>
+          </div>
+          <p class="faq-answer">Absolutely. All members receive free guest passes each month (the exact number depends on your membership tier). Guests pay the standard day pass rate if you have used your guest passes. There are no limits on how often a guest can visit -- we just ask that each guest signs a waiver on their first visit.</p>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <i class="fas fa-circle-question"></i>
+            <span>What is your cancellation policy?</span>
+          </div>
+          <p class="faq-answer">We keep it simple. All memberships are month-to-month with no long-term contract. To cancel, just give us 30 days written notice (email works fine). We also offer membership freezes for up to 3 months per year if you are traveling or injured -- just ask at the front desk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="cta-title">SEE YOU AT THE GYM</h2>
+      <p class="cta-text">Walk in any time during open hours. No appointment or reservation needed.</p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 32px;">
+        <a href="services.html" class="btn btn--primary btn--large">View Day Passes</a>
+        <a href="services.html" class="btn btn--outline btn--large">Explore Memberships</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"></div>
+            <div class="logo-text">BASECAMP<span>Climbing Co.</span></div>
+          </a>
+          <p>Indoor bouldering, top rope, and lead climbing for all levels. Located in the heart of downtown, Basecamp is where the climbing community comes together.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Climb</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Day Passes</a></li>
+            <li><a href="services.html">Memberships</a></li>
+            <li><a href="services.html">Classes</a></li>
+            <li><a href="services.html">Gear Shop</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Our Team</a></li>
+            <li><a href="about.html">Community</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Hours</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Mon-Fri: 6am - 10pm</a></li>
+            <li><a href="contact.html">Saturday: 8am - 9pm</a></li>
+            <li><a href="contact.html">Sunday: 8am - 8pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Basecamp Climbing Co. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

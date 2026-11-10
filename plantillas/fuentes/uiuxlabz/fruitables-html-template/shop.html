@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop FARMFRESH organic produce — browse our full selection of fruits, vegetables, and organic goods.">
+  <title>Shop — FARMFRESH</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥬</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__brand">
+        <span class="header__brand-icon">🥬</span>
+        FARMFRESH
+      </a>
+
+      <nav class="header__nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="shop.html" class="header__cart" aria-label="Shopping cart">
+          &#128722;
+          <span class="header__cart-count" data-cart-count>0</span>
+        </a>
+        <button class="header__burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="page-hero__content">
+      <div class="page-hero__breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Shop</span>
+      </div>
+      <h1>Our Shop</h1>
+    </div>
+  </section>
+
+  <!-- ============ SHOP ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="shop-layout">
+        <!-- Sidebar -->
+        <aside class="shop-sidebar">
+          <div class="shop-sidebar__section">
+            <h3 class="shop-sidebar__title">Categories</h3>
+            <div class="filter-list">
+              <div class="filter-item active" data-filter="all">
+                <span>All Products</span>
+                <span class="filter-item__count">18</span>
+              </div>
+              <div class="filter-item" data-filter="fruits">
+                <span>Fresh Fruits</span>
+                <span class="filter-item__count">6</span>
+              </div>
+              <div class="filter-item" data-filter="vegetables">
+                <span>Vegetables</span>
+                <span class="filter-item__count">6</span>
+              </div>
+              <div class="filter-item" data-filter="organic">
+                <span>Organic Goods</span>
+                <span class="filter-item__count">6</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-sidebar__section">
+            <h3 class="shop-sidebar__title">Price Range</h3>
+            <div class="filter-list">
+              <div class="filter-item active">
+                <span>All Prices</span>
+              </div>
+              <div class="filter-item">
+                <span>Under $5</span>
+                <span class="filter-item__count">8</span>
+              </div>
+              <div class="filter-item">
+                <span>$5 - $10</span>
+                <span class="filter-item__count">7</span>
+              </div>
+              <div class="filter-item">
+                <span>Over $10</span>
+                <span class="filter-item__count">3</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-sidebar__section">
+            <h3 class="shop-sidebar__title">Certifications</h3>
+            <div class="filter-list">
+              <div class="filter-item active">
+                <span>All</span>
+              </div>
+              <div class="filter-item">
+                <span>USDA Organic</span>
+                <span class="filter-item__count">12</span>
+              </div>
+              <div class="filter-item">
+                <span>Non-GMO</span>
+                <span class="filter-item__count">10</span>
+              </div>
+              <div class="filter-item">
+                <span>Local Farm</span>
+                <span class="filter-item__count">14</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div>
+          <!-- Filter Tabs -->
+          <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All</button>
+            <button class="filter-tab" data-filter="fruits">Fruits</button>
+            <button class="filter-tab" data-filter="vegetables">Vegetables</button>
+            <button class="filter-tab" data-filter="organic">Organic</button>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products__grid">
+
+            <!-- Product 1 -->
+            <div class="product-card" data-category="fruits">
+              <div class="product-card__image">
+                <img src="assets/img/fruite-item-1.jpg" alt="Fresh Strawberries" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--organic">Organic</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Fruits</div>
+                <h3 class="product-card__title">Fresh Strawberries</h3>
+                <p class="product-card__desc">Sweet, juicy strawberries picked at peak ripeness.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$4.99</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="fruits">
+              <div class="product-card__image">
+                <img src="assets/img/fruite-item-2.jpg" alt="Golden Mangoes" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--new">New</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Fruits</div>
+                <h3 class="product-card__title">Golden Mangoes</h3>
+                <p class="product-card__desc">Tropical mangoes with rich, velty flesh.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$6.99</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="fruits">
+              <div class="product-card__image">
+                <img src="assets/img/fruite-item-3.jpg" alt="Fuji Apples" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--organic">Organic</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Fruits</div>
+                <h3 class="product-card__title">Fuji Apples</h3>
+                <p class="product-card__desc">Crisp, honey-sweet apples from partner orchards.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$3.99</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" data-category="vegetables">
+              <div class="product-card__image">
+                <img src="assets/img/vegetable-item-1.jpg" alt="Organic Broccoli" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--organic">Organic</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Vegetables</div>
+                <h3 class="product-card__title">Organic Broccoli</h3>
+                <p class="product-card__desc">Crisp broccoli heads grown without pesticides.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$3.49</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card" data-category="vegetables">
+              <div class="product-card__image">
+                <img src="assets/img/vegetable-item-2.jpg" alt="Heritage Tomatoes" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--sale">Sale</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Vegetables</div>
+                <h3 class="product-card__title">Heritage Tomatoes</h3>
+                <p class="product-card__desc">Heirloom varieties bursting with flavor.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$5.49 <span class="product-card__price-old">$7.99</span></div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card" data-category="organic">
+              <div class="product-card__image">
+                <img src="assets/img/vegetable-item-3.png" alt="Mixed Greens Bundle" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--organic">Organic</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Organic</div>
+                <h3 class="product-card__title">Mixed Greens Bundle</h3>
+                <p class="product-card__desc">Arugula, spinach, and baby kale mix.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$5.99</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="product-card" data-category="fruits">
+              <div class="product-card__image">
+                <img src="assets/img/fruite-item-4.jpg" alt="Fresh Blueberries" loading="lazy" width="400" height="300">
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Fruits</div>
+                <h3 class="product-card__title">Fresh Blueberries</h3>
+                <p class="product-card__desc">Plump, antioxidant-rich blueberries.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$6.49</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="product-card" data-category="vegetables">
+              <div class="product-card__image">
+                <img src="assets/img/vegetable-item-4.jpg" alt="Sweet Bell Peppers" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--new">New</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Vegetables</div>
+                <h3 class="product-card__title">Sweet Bell Peppers</h3>
+                <p class="product-card__desc">Colorful, crunchy peppers perfect for any dish.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$4.29</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="product-card" data-category="organic">
+              <div class="product-card__image">
+                <img src="assets/img/vegetable-item-5.jpg" alt="Organic Carrots" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--organic">Organic</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Organic</div>
+                <h3 class="product-card__title">Organic Carrots</h3>
+                <p class="product-card__desc">Sweet, crunchy carrots straight from the soil.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$2.99</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="product-card" data-category="fruits">
+              <div class="product-card__image">
+                <img src="assets/img/fruite-item-5.jpg" alt="Ripe Peaches" loading="lazy" width="400" height="300">
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Fruits</div>
+                <h3 class="product-card__title">Ripe Peaches</h3>
+                <p class="product-card__desc">Sun-ripened peaches with fragrant, juicy flesh.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$5.79</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="product-card" data-category="vegetables">
+              <div class="product-card__image">
+                <img src="assets/img/vegetable-item-6.jpg" alt="Baby Spinach" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--organic">Organic</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Vegetables</div>
+                <h3 class="product-card__title">Baby Spinach</h3>
+                <p class="product-card__desc">Tender baby leaves, perfect for salads and smoothies.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$4.49</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="product-card" data-category="organic">
+              <div class="product-card__image">
+                <img src="assets/img/best-product-1.jpg" alt="Organic Kale Bundle" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--organic">Organic</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Organic</div>
+                <h3 class="product-card__title">Organic Kale Bundle</h3>
+                <p class="product-card__desc">Nutrient-dense curly kale for smoothies and cooking.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$3.79</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="product-card" data-category="fruits">
+              <div class="product-card__image">
+                <img src="assets/img/fruite-item-6.jpg" alt="Tropical Pineapple" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--new">New</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Fruits</div>
+                <h3 class="product-card__title">Tropical Pineapple</h3>
+                <p class="product-card__desc">Sweet, golden pineapple with a tropical kick.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$5.49</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="product-card" data-category="vegetables">
+              <div class="product-card__image">
+                <img src="assets/img/best-product-3.jpg" alt="Fresh Cucumbers" loading="lazy" width="400" height="300">
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Vegetables</div>
+                <h3 class="product-card__title">Fresh Cucumbers</h3>
+                <p class="product-card__desc">Cool, crisp cucumbers for salads and snacking.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$2.49</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 15 -->
+            <div class="product-card" data-category="organic">
+              <div class="product-card__image">
+                <img src="assets/img/best-product-4.jpg" alt="Organic Herbs Box" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--organic">Organic</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Organic</div>
+                <h3 class="product-card__title">Organic Herbs Box</h3>
+                <p class="product-card__desc">Fresh basil, cilantro, and mint bundle.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$4.99</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 16 -->
+            <div class="product-card" data-category="fruits">
+              <div class="product-card__image">
+                <img src="assets/img/best-product-5.jpg" alt="Red Grapes" loading="lazy" width="400" height="300">
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Fruits</div>
+                <h3 class="product-card__title">Red Grapes</h3>
+                <p class="product-card__desc">Crimson seedless grapes, sweet and refreshing.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$6.99</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 17 -->
+            <div class="product-card" data-category="vegetables">
+              <div class="product-card__image">
+                <img src="assets/img/best-product-6.jpg" alt="Zucchini" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--sale">Sale</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Vegetables</div>
+                <h3 class="product-card__title">Fresh Zucchini</h3>
+                <p class="product-card__desc">Tender, versatile zucchini for grilling and sauteing.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$2.79 <span class="product-card__price-old">$3.99</span></div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 18 -->
+            <div class="product-card" data-category="organic">
+              <div class="product-card__image">
+                <img src="assets/img/best-product-2.jpg" alt="Organic Beetroot" loading="lazy" width="400" height="300">
+                <span class="product-card__badge product-card__badge--organic">Organic</span>
+                <button class="product-card__wishlist" aria-label="Add to wishlist">&#9825;</button>
+              </div>
+              <div class="product-card__body">
+                <div class="product-card__category">Organic</div>
+                <h3 class="product-card__title">Organic Beetroot</h3>
+                <p class="product-card__desc">Earthy, vibrant beets for roasting and juicing.</p>
+                <div class="product-card__footer">
+                  <div class="product-card__price">$3.99</div>
+                  <button class="product-card__add" data-add aria-label="Add to cart">+</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="newsletter__inner reveal-scale">
+        <div class="newsletter__content">
+          <h2 class="newsletter__title">Never Miss a Harvest</h2>
+          <p class="newsletter__desc">
+            Get notified when new seasonal items arrive and enjoy exclusive subscriber-only deals.
+          </p>
+        </div>
+        <form class="newsletter__form" data-form>
+          <input
+            type="email"
+            class="newsletter__input"
+            placeholder="Your email address"
+            required
+            aria-label="Email address for newsletter"
+          >
+          <button type="submit" class="newsletter__btn">Subscribe</button>
+          <span class="form-ok">Welcome to the FARMFRESH family! Check your inbox.</span>
+          <span class="form-err">Please enter a valid email address.</span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <span class="footer__brand-icon">🥬</span>
+            FARMFRESH
+          </div>
+          <p class="footer__desc">
+            Connecting local organic farms with your table. Fresh, honest food delivered daily.
+          </p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook">&#9733;</a>
+            <a href="#" aria-label="Instagram">&#9734;</a>
+            <a href="#" aria-label="Twitter">&#9733;</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Categories</h4>
+          <div class="footer__links">
+            <a href="shop.html">Fresh Fruits</a>
+            <a href="shop.html">Vegetables</a>
+            <a href="shop.html">Organic Goods</a>
+            <a href="shop.html">Seasonal Picks</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Newsletter</h4>
+          <p style="font-size: 0.875rem; color: var(--dark-400); margin-bottom: var(--space-3);">
+            Subscribe for weekly farm updates and exclusive deals.
+          </p>
+          <form class="footer__newsletter-input" data-form>
+            <input type="email" placeholder="Your email" required aria-label="Footer newsletter email">
+            <button type="submit">Go</button>
+            <span class="form-ok" style="font-size:12px;padding:4px 8px;margin-top:4px;">Subscribed!</span>
+            <span class="form-err" style="font-size:12px;padding:4px 8px;margin-top:4px;">Enter valid email.</span>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> FARMFRESH. All rights reserved.</p>
+        <div class="footer__payments">
+          <img src="assets/img/payment.png" alt="Accepted payment methods" loading="lazy" height="28">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

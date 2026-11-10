@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — CEPAIR Car Electronics Repair</title>
+  <meta name="description" content="Get in touch with CEPAIR for car electronics repair, audio upgrades, and diagnostics. Free consultations available.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <span class="logo-icon"><i class="fas fa-car"></i></span>
+        CEPAIR
+      </a>
+      <div class="navbar__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <a href="contact.html" class="navbar__cta">Book Diagnostic</a>
+      <button class="navbar__burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__grid"></div>
+    <div class="container page-hero__inner">
+      <div class="page-hero__breadcrumb reveal">
+        <a href="index.html">Home</a> / Contact
+      </div>
+      <h1 class="page-hero__title reveal">Get in Touch</h1>
+      <p class="page-hero__sub fade-up">Book a free diagnostic, request a quote, or just ask a question. We respond within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- Contact Split -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-split">
+        <div class="fade-up">
+          <div class="section__label">// Contact Info</div>
+          <h2 class="section__title">We're Here to Help</h2>
+          <p style="color:var(--text-secondary);margin-bottom:8px;font-size:.95rem">
+            Whether you need a quick diagnostic or a full system overhaul, our team is ready. Reach out by phone, email, or visit us at the shop.
+          </p>
+          <div class="contact-info-cards">
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="contact-info-card__label">Phone</div>
+                <div class="contact-info-card__val">+1 (555) 234-5678</div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-info-card__label">Email</div>
+                <div class="contact-info-card__val">hello@cepair.com</div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <div class="contact-info-card__label">Workshop</div>
+                <div class="contact-info-card__val">482 Electronics Blvd, Austin, TX 78701</div>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-card__icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <div class="contact-info-card__label">Business Hours</div>
+                <div class="contact-info-card__val">Mon-Fri 8AM-6PM / Sat 9AM-3PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="fade-up">
+          <div class="section__label">// Send a Message</div>
+          <h2 class="section__title">Request a Quote</h2>
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="john@email.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="form-group">
+                <label for="vehicle">Vehicle</label>
+                <input type="text" id="vehicle" placeholder="e.g. 2022 Honda Civic">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service">
+                <option value="">Select a service</option>
+                <option>Audio System Install</option>
+                <option>Electronic Diagnostics</option>
+                <option>Infotainment Upgrade</option>
+                <option>Wiring &amp; Harness Repair</option>
+                <option>Camera &amp; Sensors</option>
+                <option>Security Systems</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Describe the Issue</label>
+              <textarea id="message" placeholder="Tell us about your vehicle and the problem you're experiencing..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success">
+              <i class="fas fa-check-circle"></i> Message sent! We'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section section--dark" style="padding-top:0">
+    <div class="container">
+      <div class="reveal" style="border-radius:var(--radius);overflow:hidden;border:1px solid var(--border-subtle)">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3444.2!2d-97.74!3d30.27!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDE2JzEyLjAiTiA5N8KwNDQnMjQuMCJX!5e0!3m2!1sen!2sus!4v1"
+          width="100%" height="400" style="border:0;min-height:300px" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="navbar__logo" style="margin-bottom:4px">
+            <span class="logo-icon"><i class="fas fa-car"></i></span>
+            CEPAIR
+          </a>
+          <p class="footer__brand-desc">Expert car electronics repair, audio upgrades, and diagnostic services. Trusted by over 5,000 vehicle owners across Austin, TX.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Quick Links</div>
+          <div class="footer__links">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Services</div>
+          <div class="footer__links">
+            <a href="services.html">Audio Installation</a>
+            <a href="services.html">Diagnostics</a>
+            <a href="services.html">Infotainment</a>
+            <a href="services.html">Wiring Repair</a>
+            <a href="services.html">Security Systems</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Business Hours</div>
+          <div class="footer__hours-row"><span>Mon — Fri</span><span class="footer__hours-val">8:00 AM — 6:00 PM</span></div>
+          <div class="footer__hours-row"><span>Saturday</span><span class="footer__hours-val">9:00 AM — 3:00 PM</span></div>
+          <div class="footer__hours-row"><span>Sunday</span><span class="footer__hours-val">Closed</span></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="current-year"></span> CEPAIR. All rights reserved.</span>
+        <span>Car Electronics Repair Specialists</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -7,4 +7,16 @@ tests/preview-output/
 .codex-gsap-tmp/
 salida/
 plantillas/fuentes/
+!plantillas/fuentes/
+plantillas/fuentes/*
+!plantillas/fuentes/100-free-html-templates/
+!plantillas/fuentes/novpix-free-html-templates/
+!plantillas/fuentes/spicer-designs/
+!plantillas/fuentes/uiuxlabz/
+!plantillas/fuentes/zadie/
+plantillas/fuentes/100-free-html-templates/**/.git/
+plantillas/fuentes/novpix-free-html-templates/**/.git/
+plantillas/fuentes/zadie/archivos/
+!plantillas/fuentes/zadie/plantillas/
+!plantillas/fuentes/zadie/zadie-catalog.json
 **/__pycache__/

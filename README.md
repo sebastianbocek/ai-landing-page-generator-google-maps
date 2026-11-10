@@ -16,6 +16,7 @@ Aplicación de escritorio para crear landing pages comerciales a partir de una f
 - Crea metadatos SEO, datos estructurados, sitemap y robots cuando se proporciona la URL pública.
 - Permite regenerar variantes y conserva cada borrador en una carpeta separada.
 - Publica el sitio en un repositorio público y configura GitHub Pages desde la GUI.
+- Incluye en el ZIP del proyecto las colecciones de referencias HTML que utiliza el generador, con sus licencias y archivos de atribución.
 
 La API de OpenAI solo se usa durante la generación. El sitio resultante es HTML, CSS y JavaScript autónomo.
 
@@ -52,7 +53,9 @@ Los efectos son una capa selectiva sobre las familias visuales existentes, no pl
 7. Pulsa **Regenerar** para producir otra combinación sin borrar los borradores anteriores.
 8. Pulsa **Subir página web**, selecciona una carpeta de `salida/` que contenga `index.html` en la raíz y espera a que termine la publicación.
 
-La GUI incluye un **Registro de actividad** con las etapas de extracción, generación, control de calidad y publicación. Si aparece un error, copia el registro con **Copiar log** y compártelo para diagnosticarlo. El archivo completo también se guarda localmente en `usage/app.log`; puede incluir nombres de negocios y rutas locales, pero no registra la clave de OpenAI.
+La GUI incluye un **Registro de actividad** con las etapas de extracción, generación, control de calidad y publicación. **Descargar referencias visuales** verifica y descarga las referencias UIUXLabz de todas las categorías, sin necesitar una ficha ni una categoría seleccionada; las demás colecciones ya vienen en la descarga del proyecto. Si aparece un error, copia el registro con **Copiar log** y compártelo para diagnosticarlo. El archivo completo también se guarda localmente en `usage/app.log`; puede incluir nombres de negocios y rutas locales, pero no registra la clave de OpenAI.
+
+Las colecciones de plantillas de referencia se incluyen dentro de `plantillas/fuentes/` para que una descarga nueva del repositorio tenga los recursos locales disponibles. Sus licencias y atribuciones originales se conservan junto a cada colección o plantilla; consulta [el inventario de fuentes](docs/template-library.md) antes de reutilizar esos archivos fuera del generador.
 
 ## Publicar con GitHub Pages
 

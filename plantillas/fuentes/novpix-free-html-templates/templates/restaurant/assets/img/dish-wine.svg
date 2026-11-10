@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Illustration of two glasses of red wine">
+  <rect width="400" height="400" fill="#4c0519"/>
+  <circle cx="320" cy="80" r="40" fill="#fbbf24" opacity=".2"/>
+  <circle cx="320" cy="80" r="18" fill="#fbbf24" opacity=".45"/>
+  <g>
+    <path d="M110 90h90c0 70-15 110-45 110s-45-40-45-110z" fill="#fff" opacity=".18"/>
+    <path d="M113 140h84c-4 40-18 60-42 60s-38-20-42-60z" fill="#be123c"/>
+    <path d="M113 140h84" stroke="#fb7185" stroke-width="3"/>
+    <rect x="151" y="198" width="8" height="110" fill="#fff" opacity=".3"/>
+    <ellipse cx="155" cy="312" rx="40" ry="8" fill="#fff" opacity=".3"/>
+  </g>
+  <g transform="translate(90 20)">
+    <path d="M110 90h90c0 70-15 110-45 110s-45-40-45-110z" fill="#fff" opacity=".18"/>
+    <path d="M114 150h82c-5 35-18 50-41 50s-36-15-41-50z" fill="#9f1239"/>
+    <path d="M114 150h82" stroke="#fb7185" stroke-width="3"/>
+    <rect x="151" y="198" width="8" height="110" fill="#fff" opacity=".3"/>
+    <ellipse cx="155" cy="312" rx="40" ry="8" fill="#fff" opacity=".3"/>
+  </g>
+  <path d="M40 360h320" stroke="#fda4af" stroke-width="2" opacity=".3"/>
+  <g fill="#65a30d" transform="translate(60 330)"><circle r="10" fill="#7e22ce"/><circle cx="16" cy="-4" r="10" fill="#6b21a8"/><circle cx="8" cy="10" r="10" fill="#7e22ce"/></g>
+</svg>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Nourish Wellness Nutrition</title>
+  <meta name="description" content="Book a nutrition consultation with Sarah Mitchell, RD. Contact us by phone, email, or schedule online. Free 15-minute discovery calls available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+        <div class="logo-text">Nourish Wellness<span>Nutrition</span></div>
+      </a>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Book a Session</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero hero--page">
+    <div class="container">
+      <span class="section-label">Get in Touch</span>
+      <h1>Contact Us</h1>
+      <p>Ready to take the first step? Reach out to schedule a free discovery call or ask any questions you have about working together.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div>
+          <h2 style="margin-bottom: 8px;">Send a Message</h2>
+          <p style="color: var(--gray); margin-bottom: 28px;">Fill out the form below and I will get back to you within one business day. If you need to reach me sooner, call the office directly.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+              </div>
+              <div class="form-group">
+                <label for="service">Service Interest</label>
+                <select id="service" name="service">
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="coaching">1-on-1 Nutrition Coaching</option>
+                  <option value="meal-plan">Custom Meal Planning</option>
+                  <option value="group-program">Group Program</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="insurance">Insurance Provider (Optional)</label>
+              <input type="text" id="insurance" name="insurance" placeholder="e.g., Blue Cross Blue Shield, Aetna">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me a bit about what you are looking for. What are your goals? What have you tried? There are no wrong answers here." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+        <!-- Sidebar Info -->
+        <div>
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-info-text">
+                <strong>Office Address</strong>
+                <span>742 Greenfield Ave, Suite 204<br>Maplewood, NJ 07040</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-info-text">
+                <strong>Phone</strong>
+                <a href="tel:9735550184">(973) 555-0184</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-info-text">
+                <strong>Email</strong>
+                <a href="mailto:hello@nourishwellness.com">hello@nourishwellness.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fa-solid fa-video"></i></div>
+              <div class="contact-info-text">
+                <strong>Virtual Sessions</strong>
+                <span>Available nationwide via secure telehealth</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <h3>Office Hours</h3>
+            <ul class="hours-list">
+              <li><span>Monday</span><span>9:00 AM - 5:00 PM</span></li>
+              <li><span>Tuesday</span><span>9:00 AM - 7:00 PM</span></li>
+              <li><span>Wednesday</span><span>9:00 AM - 5:00 PM</span></li>
+              <li><span>Thursday</span><span>9:00 AM - 7:00 PM</span></li>
+              <li><span>Friday</span><span>9:00 AM - 3:00 PM</span></li>
+              <li><span>Saturday</span><span>10:00 AM - 1:00 PM</span></li>
+              <li><span>Sunday</span><span>Closed</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Placeholder -->
+      <div class="map-placeholder">
+        <i class="fa-solid fa-map-location-dot"></i>
+        <span>742 Greenfield Ave, Suite 204, Maplewood, NJ 07040</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--sage">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the questions I hear most often. If yours is not here, just ask.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question" aria-expanded="true">
+            Do you accept insurance?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes. I am in-network with Aetna, Blue Cross Blue Shield, Cigna, UnitedHealthcare, Horizon BCBS of NJ, and Oxford. If your plan is not listed, I provide detailed superbills that you can submit to your insurance company for out-of-network reimbursement. Many clients get 60-80% of session costs reimbursed this way. I recommend calling the number on the back of your insurance card and asking about coverage for outpatient nutrition counseling with a registered dietitian. I am happy to help you navigate this process.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer virtual sessions or only in-person?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Both. About half of my clients come to the Maplewood office and the other half meet with me virtually via a secure, HIPAA-compliant video platform. Virtual sessions are just as effective as in-person visits, and many clients prefer the convenience of not having to commute. All you need is a device with a camera and a quiet space. I see virtual clients across New Jersey and can provide telehealth services in several other states as well.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What should I expect at my first visit?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Your initial assessment is 75 minutes long, and it is more of a conversation than an exam. We will talk about your health history, current eating patterns, food preferences, lifestyle, goals, and what you have tried in the past. I will ask about stress, sleep, digestion, energy levels, and anything else that might be affecting how you feel. You do not need to prepare anything specific, though bringing recent lab work is helpful if you have it. By the end of the session, you will have a clear understanding of where we are headed and the first steps of your personalized plan.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How often do we meet?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              That depends on your needs and goals. Most clients start with biweekly sessions for the first month or two while we are building and refining your plan, then transition to monthly sessions as you build confidence and momentum. Some clients with more complex needs (like managing multiple food intolerances or recovering from disordered eating) benefit from weekly sessions initially. We will figure out the right cadence together, and you can always adjust as things change.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you prescribe specific diets?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              No. I do not subscribe to any single diet philosophy and I will never hand you a rigid meal plan that tells you exactly what to eat at exactly what time. What I do is provide evidence-based nutrition recommendations tailored to your body, your health conditions, your preferences, and your life. Sometimes that means we work through a structured elimination protocol for IBS. Sometimes it means building more balanced meals. Sometimes it means unlearning diet rules that are not serving you. The approach is always personalized and always flexible.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is your cancellation policy?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              I ask for 24 hours notice if you need to cancel or reschedule an appointment. Life happens and I completely understand that things come up. Cancellations made with less than 24 hours notice are subject to a $50 late cancellation fee. No-shows are charged the full session rate. If you are running late, just let me know and I will do my best to accommodate you. The policy exists to respect both of our time and to keep slots available for other clients who need them.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Let Us Start the Conversation</h2>
+      <p>Your free 15-minute discovery call is the easiest first step you will ever take toward feeling better. No commitment required.</p>
+      <a href="tel:9735550184" class="btn btn--white btn--lg">Call (973) 555-0184 <i class="fa-solid fa-phone"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+            <div class="logo-text" style="color:#fff;">Nourish Wellness<span>Nutrition</span></div>
+          </a>
+          <p>Evidence-based nutrition counseling that meets you where you are. Because food should fuel your life, not run it.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="services.html">1-on-1 Coaching</a>
+          <a href="services.html">Meal Planning</a>
+          <a href="services.html">Group Programs</a>
+          <a href="services.html">Specialty Areas</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>742 Greenfield Ave, Suite 204<br>Maplewood, NJ 07040</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>(973) 555-0184</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>hello@nourishwellness.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Nourish Wellness Nutrition. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const item = button.closest('.faq-item');
+      const isActive = item.classList.contains('active');
+
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(faq => {
+        faq.classList.remove('active');
+        faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked if it was not already open
+      if (!isActive) {
+        item.classList.add('active');
+        button.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>

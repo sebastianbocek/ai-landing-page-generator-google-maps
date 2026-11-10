@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Catch the missing page! — Lantern</title>
+  <meta name="description" content="The page you want is missing, but you can play a quick game while you're here. Catch the runaway zero, then head home.">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="404 — Catch the missing page! — Lantern">
+  <meta property="og:description" content="The page you want is missing, but you can play a quick game while you're here. Catch the runaway zero, then head home.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-image.svg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Crect width='30' height='30' rx='9' fill='%234f46e5'/%3E%3Cpath d='M11 8h8l-1.5 4h-5zM10.5 13h9v7a4.5 4.5 0 0 1-9 0z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body class="p-playful">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="logo" href="index.html" aria-label="Lantern home"><svg viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="9" style="fill:var(--brand)"/><path d="M11 8h8l-1.5 4h-5zM10.5 13h9v7a4.5 4.5 0 0 1-9 0z" fill="#fff"/><circle cx="15" cy="17.5" r="1.6" style="fill:var(--brand)"/></svg><span data-zt="brandName">Lantern</span></a>
+    <nav aria-label="Primary"><a href="index.html">Home</a><a href="index.html">Blog</a><a href="index.html">Help centre</a><a href="mailto:support@lantern.example">Contact</a></nav>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <span class="code">Error 404</span>
+      <h1 data-zt="heading">Our zero <span>ran away</span>.</h1>
+      <p>That's why this page is missing. Help us catch it! Click or tap the runaway 0 as many times as you can in 20 seconds.</p>
+      <div class="arena" id="arena">
+        <div class="digits" aria-hidden="true"><i>4</i><i></i><i>4</i></div>
+        <button class="target" id="target" type="button" aria-label="Catch the zero" style="transform:translate(calc(50% + 0px), 40px)"><span class="eyes" aria-hidden="true"><i></i><i></i></span><span class="mouth" aria-hidden="true"></span></button>
+      </div>
+      <div class="hud" aria-live="polite">
+        <span class="pill" id="score">Score: 0</span>
+        <span class="pill light" id="time">20s</span>
+        <span class="pill light" id="best">Best: 0</span>
+        <button type="button" id="restart">Restart</button>
+      </div>
+      <p class="no-js-note">The mini game needs JavaScript. You can still head home below.</p>
+      <div class="actions" style="justify-content:center">
+        <a class="btn btn-primary" href="index.html"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Back to safety</a>
+        <a class="btn btn-ghost" href="index.html" data-back><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Previous page</a>
+      </div>
+    </div>
+  </main>
+  <footer class="foot">
+    <span>&copy; <span data-year>2026</span> <span data-zt="brandName">Lantern</span>. All rights reserved.</span>
+    <span><a href="index.html">All error pages</a></span>
+  </footer>
+</body>
+</html>

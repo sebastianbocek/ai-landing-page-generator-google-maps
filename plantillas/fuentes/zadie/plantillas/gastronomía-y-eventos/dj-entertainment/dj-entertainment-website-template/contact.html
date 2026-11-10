@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Event — BassLine Entertainment</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-waveform">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div>
+        BASSLINE
+        <span class="logo-sub">Entertainment</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-ghost header-cta">Book Now</a>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero section-sm">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="section-label">Let's Talk</span>
+      <h1>Your Date.<br>Our Music.</h1>
+      <p>Fill out the form and we'll get back to you within 4 hours. If you need us sooner, call or text directly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT QUICK BAR -->
+<div class="contact-quick-bar">
+  <div class="container">
+    <div class="quick-bar-grid">
+      <a href="tel:+15125550187" class="quick-bar-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <strong>Call or Text</strong>
+          <span>(512) 555-0187</span>
+        </div>
+      </a>
+      <a href="mailto:book@basslineent.com" class="quick-bar-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <strong>Email Us</strong>
+          <span>book@basslineent.com</span>
+        </div>
+      </a>
+      <div class="quick-bar-item">
+        <i class="fas fa-clock"></i>
+        <div>
+          <strong>Response Time</strong>
+          <span>Within 4 hours</span>
+        </div>
+      </div>
+      <div class="quick-bar-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <strong>Based In</strong>
+          <span>Austin, TX &mdash; Available Nationwide</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BOOKING FORM -->
+<section class="booking-section">
+  <div class="container">
+    <div class="booking-layout">
+      <div class="booking-form-col">
+        <h2>Event Booking Inquiry</h2>
+        <p class="booking-intro">Tell us about your event. The more detail you give us, the more accurate our quote will be. We'll reach out to confirm availability and set up a quick planning call.</p>
+        <form class="booking-form" action="#" method="post">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="b-name">Your Name <span class="required">*</span></label>
+              <input type="text" id="b-name" name="name" placeholder="First and last" required>
+            </div>
+            <div class="form-group">
+              <label for="b-phone">Phone / Text <span class="required">*</span></label>
+              <input type="tel" id="b-phone" name="phone" placeholder="(512) 555-0000" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="b-email">Email Address <span class="required">*</span></label>
+            <input type="email" id="b-email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="b-type">Event Type <span class="required">*</span></label>
+              <select id="b-type" name="event_type" required>
+                <option value="">Select event type</option>
+                <option>Wedding — Full Day</option>
+                <option>Wedding — Reception Only</option>
+                <option>Wedding — Ceremony Only</option>
+                <option>Corporate Event</option>
+                <option>Private Party / Birthday</option>
+                <option>Club / Venue Night</option>
+                <option>Festival / Outdoor</option>
+                <option>School Event</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="b-date">Event Date <span class="required">*</span></label>
+              <input type="date" id="b-date" name="date" required>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="b-venue">Venue Name &amp; City</label>
+              <input type="text" id="b-venue" name="venue" placeholder="The Grand Ballroom, Austin TX">
+            </div>
+            <div class="form-group">
+              <label for="b-guests">Expected Guest Count</label>
+              <select id="b-guests" name="guests">
+                <option value="">Select range</option>
+                <option>Under 50</option>
+                <option>50&ndash;100</option>
+                <option>100&ndash;200</option>
+                <option>200&ndash;500</option>
+                <option>500+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="b-start">Start Time</label>
+              <input type="time" id="b-start" name="start_time">
+            </div>
+            <div class="form-group">
+              <label for="b-end">End Time</label>
+              <input type="time" id="b-end" name="end_time">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="b-genres">Music Genres &amp; Vibe</label>
+            <input type="text" id="b-genres" name="genres" placeholder="e.g. Hip-Hop, Top 40, R&B — keep it high energy">
+          </div>
+          <div class="form-group">
+            <label for="b-budget">Approximate Budget</label>
+            <select id="b-budget" name="budget">
+              <option value="">Select range</option>
+              <option>Under $800</option>
+              <option>$800 &ndash; $1,200</option>
+              <option>$1,200 &ndash; $2,000</option>
+              <option>$2,000 &ndash; $3,500</option>
+              <option>$3,500+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="b-details">Tell Us More</label>
+            <textarea id="b-details" name="details" rows="4" placeholder="Special moments, must-play songs, do-not-plays, add-ons you're interested in, anything else we should know..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-neon btn-lg" style="width: 100%;">Send Booking Inquiry</button>
+          <p class="form-note">We respond within 4 hours. Weekends may take until the next morning.</p>
+        </form>
+      </div>
+
+      <div class="booking-side-col">
+        <div class="availability-card">
+          <h3><i class="fas fa-calendar-check"></i> Booking Calendar</h3>
+          <div class="calendar-placeholder">
+            <p>Live availability calendar</p>
+            <span>Check open dates in real time</span>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <h3>Booking Timeline</h3>
+          <ul class="timeline-list">
+            <li>
+              <span class="timeline-dot"></span>
+              <div>
+                <strong>6&ndash;12 months out</strong>
+                <p>Wedding and large corporate events — secure your date early, especially for summer and holiday weekends.</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-dot"></span>
+              <div>
+                <strong>1&ndash;3 months out</strong>
+                <p>Private parties, birthdays, and smaller corporate events — usually enough lead time.</p>
+              </div>
+            </li>
+            <li>
+              <span class="timeline-dot"></span>
+              <div>
+                <strong>2&ndash;4 weeks out</strong>
+                <p>Club nights and last-minute events — we try to accommodate. Call us directly for the best shot.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="info-box">
+          <h3>Payment &amp; Deposit</h3>
+          <ul class="terms-list">
+            <li><i class="fas fa-check-circle"></i> 50% deposit to hold your date</li>
+            <li><i class="fas fa-check-circle"></i> Final balance due 7 days before event</li>
+            <li><i class="fas fa-check-circle"></i> Venmo, Zelle, credit card, check accepted</li>
+            <li><i class="fas fa-check-circle"></i> Contracts provided for all bookings</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL / CONNECT -->
+<section class="social-section">
+  <div class="container">
+    <div class="social-inner">
+      <h2>Follow the Energy</h2>
+      <p>Behind-the-scenes, event highlights, and new music drops — follow us on socials.</p>
+      <div class="social-links-large">
+        <a href="#" class="social-link-lg" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+          <span>@basslineent</span>
+        </a>
+        <a href="#" class="social-link-lg" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+          <span>@basslineent</span>
+        </a>
+        <a href="#" class="social-link-lg" aria-label="SoundCloud">
+          <i class="fa-brands fa-soundcloud"></i>
+          <span>BassLine Mixes</span>
+        </a>
+        <a href="#" class="social-link-lg" aria-label="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+          <span>BassLine TV</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-waveform">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div>
+            BASSLINE
+            <span class="logo-sub">Entertainment</span>
+          </div>
+        </a>
+        <p>Professional DJ and entertainment services for weddings, corporate events, club nights, and everything in between. Based in Austin, TX. Available nationwide.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="social-link" aria-label="SoundCloud"><i class="fa-brands fa-soundcloud"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#wedding">Wedding DJ</a></li>
+          <li><a href="services.html#corporate">Corporate Events</a></li>
+          <li><a href="services.html#parties">Private Parties</a></li>
+          <li><a href="services.html#club">Club Nights</a></li>
+          <li><a href="services.html">MC Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html">Meet the DJs</a></li>
+          <li><a href="about.html">Our Equipment</a></li>
+          <li><a href="contact.html">Book an Event</a></li>
+          <li><a href="contact.html">Check Availability</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>(512) 555-0187</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>book@basslineent.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Austin, TX<br>Available Nationwide</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 BassLine Entertainment. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

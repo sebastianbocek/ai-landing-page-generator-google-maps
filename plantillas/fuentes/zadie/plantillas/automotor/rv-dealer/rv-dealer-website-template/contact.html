@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | OpenRoad RV Center</title>
+  <meta name="description" content="Contact OpenRoad RV Center in Denver, CO. Reach our sales, service, parts, or finance team. Visit our 20-acre lot or call us at (303) 555-1234.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-road"></i></div>
+        <div class="logo-text">OpenRoad RV<span>Center</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <h1>Contact Us</h1>
+    <p>Have a question, want to schedule a visit, or ready to start your RV adventure? We're here to help.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Send Us a Message</h2>
+          <p>Fill out the form below and a member of our team will get back to you within one business day.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(303) 555-0000">
+              </div>
+              <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" name="department">
+                  <option value="">Select a department</option>
+                  <option value="sales">Sales</option>
+                  <option value="service">Service</option>
+                  <option value="parts">Parts</option>
+                  <option value="finance">Finance</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="interest">I'm Interested In</label>
+              <select id="interest" name="interest">
+                <option value="">Select an option</option>
+                <option value="new-rv">New RV Purchase</option>
+                <option value="preowned-rv">Pre-Owned RV Purchase</option>
+                <option value="service">Service & Repair</option>
+                <option value="trade-in">Trade-In Appraisal</option>
+                <option value="financing">Financing Information</option>
+                <option value="consignment">RV Consignment</option>
+                <option value="parts">Parts & Accessories</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what you're looking for, any questions you have, or the best time to reach you..." rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <div class="contact-info-card">
+            <h3>Get in Touch</h3>
+            <div class="contact-info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Address</strong>
+                <span>8400 W Colfax Ave, Denver, CO 80215</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+13035551234">(303) 555-1234</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@openroadrv.com">info@openroadrv.com</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fas fa-globe"></i>
+              <div>
+                <strong>Service Department</strong>
+                <a href="tel:+13035551235">(303) 555-1235</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-card hours-card">
+            <h3>Business Hours</h3>
+            <ul class="hours-list">
+              <li><span class="day">Monday</span><span>9:00 AM - 6:00 PM</span></li>
+              <li><span class="day">Tuesday</span><span>9:00 AM - 6:00 PM</span></li>
+              <li><span class="day">Wednesday</span><span>9:00 AM - 6:00 PM</span></li>
+              <li><span class="day">Thursday</span><span>9:00 AM - 6:00 PM</span></li>
+              <li><span class="day">Friday</span><span>9:00 AM - 7:00 PM</span></li>
+              <li><span class="day">Saturday</span><span>8:00 AM - 7:00 PM</span></li>
+              <li><span class="day">Sunday</span><span>10:00 AM - 5:00 PM</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map Placeholder -->
+      <div class="map-placeholder">
+        <i class="fas fa-map-marked-alt"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" style="background-color: var(--color-gray-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">FAQ</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers to the questions we hear most often.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h3>What financing options do you offer?</h3>
+          <p>We work with multiple lenders to secure competitive rates starting at 4.99% APR with terms up to 20 years. Our finance director Tammy Nguyen handles all paperwork and works with all credit situations. Pre-approval is available before you even visit the lot.</p>
+        </div>
+        <div class="faq-card">
+          <h3>How does the trade-in process work?</h3>
+          <p>Bring your current RV to our lot and we'll perform a free appraisal, usually within an hour. We consider condition, mileage, market demand, and maintenance history. Trade-in value is applied directly to your new purchase, reducing the amount you need to finance.</p>
+        </div>
+        <div class="faq-card">
+          <h3>Do you offer delivery?</h3>
+          <p>Yes, we deliver throughout Colorado and to neighboring states. Delivery fees vary based on distance. For travel trailers and fifth wheels, we can tow directly to your home or campsite. Motorhomes can be driven to your location by one of our licensed drivers.</p>
+        </div>
+        <div class="faq-card">
+          <h3>How do I schedule a service appointment?</h3>
+          <p>You can schedule service by calling our service department at (303) 555-1235, emailing service@openroadrv.com, or using the contact form on this page. We recommend booking 1-2 weeks in advance, though we do accommodate same-day emergencies when possible.</p>
+        </div>
+        <div class="faq-card">
+          <h3>What's included in the purchase price?</h3>
+          <p>Every RV purchase includes a full pre-delivery inspection, propane fill, battery charge, walk-through orientation with a technician, and all standard equipment listed on the unit. Taxes, registration, and optional add-ons like extended warranties are separate.</p>
+        </div>
+        <div class="faq-card">
+          <h3>What RV is best for beginners?</h3>
+          <p>For first-time buyers, we usually recommend a travel trailer in the 22-28 foot range. They're easy to tow with a half-ton truck, affordable to maintain, and offer enough space for a family of four. Come walk our lot and we'll help you narrow it down based on your tow vehicle and camping style.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Hit the Open Road?</h2>
+      <p>Stop by our Denver lot, give us a call, or send a message. No appointment needed to browse our 20-acre inventory.</p>
+      <div class="cta-buttons">
+        <a href="tel:+13035551234" class="btn btn-outline">Call (303) 555-1234</a>
+        <a href="services.html" class="btn btn-outline">Browse Inventory</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo-text">OpenRoad RV<span>Center</span></div>
+          <p>Denver's family-owned RV dealer since 2005. New and pre-owned RVs, full service department, parts, and financing. Helping families hit the open road for over 20 years.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>RV Types</h4>
+          <ul>
+            <li><a href="services.html">Travel Trailers</a></li>
+            <li><a href="services.html">Fifth Wheels</a></li>
+            <li><a href="services.html">Class A Motorhomes</a></li>
+            <li><a href="services.html">Class C Motorhomes</a></li>
+            <li><a href="services.html">Toy Haulers</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+13035551234">(303) 555-1234</a></li>
+            <li><a href="mailto:info@openroadrv.com">info@openroadrv.com</a></li>
+            <li>8400 W Colfax Ave</li>
+            <li>Denver, CO 80215</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 OpenRoad RV Center. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

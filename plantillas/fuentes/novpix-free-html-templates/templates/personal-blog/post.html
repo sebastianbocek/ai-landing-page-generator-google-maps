@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writing CSS that ages well — Iris Moreau</title>
+  <meta name="description" content="Nine habits that keep a stylesheet readable five years and three redesigns later: tokens, low specificity, honest naming and trusting the cascade.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Writing CSS that ages well — Iris Moreau">
+  <meta property="og:description" content="Nine habits that keep a stylesheet readable five years and three redesigns later: tokens, low specificity, honest naming and trusting the cascade.">
+  <meta property="og:image" content="assets/img/cover-1.svg">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23c2542f'/%3E%3Ctext x='32' y='45' font-family='Georgia' font-size='38' font-style='italic' text-anchor='middle' fill='%23fffaf2'%3Ei%3C/text%3E%3C/svg%3E">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js');
+      try { var t = localStorage.getItem('zt-blog-theme'); if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t); } catch (e) {}
+    })();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">i</span><span data-zt="brandName">Iris Moreau</span></a>
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary"><ul><li><a href="index.html" aria-current="page">Writing</a></li><li><a href="index.html#topics">Topics</a></li><li><a href="about.html">About</a></li><li><a href="index.html#newsletter">Newsletter</a></li></ul></nav>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" aria-expanded="false" aria-controls="nav-menu"><span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <main id="main">
+    <article class="post">
+      <header class="post-header container-narrow">
+        <ul class="chips" role="list" aria-label="Tags"><li><a href="index.html?tag=css#posts">CSS</a></li><li><a href="index.html?tag=craft#posts">Craft</a></li></ul>
+        <h1 data-zt="heading">Writing CSS that ages well</h1>
+        <p class="dek">Nine habits that keep a stylesheet readable five years and three redesigns later — and the one I had to unlearn.</p>
+        <div class="byline">
+          <img src="assets/img/author.svg" alt="" width="44" height="44">
+          <div><strong>Iris Moreau</strong><span><time datetime="2026-03-12">March 12, 2026</time> · <span class="reading-time" data-reading-time>3 min read</span></span></div>
+        </div>
+      </header>
+
+      <figure class="post-cover container-wide">
+        <img src="assets/img/cover-2.svg" alt="Illustration of code brackets on a dark grid" width="1200" height="675">
+      </figure>
+
+      <div class="post-layout container-wide">
+        <aside class="toc" aria-labelledby="toc-title">
+          <h2 id="toc-title">On this page</h2>
+          <ol>
+            <li><a href="#start-with-tokens">Start with tokens</a></li>
+            <li><a href="#keep-specificity-flat">Keep specificity flat</a></li>
+            <li><a href="#name-for-purpose">Name for purpose</a></li>
+            <li><a href="#trust-the-cascade">Trust the cascade</a></li>
+            <li><a href="#delete-with-confidence">Delete with confidence</a></li>
+          </ol>
+        </aside>
+
+        <div class="prose" data-prose>
+          <p class="lede">The first stylesheet I was proud of lasted eleven months. By the second redesign it had become a museum of <code>!important</code> declarations, each one a small fossil of a deadline. This essay is about everything I’ve done differently since.</p>
+          <p>None of these ideas are new. What’s changed is that modern CSS finally makes them <em>easy</em>: custom properties, cascade layers, <code>:where()</code> and container queries mean the language now rewards restraint instead of punishing it.</p>
+
+          <h2 id="start-with-tokens">1. Start with tokens, not components</h2>
+          <p>Before writing a single selector I define the handful of decisions the whole site will lean on: colours, type scale, spacing and radius. Everything else refers to those names, never to raw values.</p>
+          <figure class="code-block">
+            <figcaption>tokens.css</figcaption>
+            <pre><code><span class="tk-sel">:root</span> {
+  <span class="tk-prop">--color-ink</span>: <span class="tk-val">#1c1b19</span>;
+  <span class="tk-prop">--color-paper</span>: <span class="tk-val">#fffaf2</span>;
+  <span class="tk-prop">--color-accent</span>: <span class="tk-val">#c2542f</span>;
+  <span class="tk-prop">--space-s</span>: <span class="tk-val">clamp(.75rem, 1vw + .5rem, 1rem)</span>;
+  <span class="tk-prop">--radius</span>: <span class="tk-val">10px</span>;
+}</code></pre>
+          </figure>
+          <p>When the brand colour changes — and it will — you edit one line. When dark mode arrives, you redefine the same names inside a media query and nothing else has to know.</p>
+
+          <h2 id="keep-specificity-flat">2. Keep specificity flat</h2>
+          <p>Specificity is debt. Every ID, every nested selector, every <code>.page .sidebar .card h3</code> is a loan you’ll repay the day someone needs to override it. I aim for a single class per rule, and wrap anything more complex in <code>:where()</code> so it costs nothing.</p>
+
+          <aside class="pullquote" aria-label="Pull quote">
+            <p>“Specificity is debt. Every nested selector is a loan you’ll repay the day someone needs to override it.”</p>
+          </aside>
+
+          <figure class="code-block">
+            <figcaption>base.css</figcaption>
+            <pre><code><span class="tk-com">/* zero specificity: easy to override later */</span>
+<span class="tk-sel">:where(.prose) :where(h2, h3)</span> {
+  <span class="tk-prop">margin-block</span>: <span class="tk-val">2em .5em</span>;
+  <span class="tk-prop">text-wrap</span>: <span class="tk-val">balance</span>;
+}</code></pre>
+          </figure>
+
+          <h2 id="name-for-purpose">3. Name for purpose, not appearance</h2>
+          <p>A class called <code>.blue-box</code> is a promise you can’t keep. Six months later the box is green, and now the name is lying to everyone who reads it. Names like <code>.callout</code> or <code>.price-tag</code> describe a job, and jobs change far less often than colours.</p>
+          <ul>
+            <li>Describe <strong>what it is</strong>, not what it looks like.</li>
+            <li>Prefer one clear word over a clever abbreviation.</li>
+            <li>Use modifiers sparingly: <code>.callout.is-warning</code> beats five new components.</li>
+          </ul>
+
+          <figure class="prose-figure">
+            <img src="assets/img/cover-1.svg" alt="Stacked paper cards representing layered components" width="1200" height="675" loading="lazy">
+            <figcaption>Components stack like paper — each layer should only know about the one beneath it.</figcaption>
+          </figure>
+
+          <h2 id="trust-the-cascade">4. Trust the cascade</h2>
+          <p>For years I fought the “C” in CSS, scoping every style so tightly that nothing could inherit. It felt safe. It was actually just verbose. Setting sensible defaults on <code>body</code> and letting typography flow down removed a third of my rules.</p>
+          <blockquote>
+            <p>The cascade isn’t a bug to be contained. It’s the feature that lets a small stylesheet do a lot of work.</p>
+          </blockquote>
+          <p>Cascade layers make this even calmer: put resets, base styles, components and utilities in declared layers, and the order of your files stops mattering.</p>
+          <figure class="code-block">
+            <figcaption>main.css</figcaption>
+            <pre><code><span class="tk-at">@layer</span> reset, base, components, utilities;
+
+<span class="tk-at">@import</span> <span class="tk-val">url("reset.css")</span> <span class="tk-at">layer</span>(reset);
+<span class="tk-at">@import</span> <span class="tk-val">url("components.css")</span> <span class="tk-at">layer</span>(components);</code></pre>
+          </figure>
+
+          <h2 id="delete-with-confidence">5. Delete with confidence</h2>
+          <p>A stylesheet ages well when removing code is boring. Co-locate styles with the markup they belong to, keep one component per file, and add a comment at the top of anything that’s safe to delete when its feature goes away.</p>
+          <div class="callout" role="note">
+            <strong>Try this:</strong> once a quarter, search your CSS for selectors that match nothing on the live site. The first time I did it, 22% of the file went in the bin.
+          </div>
+          <p>The other four habits — logical properties, fluid type, container queries and a humble utility layer — deserve their own essay. That’s coming next month. Until then: write less, name honestly, and let the cascade carry the weight.</p>
+          <p class="signoff">— Iris</p>
+        </div>
+      </div>
+
+      <footer class="post-footer container-narrow">
+        <div class="share">
+          <span>Share this essay</span>
+          <a href="#">Mastodon</a><a href="#">Bluesky</a><a href="#">LinkedIn</a>
+          <button class="link-btn copy-link" type="button">Copy link</button>
+        </div>
+        <section class="author-box" aria-labelledby="author-name">
+          <img src="assets/img/author.svg" alt="Portrait placeholder of Iris Moreau" width="88" height="88" loading="lazy">
+          <div>
+            <p class="label">Written by</p>
+            <h2 id="author-name">Iris Moreau</h2>
+            <p>Front-end developer and writer in Lyon. I build accessible websites for small publishers and write about craft, code and calm. <a href="about.html">More about me →</a></p>
+          </div>
+        </section>
+        <nav class="post-nav" aria-label="More essays">
+          <a href="post.html" class="prev"><small>← Previous</small><span>A tiny static site in forty lines</span></a>
+          <a href="post.html" class="next"><small>Next →</small><span>How I plan a week with one index card</span></a>
+        </nav>
+      </footer>
+    </article>
+
+    <section class="container related" aria-labelledby="rel-title">
+      <h2 id="rel-title">Keep reading</h2>
+      <ul class="related-grid" role="list">
+        <li><a href="post.html"><img src="assets/img/cover-1.svg" alt="" width="1200" height="675" loading="lazy"><span class="r-meta">Productivity · 6 min</span><span class="r-title">How I plan a week with one index card</span></a></li>
+        <li><a href="post.html"><img src="assets/img/cover-3.svg" alt="" width="1200" height="675" loading="lazy"><span class="r-meta">Attention · 7 min</span><span class="r-title">Notes from a month without notifications</span></a></li>
+        <li><a href="post.html"><img src="assets/img/cover-4.svg" alt="" width="1200" height="675" loading="lazy"><span class="r-meta">Reading · 5 min</span><span class="r-title">Reading more by reading less</span></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">i</span><span data-zt="brandName">Iris Moreau</span></a>
+        <p>Essays and notes on building small things carefully. Written slowly in Lyon.</p>
+      </div>
+      <ul class="footer-links" role="list">
+        <li><a href="index.html">Writing</a></li><li><a href="about.html">About</a></li><li><a href="#">RSS</a></li><li><a href="#">Mastodon</a></li><li><a href="mailto:iris@example.com">Email</a></li>
+      </ul>
+    </div>
+    <div class="container footer-base"><p>© 2026 <span data-zt="brandName">Iris Moreau</span>. Words licensed CC BY-NC 4.0.</p><a href="#main">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>

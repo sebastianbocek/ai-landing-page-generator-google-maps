@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contact Us | Bright Smile Family Dentistry</title>
+ <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+ <!-- Header -->
+ <header class="header">
+ <div class="header-inner">
+ <a href="index.html" class="logo">
+ <div class="logo-icon"><i class="fa-solid fa-star"></i></div>
+ <div class="logo-text">
+ Bright Smile
+ <span>Family Dentistry</span>
+ </div>
+ </a>
+ <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ <nav class="nav">
+ <a href="index.html" class="nav-link">Home</a>
+ <a href="about.html" class="nav-link">About</a>
+ <a href="services.html" class="nav-link">Services</a>
+ <a href="contact.html" class="nav-link active">Contact</a>
+ </nav>
+ <a href="contact.html" class="header-cta">Book Appointment</a>
+ </div>
+ </header>
+
+ <!-- Page Hero -->
+ <section class="hero page-hero">
+ <div class="hero-content">
+ <h1>Schedule Your Visit Today</h1>
+ <p>We're here to help! Book your appointment online or give us a call. We look forward to welcoming you to our dental family.</p>
+ </div>
+ </section>
+
+ <!-- Contact Form & Info -->
+ <section class="section section-white">
+ <div class="container">
+ <div class="content-grid">
+ <div class="contact-form">
+ <h2 style="margin-bottom: var(--spacing-md);">Request an Appointment</h2>
+ <form>
+ <div class="form-group">
+ <label for="name" class="form-label">Full Name *</label>
+ <input type="text" id="name" name="name" class="form-input" required>
+ </div>
+ <div class="form-group">
+ <label for="email" class="form-label">Email Address *</label>
+ <input type="email" id="email" name="email" class="form-input" required>
+ </div>
+ <div class="form-group">
+ <label for="phone" class="form-label">Phone Number *</label>
+ <input type="tel" id="phone" name="phone" class="form-input" required>
+ </div>
+ <div class="form-group">
+ <label for="date" class="form-label">Preferred Date</label>
+ <input type="date" id="date" name="date" class="form-input">
+ </div>
+ <div class="form-group">
+ <label for="time" class="form-label">Preferred Time</label>
+ <select id="time" name="time" class="form-select">
+ <option value="">Select a time...</option>
+ <option value="8am">8:00 AM</option>
+ <option value="9am">9:00 AM</option>
+ <option value="10am">10:00 AM</option>
+ <option value="11am">11:00 AM</option>
+ <option value="12pm">12:00 PM</option>
+ <option value="1pm">1:00 PM</option>
+ <option value="2pm">2:00 PM</option>
+ <option value="3pm">3:00 PM</option>
+ <option value="4pm">4:00 PM</option>
+ <option value="5pm">5:00 PM</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label for="patient-type" class="form-label">Patient Type *</label>
+ <select id="patient-type" name="patient-type" class="form-select" required>
+ <option value="">Select...</option>
+ <option value="new">New Patient</option>
+ <option value="existing">Existing Patient</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label for="reason" class="form-label">Reason for Visit *</label>
+ <select id="reason" name="reason" class="form-select" required>
+ <option value="">Select reason...</option>
+ <option value="cleaning">Routine Cleaning & Exam</option>
+ <option value="pain">Dental Pain/Emergency</option>
+ <option value="cosmetic">Cosmetic Consultation</option>
+ <option value="restorative">Restorative Treatment</option>
+ <option value="pediatric">Pediatric Appointment</option>
+ <option value="orthodontic">Invisalign Consultation</option>
+ <option value="other">Other</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label for="insurance" class="form-label">Do you have dental insurance?</label>
+ <select id="insurance" name="insurance" class="form-select">
+ <option value="">Select...</option>
+ <option value="yes">Yes</option>
+ <option value="no">No</option>
+ <option value="unsure">Not Sure</option>
+ </select>
+ </div>
+ <div class="form-group">
+ <label for="message" class="form-label">Additional Information</label>
+ <textarea id="message" name="message" class="form-textarea" placeholder="Please share any concerns, questions, or special requests..."></textarea>
+ </div>
+ <button type="submit" class="btn btn-secondary" style="width: 100%;">Request Appointment</button>
+ <p style="font-size: 0.85rem; color: var(--gray); margin-top: var(--spacing-sm); text-align: center;">We'll confirm your appointment within 24 hours. For same-day appointments or emergencies, please call us directly.</p>
+ </form>
+ </div>
+ <div>
+ <div class="contact-info">
+ <h3>Get In Touch</h3>
+ <div class="info-item">
+ <div class="info-label">Phone</div>
+ <div class="info-value">
+ <a href="tel:5557897645">(555) 789-SMILE</a><br>
+ <span style="font-size: 0.9rem;">(555) 789-7645</span>
+ </div>
+ </div>
+ <div class="info-item">
+ <div class="info-label">Email</div>
+ <div class="info-value">
+ <a href="mailto:info@brightsmilefd.com">info@brightsmilefd.com</a>
+ </div>
+ </div>
+ <div class="info-item">
+ <div class="info-label">Office Location</div>
+ <div class="info-value">
+ 456 Dental Plaza, Suite 200<br>
+ Austin, TX 78701
+ </div>
+ </div>
+ <div class="info-item">
+ <div class="info-label">Office Hours</div>
+ <div class="info-value">
+ Monday - Friday: 8:00am - 6:00pm<br>
+ Saturday: 9:00am - 2:00pm<br>
+ Sunday: Closed
+ </div>
+ </div>
+ <div class="info-item">
+ <div class="info-label">Emergency Care</div>
+ <div class="info-value">
+ For dental emergencies during office hours, call immediately. After-hours emergency contact: <a href="tel:5557890911">(555) 789-0911</a>
+ </div>
+ </div>
+ </div>
+
+ <div class="info-box" style="margin-top: var(--spacing-md);">
+ <h4>New Patient Special</h4>
+ <p>
+ <strong>$99 Comprehensive Exam & Cleaning</strong><br>
+ Includes full examination, digital X-rays, professional cleaning, and oral cancer screening. Regular price: $250. Limited time offer for new patients!
+ </p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Patient Portal & Forms -->
+ <section class="section section-light">
+ <div class="container">
+ <div class="section-header center">
+ <div class="section-tag">Patient Resources</div>
+ <h2>New Patient Information</h2>
+ <p class="section-subtitle">Make your first visit quick and easy by completing our new patient forms ahead of time.</p>
+ </div>
+ <div class="features-grid">
+ <div class="feature-card">
+ <div class="feature-icon"><i class="fa-solid fa-clipboard"></i></div>
+ <h3>New Patient Forms</h3>
+ <p>Download and complete our new patient registration, medical history, and consent forms before your visit to save time.</p>
+ <a href="#" class="btn btn-secondary" style="margin-top: var(--spacing-sm);">Download Forms</a>
+ </div>
+ <div class="feature-card">
+ <div class="feature-icon"><i class="fa-solid fa-credit-card"></i></div>
+ <h3>Insurance Information</h3>
+ <p>We accept most major insurance plans. Bring your insurance card to your first visit, and we'll verify your benefits.</p>
+ <a href="#insurance" class="btn btn-secondary" style="margin-top: var(--spacing-sm);">View Accepted Plans</a>
+ </div>
+ <div class="feature-card">
+ <div class="feature-icon"><i class="fa-solid fa-lock"></i></div>
+ <h3>Patient Portal</h3>
+ <p>Access your treatment history, upcoming appointments, and billing information through our secure online portal.</p>
+ <a href="#" class="btn btn-secondary" style="margin-top: var(--spacing-sm);">Portal Login</a>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- FAQ Section -->
+ <section class="section section-white" id="faq">
+ <div class="container">
+ <div class="section-header center">
+ <div class="section-tag">Common Questions</div>
+ <h2>Frequently Asked Questions</h2>
+ <p class="section-subtitle">Find answers to the most common questions about our practice, services, and policies.</p>
+ </div>
+ <div class="faq-list">
+ <div class="faq-item">
+ <h4 class="faq-question">What should I expect at my first dental visit?</h4>
+ <p class="faq-answer">
+ Your first visit will include a comprehensive oral examination, digital X-rays (if needed), oral cancer screening, gum disease evaluation, and a professional cleaning. We'll review your medical and dental history, discuss any concerns you have, and create a personalized treatment plan. The entire visit typically takes 60-90 minutes.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Do you accept my insurance?</h4>
+ <p class="faq-answer">
+ We're in-network with most major dental insurance providers including Delta Dental, Aetna, Cigna, MetLife, United Healthcare, Blue Cross Blue Shield, Humana, and Guardian. We'll verify your benefits before your appointment and maximize your coverage. Even if we're out-of-network with your plan, we'll file claims on your behalf.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">What payment options do you offer?</h4>
+ <p class="faq-answer">
+ We accept cash, checks, and all major credit cards. For larger treatments, we offer flexible payment plans and work with CareCredit for financing options with 0% interest plans available for qualified patients. We also have a membership plan for patients without insurance that includes preventive care and discounts on treatments.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">How often should I visit the dentist?</h4>
+ <p class="faq-answer">
+ We recommend visiting every six months for routine cleanings and exams. Regular visits help us catch problems early when they're easier and less expensive to treat. Some patients with gum disease or other conditions may need more frequent visits, which we'll discuss during your exam.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Do you treat dental emergencies?</h4>
+ <p class="faq-answer">
+ Yes! We reserve time in our schedule each day for emergency patients. If you're experiencing severe pain, a broken tooth, knocked-out tooth, or dental infection, call us immediately at (555) 789-SMILE. We'll do everything possible to see you the same day. For after-hours emergencies, call our emergency line at (555) 789-0911.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">What if I'm nervous about going to the dentist?</h4>
+ <p class="faq-answer">
+ We completely understand dental anxiety - it's very common! Our entire team is trained in gentle, compassionate care. We offer amenities like noise-canceling headphones, ceiling TVs, warm blankets, and sedation options (nitrous oxide and oral sedation) to help you feel comfortable and relaxed. Let us know about your concerns, and we'll work with you to create a stress-free experience.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">When should I bring my child for their first dental visit?</h4>
+ <p class="faq-answer">
+ The American Academy of Pediatric Dentistry recommends bringing your child by their first birthday or within six months of their first tooth appearing. Early visits help establish good oral health habits, allow us to monitor development, and make your child comfortable with the dentist. Our pediatric specialist, Dr. Rodriguez, makes first visits fun and positive!
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Do you offer same-day dental services?</h4>
+ <p class="faq-answer">
+ Yes! We have CEREC technology that allows us to design, create, and place custom crowns in a single appointment - no temporary crowns or second visit needed. We also offer same-day emergency appointments and can often complete fillings, bonding, and other treatments in one visit.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">What is your cancellation policy?</h4>
+ <p class="faq-answer">
+ We understand that schedules change. We ask for at least 24 hours' notice if you need to cancel or reschedule your appointment. This allows us to offer that time to another patient who may need care. Repeated missed appointments or late cancellations may result in a fee.
+ </p>
+ </div>
+ <div class="faq-item">
+ <h4 class="faq-question">Are digital X-rays safe?</h4>
+ <p class="faq-answer">
+ Yes! Digital X-rays emit 90% less radiation than traditional film X-rays and provide superior image quality for more accurate diagnoses. We only take X-rays when necessary for your care, and we use lead aprons for additional protection. The radiation exposure from dental X-rays is minimal - less than you'd receive from a day in the sun.
+ </p>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Insurance Info -->
+ <section class="section section-light" id="insurance">
+ <div class="container">
+ <div class="section-header center">
+ <div class="section-tag">Insurance & Payment</div>
+ <h2>We Accept Most Insurance Plans</h2>
+ <p class="section-subtitle">We work with your insurance to maximize your benefits and minimize your out-of-pocket costs.</p>
+ </div>
+ <div class="content-grid">
+ <div>
+ <h3>In-Network Insurance Providers</h3>
+ <div class="insurance-grid">
+ <div class="insurance-logo">Delta Dental</div>
+ <div class="insurance-logo">Aetna</div>
+ <div class="insurance-logo">Cigna</div>
+ <div class="insurance-logo">MetLife</div>
+ <div class="insurance-logo">United Healthcare</div>
+ <div class="insurance-logo">Blue Cross Blue Shield</div>
+ <div class="insurance-logo">Humana</div>
+ <div class="insurance-logo">Guardian</div>
+ <div class="insurance-logo">Principal</div>
+ <div class="insurance-logo">Ameritas</div>
+ <div class="insurance-logo">Anthem</div>
+ <div class="insurance-logo">Assurant</div>
+ </div>
+ <p style="margin-top: var(--spacing-md); color: var(--gray-dark);">Don't see your insurance listed? We accept most PPO plans and will file claims for out-of-network benefits. Call our office to verify your specific plan.</p>
+ </div>
+ <div>
+ <h3>Membership Plan (No Insurance?)</h3>
+ <div class="info-box">
+ <h4>Bright Smile Advantage Plan</h4>
+ <p style="margin-bottom: var(--spacing-sm);">For patients without dental insurance, our membership plan provides comprehensive preventive care and treatment discounts:</p>
+ <ul class="service-list" style="margin-bottom: var(--spacing-sm);">
+ <li>2 cleanings and exams per year</li>
+ <li>All necessary X-rays included</li>
+ <li>Oral cancer screening</li>
+ <li>20% discount on all treatments</li>
+ <li>No waiting periods or claim forms</li>
+ <li>Family discounts available</li>
+ </ul>
+ <p><strong>Just $399/year</strong> (or $35/month)</p>
+ <p style="font-size: 0.9rem; margin-top: var(--spacing-sm);">Average savings of $800+ per year compared to non-member pricing!</p>
+ </div>
+ <h3 style="margin-top: var(--spacing-md);">Financing Options</h3>
+ <ul class="service-list">
+ <li>CareCredit - 0% interest plans available</li>
+ <li>In-house payment plans</li>
+ <li>Flexible monthly payments</li>
+ <li>Quick approval process</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- CTA Banner -->
+ <section class="section section-white">
+ <div class="container">
+ <div class="cta-banner">
+ <h2>Ready to Start Your Journey to a Brighter Smile?</h2>
+ <p>Call us at (555) 789-SMILE or fill out the form above to schedule your appointment. We can't wait to meet you!</p>
+ <a href="tel:5557897645" class="btn btn-primary">Call Now</a>
+ </div>
+ </div>
+ </section>
+
+ <!-- Footer -->
+ <footer class="footer">
+ <div class="footer-grid">
+ <div class="footer-brand">
+ <a href="index.html" class="logo">
+ <div class="logo-icon"><i class="fa-solid fa-star"></i></div>
+ <div class="logo-text">
+ Bright Smile
+ <span>Family Dentistry</span>
+ </div>
+ </a>
+ <p>Providing gentle, comprehensive dental care for families in our community since 2004. Your smile is our priority, and your comfort is our commitment.</p>
+ <div class="footer-social">
+ <a href="#" class="social-link" aria-label="Facebook">f</a>
+ <a href="#" class="social-link" aria-label="Instagram">ig</a>
+ <a href="#" class="social-link" aria-label="Google">g</a>
+ </div>
+ </div>
+ <div class="footer-column">
+ <h4>Quick Links</h4>
+ <ul class="footer-links">
+ <li><a href="index.html">Home</a></li>
+ <li><a href="about.html">About Us</a></li>
+ <li><a href="services.html">Services</a></li>
+ <li><a href="contact.html">Contact</a></li>
+ <li><a href="contact.html#faq">FAQ</a></li>
+ </ul>
+ </div>
+ <div class="footer-column">
+ <h4>Services</h4>
+ <ul class="footer-links">
+ <li><a href="services.html#preventive">Preventive Care</a></li>
+ <li><a href="services.html#restorative">Restorative</a></li>
+ <li><a href="services.html#cosmetic">Cosmetic</a></li>
+ <li><a href="services.html#emergency">Emergency</a></li>
+ <li><a href="services.html#pediatric">Pediatric</a></li>
+ </ul>
+ </div>
+ <div class="footer-column">
+ <h4>Contact Us</h4>
+ <ul class="footer-links">
+ <li>(555) 789-SMILE</li>
+ <li>info@brightsmilefd.com</li>
+ <li> 456 Dental Plaza<br>&nbsp;&nbsp;&nbsp;&nbsp;Suite 200<br>&nbsp;&nbsp;&nbsp;&nbsp;Austin, TX 78701</li>
+ <li> Mon-Fri: 8am-6pm<br>&nbsp;&nbsp;&nbsp;&nbsp;Sat: 9am-2pm</li>
+ </ul>
+ </div>
+ </div>
+ <div class="footer-bottom">
+ <p>&copy; 2024 Bright Smile Family Dentistry. All rights reserved.</p>
+ <p>Providing quality dental care with a gentle touch since 2004</p>
+ <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+ </div>
+ </footer>
+ <!-- Mobile Nav Toggle -->
+ <script>
+ const navToggle = document.querySelector('.nav-toggle');
+ const nav = document.querySelector('.nav');
+ if (navToggle && nav) {
+ navToggle.addEventListener('click', () => {
+ const isOpen = nav.classList.toggle('nav-open');
+ navToggle.classList.toggle('active');
+ navToggle.setAttribute('aria-expanded', isOpen);
+ });
+ }
+ </script>
+
+</body>
+</html>

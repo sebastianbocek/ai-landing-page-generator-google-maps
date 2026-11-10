@@ -1,0 +1,15 @@
+{
+  "slug": "error-pages",
+  "name": "Detour — 404, 500 & maintenance page pack",
+  "category": "utility",
+  "description": "Six ready-made error pages: minimal, illustrated, playful (with a mini game) and dark 404s, plus a 500 server error page and a maintenance screen.",
+  "tags": ["404 page", "error page", "500", "maintenance", "not found", "mini game"],
+  "pages": ["index.html", "404-minimal.html", "404-illustrated.html", "404-playful.html", "404-dark.html", "500.html", "maintenance.html"],
+  "features": ["Responsive", "6 error pages + preview gallery", "Original SVG illustrations", "Catch-the-zero mini game", "Glitch text and terminal log", "Site search form", "Status list and copyable error reference", "Maintenance progress and local-time ETA", "noindex meta on error pages", "Reduced-motion support", "No framework"],
+  "fonts": [
+    { "family": "Outfit", "source": "Google Fonts", "license": "OFL" },
+    { "family": "JetBrains Mono", "source": "Google Fonts", "license": "OFL" }
+  ],
+  "colors": { "brand": "#4f46e5", "accent": "#f97362", "bg": "#ffffff", "text": "#16161d" },
+  "customizable": { "brand": true, "accent": true, "brandName": true, "heading": true }
+}

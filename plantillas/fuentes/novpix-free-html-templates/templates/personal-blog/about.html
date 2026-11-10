@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Iris Moreau</title>
+  <meta name="description" content="About Iris Moreau: front-end developer and writer in Lyon, publishing essays on craft, code and calm since 2019.">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About — Iris Moreau">
+  <meta property="og:description" content="About Iris Moreau: front-end developer and writer in Lyon, publishing essays on craft, code and calm since 2019.">
+  <meta property="og:image" content="assets/img/author.svg">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23c2542f'/%3E%3Ctext x='32' y='45' font-family='Georgia' font-size='38' font-style='italic' text-anchor='middle' fill='%23fffaf2'%3Ei%3C/text%3E%3C/svg%3E">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="#">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function () {
+      var d = document.documentElement; d.classList.add('js');
+      try { var t = localStorage.getItem('zt-blog-theme'); if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t); } catch (e) {}
+    })();
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">i</span><span data-zt="brandName">Iris Moreau</span></a>
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary"><ul><li><a href="index.html">Writing</a></li><li><a href="index.html#topics">Topics</a></li><li><a href="about.html" aria-current="page">About</a></li><li><a href="index.html#newsletter">Newsletter</a></li></ul></nav>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" aria-expanded="false" aria-controls="nav-menu"><span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="about container-narrow">
+      <header class="about-head">
+        <img class="about-avatar" src="assets/img/author.svg" alt="Portrait placeholder of Iris Moreau" width="120" height="120">
+        <p class="eyebrow">About</p>
+        <h1 data-zt="heading">Hi, I’m Iris. I write about building small things <em>carefully</em>.</h1>
+      </header>
+      <div class="prose">
+        <p class="lede">By day I’m a freelance front-end developer who builds fast, accessible websites for independent publishers, bookshops and the occasional bakery. By night — well, early morning — I write this blog.</p>
+        <p>I started writing here in 2019 after a burnout taught me that the way we work matters as much as what we make. Since then I’ve published 48 essays, most of them about one of three things:</p>
+        <ul>
+          <li><strong>Craft</strong> — CSS, HTML and the unfashionable joy of simple websites.</li>
+          <li><strong>Attention</strong> — notifications, reading, and protecting deep work.</li>
+          <li><strong>Calm</strong> — planning, rest and running a one-person business without hustle.</li>
+        </ul>
+        <h2 id="now">What I’m doing now</h2>
+        <p>Rebuilding a regional newspaper’s archive as a static site, learning to bake a decent baguette, and reading my way through every novel by Ursula K. Le Guin.</p>
+        <h2 id="colophon">Colophon</h2>
+        <p>This site is hand-written HTML and CSS with a sprinkle of JavaScript. Text is set in Newsreader and Inter. There are no analytics, no cookies and no ads — just words.</p>
+        <h2 id="say-hello">Say hello</h2>
+        <p>I read every email and reply to most. The best way to reach me is <a href="mailto:iris@example.com">iris@example.com</a>, or find me on <a href="#">Mastodon</a>.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Based in</dt><dd>Lyon, France</dd></div>
+        <div><dt>Writing since</dt><dd>2019</dd></div>
+        <div><dt>Essays</dt><dd>48</dd></div>
+        <div><dt>Subscribers</dt><dd>6,400</dd></div>
+      </dl>
+    </article>
+
+    <section id="newsletter" class="container newsletter" aria-labelledby="nl-title">
+      <div class="nl-copy">
+        <h2 id="nl-title">Get the next essay in your inbox.</h2>
+        <p>One email every other Thursday. No tracking, unsubscribe any time.</p>
+      </div>
+      <!-- Point action at your newsletter provider, Formspree or Netlify Forms. -->
+      <form class="nl-form" action="#" method="post" data-demo-form>
+        <label for="nl-email" class="sr-only">Email address</label>
+        <input id="nl-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        <button class="btn" type="submit">Subscribe</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">i</span><span data-zt="brandName">Iris Moreau</span></a>
+        <p>Essays and notes on building small things carefully. Written slowly in Lyon.</p>
+      </div>
+      <ul class="footer-links" role="list">
+        <li><a href="index.html">Writing</a></li><li><a href="about.html">About</a></li><li><a href="#">RSS</a></li><li><a href="#">Mastodon</a></li><li><a href="mailto:iris@example.com">Email</a></li>
+      </ul>
+    </div>
+    <div class="container footer-base"><p>© 2026 <span data-zt="brandName">Iris Moreau</span>. Words licensed CC BY-NC 4.0.</p><a href="#main">Back to top ↑</a></div>
+  </footer>
+</body>
+</html>

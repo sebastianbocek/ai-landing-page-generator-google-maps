@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact AquaShine — get a quote, book a service, or find our location. Premium car wash and detailing in California.">
+  <meta name="keywords" content="contact AquaShine, car wash booking, auto detailing quote, car wash location">
+  <title>Contact — AquaShine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Karla:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+</head>
+<body>
+
+  <!-- ——— Header ——— -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Aqua<span>Shine</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ——— Page Hero ——— -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <span>Contact</span>
+      </div>
+      <h1>Get in Touch</h1>
+      <p>Ready for a showroom shine? We're just a message away.</p>
+    </div>
+  </section>
+
+  <!-- ——— Contact Section ——— -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="reveal">
+          <h2 style="font-family:var(--font-heading); font-weight:700; font-size:1.5rem; color:var(--navy); margin-bottom:20px;">Send Us a Message</h2>
+          <form class="form" data-form novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" class="form-input" placeholder="(800) 555-1234" required>
+              </div>
+              <div class="form-group">
+                <label for="service" class="form-label">Service Interest</label>
+                <select id="service" class="form-select" required>
+                  <option value="">Select a service</option>
+                  <option value="wash">Express Hand Wash</option>
+                  <option value="detail">Interior Detailing</option>
+                  <option value="ceramic">Ceramic Coating</option>
+                  <option value="correction">Paint Correction</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell us about your car and what you need..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div class="form-ok">✓ Thank you! We'll get back to you within 24 hours.</div>
+            <div class="form-err">✗ Please fill in all required fields.</div>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="reveal">
+          <h2 style="font-family:var(--font-heading); font-weight:700; font-size:1.5rem; color:var(--navy); margin-bottom:20px;">Contact Information</h2>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <div class="contact-item-label">Address</div>
+                <div class="contact-item-text">123 Detail Drive, Suite 100<br>Los Angeles, CA 90001</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <div class="contact-item-label">Phone</div>
+                <div class="contact-item-text">(800) 555-1234<br>Mon–Sat: 8AM – 6PM</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-text">hello@aquashine.com<br>We reply within 24 hours</div>
+              </div>
+            </div>
+          </div>
+
+          <h3 style="font-family:var(--font-heading); font-weight:700; font-size:1.1rem; color:var(--navy); margin:28px 0 14px;">Business Hours</h3>
+          <dl class="hours-grid">
+            <dt>Monday – Friday</dt><dd>8:00 AM – 6:00 PM</dd>
+            <dt>Saturday</dt><dd>8:00 AM – 5:00 PM</dd>
+            <dt>Sunday</dt><dd>Closed</dd>
+          </dl>
+
+          <!-- Map -->
+          <div class="contact-map">
+            <img src="assets/img/page-header.jpg" alt="Map showing AquaShine location" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ——— Footer ——— -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Aqua<span>Shine</span></h3>
+          <p>Premium car wash and detailing services. We bring the showroom shine to you.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Hand Wash</a></li>
+            <li><a href="services.html">Interior Detail</a></li>
+            <li><a href="services.html">Ceramic Coating</a></li>
+            <li><a href="services.html">Paint Correction</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul class="footer-links">
+            <li><a href="#">📍 123 Detail Drive, CA</a></li>
+            <li><a href="tel:+18005551234">📞 (800) 555-1234</a></li>
+            <li><a href="mailto:hello@aquashine.com">✉️ hello@aquashine.com</a></li>
+            <li><a href="#">🕐 Mon–Sat: 8AM–6PM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> AquaShine. All rights reserved. Crafted with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ——— Back to Top ——— -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

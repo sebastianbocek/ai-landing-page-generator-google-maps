@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Reserve - VaultSpace Storage</title>
+  <meta name="description" content="Reserve a storage unit at VaultSpace or get in touch with questions. Visit us at 4820 Industrial Blvd or call (555) 123-4567. Office open Mon-Sat, gate access 24/7.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-warehouse"></i>
+        VaultSpace
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Units</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Reserve a Unit</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Contact</span>
+      </div>
+      <h1>Reserve a Unit or Get in Touch</h1>
+      <p>Have questions about unit sizes, pricing, or availability? Fill out the form below and we'll get back to you within a few hours.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form + Sidebar -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="form-card">
+          <h2>Reservation / Inquiry Form</h2>
+          <p>Fill out the details below. We'll confirm availability and send you a lease agreement within one business day.</p>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="unit-size">Preferred Unit Size</label>
+                <select id="unit-size" name="unit-size">
+                  <option value="">Select a size...</option>
+                  <option value="5x5">5' x 5' ($49/mo)</option>
+                  <option value="5x10">5' x 10' ($79/mo)</option>
+                  <option value="10x10">10' x 10' ($129/mo)</option>
+                  <option value="10x15">10' x 15' ($169/mo)</option>
+                  <option value="10x20">10' x 20' ($219/mo)</option>
+                  <option value="10x30">10' x 30' ($299/mo)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="move-in">Desired Move-In Date</label>
+                <input type="date" id="move-in" name="move-in">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="climate">Climate Control Needed?</label>
+              <select id="climate" name="climate">
+                <option value="">Not sure yet</option>
+                <option value="yes">Yes, I need climate control</option>
+                <option value="no">No, standard unit is fine</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" placeholder="Tell us about what you're storing, how long you need the unit, or any other questions..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg">Submit Reservation Request</button>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <!-- Contact Info -->
+          <div class="sidebar-card">
+            <h3>Facility Information</h3>
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-info-text">
+                  <strong>Address</strong>
+                  <span>4820 Industrial Blvd<br>Springfield, IL 62704</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-info-text">
+                  <strong>Phone</strong>
+                  <span>(555) 123-4567</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-info-text">
+                  <strong>Email</strong>
+                  <span>info@vaultspace.com</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon"><i class="fa-solid fa-key"></i></div>
+                <div class="contact-info-text">
+                  <strong>Gate Access</strong>
+                  <span>24 hours / 7 days a week</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="sidebar-card">
+            <h3>Office Hours</h3>
+            <div class="hours-table">
+              <div class="hours-row">
+                <span class="hours-day">Monday - Friday</span>
+                <span class="hours-time">9:00 AM - 6:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Saturday</span>
+                <span class="hours-time">9:00 AM - 4:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Sunday</span>
+                <span class="hours-time">Closed</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-day">Gate Access</span>
+                <span class="hours-time">24/7</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="sidebar-card">
+            <h3>Find Us</h3>
+            <div style="width:100%;height:200px;background:linear-gradient(135deg,var(--gray-200),var(--gray-300));border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;">
+              <span style="color:var(--gray-500);font-size:0.875rem;">Map placeholder</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--gray">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to the questions we hear most from new and prospective renters.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> Do I need to sign a long-term lease?</h3>
+          <p>No. All our leases are month-to-month. You can cancel at any time with 10 days' notice before your next billing cycle. No penalties, no early termination fees.</p>
+        </div>
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> What do I need to bring when I move in?</h3>
+          <p>Just a valid government-issued ID and a payment method (credit card, debit card, or checking account for autopay). We'll handle the paperwork in about 15 minutes.</p>
+        </div>
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> Is insurance required?</h3>
+          <p>We strongly recommend it but don't require it. We offer tenant protection plans starting at $12/mo, or you can provide proof of coverage from your homeowner's or renter's insurance policy.</p>
+        </div>
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> Can I access my unit at night?</h3>
+          <p>Yes. Gate access is available 24 hours a day, 7 days a week using your personal access code. The entire facility is well-lit and monitored around the clock.</p>
+        </div>
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> What can't I store in a unit?</h3>
+          <p>No perishable food, hazardous materials, flammable liquids, live animals, or illegal items. We also don't allow anyone to live in a storage unit. A full list of prohibited items is included in the lease agreement.</p>
+        </div>
+        <div class="faq-item">
+          <h3><i class="fa-solid fa-circle-question"></i> Do you offer any move-in specials?</h3>
+          <p>Yes. Your first month's rent is prorated based on your move-in date, so you only pay for the days you use. We occasionally run promotions for new renters. Call us or check back for current deals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Prefer to Talk to Someone?</h2>
+      <p>Give us a call during office hours. We're happy to answer questions, check availability, or walk you through the reservation process over the phone.</p>
+      <div class="cta-buttons">
+        <a href="tel:+15551234567" class="btn btn--primary btn--lg"><i class="fa-solid fa-phone"></i> Call (555) 123-4567</a>
+        <a href="services.html" class="btn btn--white btn--lg">View Unit Sizes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <i class="fa-solid fa-warehouse"></i>
+            VaultSpace
+          </a>
+          <p>Secure, clean, and affordable self-storage in the heart of the community. Serving families and businesses since 2009.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Units &amp; Pricing</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Unit Sizes</h4>
+          <div class="footer-links">
+            <a href="services.html">5' x 5' Unit</a>
+            <a href="services.html">5' x 10' Unit</a>
+            <a href="services.html">10' x 10' Unit</a>
+            <a href="services.html">10' x 15' Unit</a>
+            <a href="services.html">10' x 20' Unit</a>
+            <a href="services.html">10' x 30' Unit</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-links">
+            <a href="tel:+15551234567"><i class="fa-solid fa-phone" style="margin-right:6px;font-size:0.75rem;"></i> (555) 123-4567</a>
+            <a href="mailto:info@vaultspacestorage.com"><i class="fa-solid fa-envelope" style="margin-right:6px;font-size:0.75rem;"></i> info@vaultspace.com</a>
+            <a href="contact.html"><i class="fa-solid fa-location-dot" style="margin-right:6px;font-size:0.75rem;"></i> 4820 Industrial Blvd</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 VaultSpace Storage. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

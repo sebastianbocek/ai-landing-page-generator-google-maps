@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu — Trattoria Bella</title>
+  <meta name="description" content="Explore the full menu at Trattoria Bella — handmade pasta, wood-fired pizza, classic Italian entrees, and desserts made with love.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Reservation Bar -->
+  <div class="reservation-bar">
+    <div class="container">
+      <span class="live">📞 Reservations: (555) 234-5678</span>
+      <a href="contact.html">Book a Table</a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sitehead">
+    <div class="container">
+      <a href="index.html" class="mark">
+        <span class="glyph">B</span>
+        Trattoria Bella
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="cta">Reserve a Table</a>
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- Page Head -->
+  <section class="page-head">
+    <div class="container">
+      <span class="crumb"><a href="index.html">Home</a> / Menu</span>
+      <h1>Our Menu</h1>
+      <p>Handmade pasta, wood-fired pizza, and classic Italian dishes crafted with imported ingredients and generations of tradition.</p>
+    </div>
+  </section>
+
+  <!-- Menu Grid with Category Tabs -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Category Tabs -->
+      <div class="category-tabs">
+        <button class="category-tab active" data-category="all">All</button>
+        <button class="category-tab" data-category="antipasti">Antipasti</button>
+        <button class="category-tab" data-category="pasta">Pasta</button>
+        <button class="category-tab" data-category="pizza">Pizza</button>
+        <button class="category-tab" data-category="secondi">Secondi</button>
+        <button class="category-tab" data-category="dolci">Dolci</button>
+      </div>
+
+      <!-- Menu Cards -->
+      <div class="menu-grid">
+
+        <!-- Antipasti -->
+        <div class="menu-card reveal" data-category="antipasti">
+          <div class="frame">
+            <img src="assets/img/menu-4.jpg" alt="Burrata Caprese" loading="lazy">
+          </div>
+          <h3>Burrata Caprese</h3>
+          <span class="price">$16</span>
+          <p>Creamy burrata cheese with heirloom tomatoes, fresh basil, aged balsamic, and extra virgin olive oil.</p>
+        </div>
+
+        <div class="menu-card reveal d1" data-category="antipasti">
+          <div class="frame">
+            <img src="assets/img/menu-5.jpg" alt="Carpaccio di Manzo" loading="lazy">
+          </div>
+          <h3>Carpaccio di Manzo</h3>
+          <span class="price">$18</span>
+          <p>Thinly sliced raw beef tenderloin with arugula, shaved Parmigiano, capers, and lemon aioli.</p>
+        </div>
+
+        <!-- Pasta -->
+        <div class="menu-card reveal d2" data-category="pasta">
+          <div class="frame">
+            <img src="assets/img/menu-1.jpg" alt="Truffle Tagliatelle" loading="lazy">
+          </div>
+          <h3>Truffle Tagliatelle</h3>
+          <span class="price">$24</span>
+          <p>Handmade egg pasta tossed in a rich truffle cream sauce with shaved Parmigiano-Reggiano.</p>
+        </div>
+
+        <div class="menu-card reveal" data-category="pasta">
+          <div class="frame">
+            <img src="assets/img/menu-6.jpg" alt="Spaghetti alle Vongole" loading="lazy">
+          </div>
+          <h3>Spaghetti alle Vongole</h3>
+          <span class="price">$22</span>
+          <p>Fresh clams sauteed in white wine, garlic, and chili flakes, tossed with house-made spaghetti.</p>
+        </div>
+
+        <div class="menu-card reveal d1" data-category="pasta">
+          <div class="frame">
+            <img src="assets/img/menu-7.jpg" alt="Pappardelle al Cinghiale" loading="lazy">
+          </div>
+          <h3>Pappardelle al Cinghiale</h3>
+          <span class="price">$26</span>
+          <p>Wide ribbon pasta with slow-braised wild boar ragu, rosemary, and a touch of dark chocolate.</p>
+        </div>
+
+        <!-- Pizza -->
+        <div class="menu-card reveal d2" data-category="pizza">
+          <div class="frame">
+            <img src="assets/img/menu-2.jpg" alt="Margherita DOP" loading="lazy">
+          </div>
+          <h3>Margherita DOP</h3>
+          <span class="price">$18</span>
+          <p>San Marzano tomatoes, fresh mozzarella di bufala, basil, and our signature wood-fired crust.</p>
+        </div>
+
+        <div class="menu-card reveal" data-category="pizza">
+          <div class="frame">
+            <img src="assets/img/menu-8.jpg" alt="Prosciutto e Rucola" loading="lazy">
+          </div>
+          <h3>Prosciutto e Rucola</h3>
+          <span class="price">$22</span>
+          <p>Wood-fired base with mozzarella, topped with Prosciutto di Parma, fresh arugula, and shaved Parmigiano.</p>
+        </div>
+
+        <!-- Secondi -->
+        <div class="menu-card reveal d1" data-category="secondi">
+          <div class="frame">
+            <img src="assets/img/menu-3.jpg" alt="Osso Buco" loading="lazy">
+          </div>
+          <h3>Osso Buco</h3>
+          <span class="price">$32</span>
+          <p>Braised veal shanks in white wine, vegetables, and broth, served over saffron risotto Milanese.</p>
+        </div>
+
+        <div class="menu-card reveal d2" data-category="secondi">
+          <div class="frame">
+            <img src="assets/img/menu-9.jpg" alt="Branzino al Forno" loading="lazy">
+          </div>
+          <h3>Branzino al Forno</h3>
+          <span class="price">$28</span>
+          <p>Oven-roasted Mediterranean sea bass with lemon, capers, cherry tomatoes, and fresh herbs.</p>
+        </div>
+
+        <!-- Dolci -->
+        <div class="menu-card reveal" data-category="dolci">
+          <div class="frame">
+            <img src="assets/img/menu-4.jpg" alt="Tiramisu Classico" loading="lazy">
+          </div>
+          <h3>Tiramisu Classico</h3>
+          <span class="price">$12</span>
+          <p>Our signature dessert — layers of espresso-soaked ladyfingers, mascarpone cream, and cocoa.</p>
+        </div>
+
+        <div class="menu-card reveal d1" data-category="dolci">
+          <div class="frame">
+            <img src="assets/img/menu-5.jpg" alt="Panna Cotta" loading="lazy">
+          </div>
+          <h3>Panna Cotta</h3>
+          <span class="price">$10</span>
+          <p>Silky vanilla bean panna cotta with mixed berry compote and a sprig of fresh mint.</p>
+        </div>
+
+        <div class="menu-card reveal d2" data-category="dolci">
+          <div class="frame">
+            <img src="assets/img/menu-6.jpg" alt="Cannoli Siciliani" loading="lazy">
+          </div>
+          <h3>Cannoli Siciliani</h3>
+          <span class="price">$11</span>
+          <p>Crispy shells filled with sweet ricotta, chocolate chips, candied orange peel, and pistachios.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Menu Display -->
+  <section class="section section--wash">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:3rem;">
+        <span class="kicker">Complete Menu</span>
+        <h2>Full Menu</h2>
+      </div>
+
+      <div class="menu-display">
+
+        <!-- Antipasti -->
+        <div class="menu-section">
+          <h3 class="menu-section-title">Antipasti</h3>
+          <p class="menu-section-subtitle">Start your journey through Italy</p>
+
+          <div class="dish">
+            <span class="dish-name">Burrata Caprese</span>
+            <span class="dish-desc">Heirloom tomatoes, fresh basil, aged balsamic</span>
+            <span class="dish-tag">Chef's Pick</span>
+            <span class="dish-price">$16</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Carpaccio di Manzo</span>
+            <span class="dish-desc">Raw beef tenderloin, arugula, Parmigiano, capers</span>
+            <span class="dish-price">$18</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Calamari Fritti</span>
+            <span class="dish-desc">Lightly fried calamari, marinara, lemon aioli</span>
+            <span class="dish-price">$14</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Bruschetta Trio</span>
+            <span class="dish-desc">Tomato & basil, mushroom & truffle, ricotta & honey</span>
+            <span class="dish-price">$13</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Arancini</span>
+            <span class="dish-desc">Crispy risotto balls, mozzarella, ragu dipping sauce</span>
+            <span class="dish-price">$12</span>
+          </div>
+        </div>
+
+        <!-- Pasta -->
+        <div class="menu-section">
+          <h3 class="menu-section-title">Pasta</h3>
+          <p class="menu-section-subtitle">Handmade daily with love</p>
+
+          <div class="dish">
+            <span class="dish-name">Truffle Tagliatelle</span>
+            <span class="dish-desc">Truffle cream sauce, shaved Parmigiano-Reggiano</span>
+            <span class="dish-tag">Signature</span>
+            <span class="dish-price">$24</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Spaghetti alle Vongole</span>
+            <span class="dish-desc">Fresh clams, white wine, garlic, chili flakes</span>
+            <span class="dish-price">$22</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Pappardelle al Cinghiale</span>
+            <span class="dish-desc">Wild boar ragu, rosemary, dark chocolate</span>
+            <span class="dish-price">$26</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Cacio e Pepe</span>
+            <span class="dish-desc">Pecorino Romano, black pepper, tonnarelli</span>
+            <span class="dish-price">$19</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Ravioli di Ricotta</span>
+            <span class="dish-desc">Spinach and ricotta, sage brown butter</span>
+            <span class="dish-price">$21</span>
+          </div>
+        </div>
+
+        <!-- Pizza -->
+        <div class="menu-section">
+          <h3 class="menu-section-title">Pizza</h3>
+          <p class="menu-section-subtitle">Wood-fired, 72-hour fermented dough</p>
+
+          <div class="dish">
+            <span class="dish-name">Margherita DOP</span>
+            <span class="dish-desc">San Marzano, mozzarella di bufala, basil</span>
+            <span class="dish-tag">Classic</span>
+            <span class="dish-price">$18</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Prosciutto e Rucola</span>
+            <span class="dish-desc">Prosciutto di Parma, arugula, shaved Parmigiano</span>
+            <span class="dish-price">$22</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Quattro Formaggi</span>
+            <span class="dish-desc">Mozzarella, gorgonzola, fontina, Parmigiano</span>
+            <span class="dish-price">$20</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Diavola</span>
+            <span class="dish-desc">Spicy salami, chili flakes, mozzarella, tomato</span>
+            <span class="dish-price">$19</span>
+          </div>
+        </div>
+
+        <!-- Secondi -->
+        <div class="menu-section">
+          <h3 class="menu-section-title">Secondi</h3>
+          <p class="menu-section-subtitle">Main courses from land and sea</p>
+
+          <div class="dish">
+            <span class="dish-name">Osso Buco</span>
+            <span class="dish-desc">Braised veal shank, saffron risotto Milanese</span>
+            <span class="dish-tag">Signature</span>
+            <span class="dish-price">$32</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Branzino al Forno</span>
+            <span class="dish-desc">Oven-roasted sea bass, lemon, capers, herbs</span>
+            <span class="dish-price">$28</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Pollo alla Parmigiana</span>
+            <span class="dish-desc">Breaded chicken, marinara, melted mozzarella</span>
+            <span class="dish-price">$24</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Bistecca alla Fiorentina</span>
+            <span class="dish-desc">Grilled T-bone, rosemary, olive oil (for two)</span>
+            <span class="dish-price">$58</span>
+          </div>
+        </div>
+
+        <!-- Dolci -->
+        <div class="menu-section">
+          <h3 class="menu-section-title">Dolci</h3>
+          <p class="menu-section-subtitle">Sweet endings to a perfect meal</p>
+
+          <div class="dish">
+            <span class="dish-name">Tiramisu Classico</span>
+            <span class="dish-desc">Espresso-soaked ladyfingers, mascarpone, cocoa</span>
+            <span class="dish-tag">Must Try</span>
+            <span class="dish-price">$12</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Panna Cotta</span>
+            <span class="dish-desc">Vanilla bean, mixed berry compote, fresh mint</span>
+            <span class="dish-price">$10</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Cannoli Siciliani</span>
+            <span class="dish-desc">Sweet ricotta, chocolate chips, pistachios</span>
+            <span class="dish-price">$11</span>
+          </div>
+          <div class="dish">
+            <span class="dish-name">Affogato</span>
+            <span class="dish-desc">Vanilla gelato drowned in hot espresso</span>
+            <span class="dish-price">$8</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <div>
+        <span class="kicker">Ready to Dine?</span>
+        <h2>Reserve Your Table</h2>
+        <p>Join us for an evening of authentic Italian flavors and warm hospitality.</p>
+      </div>
+      <div class="actions">
+        <a href="contact.html" class="btn-ghost">Book a Table</a>
+        <a href="tel:+15552345678" class="btn-ghost">Call (555) 234-5678</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">Trattoria Bella</div>
+          <p>Authentic Italian cuisine made with love. Join us for an unforgettable dining experience in the heart of Little Italy.</p>
+          <p style="font-size:0.8rem; margin-top:0.5rem;">123 Via Roma, Little Italy<br>New York, NY 10013<br>(555) 234-5678</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="menu.html">Our Menu</a>
+          <a href="contact.html">Reservations</a>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <a href="#">Mon–Thu: 11:30–10pm</a>
+          <a href="#">Fri–Sat: 11:30–11pm</a>
+          <a href="#">Sunday: 12–9pm</a>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Yelp</a>
+          <a href="#">Google Maps</a>
+        </div>
+      </div>
+      <div class="base">
+        <span>&copy; <span data-year></span> Trattoria Bella. All rights reserved.</span>
+        <span>Crafted with love in Little Italy</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

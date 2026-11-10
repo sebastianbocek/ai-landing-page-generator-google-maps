@@ -1,0 +1,15 @@
+{
+  "slug": "photography",
+  "name": "Halvorsen — Photographer portfolio",
+  "category": "portfolio",
+  "description": "Immersive dark portfolio for photographers: full-bleed masonry galleries with keyboard and swipe lightbox, galleries index, about page and booking form.",
+  "tags": ["photography", "photographer", "gallery", "portfolio", "lightbox", "wedding", "dark"],
+  "pages": ["index.html", "galleries.html", "gallery.html", "about.html", "booking.html"],
+  "features": ["Responsive", "Full-bleed masonry gallery", "Lightbox (keyboard + swipe)", "Galleries index", "Single gallery page", "Booking form with packages (demo)", "FAQ accordion", "Full-screen mobile menu", "Scroll reveal", "Reduced-motion support", "Replaceable SVG photo placeholders"],
+  "fonts": [
+    { "family": "Cormorant Garamond", "source": "Google Fonts", "license": "OFL" },
+    { "family": "Manrope", "source": "Google Fonts", "license": "OFL" }
+  ],
+  "colors": { "brand": "#d8b27a", "accent": "#8fb3c9", "bg": "#0f0e0d", "text": "#ede7de" },
+  "customizable": { "brand": true, "accent": true, "brandName": true, "heading": true }
+}

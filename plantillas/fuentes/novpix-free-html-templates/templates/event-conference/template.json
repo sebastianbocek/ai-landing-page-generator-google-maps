@@ -1,0 +1,16 @@
+{
+  "slug": "event-conference",
+  "name": "SHIFT/26 — tech conference & event website",
+  "category": "event",
+  "description": "A bold, dark website for tech conferences and meetups with a live countdown, speaker grid, multi-track schedule tabs, ticket tiers, sponsors, venue map and FAQ.",
+  "tags": ["conference", "event", "meetup", "summit", "tech", "countdown", "dark mode"],
+  "pages": ["index.html"],
+  "features": ["Responsive", "Dark design", "Mobile menu", "Live countdown", "Speaker grid with illustrated avatars", "Multi-track schedule with day tabs", "Ticket tiers with sold-out bar", "Sponsor wall", "Illustrated venue map", "Accessible FAQ accordion", "Newsletter form", "Reduced-motion support", "Works without JavaScript"],
+  "fonts": [
+    {"family": "Unbounded", "source": "Google Fonts", "license": "OFL"},
+    {"family": "Inter", "source": "Google Fonts", "license": "OFL"},
+    {"family": "JetBrains Mono", "source": "Google Fonts", "license": "OFL"}
+  ],
+  "colors": {"brand": "#7c5cff", "accent": "#22e1c3", "bg": "#0a0b1e", "text": "#f1f1fb"},
+  "customizable": {"brand": true, "accent": true, "brandName": true, "heading": true}
+}

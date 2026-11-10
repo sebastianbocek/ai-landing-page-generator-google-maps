@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MAKAAN — Find Your Dream Home. Premium real estate listings, luxury properties, and expert agents to guide your journey.">
+  <title>MAKAAN — Find Your Dream Home</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏡</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-icon">M</div>
+        <div class="header__logo-text">MAKA<span>A</span>N</div>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="listings.html" class="nav__link">Listings</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+18005551234" class="btn btn--ghost btn--sm">+1 800 555 1234</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Get Started</a>
+      </div>
+
+      <button class="burger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile nav -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="index.html" class="mobile-nav__link active">Home</a>
+      <a href="about.html" class="mobile-nav__link">About</a>
+      <a href="listings.html" class="mobile-nav__link">Listings</a>
+      <a href="contact.html" class="mobile-nav__link">Contact</a>
+      <div class="mobile-nav__actions">
+        <a href="tel:+18005551234" class="btn btn--ghost">+1 800 555 1234</a>
+        <a href="contact.html" class="btn btn--primary">Get Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <div class="hero__tag">
+          <span class="hero__tag-dot"></span>
+          Trusted by 12,000+ homeowners
+        </div>
+        <h1>Find Your <span class="highlight">Dream Home</span></h1>
+        <p class="hero__desc">Discover exceptional properties in the most sought-after neighborhoods. From modern apartments to luxury villas, we match you with the perfect place to call home.</p>
+
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-num counter" data-count="2500">0</div>
+            <div class="hero__stat-label">Properties Sold</div>
+          </div>
+          <div>
+            <div class="hero__stat-num"><span data-count="98">0</span><span>%</span></div>
+            <div class="hero__stat-label">Client Satisfaction</div>
+          </div>
+          <div>
+            <div class="hero__stat-num counter" data-count="45">0</div>
+            <div class="hero__stat-label">Neighborhoods</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__image-wrapper">
+          <img src="assets/img/carousel-1.jpg" alt="Beautiful modern home exterior" loading="eager">
+          <div class="hero__image-badge">
+            <div class="hero__image-badge-icon">&#127968;</div>
+            <div>
+              <div class="hero__image-badge-text">New Listing</div>
+              <div class="hero__image-badge-sub">Greenwood Heights</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero__tags">
+          <div class="hero__tag-float"><em>Downtown</em> &mdash; 120 listings</div>
+          <div class="hero__tag-float"><em>Greenwood</em> &mdash; 85 listings</div>
+          <div class="hero__tag-float"><em>Riverside</em> &mdash; 64 listings</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Panel -->
+    <div class="search-panel reveal">
+      <div class="search-panel__inner">
+        <form>
+          <div class="search-panel__row">
+            <div class="search-field">
+              <label for="search-location">Location</label>
+              <input type="text" id="search-location" name="location" placeholder="City, neighborhood, or ZIP">
+            </div>
+            <div class="search-field">
+              <label for="search-type">Property Type</label>
+              <select id="search-type" name="type">
+                <option value="">All Types</option>
+                <option value="apartment">Apartment</option>
+                <option value="house">House</option>
+                <option value="villa">Villa</option>
+                <option value="condo">Condominium</option>
+                <option value="penthouse">Penthouse</option>
+              </select>
+            </div>
+            <div class="search-field">
+              <label for="search-price">Max Price</label>
+              <select id="search-price" name="price">
+                <option value="">Any Price</option>
+                <option value="250000">Up to $250,000</option>
+                <option value="500000">Up to $500,000</option>
+                <option value="750000">Up to $750,000</option>
+                <option value="1000000">Up to $1,000,000</option>
+                <option value="2000000">$1,000,000+</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED LISTINGS ============ -->
+  <section class="section section--lg" style="padding-top: calc(var(--space-24) + 60px);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-header__label">Featured Properties</div>
+        <h2>Handpicked Homes for You</h2>
+        <p>Explore our curated selection of premium properties across the city's most desirable locations.</p>
+      </div>
+
+      <div class="property-grid stagger">
+        <!-- Card 1 -->
+        <div class="property-card reveal" data-category="house">
+          <div class="property-card__image">
+            <img src="assets/img/property-1.jpg" alt="Modern villa with pool" loading="lazy">
+            <span class="property-card__badge property-card__badge--sale">For Sale</span>
+            <button class="property-card__favorite" aria-label="Save property">&#9825;</button>
+          </div>
+          <div class="property-card__body">
+            <div class="property-card__neighborhood">&#128205; Greenwood Heights</div>
+            <h3 class="property-card__title">Modern Villa with Private Pool</h3>
+            <div class="property-card__location">&#128205; 24 Maple Avenue, Greenwood</div>
+            <div class="property-card__features">
+              <div class="property-card__feature"><span class="property-card__feature-icon">&#128716;</span> 4 Beds</div>
+              <div class="property-card__feature"><span class="property-card__feature-icon">&#128703;</span> 3 Baths</div>
+              <div class="property-card__feature"><span class="property-card__feature-icon">&#128207;</span> 3,200 sqft</div>
+            </div>
+          </div>
+          <div class="property-card__footer">
+            <div class="property-card__price">$875,000</div>
+            <a href="listings.html" class="property-card__cta">View Details &#8594;</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="property-card reveal" data-category="apartment">
+          <div class="property-card__image">
+            <img src="assets/img/property-2.jpg" alt="Luxury downtown apartment" loading="lazy">
+            <span class="property-card__badge property-card__badge--new">New</span>
+            <button class="property-card__favorite" aria-label="Save property">&#9825;</button>
+          </div>
+          <div class="property-card__body">
+            <div class="property-card__neighborhood">&#128205; Downtown Core</div>
+            <h3 class="property-card__title">Luxury Downtown Apartment</h3>
+            <div class="property-card__location">&#128205; 102 Central Blvd, Unit 15A</div>
+            <div class="property-card__features">
+              <div class="property-card__feature"><span class="property-card__feature-icon">&#128716;</span> 2 Beds</div>
+              <div class="property-card__feature"><span class="property-card__feature-icon">&#128703;</span> 2 Baths</div>
+              <div class="property-card__feature"><span class="property-card__feature-icon">&#128207;</span> 1,400 sqft</div>
+            </div>
+          </div>
+          <div class="property-card__footer">
+            <div class="property-card__price">$520,000</div>
+            <a href="listings.html" class="property-card__cta">View Details &#8594;</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="property-card reveal" data-category="villa">
+          <div class="property-card__image">
+            <img src="assets/img/property-3.jpg" alt="Waterfront estate" loading="lazy">
+            <span class="property-card__badge property-card__badge--sale">For Sale</span>
+            <button class="property-card__favorite" aria-label="Save property">&#9825;</button>
+          </div>
+          <div class="property-card__body">
+            <div class="property-card__neighborhood">&#128205; Riverside</div>
+            <h3 class="property-card__title">Waterfront Estate with Dock</h3>
+            <div class="property-card__location">&#128205; 8 Lakeshore Drive, Riverside</div>
+            <div class="property-card__features">
+              <div class="property-card__feature"><span class="property-card__feature-icon">&#128716;</span> 5 Beds</div>
+              <div class="property-card__feature"><span class="property-card__feature-icon">&#128703;</span> 4 Baths</div>
+              <div class="property-card__feature"><span class="property-card__feature-icon">&#128207;</span> 5,100 sqft</div>
+            </div>
+          </div>
+          <div class="property-card__footer">
+            <div class="property-card__price">$1,350,000</div>
+            <a href="listings.html" class="property-card__cta">View Details &#8594;</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:var(--space-10);" class="reveal">
+        <a href="listings.html" class="btn btn--outline btn--lg">View All Properties &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT PREVIEW ============ -->
+  <section class="section about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__images reveal-left">
+          <div class="about__image-main">
+            <img src="assets/img/about.jpg" alt="MAKAAN office team" loading="lazy">
+          </div>
+          <div class="about__image-accent">
+            <div class="about__image-accent-num"><span data-count="15">0</span>+</div>
+            <div class="about__image-accent-text">Years Experience</div>
+          </div>
+        </div>
+
+        <div class="about__content reveal-right">
+          <div class="about__label">About MAKAAN</div>
+          <h2 class="about__title">Your Trusted Partner in Real Estate</h2>
+          <p class="about__desc">With over 15 years of experience in the real estate market, MAKAAN has helped thousands of families find their perfect home. Our deep local knowledge, personalized service, and commitment to integrity set us apart.</p>
+
+          <div class="about__features">
+            <div class="about__feature">
+              <div class="about__feature-icon">&#127942;</div>
+              <div class="about__feature-text">Award-Winning Agency</div>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">&#128269;</div>
+              <div class="about__feature-text">Market Analysis</div>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">&#129309;</div>
+              <div class="about__feature-text">Trusted Negotiators</div>
+            </div>
+            <div class="about__feature">
+              <div class="about__feature-icon">&#128222;</div>
+              <div class="about__feature-text">24/7 Support</div>
+            </div>
+          </div>
+
+          <a href="about.html" class="btn btn--primary">Learn More About Us &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-header__label">Client Stories</div>
+        <h2>What Our Clients Say</h2>
+        <p>Real experiences from real homeowners who found their dream properties with MAKAAN.</p>
+      </div>
+
+      <div class="testimonial-grid stagger">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__text">"MAKAAN made our home buying experience seamless. Their knowledge of the Greenwood area was invaluable, and they found us a property that exceeded our expectations."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">
+              <img src="assets/img/testimonial-1.jpg" alt="Sarah Mitchell" loading="lazy">
+            </div>
+            <div>
+              <div class="testimonial-card__name">Sarah Mitchell</div>
+              <div class="testimonial-card__role">Homeowner, Greenwood</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__text">"From the first consultation to closing day, the MAKAAN team was professional, responsive, and genuinely invested in finding us the right home. Could not recommend them more."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">
+              <img src="assets/img/testimonial-2.jpg" alt="James Rodriguez" loading="lazy">
+            </div>
+            <div>
+              <div class="testimonial-card__name">James Rodriguez</div>
+              <div class="testimonial-card__role">First-Time Buyer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-card__text">"We sold our property above asking price in just 12 days. MAKAAN's staging advice and marketing strategy were outstanding. They truly know the market."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">
+              <img src="assets/img/testimonial-3.jpg" alt="Emily Chen" loading="lazy">
+            </div>
+            <div>
+              <div class="testimonial-card__name">Emily Chen</div>
+              <div class="testimonial-card__role">Seller, Downtown</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section cta-section">
+    <div class="container cta__inner reveal">
+      <h2 class="cta__title">Ready to Find Your Dream Home?</h2>
+      <p class="cta__desc">Let our expert agents guide you through every step of your property journey. Your perfect home is just a conversation away.</p>
+      <div class="cta__buttons">
+        <a href="listings.html" class="btn btn--white btn--lg">Browse Properties &#8594;</a>
+        <a href="contact.html" class="btn btn--outline btn--lg" style="border-color:rgba(255,255,255,0.4); color:#fff;">Schedule a Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="header__logo" style="margin-bottom:var(--space-2);">
+            <div class="header__logo-icon">M</div>
+            <div class="header__logo-text" style="color:#fff;">MAKA<span>A</span>N</div>
+          </a>
+          <p class="footer__brand-desc">Helping families find their dream homes since 2009. Expert guidance, local knowledge, and a commitment to making your property journey seamless.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">X</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">ig</a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <div class="footer__links">
+            <a href="about.html" class="footer__link">About Us</a>
+            <a href="listings.html" class="footer__link">Property Listings</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="#" class="footer__link">Market Reports</a>
+            <a href="#" class="footer__link">Blog</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Properties</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Houses for Sale</a>
+            <a href="#" class="footer__link">Apartments</a>
+            <a href="#" class="footer__link">Luxury Villas</a>
+            <a href="#" class="footer__link">Commercial</a>
+            <a href="#" class="footer__link">New Developments</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Stay Updated</h4>
+          <p style="font-size:var(--fs-sm); margin-bottom:var(--space-4); color:var(--clr-gray-500);">Get the latest listings and market insights delivered to your inbox.</p>
+          <div class="footer__newsletter">
+            <form class="footer__newsletter-form">
+              <input type="email" class="footer__newsletter-input" placeholder="Your email address" aria-label="Email for newsletter">
+              <button type="submit" class="footer__newsletter-btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span data-year>2026</span> MAKAAN. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

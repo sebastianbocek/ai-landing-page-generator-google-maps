@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote — Ironbound Industrial</title>
+  <meta name="description" content="Request a fixed-price quote from Ironbound Industrial. Submit your project details and we'll return a proposal within 10 business days.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314181d'/%3E%3Cpath d='M16 32 L32 16 L48 32 L40 32 L40 48 L24 48 L24 32 Z' fill='%23e8701a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+
+
+<div class="topbar">
+    <div class="container topbar-inner">
+      <p class="topbar-item">24/7 Emergency Response</p>
+      <p class="topbar-item topbar-mid">ISO 9001:2024 &bull; API Q1 Certified</p>
+      <p class="topbar-item topbar-end">
+        <a href="tel:+18005557327">+1 (800) 555-7327</a>
+        <a href="mailto:ops@ironbound.example">ops@ironbound.example</a>
+      </p>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text">Ironbound<span>Industrial</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+      <nav class="nav-links" id="site-nav" aria-label="Primary">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="service.html" class="nav-link">Services</a>
+        <a href="project.html" class="nav-link">Projects</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="testimonial.html" class="nav-link">Reviews</a>
+        <a href="blog.html" class="nav-link">Journal</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="quote.html" class="nav-cta">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <p class="eyebrow">Request a Quote</p>
+        <h1>Tell us what you <em>need built.</em></h1>
+        <p>Drawings, specs or just a description — we'll review and return a fixed-price proposal within 10 business days.</p>
+        <p class="crumb"><a href="index.html">Home</a> › Request a Quote</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="form-card reveal">
+            <h3>Project details</h3>
+            <form data-form novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="q-name">Full name</label>
+                  <input id="q-name" type="text" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-field">
+                  <label for="q-company">Company</label>
+                  <input id="q-company" type="text" name="company" placeholder="Company name" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="q-email">Email</label>
+                  <input id="q-email" type="email" name="email" placeholder="you@company.com" required>
+                </div>
+                <div class="form-field">
+                  <label for="q-phone">Phone</label>
+                  <input id="q-phone" type="tel" name="phone" placeholder="+1 (555) 000-0000" required>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="q-type">Project type</label>
+                <select id="q-type" name="type" required>
+                  <option value="">Select a category...</option>
+                  <option value="structural">Structural fabrication</option>
+                  <option value="refinery">Refinery &amp; petroleum</option>
+                  <option value="pipeline">Pipeline &amp; process</option>
+                  <option value="automation">Industrial automation</option>
+                  <option value="field">Field services</option>
+                  <option value="engineering">Engineering &amp; design</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="q-budget">Estimated budget</label>
+                <select id="q-budget" name="budget">
+                  <option value="">Select a range...</option>
+                  <option value="under50k">Under $50,000</option>
+                  <option value="50k-250k">$50,000 – $250,000</option>
+                  <option value="250k-1m">$250,000 – $1,000,000</option>
+                  <option value="over1m">Over $1,000,000</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="q-timeline">Expected timeline</label>
+                <select id="q-timeline" name="timeline">
+                  <option value="">Select a timeframe...</option>
+                  <option value="urgent">Urgent (within 4 weeks)</option>
+                  <option value="standard">Standard (1–3 months)</option>
+                  <option value="long">Long-term (3+ months)</option>
+                  <option value="tbd">To be determined</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="q-desc">Project description</label>
+                <textarea id="q-desc" name="description" rows="6" placeholder="Describe the scope, materials, dimensions and any special requirements..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit for review</button>
+              <p class="form-msg form-ok">Thanks — we'll review your project and return a proposal within 10 business days.</p>
+              <p class="form-msg form-err">Please fill in all required fields.</p>
+            </form>
+          </div>
+          <div class="info-list reveal">
+            <div class="info-ico">📋</div>
+            <h3>What happens next</h3>
+            <p>1. We review your scope within 2 business days</p>
+            <p>2. Our engineering team prepares a detailed quote</p>
+            <p>3. You receive a fixed-price proposal within 10 days</p>
+            <p>4. Accept and we schedule — no surprises, no scope creep</p>
+            <div class="info-ico">📞</div>
+            <h3>Need it faster?</h3>
+            <p>Call our estimating team at <strong>+1 (800) 555-7327</strong> or email <strong>estimating@ironbound.example</strong> for an expedited quote on emergency work.</p>
+            <div class="info-ico">🔒</div>
+            <h3>Confidentiality</h3>
+            <p>All drawings, specs and project details are kept strictly confidential under our standard NDA. We're happy to sign yours before reviewing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-inner reveal">
+        <p class="eyebrow">Start a project</p>
+        <h2 class="cta-title">Send us your spec. <em>We'll quote it in two weeks.</em></h2>
+        <p class="cta-sub">Upload your drawings, or just describe the job. We'll review and return a fixed-price proposal — no surprises, no scope creep.</p>
+        <div class="cta-actions">
+          <a href="quote.html" class="btn btn-primary">Request a quote</a>
+          <a href="contact.html" class="btn btn-ghost-dark">Speak to an engineer</a>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand footer-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">Ironbound<span>Industrial</span></span>
+        </a>
+        <p>Heavy fabrication, refinery engineering and industrial automation — serving the Gulf Coast, Permian Basin and Midwest since 1990.</p>
+        <div class="footer-social">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">X</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul class="footer-links">
+          <li><a href="service.html">Structural fabrication</a></li>
+          <li><a href="service.html">Refinery &amp; petroleum</a></li>
+          <li><a href="service.html">Pipeline &amp; process</a></li>
+          <li><a href="service.html">Industrial automation</a></li>
+          <li><a href="service.html">Field services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="team.html">Our team</a></li>
+          <li><a href="blog.html">Field notes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul class="footer-links footer-contact">
+          <li>1400 Industrial Blvd, Port Arthur, TX 77642</li>
+          <li><a href="tel:+18005557327">+1 (800) 555-7327</a></li>
+          <li><a href="mailto:ops@ironbound.example">ops@ironbound.example</a></li>
+        </ul>
+        <form class="newsletter" data-form novalidate>
+          <label for="nl-email" class="sr-only">Email for project updates</label>
+          <input id="nl-email" type="email" name="email" placeholder="Get project updates" required>
+          <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+          <p class="form-msg form-ok">You're in — quarterly project digest, no spam.</p>
+          <p class="form-msg form-err">Please enter a valid email address.</p>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span data-year>2026</span> Ironbound Industrial Inc. All rights reserved.</p>
+        <p>ISO 9001:2024 &bull; API Q1 &bull; ASME Section VIII</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

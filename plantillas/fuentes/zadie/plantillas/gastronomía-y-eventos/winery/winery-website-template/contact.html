@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Us — Stone Ridge Vineyards</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- Header -->
+<header class="header scrolled" id="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-name">Stone Ridge</span>
+      <span class="logo-tagline">Vineyards &amp; Winery</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">Our Story</a>
+      <a href="services.html" class="nav-link">Experiences</a>
+      <a href="contact.html" class="nav-link active">Visit</a>
+    </nav>
+    <a href="contact.html" class="btn btn-outline-dark header-cta">Book a Tasting</a>
+  </div>
+</header>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label" style="color:rgba(201,168,108,0.8);display:block;margin-bottom:0.75rem;">McMinnville, Oregon</span>
+    <h1>Plan Your Visit</h1>
+    <p>The tasting room is open Thursday through Sunday. Walk-ins are welcome, but we recommend reserving your table ahead of weekends.</p>
+  </div>
+</section>
+
+<!-- Contact Main -->
+<section class="section contact-main">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Info column -->
+      <div class="contact-info" data-animate>
+        <span class="section-label">Tasting Room</span>
+        <h2>Find Us on the Ridge</h2>
+        <div class="divider"></div>
+        <p>We're located on Stone Ridge Road, about 15 minutes east of downtown McMinnville. The entrance is marked by a stone gate and a long gravel drive through our Chardonnay block.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <div class="contact-detail-label">Address</div>
+              <div class="contact-detail-value">4820 Stone Ridge Road<br>McMinnville, OR 97128</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <div class="contact-detail-label">Phone</div>
+              <div class="contact-detail-value">(503) 555-0192</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail-value">hello@stoneridgevineyards.com</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fa-solid fa-star"></i></div>
+            <div>
+              <div class="contact-detail-label">Wine Club</div>
+              <div class="contact-detail-value">members@stoneridgevineyards.com</div>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="contact-detail-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+            <div>
+              <div class="contact-detail-label">Private Events</div>
+              <div class="contact-detail-value">events@stoneridgevineyards.com</div>
+            </div>
+          </div>
+        </div>
+
+        <h4 style="font-size:1rem;margin-bottom:1rem;">Tasting Room Hours</h4>
+        <table class="hours-table">
+          <tbody>
+            <tr>
+              <td>Monday &ndash; Wednesday</td>
+              <td class="closed">By Appointment Only</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>11:00 am &ndash; 5:00 pm</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>11:00 am &ndash; 6:00 pm</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>10:00 am &ndash; 6:00 pm</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>11:00 am &ndash; 5:00 pm</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size:0.85rem;color:var(--gray);margin-top:1rem;">Hours subject to change on holidays and during harvest (September&ndash;October). Check our Instagram for real-time updates.</p>
+      </div>
+
+      <!-- Form column -->
+      <div class="contact-form-wrap" data-animate data-animate-delay="2">
+        <h3>Book a Tasting or Ask a Question</h3>
+        <p>Use this form for tasting room reservations, event inquiries, or general questions. We respond within one business day.</p>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name</label>
+              <input class="form-input" type="text" id="first-name" name="first-name" placeholder="Margaret" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name</label>
+              <input class="form-input" type="text" id="last-name" name="last-name" placeholder="Stone" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="you@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="(503) 555-0100">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="inquiry-type">What Brings You Our Way?</label>
+            <select class="form-select" id="inquiry-type" name="inquiry-type">
+              <option value="">Select an option...</option>
+              <option value="flight-tasting">Flight Tasting Reservation</option>
+              <option value="reserve-tasting">Reserve Tasting Reservation</option>
+              <option value="barrel-tasting">Private Barrel Tasting</option>
+              <option value="wine-club">Wine Club Membership</option>
+              <option value="wedding">Wedding or Celebration Event</option>
+              <option value="corporate">Corporate Event or Retreat</option>
+              <option value="barrel-dinner">Private Barrel Cave Dinner</option>
+              <option value="general">General Question</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="visit-date">Preferred Visit Date</label>
+              <input class="form-input" type="date" id="visit-date" name="visit-date">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="party-size">Number of Guests</label>
+              <select class="form-select" id="party-size" name="party-size">
+                <option value="">Select...</option>
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3-4">3&ndash;4 people</option>
+                <option value="5-8">5&ndash;8 people</option>
+                <option value="9-15">9&ndash;15 people</option>
+                <option value="16+">16 or more</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Additional Details</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Any preferences, dietary restrictions, special occasions, or questions for our team..."></textarea>
+          </div>
+          <div class="form-group form-submit">
+            <button type="submit" class="btn btn-primary" style="width:100%;">Send Reservation Request</button>
+          </div>
+          <p style="font-size:0.82rem;color:var(--gray);text-align:center;margin-top:0.5rem;">We'll confirm within one business day. Weekend reservations book up fast.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="gold-rule">
+
+<!-- Directions -->
+<section class="section directions">
+  <div class="container">
+    <div class="directions-inner">
+      <div data-animate>
+        <span class="section-label">Getting Here</span>
+        <h2 class="section-title">Find Your Way to the Estate</h2>
+        <div class="divider"></div>
+        <p style="color:var(--gray-dark);margin-bottom:2rem;font-size:0.95rem;">Stone Ridge Vineyards is located in the heart of the Willamette Valley wine country, approximately 45 minutes southwest of Portland and 15 minutes east of downtown McMinnville.</p>
+        <div class="directions-list">
+          <div class="direction-item">
+            <div class="direction-num">1</div>
+            <div class="direction-text">From Portland, take Hwy 18 West toward McMinnville. Continue approximately 35 miles to the McMinnville exit.</div>
+          </div>
+          <div class="direction-item">
+            <div class="direction-num">2</div>
+            <div class="direction-text">Turn left onto NE 3rd Street through downtown McMinnville. Continue east on NE Lafayette Avenue for 6 miles.</div>
+          </div>
+          <div class="direction-item">
+            <div class="direction-num">3</div>
+            <div class="direction-text">Turn right onto Stone Ridge Road. The winery entrance is 0.8 miles on your right, marked by the stone gate and vineyard sign.</div>
+          </div>
+          <div class="direction-item">
+            <div class="direction-num">4</div>
+            <div class="direction-text">Follow the gravel drive through the Chardonnay block approximately 0.3 miles to the tasting room parking area.</div>
+          </div>
+        </div>
+        <div style="margin-top:2rem;padding:1.25rem;background:var(--white);border-left:3px solid var(--secondary);border-radius:0 var(--radius-sm) var(--radius-sm) 0;">
+          <p style="font-size:0.9rem;color:var(--gray-dark);margin:0;"><strong>Tip:</strong> GPS may not recognize the full address. Search "Stone Ridge Vineyards McMinnville OR" and follow signage once you reach the rural area.</p>
+        </div>
+      </div>
+      <div data-animate data-animate-delay="2">
+        <div class="map-placeholder">
+          <div class="map-pin">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Stone Ridge Vineyards</span>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="#" class="btn btn-outline-dark" style="flex:1;text-align:center;font-size:0.8rem;">
+            <i class="fa-brands fa-google" style="margin-right:0.4rem;"></i> Google Maps
+          </a>
+          <a href="#" class="btn btn-outline-dark" style="flex:1;text-align:center;font-size:0.8rem;">
+            <i class="fa-solid fa-map" style="margin-right:0.4rem;"></i> Apple Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="gold-rule">
+
+<!-- FAQ -->
+<section class="section faq">
+  <div class="container">
+    <div style="text-align:center;" data-animate>
+      <span class="section-label">Common Questions</span>
+      <h2 class="section-title">Before You Arrive</h2>
+      <div class="divider divider-center"></div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" data-animate>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do I need a reservation to visit the tasting room?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          Walk-ins are welcome Thursday through Sunday during posted hours. However, weekend afternoons can fill quickly, and we can't guarantee tableside availability without a reservation. Reserve tastings and barrel tastings always require advance booking. Reservations can be made through the form on this page or by calling (503) 555-0192.
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Is the tasting fee waived with a wine purchase?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          Yes, for our standard Flight Tasting. The $25 per person fee is fully waived when each guest purchases two or more bottles. Wine club members always taste complimentary within their annual allotment. Reserve and Barrel tasting fees are separate and not waived with purchase, though both include bottle discounts.
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How do I join the wine club, and what does it cost?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          You can sign up in person at the tasting room or contact us by email. Our Cellar Club starts at $120 per shipment (6 bottles, twice per year). The Estate Club is $240 per shipment (12 bottles including reserve wines). There's no long-term commitment. You can cancel or pause at any time with at least 10 days' notice before the next shipment date.
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Do you ship wine to my state?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          We ship to most US states, including California, Washington, New York, Texas, Colorado, Florida, and 30+ others. Due to state regulations, we're currently unable to ship to Alabama, Mississippi, Kentucky, Utah, and a handful of others. An adult 21+ signature is required at delivery. Contact us for the current list of states and shipping rates before signing up for the wine club.
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          How far in advance should I book a private event?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          Weddings and large celebrations should be booked 10&ndash;14 months in advance, particularly for dates between May and October. Corporate events and intimate dinners (up to 14 guests) can typically be arranged with 6&ndash;8 weeks' notice. Private barrel cave dinners on Fridays and Saturdays book 4&ndash;8 weeks out. Contact our events team early to discuss availability.
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Are children and dogs allowed at the tasting room?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          Children are welcome in our outdoor seating area and on the estate terrace. Due to state licensing requirements, minors may not enter the tasting room itself. Well-behaved dogs on leash are welcome on our outdoor terrace and the vineyard walking paths. We keep a water bowl and occasional biscuits at the ready. Please clean up after your pets on the estate grounds.
+        </div>
+      </div>
+      <div class="faq-item" data-animate>
+        <button class="faq-question" onclick="toggleFaq(this)">
+          Can I buy wines that aren't available in the tasting?
+          <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          Yes. Our full portfolio, including library wines and limited single-block releases, is available for purchase at the tasting room. Some wines are only available on-site or to club members. We occasionally have cases of sold-out vintages available in the cellar for special requests. Wine club members get first access to futures and early release wines before they're available to the public.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Band -->
+<section class="cta-band">
+  <div class="container">
+    <span class="section-label">See You Soon</span>
+    <h2>The Vineyard Is Best Experienced in Person</h2>
+    <p>There's something the tasting notes can't quite capture. Come find out for yourself.</p>
+    <div class="cta-band-actions">
+      <a href="services.html" class="btn btn-gold">View All Experiences</a>
+      <a href="about.html" class="btn btn-outline">Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo-name">Stone Ridge</span>
+        <span class="logo-tagline">Vineyards &amp; Winery</span>
+        <p class="footer-desc">Estate wines grown with purpose in the Willamette Valley. Family farmed since 1987. Every bottle reflects the land, the season, and the hands that tended it.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="about.html" class="footer-link">Our Story</a></li>
+          <li><a href="services.html" class="footer-link">Tastings</a></li>
+          <li><a href="services.html#wine-club" class="footer-link">Wine Club</a></li>
+          <li><a href="services.html#events" class="footer-link">Private Events</a></li>
+          <li><a href="contact.html" class="footer-link">Visit Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tasting Room</h4>
+        <ul class="footer-links">
+          <li><a href="services.html" class="footer-link">Flight Tasting</a></li>
+          <li><a href="services.html" class="footer-link">Reserve Experience</a></li>
+          <li><a href="services.html" class="footer-link">Barrel Tasting</a></li>
+          <li><a href="services.html" class="footer-link">Food Pairings</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>4820 Stone Ridge Road<br>McMinnville, OR 97128</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>(503) 555-0192</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>hello@stoneridgevineyards.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>Thurs&ndash;Sun: 11am &ndash; 5pm<br>Mon&ndash;Wed: By appointment</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Stone Ridge Vineyards. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('.faq-icon i');
+    const isOpen = answer.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.faq-answer.open').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-question.open').forEach(q => {
+      q.classList.remove('open');
+      q.querySelector('.faq-icon i').className = 'fa-solid fa-plus';
+    });
+
+    if (!isOpen) {
+      answer.classList.add('open');
+      btn.classList.add('open');
+      icon.className = 'fa-solid fa-minus';
+    }
+  }
+
+  // Scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+</script>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

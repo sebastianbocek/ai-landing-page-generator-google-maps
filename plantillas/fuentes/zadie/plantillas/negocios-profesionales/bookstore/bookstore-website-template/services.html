@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse & Events - Page & Binding Books</title>
+  <meta name="description" content="Browse our curated book sections, join a book club, attend author events, and explore our services at Page & Binding Books.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+        <div class="logo-text">Page & Binding<span>Books</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Browse & Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Visit Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <h1>Browse & Events</h1>
+      <p>Explore our shelves, join a book club, or find your next favorite author at one of our events.</p>
+    </div>
+  </section>
+
+  <!-- Browse by Section -->
+  <section class="section section--parchment">
+    <div class="container">
+      <div class="section-header">
+        <h2>Browse by Section</h2>
+        <div class="bookmark-divider"><div class="bookmark-icon"></div></div>
+        <p>Every section is hand-curated. Ask any of our staff for a personal recommendation.</p>
+      </div>
+      <div class="section-grid">
+        <div class="section-card">
+          <h3><i class="fas fa-book"></i> Fiction</h3>
+          <p>Literary fiction, contemporary novels, short story collections, and genre fiction. Our largest section, spanning from classics to this week's debuts.</p>
+          <span class="featured">Featured: "James" by Percival Everett, "Intermezzo" by Sally Rooney</span>
+        </div>
+        <div class="section-card">
+          <h3><i class="fas fa-globe"></i> Non-Fiction</h3>
+          <p>History, science, essays, memoir, current affairs, and narrative non-fiction. For the curious minds who want to understand the world a little better.</p>
+          <span class="featured">Featured: "Supercommunicators" by Charles Duhigg, "Same as Ever" by Morgan Housel</span>
+        </div>
+        <div class="section-card">
+          <h3><i class="fas fa-feather"></i> Poetry</h3>
+          <p>Contemporary poets, classic anthologies, and small-press collections. Our poetry shelf is one of the best in the Pacific Northwest.</p>
+          <span class="featured">Featured: "Devotions" by Mary Oliver, "Postcolonial Love Poem" by Natalie Diaz</span>
+        </div>
+        <div class="section-card">
+          <h3><i class="fas fa-hat-wizard"></i> Children's & YA</h3>
+          <p>Picture books, early readers, middle grade adventures, and young adult novels. Organized by age range with staff picks clearly marked.</p>
+          <span class="featured">Featured: "The Wild Robot" by Peter Brown, "Before the Coffee Gets Cold" (YA edition)</span>
+        </div>
+        <div class="section-card">
+          <h3><i class="fas fa-gem"></i> Rare & Collectible</h3>
+          <p>First editions, signed copies, vintage paperbacks, and out-of-print treasures. Our locked cabinet holds some real gems for serious collectors.</p>
+          <span class="featured">Featured: Signed first edition of "Beloved" by Toni Morrison</span>
+        </div>
+        <div class="section-card">
+          <h3><i class="fas fa-map-pin"></i> Local Authors</h3>
+          <p>Portland-area writers across every genre. We are proud to stock over 80 titles from our neighbors and host monthly spotlights on local talent.</p>
+          <span class="featured">Featured: "The Body" by Bill Bryson (honorary Portlander), local debut novels</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Clubs -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section-header">
+        <h2>Book Clubs</h2>
+        <div class="bookmark-divider"><div class="bookmark-icon"></div></div>
+        <p>Three clubs, three vibes. All meetings are held in-store with complimentary coffee and pastries.</p>
+      </div>
+      <div class="club-grid">
+        <div class="club-card">
+          <div class="club-card-header">
+            <h3>Fiction Circle</h3>
+            <p>Monthly -- Third Saturday, 6:30 PM</p>
+          </div>
+          <div class="club-card-body">
+            <p>Our flagship club. One novel per month, ranging from literary fiction to translated works to the occasional genre pick. Lively discussion, no pretension.</p>
+            <p class="current-read">Currently reading: "Tomorrow, and Tomorrow, and Tomorrow" by Gabrielle Zevin</p>
+            <p>Next up: "The Ministry of Time" by Kaliane Bradley</p>
+          </div>
+        </div>
+        <div class="club-card">
+          <div class="club-card-header">
+            <h3>Non-Fiction Quarterly</h3>
+            <p>Quarterly -- First Sunday, 4:00 PM</p>
+          </div>
+          <div class="club-card-body">
+            <p>One big non-fiction read every three months. We take our time with these. Science, history, memoir, investigative journalism -- whatever's making us think.</p>
+            <p class="current-read">Currently reading: "Braiding Sweetgrass" by Robin Wall Kimmerer</p>
+            <p>Next up: "The Warmth of Other Suns" by Isabel Wilkerson</p>
+          </div>
+        </div>
+        <div class="club-card">
+          <div class="club-card-header">
+            <h3>Young Readers Club</h3>
+            <p>Monthly -- Second Saturday, 11:00 AM</p>
+          </div>
+          <div class="club-card-body">
+            <p>For ages 10-14. Middle grade and YA titles chosen by the members themselves. Snacks, crafts, and conversations about books in a judgment-free zone.</p>
+            <p class="current-read">Currently reading: "The Wild Robot" by Peter Brown</p>
+            <p>Next up: voted on by members each month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Author Events -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header">
+        <h2>Upcoming Author Events</h2>
+        <div class="bookmark-divider"><div class="bookmark-icon"></div></div>
+        <p>All events are free and open to the public. Books available for purchase and signing.</p>
+      </div>
+      <div class="event-list">
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="month">MAR</span>
+            <span class="day">8</span>
+          </div>
+          <div class="event-list-content">
+            <h4>Carmen Maria Machado -- Reading & Signing</h4>
+            <p>The acclaimed author of "In the Dream House" reads from her latest work, followed by Q&A and book signing.</p>
+            <span class="event-time">Saturday, 7:00 PM -- Doors at 6:30 PM</span>
+          </div>
+        </div>
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="month">MAR</span>
+            <span class="day">22</span>
+          </div>
+          <div class="event-list-content">
+            <h4>Local Author Spotlight: Dina Rodriguez</h4>
+            <p>Portland debut novelist Dina Rodriguez discusses her first novel "The Understory," a lyrical exploration of family and forests.</p>
+            <span class="event-time">Saturday, 5:00 PM -- Doors at 4:30 PM</span>
+          </div>
+        </div>
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="month">APR</span>
+            <span class="day">5</span>
+          </div>
+          <div class="event-list-content">
+            <h4>Poetry Workshop with James Okafor</h4>
+            <p>Our own James leads an interactive workshop on finding your poetic voice. Bring a notebook and an open mind. Limited to 15 participants.</p>
+            <span class="event-time">Saturday, 2:00 PM -- 4:00 PM</span>
+          </div>
+        </div>
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="month">APR</span>
+            <span class="day">12</span>
+          </div>
+          <div class="event-list-content">
+            <h4>Ocean Vuong -- In Conversation</h4>
+            <p>Pulitzer Prize finalist Ocean Vuong joins us for an intimate conversation about poetry, prose, and the spaces between. Book signing to follow.</p>
+            <span class="event-time">Saturday, 7:00 PM -- Doors at 6:00 PM</span>
+          </div>
+        </div>
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="month">APR</span>
+            <span class="day">26</span>
+          </div>
+          <div class="event-list-content">
+            <h4>Children's Author Visit: Peter Brown</h4>
+            <p>The creator of "The Wild Robot" visits for a special reading, drawing demonstration, and signing. Perfect for ages 5-12.</p>
+            <span class="event-time">Saturday, 11:00 AM -- 1:00 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section section--parchment">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <div class="bookmark-divider"><div class="bookmark-icon"></div></div>
+        <p>Beyond the shelves, here is how we help you find, give, and enjoy books.</p>
+      </div>
+      <div class="service-grid">
+        <div class="service-item">
+          <div class="service-icon"><i class="fas fa-search"></i></div>
+          <div>
+            <h4>Special Orders</h4>
+            <p>Can't find what you're looking for? We can order any book in print and have it in-store within 3-5 business days. No extra charge, no minimum order.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fas fa-gift"></i></div>
+          <div>
+            <h4>Gift Wrapping</h4>
+            <p>Free gift wrapping with any purchase. We use recycled kraft paper and hand-stamp each package with our bookmark seal. Personalized notes available.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fas fa-box-open"></i></div>
+          <div>
+            <h4>Monthly Book Box</h4>
+            <p>A curated surprise delivered to your door each month. Tell us your taste and we'll pick a book, wrap it beautifully, and include a handwritten note. $25/month.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon"><i class="fas fa-credit-card"></i></div>
+          <div>
+            <h4>Gift Cards</h4>
+            <p>Available in any amount, in-store or by mail. The perfect gift for the reader in your life -- or the person you're trying to turn into one.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coffee Bar -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Coffee Bar</h2>
+        <div class="bookmark-divider"><div class="bookmark-icon"></div></div>
+        <p>Single-origin beans roasted locally. Loose-leaf teas. Pastries baked fresh each morning. Settle in.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Espresso</span>
+            <span class="menu-item-desc"> -- Single or double shot</span>
+          </div>
+          <span class="menu-item-price">$3.00 / $4.00</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Americano</span>
+            <span class="menu-item-desc"> -- Espresso + hot water</span>
+          </div>
+          <span class="menu-item-price">$4.00</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Latte</span>
+            <span class="menu-item-desc"> -- Oat, almond, or whole milk</span>
+          </div>
+          <span class="menu-item-price">$5.50</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Cappuccino</span>
+            <span class="menu-item-desc"> -- Classic Italian style</span>
+          </div>
+          <span class="menu-item-price">$5.00</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Mocha</span>
+            <span class="menu-item-desc"> -- Dark chocolate + espresso</span>
+          </div>
+          <span class="menu-item-price">$6.00</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Matcha Latte</span>
+            <span class="menu-item-desc"> -- Ceremonial grade matcha</span>
+          </div>
+          <span class="menu-item-price">$5.50</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Loose-Leaf Tea</span>
+            <span class="menu-item-desc"> -- Earl Grey, chamomile, green</span>
+          </div>
+          <span class="menu-item-price">$4.00</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Hot Chocolate</span>
+            <span class="menu-item-desc"> -- Made with real chocolate</span>
+          </div>
+          <span class="menu-item-price">$5.00</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Croissant</span>
+            <span class="menu-item-desc"> -- Butter or almond</span>
+          </div>
+          <span class="menu-item-price">$4.50</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Banana Bread</span>
+            <span class="menu-item-desc"> -- Freshly baked, walnut</span>
+          </div>
+          <span class="menu-item-price">$4.00</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Scone</span>
+            <span class="menu-item-desc"> -- Seasonal flavor, changes weekly</span>
+          </div>
+          <span class="menu-item-price">$4.00</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <span class="menu-item-name">Cookie</span>
+            <span class="menu-item-desc"> -- Chocolate chip or oatmeal raisin</span>
+          </div>
+          <span class="menu-item-price">$3.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull Quote -->
+  <section class="section section--dark pull-quote">
+    <div class="container">
+      <blockquote>"There is no friend as loyal as a book."</blockquote>
+      <cite>-- Ernest Hemingway</cite>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" style="background: url('images/placeholder.jpg') center/cover no-repeat;">
+    <div class="container">
+      <h2>Ready to Find Your Next Read?</h2>
+      <div class="bookmark-divider"><div class="bookmark-icon"></div></div>
+      <p>Stop by the shop, browse at your own pace, and let us help you find exactly what you're looking for.</p>
+      <a href="contact.html" class="btn btn--accent">Plan Your Visit</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-book-open"></i></div>
+            <div class="logo-text">Page & Binding<span>Books</span></div>
+          </a>
+          <p>An independent bookshop dedicated to connecting readers with stories that matter. Curated shelves, community events, and really good coffee since 2012.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Goodreads"><i class="fab fa-goodreads-g"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Browse & Events</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Visit Us</h4>
+          <p>742 Hawthorne Ave<br>Portland, OR 97214</p>
+          <p style="margin-top: 8px;">(503) 555-0142<br>hello@pageandbinding.com</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <p>Monday - Saturday<br>9:00 AM - 9:00 PM</p>
+          <p style="margin-top: 8px;">Sunday<br>10:00 AM - 6:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Page & Binding Books. All rights reserved.</span>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "slug": "developer-portfolio",
+  "name": "Terminal — Developer résumé & portfolio",
+  "category": "portfolio",
+  "description": "Résumé website for software developers: terminal-style hero, experience timeline, projects with tech tags, skills, open-source stats, dark mode and print-ready CV.",
+  "tags": ["resume", "cv", "developer", "portfolio", "dark mode", "print"],
+  "pages": ["index.html"],
+  "features": ["Responsive", "Light/dark toggle (saved)", "Print stylesheet (1–2 page CV)", "Terminal-style hero", "Experience timeline", "Project cards with tech tags", "Skill meters", "Contribution heatmap", "Active section nav", "Mobile menu", "Contact form (demo)", "Reduced-motion support"],
+  "fonts": [
+    { "family": "Space Grotesk", "source": "Google Fonts", "license": "OFL" },
+    { "family": "Inter", "source": "Google Fonts", "license": "OFL" },
+    { "family": "JetBrains Mono", "source": "Google Fonts", "license": "OFL" }
+  ],
+  "colors": { "brand": "#047857", "accent": "#6d28d9", "bg": "#f7f8fa", "text": "#0f172a" },
+  "customizable": { "brand": true, "accent": true, "brandName": true, "heading": true }
+}

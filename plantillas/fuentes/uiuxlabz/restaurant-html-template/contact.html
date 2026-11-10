@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations — OLIVO Kitchen</title>
+  <meta name="description" content="Reserve a table at OLIVO. Tasting menu, à la carte, or private events — we'll save you a seat." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+
+  <div class="reservation-bar">
+    <div class="container">
+      <span class="live">◆ OPEN TONIGHT</span>
+      <span>Dinner 18:00–22:00 · Reservations recommended</span>
+      <a href="contact.html">Reserve a Table →</a>
+    </div>
+  </div>
+
+  <header class="sitehead">
+    <div class="container">
+      <a href="index.html" class="mark"><span class="glyph">O</span>OLIVO</a>
+      <nav id="mainnav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">Our Story</a>
+        <a href="contact.html" class="active">Reservations</a>
+      </nav>
+      <a href="contact.html" class="cta">Reserve a Table</a>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <span class="crumb"><a href="index.html">Home</a> / Reservations</span>
+      <h1>Save us a&nbsp;seat</h1>
+      <p>Book your table for tonight or plan ahead. We'll make sure you're comfortable.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="feature">
+        <div>
+          <form id="reservationform" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Your name" />
+                <span class="error" id="err-name"></span>
+              </div>
+              <div class="field">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com" />
+                <span class="error" id="err-email"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+44 7700 000000" />
+                <span class="error" id="err-phone"></span>
+              </div>
+              <div class="field">
+                <label for="guests">Number of Guests *</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Select…</option>
+                  <option value="1">1 guest</option>
+                  <option value="2">2 guests</option>
+                  <option value="3">3 guests</option>
+                  <option value="4">4 guests</option>
+                  <option value="5">5 guests</option>
+                  <option value="6">6 guests</option>
+                  <option value="7+">7+ (private dining)</option>
+                </select>
+                <span class="error" id="err-guests"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" name="date" required />
+                <span class="error" id="err-date"></span>
+              </div>
+              <div class="field">
+                <label for="time">Preferred Time *</label>
+                <select id="time" name="time" required>
+                  <option value="">Select seating…</option>
+                  <option value="18:00">18:00</option>
+                  <option value="18:30">18:30</option>
+                  <option value="19:00">19:00</option>
+                  <option value="19:30">19:30</option>
+                  <option value="20:00">20:00</option>
+                  <option value="20:30">20:30</option>
+                  <option value="21:00">21:00</option>
+                </select>
+                <span class="error" id="err-time"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="dining">Dining Style</label>
+                <select id="dining" name="dining">
+                  <option value="tasting">7-Course Tasting Menu (€85)</option>
+                  <option value="alacarte">À la Carte</option>
+                  <option value="bar">Bar Seating (walk-in)</option>
+                  <option value="private">Private Dining (7+)</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="occasion">Occasion</label>
+                <select id="occasion" name="occasion">
+                  <option value="">Select…</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="date">Date Night</option>
+                  <option value="business">Business Dinner</option>
+                  <option value="celebration">Celebration</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="field" style="margin-top:1rem">
+              <label for="dietary">Dietary Requirements</label>
+              <textarea id="dietary" name="dietary" rows="3" placeholder="Allergies, vegetarian, vegan, gluten-free — we'll accommodate everything…"></textarea>
+            </div>
+            <div class="field" style="margin-top:1rem">
+              <button type="submit" class="btn-primary" style="width:100%">Reserve Table →</button>
+            </div>
+            <div id="form-success" style="display:none;padding:1rem;margin-top:1rem;background:var(--burgundy);color:var(--cream);font-family:var(--font-mono);font-size:.85rem;border:1px solid var(--burgundy)">
+              ✓ Reservation request received. We'll confirm by email within 2 hours.
+            </div>
+          </form>
+        </div>
+        <div>
+          <div class="menu-card reveal">
+            <span class="eyebrow">Location</span>
+            <h3>Find Us</h3>
+            <p style="margin-top:.5rem">23 Olive Lane<br />London EC2R 8AH<br /><br />Nearest tube: Liverpool Street (5 min walk)<br />Parking available on nearby streets</p>
+          </div>
+          <div class="menu-card reveal d1" style="margin-top:1rem">
+            <span class="eyebrow">Hours</span>
+            <h3>Opening Times</h3>
+            <p style="margin-top:.5rem">
+              <strong style="color:var(--heading)">Mon – Tue:</strong> Closed<br />
+              <strong style="color:var(--heading)">Wed – Thu:</strong> 18:00 – 22:00<br />
+              <strong style="color:var(--heading)">Fri – Sat:</strong> 18:00 – 23:00<br />
+              <strong style="color:var(--heading)">Sunday:</strong> 12:00 – 16:00 (brunch)
+            </p>
+          </div>
+          <div class="menu-card reveal d2" style="margin-top:1rem;border-left:3px solid var(--burgundy)">
+            <span class="eyebrow">Private Events</span>
+            <h3>Celebrate with Us</h3>
+            <p style="margin-top:.5rem">Our private dining room seats up to 14 guests. Exclusive menus, wine pairings, and a dedicated sommelier. <a href="mailto:events@olivo.kitchen">enquire →</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container">
+      <div>
+        <span class="kicker">Questions?</span>
+        <h2>Call us&nbsp;directly</h2>
+        <p>For same-day reservations or special requests, call +44 20 7123 4567.</p>
+      </div>
+      <div class="actions">
+        <a href="tel:+442071234567" class="btn-primary">Call Now →</a>
+        <a href="menu.html" class="btn-ghost">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><div class="brand">OLIVO</div><p>Seasonal kitchen & wine bar.</p></div>
+        <div><h4>Dining</h4><a href="menu.html">Tasting Menu</a><br /><a href="menu.html">À la Carte</a><br /><a href="menu.html">Wine List</a></div>
+        <div><h4>Restaurant</h4><a href="about.html">Our Story</a><br /><a href="about.html">The Chef</a><br /><a href="contact.html">Reservations</a></div>
+        <div><h4>Visit Us</h4><p>23 Olive Lane<br />London EC2R 8AH</p><a href="tel:+442071234567">+44 20 7123 4567</a></div>
+      </div>
+      <div class="base">
+        <span>© <span data-year></span> OLIVO Kitchen</span>
+        <span>Cooked with care</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

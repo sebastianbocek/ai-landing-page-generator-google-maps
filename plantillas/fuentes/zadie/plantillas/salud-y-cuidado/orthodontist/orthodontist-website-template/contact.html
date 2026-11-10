@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - BrightAlign Orthodontics</title>
+  <meta name="description" content="Schedule your free consultation at BrightAlign Orthodontics. Call (555) 123-4567 or fill out our contact form. Located at 123 Smile Avenue, Springfield, IL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-tooth"></i></div>
+        Bright<span>Align</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+        <div class="header-cta">
+          <a href="contact.html" class="btn btn-primary btn-sm">Book Consultation</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fas fa-chevron-right" style="font-size: 0.7rem;"></i>
+        <span>Contact</span>
+      </div>
+      <h1>Get in <span class="text-gradient">Touch</span></h1>
+      <p>Have questions or ready to start your smile journey? We'd love to hear from you. Reach out and we'll get back to you promptly.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div class="contact-form fade-in">
+          <h3 style="margin-bottom: 4px;">Book Your Free Consultation</h3>
+          <p style="color: var(--gray); margin-bottom: 28px;">Fill out the form below and our team will contact you within one business day to schedule your appointment.</p>
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="(555) 000-0000" required>
+              </div>
+              <div class="form-group">
+                <label for="patient-type">Patient Type</label>
+                <select id="patient-type" name="patient-type" class="form-control">
+                  <option value="" disabled selected>Select one</option>
+                  <option value="new">New Patient</option>
+                  <option value="existing">Existing Patient</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="treatment">Treatment Interest</label>
+              <select id="treatment" name="treatment" class="form-control">
+                <option value="" disabled selected>What are you interested in?</option>
+                <option value="metal-braces">Traditional Metal Braces</option>
+                <option value="clear-braces">Clear Ceramic Braces</option>
+                <option value="invisalign">Invisalign / Clear Aligners</option>
+                <option value="lingual">Lingual Braces</option>
+                <option value="retainers">Retainers</option>
+                <option value="early-treatment">Early Treatment (Children)</option>
+                <option value="not-sure">Not Sure - Need Guidance</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Tell us about your smile goals, any concerns, or questions you have..." rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; justify-content: center;">
+              Request Consultation <i class="fas fa-paper-plane"></i>
+            </button>
+            <p style="font-size: 0.8rem; color: var(--gray); margin-top: 12px; text-align: center;">By submitting this form, you agree to our privacy policy. We'll never share your information.</p>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-card fade-in">
+            <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <h4>Visit Our Office</h4>
+              <p>123 Smile Avenue, Suite 200<br>Springfield, IL 62701</p>
+              <a href="#" style="color: var(--primary); font-weight: 600; font-size: 0.9rem;">Get Directions <i class="fas fa-external-link-alt" style="font-size: 0.75rem;"></i></a>
+            </div>
+          </div>
+          <div class="contact-card fade-in">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Call Us</h4>
+              <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+              <p style="font-size: 0.85rem;">We answer calls during business hours</p>
+            </div>
+          </div>
+          <div class="contact-card fade-in">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="mailto:hello@brightalign.com">hello@brightalign.com</a></p>
+              <p style="font-size: 0.85rem;">We respond within one business day</p>
+            </div>
+          </div>
+          <div class="contact-card fade-in">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+              <p>Saturday: 9:00 AM - 1:00 PM</p>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="map-placeholder fade-in">
+        <i class="fas fa-map-marked-alt"></i>
+        <div>
+          <strong>Interactive Map</strong><br>
+          <span style="font-size: 0.9rem;">123 Smile Avenue, Suite 200, Springfield, IL 62701</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" style="background: var(--off-white);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Find answers to the most common questions about orthodontic treatment at BrightAlign.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            At what age should my child first see an orthodontist?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              The American Association of Orthodontists recommends that every child have an orthodontic evaluation by age 7. At this age, the first permanent molars and incisors have usually come in, allowing us to identify potential issues early. Early evaluation doesn't always mean early treatment -- often we'll simply monitor growth and development. But when intervention is needed, starting early can prevent more complex problems later and may shorten overall treatment time.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            How long does orthodontic treatment typically take?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Treatment time varies depending on the complexity of your case, the type of treatment chosen, and how well you follow your treatment plan. On average, most patients wear braces for 12 to 24 months. Clear aligner treatment can sometimes be shorter, ranging from 6 to 18 months for mild to moderate cases. During your free consultation, we'll give you a more specific timeline based on your individual needs.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Does my insurance cover orthodontic treatment?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Many dental insurance plans include orthodontic benefits, typically covering a portion of treatment costs (often $1,000 to $2,000). We accept most major insurance plans and our team will verify your benefits and file claims on your behalf at no extra charge. If your plan doesn't cover orthodontics or you don't have insurance, we offer flexible in-house financing with 0% interest to make treatment affordable for every family.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Do braces hurt? What about clear aligners?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              It's normal to experience some discomfort for a few days after braces are placed or after an adjustment. This is your teeth responding to the gentle pressure being applied, and it typically subsides within 3-5 days. Over-the-counter pain relievers and a soft food diet can help during this period. Clear aligners generally cause less discomfort, with mild pressure when switching to a new set of trays. Most patients find that any soreness is very manageable and well worth the final result.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What should I do in an orthodontic emergency?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              True orthodontic emergencies are rare, but we're always here to help. If you experience a broken bracket, poking wire, or significant discomfort, call our office right away. We offer same-day emergency appointments during business hours. For after-hours issues, our voicemail has instructions for common problems and an emergency contact number. In the meantime, orthodontic wax (included in your take-home kit) can cover any irritating brackets or wires for temporary relief.
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            What payment plans do you offer?
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              We offer several ways to make treatment affordable. Our in-house financing comes with 0% interest and flexible monthly payments that can be spread over the course of your treatment. We also accept CareCredit, FSA and HSA accounts, and all major credit cards. Family discounts are available when multiple family members are in treatment, and we offer a discount for payment in full. During your consultation, we'll review all your options and create a payment plan that works for your budget.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Your Perfect Smile is Just a Call Away</h2>
+      <p>Ready to take the first step? Schedule your free consultation today, or give us a call. We're here to answer all your questions.</p>
+      <div class="hero-buttons centered">
+        <a href="tel:+15551234567" class="btn btn-primary btn-lg"><i class="fas fa-phone"></i> Call (555) 123-4567</a>
+        <a href="#" class="btn btn-secondary btn-lg" style="border-color: rgba(255,255,255,0.3); color: var(--white);" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Fill Out Form</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-tooth"></i></div>
+            Bright<span>Align</span>
+          </a>
+          <p>Board-certified orthodontics for the whole family. Creating beautiful, confident smiles in our community for over 15 years.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Patient Portal</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Treatments</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Metal Braces</a></li>
+            <li><a href="services.html">Clear Braces</a></li>
+            <li><a href="services.html">Clear Aligners</a></li>
+            <li><a href="services.html">Retainers</a></li>
+            <li><a href="services.html">Early Treatment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-location-dot"></i> 123 Smile Avenue, Suite 200<br>Springfield, IL 62701</li>
+            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+            <li><i class="fas fa-envelope"></i> hello@brightalign.com</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 8am - 5pm<br>Sat: 9am - 1pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BrightAlign Orthodontics. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAQ Toggle -->
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const wasActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
+      if (!wasActive) item.classList.add('active');
+    }
+  </script>
+
+  <!-- Scroll Animation -->
+  <script>
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -40px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

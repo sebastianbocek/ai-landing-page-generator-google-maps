@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Request Service — KeyMaster Locksmith</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+<body>
+
+
+
+<!-- Top Bar -->
+<div class="topbar">
+  <i class="fa-solid fa-circle-exclamation"></i>
+  &nbsp;24/7 Emergency Service &mdash; Call Now:&nbsp;<a href="tel:5555395627">(555) KEY-MASTER</a>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <i class="fa-solid fa-key"></i>
+      </div>
+      <div class="logo-text">
+        <span class="logo-name">KeyMaster</span>
+        <span class="logo-tagline">Locksmith Services</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="contact.html" class="nav-link active">Contact</a>
+    </nav>
+
+    <a href="tel:5555395627" class="header-phone">
+      <i class="fa-solid fa-phone"></i>
+      (555) KEY-MASTER
+    </a>
+  </div>
+</header>
+
+<!-- Emergency Number Bar -->
+<div class="contact-emergency-bar">
+  <h2>Locked Out? Don't Wait.</h2>
+  <a href="tel:5555395627" class="emergency-number">(555) KEY-MASTER</a>
+  <p>Answered live, 24 hours a day. Technician dispatched immediately.</p>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>Contact</span>
+    </div>
+    <div class="page-header-label">
+      <i class="fa-solid fa-envelope"></i>
+      Get in Touch
+    </div>
+    <h1>Request Service</h1>
+    <p>For emergencies, call immediately. For scheduled work, use the form below.</p>
+  </div>
+</div>
+
+<!-- Contact Main -->
+<section class="section" style="background: var(--bg);">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Form -->
+      <div>
+        <div class="contact-form-card">
+          <h2>Service Request Form</h2>
+          <p>For non-emergency bookings and estimates. We'll confirm within the hour during business hours.</p>
+
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Service Address</label>
+              <input type="text" id="address" name="address" placeholder="123 Main Street, City, State 00000" required>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Type</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <optgroup label="Emergency">
+                  <option>Residential Lockout</option>
+                  <option>Commercial Lockout</option>
+                  <option>Automotive Lockout</option>
+                </optgroup>
+                <optgroup label="Residential">
+                  <option>Lock Rekeying</option>
+                  <option>Deadbolt Installation</option>
+                  <option>Smart Lock Installation</option>
+                  <option>Security Assessment</option>
+                </optgroup>
+                <optgroup label="Commercial">
+                  <option>Master Key System</option>
+                  <option>Access Control</option>
+                  <option>Panic Hardware</option>
+                  <option>High-Security Locks</option>
+                </optgroup>
+                <optgroup label="Automotive">
+                  <option>Key Cutting</option>
+                  <option>Transponder Programming</option>
+                  <option>Ignition Repair</option>
+                  <option>Lost All Keys</option>
+                </optgroup>
+                <optgroup label="Safe Services">
+                  <option>Safe Opening</option>
+                  <option>Combination Change</option>
+                  <option>Safe Installation</option>
+                </optgroup>
+                <option>Other / Not Listed</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Urgency Level</label>
+              <div class="form-urgency-options">
+                <div class="urgency-option urgent">
+                  <input type="radio" name="urgency" id="urgent" value="emergency">
+                  <label for="urgent">Emergency</label>
+                </div>
+                <div class="urgency-option">
+                  <input type="radio" name="urgency" id="today" value="today">
+                  <label for="today">Today</label>
+                </div>
+                <div class="urgency-option">
+                  <input type="radio" name="urgency" id="scheduled" value="scheduled" checked>
+                  <label for="scheduled">Schedule Later</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" placeholder="Describe what you need. For automotive, include make, model, and year. For safes, include brand and model if known."></textarea>
+            </div>
+
+            <div style="background: rgba(212,172,13,0.08); border: 1px solid rgba(212,172,13,0.25); border-radius: var(--radius-md); padding: 1rem; margin-bottom: 1.25rem;">
+              <p style="font-size: 0.82rem; color: var(--gray-dark); display: flex; gap: 0.5rem; align-items: flex-start;">
+                <i class="fa-solid fa-circle-exclamation" style="color: var(--secondary); margin-top: 0.15rem; flex-shrink:0;"></i>
+                If this is an emergency lockout, do not use this form. Call us directly at
+                <a href="tel:5555395627" style="color: var(--accent); font-weight:600;">(555) KEY-MASTER</a>.
+                We answer 24 hours a day.
+              </p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%; justify-content:center;">
+              <i class="fa-solid fa-paper-plane"></i>
+              Send Service Request
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Info Sidebar -->
+      <aside class="contact-info-sidebar">
+
+        <div class="contact-info-card">
+          <div class="contact-info-card-header">
+            <i class="fa-solid fa-phone"></i>
+            <h3>Phone &amp; Text</h3>
+          </div>
+          <div class="contact-info-card-body">
+            <div class="contact-info-item">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div>
+                <strong>Emergency / 24-Hour Line</strong>
+                <a href="tel:5555395627">(555) KEY-MASTER</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-message"></i>
+              <div>
+                <strong>Text Us</strong>
+                <span>Text (555) 539-5627 anytime</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@keymasterlocksmith.com">info@keymasterlocksmith.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card-header">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Hours</h3>
+          </div>
+          <div class="contact-info-card-body">
+            <div class="sidebar-hours">
+              <div class="sidebar-hours-row highlight">
+                <span class="day">Emergency Line</span>
+                <span class="time">24/7/365</span>
+              </div>
+              <div class="sidebar-hours-row">
+                <span class="day">Mon &ndash; Fri</span>
+                <span class="time">8:00am &ndash; 6:00pm</span>
+              </div>
+              <div class="sidebar-hours-row">
+                <span class="day">Saturday</span>
+                <span class="time">9:00am &ndash; 4:00pm</span>
+              </div>
+              <div class="sidebar-hours-row">
+                <span class="day">Sunday</span>
+                <span class="time">Emergency Only</span>
+              </div>
+            </div>
+            <p style="font-size:0.78rem; color:var(--gray); margin-top: 0.75rem;">
+              After-hours surcharge of $20 applies to non-emergency calls between 10pm and 7am.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card-header">
+            <i class="fa-solid fa-credit-card"></i>
+            <h3>Payment Methods</h3>
+          </div>
+          <div class="contact-info-card-body">
+            <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+              <li style="display:flex; gap:0.5rem; font-size:0.88rem; color:var(--gray-dark); align-items:center;">
+                <i class="fa-solid fa-check" style="color:var(--secondary); width:14px; flex-shrink:0;"></i>
+                Cash
+              </li>
+              <li style="display:flex; gap:0.5rem; font-size:0.88rem; color:var(--gray-dark); align-items:center;">
+                <i class="fa-solid fa-check" style="color:var(--secondary); width:14px; flex-shrink:0;"></i>
+                Credit &amp; Debit Cards (Visa, MC, Amex)
+              </li>
+              <li style="display:flex; gap:0.5rem; font-size:0.88rem; color:var(--gray-dark); align-items:center;">
+                <i class="fa-solid fa-check" style="color:var(--secondary); width:14px; flex-shrink:0;"></i>
+                Zelle
+              </li>
+              <li style="display:flex; gap:0.5rem; font-size:0.88rem; color:var(--gray-dark); align-items:center;">
+                <i class="fa-solid fa-check" style="color:var(--secondary); width:14px; flex-shrink:0;"></i>
+                Check (commercial accounts)
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-card-header">
+            <i class="fa-solid fa-stopwatch"></i>
+            <h3>Response Guarantee</h3>
+          </div>
+          <div class="contact-info-card-body">
+            <p style="font-size:0.88rem; color:var(--gray-dark); line-height:1.6;">
+              We guarantee a technician on-site within <strong>30 minutes</strong> of your emergency call.
+              If we exceed that, your service is discounted. No exceptions.
+            </p>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Service Area Map -->
+<section class="section-sm" style="background: var(--white);">
+  <div class="container">
+    <div class="text-center" style="margin-bottom: 2rem;">
+      <span class="section-label"><i class="fa-solid fa-map"></i> Coverage</span>
+      <h2 class="section-title">Our Service Area</h2>
+      <p class="section-subtitle">We cover the full metro and surrounding suburbs within a 30-mile radius.</p>
+    </div>
+    <div class="map-placeholder">
+      <i class="fa-solid fa-map-location-dot map-icon"></i>
+      <span class="map-placeholder-label">Service Area Map</span>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-top: 1.5rem;">
+      <div style="background: var(--bg); border-radius: var(--radius-md); padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--gray-dark); display:flex; align-items:center; gap:0.5rem;">
+        <i class="fa-solid fa-location-dot" style="color: var(--secondary);"></i> Downtown &amp; Midtown
+      </div>
+      <div style="background: var(--bg); border-radius: var(--radius-md); padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--gray-dark); display:flex; align-items:center; gap:0.5rem;">
+        <i class="fa-solid fa-location-dot" style="color: var(--secondary);"></i> Northside &amp; East
+      </div>
+      <div style="background: var(--bg); border-radius: var(--radius-md); padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--gray-dark); display:flex; align-items:center; gap:0.5rem;">
+        <i class="fa-solid fa-location-dot" style="color: var(--secondary);"></i> Westside &amp; South
+      </div>
+      <div style="background: var(--bg); border-radius: var(--radius-md); padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--gray-dark); display:flex; align-items:center; gap:0.5rem;">
+        <i class="fa-solid fa-location-dot" style="color: var(--secondary);"></i> Riverside District
+      </div>
+      <div style="background: var(--bg); border-radius: var(--radius-md); padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--gray-dark); display:flex; align-items:center; gap:0.5rem;">
+        <i class="fa-solid fa-location-dot" style="color: var(--secondary);"></i> Airport Corridor
+      </div>
+      <div style="background: var(--bg); border-radius: var(--radius-md); padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--gray-dark); display:flex; align-items:center; gap:0.5rem;">
+        <i class="fa-solid fa-location-dot" style="color: var(--secondary);"></i> Surrounding Suburbs
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="text-center">
+      <span class="section-label"><i class="fa-solid fa-circle-question"></i> Common Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-diamond"></i>
+          How fast will you actually get here?
+        </h3>
+        <p>
+          Our average response time is 28 minutes. We back that with a guarantee: if we take longer
+          than 30 minutes from the time of your call to the time our technician arrives, we'll
+          discount your service. We mean it.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-diamond"></i>
+          How do you price your services?
+        </h3>
+        <p>
+          We quote a flat price before we start work. There are no hidden service fees,
+          no dispatch charges, and no post-job surprises. The price you're quoted is the
+          price you pay. After-hours calls (10pm&ndash;7am) carry a $20 surcharge.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-diamond"></i>
+          Are your technicians actually licensed?
+        </h3>
+        <p>
+          Yes. Every technician on our team holds a current state locksmith license and has passed
+          a background check. We're fully bonded and insured as a company. We carry proof of
+          licensing to every job. You can ask to see it.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-diamond"></i>
+          Will opening my lock damage it?
+        </h3>
+        <p>
+          In the vast majority of cases, no. We use non-destructive entry techniques on all
+          standard residential and automotive locks. Destructive entry (drilling) is a last
+          resort and we'll always tell you before going that route.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-diamond"></i>
+          Do you work on all car makes and models?
+        </h3>
+        <p>
+          We cover the full range of standard domestic and imported vehicles. Some high-end
+          European models and certain luxury brands require dealer-specific programming &mdash;
+          we'll let you know upfront if your vehicle falls in that category.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <h3>
+          <i class="fa-solid fa-diamond"></i>
+          How does rekeying work, and when should I do it?
+        </h3>
+        <p>
+          Rekeying changes the internal pins of your existing lock so only a new key works.
+          It's the right move when you've moved into a new home, lost a key, had a tenant move
+          out, or given someone access you'd like to revoke. It's faster and cheaper than
+          replacing locks entirely.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <span class="logo-name">KeyMaster Locksmith</span>
+        </div>
+        <p>
+          Serving the metro area since 2009. State-licensed, bonded, and insured.
+          ALOA member. Available 24 hours a day, every day.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#emergency">Emergency Lockout</a></li>
+          <li><a href="services.html#residential">Residential</a></li>
+          <li><a href="services.html#commercial">Commercial</a></li>
+          <li><a href="services.html#automotive">Automotive</a></li>
+          <li><a href="services.html#safes">Safe Services</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">All Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <span>24/7 Emergency</span>
+            <a href="tel:5555395627" class="footer-phone-large">(555) KEY-MASTER</a>
+          </div>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <span>info@keymasterlocksmith.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Serving Metro &amp; Surrounding Areas</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 KeyMaster Locksmith Services. All rights reserved.</p>
+      <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+      <div style="display:flex;gap:1rem;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+</script>
+</body>
+</html>

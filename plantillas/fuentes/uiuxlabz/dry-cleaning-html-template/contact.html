@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Pickup — DRYME Dry Cleaning</title>
+  <meta name="description" content="Get in touch with DRYME. Schedule a free pickup, ask about our services, or request a quote for your garments.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👔</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <svg class="logo__icon hanger-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 4 L20 10"/>
+          <circle cx="20" cy="4" r="3"/>
+          <path d="M20 10 L4 30 L36 30 Z"/>
+        </svg>
+        DRY<span>ME</span>
+      </a>
+      <nav>
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+          <li class="nav__cta"><a href="contact.html#pickup" class="btn btn--primary btn--sm">Schedule Pickup</a></li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="about-hero">
+    <div class="container" style="text-align:center; max-width:700px;">
+      <span class="badge-fresh" data-reveal>Get in Touch</span>
+      <h1 style="margin-top:1rem; margin-bottom:1rem;" data-reveal>Contact <span style="color:var(--clr-teal)">DRYME</span></h1>
+      <p style="color:var(--clr-gray-500); font-size:var(--fs-md); line-height:1.8;" data-reveal>Ready for fresh, clean clothes? Schedule a pickup or reach out with any questions. We're here to help.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / PICKUP FORM ===== -->
+  <section class="section" id="pickup">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Form -->
+        <div data-reveal>
+          <h2 style="margin-bottom:0.5rem;">Schedule a Pickup</h2>
+          <p style="color:var(--clr-gray-500); margin-bottom:2rem;">Fill out the form and we'll confirm your pickup within 1 hour during business hours.</p>
+
+          <form data-form>
+            <div class="form-group">
+              <label for="c-name">Full Name *</label>
+              <input type="text" id="c-name" name="name" placeholder="Jane Doe" required>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="form-group">
+                <label for="c-email">Email *</label>
+                <input type="email" id="c-email" name="email" placeholder="jane@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="c-phone">Phone *</label>
+                <input type="tel" id="c-phone" name="phone" placeholder="(555) 123-4567" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="c-address">Pickup Address *</label>
+              <input type="text" id="c-address" name="address" placeholder="123 Main St, Apt 4B" required>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="form-group">
+                <label for="c-date">Preferred Date *</label>
+                <input type="date" id="c-date" name="date" required>
+              </div>
+              <div class="form-group">
+                <label for="c-time">Preferred Time</label>
+                <select id="c-time" name="time">
+                  <option value="">Select time</option>
+                  <option value="morning">Morning (8AM - 12PM)</option>
+                  <option value="afternoon">Afternoon (12PM - 4PM)</option>
+                  <option value="evening">Evening (4PM - 7PM)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="c-service">Service Type</label>
+              <select id="c-service" name="service">
+                <option value="dry-cleaning">Dry Cleaning</option>
+                <option value="wash-press">Wash &amp; Press</option>
+                <option value="delicate">Delicate &amp; Specialty Care</option>
+                <option value="wedding">Wedding &amp; Formal Wear</option>
+                <option value="alterations">Alterations &amp; Tailoring</option>
+                <option value="mixed">Mixed / Not Sure</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="c-notes">Special Instructions</label>
+              <textarea id="c-notes" name="notes" placeholder="Any specific stains, special handling requests, or other notes..."></textarea>
+            </div>
+
+            <div class="form-ok" data-visible="false">
+              Thank you! Your pickup request has been received. We'll confirm via email within 1 hour.
+            </div>
+            <div class="form-err" data-visible="false">
+              Please fill in all required fields correctly before submitting.
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="width:100%; margin-top:1rem;">Confirm Pickup Request</button>
+          </form>
+        </div>
+
+        <!-- Info Card -->
+        <div data-reveal>
+          <div class="contact-info-card">
+            <h3>Contact Information</h3>
+
+            <div class="contact-info-card__item">
+              <div class="contact-info-card__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>(555) 987-6543</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card__item">
+              <div class="contact-info-card__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>hello@dryme.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card__item">
+              <div class="contact-info-card__item-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>142 Clean Street<br>Laundry District<br>New York, NY 10001</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card__hours">
+              <h4>Business Hours</h4>
+              <p>Monday - Friday: 7:00 AM - 7:00 PM<br>Saturday: 8:00 AM - 5:00 PM<br>Sunday: Closed</p>
+            </div>
+          </div>
+
+          <div style="margin-top:1.5rem; background:var(--clr-fresh-badge); border-radius:var(--radius-lg); padding:1.5rem; text-align:center;">
+            <p style="color:var(--clr-fresh-badge-text); font-weight:var(--fw-semibold); margin-bottom:0.25rem; font-size:var(--fs-sm);">Free Pickup &amp; Delivery</p>
+            <p style="color:var(--clr-fresh-badge-text); font-size:var(--fs-xs); margin-bottom:0;">Available within a 15-mile radius. No minimum order required.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section section--light">
+    <div class="container" style="max-width:800px;">
+      <h2 class="section__title" data-reveal>Frequently Asked Questions</h2>
+      <p class="section__subtitle" data-reveal>Quick answers to common questions about our service.</p>
+
+      <div data-reveal-stagger>
+        <details style="background:var(--clr-white); border:1px solid var(--clr-gray-200); border-radius:var(--radius-md); margin-bottom:0.75rem; overflow:hidden;">
+          <summary style="padding:1rem 1.25rem; cursor:pointer; font-weight:var(--fw-semibold); font-size:var(--fs-sm); color:var(--clr-charcoal); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            How does free pickup and delivery work?
+            <span style="font-size:1.2rem; color:var(--clr-teal); transition:transform 0.2s;">+</span>
+          </summary>
+          <div style="padding:0 1.25rem 1rem; font-size:var(--fs-sm); color:var(--clr-gray-500); line-height:1.8;">
+            Simply schedule a pickup online or by phone. Our driver will arrive at your chosen time window, collect your garments in a labeled bag, and return them clean and fresh within the agreed turnaround time. There's no minimum order and no delivery fee within our service area.
+          </div>
+        </details>
+
+        <details style="background:var(--clr-white); border:1px solid var(--clr-gray-200); border-radius:var(--radius-md); margin-bottom:0.75rem; overflow:hidden;">
+          <summary style="padding:1rem 1.25rem; cursor:pointer; font-weight:var(--fw-semibold); font-size:var(--fs-sm); color:var(--clr-charcoal); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            What is your turnaround time?
+            <span style="font-size:1.2rem; color:var(--clr-teal); transition:transform 0.2s;">+</span>
+          </summary>
+          <div style="padding:0 1.25rem 1rem; font-size:var(--fs-sm); color:var(--clr-gray-500); line-height:1.8;">
+            Standard turnaround is 48 hours. Premium bundle customers enjoy 24-hour service. Business bundle subscribers get same-day turnaround for orders placed before 10 AM.
+          </div>
+        </details>
+
+        <details style="background:var(--clr-white); border:1px solid var(--clr-gray-200); border-radius:var(--radius-md); margin-bottom:0.75rem; overflow:hidden;">
+          <summary style="padding:1rem 1.25rem; cursor:pointer; font-weight:var(--fw-semibold); font-size:var(--fs-sm); color:var(--clr-charcoal); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            What if a stain can't be removed?
+            <span style="font-size:1.2rem; color:var(--clr-teal); transition:transform 0.2s;">+</span>
+          </summary>
+          <div style="padding:0 1.25rem 1rem; font-size:var(--fs-sm); color:var(--clr-gray-500); line-height:1.8;">
+            We have a "No Stain, No Pay" guarantee. If we can't remove a stain after our best effort, we won't charge you for that item's cleaning. We'll always communicate honestly about what's possible.
+          </div>
+        </details>
+
+        <details style="background:var(--clr-white); border:1px solid var(--clr-gray-200); border-radius:var(--radius-md); margin-bottom:0.75rem; overflow:hidden;">
+          <summary style="padding:1rem 1.25rem; cursor:pointer; font-weight:var(--fw-semibold); font-size:var(--fs-sm); color:var(--clr-charcoal); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            Do you offer garment insurance?
+            <span style="font-size:1.2rem; color:var(--clr-teal); transition:transform 0.2s;">+</span>
+          </summary>
+          <div style="padding:0 1.25rem 1rem; font-size:var(--fs-sm); color:var(--clr-gray-500); line-height:1.8;">
+            Yes. Every garment cleaned by DRYME is covered up to $500 in replacement value at no extra charge. For high-value items, we offer extended coverage up to $5,000 for a small additional fee.
+          </div>
+        </details>
+
+        <details style="background:var(--clr-white); border:1px solid var(--clr-gray-200); border-radius:var(--radius-md); margin-bottom:0.75rem; overflow:hidden;">
+          <summary style="padding:1rem 1.25rem; cursor:pointer; font-weight:var(--fw-semibold); font-size:var(--fs-sm); color:var(--clr-charcoal); list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            What payment methods do you accept?
+            <span style="font-size:1.2rem; color:var(--clr-teal); transition:transform 0.2s;">+</span>
+          </summary>
+          <div style="padding:0 1.25rem 1rem; font-size:var(--fs-sm); color:var(--clr-gray-500); line-height:1.8;">
+            We accept all major credit cards, Apple Pay, Google Pay, and cash on delivery. Bundle subscribers are billed automatically on a weekly or monthly basis.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 data-reveal>Let's Keep Your Wardrobe Fresh</h2>
+      <p data-reveal>Thousands of happy customers trust DRYME. Your first pickup is free — no strings attached.</p>
+      <div class="cta-section__actions" data-reveal>
+        <a href="#pickup" class="btn btn--primary">Schedule Free Pickup</a>
+        <a href="tel:+15559876543" class="btn btn--white">Call (555) 987-6543</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="logo">
+            <svg class="logo__icon hanger-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 4 L20 10"/>
+              <circle cx="20" cy="4" r="3"/>
+              <path d="M20 10 L4 30 L36 30 Z"/>
+            </svg>
+            DRY<span>ME</span>
+          </a>
+          <p>Premium dry cleaning and laundry service. We pick up, clean, and deliver — so you can focus on what matters.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html">Dry Cleaning</a></li>
+            <li><a href="services.html">Wash &amp; Press</a></li>
+            <li><a href="services.html">Delicate Care</a></li>
+            <li><a href="services.html">Alterations</a></li>
+          </ul>
+        </div>
+        <div class="footer__newsletter">
+          <h4 class="footer__heading">Stay Fresh</h4>
+          <p>Get tips on garment care and exclusive offers.</p>
+          <form class="footer__newsletter-form">
+            <input type="email" placeholder="your@email.com" aria-label="Email for newsletter">
+            <button type="submit" class="btn btn--primary btn--sm">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span data-year></span> DRYME. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

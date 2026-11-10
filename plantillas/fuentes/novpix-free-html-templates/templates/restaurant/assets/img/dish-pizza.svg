@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Illustration of a wood-fired margherita pizza">
+  <rect width="400" height="400" fill="#7c2d12"/>
+  <circle cx="200" cy="200" r="170" fill="#a8581f" opacity=".5"/>
+  <circle cx="200" cy="205" r="150" fill="#3b1a0a" opacity=".25"/>
+  <circle cx="200" cy="200" r="150" fill="#e9b96e"/>
+  <circle cx="200" cy="200" r="150" fill="none" stroke="#c98a3e" stroke-width="16"/>
+  <g fill="#6b3a1a" opacity=".5"><circle cx="90" cy="150" r="6"/><circle cx="300" cy="110" r="5"/><circle cx="320" cy="270" r="7"/><circle cx="140" cy="320" r="5"/></g>
+  <circle cx="200" cy="200" r="126" fill="#d9401d"/>
+  <g fill="#fff6e0">
+    <path d="M150 140c20-15 50-5 45 18s-40 25-55 10-5-20 10-28z"/>
+    <path d="M250 170c25-10 50 10 40 30s-45 20-50 0 0-25 10-30z"/>
+    <path d="M160 245c18-12 45 0 42 20s-35 25-48 10-8-22 6-30z"/>
+    <path d="M255 260c15-8 35 5 30 20s-30 15-38 3 0-18 8-23z"/>
+  </g>
+  <g fill="#15803d">
+    <path d="M205 205c15-25 45-20 45-20s-10 30-30 32-15-12-15-12z"/>
+    <path d="M125 200c10-20 35-18 35-18s-8 25-24 26-11-8-11-8z" fill="#16a34a"/>
+    <path d="M230 120c12-18 35-12 35-12s-10 22-26 22-9-10-9-10z" fill="#16a34a"/>
+    <path d="M215 300c10-18 32-14 32-14s-8 20-22 22-10-8-10-8z"/>
+  </g>
+  <path d="M200 50v300M50 200h300M94 94l212 212M306 94 94 306" stroke="#b8651e" stroke-width="2" opacity=".35"/>
+</svg>

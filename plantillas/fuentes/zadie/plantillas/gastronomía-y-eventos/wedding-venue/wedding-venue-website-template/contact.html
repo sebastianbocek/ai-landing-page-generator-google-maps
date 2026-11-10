@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule a Tour | The Evergreen Estate</title>
+  <meta name="description" content="Schedule a private tour of The Evergreen Estate. Contact our team to discuss your wedding vision, check date availability, and request detailed pricing.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+<body>
+
+
+  
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-gem logo-icon"></i>
+        <span class="logo-text">The Evergreen Estate</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Venues</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="contact.html" class="header-cta">Schedule Tour</a>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label" style="color: rgba(255,255,255,0.7);">Get in Touch</span>
+      <h1>Schedule a Private Tour</h1>
+      <span class="divider" style="background: rgba(255,255,255,0.4);"></span>
+      <p>Walk the grounds, explore our venues, and share your vision with us. We would love to show you around.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Tour Request Form -->
+        <div class="contact-form-wrapper">
+          <span class="section-label">Tour Request</span>
+          <h2 style="margin-bottom: 0.5rem;">Tell Us About Your Day</h2>
+          <p style="color: var(--text-muted); margin-bottom: 2rem;">Fill out the form below and our team will reach out within 24 hours to confirm your tour and answer any initial questions.</p>
+
+          <form action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" class="form-input" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" class="form-input" placeholder="Your last name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="(555) 000-0000">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="wedding-date">Preferred Wedding Date</label>
+                <input type="date" id="wedding-date" name="wedding-date" class="form-input">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="guest-count">Estimated Guest Count</label>
+                <select id="guest-count" name="guest-count" class="form-select">
+                  <option value="">Select a range</option>
+                  <option value="under-50">Under 50 guests</option>
+                  <option value="50-100">50 to 100 guests</option>
+                  <option value="100-150">100 to 150 guests</option>
+                  <option value="150-200">150 to 200 guests</option>
+                  <option value="200-250">200 to 250 guests</option>
+                  <option value="250-300">250 to 300 guests</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="venue-interest">Venue of Interest</label>
+              <select id="venue-interest" name="venue-interest" class="form-select">
+                <option value="">Not sure yet</option>
+                <option value="grand-ballroom">The Grand Ballroom</option>
+                <option value="garden-pavilion">The Garden Pavilion</option>
+                <option value="vineyard-terrace">The Vineyard Terrace</option>
+                <option value="multiple">Multiple venues / Full estate</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Tell Us About Your Vision</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Share anything about your wedding plans, style preferences, or questions you have about the estate..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="how-heard">How Did You Hear About Us?</label>
+              <select id="how-heard" name="how-heard" class="form-select">
+                <option value="">Select one</option>
+                <option value="instagram">Instagram</option>
+                <option value="pinterest">Pinterest</option>
+                <option value="wedding-wire">WeddingWire</option>
+                <option value="the-knot">The Knot</option>
+                <option value="referral">Friend or family referral</option>
+                <option value="vendor">Vendor recommendation</option>
+                <option value="search">Google search</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="margin-top: 0.5rem;">Request a Tour</button>
+            <p class="form-note">We typically respond within 24 hours. For immediate availability questions, call us at <a href="tel:+17075551847" style="color: var(--secondary);">(707) 555-1847</a>.</p>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <div class="contact-info-block">
+            <h4>Visit the Estate</h4>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>1847 Evergreen Lane<br>Sonoma Valley, CA 95476</p>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-car"></i>
+              <p>45 minutes north of San Francisco via Highway 101. Free parking available on-site.</p>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <h4>Reach Out Directly</h4>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-phone"></i>
+              <p><a href="tel:+17075551847">(707) 555-1847</a></p>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <p><a href="mailto:hello@theevergreenestate.com">hello@theevergreenestate.com</a></p>
+            </div>
+            <div class="contact-info-item">
+              <i class="fa-brands fa-instagram"></i>
+              <p><a href="#">@theevergreenestate</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <h4>Tour Availability</h4>
+            <ul class="contact-hours">
+              <li><span class="day">Monday</span><span>By appointment</span></li>
+              <li><span class="day">Tuesday</span><span>10:00 AM - 5:00 PM</span></li>
+              <li><span class="day">Wednesday</span><span>10:00 AM - 5:00 PM</span></li>
+              <li><span class="day">Thursday</span><span>10:00 AM - 5:00 PM</span></li>
+              <li><span class="day">Friday</span><span>10:00 AM - 3:00 PM</span></li>
+              <li><span class="day">Saturday</span><span>By appointment</span></li>
+              <li><span class="day">Sunday</span><span>Closed</span></li>
+            </ul>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">Weekend tours are available when the venue is not hosting events. We recommend booking your tour at least one week in advance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Common Questions</span>
+        <h2>Frequently Asked Questions</h2>
+        <span class="divider"></span>
+        <p>Answers to the questions we hear most often from couples exploring The Evergreen Estate.</p>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            How far in advance should we book our wedding date?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We recommend booking 12 to 18 months in advance, especially for peak season dates (May through October). Some of our most popular Saturday dates book up to two years out. Weekday and winter dates typically have more flexibility, and we occasionally have openings from cancellations or date changes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            What happens if it rains on our wedding day?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Every outdoor booking includes a complimentary indoor backup plan. The Garden Pavilion has retractable canvas panels for weather protection, and the Grand Ballroom is always available as a rain plan. Your coordinator will create a detailed weather contingency timeline so the transition is seamless if needed. We monitor forecasts closely in the days leading up to your wedding.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Can we bring our own caterer, or do we have to use yours?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>You have options. Our in-house culinary team, led by Chef Laurent Dubois, offers seasonal farm-to-table menus that are a highlight of many weddings here. However, we also maintain an approved caterer list of 12 vetted catering companies. Outside caterers not on our list may be considered with a kitchen use fee and proof of insurance and licensing.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Is there a minimum guest count or spending minimum?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>There is no minimum guest count. We host intimate celebrations of 20 guests and grand affairs of 300 with equal care. Our Intimate package starts at $10,500 for up to 75 guests. Food and beverage minimums may apply for certain date and venue combinations during peak season. Your coordinator will provide transparent pricing during your consultation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            What is included in the venue rental fee?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>All packages include your selected venue space, a dedicated event coordinator, setup and breakdown, estate furniture (tables and chairs), basic linens, bridal suite access, a professional sound system, complimentary guest parking, and on-site security. Higher-tier packages add premium furniture, custom lighting, rehearsal dinner access, and extended hours. Full details are provided during your consultation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Do you allow outside vendors (photographers, DJs, florists)?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Absolutely. You are welcome to bring any licensed and insured vendor of your choosing for photography, videography, DJ or band, florist, cake, and other services. We also maintain a preferred vendor list of professionals who know the estate well and consistently deliver outstanding work. There is no additional fee for using outside vendors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label" style="color: var(--secondary-light);">Still Have Questions?</span>
+      <h2>We Are Here to Help</h2>
+      <span class="divider"></span>
+      <p>Call us directly or send an email. Our team is happy to answer any questions about the estate, availability, or pricing.</p>
+      <div class="cta-buttons">
+        <a href="tel:+17075551847" class="btn btn-white">Call (707) 555-1847</a>
+        <a href="mailto:hello@theevergreenestate.com" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: var(--white);">Send Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <i class="fa-solid fa-gem"></i>
+            <span>The Evergreen Estate</span>
+          </div>
+          <p>A romantic wedding and event venue set on 45 acres of gardens, vineyards, and historic architecture. Creating timeless celebrations since 2008.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="services.html">Venues & Packages</a></li>
+            <li><a href="contact.html">Schedule a Tour</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Venues</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Grand Ballroom</a></li>
+            <li><a href="services.html">Garden Pavilion</a></li>
+            <li><a href="services.html">Vineyard Terrace</a></li>
+            <li><a href="services.html">Bridal Suites</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li>1847 Evergreen Lane</li>
+            <li>Sonoma Valley, CA 95476</li>
+            <li><a href="tel:+17075551847">(707) 555-1847</a></li>
+            <li><a href="mailto:hello@theevergreenestate.com">hello@theevergreenestate.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 The Evergreen Estate. All rights reserved.</p>
+        <p>Design by <a href="https://zadie.com" target="_blank" rel="noopener">ZADIE</a></p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var wasActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('active');
+        });
+        if (!wasActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

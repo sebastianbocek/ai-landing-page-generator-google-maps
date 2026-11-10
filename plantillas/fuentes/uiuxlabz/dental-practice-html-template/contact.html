@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book an appointment at APEX DENTAL — call, email, or use our online form. Same-day emergency appointments available.">
+  <meta name="keywords" content="dentist appointment, book dentist, dental clinic contact, emergency dentist, dental office hours">
+  <title>Contact — APEX DENTAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">Apex <em>Dental</em></a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="team.html" class="nav-link">Team</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+          <a href="contact.html" class="nav-link nav-cta">Book Appointment</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="page-hero-title reveal">Book an <span style="color:#FFD166;">Appointment</span></h1>
+      <p class="page-hero-desc reveal">We'll confirm your visit within one business day.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <h2 class="section-title" style="margin-bottom:var(--space-5);">Request an Appointment</h2>
+          <form class="form" data-form novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="a-name">Full Name</label>
+                <input class="form-input" type="text" id="a-name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="a-email">Email</label>
+                <input class="form-input" type="email" id="a-email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="a-phone">Phone</label>
+                <input class="form-input" type="tel" id="a-phone" name="phone" placeholder="(555) 123-4567" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="a-service">Reason for Visit</label>
+                <select class="form-select" id="a-service" name="service" required>
+                  <option value="">Select a reason</option>
+                  <option>New Patient — Check-Up</option>
+                  <option>Cleaning &amp; Prevention</option>
+                  <option>Cosmetic Consultation</option>
+                  <option>Dental Implants</option>
+                  <option>Orthodontics</option>
+                  <option>Pediatric Visit</option>
+                  <option>Emergency / Pain</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="a-date">Preferred Date &amp; Time</label>
+              <input class="form-input" type="text" id="a-date" name="date" placeholder="e.g. Tuesday, Sept 15 — 10:00am" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="a-msg">Notes</label>
+              <textarea class="form-textarea" id="a-msg" name="message" placeholder="Insurance provider, symptoms, or questions..."></textarea>
+            </div>
+            <button class="btn btn--coral" type="submit" style="align-self:flex-start;">Request Appointment</button>
+            <div class="form-ok">Thanks! Our front desk will confirm your appointment within one business day.</div>
+            <div class="form-err">Please fill in all required fields.</div>
+          </form>
+        </div>
+
+        <div class="reveal">
+          <div class="contact-info">
+            <h3>Visit Us</h3>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div><div class="contact-item-label">Address</div><div class="contact-item-text">450 Harborview Drive, Suite 220, Austin, TX 78704</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📞</div>
+              <div><div class="contact-item-label">Phone</div><div class="contact-item-text">(555) 345-APEX</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">✉️</div>
+              <div><div class="contact-item-label">Email</div><div class="contact-item-text">hello@apexdental.com</div></div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🕐</div>
+              <div><div class="contact-item-label">Office Hours</div>
+                <div class="hours-grid">
+                  <div><span>Mon–Fri</span><span>8:00am – 6:00pm</span></div>
+                  <div><span>Saturday</span><span>9:00am – 2:00pm</span></div>
+                  <div><span>Sunday</span><span>Closed</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">🚨</div>
+              <div><div class="contact-item-label">Emergency</div><div class="contact-item-text">Call us anytime — same-day relief available</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <div class="container reveal">
+      <h2 class="cta-title">Dental Emergency?</h2>
+      <p class="cta-desc">Tooth pain doesn't wait. Call us now for same-day relief.</p>
+      <a href="tel:+1555345APEX" class="btn btn--white">Call (555) 345-APEX</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><div class="footer-brand-logo">Apex <em>Dental</em></div><p class="footer-brand-desc">A modern dental practice providing gentle, comprehensive care for the whole family.</p></div>
+        <div><h4 class="footer-heading">Explore</h4><div class="footer-links"><a href="about.html" class="footer-link">About</a><a href="services.html" class="footer-link">Services</a><a href="team.html" class="footer-link">Team</a></div></div>
+        <div><h4 class="footer-heading">Visit</h4><div class="footer-links"><a href="contact.html" class="footer-link">Find Us</a><a href="contact.html" class="footer-link">Contact</a><a href="contact.html" class="footer-link">Book Appointment</a></div></div>
+        <div><h4 class="footer-heading">Hours</h4><div class="footer-links"><a href="#" class="footer-link">Mon–Fri: 8am–6pm</a><a href="#" class="footer-link">Sat: 9am–2pm</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; <span data-year></span> APEX DENTAL. All rights reserved.</span><span>Gentle care ✦</span></div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

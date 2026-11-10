@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | SALONE</title>
+  <meta name="description" content="Explore SALONE's full range of beauty services including hair styling, skincare, makeup artistry, nail design, massage therapy, and bridal packages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Services page specific styles */
+    .page-hero {
+      position: relative;
+      padding: 180px 0 100px;
+      background: linear-gradient(135deg, var(--rose-dark), var(--rose-deep));
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.03) 1px, transparent 0);
+      background-size: 50px 50px;
+    }
+    .page-hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+    .page-hero-title {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .page-hero-desc {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* Services detail section */
+    .services-detail { padding: 120px 0; background: var(--white); }
+    .service-detail-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+    .service-detail-row:last-child { margin-bottom: 0; }
+    .service-detail-row.reverse { direction: rtl; }
+    .service-detail-row.reverse > * { direction: ltr; }
+    .service-detail-image {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .service-detail-image img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+    }
+    .service-detail-image-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: var(--white);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .service-detail-content .section-label { text-align: left; }
+    .service-detail-content .section-label::before { display: none; }
+    .service-detail-title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin-bottom: 20px;
+      color: var(--gray-900);
+    }
+    .service-detail-text {
+      color: var(--gray-600);
+      line-height: 1.85;
+      margin-bottom: 28px;
+    }
+    .service-detail-list {
+      margin-bottom: 32px;
+    }
+    .service-detail-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+      font-size: 0.92rem;
+      color: var(--gray-700);
+    }
+    .service-detail-list li svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--gold);
+      flex-shrink: 0;
+    }
+    .service-detail-price {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .service-detail-price-label {
+      font-size: 0.82rem;
+      color: var(--gray-400);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .service-detail-price-value {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--rose);
+    }
+
+    /* CTA section */
+    .services-cta {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+    .services-cta .cta-inner {
+      background: linear-gradient(135deg, var(--rose), var(--rose-dark));
+    }
+
+    @media (max-width: 768px) {
+      .service-detail-row {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .service-detail-row.reverse { direction: ltr; }
+      .service-detail-image img { height: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-brand-text" style="color: var(--rose);">SALONE</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="contact.html" class="nav-link nav-cta">Book Now</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">Our Services</h1>
+        <p class="page-hero-desc">A comprehensive menu of luxury treatments designed to pamper, restore, and transform. Each service is delivered with precision and passion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Detail -->
+  <section class="services-detail">
+    <div class="container">
+
+      <!-- Hair Styling -->
+      <div class="service-detail-row reveal">
+        <div class="service-detail-image">
+          <img src="assets/img/service-hair.svg" alt="Hair styling at SALONE">
+          <div class="service-detail-image-badge">Most Popular</div>
+        </div>
+        <div class="service-detail-content">
+          <div class="section-label">Hair Studio</div>
+          <h2 class="service-detail-title">Hair Styling & Color</h2>
+          <p class="service-detail-text">Our hair artisans combine technical mastery with creative vision to craft styles that are uniquely you. From precision cuts to complete color transformations, we use only the finest products to ensure lasting results.</p>
+          <ul class="service-detail-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Precision cuts & restyling
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Balayage, highlights & color correction
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              keratin treatments & deep conditioning
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Bridal & event updos
+            </li>
+          </ul>
+          <div class="service-detail-price">
+            <span class="service-detail-price-label">Starting from</span>
+            <span class="service-detail-price-value">$85</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Book This Service</a>
+        </div>
+      </div>
+
+      <!-- Skincare -->
+      <div class="service-detail-row reverse reveal">
+        <div class="service-detail-image">
+          <img src="assets/img/service-skin.svg" alt="Skincare treatments at SALONE">
+        </div>
+        <div class="service-detail-content">
+          <div class="section-label">Skin Clinic</div>
+          <h2 class="service-detail-title">Skincare & Facials</h2>
+          <p class="service-detail-text">Reveal your skin's natural luminosity with our advanced skincare treatments. Our licensed estheticians customize every facial to address your unique skin concerns using medical-grade products and techniques.</p>
+          <ul class="service-detail-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Signature glow facial
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Anti-aging & collagen boost treatments
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Chemical peels & microdermabrasion
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Acne solutions & scar reduction
+            </li>
+          </ul>
+          <div class="service-detail-price">
+            <span class="service-detail-price-label">Starting from</span>
+            <span class="service-detail-price-value">$95</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Book This Service</a>
+        </div>
+      </div>
+
+      <!-- Makeup -->
+      <div class="service-detail-row reveal">
+        <div class="service-detail-image">
+          <img src="assets/img/service-makeup.svg" alt="Makeup artistry at SALONE">
+          <div class="service-detail-image-badge">Editor's Pick</div>
+        </div>
+        <div class="service-detail-content">
+          <div class="section-label">Makeup Bar</div>
+          <h2 class="service-detail-title">Makeup Artistry</h2>
+          <p class="service-detail-text">Our makeup artists are skilled in creating looks that range from natural everyday elegance to dramatic editorial styles. We use premium brands and techniques to ensure a flawless finish that lasts all day.</p>
+          <ul class="service-detail-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Full makeup application
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Airbrush makeup for events
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Makeup lessons & consultations
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Lash extensions & brow shaping
+            </li>
+          </ul>
+          <div class="service-detail-price">
+            <span class="service-detail-price-label">Starting from</span>
+            <span class="service-detail-price-value">$70</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Book This Service</a>
+        </div>
+      </div>
+
+      <!-- Nails -->
+      <div class="service-detail-row reverse reveal">
+        <div class="service-detail-image">
+          <img src="assets/img/service-nails.svg" alt="Nail artistry at SALONE">
+        </div>
+        <div class="service-detail-content">
+          <div class="section-label">Nail Studio</div>
+          <h2 class="service-detail-title">Nail Design & Care</h2>
+          <p class="service-detail-text">Express your personality through stunning nail art. Our nail technicians are artists who combine precision with creativity, using high-quality products for a finish that lasts.</p>
+          <ul class="service-detail-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Gel & acrylic manicures
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Custom nail art & designs
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Paraffin wax treatments
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Spa pedicure with massage
+            </li>
+          </ul>
+          <div class="service-detail-price">
+            <span class="service-detail-price-label">Starting from</span>
+            <span class="service-detail-price-value">$45</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Book This Service</a>
+        </div>
+      </div>
+
+      <!-- Massage -->
+      <div class="service-detail-row reveal">
+        <div class="service-detail-image">
+          <img src="assets/img/service-massage.svg" alt="Massage therapy at SALONE">
+        </div>
+        <div class="service-detail-content">
+          <div class="section-label">Wellness</div>
+          <h2 class="service-detail-title">Massage & Relaxation</h2>
+          <p class="service-detail-text">Escape into tranquility with our therapeutic massage treatments. Our certified therapists use a blend of techniques to release tension, restore balance, and promote deep relaxation.</p>
+          <ul class="service-detail-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Swedish relaxation massage
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Deep tissue & trigger point therapy
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Aromatherapy with essential oils
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Hot stone treatment
+            </li>
+          </ul>
+          <div class="service-detail-price">
+            <span class="service-detail-price-label">Starting from</span>
+            <span class="service-detail-price-value">$110</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Book This Service</a>
+        </div>
+      </div>
+
+      <!-- Bridal -->
+      <div class="service-detail-row reverse reveal">
+        <div class="service-detail-image">
+          <img src="assets/img/service-bridal.svg" alt="Bridal beauty services at SALONE">
+          <div class="service-detail-image-badge">Bridal Special</div>
+        </div>
+        <div class="service-detail-content">
+          <div class="section-label">Bridal Suite</div>
+          <h2 class="service-detail-title">Bridal & Special Occasions</h2>
+          <p class="service-detail-text">Your special day deserves nothing less than perfection. Our bridal packages are designed to provide a comprehensive beauty experience, ensuring you look and feel absolutely radiant from morning to night.</p>
+          <ul class="service-detail-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Complete bridal hair & makeup
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Pre-wedding skin treatments
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Trial sessions & consultations
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              Group party packages available
+            </li>
+          </ul>
+          <div class="service-detail-price">
+            <span class="service-detail-price-label">Starting from</span>
+            <span class="service-detail-price-value">$350</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Book This Service</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="services-cta">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <h2 class="cta-title">Not Sure Which Service Is Right for You?</h2>
+        <p class="cta-text">Our beauty consultants are here to help you find the perfect treatment. Schedule a complimentary consultation today.</p>
+        <a href="contact.html" class="btn btn-white">Get a Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-text">SALONE</div>
+          <p class="footer-brand-desc">Where beauty meets artistry. A premium beauty destination dedicated to enhancing your natural elegance through expert care and timeless technique.</p>
+        </div>
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="services.html" class="footer-link">Services</a>
+            <a href="gallery.html" class="footer-link">Gallery</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Services</div>
+          <div class="footer-links">
+            <a href="services.html" class="footer-link">Hair Styling</a>
+            <a href="services.html" class="footer-link">Skincare</a>
+            <a href="services.html" class="footer-link">Makeup</a>
+            <a href="services.html" class="footer-link">Nail Art</a>
+            <a href="services.html" class="footer-link">Bridal</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Working Hours</div>
+          <div class="footer-hours-item">
+            <span class="footer-hours-day">Mon - Fri</span>
+            <span class="footer-hours-time">9:00 AM - 8:00 PM</span>
+          </div>
+          <div class="footer-hours-item">
+            <span class="footer-hours-day">Saturday</span>
+            <span class="footer-hours-time">9:00 AM - 6:00 PM</span>
+          </div>
+          <div class="footer-hours-item">
+            <span class="footer-hours-day">Sunday</span>
+            <span class="footer-hours-time">10:00 AM - 5:00 PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 SALONE. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          <a href="#" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>

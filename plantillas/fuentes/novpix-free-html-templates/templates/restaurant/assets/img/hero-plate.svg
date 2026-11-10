@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Illustration of a bowl of hand-made pasta with tomatoes and basil">
+  <defs>
+    <radialGradient id="p" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#fffaf2"/><stop offset="1" stop-color="#efe3d0"/></radialGradient>
+    <radialGradient id="s" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#c2410c" stop-opacity=".95"/><stop offset="1" stop-color="#9a3412"/></radialGradient>
+  </defs>
+  <ellipse cx="310" cy="320" rx="250" ry="250" fill="#000" opacity=".12"/>
+  <circle cx="300" cy="300" r="250" fill="url(#p)"/>
+  <circle cx="300" cy="300" r="250" fill="none" stroke="#e2d2b8" stroke-width="3"/>
+  <circle cx="300" cy="300" r="185" fill="#f6ecdc" stroke="#e7d7bd" stroke-width="2"/>
+  <circle cx="300" cy="300" r="150" fill="url(#s)"/>
+  <g fill="none" stroke="#f3c969" stroke-width="11" stroke-linecap="round">
+    <path d="M190 290c30-40 70 40 110 0s80-40 110 10"/>
+    <path d="M200 330c40-30 60 30 100 10s70-50 100-10"/>
+    <path d="M210 250c30 20 60-40 100-10s60 30 80 0"/>
+    <path d="M230 370c30-20 50 20 80 0s50-10 70 0"/>
+    <path d="M240 215c20 10 50-20 70-5s40 10 60 0"/>
+  </g>
+  <g fill="none" stroke="#e0ae48" stroke-width="3" stroke-linecap="round" opacity=".7">
+    <path d="M195 292c30-40 70 40 110 0"/><path d="M215 252c30 20 60-40 100-10"/>
+  </g>
+  <g>
+    <circle cx="245" cy="240" r="22" fill="#dc2626"/><path d="M238 222c6 4 12 4 16 0" stroke="#15803d" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <circle cx="360" cy="345" r="20" fill="#ef4444"/><circle cx="354" cy="339" r="5" fill="#fff" opacity=".5"/>
+    <circle cx="330" cy="235" r="16" fill="#dc2626"/><circle cx="325" cy="230" r="4" fill="#fff" opacity=".5"/>
+    <circle cx="240" cy="345" r="15" fill="#ef4444"/>
+  </g>
+  <g fill="#16a34a">
+    <path d="M300 270c30-30 70-20 70-20s-10 40-40 50-30-30-30-30z"/>
+    <path d="M300 270c-20 40-10 70-10 70s35-15 40-45-30-25-30-25z" fill="#15803d"/>
+    <path d="M300 270c-35-15-70 5-70 5s25 30 55 25 15-30 15-30z" fill="#22a04b"/>
+  </g>
+  <path d="M300 270 360 255M300 270l-8 60M300 270l-60 6" stroke="#0f5f2c" stroke-width="2" opacity=".6"/>
+  <g fill="#fff8e1" opacity=".9">
+    <circle cx="275" cy="300" r="4"/><circle cx="320" cy="310" r="3"/><circle cx="290" cy="330" r="3"/><circle cx="345" cy="285" r="4"/><circle cx="255" cy="285" r="3"/><circle cx="310" cy="360" r="3"/>
+  </g>
+  <g transform="rotate(35 300 300)">
+    <rect x="555" y="200" width="16" height="200" rx="8" fill="#cbd5e1"/>
+    <rect x="552" y="120" width="22" height="90" rx="6" fill="#e2e8f0"/>
+    <path d="M556 120v-30M563 120v-30M570 120v-30" stroke="#e2e8f0" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - FITCORE</title>
+  <meta name="description" content="Learn about FITCORE's mission, vision, and the team behind your favorite fitness center.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M4 14h3v4H4zM7 12h2v8H7zM25 14h3v4h-3zM23 12h2v8h-2zM9 15h14v2H9zM10 13h2v6h-2zM20 13h2v6h-2z"/></svg>
+        Fit<span>Core</span>
+      </a>
+      <nav class="nav" id="mainNav">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="about.html" class="nav__link active">About</a>
+        <a href="classes.html" class="nav__link">Classes</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <div class="nav__cta">
+          <a href="contact.html#register" class="btn btn--primary">Join Now</a>
+        </div>
+      </nav>
+      <div class="burger" aria-label="Toggle navigation" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/img/header-2.jpg" alt="FITCORE facility overview">
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="container page-hero__content">
+      <h1>About <span class="text-red">FITCORE</span></h1>
+      <p>Where passion meets performance.</p>
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>About Us</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Mission / Vision / Goals -->
+  <section class="section">
+    <div class="container">
+      <div class="about-split">
+        <div class="about-split__image reveal-left">
+          <img src="assets/img/about-2.png" alt="FITCORE training session">
+        </div>
+        <div class="about-split__content reveal-right">
+          <span class="label">Who We Are</span>
+          <h2>More Than a Gym -- We're a Community</h2>
+          <p>Founded in 2011, FITCORE was born from a simple belief: everyone deserves access to world-class fitness. What started as a small studio has grown into a 20,000 sq ft training facility serving over 5,000 members.</p>
+          <p>We combine cutting-edge equipment, certified coaching, and a supportive community to deliver results that last a lifetime.</p>
+
+          <div class="tabs-container" style="margin-top: var(--space-lg);">
+            <div class="tabs-nav">
+              <button class="active" data-tab="mission">Our Mission</button>
+              <button data-tab="vision">Our Vision</button>
+              <button data-tab="goals">Our Goals</button>
+            </div>
+            <div class="tab-panel active" data-panel="mission">
+              <p>To empower every individual to unlock their physical potential through accessible, science-backed training and genuine community support. We believe fitness is not a destination but a lifelong journey, and we're here to walk it with you.</p>
+            </div>
+            <div class="tab-panel" data-panel="vision">
+              <p>To become the most trusted fitness brand in every neighborhood we serve -- known not just for our facilities, but for the life-changing transformations that happen within our walls. We envision a world where staying fit is joyful, not a chore.</p>
+            </div>
+            <div class="tab-panel" data-panel="goals">
+              <p>We aim to help 10,000 members achieve their personal best by 2027. Through expanded class offerings, advanced body composition tracking, and partnerships with sports nutritionists, we're building the infrastructure for systematic, sustainable fitness results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Counter Section -->
+  <section class="counter-section">
+    <div class="container">
+      <div class="counter-grid">
+        <div class="reveal">
+          <div class="counter__num" data-count="5000" data-suffix="+">0</div>
+          <div class="counter__label">Active Members</div>
+        </div>
+        <div class="reveal">
+          <div class="counter__num" data-count="50" data-suffix="+">0</div>
+          <div class="counter__label">Expert Trainers</div>
+        </div>
+        <div class="reveal">
+          <div class="counter__num" data-count="30" data-suffix="+">0</div>
+          <div class="counter__label">Weekly Classes</div>
+        </div>
+        <div class="reveal">
+          <div class="counter__num" data-count="15" data-suffix="+">0</div>
+          <div class="counter__label">Years of Excellence</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Trainers Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Our Team</span>
+        <h2>Meet the Experts Behind Your Results</h2>
+        <p>Our trainers aren't just certified -- they're athletes, competitors, and educators who live the FITCORE philosophy.</p>
+      </div>
+      <div class="trainers-grid">
+        <div class="trainer-card reveal">
+          <div class="trainer-card__image">
+            <img src="assets/img/team-1.jpg" alt="Coach Marcus">
+          </div>
+          <div class="trainer-card__info">
+            <h4>Marcus Rivera</h4>
+            <div class="trainer-card__role">Head Coach / HIIT</div>
+            <p>12 years of experience in functional training and athletic performance. NASM certified with specializations in corrective exercise.</p>
+            <div class="trainer-card__socials">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+              <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.43.36a9.09 9.09 0 01-2.88 1.1A4.52 4.52 0 0012 7.53v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card reveal">
+          <div class="trainer-card__image">
+            <img src="assets/img/team-2.jpg" alt="Coach Elena">
+          </div>
+          <div class="trainer-card__info">
+            <h4>Elena Kowalski</h4>
+            <div class="trainer-card__role">Strength / Conditioning</div>
+            <p>Former competitive powerlifter with a passion for building raw strength. CSCS certified with 8 years coaching experience.</p>
+            <div class="trainer-card__socials">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+              <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.43.36a9.09 9.09 0 01-2.88 1.1A4.52 4.52 0 0012 7.53v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card reveal">
+          <div class="trainer-card__image">
+            <img src="assets/img/team-3.jpg" alt="Coach Aria">
+          </div>
+          <div class="trainer-card__info">
+            <h4>Aria Chen</h4>
+            <div class="trainer-card__role">Yoga / Mobility</div>
+            <p>RYT-500 certified yoga instructor focusing on recovery, flexibility, and mindful movement practices.</p>
+            <div class="trainer-card__socials">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+              <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.43.36a9.09 9.09 0 01-2.88 1.1A4.52 4.52 0 0012 7.53v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="trainer-card reveal">
+          <div class="trainer-card__image">
+            <img src="assets/img/team-4.jpg" alt="Coach Jake">
+          </div>
+          <div class="trainer-card__info">
+            <h4>Jake Thompson</h4>
+            <div class="trainer-card__role">Boxing / Cardio</div>
+            <p>Professional boxing coach bringing fight-club intensity to every session. Former amateur champion with 10+ years coaching.</p>
+            <div class="trainer-card__socials">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+              <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.43.36a9.09 9.09 0 01-2.88 1.1A4.52 4.52 0 0012 7.53v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+              <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section section--light">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Our Facility</span>
+        <h2>Inside FITCORE</h2>
+        <p>A glimpse into our state-of-the-art training spaces.</p>
+      </div>
+      <div class="gallery-grid reveal">
+        <div class="gallery-grid__item"><img src="assets/img/work-4.jpg" alt="Weight room"></div>
+        <div class="gallery-grid__item"><img src="assets/img/work-5.jpg" alt="Cardio zone"></div>
+        <div class="gallery-grid__item"><img src="assets/img/work-6.jpg" alt="Group class studio"></div>
+        <div class="gallery-grid__item"><img src="assets/img/work-7.jpg" alt="Functional training area"></div>
+        <div class="gallery-grid__item"><img src="assets/img/work-8.jpg" alt="Boxing ring"></div>
+        <div class="gallery-grid__item"><img src="assets/img/work-9.jpg" alt="Recovery lounge"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container" style="position:relative; z-index:2;">
+      <h2 class="reveal">Become Part of the FITCORE Family</h2>
+      <p class="reveal">Book a free tour and see why 5,000+ members chose us as their home gym.</p>
+      <a href="contact.html" class="btn btn--outline btn--lg reveal">Schedule a Tour</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="index.html" class="footer__brand">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M4 14h3v4H4zM7 12h2v8H7zM25 14h3v4h-3zM23 12h2v8h-2zM9 15h14v2H9zM10 13h2v6h-2zM20 13h2v6h-2z"/></svg>
+            Fit<span>Core</span>
+          </a>
+          <p>Premium fitness facilities and expert coaching to help you become the strongest version of yourself. Open 24/7, 365 days a year.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Classes</h4>
+          <ul class="footer__links">
+            <li><a href="classes.html">HIIT Burn</a></li>
+            <li><a href="classes.html">Power Lift</a></li>
+            <li><a href="classes.html">Yoga Flow</a></li>
+            <li><a href="classes.html">Boxing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul class="footer__contact">
+            <li>
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              123 Fitness Avenue, Downtown, NY 10001
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.12.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0122 16.92z"/></svg>
+              +1 (555) 123-4567
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@fitcore.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span data-year></span> FITCORE. All rights reserved.</p>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.43.36a9.09 9.09 0 01-2.88 1.1A4.52 4.52 0 0012 7.53v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Join Now Pulse Badge -->
+  <a href="contact.html#register" class="pulse-badge" aria-label="Join Now">Join<br>Now</a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

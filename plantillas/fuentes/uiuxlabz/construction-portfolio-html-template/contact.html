@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — CONSTRA Construction</title>
+  <meta name="description" content="Get in touch with CONSTRA Construction for a free consultation, project estimate, or career inquiry.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Source+Sans+3:wght@300;400;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="nav scrolled" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo">
+      <span class="nav__logo-icon" aria-hidden="true">C</span>
+      CONSTRA
+    </a>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="services.html" class="nav__link">Services</a>
+      <a href="contact.html" class="nav__link active">Contact</a>
+      <a href="contact.html" class="nav__cta">Get a Quote</a>
+    </div>
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ====== PAGE HEADER ====== -->
+  <div class="page-header">
+    <div class="page-header__bg">
+      <img src="assets/img/carousel-1.jpg" alt="Contact CONSTRA">
+    </div>
+    <div class="page-header__content">
+      <h1 class="page-header__title">Contact Us</h1>
+      <div class="page-header__crumb">
+        <a href="index.html">Home</a> &nbsp;/&nbsp; Contact
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== CONTACT SECTION ====== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="about__label">Reach Out</p>
+          <h2 class="about__heading">Let's Start a Conversation</h2>
+          <p class="about__desc">Whether you have a project in mind, a question about our services, or want to explore career opportunities, we would love to hear from you.</p>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">&#9743;</div>
+            <div>
+              <div class="contact__info-label">Phone</div>
+              <div class="contact__info-value">+1 (555) 234-5678</div>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">&#9993;</div>
+            <div>
+              <div class="contact__info-label">Email</div>
+              <div class="contact__info-value">hello@constra.build</div>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">&#9906;</div>
+            <div>
+              <div class="contact__info-label">Office</div>
+              <div class="contact__info-value">1200 Builders Avenue, Suite 400<br>Portland, OR 97201</div>
+            </div>
+          </div>
+
+          <div class="contact__info-item">
+            <div class="contact__info-icon" aria-hidden="true">&#9200;</div>
+            <div>
+              <div class="contact__info-label">Hours</div>
+              <div class="contact__info-value">Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 2:00 PM</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-2">
+          <h3 style="font-size:1.4rem;margin-bottom:24px;">Send Us a Message</h3>
+          <form action="#" method="POST">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option value="commercial">Commercial Construction</option>
+                <option value="residential">Residential Development</option>
+                <option value="renovation">Renovation &amp; Remodeling</option>
+                <option value="project-mgmt">Project Management</option>
+                <option value="infrastructure">Infrastructure &amp; Public Works</option>
+                <option value="preconstruction">Pre-Construction Services</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project, timeline, and budget range..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== MAP ====== -->
+  <div class="map-section">
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-122.7012%2C45.5051%2C-122.6712%2C45.5251&layer=mapnik" title="CONSTRA office location map" loading="lazy"></iframe>
+  </div>
+
+  <!-- ====== CTA ====== -->
+  <section class="cta-banner">
+    <div class="cta-banner__bg">
+      <img src="assets/img/footer-img.jpg" alt="Construction site">
+    </div>
+    <div class="container">
+      <div class="cta-banner__content reveal">
+        <h2 class="cta-banner__title">Prefer a Quick Call?</h2>
+        <p class="cta-banner__desc">Our team is available Monday through Saturday. Call us directly or schedule a meeting at your convenience.</p>
+        <a href="tel:+15552345678" class="btn-primary">Call +1 (555) 234-5678</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <span class="nav__logo-icon" aria-hidden="true">C</span>
+            CONSTRA
+          </div>
+          <p class="footer__desc">Precision-crafted construction with an unwavering commitment to quality, safety, and architectural integrity.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social" aria-label="Twitter">t</a>
+            <a href="#" class="footer__social" aria-label="Instagram">ig</a>
+            <a href="#" class="footer__social" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="about.html" class="footer__link">About Us</a>
+          <a href="services.html" class="footer__link">Services</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <a href="services.html" class="footer__link">Commercial Build</a>
+          <a href="services.html" class="footer__link">Residential Dev</a>
+          <a href="services.html" class="footer__link">Renovations</a>
+          <a href="services.html" class="footer__link">Project Mgmt</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Contact Info</h4>
+          <p class="footer__desc" style="margin-bottom:12px;">1200 Builders Avenue<br>Suite 400, Portland, OR 97201</p>
+          <p class="footer__desc" style="margin-bottom:12px;">+1 (555) 234-5678<br>hello@constra.build</p>
+          <p class="footer__desc">Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 2:00 PM</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2025 CONSTRA Construction. All rights reserved.</span>
+        <span>Crafted with precision.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

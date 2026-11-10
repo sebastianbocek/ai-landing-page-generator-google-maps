@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - RESTORAN</title>
+  <meta name="description" content="Get in touch with RESTORAN. Reserve a table, inquire about private events, or reach us directly. We look forward to welcoming you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <img src="assets/img/logo-white.svg" alt="RESTORAN">
+      </a>
+      <div class="navbar__menu">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="menu.html" class="navbar__link">Menu</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="contact.html" class="navbar__link navbar__link--active">Contact</a>
+        <a href="contact.html" class="navbar__cta"><span class="btn btn--primary">Reserve a Table</span></a>
+      </div>
+      <button class="navbar__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="assets/img/ambiance-1.svg" alt="RESTORAN contact">
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="container page-hero__content">
+      <h1 class="page-hero__title">Contact Us</h1>
+      <p class="page-hero__breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Contact</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div class="contact-form reveal">
+          <h2 style="font-size: 1.8rem; margin-bottom: 8px;">Send Us a Message</h2>
+          <p style="color: var(--text-muted); margin-bottom: 32px; font-size: 0.95rem;">Whether you have a question about reservations, private events, or anything else, we are here to help.</p>
+
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Your first name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Your last name" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 000-0000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="reservation">Reservation Inquiry</option>
+                <option value="private-event">Private Event</option>
+                <option value="catering">Catering</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your inquiry, party size, or any special requests..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--dark" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-cards reveal reveal-delay-1">
+          <div class="info-card">
+            <div class="info-card__icon">&#9679;</div>
+            <div>
+              <h3 class="info-card__title">Location</h3>
+              <p class="info-card__text">742 Evergreen Terrace<br>New York, NY 10001<br>United States</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">&#9743;</div>
+            <div>
+              <h3 class="info-card__title">Phone</h3>
+              <p class="info-card__text"><a href="tel:+15551234567">(555) 123-4567</a><br>Mon - Fri, 9am - 6pm</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card__icon">&#9993;</div>
+            <div>
+              <h3 class="info-card__title">Email</h3>
+              <p class="info-card__text"><a href="mailto:hello@restoran.com">hello@restoran.com</a><br>We respond within 24 hours</p>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 12px;">Opening Hours</h3>
+            <table class="hours-table">
+              <tr>
+                <td>Monday - Thursday</td>
+                <td>11:00 AM - 10:00 PM</td>
+              </tr>
+              <tr>
+                <td>Friday - Saturday</td>
+                <td>11:00 AM - 11:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td>10:00 AM - 9:00 PM</td>
+              </tr>
+              <tr>
+                <td>Happy Hour</td>
+                <td>Mon - Fri, 4:00 - 6:00 PM</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div>
+            <h3 style="font-size: 1.15rem; margin-bottom: 12px;">Find Us</h3>
+            <div class="map-placeholder">
+              <span>Map Integration Placeholder</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/img/logo-white.svg" alt="RESTORAN">
+          </div>
+          <p class="footer__desc">Where every meal tells a story. A premium dining experience crafted with passion, locally sourced ingredients, and unwavering attention to detail.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">IG</a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">TW</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Hours</h4>
+          <ul class="footer__links">
+            <li><a href="#">Mon - Thu: 11am - 10pm</a></li>
+            <li><a href="#">Fri - Sat: 11am - 11pm</a></li>
+            <li><a href="#">Sunday: 10am - 9pm</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Get in Touch</h4>
+          <div class="footer__contact-item">
+            <span>&#9679;</span>
+            <span>742 Evergreen Terrace<br>New York, NY 10001</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>&#9679;</span>
+            <span>(555) 123-4567</span>
+          </div>
+          <div class="footer__contact-item">
+            <span>&#9679;</span>
+            <span>hello@restoran.com</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span class="footer-year">2026</span> RESTORAN. All rights reserved.</span>
+        <span>Crafted with care.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

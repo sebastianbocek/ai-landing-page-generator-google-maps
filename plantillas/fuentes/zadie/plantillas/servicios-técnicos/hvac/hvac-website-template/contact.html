@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | ClimateControl Pros | Schedule HVAC Service</title>
+  <meta name="description" content="Contact ClimateControl Pros for HVAC service. Schedule online or call (555) 932-8476. 24/7 emergency service available. Serving the greater metro area.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-temperature-half"></i></div>
+        <div class="logo-text">
+          ClimateControl
+          <span>Pros</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <div class="header-phone">
+        <span class="phone-label">24/7 Emergency</span>
+        <a href="tel:5559328476" class="phone-number">(555) 932-8476</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="hero page-hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">Get In Touch</div>
+        <h1>
+          Schedule
+          <span class="highlight">Service Today</span>
+        </h1>
+        <p class="hero-description">Need HVAC service? Fill out the form below or give us a call. Same-day service available for most repairs. 24/7 emergency line for urgent issues.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p>Reach out anytime. We're here to help with all your heating, cooling, and air quality needs.</p>
+
+          <ul class="contact-details">
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">(555) 932-8476</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">info@climatepros.com</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="contact-label">Address</div>
+                <div class="contact-value">742 Thermal Lane<br>Anytown, ST 12345</div>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <div class="contact-label">Office Hours</div>
+                <div class="contact-value">Mon-Fri: 7am - 6pm<br>Sat: 8am - 2pm</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="emergency-box">
+            <h4>24/7 Emergency Service</h4>
+            <a href="tel:5559328476" class="phone">(555) 932-8476</a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+          <h3>Request Service</h3>
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label for="address">Service Address *</label>
+              <input type="text" id="address" name="address" placeholder="Street, City, ZIP" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="service-type">Service Type *</label>
+                <select id="service-type" name="service-type" required>
+                  <option value="">Select a service...</option>
+                  <option value="ac-repair">AC Repair</option>
+                  <option value="ac-install">AC Installation</option>
+                  <option value="heating-repair">Heating Repair</option>
+                  <option value="heating-install">Heating Installation</option>
+                  <option value="maintenance">Maintenance/Tune-Up</option>
+                  <option value="air-quality">Indoor Air Quality</option>
+                  <option value="new-system">New System Estimate</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="urgency">Urgency Level *</label>
+                <select id="urgency" name="urgency" required>
+                  <option value="">How urgent?</option>
+                  <option value="emergency">Emergency - No Heat/AC</option>
+                  <option value="urgent">Urgent - Need Service ASAP</option>
+                  <option value="soon">Soon - Within a Few Days</option>
+                  <option value="flexible">Flexible - Schedule Convenient</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group full-width">
+              <label for="equipment">Equipment Brand/Model (if known)</label>
+              <input type="text" id="equipment" name="equipment" placeholder="e.g., Carrier 24ACC636 or 'Not sure'">
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Describe the Issue *</label>
+              <textarea id="message" name="message" placeholder="Tell us what's happening with your heating or cooling system..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Submit Request
+              <span>→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Coverage</div>
+        <h2 class="section-title">Service Area</h2>
+        <p class="section-subtitle">We proudly serve the greater metro area and surrounding communities. Same-day service available in most locations.</p>
+      </div>
+      <div class="brands-grid">
+        <div class="brand-item">Downtown</div>
+        <div class="brand-item">Northside</div>
+        <div class="brand-item">Eastview</div>
+        <div class="brand-item">West Hills</div>
+        <div class="brand-item">Riverside</div>
+        <div class="brand-item">Oakdale</div>
+        <div class="brand-item">Summit Park</div>
+        <div class="brand-item">Lakewood</div>
+        <div class="brand-item">Greenfield</div>
+        <div class="brand-item">Hillcrest</div>
+        <div class="brand-item">Valley View</div>
+        <div class="brand-item">Cedar Grove</div>
+      </div>
+      <p style="text-align: center; margin-top: 2rem; color: var(--slate-light);">
+        Don't see your area? Call us at <strong>(555) 932-8476</strong>. We may still be able to help.
+      </p>
+    </div>
+  </section>
+
+  <!-- Financing -->
+  <section class="section section-cool">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">Financing</div>
+        <h2 class="section-title">Affordable Payment Options</h2>
+        <p class="section-subtitle">Don't let budget concerns leave you uncomfortable. We offer flexible financing for new equipment and major repairs.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-number">0%</div>
+          <h3 class="feature-title">APR Financing</h3>
+          <p class="feature-text">Qualified buyers can get 0% interest for 12 months on new system purchases.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">$0</div>
+          <h3 class="feature-title">Down Payment</h3>
+          <p class="feature-text">No money down on approved credit. Start saving on energy bills immediately.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number">60</div>
+          <h3 class="feature-title">Month Terms</h3>
+          <p class="feature-text">Extended payment plans available up to 60 months for larger projects.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-number"></div>
+          <h3 class="feature-title">Quick Approval</h3>
+          <p class="feature-text">Apply online or in-home. Most decisions within minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title">Common Questions</h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4 class="faq-question">How often should I change my air filter?</h4>
+          <p class="faq-answer">Most filters should be changed every 1-3 months, depending on the type and your household (pets, allergies, etc.). Check your filter monthly and replace when it looks dirty.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">How often should my HVAC system be serviced?</h4>
+          <p class="faq-answer">We recommend professional maintenance twice a year. Schedule a heating tune-up in fall and a cooling tune-up in spring to keep your system running efficiently.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">What's the average lifespan of an HVAC system?</h4>
+          <p class="faq-answer">With proper maintenance, most systems last 15-20 years. Furnaces tend to last longer (20-25 years) than air conditioners (12-15 years). Age, usage, and maintenance all affect lifespan.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">Should I repair or replace my old system?</h4>
+          <p class="faq-answer">Generally, if your system is over 10 years old and the repair costs more than half the price of a new unit, replacement makes more sense. We'll give you honest advice.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">How much can I save with a new high-efficiency system?</h4>
+          <p class="faq-answer">Modern high-efficiency systems can reduce energy bills by 30-50% compared to older units. The exact savings depend on your current system's age and efficiency rating.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">Do you offer emergency service?</h4>
+          <p class="faq-answer">Yes! We have technicians on call 24/7, 365 days a year. Call (555) 932-8476 anytime for emergency heating or cooling service. No extra charges for emergencies.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">What brands do you service and install?</h4>
+          <p class="faq-answer">We service all major brands and are factory-authorized dealers for Carrier, Trane, Lennox, Rheem, Goodman, Bryant, American Standard, and York.</p>
+        </div>
+        <div class="faq-item">
+          <h4 class="faq-question">Do you offer free estimates?</h4>
+          <p class="faq-answer">Yes! We provide free in-home estimates for new system installations and major projects. For service calls, there's a diagnostic fee that's waived if you proceed with the repair.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="cta-content">
+      <div class="cta-text">
+        <h2>Ready for Reliable Comfort?</h2>
+        <p>Schedule your service today. Same-day appointments often available.</p>
+      </div>
+      <div class="cta-buttons">
+        <a href="tel:5559328476" class="btn btn-white">Call (555) 932-8476</a>
+        <a href="#" class="btn btn-outline" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Fill Out Form</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><i class="fa-solid fa-temperature-half"></i></div>
+          <div class="logo-text">
+            ClimateControl
+            <span>Pros</span>
+          </div>
+        </a>
+        <p>Keeping homes and businesses comfortable for over 20 years. Licensed, bonded, and insured HVAC professionals.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link">f</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">X</a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Air Conditioning</a></li>
+          <li><a href="services.html">Heating Systems</a></li>
+          <li><a href="services.html">Indoor Air Quality</a></li>
+          <li><a href="services.html">Maintenance Plans</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading">Contact</h4>
+        <ul class="footer-links">
+          <li>(555) 932-8476</li>
+          <li>info@climatepros.com</li>
+          <li>742 Thermal Lane</li>
+          <li>Anytown, ST 12345</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 ClimateControl Pros. All rights reserved.</p>
+      <p>License #HVAC-24680 | Bonded & Insured</p>
+      <p>Design by <a href="https://zadie.com">ZADIE</a></p>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    if (navToggle && nav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('nav-open');
+        navToggle.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+    }
+  </script>
+
+</body>
+</html>
