@@ -92,17 +92,53 @@ def _stable_evaluate(page, script: str, purpose: str, log=None, attempts: int = 
     raise RuntimeError(f"Google Maps no estabilizó la página durante {purpose}: {last_error}")
 
 
+def _dismiss_optional_sign_in_prompt(page, log=None) -> bool:
+    """Close an optional Maps sign-in dialog without signing in or bypassing a gate."""
+    try:
+        dismissed = page.evaluate(r"""() => {
+          const dialogs = [...document.querySelectorAll('[role="dialog"],[aria-modal="true"]')];
+          for (const dialog of dialogs) {
+            if (!/iniciar sesi[oó]n|sign in|acceder a tu cuenta/i.test(dialog.innerText || '')) continue;
+            const close = [...dialog.querySelectorAll('button,[role="button"]')].find(button =>
+              /cerrar|close|ahora no|no gracias|not now|no thanks/i.test(
+                `${button.getAttribute('aria-label') || ''} ${button.innerText || ''}`
+              )
+            );
+            if (close) { close.click(); return true; }
+          }
+          return false;
+        }""")
+        if dismissed and log:
+            log("INFO", "Se cerró el aviso opcional de inicio de sesión de Google Maps; se continúa como visitante.")
+        return bool(dismissed)
+    except PlaywrightError:
+        return False
+
+
 def extract_listing(url: str, get_photos: bool, log=None) -> dict:
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        # Use the installed Chrome channel first. Google Maps can present an
+        # unnecessary sign-in prompt in Playwright's bundled Chromium even for
+        # public listings. This still opens a fresh, logged-out browser session.
+        try:
+            browser = p.chromium.launch(headless=False, channel="chrome")
+        except PlaywrightError:
+            if log:
+                log("WARN", "No se pudo iniciar Chrome instalado; se usará Chromium de Playwright.")
+            browser = p.chromium.launch(headless=False)
         try:
             page = browser.new_page(locale="es-AR")
             page.goto(url, wait_until="domcontentloaded", timeout=60000)
+            page.wait_for_timeout(900)
+            _dismiss_optional_sign_in_prompt(page, log)
             try:
                 page.locator("h1").first.wait_for(timeout=25000)
                 page.wait_for_timeout(2200)
             except PlaywrightTimeoutError:
                 pass
+            _dismiss_optional_sign_in_prompt(page, log)
+            if "accounts.google.com" in page.url:
+                raise RuntimeError("Google Maps redirigió la ficha pública a la pantalla de acceso. No se inició sesión; comprueba que el enlace pueda abrirse como visitante.")
             data = _stable_evaluate(page, EXTRACTION_JS, "la lectura de la ficha", log)
             listing_url = data.get("finalUrl") or page.url
             if get_photos:

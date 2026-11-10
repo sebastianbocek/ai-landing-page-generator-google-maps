@@ -47,7 +47,7 @@ Los efectos son una capa selectiva sobre las familias visuales existentes, no pl
 2. Elige una familia de negocio o deja la detección automática.
 3. Elige una dirección artística o deja que la IA la defina.
 4. Selecciona un modelo y, si quieres, agrega notas con datos confirmados del negocio.
-5. Pulsa **Generar landing page**. Playwright abre la ficha y recoge la información que puede verificar en pantalla.
+5. Pulsa **Generar landing page**. El extractor abre la ficha pública en Chrome instalado como visitante, cierra los avisos opcionales de acceso y recoge la información que puede verificar en pantalla.
 6. Se crea una carpeta nueva en `salida/`; la GUI abre el HTML y muestra el estado del control de calidad.
 7. Pulsa **Regenerar** para producir otra combinación sin borrar los borradores anteriores.
 8. Pulsa **Subir página web**, selecciona una carpeta de `salida/` que contenga `index.html` en la raíz y espera a que termine la publicación.
@@ -64,7 +64,7 @@ El sitio y el repositorio son públicos. Para proteger los archivos internos del
 
 GitHub Pages puede tardar unos minutos en mostrar el sitio después de configurar la rama. Si el publicador no encuentra `gh` o Git, indica cómo instalarlos.
 
-La extracción no intenta resolver CAPTCHA, entrar en cuentas ni eludir restricciones. La ficha puede cambiar según el idioma, el estado de carga o la estructura de Maps; los datos faltantes quedan vacíos y se indican en los archivos de salida. En “Lo que comparten sus clientes” solo se muestran reseñas auténticas con una puntuación estrictamente superior a 4 estrellas, tras validar su texto y origen. La calificación general del negocio se conserva como dato separado.
+La extracción no intenta resolver CAPTCHA, iniciar sesión ni eludir restricciones. La ficha puede cambiar según el idioma, el estado de carga o la estructura de Maps; los datos faltantes quedan vacíos y se indican en los archivos de salida. En “Lo que comparten nuestros clientes” solo se muestran reseñas auténticas con una puntuación estrictamente superior a 4 estrellas, tras limpiar metadatos e íconos de Google Maps y validar el texto y el origen. Si una tarjeta contiene solo metadatos de Maps y no un comentario real, se descarta. La calificación general del negocio se conserva como dato separado.
 
 Si Google Maps redirige la ficha mientras Playwright lee el contenido, el extractor espera a que la página se estabilice y reintenta la lectura hasta tres veces; cada reintento aparece en el Registro de actividad de la GUI.
 
