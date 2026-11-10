@@ -44,9 +44,9 @@ EXTRACTION_JS = r"""() => {
 
 PHOTO_TAB_JS = r"""() => {
   const root = document.querySelector('[role="main"]') || document.body;
-  const button = [...root.querySelectorAll('button,[role="tab"]')].find(el => {
-    const label = (el.getAttribute('aria-label') || el.innerText || '').replace(/\s+/g, ' ').trim();
-    return /^(ver fotos|fotos|see photos|photos|\d+ fotos?)$/i.test(label);
+  const button = [...root.querySelectorAll('button,[role="button"],[role="tab"]')].find(el => {
+    const label = (el.innerText || el.getAttribute('aria-label') || '').trim();
+    return /ver fotos|\b\d+ fotos?\b|see photos|photos|fotos/i.test(label);
   });
   if (!button) return false;
   button.click(); return true;
@@ -92,47 +92,17 @@ def _stable_evaluate(page, script: str, purpose: str, log=None, attempts: int = 
     raise RuntimeError(f"Google Maps no estabilizó la página durante {purpose}: {last_error}")
 
 
-def _dismiss_optional_sign_in_prompt(page, log=None) -> bool:
-    """Close an optional Maps sign-in dialog without signing in or bypassing a gate."""
-    try:
-        dismissed = page.evaluate(r"""() => {
-          const dialogs = [...document.querySelectorAll('[role="dialog"],[aria-modal="true"]')];
-          for (const dialog of dialogs) {
-            if (!/iniciar sesi[oó]n|sign in|acceder a tu cuenta/i.test(dialog.innerText || '')) continue;
-            const close = [...dialog.querySelectorAll('button,[role="button"]')].find(button =>
-              /cerrar|close|ahora no|no gracias|not now|no thanks/i.test(
-                `${button.getAttribute('aria-label') || ''} ${button.innerText || ''}`
-              )
-            );
-            if (close) { close.click(); return true; }
-          }
-          return false;
-        }""")
-        if dismissed and log:
-            log("INFO", "Se cerró el aviso opcional de inicio de sesión de Google Maps; se continúa como visitante.")
-        return bool(dismissed)
-    except PlaywrightError:
-        return False
-
-
 def extract_listing(url: str, get_photos: bool, log=None) -> dict:
     with sync_playwright() as p:
-        # Keep the same browser engine that previously opened public Maps
-        # listings without prompting for a Google account.
         browser = p.chromium.launch(headless=False)
         try:
             page = browser.new_page(locale="es-AR")
             page.goto(url, wait_until="domcontentloaded", timeout=60000)
-            page.wait_for_timeout(900)
-            _dismiss_optional_sign_in_prompt(page, log)
             try:
                 page.locator("h1").first.wait_for(timeout=25000)
                 page.wait_for_timeout(2200)
             except PlaywrightTimeoutError:
                 pass
-            _dismiss_optional_sign_in_prompt(page, log)
-            if "accounts.google.com" in page.url:
-                raise RuntimeError("Google Maps redirigió la ficha pública a la pantalla de acceso. No se inició sesión; comprueba que el enlace pueda abrirse como visitante.")
             data = _stable_evaluate(page, EXTRACTION_JS, "la lectura de la ficha", log)
             listing_url = data.get("finalUrl") or page.url
             if get_photos:
@@ -140,7 +110,6 @@ def extract_listing(url: str, get_photos: bool, log=None) -> dict:
                 opened_photos = _stable_evaluate(page, PHOTO_TAB_JS, "la apertura de fotos", log)
                 if opened_photos:
                     page.wait_for_timeout(800)
-                    _dismiss_optional_sign_in_prompt(page, log)
                     for photo_index in range(8):
                         current = _stable_evaluate(page, EXTRACTION_JS, "la lectura de fotos", log)
                         image_sources.extend(current.get("images", []))
@@ -154,24 +123,13 @@ def extract_listing(url: str, get_photos: bool, log=None) -> dict:
             # Load the actual review cards, even when the listing overview already exposed some snippets.
             opened_reviews = _stable_evaluate(page, r"""() => {
               const root = document.querySelector('[role="main"]') || document.body;
-              const isReviewsTab = el => {
-                const label = (el.getAttribute('aria-label') || el.innerText || '').replace(/\s+/g, ' ').trim();
-                return /^(opiniones|reseñas|reviews)(?:\s+\d+|\s*\(\d+\))?$/i.test(label);
-              };
-              // Prefer a real tab and require its exact accessible label; do
-              // not click an unrelated control based on a partial word match.
-              const tabs = [...root.querySelectorAll('[role="tab"]')];
-              const tab = tabs.find(isReviewsTab) || [...root.querySelectorAll('button')].find(isReviewsTab);
+              const tab = [...root.querySelectorAll('button,[role="tab"],[role="button"]')]
+                .find(el => /opiniones|reseñas|reviews|avis/i.test((el.innerText || el.getAttribute('aria-label') || '').trim()));
               if (!tab) return false;
               tab.click(); return true;
             }""", "la apertura de reseñas", log)
             if opened_reviews:
-                if log:
-                    log("INFO", "Se abrió la pestaña con etiqueta exacta de reseñas; leyendo su contenido público.")
                 page.wait_for_timeout(800)
-                _dismiss_optional_sign_in_prompt(page, log)
-                if "accounts.google.com" in page.url:
-                    raise RuntimeError("Al abrir reseñas, Google Maps redirigió a la pantalla de acceso. Se detuvo la extracción sin iniciar sesión.")
                 collected = list(data.get("reviews", []))
                 for _ in range(8):
                     current = _stable_evaluate(page, EXTRACTION_JS, "la lectura de reseñas", log)
@@ -194,8 +152,6 @@ def extract_listing(url: str, get_photos: bool, log=None) -> dict:
                     key = (review.get("author", ""), review.get("text", ""))
                     if key not in seen:
                         seen.add(key); data["reviews"].append(review)
-            elif log:
-                log("INFO", "No se encontró una pestaña exacta de reseñas; se usarán únicamente las opiniones visibles de la ficha.")
             data["finalUrl"] = listing_url
         finally:
             browser.close()
