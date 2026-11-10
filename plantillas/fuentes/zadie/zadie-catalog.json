@@ -1,0 +1,1288 @@
+{
+  "source": "Zadie",
+  "catalog_url": "https://zadie.com/templates/",
+  "license_summary": "Free for personal and commercial use; no attribution required, according to official Zadie templates page. Verify current terms before publication.",
+  "retrieved_at": "2026-11-08",
+  "templates": [
+    {
+      "name": "Restaurant",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-restaurant-website-template/",
+      "slug": "restaurant",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/restaurant.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/restaurant",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Hair Salon",
+      "industry": "Beauty",
+      "detail_url": "https://zadie.com/templates/free-hair-salon-website-template/",
+      "slug": "hair-salon",
+      "family": "Belleza y estética",
+      "download_url": "https://zadie.com/downloads/templates/hair-salon.zip",
+      "relative_path": "plantillas/belleza-y-estética/hair-salon",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Dental Clinic",
+      "industry": "Healthcare",
+      "detail_url": "https://zadie.com/templates/free-dental-clinic-website-template/",
+      "slug": "dental-clinic",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/dental-clinic.zip",
+      "relative_path": "plantillas/salud-y-cuidado/dental-clinic",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Auto Mechanic",
+      "industry": "Automotive",
+      "detail_url": "https://zadie.com/templates/free-auto-mechanic-website-template/",
+      "slug": "auto-mechanic",
+      "family": "Automotor",
+      "download_url": "https://zadie.com/downloads/templates/auto-mechanic.zip",
+      "relative_path": "plantillas/automotor/auto-mechanic",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Coffee Shop",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-coffee-shop-website-template/",
+      "slug": "coffee-shop",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/coffee-shop.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/coffee-shop",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Plumbing",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-plumbing-website-template/",
+      "slug": "plumbing",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/plumbing.zip",
+      "relative_path": "plantillas/servicios-técnicos/plumbing",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "HVAC Company",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-hvac-website-template/",
+      "slug": "hvac",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/hvac.zip",
+      "relative_path": "plantillas/servicios-técnicos/hvac",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Electrician",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-electrician-website-template/",
+      "slug": "electrician",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/electrician.zip",
+      "relative_path": "plantillas/servicios-técnicos/electrician",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Cleaning Service",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-cleaning-service-website-template/",
+      "slug": "cleaning-service",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/cleaning-service.zip",
+      "relative_path": "plantillas/empresas-de-servicios/cleaning-service",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Real Estate Agency",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-real-estate-website-template/",
+      "slug": "real-estate",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/real-estate.zip",
+      "relative_path": "plantillas/negocios-profesionales/real-estate",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Personal Trainer / Fitness Studio",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-fitness-studio-website-template/",
+      "slug": "fitness-studio",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/fitness-studio.zip",
+      "relative_path": "plantillas/salud-y-cuidado/fitness-studio",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Barbershop",
+      "industry": "Beauty",
+      "detail_url": "https://zadie.com/templates/free-barbershop-website-template/",
+      "slug": "barbershop",
+      "family": "Belleza y estética",
+      "download_url": "https://zadie.com/downloads/templates/barbershop.zip",
+      "relative_path": "plantillas/belleza-y-estética/barbershop",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Chiropractor",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-chiropractor-website-template/",
+      "slug": "chiropractor",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/chiropractor.zip",
+      "relative_path": "plantillas/salud-y-cuidado/chiropractor",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Pet Grooming",
+      "industry": "Pet Services",
+      "detail_url": "https://zadie.com/templates/free-pet-grooming-website-template/",
+      "slug": "pet-grooming",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/pet-grooming.zip",
+      "relative_path": "plantillas/salud-y-cuidado/pet-grooming",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Roofing Company",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-roofing-website-template/",
+      "slug": "roofing",
+      "family": "Construcción y profesionales",
+      "download_url": "https://zadie.com/downloads/templates/roofing.zip",
+      "relative_path": "plantillas/construcción-y-profesionales/roofing",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Vet Clinic",
+      "industry": "Healthcare",
+      "detail_url": "https://zadie.com/templates/free-vet-clinic-website-template/",
+      "slug": "vet-clinic",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/vet-clinic.zip",
+      "relative_path": "plantillas/salud-y-cuidado/vet-clinic",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Bakery",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-bakery-website-template/",
+      "slug": "bakery",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/bakery.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/bakery",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Landscaping",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-landscaping-website-template/",
+      "slug": "landscaping",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/landscaping.zip",
+      "relative_path": "plantillas/empresas-de-servicios/landscaping",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Photography Studio",
+      "industry": "Events & Creative",
+      "detail_url": "https://zadie.com/templates/free-photography-studio-website-template/",
+      "slug": "photography-studio",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/photography-studio.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/photography-studio",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Yoga Studio",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-yoga-studio-website-template/",
+      "slug": "yoga-studio",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/yoga-studio.zip",
+      "relative_path": "plantillas/salud-y-cuidado/yoga-studio",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Massage Therapy / Spa",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-massage-spa-website-template/",
+      "slug": "massage-spa",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/massage-spa.zip",
+      "relative_path": "plantillas/salud-y-cuidado/massage-spa",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Auto Detailer",
+      "industry": "Automotive",
+      "detail_url": "https://zadie.com/templates/free-auto-detailer-website-template/",
+      "slug": "auto-detailer",
+      "family": "Automotor",
+      "download_url": "https://zadie.com/downloads/templates/auto-detailer.zip",
+      "relative_path": "plantillas/automotor/auto-detailer",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Tattoo Shop",
+      "industry": "Beauty",
+      "detail_url": "https://zadie.com/templates/free-tattoo-shop-website-template/",
+      "slug": "tattoo-shop",
+      "family": "Belleza y estética",
+      "download_url": "https://zadie.com/downloads/templates/tattoo-shop.zip",
+      "relative_path": "plantillas/belleza-y-estética/tattoo-shop",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "MMA / Martial Arts Studio",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-mma-studio-website-template/",
+      "slug": "mma-studio",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/mma-studio.zip",
+      "relative_path": "plantillas/salud-y-cuidado/mma-studio",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Dance Academy",
+      "industry": "Education & Childcare",
+      "detail_url": "https://zadie.com/templates/free-dance-academy-website-template/",
+      "slug": "dance-academy",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/dance-academy.zip",
+      "relative_path": "plantillas/negocios-profesionales/dance-academy",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Craft Brewery",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-craft-brewery-website-template/",
+      "slug": "craft-brewery",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/craft-brewery.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/craft-brewery",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Laundry Service",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-laundry-service-website-template/",
+      "slug": "laundry-service",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/laundry-service.zip",
+      "relative_path": "plantillas/empresas-de-servicios/laundry-service",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Florist",
+      "industry": "Events & Creative",
+      "detail_url": "https://zadie.com/templates/free-florist-website-template/",
+      "slug": "florist",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/florist.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/florist",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Nail Salon",
+      "industry": "Beauty",
+      "detail_url": "https://zadie.com/templates/free-nail-salon-website-template/",
+      "slug": "nail-salon",
+      "family": "Belleza y estética",
+      "download_url": "https://zadie.com/downloads/templates/nail-salon.zip",
+      "relative_path": "plantillas/belleza-y-estética/nail-salon",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Med Spa / Aesthetics",
+      "industry": "Beauty",
+      "detail_url": "https://zadie.com/templates/free-med-spa-website-template/",
+      "slug": "med-spa",
+      "family": "Belleza y estética",
+      "download_url": "https://zadie.com/downloads/templates/med-spa.zip",
+      "relative_path": "plantillas/belleza-y-estética/med-spa",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Daycare / Childcare",
+      "industry": "Education & Childcare",
+      "detail_url": "https://zadie.com/templates/free-daycare-website-template/",
+      "slug": "daycare",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/daycare.zip",
+      "relative_path": "plantillas/negocios-profesionales/daycare",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Architecture Studio",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-architect-website-template/",
+      "slug": "architect",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/architect.zip",
+      "relative_path": "plantillas/negocios-profesionales/architect",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Law Firm",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-law-firm-website-template/",
+      "slug": "law-firm",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/law-firm.zip",
+      "relative_path": "plantillas/negocios-profesionales/law-firm",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Accounting / Tax Prep",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-accounting-website-template/",
+      "slug": "accounting",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/accounting.zip",
+      "relative_path": "plantillas/negocios-profesionales/accounting",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "General Contractor",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-general-contractor-website-template/",
+      "slug": "general-contractor",
+      "family": "Construcción y profesionales",
+      "download_url": "https://zadie.com/downloads/templates/general-contractor.zip",
+      "relative_path": "plantillas/construcción-y-profesionales/general-contractor",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Pest Control",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-pest-control-website-template/",
+      "slug": "pest-control",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/pest-control.zip",
+      "relative_path": "plantillas/empresas-de-servicios/pest-control",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Optometrist / Eye Care",
+      "industry": "Healthcare",
+      "detail_url": "https://zadie.com/templates/free-optometrist-website-template/",
+      "slug": "optometrist",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/optometrist.zip",
+      "relative_path": "plantillas/salud-y-cuidado/optometrist",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Food Truck",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-food-truck-website-template/",
+      "slug": "food-truck",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/food-truck.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/food-truck",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Gym / CrossFit",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-gym-website-template/",
+      "slug": "gym",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/gym.zip",
+      "relative_path": "plantillas/salud-y-cuidado/gym",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Moving Company",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-moving-company-website-template/",
+      "slug": "moving-company",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/moving-company.zip",
+      "relative_path": "plantillas/empresas-de-servicios/moving-company",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Painting Company",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-painting-company-website-template/",
+      "slug": "painting-company",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/painting-company.zip",
+      "relative_path": "plantillas/servicios-técnicos/painting-company",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Physical Therapy",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-physical-therapy-website-template/",
+      "slug": "physical-therapy",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/physical-therapy.zip",
+      "relative_path": "plantillas/salud-y-cuidado/physical-therapy",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Catering Company",
+      "industry": "Events & Creative",
+      "detail_url": "https://zadie.com/templates/free-catering-website-template/",
+      "slug": "catering",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/catering.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/catering",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Juice Bar",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-juice-bar-website-template/",
+      "slug": "juice-bar",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/juice-bar.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/juice-bar",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Interior Designer",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-interior-designer-website-template/",
+      "slug": "interior-designer",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/interior-designer.zip",
+      "relative_path": "plantillas/negocios-profesionales/interior-designer",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Insurance Agency",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-insurance-agency-website-template/",
+      "slug": "insurance-agency",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/insurance-agency.zip",
+      "relative_path": "plantillas/negocios-profesionales/insurance-agency",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Garage Door Company",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-garage-door-website-template/",
+      "slug": "garage-door",
+      "family": "Construcción y profesionales",
+      "download_url": "https://zadie.com/downloads/templates/garage-door.zip",
+      "relative_path": "plantillas/construcción-y-profesionales/garage-door",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Dermatology Clinic",
+      "industry": "Healthcare",
+      "detail_url": "https://zadie.com/templates/free-dermatology-website-template/",
+      "slug": "dermatology",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/dermatology.zip",
+      "relative_path": "plantillas/salud-y-cuidado/dermatology",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Tutoring Center",
+      "industry": "Education & Childcare",
+      "detail_url": "https://zadie.com/templates/free-tutoring-website-template/",
+      "slug": "tutoring",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/tutoring.zip",
+      "relative_path": "plantillas/negocios-profesionales/tutoring",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Music School",
+      "industry": "Education & Childcare",
+      "detail_url": "https://zadie.com/templates/free-music-school-website-template/",
+      "slug": "music-school",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/music-school.zip",
+      "relative_path": "plantillas/negocios-profesionales/music-school",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Car Wash",
+      "industry": "Automotive",
+      "detail_url": "https://zadie.com/templates/free-car-wash-website-template/",
+      "slug": "car-wash",
+      "family": "Automotor",
+      "download_url": "https://zadie.com/downloads/templates/car-wash.zip",
+      "relative_path": "plantillas/automotor/car-wash",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Tire Shop",
+      "industry": "Automotive",
+      "detail_url": "https://zadie.com/templates/free-tire-shop-website-template/",
+      "slug": "tire-shop",
+      "family": "Automotor",
+      "download_url": "https://zadie.com/downloads/templates/tire-shop.zip",
+      "relative_path": "plantillas/automotor/tire-shop",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Dog Walker / Pet Sitter",
+      "industry": "Pet Services",
+      "detail_url": "https://zadie.com/templates/free-dog-walker-website-template/",
+      "slug": "dog-walker",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/dog-walker.zip",
+      "relative_path": "plantillas/salud-y-cuidado/dog-walker",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Dry Cleaner / Tailor",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-dry-cleaner-website-template/",
+      "slug": "dry-cleaner",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/dry-cleaner.zip",
+      "relative_path": "plantillas/servicios-técnicos/dry-cleaner",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Fencing Company",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-fencing-company-website-template/",
+      "slug": "fencing-company",
+      "family": "Construcción y profesionales",
+      "download_url": "https://zadie.com/downloads/templates/fencing.zip",
+      "relative_path": "plantillas/construcción-y-profesionales/fencing-company",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Pool Service",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-pool-service-website-template/",
+      "slug": "pool-service",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/pool-service.zip",
+      "relative_path": "plantillas/empresas-de-servicios/pool-service",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Tree Service",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-tree-service-website-template/",
+      "slug": "tree-service",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/tree-service.zip",
+      "relative_path": "plantillas/empresas-de-servicios/tree-service",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Wedding Venue",
+      "industry": "Events & Creative",
+      "detail_url": "https://zadie.com/templates/free-wedding-venue-website-template/",
+      "slug": "wedding-venue",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/wedding-venue.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/wedding-venue",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Solar Installation",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-solar-installation-website-template/",
+      "slug": "solar-installation",
+      "family": "Construcción y profesionales",
+      "download_url": "https://zadie.com/downloads/templates/solar.zip",
+      "relative_path": "plantillas/construcción-y-profesionales/solar-installation",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Self-Storage",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-self-storage-website-template/",
+      "slug": "self-storage",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/self-storage.zip",
+      "relative_path": "plantillas/empresas-de-servicios/self-storage",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Pressure Washing",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-pressure-washing-website-template/",
+      "slug": "pressure-washing",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/pressure-washing.zip",
+      "relative_path": "plantillas/empresas-de-servicios/pressure-washing",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Junk Removal",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-junk-removal-website-template/",
+      "slug": "junk-removal",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/junk-removal.zip",
+      "relative_path": "plantillas/empresas-de-servicios/junk-removal",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Towing Company",
+      "industry": "Automotive",
+      "detail_url": "https://zadie.com/templates/free-towing-company-website-template/",
+      "slug": "towing-company",
+      "family": "Automotor",
+      "download_url": "https://zadie.com/downloads/templates/towing.zip",
+      "relative_path": "plantillas/automotor/towing-company",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Handyman",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-handyman-website-template/",
+      "slug": "handyman",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/handyman.zip",
+      "relative_path": "plantillas/servicios-técnicos/handyman",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Dog Training",
+      "industry": "Pet Services",
+      "detail_url": "https://zadie.com/templates/free-dog-training-website-template/",
+      "slug": "dog-training",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/dog-training.zip",
+      "relative_path": "plantillas/salud-y-cuidado/dog-training",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Machine Shop",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-machine-shop-website-template/",
+      "slug": "machine-shop",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/machine-shop.zip",
+      "relative_path": "plantillas/servicios-técnicos/machine-shop",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Welding Company",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-welding-website-template/",
+      "slug": "welding",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/welding.zip",
+      "relative_path": "plantillas/servicios-técnicos/welding",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Concrete & Masonry",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-concrete-masonry-website-template/",
+      "slug": "concrete-masonry",
+      "family": "Construcción y profesionales",
+      "download_url": "https://zadie.com/downloads/templates/concrete-masonry.zip",
+      "relative_path": "plantillas/construcción-y-profesionales/concrete-masonry",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Flooring Company",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-flooring-website-template/",
+      "slug": "flooring",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/flooring.zip",
+      "relative_path": "plantillas/servicios-técnicos/flooring",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Excavation Company",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-excavation-website-template/",
+      "slug": "excavation",
+      "family": "Construcción y profesionales",
+      "download_url": "https://zadie.com/downloads/templates/excavation.zip",
+      "relative_path": "plantillas/construcción-y-profesionales/excavation",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Cabinet & Woodworking",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-cabinet-woodworking-website-template/",
+      "slug": "cabinet-woodworking",
+      "family": "Construcción y profesionales",
+      "download_url": "https://zadie.com/downloads/templates/cabinet-woodworking.zip",
+      "relative_path": "plantillas/construcción-y-profesionales/cabinet-woodworking",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Paving Company",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-paving-website-template/",
+      "slug": "paving",
+      "family": "Construcción y profesionales",
+      "download_url": "https://zadie.com/downloads/templates/paving.zip",
+      "relative_path": "plantillas/construcción-y-profesionales/paving",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Glass & Window Company",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-glass-window-website-template/",
+      "slug": "glass-window",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/glass-window.zip",
+      "relative_path": "plantillas/servicios-técnicos/glass-window",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Window Cleaning",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-window-cleaning-website-template/",
+      "slug": "window-cleaning",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/window-cleaning.zip",
+      "relative_path": "plantillas/empresas-de-servicios/window-cleaning",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Therapist / Counselor",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-therapist-website-template/",
+      "slug": "therapist",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/therapist.zip",
+      "relative_path": "plantillas/salud-y-cuidado/therapist",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Acupuncture",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-acupuncture-website-template/",
+      "slug": "acupuncture",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/acupuncture.zip",
+      "relative_path": "plantillas/salud-y-cuidado/acupuncture",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Pizza Shop",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-pizza-website-template/",
+      "slug": "pizza",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/pizza.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/pizza",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Ice Cream Shop",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-ice-cream-website-template/",
+      "slug": "ice-cream",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/ice-cream.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/ice-cream",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Winery / Vineyard",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-winery-website-template/",
+      "slug": "winery",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/winery.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/winery",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Bar / Pub",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-bar-pub-website-template/",
+      "slug": "bar-pub",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/bar-pub.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/bar-pub",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Appliance Repair",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-appliance-repair-website-template/",
+      "slug": "appliance-repair",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/appliance-repair.zip",
+      "relative_path": "plantillas/servicios-técnicos/appliance-repair",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Locksmith",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-locksmith-website-template/",
+      "slug": "locksmith",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/locksmith.zip",
+      "relative_path": "plantillas/servicios-técnicos/locksmith",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Driving School",
+      "industry": "Education & Childcare",
+      "detail_url": "https://zadie.com/templates/free-driving-school-website-template/",
+      "slug": "driving-school",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/driving-school.zip",
+      "relative_path": "plantillas/negocios-profesionales/driving-school",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "IT Services / Managed IT",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-it-services-website-template/",
+      "slug": "it-services",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/it-services.zip",
+      "relative_path": "plantillas/negocios-profesionales/it-services",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Financial Advisor",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-financial-advisor-website-template/",
+      "slug": "financial-advisor",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/financial-advisor.zip",
+      "relative_path": "plantillas/negocios-profesionales/financial-advisor",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Event Planner",
+      "industry": "Events & Creative",
+      "detail_url": "https://zadie.com/templates/free-event-planner-website-template/",
+      "slug": "event-planner",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/event-planner.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/event-planner",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "DJ / Entertainment",
+      "industry": "Events & Creative",
+      "detail_url": "https://zadie.com/templates/free-dj-entertainment-website-template/",
+      "slug": "dj-entertainment",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/dj-entertainment.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/dj-entertainment",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Bike Shop",
+      "industry": "Retail",
+      "detail_url": "https://zadie.com/templates/free-bike-shop-website-template/",
+      "slug": "bike-shop",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/bike-shop.zip",
+      "relative_path": "plantillas/negocios-profesionales/bike-shop",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Garden Center",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-garden-center-website-template/",
+      "slug": "garden-center",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/garden-center.zip",
+      "relative_path": "plantillas/empresas-de-servicios/garden-center",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Thrift / Consignment Store",
+      "industry": "Retail",
+      "detail_url": "https://zadie.com/templates/free-thrift-store-website-template/",
+      "slug": "thrift-store",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/thrift-store.zip",
+      "relative_path": "plantillas/negocios-profesionales/thrift-store",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Funeral Home",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-funeral-home-website-template/",
+      "slug": "funeral-home",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/funeral-home.zip",
+      "relative_path": "plantillas/negocios-profesionales/funeral-home",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Auto Body / Collision Repair",
+      "industry": "Automotive",
+      "detail_url": "https://zadie.com/templates/free-auto-body-website-template/",
+      "slug": "auto-body",
+      "family": "Automotor",
+      "download_url": "https://zadie.com/downloads/templates/auto-body.zip",
+      "relative_path": "plantillas/automotor/auto-body",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Martial Arts School",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-martial-arts-website-template/",
+      "slug": "martial-arts",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/martial-arts.zip",
+      "relative_path": "plantillas/salud-y-cuidado/martial-arts",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Pilates Studio",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-pilates-studio-website-template/",
+      "slug": "pilates-studio",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/pilates-studio.zip",
+      "relative_path": "plantillas/salud-y-cuidado/pilates-studio",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Pet Boarding / Kennel",
+      "industry": "Pet Services",
+      "detail_url": "https://zadie.com/templates/free-pet-boarding-website-template/",
+      "slug": "pet-boarding",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/pet-boarding.zip",
+      "relative_path": "plantillas/salud-y-cuidado/pet-boarding",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Home Inspector",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-home-inspector-website-template/",
+      "slug": "home-inspector",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/home-inspector.zip",
+      "relative_path": "plantillas/negocios-profesionales/home-inspector",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Escape Room",
+      "industry": "Events & Creative",
+      "detail_url": "https://zadie.com/templates/free-escape-room-website-template/",
+      "slug": "escape-room",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/escape-room.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/escape-room",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Marina / Boat Service",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-marina-website-template/",
+      "slug": "marina",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/marina.zip",
+      "relative_path": "plantillas/negocios-profesionales/marina",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Dumpster Rental",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-dumpster-rental-website-template/",
+      "slug": "dumpster-rental",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/dumpster-rental.zip",
+      "relative_path": "plantillas/empresas-de-servicios/dumpster-rental",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Security Company",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-security-company-website-template/",
+      "slug": "security-company",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/security-company.zip",
+      "relative_path": "plantillas/negocios-profesionales/security-company",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Audiologist / Hearing Center",
+      "industry": "Healthcare",
+      "detail_url": "https://zadie.com/templates/free-audiologist-website-template/",
+      "slug": "audiologist",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/audiologist.zip",
+      "relative_path": "plantillas/salud-y-cuidado/audiologist",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Axe Throwing Venue",
+      "industry": "Events & Creative",
+      "detail_url": "https://zadie.com/templates/free-axe-throwing-website-template/",
+      "slug": "axe-throwing",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/axe-throwing.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/axe-throwing",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Bakery / Cafe",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-bakery-cafe-website-template/",
+      "slug": "bakery-cafe",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/bakery-cafe.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/bakery-cafe",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "BBQ Restaurant",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-bbq-restaurant-website-template/",
+      "slug": "bbq-restaurant",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/bbq-restaurant.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/bbq-restaurant",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Boba / Bubble Tea Shop",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-boba-shop-website-template/",
+      "slug": "boba-shop",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/boba-shop.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/boba-shop",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Bookstore",
+      "industry": "Retail",
+      "detail_url": "https://zadie.com/templates/free-bookstore-website-template/",
+      "slug": "bookstore",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/bookstore.zip",
+      "relative_path": "plantillas/negocios-profesionales/bookstore",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Bowling Alley",
+      "industry": "Events & Creative",
+      "detail_url": "https://zadie.com/templates/free-bowling-alley-website-template/",
+      "slug": "bowling-alley",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/bowling-alley.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/bowling-alley",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Carpet Cleaning",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-carpet-cleaning-website-template/",
+      "slug": "carpet-cleaning",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/carpet-cleaning.zip",
+      "relative_path": "plantillas/empresas-de-servicios/carpet-cleaning",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Climbing Gym",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-climbing-gym-website-template/",
+      "slug": "climbing-gym",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/climbing-gym.zip",
+      "relative_path": "plantillas/salud-y-cuidado/climbing-gym",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Deck Builder",
+      "industry": "Construction & Trades",
+      "detail_url": "https://zadie.com/templates/free-deck-builder-website-template/",
+      "slug": "deck-builder",
+      "family": "Construcción y profesionales",
+      "download_url": "https://zadie.com/downloads/templates/deck-builder.zip",
+      "relative_path": "plantillas/construcción-y-profesionales/deck-builder",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Deli",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-deli-website-template/",
+      "slug": "deli",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/deli.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/deli",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Donut Shop",
+      "industry": "Food & Drink",
+      "detail_url": "https://zadie.com/templates/free-donut-shop-website-template/",
+      "slug": "donut-shop",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/donut-shop.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/donut-shop",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Gutter Cleaning",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-gutter-cleaning-website-template/",
+      "slug": "gutter-cleaning",
+      "family": "Empresas de servicios",
+      "download_url": "https://zadie.com/downloads/templates/gutter-cleaning.zip",
+      "relative_path": "plantillas/empresas-de-servicios/gutter-cleaning",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Irrigation",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-irrigation-website-template/",
+      "slug": "irrigation",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/irrigation.zip",
+      "relative_path": "plantillas/servicios-técnicos/irrigation",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Mortgage Broker",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-mortgage-broker-website-template/",
+      "slug": "mortgage-broker",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/mortgage-broker.zip",
+      "relative_path": "plantillas/negocios-profesionales/mortgage-broker",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Motorcycle Shop",
+      "industry": "Automotive",
+      "detail_url": "https://zadie.com/templates/free-motorcycle-shop-website-template/",
+      "slug": "motorcycle-shop",
+      "family": "Automotor",
+      "download_url": "https://zadie.com/downloads/templates/motorcycle-shop.zip",
+      "relative_path": "plantillas/automotor/motorcycle-shop",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Notary",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-notary-website-template/",
+      "slug": "notary",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/notary.zip",
+      "relative_path": "plantillas/negocios-profesionales/notary",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Nutritionist",
+      "industry": "Health & Wellness",
+      "detail_url": "https://zadie.com/templates/free-nutritionist-website-template/",
+      "slug": "nutritionist",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/nutritionist.zip",
+      "relative_path": "plantillas/salud-y-cuidado/nutritionist",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Orthodontist",
+      "industry": "Healthcare",
+      "detail_url": "https://zadie.com/templates/free-orthodontist-website-template/",
+      "slug": "orthodontist",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/orthodontist.zip",
+      "relative_path": "plantillas/salud-y-cuidado/orthodontist",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Podiatrist",
+      "industry": "Healthcare",
+      "detail_url": "https://zadie.com/templates/free-podiatrist-website-template/",
+      "slug": "podiatrist",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/podiatrist.zip",
+      "relative_path": "plantillas/salud-y-cuidado/podiatrist",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Pottery Studio",
+      "industry": "Events & Creative",
+      "detail_url": "https://zadie.com/templates/free-pottery-studio-website-template/",
+      "slug": "pottery-studio",
+      "family": "Gastronomía y eventos",
+      "download_url": "https://zadie.com/downloads/templates/pottery-studio.zip",
+      "relative_path": "plantillas/gastronomía-y-eventos/pottery-studio",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Print Shop",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-print-shop-website-template/",
+      "slug": "print-shop",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/print-shop.zip",
+      "relative_path": "plantillas/negocios-profesionales/print-shop",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "RV Dealer",
+      "industry": "Automotive",
+      "detail_url": "https://zadie.com/templates/free-rv-dealer-website-template/",
+      "slug": "rv-dealer",
+      "family": "Automotor",
+      "download_url": "https://zadie.com/downloads/templates/rv-dealer.zip",
+      "relative_path": "plantillas/automotor/rv-dealer",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Septic Service",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-septic-service-website-template/",
+      "slug": "septic-service",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/septic-service.zip",
+      "relative_path": "plantillas/servicios-técnicos/septic-service",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Staffing Agency",
+      "industry": "Professional Services",
+      "detail_url": "https://zadie.com/templates/free-staffing-agency-website-template/",
+      "slug": "staffing-agency",
+      "family": "Negocios profesionales",
+      "download_url": "https://zadie.com/downloads/templates/staffing-agency.zip",
+      "relative_path": "plantillas/negocios-profesionales/staffing-agency",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Upholstery",
+      "industry": "Home Services",
+      "detail_url": "https://zadie.com/templates/free-upholstery-website-template/",
+      "slug": "upholstery",
+      "family": "Servicios técnicos",
+      "download_url": "https://zadie.com/downloads/templates/upholstery.zip",
+      "relative_path": "plantillas/servicios-técnicos/upholstery",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Urgent Care",
+      "industry": "Healthcare",
+      "detail_url": "https://zadie.com/templates/free-urgent-care-website-template/",
+      "slug": "urgent-care",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/urgent-care.zip",
+      "relative_path": "plantillas/salud-y-cuidado/urgent-care",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    },
+    {
+      "name": "Veterinary Emergency Hospital",
+      "industry": "Healthcare",
+      "detail_url": "https://zadie.com/templates/free-vet-emergency-website-template/",
+      "slug": "vet-emergency",
+      "family": "Salud y cuidado",
+      "download_url": "https://zadie.com/downloads/templates/vet-emergency.zip",
+      "relative_path": "plantillas/salud-y-cuidado/vet-emergency",
+      "license": "Gratis para uso personal y comercial; Zadie indica que no requiere atribución (verificado en la página oficial, 2026-11-08)."
+    }
+  ]
+}

@@ -61,7 +61,13 @@ TEMPLATE_SOURCES = {
 }
 
 UIUX_CATALOG = json.loads((ROOT / "plantillas" / "uiuxlabz-catalog.json").read_text(encoding="utf-8"))
-ZADIE_CATALOG = json.loads((ROOT / "plantillas" / "fuentes" / "zadie" / "zadie-catalog.json").read_text(encoding="utf-8"))
+ZADIE_CATALOG_PATH = ROOT / "plantillas" / "fuentes" / "zadie" / "zadie-catalog.json"
+try:
+    ZADIE_CATALOG = json.loads(ZADIE_CATALOG_PATH.read_text(encoding="utf-8"))
+except (FileNotFoundError, json.JSONDecodeError):
+    # Downloaded source-template bundles are optional; the built-in renderer
+    # and the other template catalogs remain available without this file.
+    ZADIE_CATALOG = {"templates": []}
 
 AUTO_TEMPLATE = "Automática según la categoría de Google Maps"
 AUTO_ART = "Automática según el rubro"
@@ -199,7 +205,7 @@ TEMPLATE_POOLS = {
 def available_template_pool(template_name: str, category: str = "") -> list[tuple[Path, str]]:
     found = []
     preferred_slug = preferred_zadie_slug(category) if category else ""
-    zadie_items = [item for item in ZADIE_CATALOG["templates"] if item["family"] == template_name]
+    zadie_items = [item for item in ZADIE_CATALOG.get("templates", []) if item.get("family") == template_name]
     if preferred_slug:
         zadie_items.sort(key=lambda item: item["slug"] != preferred_slug)
     for item in zadie_items:
